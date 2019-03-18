@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/com.xmos.cdt.toolchain.2075612126/XDE_BUILD/delimiter=;
+environment/project/com.xmos.cdt.toolchain.2075612126/XDE_BUILD/operation=append
+environment/project/com.xmos.cdt.toolchain.2075612126/XDE_BUILD/value=true
+environment/project/com.xmos.cdt.toolchain.2075612126/XMOS_MODULE_PATH/delimiter=;
+environment/project/com.xmos.cdt.toolchain.2075612126/XMOS_MODULE_PATH/operation=append
+environment/project/com.xmos.cdt.toolchain.2075612126/XMOS_MODULE_PATH/value=C\:\\Projects\\Demo4_SSD1306_Startkit;C\:\\Projects\\lib_gpio;C\:\\Projects\\lib_i2c;C\:\\Projects\\lib_logging;C\:\\Projects\\lib_xassert;C\:\\Projects\\module_SSD1306;C\:\\Projects\\sc_adat\\module_adat_rx;C\:\\Projects\\sc_adat\\module_adat_tx;C\:\\Projects\\sc_i2c\\module_i2c_shared;C\:\\Projects\\sc_i2c\\module_i2c_simple;C\:\\Projects\\sc_i2c\\module_i2c_single_port;C\:\\Projects\\sc_util\\module_locks;C\:\\Projects\\sc_spdif\\module_spdif_rx;C\:\\Projects\\sc_spdif\\module_spdif_tx;C\:\\Projects\\sc_usb_device\\module_usb_device;C\:\\Projects\\sc_usb\\module_usb_shared;C\:\\Projects\\sc_xud\\module_xud;C\:\\Projects\\ui01_20190201_100
+environment/project/com.xmos.cdt.toolchain.2075612126/append=true
+environment/project/com.xmos.cdt.toolchain.2075612126/appendContributed=true
