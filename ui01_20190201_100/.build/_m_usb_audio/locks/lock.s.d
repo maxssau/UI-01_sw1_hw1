@@ -1,3 +1,3 @@
-.build/_m_usb_audio/locks/lock.s.d .build/_m_usb_audio/locks/lock.s.o .build/_m_usb_audio/locks/lock.S.pca.xml: C:/a1/sc_usb_audio/module_usb_audio/locks/lock.S
+.build/_m_usb_audio/locks/lock.s.d .build/_m_usb_audio/locks/lock.s.o .build/_m_usb_audio/locks/lock.S.pca.xml: C:/Projects/UI-01_sw1_hw1/module_usb_audio/locks/lock.S
 
 

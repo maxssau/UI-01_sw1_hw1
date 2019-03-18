@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/a1/sc_usb/module_usb_shared/src/usb_std_requests.xc">
+<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc">
 <fDef name="USB_ComposeSetupBuffer" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="USB_ParseSetupPacket" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="USB_PrintSetupPacket" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>

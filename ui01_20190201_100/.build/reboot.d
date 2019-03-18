@@ -1,5 +1,5 @@
-reboot.o: C:/a1/sc_usb_audio/module_usb_audio/reboot.xc \
-  C:/a1/sc_xud/module_xud/include/xud.h \
-  C:/a1/ui01_20190201_100/src/xud_conf.h \
-  C:/a1/sc_xud/module_xud/include/xud_defines.h
+reboot.o: C:/Projects/UI-01_sw1_hw1/module_usb_audio/reboot.xc \
+  C:/Projects/UI-01_sw1_hw1/module_xud/include/xud.h \
+  C:/Projects/UI-01_sw1_hw1/ui01_20190201_100/src/xud_conf.h \
+  C:/Projects/UI-01_sw1_hw1/module_xud/include/xud_defines.h
 

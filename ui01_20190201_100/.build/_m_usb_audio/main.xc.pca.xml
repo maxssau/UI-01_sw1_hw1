@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/a1/sc_usb_audio/module_usb_audio/main.xc">
+<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc">
 <fDef name="HandleDfuRequest" global="true" interface="i_dfu" noreturn="false" doNotSpecialize="false" numParams="4"/>
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_InPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
@@ -246,7 +246,7 @@
 <fCall name="DFUHandler" global="true" numArgs="2" impId="0">
   <arg num="0">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/a1/sc_usb_audio/module_usb_audio/main.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value>
     </values>
   </arg>
   <arg num="1">
@@ -278,7 +278,7 @@
   </arg>
   <arg num="4">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/a1/sc_usb_audio/module_usb_audio/main.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value>
     </values>
   </arg>
 </fCall>

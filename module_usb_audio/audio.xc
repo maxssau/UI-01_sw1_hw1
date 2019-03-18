@@ -45,6 +45,8 @@ extern buffered out port:32 p_dsd_dac[DSD_CHANS_DAC];
 extern buffered out port:32 p_dsd_clk;
 #endif
 
+unsigned IsDataReady=0;
+
 unsigned g_adcVal = 0;
 
 #ifdef XTA_TIMING_AUDIO
@@ -507,8 +509,17 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
         if(dsdMode == DSD_MODE_NATIVE)
         {
             /* 8 bits per chan, 1st 1-bit sample in MSB */
-            dsdSample_l =  samplesOut[0];
-            dsdSample_r =  samplesOut[1];
+            if(IsDataReady)
+            {
+                dsdSample_l =  samplesOut[0];
+                dsdSample_r =  samplesOut[1];
+            }
+            else
+            {
+                dsdSample_l =  0xAAAAAAAA;
+                dsdSample_r =  0xAAAAAAAA;
+            }
+
             dsdSample_r = bitrev(byterev(dsdSample_r));
             dsdSample_l = bitrev(byterev(dsdSample_l));
 
@@ -550,9 +561,16 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
         {
         if(!everyOther)
             {
-                dsdSample_l = ((samplesOut[0] & 0xffff00) << 8);
-                dsdSample_r = ((samplesOut[1] & 0xffff00) << 8);
-
+                if(IsDataReady)
+                {
+                    dsdSample_l = ((samplesOut[0] & 0xffff00) << 8);
+                    dsdSample_r = ((samplesOut[1] & 0xffff00) << 8);
+                }
+                else
+                {
+                    dsdSample_l=0xAAAAAAAA;
+                    dsdSample_r=0xAAAAAAAA;
+                }
                 everyOther = 1;
 
 #ifndef __XS2A__
@@ -579,9 +597,16 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
             else // everyOther
             {
                 everyOther = 0;
-                dsdSample_l =  dsdSample_l | ((samplesOut[0] & 0xffff00) >> 8);
-                dsdSample_r =  dsdSample_r | ((samplesOut[1] & 0xffff00) >> 8);
-
+                if(IsDataReady)
+                {
+                    dsdSample_l =  dsdSample_l | ((samplesOut[0] & 0xffff00) >> 8);
+                    dsdSample_r =  dsdSample_r | ((samplesOut[1] & 0xffff00) >> 8);
+                }
+                else
+                {
+                    dsdSample_l=0xAAAAAAAA;
+                    dsdSample_r=0xAAAAAAAA;
+                }
                 // Output 16 clocks DSD to all
                 //p_dsd_dac[0] <: bitrev(dsdSample_l);
                 //p_dsd_dac[1] <: bitrev(dsdSample_r);
@@ -612,6 +637,9 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
         else
 #endif
         {
+
+        // PCM Mode
+
 #if (I2S_CHANS_ADC != 0)
             /* Input previous L sample into L in buffer */
             index = 0;
@@ -658,7 +686,14 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
             /* Output "even" channel to DAC (i.e. left) */
             for(int i = 0; i < I2S_CHANS_DAC; i+=I2S_CHANS_PER_FRAME)
             {
-                p_i2s_dac[index++] <: bitrev(samplesOut[frameCount +i]);
+                if(IsDataReady)
+                {
+                    p_i2s_dac[index++] <: bitrev(samplesOut[frameCount +i]);
+                }
+                else
+                {
+                    p_i2s_dac[index++] <:0xAAAAAAAA;
+                }
             }
 #endif
 
@@ -763,7 +798,14 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
 #pragma loop unroll
             for(int i = 1; i < I2S_CHANS_DAC; i+=I2S_CHANS_PER_FRAME)
             {
-                p_i2s_dac[index++] <: bitrev(samplesOut[frameCount + i]);
+                if(IsDataReady)
+                {
+                    p_i2s_dac[index++] <: bitrev(samplesOut[frameCount + i]);
+                }
+                else
+                {
+                    p_i2s_dac[index++] <: 0xAAAAAAAA;
+                }
             }
 #endif
 
@@ -785,6 +827,7 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
                 dsdMarker ^= DSD_MARKER_XOR;
                 if(dsdCount == DSD_EN_THRESH)
                 {
+                    IsDataReady=0;
                     dsdMode = DSD_MODE_DOP;
                     dsdCount = 0;
                     dsdMarker = DSD_MARKER_2;
@@ -810,6 +853,7 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
                 if((DSD_MASK(samplesOut[0]) != DSD_MARKER_2) && (DSD_MASK(samplesOut[1]) != DSD_MARKER_2))
                 {
                     dsdMode = DSD_MODE_OFF;
+                    IsDataReady=0;
                     // Set clocks low
                     p_lrclk <: 0;
                     p_bclk <: 0;
@@ -1143,6 +1187,7 @@ chanend ?c_config, chanend ?c
 #endif
             /* Configure Clocking/CODEC/DAC/ADC for SampleFreq/MClk */
             AudioHwConfig(curFreq, mClk, c_config, dsdMode, curSamRes_DAC, curSamRes_ADC);
+            IsDataReady=1;
         }
 
         if(!firstRun)

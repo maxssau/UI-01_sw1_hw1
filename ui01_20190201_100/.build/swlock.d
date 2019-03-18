@@ -1,2 +1,2 @@
-swlock.o: C:/a1/sc_util/module_locks/src/swlock.c \
-  C:/a1/sc_util/module_locks/src/swlock.h
+swlock.o: C:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.c \
+  C:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h

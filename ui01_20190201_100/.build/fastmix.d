@@ -1,3 +1,3 @@
-fastmix.o: C:/a1/sc_usb_audio/module_usb_audio/mixer/fastmix.S \
-  C:/a1/sc_usb_audio/module_usb_audio/mixer/repeat.h
+fastmix.o: C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/fastmix.S \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/repeat.h
 

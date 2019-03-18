@@ -1,5 +1,5 @@
-xuduser.o: C:/a1/sc_usb_audio/module_usb_audio/xuduser/xuduser.c \
-  C:/a1/sc_usb_audio/module_usb_audio\devicedefines.h \
+xuduser.o: C:/Projects/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio\devicedefines.h \
   .././src\customdefines.h \
-  C:/a1/sc_usb_audio/module_usb_audio/hostactive\hostactive.h \
-  C:/a1/sc_usb_audio/module_usb_audio/audiostream\audiostream.h
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/hostactive\hostactive.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/audiostream\audiostream.h

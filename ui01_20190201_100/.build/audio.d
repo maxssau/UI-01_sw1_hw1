@@ -1,12 +1,12 @@
-audio.o: C:/a1/sc_usb_audio/module_usb_audio/audio.xc \
-  C:/a1/sc_usb_audio/module_usb_audio/devicedefines.h \
-  C:/a1/ui01_20190201_100/src/customdefines.h \
-  C:/a1/sc_usb_audio/module_dfu/src/dfu_interface.h \
-  C:/a1/sc_usb/module_usb_shared/src/usb_std_requests.h \
-  C:/a1/sc_usb/module_usb_shared/src/usb_defs.h \
-  C:/a1/sc_usb_audio/module_usb_audio/ports/audioports.h \
-  C:/a1/sc_usb_audio/module_usb_audio/audiohw.h \
-  C:/a1/sc_usb_audio/module_usb_audio/commands.h \
-  C:/a1/sc_usb_audio/module_usb_audio/dsd_support.h \
-  C:/a1/sc_usb_audio/module_usb_audio/usb_buffer/xc_ptr.h
+audio.o: C:/Projects/UI-01_sw1_hw1/module_usb_audio/audio.xc \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/devicedefines.h \
+  C:/Projects/UI-01_sw1_hw1/ui01_20190201_100/src/customdefines.h \
+  C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu_interface.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/audiohw.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/commands.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/dsd_support.h \
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h
 

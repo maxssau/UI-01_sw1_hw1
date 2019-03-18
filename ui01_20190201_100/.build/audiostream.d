@@ -1,2 +1,2 @@
 audiostream.o: \
-  C:/a1/sc_usb_audio/module_usb_audio/audiostream/audiostream.c
+  C:/Projects/UI-01_sw1_hw1/module_usb_audio/audiostream/audiostream.c

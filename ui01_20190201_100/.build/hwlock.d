@@ -1,2 +1,2 @@
-hwlock.o: C:/a1/sc_util/module_locks/src/hwlock.c \
-  C:/a1/sc_util/module_locks/src/hwlock.h
+hwlock.o: C:/Projects/UI-01_sw1_hw1/module_locks/src/hwlock.c \
+  C:/Projects/UI-01_sw1_hw1/module_locks/src/hwlock.h
