@@ -30,6 +30,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Demo3/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ui01_20190201_100}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ui01_20190201_100/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/xc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/clang&quot;"/>
 								</option>
 								<option id="com.xmos.xc.compiler.option.defined.symbols.1219093213" name="com.xmos.xc.compiler.option.defined.symbols" superClass="com.xmos.xc.compiler.option.defined.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__XC__=1"/>
@@ -190,6 +193,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Demo3/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ui01_20190201_100}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ui01_20190201_100/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/clang&quot;"/>
 								</option>
 								<option id="com.xmos.c.compiler.option.defined.symbols.83017200" name="com.xmos.c.compiler.option.defined.symbols" superClass="com.xmos.c.compiler.option.defined.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__llvm__=1"/>
@@ -498,6 +503,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Demo3/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ui01_20190201_100}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ui01_20190201_100/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/clang&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/c++/v1&quot;"/>
 								</option>
 								<option id="com.xmos.cxx.compiler.option.defined.symbols.626501867" name="com.xmos.cxx.compiler.option.defined.symbols" superClass="com.xmos.cxx.compiler.option.defined.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__llvm__=1"/>

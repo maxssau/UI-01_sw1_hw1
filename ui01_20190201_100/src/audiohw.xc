@@ -22,7 +22,7 @@ void AudioHwInit(chanend ?c_codec)
 {
     //start up init
     Reset(0);
-    wait_us(100);
+    //wait_us(100);
 
     SetPCM(48000);
     Reset(1);

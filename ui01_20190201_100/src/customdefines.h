@@ -44,7 +44,7 @@
 #endif
 
 #ifndef PRODUCT_STR_A2
-#define PRODUCT_STR_A2           "UI-01 interface"
+#define PRODUCT_STR_A2           "UI-01 audio"
 #endif
 
 #ifndef PRODUCT_STR_A1

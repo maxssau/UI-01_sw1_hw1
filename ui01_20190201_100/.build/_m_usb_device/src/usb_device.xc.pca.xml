@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc">
+<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc">
 <fDef name="SetEndpointHalt" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="USB_GetSetupPacket" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
 <fDef name="USB_StandardRequests" global="true" noreturn="false" doNotSpecialize="false" numParams="14"/>

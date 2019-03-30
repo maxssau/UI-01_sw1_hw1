@@ -1,0 +1,56 @@
+<taskgraph>
+<task>
+  <name>delay_seconds</name>
+  <inFunction>delay_seconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_milliseconds</name>
+  <inFunction>delay_milliseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_microseconds</name>
+  <inFunction>delay_microseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>array_to_xc_ptr</name>
+  <inFunction>array_to_xc_ptr</inFunction>
+</task>
+<task>
+  <name>doI2SClocks</name>
+  <inFunction>doI2SClocks</inFunction>
+</task>
+<task>
+  <name>DoSampleTransfer</name>
+  <inFunction>DoSampleTransfer</inFunction>
+</task>
+<task>
+  <name>InitPorts</name>
+  <inFunction>InitPorts</inFunction>
+</task>
+<task>
+  <name>deliver</name>
+  <inFunction>deliver</inFunction>
+</task>
+<task>
+  <name>testct_byref</name>
+  <inFunction>testct_byref</inFunction>
+</task>
+<task>
+  <name>dummy_deliver</name>
+  <inFunction>dummy_deliver</inFunction>
+</task>
+<task>
+  <name>audio</name>
+  <inFunction>audio</inFunction>
+</task>
+<task>
+  <name>.task.0</name>
+  <inFunction>audio</inFunction>
+  <parent>audio</parent>
+  <core>1</core>
+  <inPar/>
+</task>
+</taskgraph>

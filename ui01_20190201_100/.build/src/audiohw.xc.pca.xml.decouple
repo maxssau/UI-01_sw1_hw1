@@ -416,13 +416,6 @@
     </values>
   </arg>
 </fCall>
-<fCall name="wait_us" global="true" numArgs="1">
-  <arg num="0">
-    <values>
-      <value type="intval"><intval isSigned="true" val="100"/></value>
-    </values>
-  </arg>
-</fCall>
 <fCall name="SetPCM" global="true" numArgs="1">
   <arg num="0">
     <values>
