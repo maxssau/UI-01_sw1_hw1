@@ -450,6 +450,11 @@ unsigned get_logical_core_id(void);
 
 extern tileref tile[1];
 extern tileref usb_tile;
+
+
+
+
+service xscope_host_data(chanend c);;
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
 # 12 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" 2
 

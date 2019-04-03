@@ -392,6 +392,11 @@ unsigned get_logical_core_id(void);
 # 13 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
 extern tileref tile[1];
 extern tileref usb_tile;
+
+
+
+
+service xscope_host_data(chanend c);;
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
 # 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3

@@ -16,7 +16,7 @@ extern tileref usb_tile;
 
 #ifdef __XC__
 /* Service prototypes. */
-/* none */
+service xscope_host_data(chanend c);;
 #endif
 
 #if defined(__XC__)
