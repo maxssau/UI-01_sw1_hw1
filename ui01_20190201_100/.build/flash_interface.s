@@ -14,8 +14,8 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h"
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c"
+	.file	1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h"
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_dfu/src\\flash_interface.c"
 	.text
 	.weak	flash_cmd_enable_ports
 	.align	4
@@ -990,9 +990,9 @@ pages_written:
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_dfu/src\\flash_interface.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"factory_image"
 .Linfo_string4:

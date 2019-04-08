@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c">
+<preCompilationAnalysis file="F:/Projects/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c">
   <fCall global="true" name="XUD_UserSuspend"/>
   <fCall global="true" name="XUD_UserSuspend.nstackwords"/>
   <fCall global="true" name="UserAudioStreamStop.nstackwords"/>

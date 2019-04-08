@@ -1,2 +1,3 @@
 .build/_m_usb_audio/hostactive/hostactive.c.d .build/_m_usb_audio/hostactive/hostactive.c.o .build/_m_usb_audio/hostactive/hostactive.c.pca.xml: \
-  ../../UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c
+  F:/Projects/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c
+

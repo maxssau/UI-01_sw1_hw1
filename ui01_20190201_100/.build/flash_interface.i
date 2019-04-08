@@ -1,14 +1,14 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c"
+# 1 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 289 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
-# 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
-# 33 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 3
+# 1 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 1 3
+# 23 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/timer.h" 1 3
+# 33 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/timer.h" 3
 void delay_ticks(unsigned ticks);
 
 
@@ -41,60 +41,64 @@ inline void delay_milliseconds(unsigned delay) {
 inline void delay_microseconds(unsigned delay) {
   delay_ticks_longlong(100U * (unsigned long long)delay);
 }
-# 24 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 36 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_g4000b-512.h" 1 3
-# 37 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
+# 23 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+# 36 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_g4000b-512.h" 1 3
+# 36 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_user.h" 1 3
-# 20 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_user.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs2a_user.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_user.h" 2 3
-# 39 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_kernel.h" 1 3
-# 20 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_kernel.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs2a_kernel.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_kernel.h" 2 3
-# 40 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_registers.h" 1 3
-# 20 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_registers.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs2a_registers.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_registers.h" 2 3
-# 41 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_clock.h" 1 3
-# 39 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_clock.h" 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_user.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_user.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs2a_user.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_user.h" 2 3
+# 38 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_kernel.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_kernel.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/xs2a_kernel.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_kernel.h" 2 3
+# 39 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_registers.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_registers.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs2a_registers.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_registers.h" 2 3
+# 40 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_clock.h" 1 3
+# 39 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_clock.h" 3
 typedef unsigned clock;
-# 42 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1745 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 41 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+# 1745 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 unsigned getps(unsigned reg);
-# 1756 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1756 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 void setps(unsigned reg, unsigned value);
-# 1779 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1779 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int read_pswitch_reg(unsigned tileid, unsigned reg, unsigned *data);
-# 1803 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1803 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int read_sswitch_reg(unsigned tileid, unsigned reg, unsigned *data);
-# 1823 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1823 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_pswitch_reg(unsigned tileid, unsigned reg, unsigned data);
-# 1843 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1843 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_pswitch_reg_no_ack(unsigned tileid, unsigned reg, unsigned data);
-# 1862 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1862 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_sswitch_reg(unsigned tileid, unsigned reg, unsigned data);
-# 1883 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1883 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_sswitch_reg_no_ack(unsigned tileid, unsigned reg, unsigned data);
-# 2117 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 2117 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 unsigned get_local_tile_id(void);
-# 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 2136 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 unsigned get_logical_core_id(void);
-# 2148 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 2148 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 __attribute__((deprecated)) static inline unsigned get_core_id(void) {
   return get_local_tile_id();
 }
 __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
   return __builtin_getid();
 }
-# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 1 3
-# 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 2 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 1 3
+# 34 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 typedef enum {
   PROT_TYPE_NONE=0,
   PROT_TYPE_SR=1,
@@ -206,13 +210,13 @@ typedef struct {
   unsigned spiClkblk;
 
 } fl_SPIPorts;
-# 154 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 154 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_connect(fl_SPIPorts* SPI);
-# 171 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 171 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_connectToDevice(fl_SPIPorts *SPI, const fl_DeviceSpec spec[], unsigned n);
-# 181 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 181 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_dividerOverride(int div);
-# 191 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 191 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_getFlashType();
 
 
@@ -221,9 +225,9 @@ int fl_getFlashType();
 
 
 unsigned fl_getFlashSize();
-# 207 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 207 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 unsigned fl_getSpiId(fl_SPIPorts * SPI, unsigned id_command);
-# 217 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 217 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 unsigned fl_getSpiStatus(fl_SPIPorts * QSPI, unsigned status_command);
 
 
@@ -238,7 +242,7 @@ int fl_disconnect();
 
 
 int fl_getFlashIdNum();
-# 239 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 239 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_getFlashIdStr( char buf[], int maxlen );
 
 
@@ -259,18 +263,18 @@ typedef struct {
 
 
 int fl_getFactoryImage(fl_BootImageInfo* bootImageInfo);
-# 272 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 272 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_getNextBootImage(fl_BootImageInfo* bootImageInfo);
-# 283 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 283 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 unsigned fl_getImageVersion(fl_BootImageInfo* bootImageInfo);
-# 302 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 302 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_startImageAdd(fl_BootImageInfo *bootImageInfo, unsigned maxsize,
                      unsigned padding);
-# 322 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 322 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_startImageAddAt( unsigned offset, unsigned maxsize);
-# 340 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 340 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_startImageReplace(fl_BootImageInfo *bootImageInfo, unsigned maxsize);
-# 352 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 352 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_writeImagePage(const unsigned char page[]);
 
 
@@ -286,11 +290,11 @@ int fl_endWriteImage(void);
 
 
 int fl_deleteImage(fl_BootImageInfo *bootImageInfo);
-# 378 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 378 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_startDeleteImage(fl_BootImageInfo *bootImageInfo);
-# 388 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 388 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_startImageRead(fl_BootImageInfo *bootImageInfo);
-# 398 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 398 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_readImagePage(unsigned char page[]);
 
 
@@ -303,13 +307,13 @@ __attribute__((deprecated)) static inline int fl_readImageRead(unsigned char pag
 {
   return fl_readImagePage(page);
 }
-# 419 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 419 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 unsigned fl_getDataPartitionSize(void);
-# 429 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 429 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_readData(unsigned offset, unsigned size, unsigned char dst[]);
-# 438 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 438 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 unsigned fl_getWriteScratchSize(unsigned offset, unsigned size);
-# 450 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 450 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_writeData(unsigned offset, unsigned size, const unsigned char src[],
                  unsigned char buffer[]);
 
@@ -326,7 +330,7 @@ unsigned fl_getPageSize(void);
 
 
 unsigned fl_getNumDataPages(void);
-# 474 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
+# 474 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 3
 int fl_writeDataPage(unsigned n, const unsigned char src[]);
 
 
@@ -370,7 +374,7 @@ int fl_eraseAllDataSectors(void);
 
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/SpecEnum.h" 1 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/SpecEnum.h" 1 3
 
 
 
@@ -403,16 +407,17 @@ typedef enum
   WINBOND_W25X20 = 22,
   WINBOND_W25X40 = 6,
 } fl_FlashId;
-# 517 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 2 3
+# 516 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 2 3
 
 
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/SpecMacros.h" 1 3
-# 522 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 2 3
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h" 1 3
-# 26 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h" 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/SpecMacros.h" 1 3
+# 521 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flash.h" 2 3
+# 3 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flashlib.h" 1 3
+# 26 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flashlib.h" 3
 typedef fl_SPIPorts fl_PortHolderStruct;
 
 
@@ -471,13 +476,13 @@ int fl_writePage(unsigned int address, const unsigned char data[]);
 
 
 int fl_readPage( unsigned int address, unsigned char data[] );
-# 95 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h" 3
+# 95 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flashlib.h" 3
 unsigned int fl_setBootPartitionSize( unsigned int s );
 unsigned int fl_getBootPartitionSize();
 
 
 unsigned fl_getDataPartitionBase();
-# 111 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h" 3
+# 111 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\flashlib.h" 3
 int fl_eraseNextBootImage( fl_BootImageInfo* bootImageInfo );
 
 
@@ -486,55 +491,57 @@ int fl_eraseNextBootImage( fl_BootImageInfo* bootImageInfo );
 
 
 int fl_addBootImage( fl_BootImageInfo* bootImageInfo, unsigned int imageSize, unsigned int (*getData)(void*,unsigned int,unsigned char*), void* userPtr );
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 1 3
-# 10 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/_ansi.h" 1 3
-# 15 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/_ansi.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/newlib.h" 1 3
-# 16 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/_ansi.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/config.h" 1 3
+# 4 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 1 3
+# 10 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/_ansi.h" 1 3
+# 15 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/_ansi.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\newlib.h" 1 3
+# 15 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/_ansi.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/config.h" 1 3
 
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/ieeefp.h" 1 3
-# 5 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/config.h" 2 3
-# 17 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/_ansi.h" 2 3
-# 11 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 2 3
-
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 1 3
-# 14 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 1 3
-# 12 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_types.h" 1 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/ieeefp.h" 1 3
+# 5 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/config.h" 2 3
+# 16 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/_ansi.h" 2 3
+# 10 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 2 3
 
 
-
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 1 3
+# 14 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 1 3
+# 12 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_types.h" 1 3
 
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 1 3
-# 26 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 3
+
+
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 1 3
+# 26 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 3
 typedef signed char __int8_t ;
 typedef unsigned char __uint8_t ;
-# 36 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 3
+# 36 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 3
 typedef signed short __int16_t;
 typedef unsigned short __uint16_t;
-# 46 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 3
+# 46 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 3
 typedef __int16_t __int_least16_t;
 typedef __uint16_t __uint_least16_t;
-# 58 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 3
+# 58 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 3
 typedef signed int __int32_t;
 typedef unsigned int __uint32_t;
-# 76 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 3
+# 76 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 3
 typedef __int32_t __int_least32_t;
 typedef __uint32_t __uint_least32_t;
-# 99 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_default_types.h" 3
+# 99 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_default_types.h" 3
 typedef signed long long __int64_t;
 typedef unsigned long long __uint64_t;
-# 8 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/machine/_types.h" 2 3
-# 13 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/lock.h" 1 3
+# 8 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\machine/_types.h" 2 3
+# 13 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 2 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/lock.h" 1 3
 
 
 
@@ -556,7 +563,7 @@ typedef struct {
   int _owner;
   int _count;
 } _LOCK_RECURSIVE_T;
-# 30 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/lock.h" 3
+# 30 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/lock.h" 3
 void __lock_simple_init(volatile _LOCK_SIMPLE_T *);
 void __lock_simple_close(volatile _LOCK_SIMPLE_T *);
 void __lock_simple_acquire(volatile _LOCK_SIMPLE_T *);
@@ -576,7 +583,7 @@ int __lock_recursive_try_acquire(volatile _LOCK_RECURSIVE_T *);
 void __lock_recursive_release(volatile _LOCK_RECURSIVE_T *);
 
 typedef _LOCK_FAIR_T _LOCK_T;
-# 14 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 2 3
+# 14 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 2 3
 
 
 typedef long _off_t;
@@ -596,9 +603,9 @@ typedef unsigned short __uid_t;
 
 
 typedef unsigned short __gid_t;
-# 45 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 3
+# 45 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 3
 typedef long _fpos_t;
-# 57 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 3
+# 57 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 3
 typedef int _ssize_t;
 
 
@@ -607,10 +614,10 @@ typedef int _ssize_t;
 
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stddef.h" 1 3
-# 149 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stddef.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/clang\\stddef.h" 1 3
+# 149 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/clang\\stddef.h" 3
 typedef unsigned int wint_t;
-# 65 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/_types.h" 2 3
+# 65 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/_types.h" 2 3
 
 
 
@@ -632,7 +639,7 @@ typedef _LOCK_RECURSIVE_T _flock_t;
 
 
 typedef void *_iconv_t;
-# 15 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 2 3
+# 15 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 2 3
 
 
 
@@ -640,14 +647,14 @@ typedef void *_iconv_t;
 
 
 typedef unsigned long __ULong;
-# 36 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 3
+# 36 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 3
 struct _reent;
-# 45 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 3
+# 45 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 78 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 3
+# 78 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -691,7 +698,7 @@ struct __sFILE {
   _flock_t _lock;
 
 };
-# 176 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/reent.h" 3
+# 176 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -718,13 +725,15 @@ extern __FILE *__stdin, *__stdout, *__stderr;
 __FILE * __getstdin (void);
 __FILE * __getstdout (void);
 __FILE * __getstderr (void);
-# 13 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 2 3
+# 12 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 2 3
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stddef.h" 1 3
-# 66 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stddef.h" 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/clang\\stddef.h" 1 3
+# 66 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/clang\\stddef.h" 3
 typedef unsigned int size_t;
-# 16 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 2 3
+# 15 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 2 3
+
 
 
 
@@ -788,18 +797,18 @@ size_t strnlen (const char *, size_t);
 char *strsep (char **, const char *);
 char *strlwr (char *);
 char *strupr (char *);
-# 102 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/string.h" 1 3
-# 103 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 2 3
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 1 3
-# 35 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 3
+# 102 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\sys/string.h" 1 3
+# 102 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\string.h" 2 3
+# 5 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xclib.h" 1 3
+# 35 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xclib.h" 3
 unsigned bitrev(unsigned x);
-# 46 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 3
+# 46 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xclib.h" 3
 unsigned byterev(unsigned x);
-# 59 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 3
+# 59 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xclib.h" 3
 int clz(unsigned x);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 6 "F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 
 
 

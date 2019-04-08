@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c">
+<preCompilationAnalysis file="F:/Projects/UI-01_sw1_hw1/module_dfu/src/flash_interface.c">
   <fCall global="true" name="flash_cmd_enable_ports"/>
   <fCall global="true" name="flash_cmd_enable_ports.nstackwords"/>
   <fCall global="true" name="flash_cmd_enable_ports.maxcores"/>

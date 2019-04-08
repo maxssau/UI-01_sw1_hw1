@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
+	.file	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -66,15 +66,15 @@ testct_byrefnot:                        # @testct_byrefnot
 	.cfi_endproc
 
 .Ldebug_end0:
-	.file	1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
+	.file	1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\timer.h"
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\testct_byref.xc"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"delay_seconds"
 .Linfo_string4:
@@ -277,17 +277,17 @@ testct_byrefnot:                        # @testct_byrefnot
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_0,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
 	.byte	0
 	.long	6
 	.long	7
 	.long	.Lxtalabel0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/testct_byref.xc"
 	.byte	0
 	.long	15
 	.long	15

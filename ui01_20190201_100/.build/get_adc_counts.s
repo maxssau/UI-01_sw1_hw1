@@ -14,7 +14,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.file	1 "F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
 	.text
 	.globl	GetADCCounts
 	.align	4
@@ -22,7 +22,7 @@
 	.cc_top GetADCCounts.function,GetADCCounts
 GetADCCounts:
 .Lfunc_begin0:
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/get_adc_counts.c"
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\get_adc_counts.c"
 	.loc	2 30 0
 	.cfi_startproc
 	.issue_mode dual
@@ -133,9 +133,9 @@ GetADCCounts:
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/get_adc_counts.c"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\get_adc_counts.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"XUD_SPEED_FS"
 .Linfo_string4:

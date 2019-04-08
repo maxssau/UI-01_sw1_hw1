@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock_asm.S">
+<preCompilationAnalysis file="F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock_asm.S">
   <fCall global="true" name="swlock_try_acquire"/>
   <fCall global="true" name="swlock_try_acquire.nstackwords"/>
   <fCall global="true" name="swlock_try_acquire.maxcores"/>

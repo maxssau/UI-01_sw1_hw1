@@ -14,15 +14,15 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/descriptors.h"
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_descriptors.h"
-	.file	3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudiocommon.h"
-	.file	4 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
-	.file	5 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/dfu.h"
-	.file	6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/endpoint0.c"
-	.file	7 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
-	.file	8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/descriptor_defs.h"
-	.file	9 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+	.file	1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\descriptors.h"
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_descriptors.h"
+	.file	3 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usbaudiocommon.h"
+	.file	4 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usbaudio20.h"
+	.file	5 "F:/Projects/UI-01_sw1_hw1/module_dfu/src\\dfu.h"
+	.file	6 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\endpoint0.c"
+	.file	7 "F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.file	8 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\descriptor_defs.h"
+	.file	9 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h"
 	.section	.cp.rodata.cst4,"aMc",@progbits,4
 	.cc_top .LCPI0_0.data,.LCPI0_0
 	.align	4
@@ -57,31 +57,24 @@ Endpoint0:
 	.issue_mode dual
 	{
 		nop
-		dualentsp 38
+		dualentsp 30
 	}
 .Ltmp0:
-	.cfi_def_cfa_offset 152
+	.cfi_def_cfa_offset 120
 .Ltmp1:
 	.cfi_offset 15, 0
-	{
-		nop
-		stw r4, sp[30]
-	}
-	{
-		nop
-		stw r5, sp[31]
-	}
+	std r5, r4, sp[11]
 .Ltmp2:
 	.cfi_offset 4, -32
 .Ltmp3:
 	.cfi_offset 5, -28
 	{
 		nop
-		stw r6, sp[32]
+		stw r6, sp[24]
 	}
 	{
 		nop
-		stw r7, sp[33]
+		stw r7, sp[25]
 	}
 .Ltmp4:
 	.cfi_offset 6, -24
@@ -89,11 +82,11 @@ Endpoint0:
 	.cfi_offset 7, -20
 	{
 		nop
-		stw r8, sp[34]
+		stw r8, sp[26]
 	}
 	{
 		nop
-		stw r9, sp[35]
+		stw r9, sp[27]
 	}
 .Ltmp6:
 	.cfi_offset 8, -16
@@ -101,55 +94,52 @@ Endpoint0:
 	.cfi_offset 9, -12
 	{
 		nop
-		stw r10, sp[36]
+		stw r10, sp[28]
 	}
 .Ltmp8:
 	.cfi_offset 10, -8
-	{
-		nop
-		stw r3, sp[21]
-	}
 .Ltmp9:
 	{
-		mov r4, r1
-		stw r2, sp[23]
+		mov r10, r2
+		stw r3, sp[15]
 	}
 .Ltmp10:
 	{
+		mov r4, r1
+		ldw r1, sp[32]
+	}
+.Ltmp11:
+	{
 		nop
-		ldw r1, sp[40]
+		ldw r2, sp[33]
 	}
 	{
 		nop
-		ldw r2, sp[41]
-	}
-	{
-		nop
-		stw r2, sp[20]
+		stw r2, sp[14]
 	}
 	.loc	6 210 22 prologue_end
-.Ltmp11:
-	bl XUD_InitEp
 .Ltmp12:
-	{
-		mov r0, r4
-		stw r0, sp[24]
-	}
-.Ltmp13:
-	.loc	6 211 22
 	bl XUD_InitEp
+.Ltmp13:
 	{
-		mov r10, r0
-		nop
+		mov r6, r0
+		mov r0, r4
 	}
 .Ltmp14:
 	.loc	6 211 22
+	bl XUD_InitEp
+	{
+		mov r8, r0
+		nop
+	}
+.Ltmp15:
+	.loc	6 211 22
 	{
 		ldc r7, 0
-		stw r10, sp[26]
+		stw r8, sp[18]
 	}
 	.loc	6 216 9
-.Ltmp15:
+.Ltmp16:
 	stw r7, dp[volsOut+8]
 	stw r7, dp[volsOut+4]
 	stw r7, dp[volsOut]
@@ -157,7 +147,7 @@ Endpoint0:
 	stw r7, dp[mutesOut+8]
 	stw r7, dp[mutesOut+4]
 	stw r7, dp[mutesOut]
-.Ltmp16:
+.Ltmp17:
 	.loc	6 222 9
 	stw r7, dp[volsIn+8]
 	stw r7, dp[volsIn+4]
@@ -169,11 +159,11 @@ Endpoint0:
 	ldc r0, 144
 	ldaw r1, dp[mixer1Weights]
 	ldc r2, 32769
-.Ltmp17:
+.Ltmp18:
 .LBB0_1:
 	.loc	6 230 9
 	st16 r2, r1[r7]
-.Ltmp18:
+.Ltmp19:
 	.loc	6 228 5
 	{
 		sub r0, r0, 1
@@ -183,7 +173,7 @@ Endpoint0:
 	# LOOPMARKER 0
 	.loc	6 228 5
 	bt r0, .LBB0_1
-.Ltmp19:
+.Ltmp20:
 	.loc	6 234 5
 	ldaw r0, dp[mixer1Weights]
 	st16 r7, r0[r7]
@@ -225,43 +215,43 @@ Endpoint0:
 	.loc	6 241 5
 	st16 r7, r0[r7]
 	ldaw r0, dp[channelMapAud]
-.Ltmp20:
+.Ltmp21:
 	.loc	6 247 8
 	st8 r7, r0[r7]
 	{
-		mkmsk r8, 1
+		mkmsk r4, 1
 		nop
 	}
-.Ltmp21:
+.Ltmp22:
 	.loc	6 247 8
-	st8 r8, r0[r8]
+	st8 r4, r0[r4]
 	ldaw r0, dp[channelMapUsb]
 	{
 		ldc r1, 2
 		nop
 	}
-.Ltmp22:
+.Ltmp23:
 	.loc	6 254 8
 	st8 r1, r0[r7]
 	{
-		mkmsk r5, 2
+		mkmsk r2, 2
 		nop
 	}
-.Ltmp23:
-	.loc	6 254 8
-	st8 r5, r0[r8]
-	ldaw r0, dp[channelMap]
 .Ltmp24:
-	.loc	6 261 9
-	st8 r7, r0[r7]
+	.loc	6 254 8
+	st8 r2, r0[r4]
+	ldaw r0, dp[channelMap]
 .Ltmp25:
 	.loc	6 261 9
-	st8 r8, r0[r8]
+	st8 r7, r0[r7]
+.Ltmp26:
+	.loc	6 261 9
+	st8 r4, r0[r4]
 	.loc	6 261 9
 	st8 r1, r0[r1]
 	.loc	6 261 9
-	st8 r5, r0[r5]
-.Ltmp26:
+	st8 r2, r0[r2]
+.Ltmp27:
 	.loc	6 286 9
 	{
 		mov r0, r7
@@ -269,79 +259,75 @@ Endpoint0:
 	}
 	bl DFUReportResetState
 	bf r0, .LBB0_4
-.Ltmp27:
+.Ltmp28:
 	{
 		ldc r0, 4
-		ldw r1, sp[23]
+		nop
 	}
-.Ltmp28:
 	.loc	6 289 9
+.Ltmp29:
 	#APP
-	out res[r1], r0
+	out res[r10], r0
 	#NO_APP
 	ldw r0, cp[.LCPI0_0]
 	.loc	6 290 9
 	#APP
-	out res[r1], r0
+	out res[r10], r0
 	#NO_APP
-.Ltmp29:
 	.loc	6 292 9
-	stw r8, dp[DFU_mode_active]
+	stw r4, dp[DFU_mode_active]
 .Ltmp30:
 .LBB0_4:
 	{
-		ldaw r0, sp[27]
-		ldc r1, 2
+		ldaw r4, sp[19]
+		ldc r0, 2
 	}
 	.loc	6 306 13
 .Ltmp31:
 	{
-		or r0, r0, r1
+		or r5, r4, r0
 		nop
 	}
 	{
-		mkmsk r6, 32
-		stw r0, sp[22]
+		nop
+		stw r5, sp[16]
 	}
+	ldc r9, 8160
 	bu .LBB0_5
 .Ltmp32:
-.LBB0_68:
+.LBB0_75:
 	{
 		nop
-		ldw r10, sp[26]
+		ldw r8, sp[18]
 	}
 .Ltmp33:
 .LBB0_5:
 	.loc	6 299 31
 	{
-		mov r1, r10
-		ldw r0, sp[24]
+		mov r0, r6
+		mov r1, r8
 	}
 	{
-		ldaw r2, sp[27]
+		mov r2, r4
 		nop
 	}
 	bl USB_GetSetupPacket
 	{
-		mov r10, r0
+		mov r8, r0
 		nop
 	}
 .Ltmp34:
-	bt r10, .LBB0_56
+	bt r8, .LBB0_66
 .Ltmp35:
 	{
 		nop
-		ldw r0, sp[22]
-	}
-	{
-		nop
-		ld8u r0, r0[r7]
+		ld8u r0, r5[r7]
 	}
 	.loc	6 306 13
 .Ltmp36:
 	{
 		shl r0, r0, 7
-		ldw r2, sp[27]
+		ldw r2, sp[19]
 	}
 	.loc	6 306 13
 	{
@@ -357,10 +343,9 @@ Endpoint0:
 		or r0, r0, r1
 		shr r1, r2, 3
 	}
-	ldc r3, 8160
 	.loc	6 306 13
 	{
-		and r1, r1, r3
+		and r1, r1, r9
 		nop
 	}
 	.loc	6 306 13
@@ -374,31 +359,290 @@ Endpoint0:
 		lss r2, r2, r1
 		nop
 	}
-	bt r2, .LBB0_21
+	bt r2, .LBB0_23
 .Ltmp37:
-	bf r1, .LBB0_52
-.Ltmp38:
 	{
-		eq r2, r1, 1
+		ldc r2, 32
 		nop
 	}
-	bf r2, .LBB0_9
+	{
+		lss r2, r2, r1
+		nop
+	}
+	bt r2, .LBB0_17
+.Ltmp38:
+	bt r1, .LBB0_9
 .Ltmp39:
+	.loc	6 500 21
+	{
+		eq r0, r0, 9
+		nop
+	}
+	bf r0, .LBB0_67
+.Ltmp40:
+	{
+		mkmsk r0, 1
+		nop
+	}
+	.loc	6 509 33
+.Ltmp41:
+	bl UserHostActive
+	bu .LBB0_67
+.Ltmp42:
+.LBB0_23:
+	ldc r2, 161
+	{
+		eq r2, r1, r2
+		nop
+	}
+	bt r2, .LBB0_51
+.Ltmp43:
+	ldc r0, 162
+	bu .LBB0_19
+.Ltmp44:
+.LBB0_17:
+	{
+		ldc r2, 33
+		nop
+	}
+	{
+		eq r2, r1, r2
+		nop
+	}
+	bf r2, .LBB0_18
+.Ltmp45:
+.LBB0_51:
+	{
+		mov r5, r10
+		add r1, r4, 6
+	}
+.Ltmp46:
+	{
+		mov r9, r4
+		ld16s r10, r1[r7]
+	}
+.Ltmp47:
+	.loc	6 546 25
+	{
+		mov r4, r10
+		nop
+	}
+	{
+		zext r4, 8
+		nop
+	}
+.Ltmp48:
+	.loc	6 554 29
+	ldw r1, dp[DFU_mode_active]
+	.loc	6 554 29
+	{
+		mov r2, r7
+		mkmsk r3, 1
+	}
+	bt r1, .LBB0_53
+.Ltmp49:
+	{
+		mkmsk r2, 2
+		nop
+	}
+.Ltmp50:
+.LBB0_53:
+	.loc	6 546 25
+	{
+		zext r10, 16
+		eq r2, r4, r2
+	}
+.Ltmp51:
+	{
+		mov r8, r3
+		nop
+	}
+	bf r2, .LBB0_59
+.Ltmp52:
+	.loc	6 561 29
+	{
+		add r0, r0, 11
+		stw r7, sp[17]
+	}
+	bt r1, .LBB0_57
+.Ltmp53:
+	{
+		zext r0, 8
+		ldc r1, 2
+	}
+	{
+		lsu r0, r0, r1
+		nop
+	}
+	bt r0, .LBB0_57
+.Ltmp54:
+	{
+		ldc r0, 4
+		nop
+	}
+	.loc	6 569 33
+.Ltmp55:
+	#APP
+	out res[r5], r0
+	#NO_APP
+	ldw r0, cp[.LCPI0_0]
+	.loc	6 570 33
+	#APP
+	out res[r5], r0
+	#NO_APP
+	{
+		mkmsk r0, 1
+		nop
+	}
+	.loc	6 572 12
+	#APP
+	chkct res[r5], r0
+	#NO_APP
+.Ltmp56:
+.LBB0_57:
+	ldaw r0, dp[g_interfaceAlt]
+	{
+		nop
+		ld8u r0, r0[r10]
+	}
+.Ltmp57:
+	.loc	6 576 38
+	{
+		ldaw r2, sp[17]
+		ldw r1, sp[14]
+	}
+	std r2, r1, sp[1]
+.Ltmp58:
+	{
+		mov r0, r6
+		stw r0, sp[1]
+	}
+	{
+		ldaw r1, sp[18]
+		mov r2, r9
+	}
+	{
+		mov r3, r7
+		nop
+	}
+	bl DFUDeviceRequests
+.Ltmp59:
+	{
+		mov r8, r0
+		ldw r0, sp[17]
+	}
+.Ltmp60:
+	bf r0, .LBB0_59
+.Ltmp61:
+	ldw r0, cp[.LCPI0_1]
+	.loc	6 580 33
+.Ltmp62:
+	bl DFUDelay
+	.loc	6 581 33
+	{
+		mov r0, r5
+		nop
+	}
+	bl device_reboot
+.Ltmp63:
+.LBB0_59:
+	ldc r0, 254
+	.loc	6 589 28
+.Ltmp64:
+	{
+		and r0, r10, r0
+		nop
+	}
+	.loc	6 589 28
+	{
+		eq r0, r0, 0
+		nop
+	}
+	{
+		eq r0, r0, 0
+		eq r1, r4, 2
+	}
+	.loc	6 589 28
+	{
+		eq r1, r1, 0
+		nop
+	}
+	.loc	6 589 28
+	{
+		and r1, r1, r0
+		nop
+	}
+	ldw r0, dp[DFU_mode_active]
+	{
+		mov r10, r5
+		nop
+	}
+.Ltmp65:
+	.loc	6 589 28
+	bt r1, .LBB0_60
+.Ltmp66:
+	{
+		mov r4, r9
+		ldw r5, sp[16]
+	}
+.Ltmp67:
+	ldc r9, 8160
+	bt r0, .LBB0_66
+.Ltmp68:
+	.loc	6 596 32
+	ldw r0, dp[g_curUsbSpeed]
+	.loc	6 598 42
+.Ltmp69:
+	{
+		eq r0, r0, 2
+		ldw r1, sp[18]
+	}
+.Ltmp70:
+	.loc	6 596 32
+	bf r0, .LBB0_64
+.Ltmp71:
+	{
+		nop
+		ldw r0, sp[31]
+	}
+	{
+		nop
+		stw r0, sp[2]
+	}
+	{
+		nop
+		ldw r0, sp[15]
+	}
+	.loc	6 598 42
+.Ltmp72:
+	{
+		mov r0, r6
+		stw r0, sp[1]
+	}
+	{
+		mov r2, r4
+		mov r3, r10
+	}
+	bl AudioClassRequests_2
+	bu .LBB0_65
+.Ltmp73:
+.LBB0_9:
+	{
+		eq r1, r1, 1
+		nop
+	}
+	bf r1, .LBB0_67
+.Ltmp74:
 	.loc	6 311 24
 	{
 		eq r0, r0, 11
 		nop
 	}
-	bf r0, .LBB0_57
-.Ltmp40:
-	{
-		ldaw r0, sp[27]
-		nop
-	}
+	bf r0, .LBB0_67
+.Ltmp75:
 	.loc	6 313 25
-.Ltmp41:
 	{
-		add r0, r0, 6
+		add r0, r4, 6
 		nop
 	}
 	{
@@ -415,11 +659,11 @@ Endpoint0:
 		eq r1, r0, 2
 		nop
 	}
-	bf r1, .LBB0_24
-.Ltmp42:
+	bf r1, .LBB0_12
+.Ltmp76:
 	{
 		nop
-		ldw r1, sp[28]
+		ldw r1, sp[20]
 	}
 	ldw r2, dp[g_curStreamAlt_In]
 	{
@@ -427,30 +671,28 @@ Endpoint0:
 		zext r1, 16
 	}
 	.loc	6 354 36
-.Ltmp43:
+.Ltmp77:
 	{
 		eq r3, r1, 1
 		nop
 	}
-	bf r3, .LBB0_37
-.Ltmp44:
+	bf r3, .LBB0_28
+.Ltmp78:
 	{
 		eq r2, r2, r1
 		nop
 	}
-	bt r2, .LBB0_37
-.Ltmp45:
+	bt r2, .LBB0_28
+.Ltmp79:
 	.loc	6 360 41
 	stw r1, dp[g_curStreamAlt_In]
-.Ltmp46:
 	{
 		ldc r2, 9
-		ldw r3, sp[23]
+		nop
 	}
-.Ltmp47:
 	.loc	6 363 41
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 364 41
 	{
@@ -465,18 +707,20 @@ Endpoint0:
 	}
 	.loc	6 364 41
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 366 44
-.Ltmp48:
+.Ltmp80:
 	ldw r2, dp[g_curUsbSpeed]
-	.loc	6 366 44
+.Ltmp81:
 	{
+		mov r8, r4
 		eq r2, r2, 2
-		nop
 	}
-	bf r2, .LBB0_35
-.Ltmp49:
+.Ltmp82:
+	.loc	6 366 44
+	bf r2, .LBB0_32
+.Ltmp83:
 	.loc	6 368 45
 	ldaw r11, cp[g_chanCount_In_HS]
 	{
@@ -485,7 +729,7 @@ Endpoint0:
 	}
 	.loc	6 368 45
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 369 45
 	ldaw r11, cp[g_subSlot_In_HS]
@@ -495,7 +739,7 @@ Endpoint0:
 	}
 	.loc	6 369 45
 	#APP
-	out res[r3], r1
+	out res[r10], r1
 	#NO_APP
 	{
 		ldc r1, 24
@@ -503,232 +747,59 @@ Endpoint0:
 	}
 	.loc	6 370 45
 	#APP
-	out res[r3], r1
+	out res[r10], r1
 	#NO_APP
-	bu .LBB0_36
-.Ltmp50:
-.LBB0_21:
-	ldc r2, 161
-	bu .LBB0_10
-.Ltmp51:
-.LBB0_52:
-	.loc	6 500 21
+	bu .LBB0_33
+.Ltmp84:
+.LBB0_18:
 	{
-		eq r0, r0, 9
+		ldc r0, 34
 		nop
 	}
-	bf r0, .LBB0_57
-.Ltmp52:
-	.loc	6 509 33
-	{
-		mov r0, r8
-		nop
-	}
-	bl UserHostActive
-	bu .LBB0_57
-.Ltmp53:
-.LBB0_9:
-	{
-		ldc r2, 33
-		nop
-	}
-.Ltmp54:
-.LBB0_10:
-	{
-		eq r1, r1, r2
-		nop
-	}
-	bf r1, .LBB0_57
-.Ltmp55:
-	{
-		mov r5, r8
-		ldw r9, sp[23]
-	}
-.Ltmp56:
-	{
-		ldaw r1, sp[27]
-		nop
-	}
-	.loc	6 546 25
-.Ltmp57:
-	{
-		add r1, r1, 6
-		nop
-	}
-	{
-		nop
-		ld16s r4, r1[r7]
-	}
-	.loc	6 546 25
-	{
-		mov r8, r4
-		nop
-	}
-	{
-		zext r8, 8
-		nop
-	}
-.Ltmp58:
-	.loc	6 554 29
-	ldw r1, dp[DFU_mode_active]
-	.loc	6 554 29
-	{
-		mov r2, r7
-		nop
-	}
-	bt r1, .LBB0_13
-.Ltmp59:
-	{
-		mkmsk r2, 2
-		nop
-	}
-.Ltmp60:
-.LBB0_13:
-	.loc	6 546 25
-	{
-		zext r4, 16
-		eq r2, r8, r2
-	}
-.Ltmp61:
-	{
-		mov r10, r5
-		nop
-	}
-	bf r2, .LBB0_19
-.Ltmp62:
-	.loc	6 561 29
-	{
-		add r0, r0, 11
-		stw r7, sp[25]
-	}
-	bt r1, .LBB0_17
-.Ltmp63:
-	{
-		zext r0, 8
-		ldc r1, 2
-	}
-	{
-		lsu r0, r0, r1
-		nop
-	}
-	bt r0, .LBB0_17
-.Ltmp64:
-	{
-		ldc r0, 4
-		nop
-	}
-	.loc	6 569 33
-.Ltmp65:
-	#APP
-	out res[r9], r0
-	#NO_APP
-	ldw r0, cp[.LCPI0_0]
-	.loc	6 570 33
-	#APP
-	out res[r9], r0
-	#NO_APP
-	.loc	6 572 12
-	#APP
-	chkct res[r9], r5
-	#NO_APP
-.Ltmp66:
-.LBB0_17:
-	ldaw r0, dp[g_interfaceAlt]
-	{
-		nop
-		ld8u r0, r0[r4]
-	}
-.Ltmp67:
-	.loc	6 576 38
-	{
-		ldaw r2, sp[25]
-		ldw r1, sp[20]
-	}
-	std r2, r1, sp[1]
-	{
-		nop
-		stw r0, sp[1]
-	}
-.Ltmp68:
-	{
-		ldaw r1, sp[26]
-		ldw r0, sp[24]
-	}
-	{
-		ldaw r2, sp[27]
-		mov r3, r7
-	}
-	bl DFUDeviceRequests
-.Ltmp69:
-	{
-		mov r10, r0
-		ldw r0, sp[25]
-	}
-.Ltmp70:
-	bf r0, .LBB0_19
-.Ltmp71:
-	ldw r0, cp[.LCPI0_1]
-	.loc	6 580 33
-.Ltmp72:
-	bl DFUDelay
-	.loc	6 581 33
-	{
-		mov r0, r9
-		nop
-	}
-	bl device_reboot
-.Ltmp73:
+.Ltmp85:
 .LBB0_19:
-	ldc r0, 254
-	.loc	6 589 28
-.Ltmp74:
 	{
-		and r0, r4, r0
+		eq r0, r1, r0
 		nop
 	}
-	.loc	6 589 28
+	bf r0, .LBB0_67
+.Ltmp86:
+	.loc	6 526 25
 	{
-		eq r0, r0, 0
-		nop
-	}
-	{
-		eq r0, r0, 0
-		eq r1, r8, 2
-	}
-	.loc	6 589 28
-	{
-		eq r1, r1, 0
-		nop
-	}
-	.loc	6 589 28
-	{
-		and r1, r1, r0
-		nop
-	}
-	ldw r0, dp[DFU_mode_active]
-	bt r1, .LBB0_20
-.Ltmp75:
-	{
-		mov r8, r5
-		stw r9, sp[23]
-	}
-	{
-		mkmsk r9, 2
+		add r0, r4, 6
 		nop
 	}
 	{
-		mov r5, r9
+		nop
+		ld16s r1, r0[r7]
+	}
+	.loc	6 528 29
+.Ltmp87:
+	{
+		zext r1, 7
 		nop
 	}
-	bt r0, .LBB0_56
-.Ltmp76:
+	ldw r0, dp[g_curUsbSpeed]
+	.loc	6 528 29
+	{
+		eq r1, r1, 1
+		nop
+	}
+	bf r1, .LBB0_67
+.Ltmp88:
+	{
+		eq r0, r0, 1
+		nop
+	}
+	bf r0, .LBB0_67
+.Ltmp89:
 	{
 		nop
-		ldw r1, sp[26]
+		ldw r1, sp[18]
 	}
 	{
 		nop
-		ldw r0, sp[39]
+		ldw r0, sp[31]
 	}
 	{
 		nop
@@ -736,66 +807,88 @@ Endpoint0:
 	}
 	{
 		nop
-		ldw r0, sp[21]
+		ldw r0, sp[15]
 	}
+	.loc	6 533 42
+.Ltmp90:
 	{
-		nop
+		mov r0, r6
 		stw r0, sp[1]
 	}
-	.loc	6 605 38
-.Ltmp77:
 	{
-		ldaw r2, sp[27]
-		ldw r0, sp[24]
+		mov r2, r4
+		mov r3, r10
+	}
+	bl AudioEndpointRequests_1
+	bu .LBB0_65
+.Ltmp91:
+.LBB0_60:
+	{
+		mov r4, r9
+		ldw r5, sp[16]
+	}
+.Ltmp92:
+	ldc r9, 8160
+	bu .LBB0_66
+.LBB0_64:
+.Ltmp93:
+	{
+		nop
+		ldw r0, sp[31]
 	}
 	{
 		nop
-		ldw r3, sp[23]
+		stw r0, sp[2]
 	}
-	bl AudioClassRequests_2
 	{
-		mov r10, r0
+		nop
+		ldw r0, sp[15]
+	}
+	.loc	6 602 42
+.Ltmp94:
+	{
+		mov r0, r6
+		stw r0, sp[1]
+	}
+	{
+		mov r2, r4
+		mov r3, r10
+	}
+	bl AudioClassRequests_1
+.Ltmp95:
+.LBB0_65:
+	{
+		mov r8, r0
 		nop
 	}
-.Ltmp78:
-	bu .LBB0_56
-.Ltmp79:
-.LBB0_20:
-	{
-		mov r8, r5
-		stw r9, sp[23]
-	}
-	{
-		mkmsk r9, 2
-		nop
-	}
-	{
-		mov r5, r9
-		nop
-	}
-.Ltmp80:
-.LBB0_56:
+.Ltmp96:
+.LBB0_66:
 	.loc	6 631 12
 	{
-		eq r0, r10, 1
+		eq r0, r8, 1
 		nop
 	}
-	bf r0, .LBB0_64
-	bu .LBB0_57
-.Ltmp81:
-.LBB0_24:
+	bf r0, .LBB0_71
+	bu .LBB0_67
+.Ltmp97:
+.LBB0_12:
 	{
+		mov r8, r4
 		eq r1, r0, 1
+	}
+.Ltmp98:
+	{
+		mkmsk r4, 1
 		nop
 	}
-	bf r1, .LBB0_37
-.Ltmp82:
+	bf r1, .LBB0_34
+.Ltmp99:
 	{
 		nop
-		ldw r0, sp[28]
+		ldw r0, sp[20]
 	}
 	.loc	6 319 36
-.Ltmp83:
+.Ltmp100:
 	{
 		mov r1, r0
 		nop
@@ -819,25 +912,23 @@ Endpoint0:
 		shr r0, r0, 16
 		nop
 	}
-	bt r3, .LBB0_37
-.Ltmp84:
+	bt r3, .LBB0_34
+.Ltmp101:
 	{
 		eq r2, r2, r1
 		nop
 	}
-	bt r2, .LBB0_37
-.Ltmp85:
+	bt r2, .LBB0_34
+.Ltmp102:
 	.loc	6 325 41
 	stw r1, dp[g_curStreamAlt_Out]
-.Ltmp86:
 	{
 		ldc r2, 8
-		ldw r3, sp[23]
+		nop
 	}
-.Ltmp87:
 	.loc	6 328 41
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 329 41
 	{
@@ -852,28 +943,28 @@ Endpoint0:
 	}
 	.loc	6 329 41
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 331 44
-.Ltmp88:
+.Ltmp103:
 	ldw r2, dp[g_curUsbSpeed]
 	{
-		ldc r11, 2
+		ldc r3, 2
 		nop
 	}
 	.loc	6 333 45
-.Ltmp89:
+.Ltmp104:
 	#APP
-	out res[r3], r11
+	out res[r10], r3
 	#NO_APP
-.Ltmp90:
+.Ltmp105:
 	.loc	6 331 44
 	{
 		eq r2, r2, 2
 		nop
 	}
-	bf r2, .LBB0_29
-.Ltmp91:
+	bf r2, .LBB0_25
+.Ltmp106:
 	.loc	6 334 45
 	ldaw r11, cp[g_subSlot_Out_HS]
 	{
@@ -882,7 +973,7 @@ Endpoint0:
 	}
 	.loc	6 334 45
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 335 45
 	ldaw r11, cp[g_sampRes_Out_HS]
@@ -892,25 +983,32 @@ Endpoint0:
 	}
 	.loc	6 335 45
 	#APP
-	out res[r3], r1
+	out res[r10], r1
 	#NO_APP
-.Ltmp92:
+.Ltmp107:
 	.loc	6 345 41
 	#APP
-	chkct res[r3], r8
+	chkct res[r10], r4
 	#NO_APP
-.Ltmp93:
-	bu .LBB0_37
-.Ltmp94:
-.LBB0_35:
+	bu .LBB0_34
+.Ltmp108:
+.LBB0_28:
+	{
+		mov r8, r4
+		mkmsk r4, 1
+	}
+.Ltmp109:
+	bu .LBB0_34
+.Ltmp110:
+.LBB0_32:
 	{
 		ldc r2, 2
 		nop
 	}
 	.loc	6 374 45
-.Ltmp95:
+.Ltmp111:
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 375 45
 	ldaw r11, cp[g_subSlot_In_FS]
@@ -920,7 +1018,7 @@ Endpoint0:
 	}
 	.loc	6 375 45
 	#APP
-	out res[r3], r1
+	out res[r10], r1
 	#NO_APP
 	{
 		ldc r1, 24
@@ -928,18 +1026,22 @@ Endpoint0:
 	}
 	.loc	6 376 45
 	#APP
-	out res[r3], r1
+	out res[r10], r1
 	#NO_APP
-.Ltmp96:
-.LBB0_36:
+.Ltmp112:
+.LBB0_33:
+	{
+		mkmsk r4, 1
+		nop
+	}
+.Ltmp113:
 	.loc	6 380 41
 	#APP
-	chkct res[r3], r8
+	chkct res[r10], r4
 	#NO_APP
-.Ltmp97:
-	bu .LBB0_37
-.Ltmp98:
-.LBB0_29:
+	bu .LBB0_34
+.Ltmp114:
+.LBB0_25:
 	.loc	6 340 45
 	ldaw r11, cp[g_subSlot_Out_FS]
 	{
@@ -948,7 +1050,7 @@ Endpoint0:
 	}
 	.loc	6 340 45
 	#APP
-	out res[r3], r2
+	out res[r10], r2
 	#NO_APP
 	.loc	6 341 45
 	ldaw r11, cp[g_sampRes_Out_FS]
@@ -958,15 +1060,15 @@ Endpoint0:
 	}
 	.loc	6 341 45
 	#APP
-	out res[r3], r1
+	out res[r10], r1
 	#NO_APP
-.Ltmp99:
+.Ltmp115:
 	.loc	6 345 41
 	#APP
-	chkct res[r3], r8
+	chkct res[r10], r4
 	#NO_APP
-.Ltmp100:
-.LBB0_37:
+.Ltmp116:
+.LBB0_34:
 	.loc	6 410 29
 	{
 		sub r0, r0, 1
@@ -976,134 +1078,150 @@ Endpoint0:
 		zext r0, 16
 		nop
 	}
+.Ltmp117:
 	.loc	6 410 29
 	{
-		lsu r0, r8, r0
-		nop
+		lsu r0, r4, r0
+		mov r4, r8
 	}
-	bt r0, .LBB0_57
-.Ltmp101:
+.Ltmp118:
+	bt r0, .LBB0_67
+.Ltmp119:
 	{
 		nop
-		ldw r0, sp[28]
+		ldw r0, sp[20]
 	}
 	{
 		shr r1, r0, 16
 		zext r0, 16
 	}
 	.loc	6 413 32
-.Ltmp102:
-	bf r0, .LBB0_42
-.Ltmp103:
-	ldaw r0, dp[g_interfaceAlt]
+.Ltmp120:
+	bf r0, .LBB0_39
+.Ltmp121:
 	{
-		nop
-		ld8u r0, r0[r8]
-	}
-	bt r0, .LBB0_57
-.Ltmp104:
-	ldaw r0, dp[g_interfaceAlt]
-	{
-		ldc r1, 2
+		mkmsk r0, 1
 		nop
 	}
+	ldaw r1, dp[g_interfaceAlt]
 	{
 		nop
-		ld8u r0, r0[r1]
+		ld8u r0, r1[r0]
 	}
-	bt r0, .LBB0_57
-.Ltmp105:
+	bt r0, .LBB0_67
+.Ltmp122:
+	{
+		ldc r0, 2
+		nop
+	}
+	ldaw r1, dp[g_interfaceAlt]
+	{
+		nop
+		ld8u r0, r1[r0]
+	}
+	bt r0, .LBB0_67
+.Ltmp123:
 	.loc	6 416 33
 	bl UserAudioStreamStart
-	bu .LBB0_57
-.Ltmp106:
-.LBB0_42:
+	bu .LBB0_67
+.Ltmp124:
+.LBB0_39:
 	.loc	6 418 37
 	{
 		eq r2, r1, 1
 		nop
 	}
-	bf r2, .LBB0_47
-.Ltmp107:
-	bt r0, .LBB0_47
-.Ltmp108:
-	ldaw r2, dp[g_interfaceAlt]
+	bf r2, .LBB0_44
+.Ltmp125:
+	bt r0, .LBB0_44
+.Ltmp126:
 	{
-		nop
-		ld8u r2, r2[r8]
-	}
-	bf r2, .LBB0_47
-.Ltmp109:
-	ldaw r2, dp[g_interfaceAlt]
-	{
-		ldc r3, 2
+		mkmsk r2, 1
 		nop
 	}
+	ldaw r3, dp[g_interfaceAlt]
 	{
 		nop
-		ld8u r2, r2[r3]
+		ld8u r2, r3[r2]
 	}
-	bf r2, .LBB0_46
-.Ltmp110:
-.LBB0_47:
+	bf r2, .LBB0_44
+.Ltmp127:
+	{
+		ldc r2, 2
+		nop
+	}
+	ldaw r3, dp[g_interfaceAlt]
+	{
+		nop
+		ld8u r2, r3[r2]
+	}
+	bf r2, .LBB0_43
+.Ltmp128:
+.LBB0_44:
 	.loc	6 423 37
 	{
 		eq r1, r1, 2
 		nop
 	}
-	bf r1, .LBB0_57
-.Ltmp111:
-	bt r0, .LBB0_57
-.Ltmp112:
-	ldaw r0, dp[g_interfaceAlt]
+	bf r1, .LBB0_67
+.Ltmp129:
+	bt r0, .LBB0_67
+.Ltmp130:
 	{
-		ldc r1, 2
+		ldc r0, 2
 		nop
 	}
+	ldaw r1, dp[g_interfaceAlt]
 	{
 		nop
-		ld8u r0, r0[r1]
+		ld8u r0, r1[r0]
 	}
-	bf r0, .LBB0_57
-.Ltmp113:
-	ldaw r0, dp[g_interfaceAlt]
+	bf r0, .LBB0_67
+.Ltmp131:
+	{
+		mkmsk r0, 1
+		nop
+	}
+	ldaw r1, dp[g_interfaceAlt]
 	{
 		nop
-		ld8u r0, r0[r8]
+		ld8u r0, r1[r0]
 	}
-	bt r0, .LBB0_57
-.Ltmp114:
+	bt r0, .LBB0_67
+.Ltmp132:
 	.loc	6 426 33
 	bl UserAudioStreamStop
-	bu .LBB0_57
-.Ltmp115:
-.LBB0_46:
+	bu .LBB0_67
+.Ltmp133:
+.LBB0_43:
 	.loc	6 421 33
 	bl UserAudioStreamStop
-.Ltmp116:
-.LBB0_57:
+.Ltmp134:
+.LBB0_67:
 	.loc	6 634 17
-	ldw r0, dp[DFU_mode_active]
-	.loc	6 634 17
-	bf r0, .LBB0_58
-.Ltmp117:
+	ldw r2, dp[DFU_mode_active]
 	{
 		nop
-		ldw r1, sp[26]
+		ldw r1, sp[18]
 	}
 	.loc	6 749 26
-.Ltmp118:
+.Ltmp135:
 	ldw r0, dp[g_curUsbSpeed]
+.Ltmp136:
+	.loc	6 634 17
+	bf r2, .LBB0_68
+.Ltmp137:
 	{
-		ldc r2, 16
-		ldaw r3, sp[27]
+		ldc r2, 21
+		nop
 	}
 	.loc	6 749 26
-	std r3, r2, sp[4]
-.Ltmp119:
-	.loc	6 717 26
+.Ltmp138:
+	std r4, r2, sp[4]
+.Ltmp139:
+	.loc	6 639 26
 	ldaw r2, dp[g_strTable]
-.Ltmp120:
+.Ltmp140:
 	.loc	6 749 26
 	std r2, r7, sp[3]
 	{
@@ -1118,214 +1236,72 @@ Endpoint0:
 	std r7, r7, sp[2]
 	ldaw r0, dp[DFUcfgDesc]
 	{
-		nop
+		mov r0, r6
 		stw r0, sp[1]
-	}
-	{
-		nop
-		ldw r0, sp[24]
 	}
 	ldaw r2, dp[DFUdevDesc]
 	{
 		ldc r3, 18
 		nop
 	}
-	bl USB_StandardRequests
-	{
-		mov r10, r0
-		nop
-	}
-.Ltmp121:
-	bu .LBB0_64
-.Ltmp122:
-.LBB0_58:
-	.loc	6 650 20
-	ldw r0, dp[g_curUsbSpeed]
-	.loc	6 650 20
-	{
-		eq r3, r0, 2
-		nop
-	}
-	ldaw r1, dp[cfgDesc_Audio2+56]
-	{
-		ldc r2, 2
-		nop
-	}
-	.loc	6 654 21
-.Ltmp123:
-	st8 r2, r1[r5]
-	{
-		ldc r1, 4
-		nop
-	}
-	bt r3, .LBB0_60
-.Ltmp124:
-	.loc	6 682 17
-	{
-		mov r1, r5
-		nop
-	}
-.Ltmp125:
-.LBB0_60:
-	ldc r2, 392
-	bt r3, .LBB0_62
-.Ltmp126:
-	ldc r2, 294
-.Ltmp127:
-.LBB0_62:
-	ldaw r3, dp[cfgDesc_Audio2+180]
-	.loc	6 689 21
-.Ltmp128:
-	st8 r1, r3[r5]
-	{
-		ldc r3, 24
-		nop
-	}
-	ldaw r11, dp[cfgDesc_Audio2+184]
-.Ltmp129:
-	.loc	6 657 21
-	st8 r3, r11[r7]
-	ldaw r11, dp[cfgDesc_Audio2+188]
-	{
-		mov r4, r7
-		mov r7, r8
-	}
-	{
-		ldc r6, 2
-		nop
-	}
-.Ltmp130:
-	.loc	6 691 21
-	st8 r7, r11[r6]
-	st8 r2, r11[r7]
-	ldaw r11, dp[cfgDesc_Audio2+172]
-.Ltmp131:
-	.loc	6 659 21
-	st8 r6, r11[r7]
-	ldaw r11, dp[cfgDesc_Audio2+228]
-.Ltmp132:
-	.loc	6 695 21
-	st8 r6, r11[r7]
-	{
-		ldc r10, 16
-		nop
-	}
-.Ltmp133:
-	.loc	6 663 21
-	st8 r10, r11[r6]
-	{
-		ldc r11, 4
-		nop
-	}
-	ldaw r8, dp[cfgDesc_Audio2+232]
-.Ltmp134:
-	.loc	6 697 21
-	st8 r4, r8[r11]
-	ldc r9, 196
-	st8 r9, r8[r5]
-	ldaw r8, dp[cfgDesc_Audio2+216]
-.Ltmp135:
-	.loc	6 665 21
-	st8 r6, r8[r5]
-	ldaw r8, dp[cfgDesc_Audio2+272]
-.Ltmp136:
-	.loc	6 702 21
-	st8 r11, r8[r5]
-	ldaw r11, dp[cfgDesc_Audio2+276]
-	{
-		ldc r8, 32
-		nop
-	}
-.Ltmp137:
-	.loc	6 670 21
-	st8 r8, r11[r4]
-	ldaw r11, dp[cfgDesc_Audio2+280]
-.Ltmp138:
-	.loc	6 704 21
-	st8 r7, r11[r6]
-	ldc r8, 136
-	st8 r8, r11[r7]
-	ldaw r11, dp[cfgDesc_Audio2+264]
-.Ltmp139:
-	.loc	6 672 21
-	st8 r6, r11[r7]
-	{
-		mov r8, r7
-		mov r7, r4
-	}
-	ldaw r11, dp[cfgDesc_Audio2+104]
-.Ltmp140:
-	.loc	6 709 21
-	st8 r6, r11[r6]
-	ldaw r11, dp[cfgDesc_Audio2+328]
+	bu .LBB0_70
 .Ltmp141:
-	.loc	6 677 21
-	st8 r1, r11[r6]
+.LBB0_68:
+	{
+		ldc r2, 21
+		nop
+	}
+	.loc	6 639 26
 .Ltmp142:
-	.loc	6 711 21
-	st8 r3, r11[r5]
-	ldaw r1, dp[cfgDesc_Audio2+336]
-.Ltmp143:
-	.loc	6 679 21
-	st16 r2, r1[r7]
-	ldaw r1, dp[cfgDesc_Audio2+320]
-.Ltmp144:
-	.loc	6 713 21
-	st8 r6, r1[r7]
-.Ltmp145:
-	.loc	6 717 26
-	{
-		ldaw r2, sp[27]
-		ldw r1, sp[26]
-	}
-	.loc	6 717 26
-	std r2, r10, sp[4]
+	std r4, r2, sp[4]
 	ldaw r2, dp[g_strTable]
-	std r2, r7, sp[3]
-	ldc r2, 365
-	std r7, r2, sp[1]
-	{
-		nop
-		stw r0, sp[10]
-	}
-	std r7, r7, sp[2]
-	.loc	6 654 21
-.Ltmp146:
-	ldaw r0, dp[cfgDesc_Audio2]
-	{
-		nop
-		stw r0, sp[1]
-	}
-	{
-		nop
-		ldw r0, sp[24]
-	}
-.Ltmp147:
-	.loc	6 717 26
-	ldaw r2, dp[devDesc_Audio2]
+	ldc r3, 206
+	std r2, r3, sp[3]
+	ldaw r2, dp[cfgDesc_Audio1]
 	{
 		ldc r3, 18
 		nop
 	}
-	bl USB_StandardRequests
-.Ltmp148:
+	std r2, r3, sp[2]
+	ldaw r2, dp[devDesc_Audio1]
+	ldc r11, 365
+	std r2, r11, sp[1]
 	{
-		mov r10, r0
-		mkmsk r6, 32
+		nop
+		stw r0, sp[10]
 	}
-.Ltmp149:
-.LBB0_64:
-	.loc	6 759 13
+	ldaw r0, dp[cfgDesc_Audio2]
 	{
-		eq r0, r10, r6
+		mov r0, r6
+		stw r0, sp[1]
+	}
+	ldaw r2, dp[devDesc_Audio2]
+.Ltmp143:
+.LBB0_70:
+	.loc	6 749 26
+	bl USB_StandardRequests
+	{
+		mov r8, r0
 		nop
 	}
-	bf r0, .LBB0_68
-.Ltmp150:
+.Ltmp144:
+.LBB0_71:
+	{
+		mkmsk r0, 32
+		nop
+	}
+	.loc	6 759 13
+.Ltmp145:
+	{
+		eq r0, r8, r0
+		nop
+	}
+	bf r0, .LBB0_75
+.Ltmp146:
 	.loc	6 764 29
 	{
-		ldaw r1, sp[26]
-		ldw r0, sp[24]
+		mov r0, r6
+		ldaw r1, sp[18]
 	}
 	bl XUD_ResetEndpoint
 	.loc	6 764 29
@@ -1338,56 +1314,61 @@ Endpoint0:
 	.loc	6 768 13
 	stw r7, dp[g_curStreamAlt_In]
 	.loc	6 771 17
-.Ltmp151:
+.Ltmp147:
 	{
 		mov r0, r7
 		nop
 	}
 	bl DFUReportResetState
 	.loc	6 773 21
-.Ltmp152:
+.Ltmp148:
 	ldw r1, dp[DFU_mode_active]
-.Ltmp153:
+.Ltmp149:
 	.loc	6 771 17
-	bf r0, .LBB0_69
-.Ltmp154:
-	bt r1, .LBB0_68
-.Ltmp155:
+	bf r0, .LBB0_76
+.Ltmp150:
+	bt r1, .LBB0_75
+.Ltmp151:
+	{
+		mkmsk r0, 1
+		nop
+	}
 	.loc	6 775 21
-	stw r8, dp[DFU_mode_active]
-	bu .LBB0_68
-.Ltmp156:
-.LBB0_69:
-	bf r1, .LBB0_68
-.Ltmp157:
+.Ltmp152:
+	stw r0, dp[DFU_mode_active]
+	bu .LBB0_75
+.Ltmp153:
+.LBB0_76:
+	bf r1, .LBB0_75
+.Ltmp154:
 	.loc	6 782 21
 	stw r7, dp[DFU_mode_active]
 	ldw r0, cp[.LCPI0_2]
 	.loc	6 785 21
 	bl DFUDelay
-	{
-		nop
-		ldw r0, sp[23]
-	}
 	.loc	6 786 21
+	{
+		mov r0, r10
+		nop
+	}
 	bl device_reboot
 	{
 		nop
-		ldw r10, sp[26]
+		ldw r8, sp[18]
 	}
 	bu .LBB0_5
-.Ltmp158:
+.Ltmp155:
 	.cc_bottom Endpoint0.function
-	.set	Endpoint0.nstackwords,((XUD_InitEp.nstackwords $M USB_GetSetupPacket.nstackwords $M UserHostActive.nstackwords $M XUD_ResetEndpoint.nstackwords $M DFUReportResetState.nstackwords $M USB_StandardRequests.nstackwords $M UserAudioStreamStop.nstackwords $M UserAudioStreamStart.nstackwords $M DFUDeviceRequests.nstackwords $M AudioClassRequests_2.nstackwords $M DFUDelay.nstackwords $M device_reboot.nstackwords) + 38)
+	.set	Endpoint0.nstackwords,((XUD_InitEp.nstackwords $M USB_GetSetupPacket.nstackwords $M UserHostActive.nstackwords $M USB_StandardRequests.nstackwords $M XUD_ResetEndpoint.nstackwords $M DFUReportResetState.nstackwords $M UserAudioStreamStop.nstackwords $M UserAudioStreamStart.nstackwords $M DFUDeviceRequests.nstackwords $M AudioClassRequests_2.nstackwords $M AudioClassRequests_1.nstackwords $M DFUDelay.nstackwords $M device_reboot.nstackwords $M AudioEndpointRequests_1.nstackwords) + 30)
 	.globl	Endpoint0.nstackwords
-	.set	Endpoint0.maxcores,AudioClassRequests_2.maxcores $M DFUDelay.maxcores $M DFUDeviceRequests.maxcores $M DFUReportResetState.maxcores $M USB_GetSetupPacket.maxcores $M USB_StandardRequests.maxcores $M UserAudioStreamStart.maxcores $M UserAudioStreamStop.maxcores $M UserHostActive.maxcores $M XUD_InitEp.maxcores $M XUD_ResetEndpoint.maxcores $M device_reboot.maxcores $M 1
+	.set	Endpoint0.maxcores,AudioClassRequests_1.maxcores $M AudioClassRequests_2.maxcores $M AudioEndpointRequests_1.maxcores $M DFUDelay.maxcores $M DFUDeviceRequests.maxcores $M DFUReportResetState.maxcores $M USB_GetSetupPacket.maxcores $M USB_StandardRequests.maxcores $M UserAudioStreamStart.maxcores $M UserAudioStreamStop.maxcores $M UserHostActive.maxcores $M XUD_InitEp.maxcores $M XUD_ResetEndpoint.maxcores $M device_reboot.maxcores $M 1
 	.globl	Endpoint0.maxcores
-	.set	Endpoint0.maxtimers,AudioClassRequests_2.maxtimers $M DFUDelay.maxtimers $M DFUDeviceRequests.maxtimers $M DFUReportResetState.maxtimers $M USB_GetSetupPacket.maxtimers $M USB_StandardRequests.maxtimers $M UserAudioStreamStart.maxtimers $M UserAudioStreamStop.maxtimers $M UserHostActive.maxtimers $M XUD_InitEp.maxtimers $M XUD_ResetEndpoint.maxtimers $M device_reboot.maxtimers $M 0
+	.set	Endpoint0.maxtimers,AudioClassRequests_1.maxtimers $M AudioClassRequests_2.maxtimers $M AudioEndpointRequests_1.maxtimers $M DFUDelay.maxtimers $M DFUDeviceRequests.maxtimers $M DFUReportResetState.maxtimers $M USB_GetSetupPacket.maxtimers $M USB_StandardRequests.maxtimers $M UserAudioStreamStart.maxtimers $M UserAudioStreamStop.maxtimers $M UserHostActive.maxtimers $M XUD_InitEp.maxtimers $M XUD_ResetEndpoint.maxtimers $M device_reboot.maxtimers $M 0
 	.globl	Endpoint0.maxtimers
-	.set	Endpoint0.maxchanends,AudioClassRequests_2.maxchanends $M DFUDelay.maxchanends $M DFUDeviceRequests.maxchanends $M DFUReportResetState.maxchanends $M USB_GetSetupPacket.maxchanends $M USB_StandardRequests.maxchanends $M UserAudioStreamStart.maxchanends $M UserAudioStreamStop.maxchanends $M UserHostActive.maxchanends $M XUD_InitEp.maxchanends $M XUD_ResetEndpoint.maxchanends $M device_reboot.maxchanends $M 0
+	.set	Endpoint0.maxchanends,AudioClassRequests_1.maxchanends $M AudioClassRequests_2.maxchanends $M AudioEndpointRequests_1.maxchanends $M DFUDelay.maxchanends $M DFUDeviceRequests.maxchanends $M DFUReportResetState.maxchanends $M USB_GetSetupPacket.maxchanends $M USB_StandardRequests.maxchanends $M UserAudioStreamStart.maxchanends $M UserAudioStreamStop.maxchanends $M UserHostActive.maxchanends $M XUD_InitEp.maxchanends $M XUD_ResetEndpoint.maxchanends $M device_reboot.maxchanends $M 0
 	.globl	Endpoint0.maxchanends
-.Ltmp159:
-	.size	Endpoint0, .Ltmp159-Endpoint0
+.Ltmp156:
+	.size	Endpoint0, .Ltmp156-Endpoint0
 .Lfunc_end0:
 	.cfi_endproc
 
@@ -1432,51 +1413,65 @@ Endpoint0:
 	.cc_top .L.str5.data,.L.str5
 	.align	4
 	.type	.L.str5,@object
-	.size	.L.str5, 25
+	.size	.L.str5, 34
 .L.str5:
-.asciiz"L&Z audio Clock Selector"
+.asciiz"UI-01 interface (legacy usb mode)"
 	.cc_bottom .L.str5.data
 	.cc_top .L.str6.data,.L.str6
 	.align	4
 	.type	.L.str6,@object
-	.size	.L.str6, 25
+	.size	.L.str6, 35
 .L.str6:
-.asciiz"L&Z audio Internal Clock"
+.asciiz"UI-01 interface (legacy usb mode) "
 	.cc_bottom .L.str6.data
 	.cc_top .L.str7.data,.L.str7
 	.align	4
 	.type	.L.str7,@object
-	.size	.L.str7, 14
+	.size	.L.str7, 25
 .L.str7:
-.asciiz"L&Z audio DFU"
+.asciiz"L&Z audio Clock Selector"
 	.cc_bottom .L.str7.data
 	.cc_top .L.str8.data,.L.str8
 	.align	4
 	.type	.L.str8,@object
-	.size	.L.str8, 11
+	.size	.L.str8, 25
 .L.str8:
-.asciiz"Analogue 1"
+.asciiz"L&Z audio Internal Clock"
 	.cc_bottom .L.str8.data
 	.cc_top .L.str9.data,.L.str9
 	.align	4
 	.type	.L.str9,@object
-	.size	.L.str9, 11
+	.size	.L.str9, 14
 .L.str9:
-.asciiz"Analogue 2"
+.asciiz"L&Z audio DFU"
 	.cc_bottom .L.str9.data
 	.cc_top .L.str10.data,.L.str10
 	.align	4
 	.type	.L.str10,@object
-	.size	.L.str10, 14
+	.size	.L.str10, 11
 .L.str10:
-.asciiz"iAP Interface"
+.asciiz"Analogue 1"
 	.cc_bottom .L.str10.data
+	.cc_top .L.str11.data,.L.str11
+	.align	4
+	.type	.L.str11,@object
+	.size	.L.str11, 11
+.L.str11:
+.asciiz"Analogue 2"
+	.cc_bottom .L.str11.data
+	.cc_top .L.str12.data,.L.str12
+	.align	4
+	.type	.L.str12,@object
+	.size	.L.str12, 14
+.L.str12:
+.asciiz"iAP Interface"
+	.cc_bottom .L.str12.data
 	.section	.dp.data,"awd",@progbits
 	.cc_top g_strTable.data,g_strTable
 	.globl	g_strTable
 	.align	8
 	.type	g_strTable,@object
-	.size	g_strTable, 64
+	.size	g_strTable, 84
 g_strTable:
 	.long	.L.str
 	.long	.L.str1
@@ -1488,13 +1483,39 @@ g_strTable:
 	.long	.L.str4
 	.long	.L.str5
 	.long	.L.str6
+	.long	.L.str6
+	.long	.L.str6
+	.long	.L.str6
 	.long	.L.str7
 	.long	.L.str8
 	.long	.L.str9
-	.long	.L.str8
-	.long	.L.str9
 	.long	.L.str10
+	.long	.L.str11
+	.long	.L.str10
+	.long	.L.str11
+	.long	.L.str12
 	.cc_bottom g_strTable.data
+	.cc_top devDesc_Audio1.data,devDesc_Audio1
+	.globl	devDesc_Audio1
+	.align	8
+	.type	devDesc_Audio1,@object
+	.size	devDesc_Audio1, 18
+devDesc_Audio1:
+	.byte	18
+	.byte	1
+	.short	512
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	64
+	.short	8369
+	.short	11
+	.short	1778
+	.byte	1
+	.byte	3
+	.byte	0
+	.byte	1
+	.cc_bottom devDesc_Audio1.data
 	.cc_top devDesc_Audio2.data,devDesc_Audio2
 	.globl	devDesc_Audio2
 	.align	8
@@ -1536,6 +1557,16 @@ devQualDesc_Audio2.globound = 10
 devQualDesc_Audio2:
 .asciiz"\n\006\000\002\357\002\001@\001"
 	.cc_bottom devQualDesc_Audio2.data
+	.cc_top devQualDesc_Audio1.data,devQualDesc_Audio1
+	.globl	devQualDesc_Audio1.globound
+devQualDesc_Audio1.globound = 10
+	.globl	devQualDesc_Audio1
+	.align	8
+	.type	devQualDesc_Audio1,@object
+	.size	devQualDesc_Audio1, 10
+devQualDesc_Audio1:
+.asciiz"\n\006\000\002\000\000\000@\001"
+	.cc_bottom devQualDesc_Audio1.data
 	.cc_top devQualDesc_Null.data,devQualDesc_Null
 	.globl	devQualDesc_Null.globound
 devQualDesc_Null.globound = 10
@@ -1591,7 +1622,7 @@ cfgDesc_Audio2:
 	.byte	3
 	.byte	7
 	.byte	0
-	.byte	9
+	.byte	14
 	.byte	8
 	.byte	36
 	.byte	11
@@ -1599,7 +1630,7 @@ cfgDesc_Audio2:
 	.byte	1
 	.byte	41
 	.byte	3
-	.byte	8
+	.byte	13
 	.byte	17
 	.byte	36
 	.byte	2
@@ -1609,7 +1640,7 @@ cfgDesc_Audio2:
 	.byte	40
 	.byte	2
 	.long	0
-	.byte	11
+	.byte	16
 	.short	0
 	.byte	6
 	.byte	18
@@ -1640,7 +1671,7 @@ cfgDesc_Audio2:
 	.byte	40
 	.byte	2
 	.long	0
-	.byte	13
+	.byte	18
 	.short	0
 	.byte	0
 	.byte	18
@@ -1689,7 +1720,7 @@ cfgDesc_Audio2:
 	.long	1
 	.byte	2
 	.long	0
-	.byte	11
+	.byte	16
 	.byte	6
 	.byte	36
 	.byte	2
@@ -1727,7 +1758,7 @@ cfgDesc_Audio2:
 	.long	1
 	.byte	2
 	.long	0
-	.byte	11
+	.byte	16
 	.byte	6
 	.byte	36
 	.byte	2
@@ -1765,7 +1796,7 @@ cfgDesc_Audio2:
 	.long	2147483648
 	.byte	2
 	.long	0
-	.byte	11
+	.byte	16
 	.byte	6
 	.byte	36
 	.byte	2
@@ -1812,7 +1843,7 @@ cfgDesc_Audio2:
 	.long	1
 	.byte	2
 	.long	0
-	.byte	13
+	.byte	18
 	.byte	6
 	.byte	36
 	.byte	2
@@ -1832,7 +1863,7 @@ cfgDesc_Audio2:
 	.byte	0
 	.byte	2
 	.short	8
-	.ascii	"\t\004\003\000\000\376\001\001\n\t!\007\372\000@\000\020\001"
+	.ascii	"\t\004\003\000\000\376\001\001\017\t!\007\372\000@\000\020\001"
 	.cc_bottom cfgDesc_Audio2.data
 	.cc_top cfgDesc_Null.data,cfgDesc_Null
 	.globl	cfgDesc_Null.globound
@@ -1844,6 +1875,26 @@ cfgDesc_Null.globound = 19
 cfgDesc_Null:
 	.ascii	"\t\002\022\000\001\001\000\300\000\t\004\000\000\000\000\000\000\000\t"
 	.cc_bottom cfgDesc_Null.data
+	.section	.cp.rodata.4,"ac",@progbits
+	.cc_top num_freqs_a1.data,num_freqs_a1
+	.globl	num_freqs_a1
+	.align	4
+	.type	num_freqs_a1,@object
+	.size	num_freqs_a1, 4
+num_freqs_a1:
+	.long	3
+	.cc_bottom num_freqs_a1.data
+	.section	.dp.data,"awd",@progbits
+	.cc_top cfgDesc_Audio1.data,cfgDesc_Audio1
+	.globl	cfgDesc_Audio1.globound
+cfgDesc_Audio1.globound = 206
+	.globl	cfgDesc_Audio1
+	.align	8
+	.type	cfgDesc_Audio1,@object
+	.size	cfgDesc_Audio1, 206
+cfgDesc_Audio1:
+.asciiz"\t\002\316\000\003\001\000\300\000\t\004\000\000\000\001\001\000\b\n$\001\000\001B\000\002\001\002\f$\002\001\001\001\000\002\003\000\020\013\n$\006\n\001\001\000\003\003\000\t$\003\006\001\003\000\n\000\f$\002\002\001\002\000\002\003\000\022\f\t$\003\007\001\001\001\013\000\n$\006\013\002\001\000\003\003\000\t\004\001\000\000\001\002\000\t\t\004\001\001\001\001\002\000\004\007$\001\001\001\001\000\021$\002\001\002\003\030\003\200\273\000D\254\000\200\273\000\t\005\001\005&\001\001\000\201\007%\001\001\002\000\000\t\004\002\000\000\001\002\000\005\t\004\002\001\001\001\002\000\n\007$\001\007\001\001\000\021$\002\001\002\003\030\003\200\273\000D\254\000\200\273\000\t\005\201%&\001\001\000\000\007%\001\001\000\000"
+	.cc_bottom cfgDesc_Audio1.data
 	.cc_top DFUdevDesc.data,DFUdevDesc
 	.globl	DFUdevDesc.globound
 DFUdevDesc.globound = 18
@@ -2121,25 +2172,27 @@ mixer1Crossbar.globound = 18
 mixer1Crossbar:
 	.space	18
 	.cc_bottom mixer1Crossbar.data
-	.section	.cp.rodata,"ac",@progbits
+	.section	.cp.rodata.4,"ac",@progbits
 .Ldebug_end0:
-	.section	.dp.bss.4,"awd",@nobits
+	.section	.cp.rodata,"ac",@progbits
 .Ldebug_end1:
-	.section	.dp.bss,"awd",@nobits
+	.section	.dp.bss.4,"awd",@nobits
 .Ldebug_end2:
-	.section	.dp.data,"awd",@progbits
+	.section	.dp.bss,"awd",@nobits
 .Ldebug_end3:
-	.text
+	.section	.dp.data,"awd",@progbits
 .Ldebug_end4:
-	.file	10 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h"
-	.file	11 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h"
+	.text
+.Ldebug_end5:
+	.file	10 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h"
+	.file	11 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_requests.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/endpoint0.c"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\endpoint0.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"g_strTable"
 .Linfo_string4:
@@ -2161,448 +2214,468 @@ mixer1Crossbar:
 .Linfo_string12:
 .asciiz"usbOutputTermStr_Audio2"
 .Linfo_string13:
-.asciiz"clockSelectorStr"
+.asciiz"productStr_Audio1"
 .Linfo_string14:
-.asciiz"internalClockSourceStr"
+.asciiz"outputInterfaceStr_Audio1"
 .Linfo_string15:
-.asciiz"dfuStr"
+.asciiz"inputInterfaceStr_Audio1"
 .Linfo_string16:
-.asciiz"outputChanStr_1"
+.asciiz"usbInputTermStr_Audio1"
 .Linfo_string17:
-.asciiz"outputChanStr_2"
+.asciiz"usbOutputTermStr_Audio1"
 .Linfo_string18:
-.asciiz"inputChanStr_1"
+.asciiz"clockSelectorStr"
 .Linfo_string19:
-.asciiz"inputChanStr_2"
+.asciiz"internalClockSourceStr"
 .Linfo_string20:
-.asciiz"iAPInterfaceStr"
+.asciiz"dfuStr"
 .Linfo_string21:
-.asciiz"StringDescTable_t"
+.asciiz"outputChanStr_1"
 .Linfo_string22:
-.asciiz"devDesc_Audio2"
+.asciiz"outputChanStr_2"
 .Linfo_string23:
-.asciiz"bLength"
+.asciiz"inputChanStr_1"
 .Linfo_string24:
-.asciiz"unsigned char"
+.asciiz"inputChanStr_2"
 .Linfo_string25:
-.asciiz"bDescriptorType"
+.asciiz"iAPInterfaceStr"
 .Linfo_string26:
-.asciiz"bcdUSB"
+.asciiz"StringDescTable_t"
 .Linfo_string27:
-.asciiz"unsigned short"
+.asciiz"devDesc_Audio1"
 .Linfo_string28:
-.asciiz"bDeviceClass"
+.asciiz"bLength"
 .Linfo_string29:
-.asciiz"bDeviceSubClass"
+.asciiz"unsigned char"
 .Linfo_string30:
-.asciiz"bDeviceProtocol"
+.asciiz"bDescriptorType"
 .Linfo_string31:
-.asciiz"bMaxPacketSize0"
+.asciiz"bcdUSB"
 .Linfo_string32:
-.asciiz"idVendor"
+.asciiz"unsigned short"
 .Linfo_string33:
-.asciiz"idProduct"
+.asciiz"bDeviceClass"
 .Linfo_string34:
-.asciiz"bcdDevice"
+.asciiz"bDeviceSubClass"
 .Linfo_string35:
-.asciiz"iManufacturer"
+.asciiz"bDeviceProtocol"
 .Linfo_string36:
-.asciiz"iProduct"
+.asciiz"bMaxPacketSize0"
 .Linfo_string37:
-.asciiz"iSerialNumber"
+.asciiz"idVendor"
 .Linfo_string38:
-.asciiz"bNumConfigurations"
+.asciiz"idProduct"
 .Linfo_string39:
-.asciiz"USB_Descriptor_Device_t"
+.asciiz"bcdDevice"
 .Linfo_string40:
-.asciiz"devDesc_Null"
+.asciiz"iManufacturer"
 .Linfo_string41:
-.asciiz"sizetype"
+.asciiz"iProduct"
 .Linfo_string42:
-.asciiz"devQualDesc_Audio2"
+.asciiz"iSerialNumber"
 .Linfo_string43:
-.asciiz"devQualDesc_Null"
+.asciiz"bNumConfigurations"
 .Linfo_string44:
-.asciiz"cfgDesc_Audio2"
+.asciiz"USB_Descriptor_Device_t"
 .Linfo_string45:
-.asciiz"Config"
+.asciiz"devDesc_Audio2"
 .Linfo_string46:
-.asciiz"wTotalLength"
+.asciiz"devDesc_Null"
 .Linfo_string47:
-.asciiz"bNumInterfaces"
+.asciiz"sizetype"
 .Linfo_string48:
-.asciiz"bConfigurationValue"
+.asciiz"devQualDesc_Audio2"
 .Linfo_string49:
-.asciiz"iConfiguration"
+.asciiz"devQualDesc_Audio1"
 .Linfo_string50:
-.asciiz"bmAttributes"
+.asciiz"devQualDesc_Null"
 .Linfo_string51:
-.asciiz"bMaxPower"
+.asciiz"cfgDesc_Audio2"
 .Linfo_string52:
-.asciiz"USB_Descriptor_Configuration_Header_t"
+.asciiz"Config"
 .Linfo_string53:
-.asciiz"Audio_InterfaceAssociation"
+.asciiz"wTotalLength"
 .Linfo_string54:
-.asciiz"bFirstInterface"
+.asciiz"bNumInterfaces"
 .Linfo_string55:
-.asciiz"bInterfaceCount"
+.asciiz"bConfigurationValue"
 .Linfo_string56:
-.asciiz"bFunctionClass"
+.asciiz"iConfiguration"
 .Linfo_string57:
-.asciiz"bFunctionSubClass"
+.asciiz"bmAttributes"
 .Linfo_string58:
-.asciiz"bFunctionProtocol"
+.asciiz"bMaxPower"
 .Linfo_string59:
-.asciiz"iFunction"
+.asciiz"USB_Descriptor_Configuration_Header_t"
 .Linfo_string60:
-.asciiz"USB_Descriptor_Interface_Association_t"
+.asciiz"Audio_InterfaceAssociation"
 .Linfo_string61:
-.asciiz"Audio_StdControlInterface"
+.asciiz"bFirstInterface"
 .Linfo_string62:
-.asciiz"bInterfaceNumber"
+.asciiz"bInterfaceCount"
 .Linfo_string63:
-.asciiz"bAlternateSetting"
+.asciiz"bFunctionClass"
 .Linfo_string64:
-.asciiz"bNumEndpoints"
+.asciiz"bFunctionSubClass"
 .Linfo_string65:
-.asciiz"bInterfaceClass"
+.asciiz"bFunctionProtocol"
 .Linfo_string66:
-.asciiz"bInterfaceSubClass"
+.asciiz"iFunction"
 .Linfo_string67:
-.asciiz"bInterfaceProtocol"
+.asciiz"USB_Descriptor_Interface_Association_t"
 .Linfo_string68:
-.asciiz"iInterface"
+.asciiz"Audio_StdControlInterface"
 .Linfo_string69:
-.asciiz"USB_Descriptor_Interface_t"
+.asciiz"bInterfaceNumber"
 .Linfo_string70:
-.asciiz"Audio_CS_Control_Int"
+.asciiz"bAlternateSetting"
 .Linfo_string71:
-.asciiz"Audio_ClassControlInterface"
+.asciiz"bNumEndpoints"
 .Linfo_string72:
-.asciiz"bDescriptorSubtype"
+.asciiz"bInterfaceClass"
 .Linfo_string73:
-.asciiz"bcdADC"
+.asciiz"bInterfaceSubClass"
 .Linfo_string74:
-.asciiz"bCatagory"
+.asciiz"bInterfaceProtocol"
 .Linfo_string75:
-.asciiz"bmControls"
+.asciiz"iInterface"
 .Linfo_string76:
-.asciiz"UAC_Descriptor_Interface_AC_t"
+.asciiz"USB_Descriptor_Interface_t"
 .Linfo_string77:
-.asciiz"Audio_ClockSource"
+.asciiz"Audio_CS_Control_Int"
 .Linfo_string78:
-.asciiz"bDescriptorSubType"
+.asciiz"Audio_ClassControlInterface"
 .Linfo_string79:
-.asciiz"bClockID"
+.asciiz"bDescriptorSubtype"
 .Linfo_string80:
-.asciiz"bAssocTerminal"
+.asciiz"bcdADC"
 .Linfo_string81:
-.asciiz"iClockSource"
+.asciiz"bCatagory"
 .Linfo_string82:
-.asciiz"USB_Descriptor_Audio_ClockSource_t"
+.asciiz"bmControls"
 .Linfo_string83:
-.asciiz"Audio_ClockSelector"
+.asciiz"UAC_Descriptor_Interface_AC_t"
 .Linfo_string84:
-.asciiz"bNrPins"
+.asciiz"Audio_ClockSource"
 .Linfo_string85:
-.asciiz"baCSourceId"
+.asciiz"bDescriptorSubType"
 .Linfo_string86:
-.asciiz"bmControl"
+.asciiz"bClockID"
 .Linfo_string87:
-.asciiz"iClockSelector"
+.asciiz"bAssocTerminal"
 .Linfo_string88:
-.asciiz"USB_Descriptor_Audio_ClockSelector_1_t"
+.asciiz"iClockSource"
 .Linfo_string89:
-.asciiz"Audio_Out_InputTerminal"
+.asciiz"USB_Descriptor_Audio_ClockSource_t"
 .Linfo_string90:
-.asciiz"bTerminalID"
+.asciiz"Audio_ClockSelector"
 .Linfo_string91:
-.asciiz"wTerminalType"
+.asciiz"bNrPins"
 .Linfo_string92:
-.asciiz"bCSourceID"
+.asciiz"baCSourceId"
 .Linfo_string93:
-.asciiz"bNrChannels"
+.asciiz"bmControl"
 .Linfo_string94:
-.asciiz"bmChannelConfig"
+.asciiz"iClockSelector"
 .Linfo_string95:
-.asciiz"unsigned int"
+.asciiz"USB_Descriptor_Audio_ClockSelector_1_t"
 .Linfo_string96:
-.asciiz"iChannelNames"
+.asciiz"Audio_Out_InputTerminal"
 .Linfo_string97:
-.asciiz"iTerminal"
+.asciiz"bTerminalID"
 .Linfo_string98:
-.asciiz"USB_Descriptor_Audio_InputTerminal_t"
+.asciiz"wTerminalType"
 .Linfo_string99:
-.asciiz"Audio_Out_FeatureUnit"
+.asciiz"bCSourceID"
 .Linfo_string100:
-.asciiz"bUnitID"
+.asciiz"bNrChannels"
 .Linfo_string101:
-.asciiz"bSourceID"
+.asciiz"bmChannelConfig"
 .Linfo_string102:
-.asciiz"bmaControls"
+.asciiz"unsigned int"
 .Linfo_string103:
-.asciiz"iFeature"
+.asciiz"iChannelNames"
 .Linfo_string104:
-.asciiz"USB_Descriptor_Audio_FeatureUnit_Out_t"
+.asciiz"iTerminal"
 .Linfo_string105:
-.asciiz"Audio_Out_OutputTerminal"
+.asciiz"USB_Descriptor_Audio_InputTerminal_t"
 .Linfo_string106:
-.asciiz"USB_Descriptor_Audio_OutputTerminal_t"
+.asciiz"Audio_Out_FeatureUnit"
 .Linfo_string107:
-.asciiz"Audio_In_InputTerminal"
+.asciiz"bUnitID"
 .Linfo_string108:
-.asciiz"Audio_In_FeatureUnit"
+.asciiz"bSourceID"
 .Linfo_string109:
-.asciiz"USB_Descriptor_Audio_FeatureUnit_In_t"
+.asciiz"bmaControls"
 .Linfo_string110:
-.asciiz"Audio_In_OutputTerminal"
+.asciiz"iFeature"
 .Linfo_string111:
-.asciiz"USB_CfgDesc_Audio2_CS_Control_Int"
+.asciiz"USB_Descriptor_Audio_FeatureUnit_Out_t"
 .Linfo_string112:
-.asciiz"Audio_Out_StreamInterface_Alt0"
+.asciiz"Audio_Out_OutputTerminal"
 .Linfo_string113:
-.asciiz"Audio_Out_StreamInterface_Alt1"
+.asciiz"USB_Descriptor_Audio_OutputTerminal_t"
 .Linfo_string114:
-.asciiz"Audio_Out_ClassStreamInterface"
+.asciiz"Audio_In_InputTerminal"
 .Linfo_string115:
-.asciiz"bTerminalLink"
+.asciiz"Audio_In_FeatureUnit"
 .Linfo_string116:
-.asciiz"bFormatType"
+.asciiz"USB_Descriptor_Audio_FeatureUnit_In_t"
 .Linfo_string117:
-.asciiz"bmFormats"
+.asciiz"Audio_In_OutputTerminal"
 .Linfo_string118:
-.asciiz"USB_Descriptor_Audio_Interface_AS_t"
+.asciiz"USB_CfgDesc_Audio2_CS_Control_Int"
 .Linfo_string119:
-.asciiz"Audio_Out_Format"
+.asciiz"Audio_Out_StreamInterface_Alt0"
 .Linfo_string120:
-.asciiz"bSubslotSize"
+.asciiz"Audio_Out_StreamInterface_Alt1"
 .Linfo_string121:
-.asciiz"bBitResolution"
+.asciiz"Audio_Out_ClassStreamInterface"
 .Linfo_string122:
-.asciiz"USB_Descriptor_Audio_Format_Type1_t"
+.asciiz"bTerminalLink"
 .Linfo_string123:
-.asciiz"Audio_Out_Endpoint"
+.asciiz"bFormatType"
 .Linfo_string124:
-.asciiz"bEndpointAddress"
+.asciiz"bmFormats"
 .Linfo_string125:
-.asciiz"wMaxPacketSize"
+.asciiz"USB_Descriptor_Audio_Interface_AS_t"
 .Linfo_string126:
-.asciiz"bInterval"
+.asciiz"Audio_Out_Format"
 .Linfo_string127:
-.asciiz"USB_Descriptor_Endpoint_t"
+.asciiz"bSubslotSize"
 .Linfo_string128:
-.asciiz"Audio_Out_ClassEndpoint"
+.asciiz"bBitResolution"
 .Linfo_string129:
-.asciiz"bLockDelayUnits"
+.asciiz"USB_Descriptor_Audio_Format_Type1_t"
 .Linfo_string130:
-.asciiz"wLockDelay"
+.asciiz"Audio_Out_Endpoint"
 .Linfo_string131:
-.asciiz"USB_Descriptor_Audio_Class_AS_Endpoint_t"
+.asciiz"bEndpointAddress"
 .Linfo_string132:
-.asciiz"Audio_Out_StreamInterface_Alt2"
+.asciiz"wMaxPacketSize"
 .Linfo_string133:
-.asciiz"Audio_Out_ClassStreamInterface_2"
+.asciiz"bInterval"
 .Linfo_string134:
-.asciiz"Audio_Out_Format_2"
+.asciiz"USB_Descriptor_Endpoint_t"
 .Linfo_string135:
-.asciiz"Audio_Out_Endpoint_2"
+.asciiz"Audio_Out_ClassEndpoint"
 .Linfo_string136:
-.asciiz"Audio_Out_ClassEndpoint_2"
+.asciiz"bLockDelayUnits"
 .Linfo_string137:
-.asciiz"Audio_Out_StreamInterface_Alt3"
+.asciiz"wLockDelay"
 .Linfo_string138:
-.asciiz"Audio_Out_ClassStreamInterface_3"
+.asciiz"USB_Descriptor_Audio_Class_AS_Endpoint_t"
 .Linfo_string139:
-.asciiz"Audio_Out_Format_3"
+.asciiz"Audio_Out_StreamInterface_Alt2"
 .Linfo_string140:
-.asciiz"Audio_Out_Endpoint_3"
+.asciiz"Audio_Out_ClassStreamInterface_2"
 .Linfo_string141:
-.asciiz"Audio_Out_ClassEndpoint_3"
+.asciiz"Audio_Out_Format_2"
 .Linfo_string142:
-.asciiz"Audio_In_StreamInterface_Alt0"
+.asciiz"Audio_Out_Endpoint_2"
 .Linfo_string143:
-.asciiz"Audio_In_StreamInterface_Alt1"
+.asciiz"Audio_Out_ClassEndpoint_2"
 .Linfo_string144:
-.asciiz"Audio_In_ClassStreamInterface"
+.asciiz"Audio_Out_StreamInterface_Alt3"
 .Linfo_string145:
-.asciiz"Audio_In_Format"
+.asciiz"Audio_Out_ClassStreamInterface_3"
 .Linfo_string146:
-.asciiz"Audio_In_Endpoint"
+.asciiz"Audio_Out_Format_3"
 .Linfo_string147:
-.asciiz"Audio_In_ClassEndpoint"
+.asciiz"Audio_Out_Endpoint_3"
 .Linfo_string148:
-.asciiz"configDesc_DFU"
+.asciiz"Audio_Out_ClassEndpoint_3"
 .Linfo_string149:
-.asciiz"USB_Config_Descriptor_Audio2_t"
+.asciiz"Audio_In_StreamInterface_Alt0"
 .Linfo_string150:
-.asciiz"cfgDesc_Null"
+.asciiz"Audio_In_StreamInterface_Alt1"
 .Linfo_string151:
-.asciiz"DFUdevDesc"
+.asciiz"Audio_In_ClassStreamInterface"
 .Linfo_string152:
-.asciiz"DFUcfgDesc"
+.asciiz"Audio_In_Format"
 .Linfo_string153:
-.asciiz"DFU_mode_active"
+.asciiz"Audio_In_Endpoint"
 .Linfo_string154:
-.asciiz"g_curStreamAlt_Out"
+.asciiz"Audio_In_ClassEndpoint"
 .Linfo_string155:
-.asciiz"g_curStreamAlt_In"
+.asciiz"configDesc_DFU"
 .Linfo_string156:
-.asciiz"g_curUsbSpeed"
+.asciiz"USB_Config_Descriptor_Audio2_t"
 .Linfo_string157:
-.asciiz"XUD_SPEED_FS"
+.asciiz"cfgDesc_Null"
 .Linfo_string158:
-.asciiz"XUD_SPEED_HS"
+.asciiz"num_freqs_a1"
 .Linfo_string159:
-.asciiz"XUD_BusSpeed"
+.asciiz"cfgDesc_Audio1"
 .Linfo_string160:
-.asciiz"XUD_BusSpeed_t"
+.asciiz"DFUdevDesc"
 .Linfo_string161:
-.asciiz"g_subSlot_Out_HS"
+.asciiz"DFUcfgDesc"
 .Linfo_string162:
-.asciiz"g_subSlot_Out_FS"
+.asciiz"DFU_mode_active"
 .Linfo_string163:
-.asciiz"g_subSlot_In_HS"
+.asciiz"g_curStreamAlt_Out"
 .Linfo_string164:
-.asciiz"g_subSlot_In_FS"
+.asciiz"g_curStreamAlt_In"
 .Linfo_string165:
-.asciiz"g_sampRes_Out_HS"
+.asciiz"g_curUsbSpeed"
 .Linfo_string166:
-.asciiz"g_sampRes_Out_FS"
+.asciiz"XUD_SPEED_FS"
 .Linfo_string167:
-.asciiz"g_sampRes_In_HS"
+.asciiz"XUD_SPEED_HS"
 .Linfo_string168:
-.asciiz"g_sampRes_In_FS"
+.asciiz"XUD_BusSpeed"
 .Linfo_string169:
-.asciiz"g_dataFormat_Out"
+.asciiz"XUD_BusSpeed_t"
 .Linfo_string170:
-.asciiz"g_dataFormat_In"
+.asciiz"g_subSlot_Out_HS"
 .Linfo_string171:
-.asciiz"g_chanCount_In_HS"
+.asciiz"g_subSlot_Out_FS"
 .Linfo_string172:
-.asciiz"volsOut"
+.asciiz"g_subSlot_In_HS"
 .Linfo_string173:
-.asciiz"int"
+.asciiz"g_subSlot_In_FS"
 .Linfo_string174:
-.asciiz"mutesOut"
+.asciiz"g_sampRes_Out_HS"
 .Linfo_string175:
-.asciiz"volsIn"
+.asciiz"g_sampRes_Out_FS"
 .Linfo_string176:
-.asciiz"mutesIn"
+.asciiz"g_sampRes_In_HS"
 .Linfo_string177:
-.asciiz"mixer1Crossbar"
+.asciiz"g_sampRes_In_FS"
 .Linfo_string178:
-.asciiz"mixer1Weights"
+.asciiz"g_dataFormat_Out"
 .Linfo_string179:
-.asciiz"short"
+.asciiz"g_dataFormat_In"
 .Linfo_string180:
-.asciiz"channelMap"
+.asciiz"g_chanCount_In_HS"
 .Linfo_string181:
-.asciiz"channelMapAud"
+.asciiz"volsOut"
 .Linfo_string182:
-.asciiz"channelMapUsb"
+.asciiz"int"
 .Linfo_string183:
-.asciiz"mixSel"
+.asciiz"mutesOut"
 .Linfo_string184:
-.asciiz"XUD_RES_RST"
+.asciiz"volsIn"
 .Linfo_string185:
-.asciiz"XUD_RES_OKAY"
+.asciiz"mutesIn"
 .Linfo_string186:
-.asciiz"XUD_RES_ERR"
+.asciiz"mixer1Crossbar"
 .Linfo_string187:
-.asciiz"XUD_Result"
+.asciiz"mixer1Weights"
 .Linfo_string188:
-.asciiz"INTERFACE_NUMBER_AUDIO_CONTROL"
+.asciiz"short"
 .Linfo_string189:
-.asciiz"INTERFACE_NUMBER_AUDIO_OUTPUT"
+.asciiz"channelMap"
 .Linfo_string190:
-.asciiz"INTERFACE_NUMBER_AUDIO_INPUT"
+.asciiz"channelMapAud"
 .Linfo_string191:
-.asciiz"INTERFACE_NUMBER_DFU"
+.asciiz"channelMapUsb"
 .Linfo_string192:
-.asciiz"INTERFACE_COUNT"
+.asciiz"mixSel"
 .Linfo_string193:
-.asciiz"USBInterfaceNumber"
+.asciiz"XUD_RES_RST"
 .Linfo_string194:
-.asciiz"ENDPOINT_NUMBER_OUT_CONTROL"
+.asciiz"XUD_RES_OKAY"
 .Linfo_string195:
-.asciiz"ENDPOINT_NUMBER_OUT_AUDIO"
+.asciiz"XUD_RES_ERR"
 .Linfo_string196:
-.asciiz"ENDPOINT_COUNT_OUT"
+.asciiz"XUD_Result"
 .Linfo_string197:
-.asciiz"USBEndpointNumber_Out"
+.asciiz"INTERFACE_NUMBER_AUDIO_CONTROL"
 .Linfo_string198:
-.asciiz"ENDPOINT_NUMBER_IN_CONTROL"
+.asciiz"INTERFACE_NUMBER_AUDIO_OUTPUT"
 .Linfo_string199:
-.asciiz"ENDPOINT_NUMBER_IN_AUDIO"
+.asciiz"INTERFACE_NUMBER_AUDIO_INPUT"
 .Linfo_string200:
-.asciiz"ENDPOINT_COUNT_IN"
+.asciiz"INTERFACE_NUMBER_DFU"
 .Linfo_string201:
-.asciiz"USBEndpointNumber_In"
+.asciiz"INTERFACE_COUNT"
 .Linfo_string202:
-.asciiz"Endpoint0"
+.asciiz"USBInterfaceNumber"
 .Linfo_string203:
-.asciiz"c_ep0_out"
+.asciiz"ENDPOINT_NUMBER_OUT_CONTROL"
 .Linfo_string204:
-.asciiz"chanend"
+.asciiz"ENDPOINT_NUMBER_OUT_AUDIO"
 .Linfo_string205:
-.asciiz"c_ep0_in"
+.asciiz"ENDPOINT_COUNT_OUT"
 .Linfo_string206:
-.asciiz"c_audioControl"
+.asciiz"USBEndpointNumber_Out"
 .Linfo_string207:
-.asciiz"c_mix_ctl"
+.asciiz"ENDPOINT_NUMBER_IN_CONTROL"
 .Linfo_string208:
-.asciiz"dfuInterface"
+.asciiz"ENDPOINT_NUMBER_IN_AUDIO"
 .Linfo_string209:
-.asciiz"c_clk_ctl"
+.asciiz"ENDPOINT_COUNT_IN"
 .Linfo_string210:
-.asciiz"ep0_out"
+.asciiz"USBEndpointNumber_In"
 .Linfo_string211:
-.asciiz"XUD_ep"
+.asciiz"Endpoint0"
 .Linfo_string212:
-.asciiz"ep0_in"
+.asciiz"c_ep0_out"
 .Linfo_string213:
-.asciiz"i"
+.asciiz"chanend"
 .Linfo_string214:
-.asciiz"sp"
+.asciiz"c_ep0_in"
 .Linfo_string215:
-.asciiz"bmRequestType"
+.asciiz"c_audioControl"
 .Linfo_string216:
-.asciiz"Recipient"
+.asciiz"c_mix_ctl"
 .Linfo_string217:
-.asciiz"Type"
+.asciiz"dfuInterface"
 .Linfo_string218:
-.asciiz"Direction"
+.asciiz"c_clk_ctl"
 .Linfo_string219:
-.asciiz"USB_BmRequestType"
+.asciiz"ep0_out"
 .Linfo_string220:
-.asciiz"USB_BmRequestType_t"
+.asciiz"XUD_ep"
 .Linfo_string221:
-.asciiz"bRequest"
+.asciiz"ep0_in"
 .Linfo_string222:
-.asciiz"wValue"
+.asciiz"i"
 .Linfo_string223:
-.asciiz"wIndex"
+.asciiz"sp"
 .Linfo_string224:
-.asciiz"wLength"
+.asciiz"bmRequestType"
 .Linfo_string225:
-.asciiz"USB_SetupPacket"
+.asciiz"Recipient"
 .Linfo_string226:
-.asciiz"USB_SetupPacket_t"
+.asciiz"Type"
 .Linfo_string227:
-.asciiz"result"
+.asciiz"Direction"
 .Linfo_string228:
-.asciiz"XUD_Result_t"
+.asciiz"USB_BmRequestType"
 .Linfo_string229:
-.asciiz"DFU_IF"
+.asciiz"USB_BmRequestType_t"
 .Linfo_string230:
-.asciiz"interfaceNum"
+.asciiz"bRequest"
 .Linfo_string231:
-.asciiz"reset"
+.asciiz"wValue"
 .Linfo_string232:
+.asciiz"wIndex"
+.Linfo_string233:
+.asciiz"wLength"
+.Linfo_string234:
+.asciiz"USB_SetupPacket"
+.Linfo_string235:
+.asciiz"USB_SetupPacket_t"
+.Linfo_string236:
+.asciiz"result"
+.Linfo_string237:
+.asciiz"XUD_Result_t"
+.Linfo_string238:
+.asciiz"DFU_IF"
+.Linfo_string239:
+.asciiz"interfaceNum"
+.Linfo_string240:
+.asciiz"reset"
+.Linfo_string241:
 .asciiz"c_EANativeTransport_ctrl"
+.Linfo_string242:
+.asciiz"epNum"
 	.section	.debug_info,"",@progbits
 .L.debug_info_begin0:
-	.long	4044
+	.long	4206
 	.short	3
 	.long	.Lsection_abbrev
 	.byte	4
@@ -2624,128 +2697,158 @@ mixer1Crossbar:
 	.long	g_strTable
 	.byte	3
 	.long	62
-	.long	.Linfo_string21
+	.long	.Linfo_string26
 	.byte	1
 	.short	298
 	.byte	4
-	.byte	64
+	.byte	84
 	.byte	1
 	.byte	32
 	.byte	5
 	.long	.Linfo_string4
-	.long	260
+	.long	320
 	.byte	1
 	.byte	34
 	.byte	0
 	.byte	5
 	.long	.Linfo_string6
-	.long	260
+	.long	320
 	.byte	1
 	.byte	35
 	.byte	4
 	.byte	5
 	.long	.Linfo_string7
-	.long	260
+	.long	320
 	.byte	1
 	.byte	36
 	.byte	8
 	.byte	5
 	.long	.Linfo_string8
-	.long	260
+	.long	320
 	.byte	1
 	.byte	39
 	.byte	12
 	.byte	5
 	.long	.Linfo_string9
-	.long	260
+	.long	320
 	.byte	1
 	.byte	40
 	.byte	16
 	.byte	5
 	.long	.Linfo_string10
-	.long	260
+	.long	320
 	.byte	1
 	.byte	41
 	.byte	20
 	.byte	5
 	.long	.Linfo_string11
-	.long	260
+	.long	320
 	.byte	1
 	.byte	42
 	.byte	24
 	.byte	5
 	.long	.Linfo_string12
-	.long	260
+	.long	320
 	.byte	1
 	.byte	43
 	.byte	28
 	.byte	5
 	.long	.Linfo_string13
-	.long	260
+	.long	320
 	.byte	1
-	.byte	53
+	.byte	47
 	.byte	32
 	.byte	5
 	.long	.Linfo_string14
-	.long	260
+	.long	320
 	.byte	1
-	.byte	54
+	.byte	48
 	.byte	36
 	.byte	5
 	.long	.Linfo_string15
-	.long	260
+	.long	320
 	.byte	1
-	.byte	62
+	.byte	49
 	.byte	40
 	.byte	5
 	.long	.Linfo_string16
-	.long	260
+	.long	320
 	.byte	1
-	.byte	69
+	.byte	50
 	.byte	44
 	.byte	5
 	.long	.Linfo_string17
-	.long	260
+	.long	320
 	.byte	1
-	.byte	72
+	.byte	51
 	.byte	48
 	.byte	5
 	.long	.Linfo_string18
-	.long	260
+	.long	320
 	.byte	1
-	.byte	170
+	.byte	53
 	.byte	52
 	.byte	5
 	.long	.Linfo_string19
-	.long	260
+	.long	320
+	.byte	1
+	.byte	54
+	.byte	56
+	.byte	5
+	.long	.Linfo_string20
+	.long	320
+	.byte	1
+	.byte	62
+	.byte	60
+	.byte	5
+	.long	.Linfo_string21
+	.long	320
+	.byte	1
+	.byte	69
+	.byte	64
+	.byte	5
+	.long	.Linfo_string22
+	.long	320
+	.byte	1
+	.byte	72
+	.byte	68
+	.byte	5
+	.long	.Linfo_string23
+	.long	320
+	.byte	1
+	.byte	170
+	.byte	72
+	.byte	5
+	.long	.Linfo_string24
+	.long	320
 	.byte	1
 	.byte	173
-	.byte	56
+	.byte	76
 	.byte	6
-	.long	.Linfo_string20
-	.long	260
+	.long	.Linfo_string25
+	.long	320
 	.byte	1
 	.short	294
-	.byte	60
+	.byte	80
 	.byte	0
 	.byte	7
-	.long	265
+	.long	325
 	.byte	8
 	.long	.Linfo_string5
 	.byte	8
 	.byte	1
 	.byte	2
-	.long	.Linfo_string22
-	.long	291
+	.long	.Linfo_string27
+	.long	351
 	.byte	1
 	.byte	1
-	.short	401
+	.short	381
 	.byte	5
 	.byte	3
-	.long	devDesc_Audio2
+	.long	devDesc_Audio1
 	.byte	9
-	.long	302
-	.long	.Linfo_string39
+	.long	362
+	.long	.Linfo_string44
 	.byte	2
 	.byte	51
 	.byte	4
@@ -2753,101 +2856,110 @@ mixer1Crossbar:
 	.byte	2
 	.byte	34
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	2
 	.byte	36
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	2
 	.byte	37
 	.byte	1
 	.byte	5
-	.long	.Linfo_string26
-	.long	482
+	.long	.Linfo_string31
+	.long	542
 	.byte	2
 	.byte	39
 	.byte	2
 	.byte	5
-	.long	.Linfo_string28
-	.long	475
+	.long	.Linfo_string33
+	.long	535
 	.byte	2
 	.byte	40
 	.byte	4
 	.byte	5
-	.long	.Linfo_string29
-	.long	475
+	.long	.Linfo_string34
+	.long	535
 	.byte	2
 	.byte	41
 	.byte	5
 	.byte	5
-	.long	.Linfo_string30
-	.long	475
+	.long	.Linfo_string35
+	.long	535
 	.byte	2
 	.byte	42
 	.byte	6
 	.byte	5
-	.long	.Linfo_string31
-	.long	475
+	.long	.Linfo_string36
+	.long	535
 	.byte	2
 	.byte	43
 	.byte	7
 	.byte	5
-	.long	.Linfo_string32
-	.long	482
+	.long	.Linfo_string37
+	.long	542
 	.byte	2
 	.byte	44
 	.byte	8
 	.byte	5
-	.long	.Linfo_string33
-	.long	482
+	.long	.Linfo_string38
+	.long	542
 	.byte	2
 	.byte	45
 	.byte	10
 	.byte	5
-	.long	.Linfo_string34
-	.long	482
+	.long	.Linfo_string39
+	.long	542
 	.byte	2
 	.byte	46
 	.byte	12
 	.byte	5
-	.long	.Linfo_string35
-	.long	475
+	.long	.Linfo_string40
+	.long	535
 	.byte	2
 	.byte	47
 	.byte	14
 	.byte	5
-	.long	.Linfo_string36
-	.long	475
+	.long	.Linfo_string41
+	.long	535
 	.byte	2
 	.byte	48
 	.byte	15
 	.byte	5
-	.long	.Linfo_string37
-	.long	475
+	.long	.Linfo_string42
+	.long	535
 	.byte	2
 	.byte	49
 	.byte	16
 	.byte	5
-	.long	.Linfo_string38
-	.long	475
+	.long	.Linfo_string43
+	.long	535
 	.byte	2
 	.byte	50
 	.byte	17
 	.byte	0
 	.byte	8
-	.long	.Linfo_string24
+	.long	.Linfo_string29
 	.byte	8
 	.byte	1
 	.byte	8
-	.long	.Linfo_string27
+	.long	.Linfo_string32
 	.byte	7
 	.byte	2
 	.byte	2
-	.long	.Linfo_string40
-	.long	508
+	.long	.Linfo_string45
+	.long	351
+	.byte	1
+	.byte	1
+	.short	401
+	.byte	5
+	.byte	3
+	.long	devDesc_Audio2
+	.byte	2
+	.long	.Linfo_string46
+	.long	587
 	.byte	1
 	.byte	1
 	.short	420
@@ -2855,18 +2967,18 @@ mixer1Crossbar:
 	.byte	3
 	.long	devDesc_Null
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	17
 	.byte	0
 	.byte	12
-	.long	.Linfo_string41
+	.long	.Linfo_string47
 	.byte	8
 	.byte	7
 	.byte	2
-	.long	.Linfo_string42
-	.long	546
+	.long	.Linfo_string48
+	.long	625
 	.byte	1
 	.byte	1
 	.short	446
@@ -2874,14 +2986,23 @@ mixer1Crossbar:
 	.byte	3
 	.long	devQualDesc_Audio2
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	9
 	.byte	0
 	.byte	2
-	.long	.Linfo_string43
-	.long	546
+	.long	.Linfo_string49
+	.long	625
+	.byte	1
+	.byte	1
+	.short	462
+	.byte	5
+	.byte	3
+	.long	devQualDesc_Audio1
+	.byte	2
+	.long	.Linfo_string50
+	.long	625
 	.byte	1
 	.byte	1
 	.short	478
@@ -2889,8 +3010,8 @@ mixer1Crossbar:
 	.byte	3
 	.long	devQualDesc_Null
 	.byte	2
-	.long	.Linfo_string44
-	.long	596
+	.long	.Linfo_string51
+	.long	694
 	.byte	1
 	.byte	1
 	.short	755
@@ -2898,8 +3019,8 @@ mixer1Crossbar:
 	.byte	3
 	.long	cfgDesc_Audio2
 	.byte	3
-	.long	608
-	.long	.Linfo_string149
+	.long	706
+	.long	.Linfo_string156
 	.byte	1
 	.short	752
 	.byte	13
@@ -2907,171 +3028,171 @@ mixer1Crossbar:
 	.byte	1
 	.short	656
 	.byte	6
-	.long	.Linfo_string45
-	.long	976
+	.long	.Linfo_string52
+	.long	1074
 	.byte	1
 	.short	659
 	.byte	0
 	.byte	6
-	.long	.Linfo_string53
-	.long	1088
+	.long	.Linfo_string60
+	.long	1186
 	.byte	1
 	.short	662
 	.byte	9
 	.byte	6
-	.long	.Linfo_string61
-	.long	1200
+	.long	.Linfo_string68
+	.long	1298
 	.byte	1
 	.short	663
 	.byte	17
 	.byte	6
-	.long	.Linfo_string70
-	.long	1324
+	.long	.Linfo_string77
+	.long	1422
 	.byte	1
 	.short	665
 	.byte	26
 	.byte	6
-	.long	.Linfo_string112
-	.long	1200
+	.long	.Linfo_string119
+	.long	1298
 	.byte	1
 	.short	668
 	.byte	145
 	.byte	6
-	.long	.Linfo_string113
-	.long	1200
+	.long	.Linfo_string120
+	.long	1298
 	.byte	1
 	.short	669
 	.byte	154
 	.byte	6
-	.long	.Linfo_string114
-	.long	2310
+	.long	.Linfo_string121
+	.long	2408
 	.byte	1
 	.short	670
 	.byte	163
 	.byte	6
-	.long	.Linfo_string119
-	.long	2446
+	.long	.Linfo_string126
+	.long	2544
 	.byte	1
 	.short	671
 	.byte	179
 	.byte	6
-	.long	.Linfo_string123
-	.long	2534
+	.long	.Linfo_string130
+	.long	2632
 	.byte	1
 	.short	672
 	.byte	185
 	.byte	6
-	.long	.Linfo_string128
-	.long	2622
+	.long	.Linfo_string135
+	.long	2720
 	.byte	1
 	.short	673
 	.byte	192
 	.byte	6
-	.long	.Linfo_string132
-	.long	1200
+	.long	.Linfo_string139
+	.long	1298
 	.byte	1
 	.short	678
 	.byte	200
 	.byte	6
-	.long	.Linfo_string133
-	.long	2310
+	.long	.Linfo_string140
+	.long	2408
 	.byte	1
 	.short	679
 	.byte	209
 	.byte	6
-	.long	.Linfo_string134
-	.long	2446
+	.long	.Linfo_string141
+	.long	2544
 	.byte	1
 	.short	680
 	.byte	225
 	.byte	6
-	.long	.Linfo_string135
-	.long	2534
+	.long	.Linfo_string142
+	.long	2632
 	.byte	1
 	.short	681
 	.byte	231
 	.byte	6
-	.long	.Linfo_string136
-	.long	2622
+	.long	.Linfo_string143
+	.long	2720
 	.byte	1
 	.short	682
 	.byte	238
 	.byte	6
-	.long	.Linfo_string137
-	.long	1200
+	.long	.Linfo_string144
+	.long	1298
 	.byte	1
 	.short	688
 	.byte	246
 	.byte	6
-	.long	.Linfo_string138
-	.long	2310
+	.long	.Linfo_string145
+	.long	2408
 	.byte	1
 	.short	689
 	.byte	255
 	.byte	14
-	.long	.Linfo_string139
-	.long	2446
+	.long	.Linfo_string146
+	.long	2544
 	.byte	1
 	.short	690
 	.short	271
 	.byte	14
-	.long	.Linfo_string140
-	.long	2534
+	.long	.Linfo_string147
+	.long	2632
 	.byte	1
 	.short	691
 	.short	277
 	.byte	14
-	.long	.Linfo_string141
-	.long	2622
+	.long	.Linfo_string148
+	.long	2720
 	.byte	1
 	.short	692
 	.short	284
 	.byte	14
-	.long	.Linfo_string142
-	.long	1200
+	.long	.Linfo_string149
+	.long	1298
 	.byte	1
 	.short	700
 	.short	292
 	.byte	14
-	.long	.Linfo_string143
-	.long	1200
+	.long	.Linfo_string150
+	.long	1298
 	.byte	1
 	.short	701
 	.short	301
 	.byte	14
-	.long	.Linfo_string144
-	.long	2310
+	.long	.Linfo_string151
+	.long	2408
 	.byte	1
 	.short	702
 	.short	310
 	.byte	14
-	.long	.Linfo_string145
-	.long	2446
+	.long	.Linfo_string152
+	.long	2544
 	.byte	1
 	.short	703
 	.short	326
 	.byte	14
-	.long	.Linfo_string146
-	.long	2534
+	.long	.Linfo_string153
+	.long	2632
 	.byte	1
 	.short	704
 	.short	332
 	.byte	14
-	.long	.Linfo_string147
-	.long	2622
+	.long	.Linfo_string154
+	.long	2720
 	.byte	1
 	.short	705
 	.short	339
 	.byte	14
-	.long	.Linfo_string148
-	.long	508
+	.long	.Linfo_string155
+	.long	587
 	.byte	1
 	.short	728
 	.short	347
 	.byte	0
 	.byte	9
-	.long	987
-	.long	.Linfo_string52
+	.long	1085
+	.long	.Linfo_string59
 	.byte	2
 	.byte	106
 	.byte	4
@@ -3079,57 +3200,57 @@ mixer1Crossbar:
 	.byte	2
 	.byte	86
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	2
 	.byte	88
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	2
 	.byte	89
 	.byte	1
 	.byte	5
-	.long	.Linfo_string46
-	.long	482
+	.long	.Linfo_string53
+	.long	542
 	.byte	2
 	.byte	91
 	.byte	2
 	.byte	5
-	.long	.Linfo_string47
-	.long	475
+	.long	.Linfo_string54
+	.long	535
 	.byte	2
 	.byte	93
 	.byte	4
 	.byte	5
-	.long	.Linfo_string48
-	.long	475
+	.long	.Linfo_string55
+	.long	535
 	.byte	2
 	.byte	94
 	.byte	5
 	.byte	5
-	.long	.Linfo_string49
-	.long	475
+	.long	.Linfo_string56
+	.long	535
 	.byte	2
 	.byte	96
 	.byte	6
 	.byte	5
-	.long	.Linfo_string50
-	.long	475
+	.long	.Linfo_string57
+	.long	535
 	.byte	2
 	.byte	97
 	.byte	7
 	.byte	5
-	.long	.Linfo_string51
-	.long	475
+	.long	.Linfo_string58
+	.long	535
 	.byte	2
 	.byte	103
 	.byte	8
 	.byte	0
 	.byte	9
-	.long	1099
-	.long	.Linfo_string60
+	.long	1197
+	.long	.Linfo_string67
 	.byte	2
 	.byte	66
 	.byte	4
@@ -3137,57 +3258,57 @@ mixer1Crossbar:
 	.byte	2
 	.byte	54
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	2
 	.byte	56
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	2
 	.byte	57
 	.byte	1
 	.byte	5
-	.long	.Linfo_string54
-	.long	475
+	.long	.Linfo_string61
+	.long	535
 	.byte	2
 	.byte	59
 	.byte	2
 	.byte	5
-	.long	.Linfo_string55
-	.long	475
+	.long	.Linfo_string62
+	.long	535
 	.byte	2
 	.byte	60
 	.byte	3
 	.byte	5
-	.long	.Linfo_string56
-	.long	475
+	.long	.Linfo_string63
+	.long	535
 	.byte	2
 	.byte	61
 	.byte	4
 	.byte	5
-	.long	.Linfo_string57
-	.long	475
+	.long	.Linfo_string64
+	.long	535
 	.byte	2
 	.byte	62
 	.byte	5
 	.byte	5
-	.long	.Linfo_string58
-	.long	475
+	.long	.Linfo_string65
+	.long	535
 	.byte	2
 	.byte	63
 	.byte	6
 	.byte	5
-	.long	.Linfo_string59
-	.long	475
+	.long	.Linfo_string66
+	.long	535
 	.byte	2
 	.byte	64
 	.byte	7
 	.byte	0
 	.byte	9
-	.long	1211
-	.long	.Linfo_string69
+	.long	1309
+	.long	.Linfo_string76
 	.byte	2
 	.byte	83
 	.byte	4
@@ -3195,63 +3316,63 @@ mixer1Crossbar:
 	.byte	2
 	.byte	69
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	2
 	.byte	71
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	2
 	.byte	72
 	.byte	1
 	.byte	5
-	.long	.Linfo_string62
-	.long	475
+	.long	.Linfo_string69
+	.long	535
 	.byte	2
 	.byte	74
 	.byte	2
 	.byte	5
-	.long	.Linfo_string63
-	.long	475
+	.long	.Linfo_string70
+	.long	535
 	.byte	2
 	.byte	75
 	.byte	3
 	.byte	5
-	.long	.Linfo_string64
-	.long	475
+	.long	.Linfo_string71
+	.long	535
 	.byte	2
 	.byte	77
 	.byte	4
 	.byte	5
-	.long	.Linfo_string65
-	.long	475
+	.long	.Linfo_string72
+	.long	535
 	.byte	2
 	.byte	78
 	.byte	5
 	.byte	5
-	.long	.Linfo_string66
-	.long	475
+	.long	.Linfo_string73
+	.long	535
 	.byte	2
 	.byte	80
 	.byte	6
 	.byte	5
-	.long	.Linfo_string67
-	.long	475
+	.long	.Linfo_string74
+	.long	535
 	.byte	2
 	.byte	81
 	.byte	7
 	.byte	5
-	.long	.Linfo_string68
-	.long	475
+	.long	.Linfo_string75
+	.long	535
 	.byte	2
 	.byte	82
 	.byte	8
 	.byte	0
 	.byte	3
-	.long	1336
-	.long	.Linfo_string111
+	.long	1434
+	.long	.Linfo_string118
 	.byte	1
 	.short	654
 	.byte	15
@@ -3259,63 +3380,63 @@ mixer1Crossbar:
 	.byte	1
 	.short	610
 	.byte	6
-	.long	.Linfo_string71
-	.long	1459
+	.long	.Linfo_string78
+	.long	1557
 	.byte	1
 	.short	613
 	.byte	0
 	.byte	6
-	.long	.Linfo_string77
-	.long	1559
+	.long	.Linfo_string84
+	.long	1657
 	.byte	1
 	.short	614
 	.byte	9
 	.byte	6
-	.long	.Linfo_string83
-	.long	1671
+	.long	.Linfo_string90
+	.long	1769
 	.byte	1
 	.short	621
 	.byte	17
 	.byte	6
-	.long	.Linfo_string89
-	.long	1795
+	.long	.Linfo_string96
+	.long	1893
 	.byte	1
 	.short	624
 	.byte	25
 	.byte	6
-	.long	.Linfo_string99
-	.long	1962
+	.long	.Linfo_string106
+	.long	2060
 	.byte	1
 	.short	629
 	.byte	42
 	.byte	6
-	.long	.Linfo_string105
-	.long	2074
+	.long	.Linfo_string112
+	.long	2172
 	.byte	1
 	.short	631
 	.byte	60
 	.byte	6
-	.long	.Linfo_string107
-	.long	1795
+	.long	.Linfo_string114
+	.long	1893
 	.byte	1
 	.short	635
 	.byte	72
 	.byte	6
-	.long	.Linfo_string108
-	.long	2210
+	.long	.Linfo_string115
+	.long	2308
 	.byte	1
 	.short	640
 	.byte	89
 	.byte	6
-	.long	.Linfo_string110
-	.long	2074
+	.long	.Linfo_string117
+	.long	2172
 	.byte	1
 	.short	642
 	.byte	107
 	.byte	0
 	.byte	9
-	.long	1470
-	.long	.Linfo_string76
+	.long	1568
+	.long	.Linfo_string83
 	.byte	3
 	.byte	17
 	.byte	4
@@ -3323,51 +3444,51 @@ mixer1Crossbar:
 	.byte	3
 	.byte	8
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	10
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	11
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	3
 	.byte	12
 	.byte	2
 	.byte	5
-	.long	.Linfo_string73
-	.long	482
+	.long	.Linfo_string80
+	.long	542
 	.byte	3
 	.byte	13
 	.byte	3
 	.byte	5
-	.long	.Linfo_string74
-	.long	475
+	.long	.Linfo_string81
+	.long	535
 	.byte	3
 	.byte	14
 	.byte	5
 	.byte	5
-	.long	.Linfo_string46
-	.long	482
+	.long	.Linfo_string53
+	.long	542
 	.byte	3
 	.byte	15
 	.byte	6
 	.byte	5
-	.long	.Linfo_string75
-	.long	475
+	.long	.Linfo_string82
+	.long	535
 	.byte	3
 	.byte	16
 	.byte	8
 	.byte	0
 	.byte	9
-	.long	1570
-	.long	.Linfo_string82
+	.long	1668
+	.long	.Linfo_string89
 	.byte	4
 	.byte	171
 	.byte	4
@@ -3375,57 +3496,57 @@ mixer1Crossbar:
 	.byte	4
 	.byte	161
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	4
 	.byte	163
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	4
 	.byte	164
 	.byte	1
 	.byte	5
-	.long	.Linfo_string78
-	.long	475
+	.long	.Linfo_string85
+	.long	535
 	.byte	4
 	.byte	165
 	.byte	2
 	.byte	5
-	.long	.Linfo_string79
-	.long	475
+	.long	.Linfo_string86
+	.long	535
 	.byte	4
 	.byte	166
 	.byte	3
 	.byte	5
-	.long	.Linfo_string50
-	.long	475
+	.long	.Linfo_string57
+	.long	535
 	.byte	4
 	.byte	167
 	.byte	4
 	.byte	5
-	.long	.Linfo_string75
-	.long	475
+	.long	.Linfo_string82
+	.long	535
 	.byte	4
 	.byte	168
 	.byte	5
 	.byte	5
-	.long	.Linfo_string80
-	.long	475
+	.long	.Linfo_string87
+	.long	535
 	.byte	4
 	.byte	169
 	.byte	6
 	.byte	5
-	.long	.Linfo_string81
-	.long	475
+	.long	.Linfo_string88
+	.long	535
 	.byte	4
 	.byte	170
 	.byte	7
 	.byte	0
 	.byte	9
-	.long	1682
-	.long	.Linfo_string88
+	.long	1780
+	.long	.Linfo_string95
 	.byte	4
 	.byte	187
 	.byte	4
@@ -3433,63 +3554,63 @@ mixer1Crossbar:
 	.byte	4
 	.byte	174
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	4
 	.byte	176
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	4
 	.byte	177
 	.byte	1
 	.byte	5
-	.long	.Linfo_string78
-	.long	475
+	.long	.Linfo_string85
+	.long	535
 	.byte	4
 	.byte	178
 	.byte	2
 	.byte	5
-	.long	.Linfo_string79
-	.long	475
+	.long	.Linfo_string86
+	.long	535
 	.byte	4
 	.byte	179
 	.byte	3
 	.byte	5
-	.long	.Linfo_string84
-	.long	475
+	.long	.Linfo_string91
+	.long	535
 	.byte	4
 	.byte	180
 	.byte	4
 	.byte	5
-	.long	.Linfo_string85
-	.long	1783
+	.long	.Linfo_string92
+	.long	1881
 	.byte	4
 	.byte	181
 	.byte	5
 	.byte	5
-	.long	.Linfo_string86
-	.long	475
+	.long	.Linfo_string93
+	.long	535
 	.byte	4
 	.byte	182
 	.byte	6
 	.byte	5
-	.long	.Linfo_string87
-	.long	475
+	.long	.Linfo_string94
+	.long	535
 	.byte	4
 	.byte	185
 	.byte	7
 	.byte	0
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	0
 	.byte	0
 	.byte	9
-	.long	1806
-	.long	.Linfo_string98
+	.long	1904
+	.long	.Linfo_string105
 	.byte	3
 	.byte	36
 	.byte	4
@@ -3497,85 +3618,85 @@ mixer1Crossbar:
 	.byte	3
 	.byte	20
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	22
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	23
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	3
 	.byte	24
 	.byte	2
 	.byte	5
-	.long	.Linfo_string90
-	.long	475
+	.long	.Linfo_string97
+	.long	535
 	.byte	3
 	.byte	25
 	.byte	3
 	.byte	5
-	.long	.Linfo_string91
-	.long	482
+	.long	.Linfo_string98
+	.long	542
 	.byte	3
 	.byte	26
 	.byte	4
 	.byte	5
-	.long	.Linfo_string80
-	.long	475
+	.long	.Linfo_string87
+	.long	535
 	.byte	3
 	.byte	27
 	.byte	6
 	.byte	5
-	.long	.Linfo_string92
-	.long	475
+	.long	.Linfo_string99
+	.long	535
 	.byte	3
 	.byte	29
 	.byte	7
 	.byte	5
-	.long	.Linfo_string93
-	.long	475
+	.long	.Linfo_string100
+	.long	535
 	.byte	3
 	.byte	30
 	.byte	8
 	.byte	5
-	.long	.Linfo_string94
-	.long	1955
+	.long	.Linfo_string101
+	.long	2053
 	.byte	3
 	.byte	32
 	.byte	9
 	.byte	5
-	.long	.Linfo_string96
-	.long	475
+	.long	.Linfo_string103
+	.long	535
 	.byte	3
 	.byte	33
 	.byte	13
 	.byte	5
-	.long	.Linfo_string75
-	.long	482
+	.long	.Linfo_string82
+	.long	542
 	.byte	3
 	.byte	34
 	.byte	14
 	.byte	5
-	.long	.Linfo_string97
-	.long	475
+	.long	.Linfo_string104
+	.long	535
 	.byte	3
 	.byte	35
 	.byte	16
 	.byte	0
 	.byte	8
-	.long	.Linfo_string95
+	.long	.Linfo_string102
 	.byte	7
 	.byte	4
 	.byte	9
-	.long	1973
-	.long	.Linfo_string104
+	.long	2071
+	.long	.Linfo_string111
 	.byte	3
 	.byte	97
 	.byte	4
@@ -3583,57 +3704,57 @@ mixer1Crossbar:
 	.byte	3
 	.byte	88
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	90
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	91
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	3
 	.byte	92
 	.byte	2
 	.byte	5
-	.long	.Linfo_string100
-	.long	475
+	.long	.Linfo_string107
+	.long	535
 	.byte	3
 	.byte	93
 	.byte	3
 	.byte	5
-	.long	.Linfo_string101
-	.long	475
+	.long	.Linfo_string108
+	.long	535
 	.byte	3
 	.byte	94
 	.byte	4
 	.byte	5
-	.long	.Linfo_string102
-	.long	2062
+	.long	.Linfo_string109
+	.long	2160
 	.byte	3
 	.byte	95
 	.byte	5
 	.byte	5
-	.long	.Linfo_string103
-	.long	475
+	.long	.Linfo_string110
+	.long	535
 	.byte	3
 	.byte	96
 	.byte	17
 	.byte	0
 	.byte	10
-	.long	1955
+	.long	2053
 	.byte	11
-	.long	520
+	.long	599
 	.byte	2
 	.byte	0
 	.byte	9
-	.long	2085
-	.long	.Linfo_string106
+	.long	2183
+	.long	.Linfo_string113
 	.byte	3
 	.byte	69
 	.byte	4
@@ -3641,69 +3762,69 @@ mixer1Crossbar:
 	.byte	3
 	.byte	57
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	59
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	60
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	3
 	.byte	61
 	.byte	2
 	.byte	5
-	.long	.Linfo_string90
-	.long	475
+	.long	.Linfo_string97
+	.long	535
 	.byte	3
 	.byte	62
 	.byte	3
 	.byte	5
-	.long	.Linfo_string91
-	.long	482
+	.long	.Linfo_string98
+	.long	542
 	.byte	3
 	.byte	63
 	.byte	4
 	.byte	5
-	.long	.Linfo_string80
-	.long	475
+	.long	.Linfo_string87
+	.long	535
 	.byte	3
 	.byte	64
 	.byte	6
 	.byte	5
-	.long	.Linfo_string101
-	.long	475
+	.long	.Linfo_string108
+	.long	535
 	.byte	3
 	.byte	65
 	.byte	7
 	.byte	5
-	.long	.Linfo_string92
-	.long	475
+	.long	.Linfo_string99
+	.long	535
 	.byte	3
 	.byte	66
 	.byte	8
 	.byte	5
-	.long	.Linfo_string75
-	.long	482
+	.long	.Linfo_string82
+	.long	542
 	.byte	3
 	.byte	67
 	.byte	9
 	.byte	5
-	.long	.Linfo_string97
-	.long	475
+	.long	.Linfo_string104
+	.long	535
 	.byte	3
 	.byte	68
 	.byte	11
 	.byte	0
 	.byte	9
-	.long	2221
-	.long	.Linfo_string109
+	.long	2319
+	.long	.Linfo_string116
 	.byte	3
 	.byte	108
 	.byte	4
@@ -3711,51 +3832,51 @@ mixer1Crossbar:
 	.byte	3
 	.byte	99
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	101
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	102
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	3
 	.byte	103
 	.byte	2
 	.byte	5
-	.long	.Linfo_string100
-	.long	475
+	.long	.Linfo_string107
+	.long	535
 	.byte	3
 	.byte	104
 	.byte	3
 	.byte	5
-	.long	.Linfo_string101
-	.long	475
+	.long	.Linfo_string108
+	.long	535
 	.byte	3
 	.byte	105
 	.byte	4
 	.byte	5
-	.long	.Linfo_string102
-	.long	2062
+	.long	.Linfo_string109
+	.long	2160
 	.byte	3
 	.byte	106
 	.byte	5
 	.byte	5
-	.long	.Linfo_string103
-	.long	475
+	.long	.Linfo_string110
+	.long	535
 	.byte	3
 	.byte	107
 	.byte	17
 	.byte	0
 	.byte	9
-	.long	2321
-	.long	.Linfo_string118
+	.long	2419
+	.long	.Linfo_string125
 	.byte	3
 	.byte	122
 	.byte	4
@@ -3763,69 +3884,69 @@ mixer1Crossbar:
 	.byte	3
 	.byte	110
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	112
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	113
 	.byte	1
 	.byte	5
-	.long	.Linfo_string78
-	.long	475
+	.long	.Linfo_string85
+	.long	535
 	.byte	3
 	.byte	114
 	.byte	2
 	.byte	5
-	.long	.Linfo_string115
-	.long	475
+	.long	.Linfo_string122
+	.long	535
 	.byte	3
 	.byte	115
 	.byte	3
 	.byte	5
-	.long	.Linfo_string75
-	.long	475
+	.long	.Linfo_string82
+	.long	535
 	.byte	3
 	.byte	116
 	.byte	4
 	.byte	5
-	.long	.Linfo_string116
-	.long	475
+	.long	.Linfo_string123
+	.long	535
 	.byte	3
 	.byte	117
 	.byte	5
 	.byte	5
-	.long	.Linfo_string117
-	.long	1955
+	.long	.Linfo_string124
+	.long	2053
 	.byte	3
 	.byte	118
 	.byte	6
 	.byte	5
-	.long	.Linfo_string93
-	.long	475
+	.long	.Linfo_string100
+	.long	535
 	.byte	3
 	.byte	119
 	.byte	10
 	.byte	5
-	.long	.Linfo_string94
-	.long	1955
+	.long	.Linfo_string101
+	.long	2053
 	.byte	3
 	.byte	120
 	.byte	11
 	.byte	5
-	.long	.Linfo_string96
-	.long	475
+	.long	.Linfo_string103
+	.long	535
 	.byte	3
 	.byte	121
 	.byte	15
 	.byte	0
 	.byte	9
-	.long	2457
-	.long	.Linfo_string122
+	.long	2555
+	.long	.Linfo_string129
 	.byte	4
 	.byte	227
 	.byte	4
@@ -3833,45 +3954,45 @@ mixer1Crossbar:
 	.byte	4
 	.byte	219
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	4
 	.byte	221
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	4
 	.byte	222
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	4
 	.byte	223
 	.byte	2
 	.byte	5
-	.long	.Linfo_string116
-	.long	475
+	.long	.Linfo_string123
+	.long	535
 	.byte	4
 	.byte	224
 	.byte	3
 	.byte	5
-	.long	.Linfo_string120
-	.long	475
+	.long	.Linfo_string127
+	.long	535
 	.byte	4
 	.byte	225
 	.byte	4
 	.byte	5
-	.long	.Linfo_string121
-	.long	475
+	.long	.Linfo_string128
+	.long	535
 	.byte	4
 	.byte	226
 	.byte	5
 	.byte	0
 	.byte	9
-	.long	2545
-	.long	.Linfo_string127
+	.long	2643
+	.long	.Linfo_string134
 	.byte	2
 	.byte	120
 	.byte	4
@@ -3879,45 +4000,45 @@ mixer1Crossbar:
 	.byte	2
 	.byte	109
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	2
 	.byte	111
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	2
 	.byte	112
 	.byte	1
 	.byte	5
-	.long	.Linfo_string124
-	.long	475
+	.long	.Linfo_string131
+	.long	535
 	.byte	2
 	.byte	114
 	.byte	2
 	.byte	5
-	.long	.Linfo_string50
-	.long	475
+	.long	.Linfo_string57
+	.long	535
 	.byte	2
 	.byte	115
 	.byte	3
 	.byte	5
-	.long	.Linfo_string125
-	.long	482
+	.long	.Linfo_string132
+	.long	542
 	.byte	2
 	.byte	117
 	.byte	4
 	.byte	5
-	.long	.Linfo_string126
-	.long	475
+	.long	.Linfo_string133
+	.long	535
 	.byte	2
 	.byte	118
 	.byte	6
 	.byte	0
 	.byte	9
-	.long	2633
-	.long	.Linfo_string131
+	.long	2731
+	.long	.Linfo_string138
 	.byte	3
 	.byte	149
 	.byte	4
@@ -3925,51 +4046,51 @@ mixer1Crossbar:
 	.byte	3
 	.byte	140
 	.byte	5
-	.long	.Linfo_string23
-	.long	475
+	.long	.Linfo_string28
+	.long	535
 	.byte	3
 	.byte	142
 	.byte	0
 	.byte	5
-	.long	.Linfo_string25
-	.long	475
+	.long	.Linfo_string30
+	.long	535
 	.byte	3
 	.byte	143
 	.byte	1
 	.byte	5
-	.long	.Linfo_string72
-	.long	475
+	.long	.Linfo_string79
+	.long	535
 	.byte	3
 	.byte	144
 	.byte	2
 	.byte	5
-	.long	.Linfo_string50
-	.long	475
+	.long	.Linfo_string57
+	.long	535
 	.byte	3
 	.byte	145
 	.byte	3
 	.byte	5
-	.long	.Linfo_string75
-	.long	475
+	.long	.Linfo_string82
+	.long	535
 	.byte	3
 	.byte	146
 	.byte	4
 	.byte	5
-	.long	.Linfo_string129
-	.long	475
+	.long	.Linfo_string136
+	.long	535
 	.byte	3
 	.byte	147
 	.byte	5
 	.byte	5
-	.long	.Linfo_string130
-	.long	482
+	.long	.Linfo_string137
+	.long	542
 	.byte	3
 	.byte	148
 	.byte	6
 	.byte	0
 	.byte	2
-	.long	.Linfo_string150
-	.long	2741
+	.long	.Linfo_string157
+	.long	2839
 	.byte	1
 	.byte	1
 	.short	2165
@@ -3977,23 +4098,49 @@ mixer1Crossbar:
 	.byte	3
 	.long	cfgDesc_Null
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	18
 	.byte	0
+	.byte	2
+	.long	.Linfo_string158
+	.long	2870
+	.byte	1
+	.byte	1
+	.short	2216
+	.byte	5
+	.byte	3
+	.long	num_freqs_a1
 	.byte	16
-	.long	.Linfo_string151
-	.long	508
+	.long	2053
+	.byte	2
+	.long	.Linfo_string159
+	.long	2894
+	.byte	1
+	.byte	1
+	.short	2266
+	.byte	5
+	.byte	3
+	.long	cfgDesc_Audio1
+	.byte	10
+	.long	535
+	.byte	11
+	.long	599
+	.byte	205
+	.byte	0
+	.byte	17
+	.long	.Linfo_string160
+	.long	587
 	.byte	1
 	.byte	5
 	.byte	33
 	.byte	5
 	.byte	3
 	.long	DFUdevDesc
-	.byte	16
-	.long	.Linfo_string152
-	.long	2789
+	.byte	17
+	.long	.Linfo_string161
+	.long	2942
 	.byte	1
 	.byte	5
 	.byte	54
@@ -4001,41 +4148,41 @@ mixer1Crossbar:
 	.byte	3
 	.long	DFUcfgDesc
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	26
 	.byte	0
-	.byte	16
-	.long	.Linfo_string153
-	.long	1955
+	.byte	17
+	.long	.Linfo_string162
+	.long	2053
 	.byte	1
 	.byte	6
 	.byte	63
 	.byte	5
 	.byte	3
 	.long	DFU_mode_active
-	.byte	16
-	.long	.Linfo_string154
-	.long	1955
+	.byte	17
+	.long	.Linfo_string163
+	.long	2053
 	.byte	1
 	.byte	6
 	.byte	94
 	.byte	5
 	.byte	3
 	.long	g_curStreamAlt_Out
-	.byte	16
-	.long	.Linfo_string155
-	.long	1955
+	.byte	17
+	.long	.Linfo_string164
+	.long	2053
 	.byte	1
 	.byte	6
 	.byte	95
 	.byte	5
 	.byte	3
 	.long	g_curStreamAlt_In
-	.byte	16
-	.long	.Linfo_string156
-	.long	2873
+	.byte	17
+	.long	.Linfo_string165
+	.long	3026
 	.byte	1
 	.byte	6
 	.byte	98
@@ -4043,25 +4190,25 @@ mixer1Crossbar:
 	.byte	3
 	.long	g_curUsbSpeed
 	.byte	9
-	.long	2884
-	.long	.Linfo_string160
+	.long	3037
+	.long	.Linfo_string169
 	.byte	7
 	.byte	121
-	.byte	17
-	.long	.Linfo_string159
+	.byte	18
+	.long	.Linfo_string168
 	.byte	4
 	.byte	7
 	.byte	117
-	.byte	18
-	.long	.Linfo_string157
+	.byte	19
+	.long	.Linfo_string166
 	.byte	1
-	.byte	18
-	.long	.Linfo_string158
+	.byte	19
+	.long	.Linfo_string167
 	.byte	2
 	.byte	0
-	.byte	16
-	.long	.Linfo_string161
-	.long	2923
+	.byte	17
+	.long	.Linfo_string170
+	.long	3076
 	.byte	1
 	.byte	6
 	.byte	102
@@ -4069,25 +4216,23 @@ mixer1Crossbar:
 	.byte	3
 	.long	g_subSlot_Out_HS
 	.byte	10
-	.long	2935
+	.long	2870
 	.byte	11
-	.long	520
+	.long	599
 	.byte	2
 	.byte	0
-	.byte	19
-	.long	1955
-	.byte	16
-	.long	.Linfo_string162
-	.long	2923
+	.byte	17
+	.long	.Linfo_string171
+	.long	3076
 	.byte	1
 	.byte	6
 	.byte	111
 	.byte	5
 	.byte	3
 	.long	g_subSlot_Out_FS
-	.byte	16
-	.long	.Linfo_string163
-	.long	2976
+	.byte	17
+	.long	.Linfo_string172
+	.long	3124
 	.byte	1
 	.byte	6
 	.byte	120
@@ -4095,86 +4240,86 @@ mixer1Crossbar:
 	.byte	3
 	.long	g_subSlot_In_HS
 	.byte	10
-	.long	2935
+	.long	2870
 	.byte	11
-	.long	520
+	.long	599
 	.byte	0
 	.byte	0
-	.byte	16
-	.long	.Linfo_string164
-	.long	2976
+	.byte	17
+	.long	.Linfo_string173
+	.long	3124
 	.byte	1
 	.byte	6
 	.byte	129
 	.byte	5
 	.byte	3
 	.long	g_subSlot_In_FS
-	.byte	16
-	.long	.Linfo_string165
-	.long	2923
+	.byte	17
+	.long	.Linfo_string174
+	.long	3076
 	.byte	1
 	.byte	6
 	.byte	139
 	.byte	5
 	.byte	3
 	.long	g_sampRes_Out_HS
-	.byte	16
-	.long	.Linfo_string166
-	.long	2923
+	.byte	17
+	.long	.Linfo_string175
+	.long	3076
 	.byte	1
 	.byte	6
 	.byte	148
 	.byte	5
 	.byte	3
 	.long	g_sampRes_Out_FS
-	.byte	16
-	.long	.Linfo_string167
-	.long	2976
+	.byte	17
+	.long	.Linfo_string176
+	.long	3124
 	.byte	1
 	.byte	6
 	.byte	157
 	.byte	5
 	.byte	3
 	.long	g_sampRes_In_HS
-	.byte	16
-	.long	.Linfo_string168
-	.long	2976
+	.byte	17
+	.long	.Linfo_string177
+	.long	3124
 	.byte	1
 	.byte	6
 	.byte	166
 	.byte	5
 	.byte	3
 	.long	g_sampRes_In_FS
-	.byte	16
-	.long	.Linfo_string169
-	.long	2923
+	.byte	17
+	.long	.Linfo_string178
+	.long	3076
 	.byte	1
 	.byte	6
 	.byte	176
 	.byte	5
 	.byte	3
 	.long	g_dataFormat_Out
-	.byte	16
-	.long	.Linfo_string170
-	.long	2976
+	.byte	17
+	.long	.Linfo_string179
+	.long	3124
 	.byte	1
 	.byte	6
 	.byte	185
 	.byte	5
 	.byte	3
 	.long	g_dataFormat_In
-	.byte	16
-	.long	.Linfo_string171
-	.long	2976
+	.byte	17
+	.long	.Linfo_string180
+	.long	3124
 	.byte	1
 	.byte	6
 	.byte	196
 	.byte	5
 	.byte	3
 	.long	g_chanCount_In_HS
-	.byte	16
-	.long	.Linfo_string172
-	.long	3150
+	.byte	17
+	.long	.Linfo_string181
+	.long	3298
 	.byte	1
 	.byte	6
 	.byte	66
@@ -4182,54 +4327,54 @@ mixer1Crossbar:
 	.byte	3
 	.long	volsOut
 	.byte	10
-	.long	3162
+	.long	3310
 	.byte	11
-	.long	520
+	.long	599
 	.byte	2
 	.byte	0
 	.byte	8
-	.long	.Linfo_string173
+	.long	.Linfo_string182
 	.byte	5
 	.byte	4
-	.byte	16
-	.long	.Linfo_string174
-	.long	2062
+	.byte	17
+	.long	.Linfo_string183
+	.long	2160
 	.byte	1
 	.byte	6
 	.byte	67
 	.byte	5
 	.byte	3
 	.long	mutesOut
-	.byte	16
-	.long	.Linfo_string175
-	.long	3150
+	.byte	17
+	.long	.Linfo_string184
+	.long	3298
 	.byte	1
 	.byte	6
 	.byte	70
 	.byte	5
 	.byte	3
 	.long	volsIn
-	.byte	16
-	.long	.Linfo_string176
-	.long	2062
+	.byte	17
+	.long	.Linfo_string185
+	.long	2160
 	.byte	1
 	.byte	6
 	.byte	71
 	.byte	5
 	.byte	3
 	.long	mutesIn
-	.byte	16
-	.long	.Linfo_string177
-	.long	508
+	.byte	17
+	.long	.Linfo_string186
+	.long	587
 	.byte	1
 	.byte	6
 	.byte	75
 	.byte	5
 	.byte	3
 	.long	mixer1Crossbar
-	.byte	16
-	.long	.Linfo_string178
-	.long	3259
+	.byte	17
+	.long	.Linfo_string187
+	.long	3407
 	.byte	1
 	.byte	6
 	.byte	76
@@ -4237,18 +4382,18 @@ mixer1Crossbar:
 	.byte	3
 	.long	mixer1Weights
 	.byte	10
-	.long	3271
+	.long	3419
 	.byte	11
-	.long	520
+	.long	599
 	.byte	143
 	.byte	0
 	.byte	8
-	.long	.Linfo_string179
+	.long	.Linfo_string188
 	.byte	5
 	.byte	2
-	.byte	16
-	.long	.Linfo_string180
-	.long	3296
+	.byte	17
+	.long	.Linfo_string189
+	.long	3444
 	.byte	1
 	.byte	6
 	.byte	78
@@ -4256,14 +4401,14 @@ mixer1Crossbar:
 	.byte	3
 	.long	channelMap
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	3
 	.byte	0
-	.byte	16
-	.long	.Linfo_string181
-	.long	3326
+	.byte	17
+	.long	.Linfo_string190
+	.long	3474
 	.byte	1
 	.byte	6
 	.byte	79
@@ -4271,23 +4416,23 @@ mixer1Crossbar:
 	.byte	3
 	.long	channelMapAud
 	.byte	10
-	.long	475
+	.long	535
 	.byte	11
-	.long	520
+	.long	599
 	.byte	1
 	.byte	0
-	.byte	16
-	.long	.Linfo_string182
-	.long	3326
+	.byte	17
+	.long	.Linfo_string191
+	.long	3474
 	.byte	1
 	.byte	6
 	.byte	80
 	.byte	5
 	.byte	3
 	.long	channelMapUsb
-	.byte	16
-	.long	.Linfo_string183
-	.long	3374
+	.byte	17
+	.long	.Linfo_string192
+	.long	3522
 	.byte	1
 	.byte	6
 	.byte	81
@@ -4295,323 +4440,328 @@ mixer1Crossbar:
 	.byte	3
 	.long	mixSel
 	.byte	10
-	.long	475
+	.long	535
 	.byte	20
-	.long	520
+	.long	599
 	.byte	11
-	.long	520
+	.long	599
 	.byte	17
 	.byte	0
-	.byte	17
-	.long	.Linfo_string187
+	.byte	18
+	.long	.Linfo_string196
 	.byte	4
 	.byte	7
 	.byte	129
-	.byte	18
-	.long	.Linfo_string184
+	.byte	19
+	.long	.Linfo_string193
 	.byte	127
-	.byte	18
-	.long	.Linfo_string185
+	.byte	19
+	.long	.Linfo_string194
 	.byte	0
-	.byte	18
-	.long	.Linfo_string186
+	.byte	19
+	.long	.Linfo_string195
 	.byte	1
 	.byte	0
-	.byte	17
-	.long	.Linfo_string193
+	.byte	18
+	.long	.Linfo_string202
 	.byte	4
 	.byte	8
 	.byte	33
-	.byte	18
-	.long	.Linfo_string188
+	.byte	19
+	.long	.Linfo_string197
 	.byte	0
-	.byte	18
-	.long	.Linfo_string189
+	.byte	19
+	.long	.Linfo_string198
 	.byte	1
-	.byte	18
-	.long	.Linfo_string190
+	.byte	19
+	.long	.Linfo_string199
 	.byte	2
-	.byte	18
-	.long	.Linfo_string191
+	.byte	19
+	.long	.Linfo_string200
 	.byte	3
-	.byte	18
-	.long	.Linfo_string192
+	.byte	19
+	.long	.Linfo_string201
 	.byte	4
 	.byte	0
 	.byte	21
-	.long	.Linfo_string197
+	.long	.Linfo_string206
 	.byte	4
 	.byte	9
 	.short	1136
-	.byte	18
-	.long	.Linfo_string194
+	.byte	19
+	.long	.Linfo_string203
 	.byte	0
-	.byte	18
-	.long	.Linfo_string195
+	.byte	19
+	.long	.Linfo_string204
 	.byte	1
-	.byte	18
-	.long	.Linfo_string196
+	.byte	19
+	.long	.Linfo_string205
 	.byte	2
 	.byte	0
 	.byte	21
-	.long	.Linfo_string201
+	.long	.Linfo_string210
 	.byte	4
 	.byte	9
 	.short	1108
-	.byte	18
-	.long	.Linfo_string198
+	.byte	19
+	.long	.Linfo_string207
 	.byte	0
-	.byte	18
-	.long	.Linfo_string199
+	.byte	19
+	.long	.Linfo_string208
 	.byte	1
-	.byte	18
-	.long	.Linfo_string200
+	.byte	19
+	.long	.Linfo_string209
 	.byte	2
 	.byte	0
 	.byte	7
-	.long	475
+	.long	535
 	.byte	7
-	.long	260
+	.long	320
 	.byte	22
 	.long	.Ldebug_ranges0
 	.byte	1
 	.byte	94
 	.byte	1
-	.long	.Linfo_string202
+	.long	.Linfo_string211
 	.byte	6
 	.byte	206
 	.byte	1
 	.byte	1
 	.byte	23
 	.long	.Ldebug_loc0
-	.long	.Linfo_string203
-	.byte	6
-	.byte	206
-	.long	3878
-	.byte	23
-	.long	.Ldebug_loc1
-	.long	.Linfo_string205
-	.byte	6
-	.byte	206
-	.long	3878
-	.byte	23
-	.long	.Ldebug_loc2
-	.long	.Linfo_string206
-	.byte	6
-	.byte	206
-	.long	3878
-	.byte	23
-	.long	.Ldebug_loc3
-	.long	.Linfo_string207
-	.byte	6
-	.byte	207
-	.long	3878
-	.byte	24
-	.long	.Linfo_string209
-	.byte	6
-	.byte	207
-	.long	3878
-	.byte	24
-	.long	.Linfo_string232
-	.byte	6
-	.byte	207
-	.long	3878
-	.byte	23
-	.long	.Ldebug_loc4
-	.long	.Linfo_string208
-	.byte	6
-	.byte	207
-	.long	1955
-	.byte	25
-	.long	.Ldebug_loc5
-	.long	.Linfo_string210
-	.byte	6
-	.byte	210
-	.long	3889
-	.byte	25
-	.long	.Ldebug_loc6
 	.long	.Linfo_string212
 	.byte	6
-	.byte	211
-	.long	3889
-	.byte	26
-	.byte	7
-	.byte	146
-	.ascii	"\377\377\377\377\017"
-	.byte	0
+	.byte	206
+	.long	4040
+	.byte	23
+	.long	.Ldebug_loc1
 	.long	.Linfo_string214
 	.byte	6
+	.byte	206
+	.long	4040
+	.byte	23
+	.long	.Ldebug_loc2
+	.long	.Linfo_string215
+	.byte	6
+	.byte	206
+	.long	4040
+	.byte	23
+	.long	.Ldebug_loc3
+	.long	.Linfo_string216
+	.byte	6
+	.byte	207
+	.long	4040
+	.byte	24
+	.long	.Linfo_string218
+	.byte	6
+	.byte	207
+	.long	4040
+	.byte	24
+	.long	.Linfo_string241
+	.byte	6
+	.byte	207
+	.long	4040
+	.byte	23
+	.long	.Ldebug_loc4
+	.long	.Linfo_string217
+	.byte	6
+	.byte	207
+	.long	2053
+	.byte	25
+	.long	.Ldebug_loc5
+	.long	.Linfo_string219
+	.byte	6
+	.byte	210
+	.long	4051
+	.byte	25
+	.long	.Ldebug_loc6
+	.long	.Linfo_string221
+	.byte	6
+	.byte	211
+	.long	4051
+	.byte	25
+	.long	.Ldebug_loc8
+	.long	.Linfo_string223
+	.byte	6
 	.byte	209
-	.long	3900
-	.byte	27
+	.long	4062
+	.byte	26
 	.long	.Ldebug_ranges1
-	.byte	28
+	.byte	27
 	.byte	0
-	.long	.Linfo_string213
+	.long	.Linfo_string222
 	.byte	6
 	.byte	214
-	.long	3162
+	.long	3310
 	.byte	0
-	.byte	27
+	.byte	26
 	.long	.Ldebug_ranges2
-	.byte	29
-	.long	.Linfo_string213
+	.byte	28
+	.long	.Linfo_string222
 	.byte	6
 	.byte	220
-	.long	3162
+	.long	3310
 	.byte	0
-	.byte	27
+	.byte	26
 	.long	.Ldebug_ranges3
-	.byte	29
-	.long	.Linfo_string213
+	.byte	28
+	.long	.Linfo_string222
 	.byte	6
 	.byte	228
-	.long	3162
+	.long	3310
 	.byte	0
-	.byte	27
+	.byte	26
 	.long	.Ldebug_ranges4
 	.byte	25
 	.long	.Ldebug_loc7
-	.long	.Linfo_string213
+	.long	.Linfo_string222
 	.byte	6
 	.byte	245
-	.long	3162
+	.long	3310
 	.byte	0
-	.byte	27
+	.byte	26
 	.long	.Ldebug_ranges5
-	.byte	28
+	.byte	27
 	.byte	1
-	.long	.Linfo_string213
+	.long	.Linfo_string222
 	.byte	6
 	.byte	252
-	.long	3162
+	.long	3310
 	.byte	0
-	.byte	27
+	.byte	26
 	.long	.Ldebug_ranges6
-	.byte	30
+	.byte	29
 	.byte	1
-	.long	.Linfo_string213
+	.long	.Linfo_string222
 	.byte	6
 	.short	259
-	.long	3162
+	.long	3310
 	.byte	0
-	.byte	27
-	.long	.Ldebug_ranges9
-	.byte	31
-	.long	.Ldebug_loc8
-	.long	.Linfo_string227
+	.byte	26
+	.long	.Ldebug_ranges10
+	.byte	30
+	.long	.Ldebug_loc9
+	.long	.Linfo_string236
 	.byte	6
 	.short	299
-	.long	4036
-	.byte	27
+	.long	4198
+	.byte	26
 	.long	.Ldebug_ranges8
-	.byte	31
-	.long	.Ldebug_loc9
-	.long	.Linfo_string229
+	.byte	30
+	.long	.Ldebug_loc10
+	.long	.Linfo_string238
 	.byte	6
 	.short	551
-	.long	1955
-	.byte	31
-	.long	.Ldebug_loc10
-	.long	.Linfo_string230
+	.long	2053
+	.byte	30
+	.long	.Ldebug_loc11
+	.long	.Linfo_string239
 	.byte	6
 	.short	546
-	.long	1955
-	.byte	27
+	.long	2053
+	.byte	26
 	.long	.Ldebug_ranges7
-	.byte	31
-	.long	.Ldebug_loc11
-	.long	.Linfo_string231
+	.byte	30
+	.long	.Ldebug_loc12
+	.long	.Linfo_string240
 	.byte	6
 	.short	561
-	.long	3162
+	.long	3310
 	.byte	0
+	.byte	0
+	.byte	26
+	.long	.Ldebug_ranges9
+	.byte	31
+	.long	.Linfo_string242
+	.byte	6
+	.short	526
+	.long	2053
 	.byte	0
 	.byte	0
 	.byte	0
 	.byte	9
-	.long	1955
-	.long	.Linfo_string204
+	.long	2053
+	.long	.Linfo_string213
 	.byte	10
 	.byte	122
 	.byte	9
-	.long	1955
-	.long	.Linfo_string211
+	.long	2053
+	.long	.Linfo_string220
 	.byte	7
 	.byte	112
 	.byte	9
-	.long	3911
-	.long	.Linfo_string226
+	.long	4073
+	.long	.Linfo_string235
 	.byte	11
 	.byte	40
 	.byte	32
-	.long	.Linfo_string225
+	.long	.Linfo_string234
 	.byte	10
 	.byte	11
 	.byte	28
 	.byte	5
-	.long	.Linfo_string215
-	.long	3980
+	.long	.Linfo_string224
+	.long	4142
 	.byte	11
 	.byte	30
 	.byte	0
 	.byte	5
-	.long	.Linfo_string221
-	.long	475
+	.long	.Linfo_string230
+	.long	535
 	.byte	11
 	.byte	32
 	.byte	3
 	.byte	5
-	.long	.Linfo_string222
-	.long	482
+	.long	.Linfo_string231
+	.long	542
 	.byte	11
 	.byte	33
 	.byte	4
 	.byte	5
-	.long	.Linfo_string223
-	.long	482
+	.long	.Linfo_string232
+	.long	542
 	.byte	11
 	.byte	35
 	.byte	6
 	.byte	5
-	.long	.Linfo_string224
-	.long	482
+	.long	.Linfo_string233
+	.long	542
 	.byte	11
 	.byte	37
 	.byte	8
 	.byte	0
 	.byte	9
-	.long	3991
-	.long	.Linfo_string220
+	.long	4153
+	.long	.Linfo_string229
 	.byte	11
 	.byte	23
 	.byte	32
-	.long	.Linfo_string219
+	.long	.Linfo_string228
 	.byte	3
 	.byte	11
 	.byte	11
 	.byte	5
-	.long	.Linfo_string216
-	.long	475
+	.long	.Linfo_string225
+	.long	535
 	.byte	11
 	.byte	13
 	.byte	0
 	.byte	5
-	.long	.Linfo_string217
-	.long	475
+	.long	.Linfo_string226
+	.long	535
 	.byte	11
 	.byte	18
 	.byte	1
 	.byte	5
-	.long	.Linfo_string218
-	.long	475
+	.long	.Linfo_string227
+	.long	535
 	.byte	11
 	.byte	21
 	.byte	2
 	.byte	0
 	.byte	9
-	.long	3391
-	.long	.Linfo_string228
+	.long	3539
+	.long	.Linfo_string237
 	.byte	7
 	.byte	134
 	.byte	0
@@ -4801,6 +4951,13 @@ mixer1Crossbar:
 	.byte	0
 	.byte	0
 	.byte	16
+	.byte	38
+	.byte	0
+	.byte	73
+	.byte	19
+	.byte	0
+	.byte	0
+	.byte	17
 	.byte	52
 	.byte	0
 	.byte	3
@@ -4817,7 +4974,7 @@ mixer1Crossbar:
 	.byte	10
 	.byte	0
 	.byte	0
-	.byte	17
+	.byte	18
 	.byte	4
 	.byte	1
 	.byte	3
@@ -4830,20 +4987,13 @@ mixer1Crossbar:
 	.byte	11
 	.byte	0
 	.byte	0
-	.byte	18
+	.byte	19
 	.byte	40
 	.byte	0
 	.byte	3
 	.byte	14
 	.byte	28
 	.byte	13
-	.byte	0
-	.byte	0
-	.byte	19
-	.byte	38
-	.byte	0
-	.byte	73
-	.byte	19
 	.byte	0
 	.byte	0
 	.byte	20
@@ -4931,28 +5081,13 @@ mixer1Crossbar:
 	.byte	0
 	.byte	0
 	.byte	26
-	.byte	52
-	.byte	0
-	.byte	2
-	.byte	10
-	.byte	3
-	.byte	14
-	.byte	58
-	.byte	11
-	.byte	59
-	.byte	11
-	.byte	73
-	.byte	19
-	.byte	0
-	.byte	0
-	.byte	27
 	.byte	11
 	.byte	1
 	.byte	85
 	.byte	6
 	.byte	0
 	.byte	0
-	.byte	28
+	.byte	27
 	.byte	52
 	.byte	0
 	.byte	28
@@ -4967,7 +5102,7 @@ mixer1Crossbar:
 	.byte	19
 	.byte	0
 	.byte	0
-	.byte	29
+	.byte	28
 	.byte	52
 	.byte	0
 	.byte	3
@@ -4980,7 +5115,7 @@ mixer1Crossbar:
 	.byte	19
 	.byte	0
 	.byte	0
-	.byte	30
+	.byte	29
 	.byte	52
 	.byte	0
 	.byte	28
@@ -4995,11 +5130,24 @@ mixer1Crossbar:
 	.byte	19
 	.byte	0
 	.byte	0
-	.byte	31
+	.byte	30
 	.byte	52
 	.byte	0
 	.byte	2
 	.byte	6
+	.byte	3
+	.byte	14
+	.byte	58
+	.byte	11
+	.byte	59
+	.byte	5
+	.byte	73
+	.byte	19
+	.byte	0
+	.byte	0
+	.byte	31
+	.byte	52
+	.byte	0
 	.byte	3
 	.byte	14
 	.byte	58
@@ -5031,614 +5179,846 @@ mixer1Crossbar:
 	.long	0
 	.long	0
 .Ldebug_ranges1:
-	.long	.Ltmp15
 	.long	.Ltmp16
+	.long	.Ltmp17
 	.long	0
 	.long	0
 .Ldebug_ranges2:
-	.long	.Ltmp16
 	.long	.Ltmp17
+	.long	.Ltmp18
 	.long	0
 	.long	0
 .Ldebug_ranges3:
-	.long	.Ltmp17
-	.long	.Ltmp19
+	.long	.Ltmp18
+	.long	.Ltmp20
 	.long	0
 	.long	0
 .Ldebug_ranges4:
-	.long	.Ltmp20
-	.long	.Ltmp22
+	.long	.Ltmp21
+	.long	.Ltmp23
 	.long	0
 	.long	0
 .Ldebug_ranges5:
-	.long	.Ltmp22
-	.long	.Ltmp24
+	.long	.Ltmp23
+	.long	.Ltmp25
 	.long	0
 	.long	0
 .Ldebug_ranges6:
-	.long	.Ltmp24
-	.long	.Ltmp26
+	.long	.Ltmp25
+	.long	.Ltmp27
 	.long	0
 	.long	0
 .Ldebug_ranges7:
-	.long	.Ltmp62
-	.long	.Ltmp73
+	.long	.Ltmp52
+	.long	.Ltmp63
 	.long	0
 	.long	0
 .Ldebug_ranges8:
-	.long	.Ltmp57
-	.long	.Ltmp79
+	.long	.Ltmp47
+	.long	.Ltmp73
+	.long	.Ltmp94
+	.long	.Ltmp96
 	.long	0
 	.long	0
 .Ldebug_ranges9:
+	.long	.Ltmp86
+	.long	.Ltmp91
+	.long	0
+	.long	0
+.Ldebug_ranges10:
 	.long	.Ltmp31
-	.long	.Ltmp158
+	.long	.Ltmp155
 	.long	0
 	.long	0
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 	.long	.Lfunc_begin0
-	.long	.Ltmp12
-.Lset0 = .Ltmp161-.Ltmp160
+	.long	.Ltmp13
+.Lset0 = .Ltmp158-.Ltmp157
 	.short	.Lset0
-.Ltmp160:
+.Ltmp157:
 	.byte	80
-.Ltmp161:
+.Ltmp158:
 	.long	0
 	.long	0
 .Ldebug_loc1:
 	.long	.Lfunc_begin0
-	.long	.Ltmp9
-.Lset1 = .Ltmp163-.Ltmp162
-	.short	.Lset1
-.Ltmp162:
-	.byte	81
-.Ltmp163:
-	.long	.Ltmp9
 	.long	.Ltmp10
-.Lset2 = .Ltmp165-.Ltmp164
+.Lset1 = .Ltmp160-.Ltmp159
+	.short	.Lset1
+.Ltmp159:
+	.byte	81
+.Ltmp160:
+	.long	.Ltmp10
+	.long	.Ltmp11
+.Lset2 = .Ltmp162-.Ltmp161
 	.short	.Lset2
-.Ltmp164:
+.Ltmp161:
 	.byte	84
-.Ltmp165:
-	.long	.Ltmp12
+.Ltmp162:
 	.long	.Ltmp13
-.Lset3 = .Ltmp167-.Ltmp166
+	.long	.Ltmp14
+.Lset3 = .Ltmp164-.Ltmp163
 	.short	.Lset3
-.Ltmp166:
+.Ltmp163:
 	.byte	80
-.Ltmp167:
+.Ltmp164:
 	.long	0
 	.long	0
 .Ldebug_loc2:
 	.long	.Lfunc_begin0
 	.long	.Ltmp9
-.Lset4 = .Ltmp169-.Ltmp168
+.Lset4 = .Ltmp166-.Ltmp165
 	.short	.Lset4
-.Ltmp168:
+.Ltmp165:
 	.byte	82
-.Ltmp169:
+.Ltmp166:
 	.long	.Ltmp9
-	.long	.Ltmp27
-.Lset5 = .Ltmp171-.Ltmp170
+	.long	.Ltmp10
+.Lset5 = .Ltmp168-.Ltmp167
 	.short	.Lset5
-.Ltmp170:
-	.byte	126
-.asciiz"\334"
-.Ltmp171:
-	.long	.Ltmp27
-	.long	.Ltmp28
-.Lset6 = .Ltmp173-.Ltmp172
+.Ltmp167:
+	.byte	90
+.Ltmp168:
+	.long	.Ltmp18
+	.long	.Ltmp45
+.Lset6 = .Ltmp170-.Ltmp169
 	.short	.Lset6
-.Ltmp172:
-	.byte	81
-.Ltmp173:
-	.long	.Ltmp29
+.Ltmp169:
+	.byte	90
+.Ltmp170:
+	.long	.Ltmp45
 	.long	.Ltmp46
-.Lset7 = .Ltmp175-.Ltmp174
+.Lset7 = .Ltmp172-.Ltmp171
 	.short	.Lset7
-.Ltmp174:
-	.byte	126
-.asciiz"\334"
-.Ltmp175:
-	.long	.Ltmp46
-	.long	.Ltmp47
-.Lset8 = .Ltmp177-.Ltmp176
-	.short	.Lset8
-.Ltmp176:
-	.byte	83
-.Ltmp177:
+.Ltmp171:
+	.byte	85
+.Ltmp172:
 	.long	.Ltmp49
-	.long	.Ltmp50
-.Lset9 = .Ltmp179-.Ltmp178
+	.long	.Ltmp65
+.Lset8 = .Ltmp174-.Ltmp173
+	.short	.Lset8
+.Ltmp173:
+	.byte	85
+.Ltmp174:
+	.long	.Ltmp65
+	.long	.Ltmp66
+.Lset9 = .Ltmp176-.Ltmp175
 	.short	.Lset9
-.Ltmp178:
-	.byte	83
-.Ltmp179:
-	.long	.Ltmp50
-	.long	.Ltmp54
-.Lset10 = .Ltmp181-.Ltmp180
+.Ltmp175:
+	.byte	90
+.Ltmp176:
+	.long	.Ltmp68
+	.long	.Ltmp83
+.Lset10 = .Ltmp178-.Ltmp177
 	.short	.Lset10
-.Ltmp180:
-	.byte	126
-.asciiz"\334"
-.Ltmp181:
-	.long	.Ltmp55
-	.long	.Ltmp55
-.Lset11 = .Ltmp183-.Ltmp182
+.Ltmp177:
+	.byte	90
+.Ltmp178:
+	.long	.Ltmp84
+	.long	.Ltmp85
+.Lset11 = .Ltmp180-.Ltmp179
 	.short	.Lset11
-.Ltmp182:
-	.byte	126
-.asciiz"\334"
-.Ltmp183:
-	.long	.Ltmp55
-	.long	.Ltmp56
-.Lset12 = .Ltmp185-.Ltmp184
-	.short	.Lset12
-.Ltmp184:
-	.byte	89
-.Ltmp185:
-	.long	.Ltmp59
-	.long	.Ltmp75
-.Lset13 = .Ltmp187-.Ltmp186
-	.short	.Lset13
-.Ltmp186:
-	.byte	89
-.Ltmp187:
-	.long	.Ltmp75
-	.long	.Ltmp79
-.Lset14 = .Ltmp189-.Ltmp188
-	.short	.Lset14
-.Ltmp188:
-	.byte	126
-.asciiz"\334"
-.Ltmp189:
-	.long	.Ltmp79
-	.long	.Ltmp79
-.Lset15 = .Ltmp191-.Ltmp190
-	.short	.Lset15
-.Ltmp190:
-	.byte	89
-.Ltmp191:
-	.long	.Ltmp79
+.Ltmp179:
+	.byte	90
+.Ltmp180:
 	.long	.Ltmp86
-.Lset16 = .Ltmp193-.Ltmp192
-	.short	.Lset16
-.Ltmp192:
-	.byte	126
-.asciiz"\334"
-.Ltmp193:
-	.long	.Ltmp86
-	.long	.Ltmp87
-.Lset17 = .Ltmp195-.Ltmp194
-	.short	.Lset17
-.Ltmp194:
-	.byte	83
-.Ltmp195:
 	.long	.Ltmp91
+.Lset12 = .Ltmp182-.Ltmp181
+	.short	.Lset12
+.Ltmp181:
+	.byte	90
+.Ltmp182:
 	.long	.Ltmp93
-.Lset18 = .Ltmp197-.Ltmp196
-	.short	.Lset18
-.Ltmp196:
-	.byte	83
-.Ltmp197:
-	.long	.Ltmp93
-	.long	.Ltmp94
-.Lset19 = .Ltmp199-.Ltmp198
-	.short	.Lset19
-.Ltmp198:
-	.byte	126
-.asciiz"\334"
-.Ltmp199:
-	.long	.Ltmp94
-	.long	.Ltmp97
-.Lset20 = .Ltmp201-.Ltmp200
-	.short	.Lset20
-.Ltmp200:
-	.byte	83
-.Ltmp201:
-	.long	.Ltmp97
-	.long	.Ltmp98
-.Lset21 = .Ltmp203-.Ltmp202
-	.short	.Lset21
-.Ltmp202:
-	.byte	126
-.asciiz"\334"
-.Ltmp203:
-	.long	.Ltmp98
-	.long	.Ltmp100
-.Lset22 = .Ltmp205-.Ltmp204
-	.short	.Lset22
-.Ltmp204:
-	.byte	83
-.Ltmp205:
-	.long	.Ltmp100
-	.long	.Ltmp125
-.Lset23 = .Ltmp207-.Ltmp206
-	.short	.Lset23
-.Ltmp206:
-	.byte	126
-.asciiz"\334"
-.Ltmp207:
-	.long	.Ltmp148
+	.long	.Ltmp95
+.Lset13 = .Ltmp184-.Ltmp183
+	.short	.Lset13
+.Ltmp183:
+	.byte	90
+.Ltmp184:
+	.long	.Ltmp96
+	.long	.Ltmp110
+.Lset14 = .Ltmp186-.Ltmp185
+	.short	.Lset14
+.Ltmp185:
+	.byte	90
+.Ltmp186:
+	.long	.Ltmp113
+	.long	.Ltmp143
+.Lset15 = .Ltmp188-.Ltmp187
+	.short	.Lset15
+.Ltmp187:
+	.byte	90
+.Ltmp188:
+	.long	.Ltmp144
 	.long	.Lfunc_end0
-.Lset24 = .Ltmp209-.Ltmp208
-	.short	.Lset24
-.Ltmp208:
-	.byte	126
-.asciiz"\334"
-.Ltmp209:
+.Lset16 = .Ltmp190-.Ltmp189
+	.short	.Lset16
+.Ltmp189:
+	.byte	90
+.Ltmp190:
 	.long	0
 	.long	0
 .Ldebug_loc3:
 	.long	.Lfunc_begin0
 	.long	.Ltmp9
-.Lset25 = .Ltmp211-.Ltmp210
-	.short	.Lset25
-.Ltmp210:
+.Lset17 = .Ltmp192-.Ltmp191
+	.short	.Lset17
+.Ltmp191:
 	.byte	83
-.Ltmp211:
+.Ltmp192:
 	.long	.Ltmp9
-	.long	.Ltmp54
-.Lset26 = .Ltmp213-.Ltmp212
-	.short	.Lset26
-.Ltmp212:
+	.long	.Ltmp66
+.Lset18 = .Ltmp194-.Ltmp193
+	.short	.Lset18
+.Ltmp193:
 	.byte	126
-.asciiz"\324"
-.Ltmp213:
-	.long	.Ltmp55
+	.byte	60
+.Ltmp194:
+	.long	.Ltmp68
+	.long	.Ltmp83
+.Lset19 = .Ltmp196-.Ltmp195
+	.short	.Lset19
+.Ltmp195:
+	.byte	126
+	.byte	60
+.Ltmp196:
+	.long	.Ltmp84
+	.long	.Ltmp85
+.Lset20 = .Ltmp198-.Ltmp197
+	.short	.Lset20
+.Ltmp197:
+	.byte	126
+	.byte	60
+.Ltmp198:
+	.long	.Ltmp86
+	.long	.Ltmp91
+.Lset21 = .Ltmp200-.Ltmp199
+	.short	.Lset21
+.Ltmp199:
+	.byte	126
+	.byte	60
+.Ltmp200:
+	.long	.Ltmp93
+	.long	.Ltmp95
+.Lset22 = .Ltmp202-.Ltmp201
+	.short	.Lset22
+.Ltmp201:
+	.byte	126
+	.byte	60
+.Ltmp202:
+	.long	.Ltmp96
+	.long	.Ltmp110
+.Lset23 = .Ltmp204-.Ltmp203
+	.short	.Lset23
+.Ltmp203:
+	.byte	126
+	.byte	60
+.Ltmp204:
+	.long	.Ltmp113
+	.long	.Ltmp143
+.Lset24 = .Ltmp206-.Ltmp205
+	.short	.Lset24
+.Ltmp205:
+	.byte	126
+	.byte	60
+.Ltmp206:
+	.long	.Ltmp144
 	.long	.Lfunc_end0
-.Lset27 = .Ltmp215-.Ltmp214
-	.short	.Lset27
-.Ltmp214:
+.Lset25 = .Ltmp208-.Ltmp207
+	.short	.Lset25
+.Ltmp207:
 	.byte	126
-.asciiz"\324"
-.Ltmp215:
+	.byte	60
+.Ltmp208:
 	.long	0
 	.long	0
 .Ldebug_loc4:
 	.long	.Lfunc_begin0
-	.long	.Ltmp54
-.Lset28 = .Ltmp217-.Ltmp216
+	.long	.Ltmp66
+.Lset26 = .Ltmp210-.Ltmp209
+	.short	.Lset26
+.Ltmp209:
+	.byte	126
+	.byte	56
+.Ltmp210:
+	.long	.Ltmp68
+	.long	.Ltmp83
+.Lset27 = .Ltmp212-.Ltmp211
+	.short	.Lset27
+.Ltmp211:
+	.byte	126
+	.byte	56
+.Ltmp212:
+	.long	.Ltmp84
+	.long	.Ltmp85
+.Lset28 = .Ltmp214-.Ltmp213
 	.short	.Lset28
-.Ltmp216:
+.Ltmp213:
 	.byte	126
-.asciiz"\320"
-.Ltmp217:
-	.long	.Ltmp55
-	.long	.Lfunc_end0
-.Lset29 = .Ltmp219-.Ltmp218
+	.byte	56
+.Ltmp214:
+	.long	.Ltmp86
+	.long	.Ltmp91
+.Lset29 = .Ltmp216-.Ltmp215
 	.short	.Lset29
-.Ltmp218:
+.Ltmp215:
 	.byte	126
-.asciiz"\320"
+	.byte	56
+.Ltmp216:
+	.long	.Ltmp93
+	.long	.Ltmp95
+.Lset30 = .Ltmp218-.Ltmp217
+	.short	.Lset30
+.Ltmp217:
+	.byte	126
+	.byte	56
+.Ltmp218:
+	.long	.Ltmp96
+	.long	.Ltmp110
+.Lset31 = .Ltmp220-.Ltmp219
+	.short	.Lset31
 .Ltmp219:
+	.byte	126
+	.byte	56
+.Ltmp220:
+	.long	.Ltmp113
+	.long	.Ltmp143
+.Lset32 = .Ltmp222-.Ltmp221
+	.short	.Lset32
+.Ltmp221:
+	.byte	126
+	.byte	56
+.Ltmp222:
+	.long	.Ltmp144
+	.long	.Lfunc_end0
+.Lset33 = .Ltmp224-.Ltmp223
+	.short	.Lset33
+.Ltmp223:
+	.byte	126
+	.byte	56
+.Ltmp224:
 	.long	0
 	.long	0
 .Ldebug_loc5:
-	.long	.Ltmp12
-	.long	.Ltmp54
-.Lset30 = .Ltmp221-.Ltmp220
-	.short	.Lset30
-.Ltmp220:
-	.byte	126
-.asciiz"\340"
-.Ltmp221:
-	.long	.Ltmp55
+	.long	.Ltmp13
+	.long	.Ltmp14
+.Lset34 = .Ltmp226-.Ltmp225
+	.short	.Lset34
+.Ltmp225:
+	.byte	86
+.Ltmp226:
+	.long	.Ltmp18
+	.long	.Ltmp66
+.Lset35 = .Ltmp228-.Ltmp227
+	.short	.Lset35
+.Ltmp227:
+	.byte	86
+.Ltmp228:
+	.long	.Ltmp68
+	.long	.Ltmp83
+.Lset36 = .Ltmp230-.Ltmp229
+	.short	.Lset36
+.Ltmp229:
+	.byte	86
+.Ltmp230:
+	.long	.Ltmp84
+	.long	.Ltmp85
+.Lset37 = .Ltmp232-.Ltmp231
+	.short	.Lset37
+.Ltmp231:
+	.byte	86
+.Ltmp232:
+	.long	.Ltmp86
+	.long	.Ltmp91
+.Lset38 = .Ltmp234-.Ltmp233
+	.short	.Lset38
+.Ltmp233:
+	.byte	86
+.Ltmp234:
+	.long	.Ltmp93
+	.long	.Ltmp95
+.Lset39 = .Ltmp236-.Ltmp235
+	.short	.Lset39
+.Ltmp235:
+	.byte	86
+.Ltmp236:
+	.long	.Ltmp96
+	.long	.Ltmp110
+.Lset40 = .Ltmp238-.Ltmp237
+	.short	.Lset40
+.Ltmp237:
+	.byte	86
+.Ltmp238:
+	.long	.Ltmp113
+	.long	.Ltmp143
+.Lset41 = .Ltmp240-.Ltmp239
+	.short	.Lset41
+.Ltmp239:
+	.byte	86
+.Ltmp240:
+	.long	.Ltmp144
 	.long	.Lfunc_end0
-.Lset31 = .Ltmp223-.Ltmp222
-	.short	.Lset31
-.Ltmp222:
-	.byte	126
-.asciiz"\340"
-.Ltmp223:
+.Lset42 = .Ltmp242-.Ltmp241
+	.short	.Lset42
+.Ltmp241:
+	.byte	86
+.Ltmp242:
 	.long	0
 	.long	0
 .Ldebug_loc6:
-	.long	.Ltmp14
+	.long	.Ltmp15
 	.long	.Ltmp32
-.Lset32 = .Ltmp225-.Ltmp224
-	.short	.Lset32
-.Ltmp224:
-	.byte	90
-.Ltmp225:
+.Lset43 = .Ltmp244-.Ltmp243
+	.short	.Lset43
+.Ltmp243:
+	.byte	88
+.Ltmp244:
 	.long	0
 	.long	0
 .Ldebug_loc7:
-	.long	.Ltmp20
 	.long	.Ltmp21
-.Lset33 = .Ltmp227-.Ltmp226
-	.short	.Lset33
-.Ltmp226:
+	.long	.Ltmp22
+.Lset44 = .Ltmp246-.Ltmp245
+	.short	.Lset44
+.Ltmp245:
 	.byte	17
 	.byte	0
-.Ltmp227:
-	.long	.Ltmp21
+.Ltmp246:
+	.long	.Ltmp22
 	.long	.Lfunc_end0
-.Lset34 = .Ltmp229-.Ltmp228
-	.short	.Lset34
-.Ltmp228:
+.Lset45 = .Ltmp248-.Ltmp247
+	.short	.Lset45
+.Ltmp247:
 	.byte	17
 	.byte	1
-.Ltmp229:
+.Ltmp248:
 	.long	0
 	.long	0
 .Ldebug_loc8:
-	.long	.Ltmp34
-	.long	.Ltmp35
-.Lset35 = .Ltmp231-.Ltmp230
-	.short	.Lset35
-.Ltmp230:
-	.byte	90
-.Ltmp231:
-	.long	.Ltmp35
-	.long	.Ltmp69
-.Lset36 = .Ltmp233-.Ltmp232
-	.short	.Lset36
-.Ltmp232:
-	.byte	16
-	.byte	1
-.Ltmp233:
-	.long	.Ltmp69
-	.long	.Ltmp70
-.Lset37 = .Ltmp235-.Ltmp234
-	.short	.Lset37
-.Ltmp234:
-	.byte	90
-.Ltmp235:
-	.long	.Ltmp71
-	.long	.Ltmp73
-.Lset38 = .Ltmp237-.Ltmp236
-	.short	.Lset38
-.Ltmp236:
-	.byte	90
-.Ltmp237:
-	.long	.Ltmp73
-	.long	.Ltmp78
-.Lset39 = .Ltmp239-.Ltmp238
-	.short	.Lset39
-.Ltmp238:
-	.byte	16
-	.byte	1
-.Ltmp239:
-	.long	.Ltmp78
-	.long	.Ltmp79
-.Lset40 = .Ltmp241-.Ltmp240
-	.short	.Lset40
-.Ltmp240:
-	.byte	90
-.Ltmp241:
-	.long	.Ltmp121
-	.long	.Ltmp122
-.Lset41 = .Ltmp243-.Ltmp242
-	.short	.Lset41
-.Ltmp242:
-	.byte	90
-.Ltmp243:
-	.long	.Ltmp148
-	.long	.Ltmp149
-.Lset42 = .Ltmp245-.Ltmp244
-	.short	.Lset42
-.Ltmp244:
-	.byte	90
-.Ltmp245:
+	.long	.Ltmp32
+	.long	.Ltmp46
+.Lset46 = .Ltmp250-.Ltmp249
+	.short	.Lset46
+.Ltmp249:
+	.byte	116
+	.byte	0
+.Ltmp250:
+	.long	.Ltmp46
+	.long	.Ltmp47
+.Lset47 = .Ltmp252-.Ltmp251
+	.short	.Lset47
+.Ltmp251:
+	.byte	121
+	.byte	0
+.Ltmp252:
+	.long	.Ltmp49
+	.long	.Ltmp66
+.Lset48 = .Ltmp254-.Ltmp253
+	.short	.Lset48
+.Ltmp253:
+	.byte	121
+	.byte	0
+.Ltmp254:
+	.long	.Ltmp66
+	.long	.Ltmp67
+.Lset49 = .Ltmp256-.Ltmp255
+	.short	.Lset49
+.Ltmp255:
+	.byte	116
+	.byte	0
+.Ltmp256:
+	.long	.Ltmp68
+	.long	.Ltmp81
+.Lset50 = .Ltmp258-.Ltmp257
+	.short	.Lset50
+.Ltmp257:
+	.byte	116
+	.byte	0
+.Ltmp258:
+	.long	.Ltmp81
+	.long	.Ltmp82
+.Lset51 = .Ltmp260-.Ltmp259
+	.short	.Lset51
+.Ltmp259:
+	.byte	120
+	.byte	0
+.Ltmp260:
+	.long	.Ltmp84
+	.long	.Ltmp85
+.Lset52 = .Ltmp262-.Ltmp261
+	.short	.Lset52
+.Ltmp261:
+	.byte	116
+	.byte	0
+.Ltmp262:
+	.long	.Ltmp86
+	.long	.Ltmp92
+.Lset53 = .Ltmp264-.Ltmp263
+	.short	.Lset53
+.Ltmp263:
+	.byte	116
+	.byte	0
+.Ltmp264:
+	.long	.Ltmp93
+	.long	.Ltmp95
+.Lset54 = .Ltmp266-.Ltmp265
+	.short	.Lset54
+.Ltmp265:
+	.byte	116
+	.byte	0
+.Ltmp266:
+	.long	.Ltmp96
+	.long	.Ltmp97
+.Lset55 = .Ltmp268-.Ltmp267
+	.short	.Lset55
+.Ltmp267:
+	.byte	116
+	.byte	0
+.Ltmp268:
+	.long	.Ltmp97
+	.long	.Ltmp98
+.Lset56 = .Ltmp270-.Ltmp269
+	.short	.Lset56
+.Ltmp269:
+	.byte	120
+	.byte	0
+.Ltmp270:
+	.long	.Ltmp99
+	.long	.Ltmp108
+.Lset57 = .Ltmp272-.Ltmp271
+	.short	.Lset57
+.Ltmp271:
+	.byte	120
+	.byte	0
+.Ltmp272:
+	.long	.Ltmp108
+	.long	.Ltmp108
+.Lset58 = .Ltmp274-.Ltmp273
+	.short	.Lset58
+.Ltmp273:
+	.byte	116
+	.byte	0
+.Ltmp274:
+	.long	.Ltmp108
+	.long	.Ltmp109
+.Lset59 = .Ltmp276-.Ltmp275
+	.short	.Lset59
+.Ltmp275:
+	.byte	120
+	.byte	0
+.Ltmp276:
+	.long	.Ltmp113
+	.long	.Ltmp117
+.Lset60 = .Ltmp278-.Ltmp277
+	.short	.Lset60
+.Ltmp277:
+	.byte	120
+	.byte	0
+.Ltmp278:
+	.long	.Ltmp117
+	.long	.Ltmp118
+.Lset61 = .Ltmp280-.Ltmp279
+	.short	.Lset61
+.Ltmp279:
+	.byte	116
+	.byte	0
+.Ltmp280:
+	.long	.Ltmp119
+	.long	.Ltmp143
+.Lset62 = .Ltmp282-.Ltmp281
+	.short	.Lset62
+.Ltmp281:
+	.byte	116
+	.byte	0
+.Ltmp282:
+	.long	.Ltmp144
+	.long	.Lfunc_end0
+.Lset63 = .Ltmp284-.Ltmp283
+	.short	.Lset63
+.Ltmp283:
+	.byte	116
+	.byte	0
+.Ltmp284:
 	.long	0
 	.long	0
 .Ldebug_loc9:
-	.long	.Ltmp58
-	.long	.Ltmp60
-.Lset43 = .Ltmp247-.Ltmp246
-	.short	.Lset43
-.Ltmp246:
+	.long	.Ltmp34
+	.long	.Ltmp35
+.Lset64 = .Ltmp286-.Ltmp285
+	.short	.Lset64
+.Ltmp285:
+	.byte	88
+.Ltmp286:
+	.long	.Ltmp35
+	.long	.Ltmp59
+.Lset65 = .Ltmp288-.Ltmp287
+	.short	.Lset65
+.Ltmp287:
 	.byte	16
-	.byte	3
-.Ltmp247:
+	.byte	1
+.Ltmp288:
+	.long	.Ltmp59
 	.long	.Ltmp60
+.Lset66 = .Ltmp290-.Ltmp289
+	.short	.Lset66
+.Ltmp289:
+	.byte	88
+.Ltmp290:
 	.long	.Ltmp61
-.Lset44 = .Ltmp249-.Ltmp248
-	.short	.Lset44
-.Ltmp248:
-	.byte	82
-.Ltmp249:
+	.long	.Ltmp63
+.Lset67 = .Ltmp292-.Ltmp291
+	.short	.Lset67
+.Ltmp291:
+	.byte	88
+.Ltmp292:
+	.long	.Ltmp63
+	.long	.Ltmp96
+.Lset68 = .Ltmp294-.Ltmp293
+	.short	.Lset68
+.Ltmp293:
+	.byte	16
+	.byte	1
+.Ltmp294:
+	.long	.Ltmp96
+	.long	.Ltmp96
+.Lset69 = .Ltmp296-.Ltmp295
+	.short	.Lset69
+.Ltmp295:
+	.byte	88
+.Ltmp296:
+	.long	.Ltmp144
+	.long	.Ltmp144
+.Lset70 = .Ltmp298-.Ltmp297
+	.short	.Lset70
+.Ltmp297:
+	.byte	88
+.Ltmp298:
 	.long	0
 	.long	0
 .Ldebug_loc10:
-	.long	.Ltmp58
-	.long	.Ltmp63
-.Lset45 = .Ltmp251-.Ltmp250
-	.short	.Lset45
-.Ltmp250:
-	.byte	88
-.Ltmp251:
-	.long	.Ltmp66
-	.long	.Ltmp75
-.Lset46 = .Ltmp253-.Ltmp252
-	.short	.Lset46
-.Ltmp252:
-	.byte	88
-.Ltmp253:
+	.long	.Ltmp48
+	.long	.Ltmp50
+.Lset71 = .Ltmp300-.Ltmp299
+	.short	.Lset71
+.Ltmp299:
+	.byte	16
+	.byte	3
+.Ltmp300:
+	.long	.Ltmp50
+	.long	.Ltmp51
+.Lset72 = .Ltmp302-.Ltmp301
+	.short	.Lset72
+.Ltmp301:
+	.byte	82
+.Ltmp302:
 	.long	0
 	.long	0
 .Ldebug_loc11:
-	.long	.Ltmp62
-	.long	.Ltmp67
-.Lset47 = .Ltmp255-.Ltmp254
-	.short	.Lset47
-.Ltmp254:
+	.long	.Ltmp48
+	.long	.Ltmp53
+.Lset73 = .Ltmp304-.Ltmp303
+	.short	.Lset73
+.Ltmp303:
+	.byte	84
+.Ltmp304:
+	.long	.Ltmp56
+	.long	.Ltmp66
+.Lset74 = .Ltmp306-.Ltmp305
+	.short	.Lset74
+.Ltmp305:
+	.byte	84
+.Ltmp306:
+	.long	0
+	.long	0
+.Ldebug_loc12:
+	.long	.Ltmp52
+	.long	.Ltmp57
+.Lset75 = .Ltmp308-.Ltmp307
+	.short	.Lset75
+.Ltmp307:
 	.byte	17
 	.byte	0
-.Ltmp255:
-	.long	.Ltmp71
-	.long	.Ltmp71
-.Lset48 = .Ltmp257-.Ltmp256
-	.short	.Lset48
-.Ltmp256:
+.Ltmp308:
+	.long	.Ltmp61
+	.long	.Ltmp61
+.Lset76 = .Ltmp310-.Ltmp309
+	.short	.Lset76
+.Ltmp309:
 	.byte	17
 	.byte	0
-.Ltmp257:
+.Ltmp310:
 	.long	0
 	.long	0
 	.section	.debug_pubnames,"",@progbits
-.Lset49 = .LpubNames_end0-.LpubNames_begin0
-	.long	.Lset49
+.Lset77 = .LpubNames_end0-.LpubNames_begin0
+	.long	.Lset77
 .LpubNames_begin0:
 	.short	2
 	.long	.L.debug_info_begin0
-.Lset50 = .L.debug_info_end0-.L.debug_info_begin0
-	.long	.Lset50
-	.long	272
+.Lset78 = .L.debug_info_end0-.L.debug_info_begin0
+	.long	.Lset78
+	.long	332
+.asciiz"devDesc_Audio1"
+	.long	549
 .asciiz"devDesc_Audio2"
-	.long	3338
+	.long	2851
+.asciiz"num_freqs_a1"
+	.long	3486
 .asciiz"channelMapUsb"
-	.long	3205
+	.long	3353
 .asciiz"mutesIn"
-	.long	3169
+	.long	3317
 .asciiz"mutesOut"
-	.long	2771
+	.long	3456
+.asciiz"channelMapAud"
+	.long	2924
 .asciiz"DFUcfgDesc"
-	.long	3024
+	.long	3172
 .asciiz"g_sampRes_Out_FS"
-	.long	3241
+	.long	3389
 .asciiz"mixer1Weights"
-	.long	3006
+	.long	3154
 .asciiz"g_sampRes_Out_HS"
-	.long	3523
+	.long	3671
 .asciiz"Endpoint0"
-	.long	3278
+	.long	3426
 .asciiz"channelMap"
-	.long	3114
+	.long	3262
 .asciiz"g_chanCount_In_HS"
-	.long	3187
+	.long	3335
 .asciiz"volsIn"
-	.long	3132
+	.long	3280
 .asciiz"volsOut"
-	.long	3096
+	.long	3244
 .asciiz"g_dataFormat_In"
-	.long	2988
+	.long	3136
 .asciiz"g_subSlot_In_FS"
-	.long	2940
+	.long	3088
 .asciiz"g_subSlot_Out_FS"
-	.long	2958
+	.long	3106
 .asciiz"g_subSlot_In_HS"
-	.long	2905
+	.long	3058
 .asciiz"g_subSlot_Out_HS"
-	.long	3078
+	.long	3226
 .asciiz"g_dataFormat_Out"
 	.long	31
 .asciiz"g_strTable"
-	.long	2722
+	.long	2820
 .asciiz"cfgDesc_Null"
-	.long	558
+	.long	656
 .asciiz"devQualDesc_Null"
-	.long	2855
+	.long	3008
 .asciiz"g_curUsbSpeed"
-	.long	3060
+	.long	3208
 .asciiz"g_sampRes_In_FS"
-	.long	3042
-.asciiz"g_sampRes_In_HS"
-	.long	577
+	.long	2875
+.asciiz"cfgDesc_Audio1"
+	.long	675
 .asciiz"cfgDesc_Audio2"
-	.long	2837
-.asciiz"g_curStreamAlt_In"
-	.long	527
+	.long	637
+.asciiz"devQualDesc_Audio1"
+	.long	606
 .asciiz"devQualDesc_Audio2"
-	.long	2819
+	.long	2972
 .asciiz"g_curStreamAlt_Out"
-	.long	3223
-.asciiz"mixer1Crossbar"
-	.long	3308
-.asciiz"channelMapAud"
-	.long	489
+	.long	2990
+.asciiz"g_curStreamAlt_In"
+	.long	3190
+.asciiz"g_sampRes_In_HS"
+	.long	568
 .asciiz"devDesc_Null"
-	.long	3356
+	.long	3371
+.asciiz"mixer1Crossbar"
+	.long	3504
 .asciiz"mixSel"
-	.long	2753
+	.long	2906
 .asciiz"DFUdevDesc"
-	.long	2801
+	.long	2954
 .asciiz"DFU_mode_active"
 	.long	0
 .LpubNames_end0:
 	.section	.debug_pubtypes,"",@progbits
-.Lset51 = .LpubTypes_end0-.LpubTypes_begin0
-	.long	.Lset51
+.Lset79 = .LpubTypes_end0-.LpubTypes_begin0
+	.long	.Lset79
 .LpubTypes_begin0:
 	.short	2
 	.long	.L.debug_info_begin0
-.Lset52 = .L.debug_info_end0-.L.debug_info_begin0
-	.long	.Lset52
-	.long	3991
+.Lset80 = .L.debug_info_end0-.L.debug_info_begin0
+	.long	.Lset80
+	.long	4153
 .asciiz"USB_BmRequestType"
-	.long	3418
+	.long	3566
 .asciiz"USBInterfaceNumber"
-	.long	3889
+	.long	4051
 .asciiz"XUD_ep"
-	.long	2446
+	.long	2544
 .asciiz"USB_Descriptor_Audio_Format_Type1_t"
-	.long	1088
+	.long	1186
 .asciiz"USB_Descriptor_Interface_Association_t"
-	.long	1559
+	.long	1657
 .asciiz"USB_Descriptor_Audio_ClockSource_t"
-	.long	1671
+	.long	1769
 .asciiz"USB_Descriptor_Audio_ClockSelector_1_t"
-	.long	291
+	.long	351
 .asciiz"USB_Descriptor_Device_t"
-	.long	1200
+	.long	1298
 .asciiz"USB_Descriptor_Interface_t"
-	.long	3162
+	.long	3310
 .asciiz"int"
-	.long	1955
+	.long	2053
 .asciiz"unsigned int"
-	.long	1962
+	.long	2060
 .asciiz"USB_Descriptor_Audio_FeatureUnit_Out_t"
-	.long	3457
+	.long	3605
 .asciiz"USBEndpointNumber_Out"
-	.long	3878
+	.long	4040
 .asciiz"chanend"
-	.long	2622
+	.long	2720
 .asciiz"USB_Descriptor_Audio_Class_AS_Endpoint_t"
-	.long	1795
+	.long	1893
 .asciiz"USB_Descriptor_Audio_InputTerminal_t"
-	.long	2534
+	.long	2632
 .asciiz"USB_Descriptor_Endpoint_t"
-	.long	265
+	.long	325
 .asciiz"char"
-	.long	2873
+	.long	3026
 .asciiz"XUD_BusSpeed_t"
-	.long	4036
+	.long	4198
 .asciiz"XUD_Result_t"
-	.long	3900
+	.long	4062
 .asciiz"USB_SetupPacket_t"
-	.long	3485
+	.long	3633
 .asciiz"USBEndpointNumber_In"
-	.long	2884
+	.long	3037
 .asciiz"XUD_BusSpeed"
-	.long	482
+	.long	542
 .asciiz"unsigned short"
-	.long	2210
+	.long	2308
 .asciiz"USB_Descriptor_Audio_FeatureUnit_In_t"
-	.long	2310
+	.long	2408
 .asciiz"USB_Descriptor_Audio_Interface_AS_t"
-	.long	3271
+	.long	3419
 .asciiz"short"
 	.long	50
 .asciiz"StringDescTable_t"
-	.long	3391
+	.long	3539
 .asciiz"XUD_Result"
-	.long	596
+	.long	694
 .asciiz"USB_Config_Descriptor_Audio2_t"
-	.long	3911
+	.long	4073
 .asciiz"USB_SetupPacket"
-	.long	3980
+	.long	4142
 .asciiz"USB_BmRequestType_t"
-	.long	2074
+	.long	2172
 .asciiz"USB_Descriptor_Audio_OutputTerminal_t"
-	.long	976
+	.long	1074
 .asciiz"USB_Descriptor_Configuration_Header_t"
-	.long	1324
+	.long	1422
 .asciiz"USB_CfgDesc_Audio2_CS_Control_Int"
-	.long	475
+	.long	535
 .asciiz"unsigned char"
-	.long	1459
+	.long	1557
 .asciiz"UAC_Descriptor_Interface_AC_t"
 	.long	0
 .LpubTypes_end0:
@@ -5652,19 +6032,25 @@ mixer1Crossbar:
 	.typestring UserAudioStreamStart, "f{0}(0)"
 	.typestring UserAudioStreamStop, "f{0}(0)"
 	.typestring UserHostActive, "f{0}(si)"
+	.typestring AudioEndpointRequests_1, "f{si}(ui,ui,p(s(USB_SetupPacket){m(bmRequestType){s(USB_BmRequestType){m(Recipient){uc},m(Type){uc},m(Direction){uc}}},m(bRequest){uc},m(wValue){us},m(wIndex){us},m(wLength){us}}),ui,ui,ui)"
 	.typestring DFUDeviceRequests, "f{si}(ui,p(ui),p(s(USB_SetupPacket){m(bmRequestType){s(USB_BmRequestType){m(Recipient){uc},m(Type){uc},m(Direction){uc}}},m(bRequest){uc},m(wValue){us},m(wIndex){us},m(wLength){us}}),ui,ui,ui,p(si))"
 	.typestring DFUDelay, "f{0}(ui)"
 	.typestring device_reboot, "f{0}(ui)"
 	.typestring AudioClassRequests_2, "f{si}(ui,ui,p(s(USB_SetupPacket){m(bmRequestType){s(USB_BmRequestType){m(Recipient){uc},m(Type){uc},m(Direction){uc}}},m(bRequest){uc},m(wValue){us},m(wIndex){us},m(wLength){us}}),ui,ui,ui)"
+	.typestring AudioClassRequests_1, "f{si}(ui,ui,p(s(USB_SetupPacket){m(bmRequestType){s(USB_BmRequestType){m(Recipient){uc},m(Type){uc},m(Direction){uc}}},m(bRequest){uc},m(wValue){us},m(wIndex){us},m(wLength){us}}),ui,ui,ui)"
 	.typestring USB_StandardRequests, "f{e(XUD_Result){m(XUD_RES_ERR){1},m(XUD_RES_OKAY){0},m(XUD_RES_RST){-1}}}(ui,ui,p(uc),si,p(uc),si,p(uc),si,p(uc),si,p(p(uc)),si,p(s(USB_SetupPacket){m(bmRequestType){s(USB_BmRequestType){m(Recipient){uc},m(Type){uc},m(Direction){uc}}},m(bRequest){uc},m(wValue){us},m(wIndex){us},m(wLength){us}}),e(XUD_BusSpeed){m(XUD_SPEED_FS){1},m(XUD_SPEED_HS){2}})"
 	.typestring XUD_ResetEndpoint, "f{e(XUD_BusSpeed){m(XUD_SPEED_FS){1},m(XUD_SPEED_HS){2}}}(ui,p(ui))"
-	.typestring g_strTable, "s(){m(langID){p(uc)},m(vendorStr){p(uc)},m(serialStr){p(uc)},m(productStr_Audio2){p(uc)},m(outputInterfaceStr_Audio2){p(uc)},m(inputInterfaceStr_Audio2){p(uc)},m(usbInputTermStr_Audio2){p(uc)},m(usbOutputTermStr_Audio2){p(uc)},m(clockSelectorStr){p(uc)},m(internalClockSourceStr){p(uc)},m(dfuStr){p(uc)},m(outputChanStr_1){p(uc)},m(outputChanStr_2){p(uc)},m(inputChanStr_1){p(uc)},m(inputChanStr_2){p(uc)},m(iAPInterfaceStr){p(uc)}}"
+	.typestring g_strTable, "s(){m(langID){p(uc)},m(vendorStr){p(uc)},m(serialStr){p(uc)},m(productStr_Audio2){p(uc)},m(outputInterfaceStr_Audio2){p(uc)},m(inputInterfaceStr_Audio2){p(uc)},m(usbInputTermStr_Audio2){p(uc)},m(usbOutputTermStr_Audio2){p(uc)},m(productStr_Audio1){p(uc)},m(outputInterfaceStr_Audio1){p(uc)},m(inputInterfaceStr_Audio1){p(uc)},m(usbInputTermStr_Audio1){p(uc)},m(usbOutputTermStr_Audio1){p(uc)},m(clockSelectorStr){p(uc)},m(internalClockSourceStr){p(uc)},m(dfuStr){p(uc)},m(outputChanStr_1){p(uc)},m(outputChanStr_2){p(uc)},m(inputChanStr_1){p(uc)},m(inputChanStr_2){p(uc)},m(iAPInterfaceStr){p(uc)}}"
+	.typestring devDesc_Audio1, "s(){m(bLength){uc},m(bDescriptorType){uc},m(bcdUSB){us},m(bDeviceClass){uc},m(bDeviceSubClass){uc},m(bDeviceProtocol){uc},m(bMaxPacketSize0){uc},m(idVendor){us},m(idProduct){us},m(bcdDevice){us},m(iManufacturer){uc},m(iProduct){uc},m(iSerialNumber){uc},m(bNumConfigurations){uc}}"
 	.typestring devDesc_Audio2, "s(){m(bLength){uc},m(bDescriptorType){uc},m(bcdUSB){us},m(bDeviceClass){uc},m(bDeviceSubClass){uc},m(bDeviceProtocol){uc},m(bMaxPacketSize0){uc},m(idVendor){us},m(idProduct){us},m(bcdDevice){us},m(iManufacturer){uc},m(iProduct){uc},m(iSerialNumber){uc},m(bNumConfigurations){uc}}"
 	.typestring devDesc_Null, "a(18:uc)"
 	.typestring devQualDesc_Audio2, "a(10:uc)"
+	.typestring devQualDesc_Audio1, "a(10:uc)"
 	.typestring devQualDesc_Null, "a(10:uc)"
 	.typestring cfgDesc_Audio2, "s(){m(Config){s(){m(bLength){uc},m(bDescriptorType){uc},m(wTotalLength){us},m(bNumInterfaces){uc},m(bConfigurationValue){uc},m(iConfiguration){uc},m(bmAttributes){uc},m(bMaxPower){uc}}},m(Audio_InterfaceAssociation){s(){m(bLength){uc},m(bDescriptorType){uc},m(bFirstInterface){uc},m(bInterfaceCount){uc},m(bFunctionClass){uc},m(bFunctionSubClass){uc},m(bFunctionProtocol){uc},m(iFunction){uc}}},m(Audio_StdControlInterface){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_CS_Control_Int){s(){m(Audio_ClassControlInterface){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bcdADC){us},m(bCatagory){uc},m(wTotalLength){us},m(bmControls){uc}}},m(Audio_ClockSource){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubType){uc},m(bClockID){uc},m(bmAttributes){uc},m(bmControls){uc},m(bAssocTerminal){uc},m(iClockSource){uc}}},m(Audio_ClockSelector){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubType){uc},m(bClockID){uc},m(bNrPins){uc},m(baCSourceId){a(1:uc)},m(bmControl){uc},m(iClockSelector){uc}}},m(Audio_Out_InputTerminal){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bTerminalID){uc},m(wTerminalType){us},m(bAssocTerminal){uc},m(bCSourceID){uc},m(bNrChannels){uc},m(bmChannelConfig){ui},m(iChannelNames){uc},m(bmControls){us},m(iTerminal){uc}}},m(Audio_Out_FeatureUnit){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bUnitID){uc},m(bSourceID){uc},m(bmaControls){a(3:ui)},m(iFeature){uc}}},m(Audio_Out_OutputTerminal){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bTerminalID){uc},m(wTerminalType){us},m(bAssocTerminal){uc},m(bSourceID){uc},m(bCSourceID){uc},m(bmControls){us},m(iTerminal){uc}}},m(Audio_In_InputTerminal){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bTerminalID){uc},m(wTerminalType){us},m(bAssocTerminal){uc},m(bCSourceID){uc},m(bNrChannels){uc},m(bmChannelConfig){ui},m(iChannelNames){uc},m(bmControls){us},m(iTerminal){uc}}},m(Audio_In_FeatureUnit){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bUnitID){uc},m(bSourceID){uc},m(bmaControls){a(3:ui)},m(iFeature){uc}}},m(Audio_In_OutputTerminal){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bTerminalID){uc},m(wTerminalType){us},m(bAssocTerminal){uc},m(bSourceID){uc},m(bCSourceID){uc},m(bmControls){us},m(iTerminal){uc}}}}},m(Audio_Out_StreamInterface_Alt0){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_Out_StreamInterface_Alt1){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_Out_ClassStreamInterface){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubType){uc},m(bTerminalLink){uc},m(bmControls){uc},m(bFormatType){uc},m(bmFormats){ui},m(bNrChannels){uc},m(bmChannelConfig){ui},m(iChannelNames){uc}}},m(Audio_Out_Format){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bFormatType){uc},m(bSubslotSize){uc},m(bBitResolution){uc}}},m(Audio_Out_Endpoint){s(){m(bLength){uc},m(bDescriptorType){uc},m(bEndpointAddress){uc},m(bmAttributes){uc},m(wMaxPacketSize){us},m(bInterval){uc}}},m(Audio_Out_ClassEndpoint){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bmAttributes){uc},m(bmControls){uc},m(bLockDelayUnits){uc},m(wLockDelay){us}}},m(Audio_Out_StreamInterface_Alt2){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_Out_ClassStreamInterface_2){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubType){uc},m(bTerminalLink){uc},m(bmControls){uc},m(bFormatType){uc},m(bmFormats){ui},m(bNrChannels){uc},m(bmChannelConfig){ui},m(iChannelNames){uc}}},m(Audio_Out_Format_2){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bFormatType){uc},m(bSubslotSize){uc},m(bBitResolution){uc}}},m(Audio_Out_Endpoint_2){s(){m(bLength){uc},m(bDescriptorType){uc},m(bEndpointAddress){uc},m(bmAttributes){uc},m(wMaxPacketSize){us},m(bInterval){uc}}},m(Audio_Out_ClassEndpoint_2){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bmAttributes){uc},m(bmControls){uc},m(bLockDelayUnits){uc},m(wLockDelay){us}}},m(Audio_Out_StreamInterface_Alt3){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_Out_ClassStreamInterface_3){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubType){uc},m(bTerminalLink){uc},m(bmControls){uc},m(bFormatType){uc},m(bmFormats){ui},m(bNrChannels){uc},m(bmChannelConfig){ui},m(iChannelNames){uc}}},m(Audio_Out_Format_3){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bFormatType){uc},m(bSubslotSize){uc},m(bBitResolution){uc}}},m(Audio_Out_Endpoint_3){s(){m(bLength){uc},m(bDescriptorType){uc},m(bEndpointAddress){uc},m(bmAttributes){uc},m(wMaxPacketSize){us},m(bInterval){uc}}},m(Audio_Out_ClassEndpoint_3){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bmAttributes){uc},m(bmControls){uc},m(bLockDelayUnits){uc},m(wLockDelay){us}}},m(Audio_In_StreamInterface_Alt0){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_In_StreamInterface_Alt1){s(){m(bLength){uc},m(bDescriptorType){uc},m(bInterfaceNumber){uc},m(bAlternateSetting){uc},m(bNumEndpoints){uc},m(bInterfaceClass){uc},m(bInterfaceSubClass){uc},m(bInterfaceProtocol){uc},m(iInterface){uc}}},m(Audio_In_ClassStreamInterface){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubType){uc},m(bTerminalLink){uc},m(bmControls){uc},m(bFormatType){uc},m(bmFormats){ui},m(bNrChannels){uc},m(bmChannelConfig){ui},m(iChannelNames){uc}}},m(Audio_In_Format){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bFormatType){uc},m(bSubslotSize){uc},m(bBitResolution){uc}}},m(Audio_In_Endpoint){s(){m(bLength){uc},m(bDescriptorType){uc},m(bEndpointAddress){uc},m(bmAttributes){uc},m(wMaxPacketSize){us},m(bInterval){uc}}},m(Audio_In_ClassEndpoint){s(){m(bLength){uc},m(bDescriptorType){uc},m(bDescriptorSubtype){uc},m(bmAttributes){uc},m(bmControls){uc},m(bLockDelayUnits){uc},m(wLockDelay){us}}},m(configDesc_DFU){a(18:uc)}}"
 	.typestring cfgDesc_Null, "a(19:uc)"
+	.typestring num_freqs_a1, "c:ui"
+	.typestring cfgDesc_Audio1, "a(206:uc)"
 	.typestring DFUdevDesc, "a(18:uc)"
 	.typestring DFUcfgDesc, "a(27:uc)"
 	.typestring DFU_mode_active, "ui"

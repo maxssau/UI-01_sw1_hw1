@@ -1,20 +1,24 @@
-<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/endpoint0.c">
+<preCompilationAnalysis file="F:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/endpoint0.c">
   <fCall global="true" name="Endpoint0"/>
   <fCall global="true" name="Endpoint0.nstackwords"/>
   <fCall global="true" name="XUD_InitEp.nstackwords"/>
   <fCall global="true" name="USB_GetSetupPacket.nstackwords"/>
   <fCall global="true" name="UserHostActive.nstackwords"/>
+  <fCall global="true" name="USB_StandardRequests.nstackwords"/>
   <fCall global="true" name="XUD_ResetEndpoint.nstackwords"/>
   <fCall global="true" name="DFUReportResetState.nstackwords"/>
-  <fCall global="true" name="USB_StandardRequests.nstackwords"/>
   <fCall global="true" name="UserAudioStreamStop.nstackwords"/>
   <fCall global="true" name="UserAudioStreamStart.nstackwords"/>
   <fCall global="true" name="DFUDeviceRequests.nstackwords"/>
   <fCall global="true" name="AudioClassRequests_2.nstackwords"/>
+  <fCall global="true" name="AudioClassRequests_1.nstackwords"/>
   <fCall global="true" name="DFUDelay.nstackwords"/>
   <fCall global="true" name="device_reboot.nstackwords"/>
+  <fCall global="true" name="AudioEndpointRequests_1.nstackwords"/>
   <fCall global="true" name="Endpoint0.maxcores"/>
+  <fCall global="true" name="AudioClassRequests_1.maxcores"/>
   <fCall global="true" name="AudioClassRequests_2.maxcores"/>
+  <fCall global="true" name="AudioEndpointRequests_1.maxcores"/>
   <fCall global="true" name="DFUDelay.maxcores"/>
   <fCall global="true" name="DFUDeviceRequests.maxcores"/>
   <fCall global="true" name="DFUReportResetState.maxcores"/>
@@ -27,7 +31,9 @@
   <fCall global="true" name="XUD_ResetEndpoint.maxcores"/>
   <fCall global="true" name="device_reboot.maxcores"/>
   <fCall global="true" name="Endpoint0.maxtimers"/>
+  <fCall global="true" name="AudioClassRequests_1.maxtimers"/>
   <fCall global="true" name="AudioClassRequests_2.maxtimers"/>
+  <fCall global="true" name="AudioEndpointRequests_1.maxtimers"/>
   <fCall global="true" name="DFUDelay.maxtimers"/>
   <fCall global="true" name="DFUDeviceRequests.maxtimers"/>
   <fCall global="true" name="DFUReportResetState.maxtimers"/>
@@ -40,7 +46,9 @@
   <fCall global="true" name="XUD_ResetEndpoint.maxtimers"/>
   <fCall global="true" name="device_reboot.maxtimers"/>
   <fCall global="true" name="Endpoint0.maxchanends"/>
+  <fCall global="true" name="AudioClassRequests_1.maxchanends"/>
   <fCall global="true" name="AudioClassRequests_2.maxchanends"/>
+  <fCall global="true" name="AudioEndpointRequests_1.maxchanends"/>
   <fCall global="true" name="DFUDelay.maxchanends"/>
   <fCall global="true" name="DFUDeviceRequests.maxchanends"/>
   <fCall global="true" name="DFUReportResetState.maxchanends"/>
@@ -53,16 +61,22 @@
   <fCall global="true" name="XUD_ResetEndpoint.maxchanends"/>
   <fCall global="true" name="device_reboot.maxchanends"/>
   <fCall global="true" name="g_strTable"/>
+  <fCall global="true" name="devDesc_Audio1"/>
   <fCall global="true" name="devDesc_Audio2"/>
   <fCall global="true" name="devDesc_Null.globound"/>
   <fCall global="true" name="devDesc_Null"/>
   <fCall global="true" name="devQualDesc_Audio2.globound"/>
   <fCall global="true" name="devQualDesc_Audio2"/>
+  <fCall global="true" name="devQualDesc_Audio1.globound"/>
+  <fCall global="true" name="devQualDesc_Audio1"/>
   <fCall global="true" name="devQualDesc_Null.globound"/>
   <fCall global="true" name="devQualDesc_Null"/>
   <fCall global="true" name="cfgDesc_Audio2"/>
   <fCall global="true" name="cfgDesc_Null.globound"/>
   <fCall global="true" name="cfgDesc_Null"/>
+  <fCall global="true" name="num_freqs_a1"/>
+  <fCall global="true" name="cfgDesc_Audio1.globound"/>
+  <fCall global="true" name="cfgDesc_Audio1"/>
   <fCall global="true" name="DFUdevDesc.globound"/>
   <fCall global="true" name="DFUdevDesc"/>
   <fCall global="true" name="DFUcfgDesc.globound"/>
@@ -119,10 +133,12 @@
   <fCall global="true" name="UserAudioStreamStart"/>
   <fCall global="true" name="UserAudioStreamStop"/>
   <fCall global="true" name="UserHostActive"/>
+  <fCall global="true" name="AudioEndpointRequests_1"/>
   <fCall global="true" name="DFUDeviceRequests"/>
   <fCall global="true" name="DFUDelay"/>
   <fCall global="true" name="device_reboot"/>
   <fCall global="true" name="AudioClassRequests_2"/>
+  <fCall global="true" name="AudioClassRequests_1"/>
   <fCall global="true" name="USB_StandardRequests"/>
   <fCall global="true" name="XUD_ResetEndpoint"/>
   <fCall global="true" name="g_interfaceAlt"/>

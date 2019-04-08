@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.file	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -24,27 +24,27 @@
 	.set usage.anon.14,0
 	.set usage.anon.15,0
 	.set usage.anon.16,0
-	.globread mixer,usage.anon.16,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:50: note: object used here\n    samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));\n                                                 ^~~~~~~~~~~~~~~~~~~~~"
-	.globread mixer,samples_to_host_inputs,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:51: note: object used here\n    samples_to_host_inputs_ptr = array_to_xc_ptr((samples_to_host_inputs, unsigned[]));\n                                                  ^~~~~~~~~~~~~~~~~~~~~~"
-	.globread mixer,samples_to_device_map_array,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:46: note: object used here\n    samples_to_device_map = array_to_xc_ptr((samples_to_device_map_array,unsigned[]));\n                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globread mixer,samples_to_host_map_array,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:44: note: object used here\n    samples_to_host_map = array_to_xc_ptr((samples_to_host_map_array,unsigned[]));\n                                           ^~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globread mixer,usage.anon.15,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:32: note: object used here\n    samples = array_to_xc_ptr((samples_array,unsigned[]));\n                               ^~~~~~~~~~~~~"
-	.globread mixer,usage.anon.14,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:31: note: object used here\n    multIn = array_to_xc_ptr((multIn_array,unsigned[]));\n                              ^~~~~~~~~~~~"
-	.globread mixer,usage.anon.13,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:32: note: object used here\n    multOut = array_to_xc_ptr((multOut_array,unsigned[]));\n                               ^~~~~~~~~~~~~"
-	.globread usage.anon.8,samples_to_host_inputs_ptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:462:54: note: object used here\n                        read_via_xc_ptr_indexed(val, samples_to_host_inputs_ptr, index);\n                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:27:82: note: expanded from macro \'read_via_xc_ptr_indexed\'\n#define read_via_xc_ptr_indexed(x,p,i)          asm(\"ldw %0, %1[%2]\":\"=r\"(x):\"r\"(p),\"r\"(i));\n                                                                                 ^"
-	.globread usage.anon.8,samples_to_device_map,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:609:43: note: object used here\n            GiveSamplesToDevice(c_mixer2, samples_to_device_map, multOut);\n                                          ^~~~~~~~~~~~~~~~~~~~~"
-	.globread usage.anon.8,samples_to_host_map,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:612:39: note: object used here\n            GiveSamplesToHost(c_host, samples_to_host_map, multIn);\n                                      ^~~~~~~~~~~~~~~~~~~"
-	.globread usage.anon.8,usage.anon.10,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:612:60: note: object used here\n            GiveSamplesToHost(c_host, samples_to_host_map, multIn);\n                                                           ^~~~~~"
-	.globread usage.anon.8,usage.anon.9,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:609:66: note: object used here\n            GiveSamplesToDevice(c_mixer2, samples_to_device_map, multOut);\n                                                                 ^~~~~~~"
-	.globwrite mixer,samples_mixer_outputs_ptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:5: note: object used here\n    samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite mixer,samples_to_host_inputs_ptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:5: note: object used here\n    samples_to_host_inputs_ptr = array_to_xc_ptr((samples_to_host_inputs, unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite mixer,samples_to_device_map,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:5: note: object used here\n    samples_to_device_map = array_to_xc_ptr((samples_to_device_map_array,unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~~~"
-	.globwrite mixer,samples_to_host_map,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:5: note: object used here\n    samples_to_host_map = array_to_xc_ptr((samples_to_host_map_array,unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~"
-	.globwrite mixer,samples,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:5: note: object used here\n    samples = array_to_xc_ptr((samples_array,unsigned[]));\n    ^~~~~~~"
-	.globwrite mixer,usage.anon.10,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:5: note: object used here\n    multIn = array_to_xc_ptr((multIn_array,unsigned[]));\n    ^~~~~~"
-	.globwrite mixer,usage.anon.9,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:5: note: object used here\n    multOut = array_to_xc_ptr((multOut_array,unsigned[]));\n    ^~~~~~~"
-	.globwrite usage.anon.8,usage.anon.12,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:502:21: note: object used here\n                    mixer1_mix2_flag = sampFreq > 96000;\n                    ^~~~~~~~~~~~~~~~"
-	.globwrite usage.anon.8,usage.anon.11,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:443:25: note: object used here\n                        samples_from_host_streams[index] = 0;\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globread mixer,usage.anon.16,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:50: note: object used here\n    samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));\n                                                 ^~~~~~~~~~~~~~~~~~~~~"
+	.globread mixer,samples_to_host_inputs,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:51: note: object used here\n    samples_to_host_inputs_ptr = array_to_xc_ptr((samples_to_host_inputs, unsigned[]));\n                                                  ^~~~~~~~~~~~~~~~~~~~~~"
+	.globread mixer,samples_to_device_map_array,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:46: note: object used here\n    samples_to_device_map = array_to_xc_ptr((samples_to_device_map_array,unsigned[]));\n                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globread mixer,samples_to_host_map_array,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:44: note: object used here\n    samples_to_host_map = array_to_xc_ptr((samples_to_host_map_array,unsigned[]));\n                                           ^~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globread mixer,usage.anon.15,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:32: note: object used here\n    samples = array_to_xc_ptr((samples_array,unsigned[]));\n                               ^~~~~~~~~~~~~"
+	.globread mixer,usage.anon.14,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:31: note: object used here\n    multIn = array_to_xc_ptr((multIn_array,unsigned[]));\n                              ^~~~~~~~~~~~"
+	.globread mixer,usage.anon.13,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:32: note: object used here\n    multOut = array_to_xc_ptr((multOut_array,unsigned[]));\n                               ^~~~~~~~~~~~~"
+	.globread usage.anon.8,samples_to_host_inputs_ptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:462:54: note: object used here\n                        read_via_xc_ptr_indexed(val, samples_to_host_inputs_ptr, index);\n                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~\nF:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h:27:82: note: expanded from macro \'read_via_xc_ptr_indexed\'\n#define read_via_xc_ptr_indexed(x,p,i)          asm(\"ldw %0, %1[%2]\":\"=r\"(x):\"r\"(p),\"r\"(i));\n                                                                                 ^"
+	.globread usage.anon.8,samples_to_device_map,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:609:43: note: object used here\n            GiveSamplesToDevice(c_mixer2, samples_to_device_map, multOut);\n                                          ^~~~~~~~~~~~~~~~~~~~~"
+	.globread usage.anon.8,samples_to_host_map,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:612:39: note: object used here\n            GiveSamplesToHost(c_host, samples_to_host_map, multIn);\n                                      ^~~~~~~~~~~~~~~~~~~"
+	.globread usage.anon.8,usage.anon.10,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:612:60: note: object used here\n            GiveSamplesToHost(c_host, samples_to_host_map, multIn);\n                                                           ^~~~~~"
+	.globread usage.anon.8,usage.anon.9,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:609:66: note: object used here\n            GiveSamplesToDevice(c_mixer2, samples_to_device_map, multOut);\n                                                                 ^~~~~~~"
+	.globwrite mixer,samples_mixer_outputs_ptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:5: note: object used here\n    samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite mixer,samples_to_host_inputs_ptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:5: note: object used here\n    samples_to_host_inputs_ptr = array_to_xc_ptr((samples_to_host_inputs, unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite mixer,samples_to_device_map,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:5: note: object used here\n    samples_to_device_map = array_to_xc_ptr((samples_to_device_map_array,unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~~~"
+	.globwrite mixer,samples_to_host_map,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:5: note: object used here\n    samples_to_host_map = array_to_xc_ptr((samples_to_host_map_array,unsigned[]));\n    ^~~~~~~~~~~~~~~~~~~"
+	.globwrite mixer,samples,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:5: note: object used here\n    samples = array_to_xc_ptr((samples_array,unsigned[]));\n    ^~~~~~~"
+	.globwrite mixer,usage.anon.10,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:5: note: object used here\n    multIn = array_to_xc_ptr((multIn_array,unsigned[]));\n    ^~~~~~"
+	.globwrite mixer,usage.anon.9,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:5: note: object used here\n    multOut = array_to_xc_ptr((multOut_array,unsigned[]));\n    ^~~~~~~"
+	.globwrite usage.anon.8,usage.anon.12,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:502:21: note: object used here\n                    mixer1_mix2_flag = sampFreq > 96000;\n                    ^~~~~~~~~~~~~~~~"
+	.globwrite usage.anon.8,usage.anon.11,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:443:25: note: object used here\n                        samples_from_host_streams[index] = 0;\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	.call mixer,usage.anon.8
 	.call mixer,usage.anon.3
 	.call usage.anon.8,usage.anon.7
@@ -67,13 +67,13 @@
 	.set usage.anon.7.locnoglobalaccess, 0
 	.set usage.anon.8.locnoglobalaccess, 0
 	.set mixer.locnoglobalaccess, 0
-	.globpassesref usage.anon.3, usage.anon.16,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:33: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_mixer_outputs\'\n    samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, samples_to_host_inputs,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:34: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_to_host_inputs\'\n    samples_to_host_inputs_ptr = array_to_xc_ptr((samples_to_host_inputs, unsigned[]));\n                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, samples_to_device_map_array,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:29: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_to_device_map_array\'\n    samples_to_device_map = array_to_xc_ptr((samples_to_device_map_array,unsigned[]));\n                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, samples_to_host_map_array,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:27: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_to_host_map_array\'\n    samples_to_host_map = array_to_xc_ptr((samples_to_host_map_array,unsigned[]));\n                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, usage.anon.15,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:15: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_array\'\n    samples = array_to_xc_ptr((samples_array,unsigned[]));\n              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, usage.anon.14,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:14: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'multIn_array\'\n    multIn = array_to_xc_ptr((multIn_array,unsigned[]));\n             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, usage.anon.13,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:15: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'multOut_array\'\n    multOut = array_to_xc_ptr((multOut_array,unsigned[]));\n              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, usage.anon.16,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:33: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_mixer_outputs\'\n    samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, samples_to_host_inputs,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:34: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_to_host_inputs\'\n    samples_to_host_inputs_ptr = array_to_xc_ptr((samples_to_host_inputs, unsigned[]));\n                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, samples_to_device_map_array,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:29: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_to_device_map_array\'\n    samples_to_device_map = array_to_xc_ptr((samples_to_device_map_array,unsigned[]));\n                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, samples_to_host_map_array,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:27: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_to_host_map_array\'\n    samples_to_host_map = array_to_xc_ptr((samples_to_host_map_array,unsigned[]));\n                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, usage.anon.15,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:15: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'samples_array\'\n    samples = array_to_xc_ptr((samples_array,unsigned[]));\n              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, usage.anon.14,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:14: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'multIn_array\'\n    multIn = array_to_xc_ptr((multIn_array,unsigned[]));\n             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, usage.anon.13,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:15: error: call to `array_to_xc_ptr\' in `mixer\' makes alias of global \'multOut_array\'\n    multOut = array_to_xc_ptr((multOut_array,unsigned[]));\n              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -90,7 +90,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.file	1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer\\mixer.xc"
 	.text
 	.globl	mixer
 	.align	4
@@ -98,7 +98,7 @@
 	.cc_top mixer.function,mixer
 mixer:                                  # @mixer
 .Lfunc_begin0:
-	.loc	1 753 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:753:0
+	.loc	1 753 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:753:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -120,8 +120,8 @@ mixer:                                  # @mixer
 		mov r3, r1
 		nop
 	}
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
-	.loc	2 13 0 prologue_end     # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.loc	2 13 0 prologue_end     # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp4:
 	ldaw r1, dp[multOut_array]
 	#APP
@@ -129,9 +129,9 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp5:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 757 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:0
+	.loc	1 757 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:757:0
 	stw r1, dp[multOut]
-	.loc	2 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	2 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp6:
 	ldaw r1, dp[multIn_array]
 .Ltmp7:
@@ -140,9 +140,9 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp8:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 758 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:0
+	.loc	1 758 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:758:0
 	stw r1, dp[multIn]
-	.loc	2 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	2 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp9:
 	ldaw r1, dp[samples_array]
 .Ltmp10:
@@ -151,9 +151,9 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp11:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 760 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:0
+	.loc	1 760 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:760:0
 	stw r1, dp[samples]
-	.loc	2 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	2 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp12:
 	ldaw r1, dp[samples_to_host_map_array]
 .Ltmp13:
@@ -162,9 +162,9 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp14:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 761 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:0
+	.loc	1 761 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:761:0
 	stw r1, dp[samples_to_host_map]
-	.loc	2 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	2 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp15:
 	ldaw r1, dp[samples_to_device_map_array]
 .Ltmp16:
@@ -173,9 +173,9 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp17:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 762 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:0
+	.loc	1 762 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:762:0
 	stw r1, dp[samples_to_device_map]
-	.loc	2 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	2 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp18:
 	ldaw r1, dp[samples_to_host_inputs]
 .Ltmp19:
@@ -184,9 +184,9 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp20:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 764 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:0
+	.loc	1 764 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:764:0
 	stw r1, dp[samples_to_host_inputs_ptr]
-	.loc	2 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	2 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp21:
 	ldaw r1, dp[samples_mixer_outputs]
 .Ltmp22:
@@ -195,7 +195,7 @@ mixer:                                  # @mixer
 	#NO_APP
 .Ltmp23:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 768 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:0
+	.loc	1 768 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:768:0
 	stw r1, dp[samples_mixer_outputs_ptr]
 	{
 		ldc r1, 0
@@ -203,20 +203,20 @@ mixer:                                  # @mixer
 	}
 .Ltmp24:
 	#DEBUG_VALUE: i <- 0
-	.loc	1 780 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
+	.loc	1 780 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
 	stw r1, dp[samples_array]
 .Ltmp25:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 780 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
+	.loc	1 780 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
 	stw r1, dp[samples_array+4]
-	.loc	1 780 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
+	.loc	1 780 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
 	stw r1, dp[samples_array+8]
-	.loc	1 780 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
+	.loc	1 780 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:780:0
 	stw r1, dp[samples_array+12]
 .Ltmp26:
-	.loc	1 788 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:788:0
+	.loc	1 788 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:788:0
 	ldw r11, dp[samples_to_device_map]
-	.loc	1 788 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:788:0
+	.loc	1 788 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:788:0
 	#APP
 	stw r1, r11[r1]
 	#NO_APP
@@ -226,18 +226,18 @@ mixer:                                  # @mixer
 		mkmsk r4, 1
 		nop
 	}
-	.loc	1 788 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:788:0
+	.loc	1 788 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:788:0
 	#APP
 	stw r4, r11[r4]
 	#NO_APP
 .Ltmp28:
-	.loc	1 808 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:808:0
+	.loc	1 808 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:808:0
 	ldw r11, dp[samples_to_host_map]
 	{
 		ldc r5, 2
 		nop
 	}
-	.loc	1 808 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:808:0
+	.loc	1 808 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:808:0
 	#APP
 	stw r5, r11[r1]
 	#NO_APP
@@ -247,12 +247,12 @@ mixer:                                  # @mixer
 		mkmsk r1, 2
 		nop
 	}
-	.loc	1 808 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:808:0
+	.loc	1 808 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:808:0
 	#APP
 	stw r1, r11[r4]
 	#NO_APP
 .Ltmp30:
-	.loc	1 829 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:829:0
+	.loc	1 829 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:829:0
 	{
 		mov r1, r2
 		mov r2, r3
@@ -286,7 +286,7 @@ mixer:                                  # @mixer
 	.cc_top mixer1.function,mixer1
 mixer1:                                 # @mixer1
 .Lfunc_begin1:
-	.loc	1 352 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:352:0
+	.loc	1 352 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:352:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -316,26 +316,26 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
 .Ltmp38:
 	#DEBUG_VALUE: request <- 0
-	.loc	1 462 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:462:0
+	.loc	1 462 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:462:0
 	ldw r3, dp[samples_to_host_inputs_ptr]
 .Ltmp39:
-	.loc	1 370 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:370:9
+	.loc	1 370 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:370:9
 	{
 		clre
 		nop
 	}
-	.loc	1 370 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:370:9
+	.loc	1 370 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:370:9
 	{
 		eeu res[r1]
 		nop
 	}
 	ldap r11, .Ltmp40
-	.loc	1 370 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:370:9
+	.loc	1 370 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:370:9
 	{
 		setv res[r1], r11
 		ldc r11, 0
 	}
-	.loc	1 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:441:0
+	.loc	1 441 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:441:0
 .Ltmp41:
 	ldaw r4, dp[samples_from_host_streams]
 	{
@@ -351,12 +351,12 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
 	#DEBUG_VALUE: i <- 0
-	.loc	1 534 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:534:0
+	.loc	1 534 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:534:0
 	{
 		chkct res[r2], 1
 		nop
 	}
-	.loc	1 535 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:535:0
+	.loc	1 535 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:535:0
 .Lxta.endpoint_labels0:
 	{
 		outct res[r0], 1
@@ -370,7 +370,7 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
 	#DEBUG_VALUE: request <- 0
-	.loc	1 363 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:363:0
+	.loc	1 363 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:363:0
 .Lxta.endpoint_labels1:
 	{
 		in r6, res[r2]
@@ -378,13 +378,13 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp44:
 	#DEBUG_VALUE: request <- R6
-	.loc	1 367 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:367:0
+	.loc	1 367 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:367:0
 .Lxta.endpoint_labels2:
 	{
 		out res[r0], r6
 		nop
 	}
-	.loc	1 487 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:487:0
+	.loc	1 487 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:487:0
 	{
 		setsr 1
 		nop
@@ -397,7 +397,7 @@ mixer1:                                 # @mixer1
 		clrsr 1
 		nop
 	}
-	.loc	1 487 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:487:0
+	.loc	1 487 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:487:0
 	bu .Ltmp45
 .Ltmp46:
 .Ltmp40:                                # Block address taken
@@ -407,7 +407,7 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 372 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:372:0
+	.loc	1 372 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:372:0
 .Lxta.endpoint_labels3:
 	{
 		in r6, res[r1]
@@ -415,7 +415,7 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp47:
 	#DEBUG_VALUE: cmd <- R6
-	.loc	1 375 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:375:0
+	.loc	1 375 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:375:0
 	{
 		eq r7, r6, 6
 		nop
@@ -428,7 +428,7 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 447 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:447:0
+	.loc	1 447 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:447:0
 .Lxta.endpoint_labels4:
 	{
 		in r6, res[r1]
@@ -436,28 +436,28 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp49:
 	#DEBUG_VALUE: index <- R6
-	.loc	1 448 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:448:0
+	.loc	1 448 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:448:0
 	{
 		chkct res[r1], 1
 		nop
 	}
-	.loc	1 462 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:462:0
+	.loc	1 462 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:462:0
 	#APP
 	ldw r7, r3[r6]
 	#NO_APP
 .Ltmp50:
 	#DEBUG_VALUE: val <- R7
-	.loc	1 463 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:463:0
+	.loc	1 463 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:463:0
 	#APP
 	stw r11, r3[r6]
 	#NO_APP
-	.loc	1 465 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:465:0
+	.loc	1 465 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:465:0
 .Lxta.endpoint_labels5:
 	{
 		out res[r1], r7
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:466:0
+	.loc	1 466 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:466:0
 .Lxta.endpoint_labels6:
 	{
 		outct res[r1], 1
@@ -482,7 +482,7 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:439:0
+	.loc	1 439 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:439:0
 .Lxta.endpoint_labels7:
 	{
 		in r6, res[r1]
@@ -490,24 +490,24 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp52:
 	#DEBUG_VALUE: index <- R6
-	.loc	1 440 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:440:0
+	.loc	1 440 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:440:0
 	{
 		chkct res[r1], 1
 		ldw r7, r4[r6]
 	}
-	.loc	1 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:441:0
+	.loc	1 441 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:441:0
 .Lxta.endpoint_labels8:
 	{
 		out res[r1], r7
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:442:0
+	.loc	1 442 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:442:0
 .Lxta.endpoint_labels9:
 	{
 		outct res[r1], 1
 		nop
 	}
-	.loc	1 443 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:443:0
+	.loc	1 443 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:443:0
 	stw r11, r4[r6]
 .Ltmp53:
 .Ltmp45:                                # Block address taken
@@ -516,12 +516,12 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 492 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:492:9
+	.loc	1 492 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:492:9
 	{
 		testct r6, res[r0]
 		nop
 	}
-	.loc	1 492 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:492:9
+	.loc	1 492 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:492:9
 	bf r6, .LBB1_13
 # BB#7:                                 # %iftrue20
                                         #   in Loop: Header=BB1_1 Depth=1
@@ -529,14 +529,14 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 496 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:496:0
+	.loc	1 496 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:496:0
 .Ltmp54:
 .Lxta.endpoint_labels10:
 	{
 		inct r6, res[r0]
 		nop
 	}
-	.loc	1 498 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:498:0
+	.loc	1 498 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:498:0
 	{
 		sub r7, r6, 8
 		nop
@@ -552,24 +552,24 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 513 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:513:0
+	.loc	1 513 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:513:0
 .Lxta.endpoint_labels11:
 	{
 		outct res[r2], r6
 		nop
 	}
-	.loc	1 514 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:514:0
+	.loc	1 514 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:514:0
 	{
 		in r6, res[r0]
 		nop
 	}
-	.loc	1 514 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:514:0
+	.loc	1 514 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:514:0
 .Lxta.endpoint_labels12:
 	{
 		out res[r2], r6
 		nop
 	}
-	.loc	1 515 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:515:0
+	.loc	1 515 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:515:0
 	{
 		in r6, res[r0]
 		nop
@@ -585,11 +585,11 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: GiveSamplesToDevice:ptr <- 0
 	#DEBUG_VALUE: GiveSamplesToDevice:multOut <- 0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 277 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:277:0
+	.loc	1 277 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:277:0
 	ldw r6, dp[samples_array]
 .Ltmp56:
 	#DEBUG_VALUE: sample <- R6
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:294:0
 .Lxta.endpoint_labels13:
 	{
 		out res[r2], r6
@@ -597,10 +597,10 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp57:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 277 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:277:0
+	.loc	1 277 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:277:0
 	ldw r6, dp[samples_array+4]
 .Ltmp58:
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:294:0
 .Lxta.endpoint_labels14:
 	{
 		out res[r2], r6
@@ -609,7 +609,7 @@ mixer1:                                 # @mixer1
 .Ltmp59:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: GetSamplesFromDevice:c <- R2
-	.loc	1 315 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:315:0
+	.loc	1 315 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:315:0
 .Lxta.endpoint_labels15:
 	{
 		in r6, res[r2]
@@ -617,11 +617,11 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp60:
 	#DEBUG_VALUE: sample <- R6
-	.loc	1 342 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:342:0
+	.loc	1 342 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:342:0
 	stw r6, dp[samples_array+8]
 .Ltmp61:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 315 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:315:0
+	.loc	1 315 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:315:0
 .Lxta.endpoint_labels16:
 	{
 		in r6, res[r2]
@@ -630,10 +630,10 @@ mixer1:                                 # @mixer1
 .Ltmp62:
 	#DEBUG_VALUE: GetSamplesFromHost:c <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 342 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:342:0
+	.loc	1 342 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:342:0
 	stw r6, dp[samples_array+12]
 .Ltmp63:
-	.loc	1 220 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:220:0
+	.loc	1 220 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:220:0
 .Lxta.endpoint_labels17:
 	{
 		in r6, res[r0]
@@ -641,29 +641,29 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp64:
 	#DEBUG_VALUE: sample <- R6
-	.loc	1 243 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:243:0
+	.loc	1 243 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:243:0
 	stw r6, dp[samples_array]
 .Ltmp65:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 220 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:220:0
+	.loc	1 220 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:220:0
 .Lxta.endpoint_labels18:
 	{
 		in r6, res[r0]
 		nop
 	}
 .Ltmp66:
-	.loc	1 243 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:243:0
+	.loc	1 243 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:243:0
 	stw r6, dp[samples_array+4]
 .Ltmp67:
 	#DEBUG_VALUE: index <- 2
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: GiveSamplesToHost:multIn <- 0
 	#DEBUG_VALUE: GiveSamplesToHost:ptr <- 0
-	.loc	1 185 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:185:0
+	.loc	1 185 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:185:0
 	ldw r6, dp[samples_array+8]
 .Ltmp68:
 	#DEBUG_VALUE: sample <- R6
-	.loc	1 198 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:198:0
+	.loc	1 198 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:198:0
 .Lxta.endpoint_labels19:
 	{
 		out res[r0], r6
@@ -671,10 +671,10 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp69:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 185 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:185:0
+	.loc	1 185 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:185:0
 	ldw r6, dp[samples_array+12]
 .Ltmp70:
-	.loc	1 198 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:198:0
+	.loc	1 198 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:198:0
 .Lxta.endpoint_labels20:
 	{
 		out res[r0], r6
@@ -699,7 +699,7 @@ mixer1:                                 # @mixer1
 	#DEBUG_VALUE: mixer1:c_host <- R0
 	#DEBUG_VALUE: mixer1:c_mix_ctl <- R1
 	#DEBUG_VALUE: mixer1:c_mixer2 <- R2
-	.loc	1 501 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:501:0
+	.loc	1 501 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:501:0
 .Ltmp72:
 .Lxta.endpoint_labels21:
 	{
@@ -708,7 +708,7 @@ mixer1:                                 # @mixer1
 	}
 .Ltmp73:
 	#DEBUG_VALUE: sampFreq <- R6
-	.loc	1 505 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:505:0
+	.loc	1 505 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:505:0
 .Lxta.endpoint_labels22:
 	{
 		outct res[r2], 4
@@ -718,7 +718,7 @@ mixer1:                                 # @mixer1
 .LBB1_11:                               # %ifdone47
                                         #   in Loop: Header=BB1_1 Depth=1
 .Lxtalabel13:
-	.loc	1 515 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:515:0
+	.loc	1 515 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc:515:0
 .Lxta.endpoint_labels23:
 	{
 		out res[r2], r6
@@ -877,14 +877,14 @@ samples_mixer_outputs_ptr:
 .Ldebug_end1:
 	.text
 .Ldebug_end2:
-	.file	3 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
+	.file	3 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"multOut_array"
 .Linfo_string4:
@@ -2892,10 +2892,10 @@ samples_mixer_outputs_ptr:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	829
 	.long	.Lxta.call_labels0
@@ -2905,11 +2905,11 @@ samples_mixer_outputs_ptr:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 	.ascii	"mixer1_rate_change"
 	.byte	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	495
 	.long	.Laddr_end1-.Laddr_start0
@@ -2921,7 +2921,7 @@ samples_mixer_outputs_ptr:
 .Laddr_end1:
 	.ascii	"mixer1_req"
 	.byte	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	361
 	.long	.Laddr_end3-.Laddr_start2
@@ -2936,148 +2936,148 @@ samples_mixer_outputs_ptr:
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_3,.Lxta.endpoint_labels19
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	198
 	.long	.Lxta.endpoint_labels19
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.endpoint_labels20
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	198
 	.long	.Lxta.endpoint_labels20
 .cc_bottom cc_4
-.cc_top cc_5,.Lxta.endpoint_labels18
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
-	.byte	0
-	.long	220
-	.long	.Lxta.endpoint_labels18
-.cc_bottom cc_5
-.cc_top cc_6,.Lxta.endpoint_labels17
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_top cc_5,.Lxta.endpoint_labels17
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	220
 	.long	.Lxta.endpoint_labels17
-.cc_bottom cc_6
-.cc_top cc_7,.Lxta.endpoint_labels14
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_bottom cc_5
+.cc_top cc_6,.Lxta.endpoint_labels18
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
-	.long	294
-	.long	.Lxta.endpoint_labels14
-.cc_bottom cc_7
-.cc_top cc_8,.Lxta.endpoint_labels13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.long	220
+	.long	.Lxta.endpoint_labels18
+.cc_bottom cc_6
+.cc_top cc_7,.Lxta.endpoint_labels13
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	294
 	.long	.Lxta.endpoint_labels13
-.cc_bottom cc_8
-.cc_top cc_9,.Lxta.endpoint_labels16
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_bottom cc_7
+.cc_top cc_8,.Lxta.endpoint_labels14
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
-	.long	315
-	.long	.Lxta.endpoint_labels16
-.cc_bottom cc_9
-.cc_top cc_10,.Lxta.endpoint_labels15
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.long	294
+	.long	.Lxta.endpoint_labels14
+.cc_bottom cc_8
+.cc_top cc_9,.Lxta.endpoint_labels15
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	315
 	.long	.Lxta.endpoint_labels15
+.cc_bottom cc_9
+.cc_top cc_10,.Lxta.endpoint_labels16
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.byte	0
+	.long	315
+	.long	.Lxta.endpoint_labels16
 .cc_bottom cc_10
 .cc_top cc_11,.Lxta.endpoint_labels1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	363
 	.long	.Lxta.endpoint_labels1
 .cc_bottom cc_11
 .cc_top cc_12,.Lxta.endpoint_labels2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	367
 	.long	.Lxta.endpoint_labels2
 .cc_bottom cc_12
 .cc_top cc_13,.Lxta.endpoint_labels3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	372
 	.long	.Lxta.endpoint_labels3
 .cc_bottom cc_13
 .cc_top cc_14,.Lxta.endpoint_labels7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	439
 	.long	.Lxta.endpoint_labels7
 .cc_bottom cc_14
 .cc_top cc_15,.Lxta.endpoint_labels8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	441
 	.long	.Lxta.endpoint_labels8
 .cc_bottom cc_15
 .cc_top cc_16,.Lxta.endpoint_labels9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	442
 	.long	.Lxta.endpoint_labels9
 .cc_bottom cc_16
 .cc_top cc_17,.Lxta.endpoint_labels4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	447
 	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_17
 .cc_top cc_18,.Lxta.endpoint_labels5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	465
 	.long	.Lxta.endpoint_labels5
 .cc_bottom cc_18
 .cc_top cc_19,.Lxta.endpoint_labels6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	466
 	.long	.Lxta.endpoint_labels6
 .cc_bottom cc_19
 .cc_top cc_20,.Lxta.endpoint_labels10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	496
 	.long	.Lxta.endpoint_labels10
 .cc_bottom cc_20
 .cc_top cc_21,.Lxta.endpoint_labels21
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	501
 	.long	.Lxta.endpoint_labels21
 .cc_bottom cc_21
 .cc_top cc_22,.Lxta.endpoint_labels22
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	505
 	.long	.Lxta.endpoint_labels22
 .cc_bottom cc_22
 .cc_top cc_23,.Lxta.endpoint_labels11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	513
 	.long	.Lxta.endpoint_labels11
 .cc_bottom cc_23
 .cc_top cc_24,.Lxta.endpoint_labels12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	514
 	.long	.Lxta.endpoint_labels12
 .cc_bottom cc_24
 .cc_top cc_25,.Lxta.endpoint_labels23
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	515
 	.long	.Lxta.endpoint_labels23
 .cc_bottom cc_25
 .cc_top cc_26,.Lxta.endpoint_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	535
 	.long	.Lxta.endpoint_labels0
@@ -3087,1053 +3087,1053 @@ samples_mixer_outputs_ptr:
 .Lentries_start6:
 	.long	.Lentries_end7-.Lentries_start6
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_27,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	164
 	.long	164
 	.long	.Lxtalabel10
 .cc_bottom cc_27
 .cc_top cc_28,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	172
 	.long	172
 	.long	.Lxtalabel10
 .cc_bottom cc_28
 .cc_top cc_29,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	173
 	.long	175
 	.long	.Lxtalabel10
 .cc_bottom cc_29
 .cc_top cc_30,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	173
 	.long	175
 	.long	.Lxtalabel10
 .cc_bottom cc_30
 .cc_top cc_31,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	180
 	.long	180
 	.long	.Lxtalabel10
 .cc_bottom cc_31
 .cc_top cc_32,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	180
 	.long	180
 	.long	.Lxtalabel10
 .cc_bottom cc_32
 .cc_top cc_33,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	182
 	.long	183
 	.long	.Lxtalabel10
 .cc_bottom cc_33
 .cc_top cc_34,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	182
 	.long	183
 	.long	.Lxtalabel10
 .cc_bottom cc_34
 .cc_top cc_35,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	185
 	.long	186
 	.long	.Lxtalabel10
 .cc_bottom cc_35
 .cc_top cc_36,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	185
 	.long	186
 	.long	.Lxtalabel10
 .cc_bottom cc_36
 .cc_top cc_37,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	198
 	.long	198
 	.long	.Lxtalabel10
 .cc_bottom cc_37
 .cc_top cc_38,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	198
 	.long	198
 	.long	.Lxtalabel10
 .cc_bottom cc_38
 .cc_top cc_39,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	200
 	.long	200
 	.long	.Lxtalabel10
 .cc_bottom cc_39
 .cc_top cc_40,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	200
 	.long	200
 	.long	.Lxtalabel10
 .cc_bottom cc_40
 .cc_top cc_41,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	201
 	.long	201
 	.long	.Lxtalabel10
 .cc_bottom cc_41
 .cc_top cc_42,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	205
 	.long	205
 	.long	.Lxtalabel10
 .cc_bottom cc_42
 .cc_top cc_43,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	209
 	.long	209
 	.long	.Lxtalabel10
 .cc_bottom cc_43
 .cc_top cc_44,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	211
 	.long	211
 	.long	.Lxtalabel10
 .cc_bottom cc_44
 .cc_top cc_45,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	212
 	.long	213
 	.long	.Lxtalabel10
 .cc_bottom cc_45
 .cc_top cc_46,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	212
 	.long	213
 	.long	.Lxtalabel10
 .cc_bottom cc_46
 .cc_top cc_47,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	220
 	.long	220
 	.long	.Lxtalabel10
 .cc_bottom cc_47
 .cc_top cc_48,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	220
 	.long	220
 	.long	.Lxtalabel10
 .cc_bottom cc_48
 .cc_top cc_49,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	243
 	.long	243
 	.long	.Lxtalabel10
 .cc_bottom cc_49
 .cc_top cc_50,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	243
 	.long	243
 	.long	.Lxtalabel10
 .cc_bottom cc_50
 .cc_top cc_51,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	246
 	.long	246
 	.long	.Lxtalabel10
 .cc_bottom cc_51
 .cc_top cc_52,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	246
 	.long	246
 	.long	.Lxtalabel10
 .cc_bottom cc_52
 .cc_top cc_53,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	247
 	.long	248
 	.long	.Lxtalabel10
 .cc_bottom cc_53
 .cc_top cc_54,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	252
 	.long	253
 	.long	.Lxtalabel10
 .cc_bottom cc_54
 .cc_top cc_55,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	255
 	.long	255
 	.long	.Lxtalabel10
 .cc_bottom cc_55
 .cc_top cc_56,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	256
 	.long	257
 	.long	.Lxtalabel10
 .cc_bottom cc_56
 .cc_top cc_57,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	256
 	.long	257
 	.long	.Lxtalabel10
 .cc_bottom cc_57
 .cc_top cc_58,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel10
 .cc_bottom cc_58
 .cc_top cc_59,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel10
 .cc_bottom cc_59
 .cc_top cc_60,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	274
 	.long	275
 	.long	.Lxtalabel10
 .cc_bottom cc_60
 .cc_top cc_61,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	274
 	.long	275
 	.long	.Lxtalabel10
 .cc_bottom cc_61
 .cc_top cc_62,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	277
 	.long	278
 	.long	.Lxtalabel10
 .cc_bottom cc_62
 .cc_top cc_63,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	277
 	.long	278
 	.long	.Lxtalabel10
 .cc_bottom cc_63
 .cc_top cc_64,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel10
 .cc_bottom cc_64
 .cc_top cc_65,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel10
 .cc_bottom cc_65
 .cc_top cc_66,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel10
 .cc_bottom cc_66
 .cc_top cc_67,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel10
 .cc_bottom cc_67
 .cc_top cc_68,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel10
 .cc_bottom cc_68
 .cc_top cc_69,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	302
 	.long	302
 	.long	.Lxtalabel10
 .cc_bottom cc_69
 .cc_top cc_70,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	310
 	.long	310
 	.long	.Lxtalabel10
 .cc_bottom cc_70
 .cc_top cc_71,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	311
 	.long	315
 	.long	.Lxtalabel10
 .cc_bottom cc_71
 .cc_top cc_72,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	311
 	.long	315
 	.long	.Lxtalabel10
 .cc_bottom cc_72
 .cc_top cc_73,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	340
 	.long	343
 	.long	.Lxtalabel10
 .cc_bottom cc_73
 .cc_top cc_74,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	340
 	.long	343
 	.long	.Lxtalabel10
 .cc_bottom cc_74
 .cc_top cc_75,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	345
 	.long	345
 	.long	.Lxtalabel10
 .cc_bottom cc_75
 .cc_top cc_76,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	345
 	.long	345
 	.long	.Lxtalabel10
 .cc_bottom cc_76
 .cc_top cc_77,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	346
 	.long	346
 	.long	.Lxtalabel10
 .cc_bottom cc_77
 .cc_top cc_78,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	352
 	.long	352
 	.long	.Lxtalabel1
 .cc_bottom cc_78
 .cc_top cc_79,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	356
 	.long	357
 	.long	.Lxtalabel1
 .cc_bottom cc_79
 .cc_top cc_80,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	359
 	.long	359
 	.long	.Lxtalabel1
 .cc_bottom cc_80
 .cc_top cc_81,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	360
 	.long	360
 	.long	.Lxtalabel3
 .cc_bottom cc_81
 .cc_top cc_82,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	363
 	.long	363
 	.long	.Lxtalabel3
 .cc_bottom cc_82
 .cc_top cc_83,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	367
 	.long	367
 	.long	.Lxtalabel3
 .cc_bottom cc_83
 .cc_top cc_84,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	370
 	.long	372
 	.long	.Lxtalabel3
 .cc_bottom cc_84
 .cc_top cc_85,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	373
 	.long	376
 	.long	.Lxtalabel4
 .cc_bottom cc_85
 .cc_top cc_86,.Lxtalabel6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	373
 	.long	376
 	.long	.Lxtalabel6
 .cc_bottom cc_86
-.cc_top cc_87,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
-	.byte	0
-	.long	438
-	.long	438
-	.long	.Lxtalabel4
-.cc_bottom cc_87
-.cc_top cc_88,.Lxtalabel6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_top cc_87,.Lxtalabel6
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	438
 	.long	438
 	.long	.Lxtalabel6
+.cc_bottom cc_87
+.cc_top cc_88,.Lxtalabel4
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.byte	0
+	.long	438
+	.long	438
+	.long	.Lxtalabel4
 .cc_bottom cc_88
 .cc_top cc_89,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	439
 	.long	439
 	.long	.Lxtalabel7
 .cc_bottom cc_89
 .cc_top cc_90,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	440
 	.long	440
 	.long	.Lxtalabel7
 .cc_bottom cc_90
 .cc_top cc_91,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	441
 	.long	441
 	.long	.Lxtalabel7
 .cc_bottom cc_91
 .cc_top cc_92,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	442
 	.long	442
 	.long	.Lxtalabel7
 .cc_bottom cc_92
 .cc_top cc_93,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	443
 	.long	444
 	.long	.Lxtalabel7
 .cc_bottom cc_93
 .cc_top cc_94,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	446
 	.long	446
 	.long	.Lxtalabel7
 .cc_bottom cc_94
 .cc_top cc_95,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	447
 	.long	447
 	.long	.Lxtalabel5
 .cc_bottom cc_95
 .cc_top cc_96,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	448
 	.long	448
 	.long	.Lxtalabel5
 .cc_bottom cc_96
 .cc_top cc_97,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	462
 	.long	462
 	.long	.Lxtalabel5
 .cc_bottom cc_97
 .cc_top cc_98,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	463
 	.long	463
 	.long	.Lxtalabel5
 .cc_bottom cc_98
 .cc_top cc_99,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	465
 	.long	465
 	.long	.Lxtalabel5
 .cc_bottom cc_99
 .cc_top cc_100,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	466
 	.long	466
 	.long	.Lxtalabel5
 .cc_bottom cc_100
 .cc_top cc_101,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	467
 	.long	467
 	.long	.Lxtalabel5
 .cc_bottom cc_101
 .cc_top cc_102,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	482
 	.long	482
 	.long	.Lxtalabel5
 .cc_bottom cc_102
 .cc_top cc_103,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	488
 	.long	488
 	.long	.Lxtalabel3
 .cc_bottom cc_103
 .cc_top cc_104,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel8
 .cc_bottom cc_104
 .cc_top cc_105,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel11
 .cc_bottom cc_105
 .cc_top cc_106,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxtalabel8
 .cc_bottom cc_106
 .cc_top cc_107,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxtalabel11
 .cc_bottom cc_107
 .cc_top cc_108,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	498
 	.long	500
 	.long	.Lxtalabel8
 .cc_bottom cc_108
 .cc_top cc_109,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	498
 	.long	500
 	.long	.Lxtalabel11
 .cc_bottom cc_109
 .cc_top cc_110,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	501
 	.long	502
 	.long	.Lxtalabel12
 .cc_bottom cc_110
 .cc_top cc_111,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	505
 	.long	505
 	.long	.Lxtalabel12
 .cc_bottom cc_111
 .cc_top cc_112,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	506
 	.long	506
 	.long	.Lxtalabel12
 .cc_bottom cc_112
 .cc_top cc_113,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	507
 	.long	507
 	.long	.Lxtalabel12
 .cc_bottom cc_113
 .cc_top cc_114,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	509
 	.long	509
 	.long	.Lxtalabel12
 .cc_bottom cc_114
 .cc_top cc_115,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	510
 	.long	510
 	.long	.Lxtalabel8
 .cc_bottom cc_115
 .cc_top cc_116,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	510
 	.long	510
 	.long	.Lxtalabel11
 .cc_bottom cc_116
 .cc_top cc_117,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	513
 	.long	513
 	.long	.Lxtalabel9
 .cc_bottom cc_117
 .cc_top cc_118,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	514
 	.long	514
 	.long	.Lxtalabel9
 .cc_bottom cc_118
 .cc_top cc_119,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	515
 	.long	515
 	.long	.Lxtalabel9
 .cc_bottom cc_119
 .cc_top cc_120,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	516
 	.long	516
 	.long	.Lxtalabel9
 .cc_bottom cc_120
 .cc_top cc_121,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	518
 	.long	518
 	.long	.Lxtalabel9
 .cc_bottom cc_121
-.cc_top cc_122,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
-	.byte	0
-	.long	519
-	.long	520
-	.long	.Lxtalabel11
-.cc_bottom cc_122
-.cc_top cc_123,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_top cc_122,.Lxtalabel8
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	519
 	.long	520
 	.long	.Lxtalabel8
-.cc_bottom cc_123
-.cc_top cc_124,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_bottom cc_122
+.cc_top cc_123,.Lxtalabel11
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
-	.long	524
-	.long	524
-	.long	.Lxtalabel2
-.cc_bottom cc_124
-.cc_top cc_125,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.long	519
+	.long	520
+	.long	.Lxtalabel11
+.cc_bottom cc_123
+.cc_top cc_124,.Lxtalabel13
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	524
 	.long	524
 	.long	.Lxtalabel13
+.cc_bottom cc_124
+.cc_top cc_125,.Lxtalabel2
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.byte	0
+	.long	524
+	.long	524
+	.long	.Lxtalabel2
 .cc_bottom cc_125
 .cc_top cc_126,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	534
 	.long	534
 	.long	.Lxtalabel2
 .cc_bottom cc_126
 .cc_top cc_127,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	534
 	.long	534
 	.long	.Lxtalabel13
 .cc_bottom cc_127
-.cc_top cc_128,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
-	.byte	0
-	.long	535
-	.long	535
-	.long	.Lxtalabel13
-.cc_bottom cc_128
-.cc_top cc_129,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+.cc_top cc_128,.Lxtalabel2
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	535
 	.long	535
 	.long	.Lxtalabel2
+.cc_bottom cc_128
+.cc_top cc_129,.Lxtalabel13
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.byte	0
+	.long	535
+	.long	535
+	.long	.Lxtalabel13
 .cc_bottom cc_129
 .cc_top cc_130,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	536
 	.long	536
 	.long	.Lxtalabel2
 .cc_bottom cc_130
 .cc_top cc_131,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	536
 	.long	536
 	.long	.Lxtalabel13
 .cc_bottom cc_131
 .cc_top cc_132,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	537
 	.long	538
 	.long	.Lxtalabel10
 .cc_bottom cc_132
 .cc_top cc_133,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	609
 	.long	612
 	.long	.Lxtalabel10
 .cc_bottom cc_133
 .cc_top cc_134,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	614
 	.long	614
 	.long	.Lxtalabel10
 .cc_bottom cc_134
 .cc_top cc_135,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	753
 	.long	753
 	.long	.Lxtalabel0
 .cc_bottom cc_135
 .cc_top cc_136,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	757
 	.long	758
 	.long	.Lxtalabel0
 .cc_bottom cc_136
 .cc_top cc_137,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	760
 	.long	762
 	.long	.Lxtalabel0
 .cc_bottom cc_137
 .cc_top cc_138,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	764
 	.long	764
 	.long	.Lxtalabel0
 .cc_bottom cc_138
 .cc_top cc_139,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	768
 	.long	768
 	.long	.Lxtalabel0
 .cc_bottom cc_139
 .cc_top cc_140,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	777
 	.long	777
 	.long	.Lxtalabel0
 .cc_bottom cc_140
 .cc_top cc_141,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	778
 	.long	778
 	.long	.Lxtalabel0
 .cc_bottom cc_141
 .cc_top cc_142,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	778
 	.long	778
 	.long	.Lxtalabel0
 .cc_bottom cc_142
 .cc_top cc_143,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	778
 	.long	778
 	.long	.Lxtalabel0
 .cc_bottom cc_143
 .cc_top cc_144,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	778
 	.long	778
 	.long	.Lxtalabel0
 .cc_bottom cc_144
 .cc_top cc_145,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	780
 	.long	781
 	.long	.Lxtalabel0
 .cc_bottom cc_145
 .cc_top cc_146,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	780
 	.long	781
 	.long	.Lxtalabel0
 .cc_bottom cc_146
 .cc_top cc_147,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	780
 	.long	781
 	.long	.Lxtalabel0
 .cc_bottom cc_147
 .cc_top cc_148,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	780
 	.long	781
 	.long	.Lxtalabel0
 .cc_bottom cc_148
 .cc_top cc_149,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	783
 	.long	785
 	.long	.Lxtalabel0
 .cc_bottom cc_149
 .cc_top cc_150,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	783
 	.long	785
 	.long	.Lxtalabel0
 .cc_bottom cc_150
 .cc_top cc_151,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	783
 	.long	785
 	.long	.Lxtalabel0
 .cc_bottom cc_151
 .cc_top cc_152,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	783
 	.long	785
 	.long	.Lxtalabel0
 .cc_bottom cc_152
 .cc_top cc_153,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	786
 	.long	786
 	.long	.Lxtalabel0
 .cc_bottom cc_153
 .cc_top cc_154,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	786
 	.long	786
 	.long	.Lxtalabel0
 .cc_bottom cc_154
 .cc_top cc_155,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	788
 	.long	789
 	.long	.Lxtalabel0
 .cc_bottom cc_155
 .cc_top cc_156,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	788
 	.long	789
 	.long	.Lxtalabel0
 .cc_bottom cc_156
 .cc_top cc_157,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	790
 	.long	790
 	.long	.Lxtalabel0
 .cc_bottom cc_157
 .cc_top cc_158,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	790
 	.long	790
 	.long	.Lxtalabel0
 .cc_bottom cc_158
 .cc_top cc_159,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	806
 	.long	806
 	.long	.Lxtalabel0
 .cc_bottom cc_159
 .cc_top cc_160,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	806
 	.long	806
 	.long	.Lxtalabel0
 .cc_bottom cc_160
 .cc_top cc_161,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	807
 	.long	807
 	.long	.Lxtalabel0
 .cc_bottom cc_161
 .cc_top cc_162,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	807
 	.long	807
 	.long	.Lxtalabel0
 .cc_bottom cc_162
 .cc_top cc_163,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	808
 	.long	808
 	.long	.Lxtalabel0
 .cc_bottom cc_163
 .cc_top cc_164,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	808
 	.long	808
 	.long	.Lxtalabel0
 .cc_bottom cc_164
 .cc_top cc_165,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	809
 	.long	809
 	.long	.Lxtalabel0
 .cc_bottom cc_165
 .cc_top cc_166,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	809
 	.long	809
 	.long	.Lxtalabel0
 .cc_bottom cc_166
 .cc_top cc_167,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	823
 	.long	824
 	.long	.Lxtalabel0
 .cc_bottom cc_167
 .cc_top cc_168,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	829
 	.long	829
 	.long	.Lxtalabel0
 .cc_bottom cc_168
 .cc_top cc_169,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 	.byte	0
 	.long	831
 	.long	832
 	.long	.Lxtalabel0
 .cc_bottom cc_169
 .cc_top cc_170,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel0
 .cc_bottom cc_170
 .cc_top cc_171,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel0
 .cc_bottom cc_171
 .cc_top cc_172,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel0
 .cc_bottom cc_172
 .cc_top cc_173,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel0
 .cc_bottom cc_173
 .cc_top cc_174,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel0
 .cc_bottom cc_174
 .cc_top cc_175,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel0
 .cc_bottom cc_175
 .cc_top cc_176,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15

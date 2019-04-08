@@ -340,4 +340,17 @@ void UserAudioStreamStart()
     return;
 }
 
+void UserHostActive(int active)
+{
+    if(active==1)
+    {
+        UnMute();
+    }
+    else
+    {
+        Mute();
+    }
+    return;
+}
+
 #endif /* AUDIOHW_H_ */

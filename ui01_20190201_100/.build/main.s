@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.file	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -99,7 +99,7 @@
 	main.parinfo.debugstring0:
 	.asciiz "# -1 \"\""
 	main.parinfo.debugstring1:
-	.asciiz "# 675 \"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc\""
+	.asciiz "# 675 \"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc\""
 	.cc_top main.parinfo.cc, main.parinfo
 	.globl main.parinfo
 	.type main.parinfo, @object
@@ -184,9 +184,9 @@ clk_audio_bclk.info:
 	.set usage.anon.11,0
 	.set usage.anon.12,0
 	.set usage.anon.13,0
-	.globwrite usage.anon.8,p_for_mclk_count,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:341:43: note: object used here\n            asm(\"setclk res[%0], %1\"::\"r\"(p_for_mclk_count), \"r\"(x));\n                                          ^~~~~~~~~~~~~~~~"
-	.globwrite usage.anon.7,epTypeTableIn,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:319:48: note: object used here\n                        c_sof, epTypeTableOut, epTypeTableIn, p_usb_rst,\n                                               ^~~~~~~~~~~~~"
-	.globwrite usage.anon.7,epTypeTableOut,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:319:32: note: object used here\n                        c_sof, epTypeTableOut, epTypeTableIn, p_usb_rst,\n                               ^~~~~~~~~~~~~~"
+	.globwrite usage.anon.8,p_for_mclk_count,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:341:43: note: object used here\n            asm(\"setclk res[%0], %1\"::\"r\"(p_for_mclk_count), \"r\"(x));\n                                          ^~~~~~~~~~~~~~~~"
+	.globwrite usage.anon.7,epTypeTableIn,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:319:48: note: object used here\n                        c_sof, epTypeTableOut, epTypeTableIn, p_usb_rst,\n                                               ^~~~~~~~~~~~~"
+	.globwrite usage.anon.7,epTypeTableOut,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:319:32: note: object used here\n                        c_sof, epTypeTableOut, epTypeTableIn, p_usb_rst,\n                               ^~~~~~~~~~~~~~"
 	.call main,usb_audio_io
 	.call main,usage.anon.13
 	.call usage.anon.13,usb_audio_core
@@ -213,15 +213,15 @@ clk_audio_bclk.info:
 	.call usage.anon.2,delay_ticks_longlong
 	.call usage.anon.1,delay_ticks_longlong
 	.call usage.anon.0,delay_ticks_longlong
-	.par usage.anon.13,usb_audio_io,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:554:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par DFUHandler,usb_audio_core,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:557:9: error: use of `%s\' violates parallel usage rules\n        par\n        ^~~"
-	.par usage.anon.11,usage.anon.12,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:433:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par usage.anon.7,usage.anon.8,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par usage.anon.7,usage.anon.9,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par usage.anon.7,usage.anon.10,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par usage.anon.8,usage.anon.9,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par usage.anon.8,usage.anon.10,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
-	.par usage.anon.9,usage.anon.10,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.13,usb_audio_io,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:554:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par DFUHandler,usb_audio_core,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:557:9: error: use of `%s\' violates parallel usage rules\n        par\n        ^~~"
+	.par usage.anon.11,usage.anon.12,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:433:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.7,usage.anon.8,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.7,usage.anon.9,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.7,usage.anon.10,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.8,usage.anon.9,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.8,usage.anon.10,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
+	.par usage.anon.9,usage.anon.10,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:312:5: error: use of `%s\' violates parallel usage rules\n    par\n    ^~~"
 	.set usage.anon.3.locnoside, 0
 	.set usage.anon.6.locnoside, 0
 	.set usb_audio_core.locnoside, 0
@@ -231,9 +231,9 @@ clk_audio_bclk.info:
 	.set usb_audio_io.locnochandec, 0
 	.set main.locnochandec, 0
 	.set usb_audio_core.locnoglobalaccess, 0
-	.globpassesref buffer, p_for_mclk_count,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:13: error: call to `buffer\' in `usb_audio_core\' makes alias of global \'p_for_mclk_count\'\n            buffer(c_xud_out[ENDPOINT_NUMBER_OUT_AUDIO],    /* Audio Out*/\n            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref XUD_Manager, epTypeTableIn,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:21: error: call to `XUD_Manager\' in `usb_audio_core\' makes alias of global \'epTypeTableIn\'\n                    XUD_Manager(c_xud_out, ENDPOINT_COUNT_OUT, c_xud_in, ENDPOINT_COUNT_IN,\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref XUD_Manager, epTypeTableOut,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:21: error: call to `XUD_Manager\' in `usb_audio_core\' makes alias of global \'epTypeTableOut\'\n                    XUD_Manager(c_xud_out, ENDPOINT_COUNT_OUT, c_xud_in, ENDPOINT_COUNT_IN,\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref buffer, p_for_mclk_count,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:13: error: call to `buffer\' in `usb_audio_core\' makes alias of global \'p_for_mclk_count\'\n            buffer(c_xud_out[ENDPOINT_NUMBER_OUT_AUDIO],    /* Audio Out*/\n            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref XUD_Manager, epTypeTableIn,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:21: error: call to `XUD_Manager\' in `usb_audio_core\' makes alias of global \'epTypeTableIn\'\n                    XUD_Manager(c_xud_out, ENDPOINT_COUNT_OUT, c_xud_in, ENDPOINT_COUNT_IN,\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref XUD_Manager, epTypeTableOut,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:21: error: call to `XUD_Manager\' in `usb_audio_core\' makes alias of global \'epTypeTableOut\'\n                    XUD_Manager(c_xud_out, ENDPOINT_COUNT_OUT, c_xud_in, ENDPOINT_COUNT_IN,\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	.overlay_subgraph_conflict usb_audio_core.task.XUD_Manager.0, usb_audio_core.task.buffer.1, usb_audio_core.task.Endpoint0.2, usb_audio_core.task.decouple.3
 	.overlay_subgraph_conflict _Susb_audio_core_0.task.XUD_Manager.0, _Susb_audio_core_0.task.buffer.1, _Susb_audio_core_0.task.Endpoint0.2, _Susb_audio_core_0.task.decouple.3
 	.overlay_subgraph_conflict usb_audio_io.task.mixer.0, usb_audio_io.task.audio.1
@@ -255,8 +255,8 @@ clk_audio_bclk.info:
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.file	1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\main.xc"
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
 	.text
 	.weak	_i.i_dfu._chan.finish
 	.align	4
@@ -651,7 +651,7 @@ _i.i_dfu._chan_yield.HandleDfuRequest:  # @_i.i_dfu._chan_yield.HandleDfuRequest
 	.cc_top thread_speed.function,thread_speed
 thread_speed:                           # @thread_speed
 .Lfunc_begin4:
-	.loc	1 256 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:256:0
+	.loc	1 256 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:256:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -660,7 +660,7 @@ thread_speed:                           # @thread_speed
 		nop
 		dualentsp 0
 	}
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp16:
 	setsr 128
 	{
@@ -689,7 +689,7 @@ thread_speed:                           # @thread_speed
 	.cc_top usb_audio_core.function,usb_audio_core
 usb_audio_core:                         # @usb_audio_core
 .Lfunc_begin5:
-	.loc	1 292 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:292:0
+	.loc	1 292 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:292:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -724,121 +724,121 @@ usb_audio_core:                         # @usb_audio_core
 		getr r0, 2
 		stw r2, sp[4]
 	}
-	.loc	1 293 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 .Ltmp22:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 	{
 		setd res[r1], r0
 		stw r0, sp[5]
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 	{
 		getr r0, 2
 		stw r1, sp[6]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 .Ltmp23:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r1], r0
 		stw r0, sp[8]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		getr r0, 2
 		stw r1, sp[10]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r1], r0
 		stw r0, sp[7]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		getr r0, 2
 		stw r1, sp[9]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 .Ltmp24:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r1], r0
 		stw r0, sp[12]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		getr r0, 2
 		stw r1, sp[14]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r1], r0
 		stw r0, sp[11]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		getr r0, 2
 		stw r1, sp[13]
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 .Ltmp25:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 	{
 		setd res[r1], r0
 		stw r0, sp[15]
@@ -847,7 +847,7 @@ usb_audio_core:                         # @usb_audio_core
 		nop
 		stw r1, sp[16]
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 	ldaw r1, dp[par.desc.1]
 	{
 		ldaw r0, sp[1]
@@ -929,7 +929,7 @@ usb_audio_core:                         # @usb_audio_core
 	.cc_top usb_audio_core.task.XUD_Manager.0.function,usb_audio_core.task.XUD_Manager.0
 usb_audio_core.task.XUD_Manager.0:      # @usb_audio_core.task.XUD_Manager.0
 .Lfunc_begin6:
-	.loc	1 315 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:315:0
+	.loc	1 315 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:315:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -951,14 +951,14 @@ usb_audio_core.task.XUD_Manager.0:      # @usb_audio_core.task.XUD_Manager.0
 		stw r4, sp[14]
 	}
 .Ltmp33:
-	.loc	1 316 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:316:0
+	.loc	1 316 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:316:0
 .Lxta.call_labels0:
 	bl set_core_high_priority_on
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	ldaw r0, r4[6]
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	ldaw r2, r4[10]
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	{
 		ldc r1, 2
 		ldw r3, r4[4]
@@ -967,7 +967,7 @@ usb_audio_core.task.XUD_Manager.0:      # @usb_audio_core.task.XUD_Manager.0
 		mkmsk r11, 1
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	std r1, r11, sp[4]
 	std r1, r11, sp[3]
 	ldaw r11, dp[epTypeTableIn]
@@ -1014,7 +1014,7 @@ usb_audio_core.task.XUD_Manager.0:      # @usb_audio_core.task.XUD_Manager.0
 	.cc_top usb_audio_core.task.buffer.1.function,usb_audio_core.task.buffer.1
 usb_audio_core.task.buffer.1:           # @usb_audio_core.task.buffer.1
 .Lfunc_begin7:
-	.loc	1 328 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:328:0
+	.loc	1 328 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:328:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1034,17 +1034,17 @@ usb_audio_core.task.buffer.1:           # @usb_audio_core.task.buffer.1
 .Ltmp38:
 	.cfi_offset 4, -8
 	#DEBUG_VALUE: usb_audio_core.task.buffer.1:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp39:
 	setsr 128
 	ldc r1, 64
 .Ltmp40:
-	.loc	1 340 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
+	.loc	1 340 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
 	{
 		add r1, r0, r1
 		nop
 	}
-	.loc	1 340 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
+	.loc	1 340 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
 	#APP
 	ldw r2, dp[clk_audio_mclk]
 	#NO_APP
@@ -1052,18 +1052,18 @@ usb_audio_core.task.buffer.1:           # @usb_audio_core.task.buffer.1
 		nop
 		stw r2, r1[0]
 	}
-	.loc	1 341 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
+	.loc	1 341 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
 	ldw r4, dp[p_for_mclk_count]
-	.loc	1 341 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
+	.loc	1 341 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
 	#APP
 	setclk res[r4], r2
 	#NO_APP
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		ldc r1, 52
 		ldw r11, r0[9]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		add r1, r0, r1
 		nop
@@ -1072,12 +1072,12 @@ usb_audio_core.task.buffer.1:           # @usb_audio_core.task.buffer.1
 		nop
 		ldw r1, r1[0]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		ldc r3, 56
 		ldw r2, r0[5]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		add r0, r0, r3
 		nop
@@ -1087,7 +1087,7 @@ usb_audio_core.task.buffer.1:           # @usb_audio_core.task.buffer.1
 		nop
 		ldw r3, r0[0]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		mov r0, r11
 		stw r4, sp[1]
@@ -1119,7 +1119,7 @@ usb_audio_core.task.buffer.1:           # @usb_audio_core.task.buffer.1
 	.cc_top usb_audio_core.task.Endpoint0.2.function,usb_audio_core.task.Endpoint0.2
 usb_audio_core.task.Endpoint0.2:        # @usb_audio_core.task.Endpoint0.2
 .Lfunc_begin8:
-	.loc	1 385 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:385:0
+	.loc	1 385 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:385:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1138,7 +1138,7 @@ usb_audio_core.task.Endpoint0.2:        # @usb_audio_core.task.Endpoint0.2
 .Ltmp47:
 	.cfi_offset 5, -4
 	#DEBUG_VALUE: usb_audio_core.task.Endpoint0.2:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp48:
 	setsr 128
 	{
@@ -1156,22 +1156,22 @@ usb_audio_core.task.Endpoint0.2:        # @usb_audio_core.task.Endpoint0.2
 		ldw r4, r0[2]
 	}
 .Ltmp49:
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		ldc r1, 60
 		ldw r3, r0[1]
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		add r1, r0, r1
 		nop
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		ldc r1, 48
 		ldw r2, r1[0]
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		add r1, r0, r1
 		nop
@@ -1180,13 +1180,13 @@ usb_audio_core.task.Endpoint0.2:        # @usb_audio_core.task.Endpoint0.2
 		nop
 		ldw r1, r1[0]
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		ldc r5, 0
 		ldw r0, r0[8]
 	}
 .Ltmp50:
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	std r11, r5, sp[1]
 	{
 		nop
@@ -1216,7 +1216,7 @@ usb_audio_core.task.Endpoint0.2:        # @usb_audio_core.task.Endpoint0.2
 	.cc_top usb_audio_core.task.decouple.3.function,usb_audio_core.task.decouple.3
 usb_audio_core.task.decouple.3:         # @usb_audio_core.task.decouple.3
 .Lfunc_begin9:
-	.loc	1 391 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:391:0
+	.loc	1 391 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:391:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1230,7 +1230,7 @@ usb_audio_core.task.decouple.3:         # @usb_audio_core.task.decouple.3
 .Ltmp54:
 	.cfi_offset 15, 0
 	#DEBUG_VALUE: usb_audio_core.task.decouple.3:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp55:
 	setsr 128
 	{
@@ -1238,7 +1238,7 @@ usb_audio_core.task.decouple.3:         # @usb_audio_core.task.decouple.3
 		ldw r0, r0[0]
 	}
 .Ltmp56:
-	.loc	1 393 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:393:0
+	.loc	1 393 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:393:0
 .Lxta.call_labels4:
 	bl decouple
 	{
@@ -1263,7 +1263,7 @@ usb_audio_core.task.decouple.3:         # @usb_audio_core.task.decouple.3
 	.cc_top _Susb_audio_core_0.function,_Susb_audio_core_0
 _Susb_audio_core_0:                     # @_Susb_audio_core_0
 .Lfunc_begin10:
-	.loc	1 292 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:292:0
+	.loc	1 292 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:292:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1291,126 +1291,126 @@ _Susb_audio_core_0:                     # @_Susb_audio_core_0
 		stw r2, sp[3]
 	}
 .Ltmp62:
-	.loc	1 289 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:289:0
+	.loc	1 289 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:289:0
 	{
 		getr r0, 2
 		stw r0, sp[4]
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 .Ltmp63:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 	{
 		setd res[r1], r0
 		stw r0, sp[5]
 	}
-	.loc	1 293 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
+	.loc	1 293 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:293:0
 	{
 		getr r0, 2
 		stw r1, sp[6]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 .Ltmp64:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r1], r0
 		stw r0, sp[8]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		getr r0, 2
 		stw r1, sp[10]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		setd res[r1], r0
 		stw r0, sp[7]
 	}
-	.loc	1 294 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
+	.loc	1 294 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:294:0
 	{
 		getr r0, 2
 		stw r1, sp[9]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 .Ltmp65:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r1], r0
 		stw r0, sp[12]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		getr r0, 2
 		stw r1, sp[14]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		setd res[r1], r0
 		stw r0, sp[11]
 	}
-	.loc	1 295 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
+	.loc	1 295 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:295:0
 	{
 		getr r0, 2
 		stw r1, sp[13]
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 .Ltmp66:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 	{
 		setd res[r1], r0
 		stw r0, sp[15]
@@ -1419,7 +1419,7 @@ _Susb_audio_core_0:                     # @_Susb_audio_core_0
 		nop
 		stw r1, sp[16]
 	}
-	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
+	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:296:0
 	ldaw r1, dp[par.desc.2]
 	{
 		ldaw r0, sp[1]
@@ -1501,7 +1501,7 @@ _Susb_audio_core_0:                     # @_Susb_audio_core_0
 	.cc_top _Susb_audio_core_0.task.XUD_Manager.0.function,_Susb_audio_core_0.task.XUD_Manager.0
 _Susb_audio_core_0.task.XUD_Manager.0:  # @_Susb_audio_core_0.task.XUD_Manager.0
 .Lfunc_begin11:
-	.loc	1 315 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:315:0
+	.loc	1 315 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:315:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1523,14 +1523,14 @@ _Susb_audio_core_0.task.XUD_Manager.0:  # @_Susb_audio_core_0.task.XUD_Manager.0
 		stw r4, sp[14]
 	}
 .Ltmp74:
-	.loc	1 316 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:316:0
+	.loc	1 316 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:316:0
 .Lxta.call_labels5:
 	bl set_core_high_priority_on
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	ldaw r0, r4[6]
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	ldaw r2, r4[10]
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	{
 		ldc r1, 2
 		ldw r3, r4[4]
@@ -1539,7 +1539,7 @@ _Susb_audio_core_0.task.XUD_Manager.0:  # @_Susb_audio_core_0.task.XUD_Manager.0
 		mkmsk r11, 1
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
+	.loc	1 318 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:318:0
 	std r1, r11, sp[4]
 	std r1, r11, sp[3]
 	ldaw r11, dp[epTypeTableIn]
@@ -1586,7 +1586,7 @@ _Susb_audio_core_0.task.XUD_Manager.0:  # @_Susb_audio_core_0.task.XUD_Manager.0
 	.cc_top _Susb_audio_core_0.task.buffer.1.function,_Susb_audio_core_0.task.buffer.1
 _Susb_audio_core_0.task.buffer.1:       # @_Susb_audio_core_0.task.buffer.1
 .Lfunc_begin12:
-	.loc	1 328 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:328:0
+	.loc	1 328 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:328:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1606,17 +1606,17 @@ _Susb_audio_core_0.task.buffer.1:       # @_Susb_audio_core_0.task.buffer.1
 .Ltmp79:
 	.cfi_offset 4, -8
 	#DEBUG_VALUE: _Susb_audio_core_0.task.buffer.1:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp80:
 	setsr 128
 	ldc r1, 64
 .Ltmp81:
-	.loc	1 340 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
+	.loc	1 340 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
 	{
 		add r1, r0, r1
 		nop
 	}
-	.loc	1 340 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
+	.loc	1 340 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:340:0
 	#APP
 	ldw r2, dp[clk_audio_mclk]
 	#NO_APP
@@ -1624,18 +1624,18 @@ _Susb_audio_core_0.task.buffer.1:       # @_Susb_audio_core_0.task.buffer.1
 		nop
 		stw r2, r1[0]
 	}
-	.loc	1 341 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
+	.loc	1 341 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
 	ldw r4, dp[p_for_mclk_count]
-	.loc	1 341 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
+	.loc	1 341 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:341:0
 	#APP
 	setclk res[r4], r2
 	#NO_APP
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		ldc r1, 52
 		ldw r11, r0[9]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		add r1, r0, r1
 		nop
@@ -1644,12 +1644,12 @@ _Susb_audio_core_0.task.buffer.1:       # @_Susb_audio_core_0.task.buffer.1
 		nop
 		ldw r1, r1[0]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		ldc r3, 56
 		ldw r2, r0[5]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		add r0, r0, r3
 		nop
@@ -1659,7 +1659,7 @@ _Susb_audio_core_0.task.buffer.1:       # @_Susb_audio_core_0.task.buffer.1
 		nop
 		ldw r3, r0[0]
 	}
-	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
+	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:344:0
 	{
 		mov r0, r11
 		stw r4, sp[1]
@@ -1691,7 +1691,7 @@ _Susb_audio_core_0.task.buffer.1:       # @_Susb_audio_core_0.task.buffer.1
 	.cc_top _Susb_audio_core_0.task.Endpoint0.2.function,_Susb_audio_core_0.task.Endpoint0.2
 _Susb_audio_core_0.task.Endpoint0.2:    # @_Susb_audio_core_0.task.Endpoint0.2
 .Lfunc_begin13:
-	.loc	1 385 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:385:0
+	.loc	1 385 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:385:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1710,7 +1710,7 @@ _Susb_audio_core_0.task.Endpoint0.2:    # @_Susb_audio_core_0.task.Endpoint0.2
 .Ltmp88:
 	.cfi_offset 5, -4
 	#DEBUG_VALUE: _Susb_audio_core_0.task.Endpoint0.2:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp89:
 	setsr 128
 	{
@@ -1728,22 +1728,22 @@ _Susb_audio_core_0.task.Endpoint0.2:    # @_Susb_audio_core_0.task.Endpoint0.2
 		ldw r4, r0[3]
 	}
 .Ltmp90:
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		ldc r1, 60
 		ldw r3, r0[1]
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		add r1, r0, r1
 		nop
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		ldc r1, 48
 		ldw r2, r1[0]
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		add r1, r0, r1
 		nop
@@ -1752,13 +1752,13 @@ _Susb_audio_core_0.task.Endpoint0.2:    # @_Susb_audio_core_0.task.Endpoint0.2
 		nop
 		ldw r1, r1[0]
 	}
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	{
 		ldc r5, 0
 		ldw r0, r0[8]
 	}
 .Ltmp91:
-	.loc	1 387 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
+	.loc	1 387 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:0
 	std r11, r5, sp[1]
 	{
 		nop
@@ -1788,7 +1788,7 @@ _Susb_audio_core_0.task.Endpoint0.2:    # @_Susb_audio_core_0.task.Endpoint0.2
 	.cc_top _Susb_audio_core_0.task.decouple.3.function,_Susb_audio_core_0.task.decouple.3
 _Susb_audio_core_0.task.decouple.3:     # @_Susb_audio_core_0.task.decouple.3
 .Lfunc_begin14:
-	.loc	1 391 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:391:0
+	.loc	1 391 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:391:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1802,7 +1802,7 @@ _Susb_audio_core_0.task.decouple.3:     # @_Susb_audio_core_0.task.decouple.3
 .Ltmp95:
 	.cfi_offset 15, 0
 	#DEBUG_VALUE: _Susb_audio_core_0.task.decouple.3:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp96:
 	setsr 128
 	{
@@ -1810,7 +1810,7 @@ _Susb_audio_core_0.task.decouple.3:     # @_Susb_audio_core_0.task.decouple.3
 		ldw r0, r0[0]
 	}
 .Ltmp97:
-	.loc	1 393 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:393:0
+	.loc	1 393 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:393:0
 .Lxta.call_labels9:
 	bl decouple
 	{
@@ -1835,7 +1835,7 @@ _Susb_audio_core_0.task.decouple.3:     # @_Susb_audio_core_0.task.decouple.3
 	.cc_top usb_audio_io.function,usb_audio_io
 usb_audio_io:                           # @usb_audio_io
 .Lfunc_begin15:
-	.loc	1 422 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:422:0
+	.loc	1 422 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:422:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1866,18 +1866,18 @@ usb_audio_io:                           # @usb_audio_io
 		getr r0, 2
 		stw r3, sp[5]
 	}
-	.loc	1 424 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 .Ltmp102:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 	{
 		setd res[r1], r0
 		stw r0, sp[6]
@@ -1886,7 +1886,7 @@ usb_audio_io:                           # @usb_audio_io
 		nop
 		stw r1, sp[7]
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 	ldaw r1, dp[par.desc.3]
 	{
 		ldaw r0, sp[2]
@@ -1914,7 +1914,7 @@ usb_audio_io:                           # @usb_audio_io
 	.cc_top usb_audio_io.task.mixer.0.function,usb_audio_io.task.mixer.0
 usb_audio_io.task.mixer.0:              # @usb_audio_io.task.mixer.0
 .Lfunc_begin16:
-	.loc	1 437 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:437:0
+	.loc	1 437 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:437:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1928,7 +1928,7 @@ usb_audio_io.task.mixer.0:              # @usb_audio_io.task.mixer.0
 .Ltmp106:
 	.cfi_offset 15, 0
 	#DEBUG_VALUE: usb_audio_io.task.mixer.0:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp107:
 	setsr 128
 	{
@@ -1940,13 +1940,13 @@ usb_audio_io.task.mixer.0:              # @usb_audio_io.task.mixer.0
 		ldw r1, r0[4]
 	}
 .Ltmp108:
-	.loc	1 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
+	.loc	1 439 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
 	{
 		mov r0, r3
 		ldw r2, r0[2]
 	}
 .Ltmp109:
-	.loc	1 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
+	.loc	1 439 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
 .Lxta.call_labels10:
 	bl mixer
 	{
@@ -1970,7 +1970,7 @@ usb_audio_io.task.mixer.0:              # @usb_audio_io.task.mixer.0
 	.cc_top usb_audio_io.task.audio.1.function,usb_audio_io.task.audio.1
 usb_audio_io.task.audio.1:              # @usb_audio_io.task.audio.1
 .Lfunc_begin17:
-	.loc	1 443 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:443:0
+	.loc	1 443 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:443:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1984,7 +1984,7 @@ usb_audio_io.task.audio.1:              # @usb_audio_io.task.audio.1
 .Ltmp113:
 	.cfi_offset 15, 0
 	#DEBUG_VALUE: usb_audio_io.task.audio.1:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp114:
 	setsr 128
 	{
@@ -1996,13 +1996,13 @@ usb_audio_io.task.audio.1:              # @usb_audio_io.task.audio.1
 		ldw r1, r0[3]
 	}
 .Ltmp115:
-	.loc	1 450 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
+	.loc	1 450 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
 	{
 		mov r0, r3
 		ldw r2, r0[1]
 	}
 .Ltmp116:
-	.loc	1 450 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
+	.loc	1 450 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
 .Lxta.call_labels11:
 	bl audio
 .Ltmp117:
@@ -2022,7 +2022,7 @@ usb_audio_io.task.audio.1:              # @usb_audio_io.task.audio.1
 	.cc_top _Susb_audio_io_0.function,_Susb_audio_io_0
 _Susb_audio_io_0:                       # @_Susb_audio_io_0
 .Lfunc_begin18:
-	.loc	1 422 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:422:0
+	.loc	1 422 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:422:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -2050,24 +2050,24 @@ _Susb_audio_io_0:                       # @_Susb_audio_io_0
 		nop
 		stw r0, sp[4]
 	}
-	.loc	1 403 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:403:0
+	.loc	1 403 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:403:0
 .Ltmp123:
 	{
 		getr r0, 2
 		stw r0, sp[5]
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 .Ltmp124:
 	{
 		getr r1, 2
 		nop
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 	{
 		setd res[r0], r1
 		nop
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 	{
 		setd res[r1], r0
 		stw r0, sp[6]
@@ -2076,7 +2076,7 @@ _Susb_audio_io_0:                       # @_Susb_audio_io_0
 		nop
 		stw r1, sp[7]
 	}
-	.loc	1 424 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
+	.loc	1 424 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:424:0
 	ldaw r1, dp[par.desc.4]
 	{
 		ldaw r0, sp[2]
@@ -2104,7 +2104,7 @@ _Susb_audio_io_0:                       # @_Susb_audio_io_0
 	.cc_top _Susb_audio_io_0.task.mixer.0.function,_Susb_audio_io_0.task.mixer.0
 _Susb_audio_io_0.task.mixer.0:          # @_Susb_audio_io_0.task.mixer.0
 .Lfunc_begin19:
-	.loc	1 437 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:437:0
+	.loc	1 437 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:437:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -2118,7 +2118,7 @@ _Susb_audio_io_0.task.mixer.0:          # @_Susb_audio_io_0.task.mixer.0
 .Ltmp128:
 	.cfi_offset 15, 0
 	#DEBUG_VALUE: _Susb_audio_io_0.task.mixer.0:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp129:
 	setsr 128
 	{
@@ -2130,13 +2130,13 @@ _Susb_audio_io_0.task.mixer.0:          # @_Susb_audio_io_0.task.mixer.0
 		ldw r1, r0[4]
 	}
 .Ltmp130:
-	.loc	1 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
+	.loc	1 439 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
 	{
 		mov r0, r3
 		ldw r2, r0[1]
 	}
 .Ltmp131:
-	.loc	1 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
+	.loc	1 439 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:439:0
 .Lxta.call_labels12:
 	bl mixer
 	{
@@ -2160,7 +2160,7 @@ _Susb_audio_io_0.task.mixer.0:          # @_Susb_audio_io_0.task.mixer.0
 	.cc_top _Susb_audio_io_0.task.audio.1.function,_Susb_audio_io_0.task.audio.1
 _Susb_audio_io_0.task.audio.1:          # @_Susb_audio_io_0.task.audio.1
 .Lfunc_begin20:
-	.loc	1 443 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:443:0
+	.loc	1 443 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:443:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -2174,7 +2174,7 @@ _Susb_audio_io_0.task.audio.1:          # @_Susb_audio_io_0.task.audio.1
 .Ltmp135:
 	.cfi_offset 15, 0
 	#DEBUG_VALUE: _Susb_audio_io_0.task.audio.1:frame <- R0
-	.loc	1 259 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
+	.loc	1 259 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:259:0
 .Ltmp136:
 	setsr 128
 	{
@@ -2186,13 +2186,13 @@ _Susb_audio_io_0.task.audio.1:          # @_Susb_audio_io_0.task.audio.1
 		ldw r1, r0[2]
 	}
 .Ltmp137:
-	.loc	1 450 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
+	.loc	1 450 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
 	{
 		mov r0, r3
 		ldw r2, r0[3]
 	}
 .Ltmp138:
-	.loc	1 450 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
+	.loc	1 450 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:450:0
 .Lxta.call_labels13:
 	bl audio
 .Ltmp139:
@@ -2484,7 +2484,7 @@ __main__main_tile_0:                    # @__main__main_tile_0
 	.cc_top __main__main_tile_0_task_usb_audio_core_2.function,__main__main_tile_0_task_usb_audio_core_2
 __main__main_tile_0_task_usb_audio_core_2: # @__main__main_tile_0_task_usb_audio_core_2
 .Lfunc_begin22:
-	.loc	1 566 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:566:0
+	.loc	1 566 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:566:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -2505,14 +2505,14 @@ __main__main_tile_0_task_usb_audio_core_2: # @__main__main_tile_0_task_usb_audio
 		nop
 		ldw r1, r0[8]
 	}
-	.loc	1 566 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:566:0
+	.loc	1 566 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:566:0
 .Ltmp154:
 	{
 		mov r0, r3
 		ldw r2, r0[1]
 	}
 .Ltmp155:
-	.loc	1 566 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:566:0
+	.loc	1 566 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:566:0
 .Lxta.call_labels15:
 	bl _Susb_audio_core_0
 	{
@@ -2536,7 +2536,7 @@ __main__main_tile_0_task_usb_audio_core_2: # @__main__main_tile_0_task_usb_audio
 	.cc_top __main__main_tile_0_task_usb_audio_io_3.function,__main__main_tile_0_task_usb_audio_io_3
 __main__main_tile_0_task_usb_audio_io_3: # @__main__main_tile_0_task_usb_audio_io_3
 .Lfunc_begin23:
-	.loc	1 584 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:584:0
+	.loc	1 584 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:584:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -2553,14 +2553,14 @@ __main__main_tile_0_task_usb_audio_io_3: # @__main__main_tile_0_task_usb_audio_i
 		nop
 		ldw r2, r0[11]
 	}
-	.loc	1 584 0 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:584:0
+	.loc	1 584 0 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:584:0
 .Ltmp160:
 	{
 		mov r0, r2
 		ldw r1, r0[9]
 	}
 .Ltmp161:
-	.loc	1 584 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:584:0
+	.loc	1 584 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:584:0
 .Lxta.call_labels16:
 	bl _Susb_audio_io_0
 .Ltmp162:
@@ -2710,14 +2710,14 @@ __xcc1_internal_2:
 .Ldebug_end2:
 	.text
 .Ldebug_end3:
-	.file	3 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
+	.file	3 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"p_i2s_dac"
 .Linfo_string4:
@@ -5128,106 +5128,106 @@ __xcc1_internal_2:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	316
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	316
 	.long	.Lxta.call_labels5
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	318
 	.long	.Lxta.call_labels1
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	318
 	.long	.Lxta.call_labels6
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	344
 	.long	.Lxta.call_labels2
 .cc_bottom cc_4
 .cc_top cc_5,.Lxta.call_labels7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	344
 	.long	.Lxta.call_labels7
 .cc_bottom cc_5
-.cc_top cc_6,.Lxta.call_labels8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	387
-	.long	.Lxta.call_labels8
-.cc_bottom cc_6
-.cc_top cc_7,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_6,.Lxta.call_labels3
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	387
 	.long	.Lxta.call_labels3
+.cc_bottom cc_6
+.cc_top cc_7,.Lxta.call_labels8
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	387
+	.long	.Lxta.call_labels8
 .cc_bottom cc_7
 .cc_top cc_8,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	393
 	.long	.Lxta.call_labels4
 .cc_bottom cc_8
 .cc_top cc_9,.Lxta.call_labels9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	393
 	.long	.Lxta.call_labels9
 .cc_bottom cc_9
 .cc_top cc_10,.Lxta.call_labels10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	439
 	.long	.Lxta.call_labels10
 .cc_bottom cc_10
 .cc_top cc_11,.Lxta.call_labels12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	439
 	.long	.Lxta.call_labels12
 .cc_bottom cc_11
 .cc_top cc_12,.Lxta.call_labels11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	450
 	.long	.Lxta.call_labels11
 .cc_bottom cc_12
 .cc_top cc_13,.Lxta.call_labels13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	450
 	.long	.Lxta.call_labels13
 .cc_bottom cc_13
 .cc_top cc_14,.Lxta.call_labels14
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	563
 	.long	.Lxta.call_labels14
 .cc_bottom cc_14
 .cc_top cc_15,.Lxta.call_labels15
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	566
 	.long	.Lxta.call_labels15
 .cc_bottom cc_15
 .cc_top cc_16,.Lxta.call_labels16
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	584
 	.long	.Lxta.call_labels16
@@ -5237,588 +5237,588 @@ __xcc1_internal_2:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_17,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
 	.long	.Lxtalabel0
 .cc_bottom cc_17
-.cc_top cc_18,.Lxtalabel6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	256
-	.long	256
-	.long	.Lxtalabel6
-.cc_bottom cc_18
-.cc_top cc_19,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	256
-	.long	256
-	.long	.Lxtalabel4
-.cc_bottom cc_19
-.cc_top cc_20,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	256
-	.long	256
-	.long	.Lxtalabel7
-.cc_bottom cc_20
-.cc_top cc_21,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_18,.Lxtalabel3
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
 	.long	.Lxtalabel3
+.cc_bottom cc_18
+.cc_top cc_19,.Lxtalabel7
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	256
+	.long	256
+	.long	.Lxtalabel7
+.cc_bottom cc_19
+.cc_top cc_20,.Lxtalabel4
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	256
+	.long	256
+	.long	.Lxtalabel4
+.cc_bottom cc_20
+.cc_top cc_21,.Lxtalabel13
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	256
+	.long	256
+	.long	.Lxtalabel13
 .cc_bottom cc_21
-.cc_top cc_22,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_22,.Lxtalabel6
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
-	.long	.Lxtalabel2
+	.long	.Lxtalabel6
 .cc_bottom cc_22
-.cc_top cc_23,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_23,.Lxtalabel11
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
-	.long	.Lxtalabel8
+	.long	.Lxtalabel11
 .cc_bottom cc_23
 .cc_top cc_24,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
 	.long	.Lxtalabel10
 .cc_bottom cc_24
-.cc_top cc_25,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_25,.Lxtalabel8
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
-	.long	.Lxtalabel11
+	.long	.Lxtalabel8
 .cc_bottom cc_25
-.cc_top cc_26,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_26,.Lxtalabel2
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
-	.long	.Lxtalabel13
+	.long	.Lxtalabel2
 .cc_bottom cc_26
 .cc_top cc_27,.Lxtalabel14
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	256
 	.long	256
 	.long	.Lxtalabel14
 .cc_bottom cc_27
-.cc_top cc_28,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel11
-.cc_bottom cc_28
-.cc_top cc_29,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel10
-.cc_bottom cc_29
-.cc_top cc_30,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel4
-.cc_bottom cc_30
-.cc_top cc_31,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel8
-.cc_bottom cc_31
-.cc_top cc_32,.Lxtalabel6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel6
-.cc_bottom cc_32
-.cc_top cc_33,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel13
-.cc_bottom cc_33
-.cc_top cc_34,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel7
-.cc_bottom cc_34
-.cc_top cc_35,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_28,.Lxtalabel0
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	259
 	.long	259
 	.long	.Lxtalabel0
-.cc_bottom cc_35
-.cc_top cc_36,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	259
-	.long	259
-	.long	.Lxtalabel2
-.cc_bottom cc_36
-.cc_top cc_37,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_bottom cc_28
+.cc_top cc_29,.Lxtalabel3
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	259
 	.long	259
 	.long	.Lxtalabel3
-.cc_bottom cc_37
-.cc_top cc_38,.Lxtalabel14
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_bottom cc_29
+.cc_top cc_30,.Lxtalabel6
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel6
+.cc_bottom cc_30
+.cc_top cc_31,.Lxtalabel4
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel4
+.cc_bottom cc_31
+.cc_top cc_32,.Lxtalabel13
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel13
+.cc_bottom cc_32
+.cc_top cc_33,.Lxtalabel14
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	259
 	.long	259
 	.long	.Lxtalabel14
+.cc_bottom cc_33
+.cc_top cc_34,.Lxtalabel11
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel11
+.cc_bottom cc_34
+.cc_top cc_35,.Lxtalabel10
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel10
+.cc_bottom cc_35
+.cc_top cc_36,.Lxtalabel8
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel8
+.cc_bottom cc_36
+.cc_top cc_37,.Lxtalabel7
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel7
+.cc_bottom cc_37
+.cc_top cc_38,.Lxtalabel2
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	259
+	.long	259
+	.long	.Lxtalabel2
 .cc_bottom cc_38
 .cc_top cc_39,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel0
 .cc_bottom cc_39
-.cc_top cc_40,.Lxtalabel6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	263
-	.long	263
-	.long	.Lxtalabel6
-.cc_bottom cc_40
-.cc_top cc_41,.Lxtalabel14
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	263
-	.long	263
-	.long	.Lxtalabel14
-.cc_bottom cc_41
-.cc_top cc_42,.Lxtalabel7
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_40,.Lxtalabel7
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel7
-.cc_bottom cc_42
-.cc_top cc_43,.Lxtalabel8
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	263
-	.long	263
-	.long	.Lxtalabel8
-.cc_bottom cc_43
-.cc_top cc_44,.Lxtalabel13
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	263
-	.long	263
-	.long	.Lxtalabel13
-.cc_bottom cc_44
-.cc_top cc_45,.Lxtalabel10
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_bottom cc_40
+.cc_top cc_41,.Lxtalabel10
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel10
-.cc_bottom cc_45
-.cc_top cc_46,.Lxtalabel11
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_bottom cc_41
+.cc_top cc_42,.Lxtalabel11
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel11
-.cc_bottom cc_46
-.cc_top cc_47,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_bottom cc_42
+.cc_top cc_43,.Lxtalabel13
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
-	.long	.Lxtalabel2
-.cc_bottom cc_47
-.cc_top cc_48,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.long	.Lxtalabel13
+.cc_bottom cc_43
+.cc_top cc_44,.Lxtalabel14
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	263
+	.long	263
+	.long	.Lxtalabel14
+.cc_bottom cc_44
+.cc_top cc_45,.Lxtalabel3
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel3
-.cc_bottom cc_48
-.cc_top cc_49,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_bottom cc_45
+.cc_top cc_46,.Lxtalabel4
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	263
 	.long	263
 	.long	.Lxtalabel4
+.cc_bottom cc_46
+.cc_top cc_47,.Lxtalabel8
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	263
+	.long	263
+	.long	.Lxtalabel8
+.cc_bottom cc_47
+.cc_top cc_48,.Lxtalabel2
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	263
+	.long	263
+	.long	.Lxtalabel2
+.cc_bottom cc_48
+.cc_top cc_49,.Lxtalabel6
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	263
+	.long	263
+	.long	.Lxtalabel6
 .cc_bottom cc_49
 .cc_top cc_50,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	292
 	.long	296
 	.long	.Lxtalabel1
 .cc_bottom cc_50
 .cc_top cc_51,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	292
 	.long	296
 	.long	.Lxtalabel5
 .cc_bottom cc_51
 .cc_top cc_52,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	312
 	.long	313
 	.long	.Lxtalabel1
 .cc_bottom cc_52
 .cc_top cc_53,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	312
 	.long	313
 	.long	.Lxtalabel5
 .cc_bottom cc_53
-.cc_top cc_54,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_54,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	315
 	.long	316
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_54
-.cc_top cc_55,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_55,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	315
 	.long	316
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_55
-.cc_top cc_56,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_56,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	318
 	.long	319
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_56
-.cc_top cc_57,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_57,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	318
 	.long	319
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_57
-.cc_top cc_58,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_58,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	320
 	.long	320
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_58
-.cc_top cc_59,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_59,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	320
 	.long	320
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_59
-.cc_top cc_60,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_60,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	326
 	.long	326
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_60
-.cc_top cc_61,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_61,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	326
 	.long	326
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_61
-.cc_top cc_62,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_62,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	328
 	.long	330
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_62
-.cc_top cc_63,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_63,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	328
 	.long	330
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_63
-.cc_top cc_64,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_64,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	340
 	.long	341
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_64
-.cc_top cc_65,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_65,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	340
 	.long	341
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_65
-.cc_top cc_66,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_66,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	344
 	.long	345
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_66
-.cc_top cc_67,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_67,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	344
 	.long	345
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_67
-.cc_top cc_68,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_68,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	373
 	.long	373
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_68
-.cc_top cc_69,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_69,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	373
 	.long	373
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_69
-.cc_top cc_70,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_70,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	380
 	.long	380
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_70
-.cc_top cc_71,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_71,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	380
 	.long	380
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_71
-.cc_top cc_72,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_72,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	382
+	.long	382
+	.long	.Lxtalabel1
+.cc_bottom cc_72
+.cc_top cc_73,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	382
 	.long	382
 	.long	.Lxtalabel5
-.cc_bottom cc_72
-.cc_top cc_73,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	382
-	.long	382
-	.long	.Lxtalabel1
 .cc_bottom cc_73
 .cc_top cc_74,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	385
 	.long	388
 	.long	.Lxtalabel1
 .cc_bottom cc_74
 .cc_top cc_75,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	385
 	.long	388
 	.long	.Lxtalabel5
 .cc_bottom cc_75
-.cc_top cc_76,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_76,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	391
 	.long	393
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_76
-.cc_top cc_77,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_77,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	391
 	.long	393
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_77
-.cc_top cc_78,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_78,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	397
 	.long	398
-	.long	.Lxtalabel5
+	.long	.Lxtalabel1
 .cc_bottom cc_78
-.cc_top cc_79,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_79,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	397
 	.long	398
-	.long	.Lxtalabel1
+	.long	.Lxtalabel5
 .cc_bottom cc_79
-.cc_top cc_80,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_80,.Lxtalabel1
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	400
+	.long	401
+	.long	.Lxtalabel1
+.cc_bottom cc_80
+.cc_top cc_81,.Lxtalabel5
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	400
 	.long	401
 	.long	.Lxtalabel5
-.cc_bottom cc_80
-.cc_top cc_81,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	400
-	.long	401
-	.long	.Lxtalabel1
 .cc_bottom cc_81
-.cc_top cc_82,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_82,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	422
 	.long	422
-	.long	.Lxtalabel9
+	.long	.Lxtalabel12
 .cc_bottom cc_82
-.cc_top cc_83,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_83,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	422
 	.long	422
-	.long	.Lxtalabel12
+	.long	.Lxtalabel9
 .cc_bottom cc_83
-.cc_top cc_84,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_84,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	424
 	.long	424
-	.long	.Lxtalabel9
+	.long	.Lxtalabel12
 .cc_bottom cc_84
-.cc_top cc_85,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_85,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	424
 	.long	424
-	.long	.Lxtalabel12
+	.long	.Lxtalabel9
 .cc_bottom cc_85
-.cc_top cc_86,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_86,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	433
 	.long	434
-	.long	.Lxtalabel12
+	.long	.Lxtalabel9
 .cc_bottom cc_86
-.cc_top cc_87,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_87,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	433
 	.long	434
-	.long	.Lxtalabel9
+	.long	.Lxtalabel12
 .cc_bottom cc_87
-.cc_top cc_88,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_88,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	437
 	.long	440
-	.long	.Lxtalabel12
+	.long	.Lxtalabel9
 .cc_bottom cc_88
-.cc_top cc_89,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_89,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	437
 	.long	440
-	.long	.Lxtalabel9
+	.long	.Lxtalabel12
 .cc_bottom cc_89
-.cc_top cc_90,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_90,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	443
+	.long	444
+	.long	.Lxtalabel9
+.cc_bottom cc_90
+.cc_top cc_91,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	443
 	.long	444
 	.long	.Lxtalabel12
-.cc_bottom cc_90
-.cc_top cc_91,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	443
-	.long	444
-	.long	.Lxtalabel9
 .cc_bottom cc_91
 .cc_top cc_92,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	450
 	.long	450
 	.long	.Lxtalabel9
 .cc_bottom cc_92
 .cc_top cc_93,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	450
 	.long	450
 	.long	.Lxtalabel12
 .cc_bottom cc_93
 .cc_top cc_94,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	457
 	.long	457
 	.long	.Lxtalabel12
 .cc_bottom cc_94
 .cc_top cc_95,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	457
 	.long	457
 	.long	.Lxtalabel9
 .cc_bottom cc_95
-.cc_top cc_96,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_96,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	464
 	.long	465
-	.long	.Lxtalabel12
+	.long	.Lxtalabel9
 .cc_bottom cc_96
-.cc_top cc_97,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_97,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	464
 	.long	465
-	.long	.Lxtalabel9
+	.long	.Lxtalabel12
 .cc_bottom cc_97
-.cc_top cc_98,.Lxtalabel12
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
+.cc_top cc_98,.Lxtalabel9
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
+	.byte	0
+	.long	477
+	.long	478
+	.long	.Lxtalabel9
+.cc_bottom cc_98
+.cc_top cc_99,.Lxtalabel12
+	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc"
 	.byte	0
 	.long	477
 	.long	478
 	.long	.Lxtalabel12
-.cc_bottom cc_98
-.cc_top cc_99,.Lxtalabel9
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc"
-	.byte	0
-	.long	477
-	.long	478
-	.long	.Lxtalabel9
 .cc_bottom cc_99
 .Lentries_end3:
 	.section	.trap_info,"",@progbits
@@ -5827,7 +5827,7 @@ __xcc1_internal_2:
 	.long	1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str0:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:110: error: passing null argument to a non-null parameter\n            Endpoint0( c_xud_out[0], c_xud_in[0], c_aud_ctl, c_mix_ctl, c_clk_ctl, c_EANativeTransport_ctrl, dfuInterface);\n                                                                                                             ^~~~~~~~~~~~\n"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:110: error: passing null argument to a non-null parameter\n            Endpoint0( c_xud_out[0], c_xud_in[0], c_aud_ctl, c_mix_ctl, c_clk_ctl, c_EANativeTransport_ctrl, dfuInterface);\n                                                                                                             ^~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_0,.Ltrap_info0
 	.long	.Ltrap_info0
@@ -5835,7 +5835,7 @@ __xcc1_internal_2:
 .cc_bottom cc_trapinfo_0
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/main.xc:387:110: error: passing null argument to a non-null parameter\n            Endpoint0( c_xud_out[0], c_xud_in[0], c_aud_ctl, c_mix_ctl, c_clk_ctl, c_EANativeTransport_ctrl, dfuInterface);\n                                                                                                             ^~~~~~~~~~~~\n"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc:387:110: error: passing null argument to a non-null parameter\n            Endpoint0( c_xud_out[0], c_xud_in[0], c_aud_ctl, c_mix_ctl, c_clk_ctl, c_EANativeTransport_ctrl, dfuInterface);\n                                                                                                             ^~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_1,.Ltrap_info1
 	.long	.Ltrap_info1

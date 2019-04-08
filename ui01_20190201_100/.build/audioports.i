@@ -1,15 +1,15 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c"
+# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 289 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
-# 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
-# 33 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 1 3
+# 23 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/timer.h" 1 3
+# 33 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/timer.h" 3
 void delay_ticks(unsigned ticks);
 
 
@@ -42,77 +42,81 @@ inline void delay_milliseconds(unsigned delay) {
 inline void delay_microseconds(unsigned delay) {
   delay_ticks_longlong(100U * (unsigned long long)delay);
 }
-# 24 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 36 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_g4000b-512.h" 1 3
-# 37 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
+# 23 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+# 36 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_g4000b-512.h" 1 3
+# 36 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_user.h" 1 3
-# 20 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_user.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs2a_user.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_user.h" 2 3
-# 39 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_kernel.h" 1 3
-# 20 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_kernel.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs2a_kernel.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_kernel.h" 2 3
-# 40 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_registers.h" 1 3
-# 20 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_registers.h" 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs2a_registers.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_registers.h" 2 3
-# 41 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_clock.h" 1 3
-# 39 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_clock.h" 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_user.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_user.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs2a_user.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_user.h" 2 3
+# 38 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_kernel.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_kernel.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/xs2a_kernel.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_kernel.h" 2 3
+# 39 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_registers.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_registers.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs2a_registers.h" 1 3
+# 20 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_registers.h" 2 3
+# 40 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_clock.h" 1 3
+# 39 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1_clock.h" 3
 typedef unsigned clock;
-# 42 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 2 3
-# 1745 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 41 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 2 3
+# 1745 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 unsigned getps(unsigned reg);
-# 1756 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1756 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 void setps(unsigned reg, unsigned value);
-# 1779 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1779 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int read_pswitch_reg(unsigned tileid, unsigned reg, unsigned *data);
-# 1803 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1803 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int read_sswitch_reg(unsigned tileid, unsigned reg, unsigned *data);
-# 1823 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1823 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_pswitch_reg(unsigned tileid, unsigned reg, unsigned data);
-# 1843 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1843 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_pswitch_reg_no_ack(unsigned tileid, unsigned reg, unsigned data);
-# 1862 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1862 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_sswitch_reg(unsigned tileid, unsigned reg, unsigned data);
-# 1883 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 1883 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 int write_sswitch_reg_no_ack(unsigned tileid, unsigned reg, unsigned data);
-# 2117 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 2117 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 unsigned get_local_tile_id(void);
-# 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 2136 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 unsigned get_logical_core_id(void);
-# 2148 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
+# 2148 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xs1.h" 3
 __attribute__((deprecated)) static inline unsigned get_core_id(void) {
   return get_local_tile_id();
 }
 __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
   return __builtin_getid();
 }
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 3 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
-# 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
-# 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\platform.h" 1 3
+# 21 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\platform.h" 3
+# 1 "F:\\\\Projects\\\\UI-01_sw1_hw1\\\\ui01_20190201_100\\\\.build\\\\XUF208-256-TQ64-C10.h" 1 3
+# 21 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\platform.h" 2 3
+# 5 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-
-
+# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h" 1
 
 
 
 
 
 
-# 1 ".././src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+
+
+# 1 ".././src\\customdefines.h" 1
+# 10 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h" 2
+# 1108 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -120,7 +124,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -128,16 +132,16 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 1
+# 7 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 1
 
 
 
-# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
-# 122 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
+# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h" 1 3
+# 122 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h" 3
 typedef unsigned chanend;
 
 
@@ -209,10 +213,10 @@ typedef unsigned out_buffered_port_16_t;
 
 
 typedef unsigned out_buffered_port_32_t;
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
-# 32 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
+# 5 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
+# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h" 1
+# 6 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
+# 32 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
 void ConfigAudioPorts(
 
                 port p_i2s_dac[],
@@ -234,7 +238,7 @@ void ConfigAudioPorts(
 
 
                 unsigned int divide, unsigned int curSamFreq);
-# 80 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
+# 80 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
 void ConfigAudioPortsWrapper(
 
                 port p_i2s_dac[], int numPortsDAC,
@@ -257,7 +261,7 @@ void ConfigAudioPortsWrapper(
 
 
 void EnableBufferedPort(port p, unsigned transferWidth);
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 8 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
 
 

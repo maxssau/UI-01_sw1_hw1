@@ -14,7 +14,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h"
+	.file	1 "F:/Projects/UI-01_sw1_hw1/module_locks/src\\swlock.h"
 	.text
 	.globl	swlock_init
 	.align	4
@@ -22,7 +22,7 @@
 	.cc_top swlock_init.function,swlock_init
 swlock_init:
 .Lfunc_begin0:
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.c"
+	.file	2 "F:/Projects/UI-01_sw1_hw1/module_locks/src\\swlock.c"
 	.loc	2 10 0
 	.cfi_startproc
 	.issue_mode dual
@@ -161,9 +161,9 @@ swlock_release:
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.c"
+.asciiz"F:/Projects/UI-01_sw1_hw1/module_locks/src\\swlock.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"SWLOCK_NOT_ACQUIRED"
 .Linfo_string4:

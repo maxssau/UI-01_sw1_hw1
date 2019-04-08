@@ -7,7 +7,7 @@ APP_NAME = ui01_20190201_100
 
 USED_MODULES = lib_i2c module_dfu module_usb_audio module_usb_device module_usb_shared module_xud module_locks
 
-BUILD_FLAGS = -DFLASH_MAX_UPGRADE_SIZE=64*1024 -fcomment-asm -Xmapper --map -Xmapper MAPFILE -Wall -O3 -report -lquadflash -fsubword-select -save-temps -g -march=xs2a -DUSB_TILE=tile[0]
+BUILD_FLAGS = -DFLASH_MAX_UPGRADE_SIZE=64*1024 -fcomment-asm -fxscope -Xmapper --map -Xmapper MAPFILE -Wall -O3 -report -lquadflash -fsubword-select -save-temps -g -march=xs2a -DUSB_TILE=tile[0]
 
 
 XCC_FLAGS = $(BUILD_FLAGS)

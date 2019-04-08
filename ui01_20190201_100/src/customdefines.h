@@ -9,7 +9,7 @@
 
 /* Default to board version version 2.0 */
 #ifndef XCORE_200_MC_AUDIO_HW_VERSION
-//#define XCORE_200_MC_AUDIO_HW_VERSION 2
+#define XCORE_200_MC_AUDIO_HW_VERSION 2
 #endif
 
 #ifndef DSD_CHANS_DAC
@@ -36,7 +36,7 @@
 #endif
 
 #ifndef AUDIO_CLASS_FALLBACK
-#define AUDIO_CLASS_FALLBACK 0
+#define AUDIO_CLASS_FALLBACK 1
 #endif
 
 #ifndef VENDOR_STR
