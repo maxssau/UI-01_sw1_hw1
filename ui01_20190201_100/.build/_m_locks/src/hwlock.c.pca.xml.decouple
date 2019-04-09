@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="F:/Projects/UI-01_sw1_hw1/module_locks/src/hwlock.c">
+<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/hwlock.c">
   <fCall global="true" name="hwlock_alloc"/>
   <fCall global="true" name="hwlock_alloc.nstackwords"/>
   <fCall global="true" name="hwlock_alloc.maxcores"/>

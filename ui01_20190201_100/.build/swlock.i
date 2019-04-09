@@ -1,16 +1,16 @@
-# 1 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.c"
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 289 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.c" 2
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.c" 2
 
 
 
 
 
-# 1 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h" 1
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h" 1
 
 
 
@@ -18,8 +18,8 @@
 
 
 
-# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h" 1 3
-# 122 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h" 3
+# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
+# 122 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
 typedef unsigned chanend;
 
 
@@ -95,11 +95,11 @@ typedef unsigned out_buffered_port_32_t;
 
 
 typedef unsigned clock;
-# 9 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h" 2
+# 9 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h" 2
 
 
 typedef unsigned swlock_t;
-# 23 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h"
+# 23 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h"
 enum {
   SWLOCK_NOT_ACQUIRED = 0
 };
@@ -111,13 +111,13 @@ enum {
 
 
 void swlock_init(swlock_t *lock);
-# 46 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h"
+# 46 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h"
 int swlock_try_acquire(swlock_t *lock);
-# 57 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h"
+# 57 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h"
 void swlock_acquire(swlock_t *lock);
-# 67 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.h"
+# 67 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.h"
 void swlock_release(swlock_t *lock);
-# 7 "F:/Projects/UI-01_sw1_hw1/module_locks/src/swlock.c" 2
+# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/swlock.c" 2
 
 
 void swlock_init(swlock_t *_lock)

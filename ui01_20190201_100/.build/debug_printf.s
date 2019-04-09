@@ -14,7 +14,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "F:/Projects/UI-01_sw1_hw1/lib_logging/src\\debug_printf.c"
+	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c"
 	.section	.cp.rodata.cst4,"aMc",@progbits,4
 	.cc_top .LCPI0_0.data,.LCPI0_0
 	.align	4
@@ -553,15 +553,14 @@ itoa.digits:
 .Ldebug_end0:
 	.text
 .Ldebug_end1:
-	.file	2 "F:/Projects/UI-01_sw1_hw1/lib_logging/src\\debug_printf.c"
-	.file	3 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include/clang\\stdarg.h"
+	.file	2 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stdarg.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"F:/Projects/UI-01_sw1_hw1/lib_logging/src\\debug_printf.c"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c"
 .Linfo_string2:
-.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"digits"
 .Linfo_string4:
@@ -864,12 +863,12 @@ itoa.digits:
 	.byte	23
 	.long	532
 	.long	.Linfo_string21
-	.byte	3
+	.byte	2
 	.byte	31
 	.byte	23
 	.long	543
 	.long	.Linfo_string20
-	.byte	2
+	.byte	1
 	.byte	66
 	.byte	24
 	.byte	0

@@ -1,11 +1,11 @@
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.xc"
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.xc" 2
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h" 1
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.xc" 2
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h" 1
 
 
 
@@ -21,6 +21,6 @@ inline xc_ptr array_to_xc_ptr(const unsigned a[])
     asm("mov %0, %1":"=r"(x):"r"(a));
     return x;
 }
-# 2 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.xc" 2
+# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.xc" 2
 
 extern inline xc_ptr array_to_xc_ptr(const unsigned a[]);

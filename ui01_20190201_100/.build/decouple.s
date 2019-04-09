@@ -1,5 +1,5 @@
 	.text
-	.file	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -20,62 +20,62 @@
 	.set usage.anon.8,0
 	.set usage.anon.9,0
 	.set usage.anon.10,0
-	.globread decouple,buffer_aud_ctl_chan,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:730:54: note: object used here\n                asm volatile(\"outct res[%0],%1\"::\"r\"(buffer_aud_ctl_chan),\"r\"(XS1_CT_END));\n                                                     ^~~~~~~~~~~~~~~~~~~"
-	.globread decouple,aud_to_host_usb_ep,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:711:38: note: object used here\n                SetupZerosSendBuffer(aud_to_host_usb_ep, sampFreq, g_curSubSlot_In);\n                                     ^~~~~~~~~~~~~~~~~~"
-	.globread decouple,aud_from_host_usb_ep,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:25: note: object used here\n    XUD_SetReady_OutPtr(aud_from_host_usb_ep, g_aud_from_host_wrptr+4);\n                        ^~~~~~~~~~~~~~~~~~~~"
-	.globread decouple,inZeroBuff,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:621:25: note: object used here\n    t = array_to_xc_ptr(inZeroBuff);\n                        ^~~~~~~~~~"
-	.globread decouple,audioBuffIn,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:609:25: note: object used here\n    t = array_to_xc_ptr(audioBuffIn);\n                        ^~~~~~~~~~~"
-	.globread decouple,outAudioBuff,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:595:29: note: object used here\n    int t = array_to_xc_ptr(outAudioBuff);\n                            ^~~~~~~~~~~~"
-	.globread decouple,multIn,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:32: note: object used here\n    p_multIn = array_to_xc_ptr(multIn);\n                               ^~~~~~"
-	.globread decouple,multOut,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:33: note: object used here\n    p_multOut = array_to_xc_ptr(multOut);\n                                ^~~~~~~"
-	.globread usage.anon.10,g_aud_to_host_zeros,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:48: note: object used here\n    asm volatile(\"stw %0, %1[0]\"::\"r\"(mid),\"r\"(g_aud_to_host_zeros));\n                                               ^~~~~~~~~~~~~~~~~~~"
-	.globread usage.anon.10,g_numUsbChan_In,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:12: note: object used here\n    mid *= g_numUsbChan_In * slotSize;\n           ^~~~~~~~~~~~~~~"
-	.globread handle_audio_request,g_curSubSlot_In,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:16: note: object used here\n        switch(g_curSubSlot_In)\n               ^~~~~~~~~~~~~~~"
-	.globread handle_audio_request,g_curSubSlot_Out,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:161:16: note: object used here\n        switch(g_curSubSlot_Out)\n               ^~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,g_aud_to_host_rdptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:470:26: note: object used here\n            space_left = g_aud_to_host_rdptr - g_aud_to_host_wrptr;\n                         ^~~~~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,aud_to_host_fifo_end,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:40: note: object used here\n            if (g_aud_to_host_wrptr >= aud_to_host_fifo_end)\n                                       ^~~~~~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,aud_to_host_fifo_start,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:446:39: note: object used here\n                g_aud_to_host_wrptr = aud_to_host_fifo_start;\n                                      ^~~~~~~~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,g_aud_from_host_wrptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:20: note: object used here\n        outSamps = g_aud_from_host_wrptr - g_aud_from_host_rdptr;\n                   ^~~~~~~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,aud_from_host_fifo_end,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:38: note: object used here\n        if (g_aud_from_host_rdptr >= aud_from_host_fifo_end)\n                                     ^~~~~~~~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,aud_from_host_fifo_start,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:533:37: note: object used here\n            g_aud_from_host_rdptr = aud_from_host_fifo_start;\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,g_numUsbChan_In,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:302:36: note: object used here\n                for(int i = 0; i < g_numUsbChan_In; i++)\n                                   ^~~~~~~~~~~~~~~"
-	.globread handle_audio_request,g_numUsbChan_Out,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:169:36: note: object used here\n                for(int i = 0; i < g_numUsbChan_Out; i++)\n                                   ^~~~~~~~~~~~~~~~"
-	.globread handle_audio_request,usage.anon.9,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:312:66: note: object used here\n                    asm volatile(\"ldw %0, %1[%2]\":\"=r\"(mult):\"r\"(p_multIn),\"r\"(i));\n                                                                 ^~~~~~~~"
-	.globread handle_audio_request,usage.anon.8,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:182:66: note: object used here\n                    asm volatile(\"ldw %0, %1[%2]\":\"=r\"(mult):\"r\"(p_multOut),\"r\"(i));\n                                                                 ^~~~~~~~~"
-	.globwrite decouple,g_maxPacketSize,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:21: note: object used here\n                    g_maxPacketSize = (MAX_DEVICE_AUD_PACKET_SIZE_MULT_HS * g_numUsbChan_In);\n                    ^~~~~~~~~~~~~~~"
-	.globwrite decouple,g_curSubSlot_In,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:746:35: note: object used here\n                GET_SHARED_GLOBAL(g_curSubSlot_In, g_formatChange_SubSlot);\n                                  ^~~~~~~~~~~~~~~\nF:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
-	.globwrite decouple,g_curSubSlot_Out,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:785:35: note: object used here\n                GET_SHARED_GLOBAL(g_curSubSlot_Out, g_formatChange_SubSlot);\n                                  ^~~~~~~~~~~~~~~~\nF:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
-	.globwrite decouple,unpackState,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:793:17: note: object used here\n                unpackState = 0;\n                ^~~~~~~~~~~"
-	.globwrite decouple,inUnderflow,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:702:17: note: object used here\n                inUnderflow = 1;\n                ^~~~~~~~~~~"
-	.globwrite decouple,outOverflow,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:723:21: note: object used here\n                    outOverflow = 0;\n                    ^~~~~~~~~~~"
-	.globwrite decouple,outUnderflow,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:714:17: note: object used here\n                outUnderflow = 1;\n                ^~~~~~~~~~~~"
-	.globwrite decouple,g_aud_to_host_zeros,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:622:5: note: object used here\n    g_aud_to_host_zeros = t;\n    ^~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,g_aud_to_host_rdptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:614:5: note: object used here\n    g_aud_to_host_rdptr = aud_to_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,g_aud_to_host_dptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:615:5: note: object used here\n    g_aud_to_host_dptr = aud_to_host_fifo_start + 4;\n    ^~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,g_aud_to_host_wrptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:613:5: note: object used here\n    g_aud_to_host_wrptr = aud_to_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,aud_to_host_fifo_end,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:612:5: note: object used here\n    aud_to_host_fifo_end = aud_to_host_fifo_start + BUFF_SIZE_IN*4;\n    ^~~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,aud_to_host_fifo_start,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:611:5: note: object used here\n    aud_to_host_fifo_start = t;\n    ^~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,g_aud_from_host_rdptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:607:5: note: object used here\n    g_aud_from_host_rdptr = aud_from_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,g_aud_from_host_wrptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:606:5: note: object used here\n    g_aud_from_host_wrptr = aud_from_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,aud_from_host_fifo_end,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:605:5: note: object used here\n    aud_from_host_fifo_end = aud_from_host_fifo_start + BUFF_SIZE_OUT*4;\n    ^~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,aud_from_host_fifo_start,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:604:5: note: object used here\n    aud_from_host_fifo_start = t;\n    ^~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite decouple,speedRem,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:734:17: note: object used here\n                speedRem = 0;\n                ^~~~~~~~"
-	.globwrite decouple,g_numUsbChan_In,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:745:35: note: object used here\n                GET_SHARED_GLOBAL(g_numUsbChan_In, g_formatChange_NumChans);\n                                  ^~~~~~~~~~~~~~~\nF:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
-	.globwrite decouple,g_numUsbChan_Out,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:784:35: note: object used here\n                GET_SHARED_GLOBAL(g_numUsbChan_Out, g_formatChange_NumChans);\n                                  ^~~~~~~~~~~~~~~~\nF:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
-	.globwrite decouple,usage.anon.9,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:5: note: object used here\n    p_multIn = array_to_xc_ptr(multIn);\n    ^~~~~~~~"
-	.globwrite decouple,usage.anon.8,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:5: note: object used here\n    p_multOut = array_to_xc_ptr(multOut);\n    ^~~~~~~~~"
-	.globwrite handle_audio_request,packData,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:385:29: note: object used here\n                            packData = sample;\n                            ^~~~~~~~"
-	.globwrite handle_audio_request,packState,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:406:21: note: object used here\n                    packState++;\n                    ^~~~~~~~~"
-	.globwrite handle_audio_request,unpackData,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:45: note: object used here\n                            read_via_xc_ptr(unpackData, g_aud_from_host_rdptr);\n                                            ^~~~~~~~~~\nF:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h:31:74: note: expanded from macro \'read_via_xc_ptr\'\n#define read_via_xc_ptr(x,p)                    asm(\"ldw %0, %1[0]\":\"=r\"(x):\"r\"(p));\n                                                                         ^"
-	.globwrite handle_audio_request,unpackState,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:262:21: note: object used here\n                    unpackState++;\n                    ^~~~~~~~~~~"
-	.globwrite handle_audio_request,outUnderflow,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:155:13: note: object used here\n            outUnderflow = 0;\n            ^~~~~~~~~~~~"
-	.globwrite handle_audio_request,aud_data_remaining_to_device,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:9: note: object used here\n        aud_data_remaining_to_device -= (g_numUsbChan_Out * g_curSubSlot_Out);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite handle_audio_request,totalSampsToWrite,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:459:13: note: object used here\n            totalSampsToWrite = speedRem >> 16;\n            ^~~~~~~~~~~~~~~~~"
-	.globwrite handle_audio_request,sampsToWrite,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:9: note: object used here\n        sampsToWrite--;\n        ^~~~~~~~~~~~"
-	.globwrite handle_audio_request,g_aud_to_host_dptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:322:21: note: object used here\n                    g_aud_to_host_dptr+=2;\n                    ^~~~~~~~~~~~~~~~~~"
-	.globwrite handle_audio_request,g_aud_to_host_wrptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:13: note: object used here\n            g_aud_to_host_wrptr += 4+datasize;\n            ^~~~~~~~~~~~~~~~~~~"
-	.globwrite handle_audio_request,g_aud_from_host_rdptr,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:21: note: object used here\n                    g_aud_from_host_rdptr+=2;\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globwrite handle_audio_request,speedRem,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:458:13: note: object used here\n            speedRem += speed;\n            ^~~~~~~~"
+	.globread decouple,buffer_aud_ctl_chan,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:730:54: note: object used here\n                asm volatile(\"outct res[%0],%1\"::\"r\"(buffer_aud_ctl_chan),\"r\"(XS1_CT_END));\n                                                     ^~~~~~~~~~~~~~~~~~~"
+	.globread decouple,aud_to_host_usb_ep,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:711:38: note: object used here\n                SetupZerosSendBuffer(aud_to_host_usb_ep, sampFreq, g_curSubSlot_In);\n                                     ^~~~~~~~~~~~~~~~~~"
+	.globread decouple,aud_from_host_usb_ep,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:25: note: object used here\n    XUD_SetReady_OutPtr(aud_from_host_usb_ep, g_aud_from_host_wrptr+4);\n                        ^~~~~~~~~~~~~~~~~~~~"
+	.globread decouple,inZeroBuff,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:621:25: note: object used here\n    t = array_to_xc_ptr(inZeroBuff);\n                        ^~~~~~~~~~"
+	.globread decouple,audioBuffIn,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:609:25: note: object used here\n    t = array_to_xc_ptr(audioBuffIn);\n                        ^~~~~~~~~~~"
+	.globread decouple,outAudioBuff,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:595:29: note: object used here\n    int t = array_to_xc_ptr(outAudioBuff);\n                            ^~~~~~~~~~~~"
+	.globread decouple,multIn,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:32: note: object used here\n    p_multIn = array_to_xc_ptr(multIn);\n                               ^~~~~~"
+	.globread decouple,multOut,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:33: note: object used here\n    p_multOut = array_to_xc_ptr(multOut);\n                                ^~~~~~~"
+	.globread usage.anon.10,g_aud_to_host_zeros,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:48: note: object used here\n    asm volatile(\"stw %0, %1[0]\"::\"r\"(mid),\"r\"(g_aud_to_host_zeros));\n                                               ^~~~~~~~~~~~~~~~~~~"
+	.globread usage.anon.10,g_numUsbChan_In,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:12: note: object used here\n    mid *= g_numUsbChan_In * slotSize;\n           ^~~~~~~~~~~~~~~"
+	.globread handle_audio_request,g_curSubSlot_In,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:16: note: object used here\n        switch(g_curSubSlot_In)\n               ^~~~~~~~~~~~~~~"
+	.globread handle_audio_request,g_curSubSlot_Out,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:161:16: note: object used here\n        switch(g_curSubSlot_Out)\n               ^~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,g_aud_to_host_rdptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:470:26: note: object used here\n            space_left = g_aud_to_host_rdptr - g_aud_to_host_wrptr;\n                         ^~~~~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,aud_to_host_fifo_end,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:40: note: object used here\n            if (g_aud_to_host_wrptr >= aud_to_host_fifo_end)\n                                       ^~~~~~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,aud_to_host_fifo_start,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:446:39: note: object used here\n                g_aud_to_host_wrptr = aud_to_host_fifo_start;\n                                      ^~~~~~~~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,g_aud_from_host_wrptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:20: note: object used here\n        outSamps = g_aud_from_host_wrptr - g_aud_from_host_rdptr;\n                   ^~~~~~~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,aud_from_host_fifo_end,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:38: note: object used here\n        if (g_aud_from_host_rdptr >= aud_from_host_fifo_end)\n                                     ^~~~~~~~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,aud_from_host_fifo_start,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:533:37: note: object used here\n            g_aud_from_host_rdptr = aud_from_host_fifo_start;\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,g_numUsbChan_In,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:302:36: note: object used here\n                for(int i = 0; i < g_numUsbChan_In; i++)\n                                   ^~~~~~~~~~~~~~~"
+	.globread handle_audio_request,g_numUsbChan_Out,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:169:36: note: object used here\n                for(int i = 0; i < g_numUsbChan_Out; i++)\n                                   ^~~~~~~~~~~~~~~~"
+	.globread handle_audio_request,usage.anon.9,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:312:66: note: object used here\n                    asm volatile(\"ldw %0, %1[%2]\":\"=r\"(mult):\"r\"(p_multIn),\"r\"(i));\n                                                                 ^~~~~~~~"
+	.globread handle_audio_request,usage.anon.8,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:182:66: note: object used here\n                    asm volatile(\"ldw %0, %1[%2]\":\"=r\"(mult):\"r\"(p_multOut),\"r\"(i));\n                                                                 ^~~~~~~~~"
+	.globwrite decouple,g_maxPacketSize,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:21: note: object used here\n                    g_maxPacketSize = (MAX_DEVICE_AUD_PACKET_SIZE_MULT_HS * g_numUsbChan_In);\n                    ^~~~~~~~~~~~~~~"
+	.globwrite decouple,g_curSubSlot_In,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:746:35: note: object used here\n                GET_SHARED_GLOBAL(g_curSubSlot_In, g_formatChange_SubSlot);\n                                  ^~~~~~~~~~~~~~~\n/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
+	.globwrite decouple,g_curSubSlot_Out,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:785:35: note: object used here\n                GET_SHARED_GLOBAL(g_curSubSlot_Out, g_formatChange_SubSlot);\n                                  ^~~~~~~~~~~~~~~~\n/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
+	.globwrite decouple,unpackState,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:793:17: note: object used here\n                unpackState = 0;\n                ^~~~~~~~~~~"
+	.globwrite decouple,inUnderflow,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:702:17: note: object used here\n                inUnderflow = 1;\n                ^~~~~~~~~~~"
+	.globwrite decouple,outOverflow,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:723:21: note: object used here\n                    outOverflow = 0;\n                    ^~~~~~~~~~~"
+	.globwrite decouple,outUnderflow,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:714:17: note: object used here\n                outUnderflow = 1;\n                ^~~~~~~~~~~~"
+	.globwrite decouple,g_aud_to_host_zeros,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:622:5: note: object used here\n    g_aud_to_host_zeros = t;\n    ^~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,g_aud_to_host_rdptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:614:5: note: object used here\n    g_aud_to_host_rdptr = aud_to_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,g_aud_to_host_dptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:615:5: note: object used here\n    g_aud_to_host_dptr = aud_to_host_fifo_start + 4;\n    ^~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,g_aud_to_host_wrptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:613:5: note: object used here\n    g_aud_to_host_wrptr = aud_to_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,aud_to_host_fifo_end,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:612:5: note: object used here\n    aud_to_host_fifo_end = aud_to_host_fifo_start + BUFF_SIZE_IN*4;\n    ^~~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,aud_to_host_fifo_start,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:611:5: note: object used here\n    aud_to_host_fifo_start = t;\n    ^~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,g_aud_from_host_rdptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:607:5: note: object used here\n    g_aud_from_host_rdptr = aud_from_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,g_aud_from_host_wrptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:606:5: note: object used here\n    g_aud_from_host_wrptr = aud_from_host_fifo_start;\n    ^~~~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,aud_from_host_fifo_end,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:605:5: note: object used here\n    aud_from_host_fifo_end = aud_from_host_fifo_start + BUFF_SIZE_OUT*4;\n    ^~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,aud_from_host_fifo_start,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:604:5: note: object used here\n    aud_from_host_fifo_start = t;\n    ^~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite decouple,speedRem,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:734:17: note: object used here\n                speedRem = 0;\n                ^~~~~~~~"
+	.globwrite decouple,g_numUsbChan_In,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:745:35: note: object used here\n                GET_SHARED_GLOBAL(g_numUsbChan_In, g_formatChange_NumChans);\n                                  ^~~~~~~~~~~~~~~\n/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
+	.globwrite decouple,g_numUsbChan_Out,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:784:35: note: object used here\n                GET_SHARED_GLOBAL(g_numUsbChan_Out, g_formatChange_NumChans);\n                                  ^~~~~~~~~~~~~~~~\n/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:36:72: note: expanded from macro \'GET_SHARED_GLOBAL\'\n#define GET_SHARED_GLOBAL(x, g) asm volatile(\"ldw %0, dp[\" #g \"]\":\"=r\"(x)::\"memory\")\n                                                                       ^"
+	.globwrite decouple,usage.anon.9,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:5: note: object used here\n    p_multIn = array_to_xc_ptr(multIn);\n    ^~~~~~~~"
+	.globwrite decouple,usage.anon.8,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:5: note: object used here\n    p_multOut = array_to_xc_ptr(multOut);\n    ^~~~~~~~~"
+	.globwrite handle_audio_request,packData,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:385:29: note: object used here\n                            packData = sample;\n                            ^~~~~~~~"
+	.globwrite handle_audio_request,packState,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:406:21: note: object used here\n                    packState++;\n                    ^~~~~~~~~"
+	.globwrite handle_audio_request,unpackData,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:45: note: object used here\n                            read_via_xc_ptr(unpackData, g_aud_from_host_rdptr);\n                                            ^~~~~~~~~~\n/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:31:74: note: expanded from macro \'read_via_xc_ptr\'\n#define read_via_xc_ptr(x,p)                    asm(\"ldw %0, %1[0]\":\"=r\"(x):\"r\"(p));\n                                                                         ^"
+	.globwrite handle_audio_request,unpackState,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:262:21: note: object used here\n                    unpackState++;\n                    ^~~~~~~~~~~"
+	.globwrite handle_audio_request,outUnderflow,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:155:13: note: object used here\n            outUnderflow = 0;\n            ^~~~~~~~~~~~"
+	.globwrite handle_audio_request,aud_data_remaining_to_device,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:9: note: object used here\n        aud_data_remaining_to_device -= (g_numUsbChan_Out * g_curSubSlot_Out);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite handle_audio_request,totalSampsToWrite,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:459:13: note: object used here\n            totalSampsToWrite = speedRem >> 16;\n            ^~~~~~~~~~~~~~~~~"
+	.globwrite handle_audio_request,sampsToWrite,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:9: note: object used here\n        sampsToWrite--;\n        ^~~~~~~~~~~~"
+	.globwrite handle_audio_request,g_aud_to_host_dptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:322:21: note: object used here\n                    g_aud_to_host_dptr+=2;\n                    ^~~~~~~~~~~~~~~~~~"
+	.globwrite handle_audio_request,g_aud_to_host_wrptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:13: note: object used here\n            g_aud_to_host_wrptr += 4+datasize;\n            ^~~~~~~~~~~~~~~~~~~"
+	.globwrite handle_audio_request,g_aud_from_host_rdptr,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:21: note: object used here\n                    g_aud_from_host_rdptr+=2;\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globwrite handle_audio_request,speedRem,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:458:13: note: object used here\n            speedRem += speed;\n            ^~~~~~~~"
 	.call decouple,usage.anon.6
 	.call decouple,usage.anon.5
 	.call decouple,usage.anon.3
@@ -94,11 +94,11 @@
 	.set handle_audio_request.locnoglobalaccess, 0
 	.set usage.anon.10.locnoglobalaccess, 0
 	.set decouple.locnoglobalaccess, 0
-	.globpassesref usage.anon.3, inZeroBuff,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:621:9: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'inZeroBuff\'\n    t = array_to_xc_ptr(inZeroBuff);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, audioBuffIn,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:609:9: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'audioBuffIn\'\n    t = array_to_xc_ptr(audioBuffIn);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, multIn,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:16: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'multIn\'\n    p_multIn = array_to_xc_ptr(multIn);\n               ^~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, multOut,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:17: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'multOut\'\n    p_multOut = array_to_xc_ptr(multOut);\n                ^~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.3, outAudioBuff,"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:595:13: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'outAudioBuff\'\n    int t = array_to_xc_ptr(outAudioBuff);\n            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, inZeroBuff,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:621:9: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'inZeroBuff\'\n    t = array_to_xc_ptr(inZeroBuff);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, audioBuffIn,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:609:9: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'audioBuffIn\'\n    t = array_to_xc_ptr(audioBuffIn);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, multIn,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:16: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'multIn\'\n    p_multIn = array_to_xc_ptr(multIn);\n               ^~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, multOut,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:17: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'multOut\'\n    p_multOut = array_to_xc_ptr(multOut);\n                ^~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.3, outAudioBuff,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:595:13: error: call to `array_to_xc_ptr\' in `decouple\' makes alias of global \'outAudioBuff\'\n    int t = array_to_xc_ptr(outAudioBuff);\n            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -115,8 +115,8 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\decouple.xc"
-	.file	2 "F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.section	.cp.rodata.cst4,"aMc",@progbits,4
 	.cc_top .LCPI0_0.data,.LCPI0_0
 	.align	4
@@ -153,7 +153,7 @@
 	.cc_top handle_audio_request.function,handle_audio_request
 handle_audio_request:                   # @handle_audio_request
 .Lfunc_begin0:
-	.loc	1 126 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:126:0
+	.loc	1 126 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:126:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -192,9 +192,9 @@ handle_audio_request:                   # @handle_audio_request
 		stw r10, sp[10]
 	}
 .Ltmp10:
-	.loc	1 136 5 prologue_end    # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:136:5
+	.loc	1 136 5 prologue_end    # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:136:5
 	ldw r9, dp[outUnderflow]
-	.loc	1 136 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:136:5
+	.loc	1 136 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:136:5
 	bf r9, .LBB0_7
 .Ltmp11:
 # BB#1:                                 # %LoopBody.preheader
@@ -202,32 +202,32 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: underflowSample <- R1
 	#DEBUG_VALUE: i <- 1
-	.loc	1 142 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:142:0
+	.loc	1 142 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:142:0
 .Lxta.endpoint_labels1:
 	{
 		out res[r0], r1
 		nop
 	}
-	.loc	1 142 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:142:0
+	.loc	1 142 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:142:0
 .Lxta.endpoint_labels2:
 	{
 		out res[r0], r1
 		nop
 	}
 .Ltmp12:
-	.loc	1 146 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:0
+	.loc	1 146 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:0
 	ldw r1, dp[g_aud_from_host_wrptr]
 .Ltmp13:
-	.loc	1 146 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:0
+	.loc	1 146 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:0
 	ldw r2, dp[g_aud_from_host_rdptr]
-	.loc	1 146 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:0
+	.loc	1 146 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:146:0
 	{
 		sub r2, r1, r2
 		nop
 	}
 .Ltmp14:
 	#DEBUG_VALUE: outSamps <- R2
-	.loc	1 147 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:147:9
+	.loc	1 147 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:147:9
 	ashr r1, r2, 32
 	bf r1, .LBB0_3
 .Ltmp15:
@@ -235,7 +235,7 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: outSamps <- R2
 	ldc r1, 1632
-	.loc	1 149 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:149:0
+	.loc	1 149 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:149:0
 	{
 		add r2, r2, r1
 		nop
@@ -245,7 +245,7 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel2:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	ldc r1, 411
-	.loc	1 153 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:153:9
+	.loc	1 153 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:153:9
 	{
 		lss r1, r1, r2
 		nop
@@ -259,16 +259,16 @@ handle_audio_request:                   # @handle_audio_request
 		ldc r9, 0
 		nop
 	}
-	.loc	1 155 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:155:0
+	.loc	1 155 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:155:0
 	stw r9, dp[outUnderflow]
 	bu .LBB0_4
 .Ltmp18:
 .LBB0_7:                                # %iffalse
 .Lxtalabel4:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 161 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:161:0
+	.loc	1 161 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:161:0
 	ldw r5, dp[g_curSubSlot_Out]
-	.loc	1 161 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:161:0
+	.loc	1 161 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:161:0
 	{
 		eq r2, r5, 3
 		nop
@@ -279,7 +279,7 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel5:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 230 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:230:0
+	.loc	1 230 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:230:0
 	ldw r2, dp[g_numUsbChan_Out]
 	bf r2, .LBB0_10
 .Ltmp20:
@@ -290,10 +290,10 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		stw r5, sp[3]
 	}
-	.loc	1 265 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:265:0
+	.loc	1 265 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:265:0
 .Ltmp21:
 	ldw r11, dp[p_multOut]
-	.loc	1 262 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:262:0
+	.loc	1 262 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:262:0
 	ldw r3, dp[unpackState]
 	{
 		mkmsk r4, 1
@@ -335,17 +335,17 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel6:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 239 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
+	.loc	1 239 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
 	{
 		add r4, r3, r9
 		nop
 	}
-	.loc	1 239 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
+	.loc	1 239 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
 	{
 		zext r4, 2
 		nop
 	}
-	.loc	1 239 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
+	.loc	1 239 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
 	{
 		lsu r8, r6, r4
 		nop
@@ -370,22 +370,22 @@ handle_audio_request:                   # @handle_audio_request
                                         #   in Loop: Header=BB0_35 Depth=1
 .Lxtalabel8:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 242 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:0
+	.loc	1 242 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:0
 	ldw r4, dp[g_aud_from_host_rdptr]
-	.loc	1 242 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:0
+	.loc	1 242 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:0
 	#APP
 	ldw r5, r4[0]
 	#NO_APP
-	.loc	1 242 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:0
+	.loc	1 242 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:242:0
 	stw r5, dp[unpackData]
-	.loc	1 243 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:243:0
+	.loc	1 243 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:243:0
 	{
 		add r4, r4, 4
 		nop
 	}
-	.loc	1 243 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:243:0
+	.loc	1 243 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:243:0
 	stw r4, dp[g_aud_from_host_rdptr]
-	.loc	1 244 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:244:0
+	.loc	1 244 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:244:0
 	{
 		shl r10, r5, 8
 		nop
@@ -402,32 +402,32 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		ld16s r4, r7[r1]
 	}
-	.loc	1 247 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:247:0
+	.loc	1 247 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:247:0
 	{
 		zext r4, 16
 		nop
 	}
-	.loc	1 248 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:248:0
+	.loc	1 248 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:248:0
 	ldw r5, dp[g_aud_from_host_rdptr]
-	.loc	1 248 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:248:0
+	.loc	1 248 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:248:0
 	#APP
 	ldw r8, r5[0]
 	#NO_APP
-	.loc	1 248 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:248:0
+	.loc	1 248 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:248:0
 	stw r8, dp[unpackData]
-	.loc	1 249 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:249:0
+	.loc	1 249 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:249:0
 	{
 		add r5, r5, 4
 		nop
 	}
-	.loc	1 249 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:249:0
+	.loc	1 249 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:249:0
 	stw r5, dp[g_aud_from_host_rdptr]
-	.loc	1 250 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:250:0
+	.loc	1 250 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:250:0
 	{
 		shl r5, r8, 16
 		nop
 	}
-	.loc	1 250 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:250:0
+	.loc	1 250 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:250:0
 	{
 		or r10, r5, r4
 		nop
@@ -440,36 +440,36 @@ handle_audio_request:                   # @handle_audio_request
                                         #   in Loop: Header=BB0_35 Depth=1
 .Lxtalabel10:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 253 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:253:0
+	.loc	1 253 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:253:0
 	ldw r4, dp[unpackData]
-	.loc	1 253 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:253:0
+	.loc	1 253 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:253:0
 	{
 		shr r4, r4, 8
 		nop
 	}
 .Ltmp31:
 	#DEBUG_VALUE: sample <- R4
-	.loc	1 254 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:254:0
+	.loc	1 254 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:254:0
 	ldw r5, dp[g_aud_from_host_rdptr]
-	.loc	1 254 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:254:0
+	.loc	1 254 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:254:0
 	#APP
 	ldw r8, r5[0]
 	#NO_APP
-	.loc	1 254 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:254:0
+	.loc	1 254 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:254:0
 	stw r8, dp[unpackData]
-	.loc	1 255 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:255:0
+	.loc	1 255 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:255:0
 	{
 		add r5, r5, 4
 		nop
 	}
-	.loc	1 255 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:255:0
+	.loc	1 255 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:255:0
 	stw r5, dp[g_aud_from_host_rdptr]
-	.loc	1 256 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:256:0
+	.loc	1 256 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:256:0
 	{
 		shl r5, r8, 24
 		nop
 	}
-	.loc	1 256 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:256:0
+	.loc	1 256 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:256:0
 	{
 		or r10, r5, r4
 		nop
@@ -482,10 +482,10 @@ handle_audio_request:                   # @handle_audio_request
                                         #   in Loop: Header=BB0_35 Depth=1
 .Lxtalabel11:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 259 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:259:0
+	.loc	1 259 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:259:0
 	ldw r4, dp[unpackData]
 	ldw r5, cp[.LCPI0_0]
-	.loc	1 259 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:259:0
+	.loc	1 259 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:259:0
 	{
 		and r10, r4, r5
 		nop
@@ -497,13 +497,13 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel12:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 265 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:265:0
+	.loc	1 265 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:265:0
 	#APP
 	ldw r4, r11[r9]
 	#NO_APP
 .Ltmp35:
 	#DEBUG_VALUE: mult <- R4
-	.loc	1 266 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:266:0
+	.loc	1 266 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:266:0
 	{
 		mov r8, r1
 		mov r5, r1
@@ -511,7 +511,7 @@ handle_audio_request:                   # @handle_audio_request
 	#APP
 	maccs r8, r5, r4, r10
 	#NO_APP
-	.loc	1 267 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:267:0
+	.loc	1 267 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:267:0
 	{
 		shl r4, r8, 3
 		nop
@@ -519,14 +519,14 @@ handle_audio_request:                   # @handle_audio_request
 .Ltmp36:
 	#DEBUG_VALUE: h <- R4
 	#DEBUG_VALUE: i <- R9
-	.loc	1 268 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:268:0
+	.loc	1 268 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:268:0
 .Lxta.endpoint_labels3:
 	{
 		out res[r0], r4
 		add r9, r9, 1
 	}
 .Ltmp37:
-	.loc	1 230 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:230:0
+	.loc	1 230 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:230:0
 	{
 		lsu r4, r9, r2
 		nop
@@ -542,13 +542,13 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		ldw r1, sp[2]
 	}
-	.loc	1 239 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
+	.loc	1 239 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:239:0
 .Ltmp40:
 	{
 		add r3, r3, r1
 		nop
 	}
-	.loc	1 262 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:262:0
+	.loc	1 262 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:262:0
 	stw r3, dp[unpackState]
 	bu .LBB0_15
 .Ltmp41:
@@ -565,16 +565,16 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel14:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 198 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:198:0
+	.loc	1 198 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:198:0
 	ldw r2, dp[g_numUsbChan_Out]
 	bf r2, .LBB0_10
 .Ltmp43:
 # BB#26:                                # %LoopBody67.preheader
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 210 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:210:0
+	.loc	1 210 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:210:0
 	ldw r11, dp[p_multOut]
-	.loc	1 207 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:207:0
+	.loc	1 207 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:207:0
 	ldw r1, dp[g_aud_from_host_rdptr]
 	{
 		mkmsk r4, 1
@@ -584,7 +584,7 @@ handle_audio_request:                   # @handle_audio_request
 		lsu r4, r4, r2
 		nop
 	}
-	.loc	1 206 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:206:0
+	.loc	1 206 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:206:0
 	bt r4, .LBB0_27
 .Ltmp44:
 # BB#28:                                # %LoopBody67.preheader
@@ -599,16 +599,16 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel15:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 169 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:169:0
+	.loc	1 169 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:169:0
 	ldw r2, dp[g_numUsbChan_Out]
 	bf r2, .LBB0_10
 .Ltmp46:
 # BB#19:                                # %LoopBody39.preheader
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 182 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:182:0
+	.loc	1 182 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:182:0
 	ldw r11, dp[p_multOut]
-	.loc	1 178 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:0
+	.loc	1 178 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:0
 	ldw r3, dp[g_aud_from_host_rdptr]
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	{
@@ -619,7 +619,7 @@ handle_audio_request:                   # @handle_audio_request
 		lsu r4, r4, r2
 		nop
 	}
-	.loc	1 177 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
+	.loc	1 177 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
 	bt r4, .LBB0_20
 .Ltmp47:
 # BB#21:                                # %LoopBody39.preheader
@@ -666,24 +666,24 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel16:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 206 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:206:0
+	.loc	1 206 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:206:0
 	#APP
 	ldw r9, r7[0]
 	#NO_APP
 .Ltmp52:
 	#DEBUG_VALUE: sample <- R9
-	.loc	1 207 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:207:0
+	.loc	1 207 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:207:0
 	{
 		add r7, r7, 4
 		nop
 	}
-	.loc	1 210 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:210:0
+	.loc	1 210 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:210:0
 	#APP
 	ldw r10, r11[r8]
 	#NO_APP
 .Ltmp53:
 	#DEBUG_VALUE: mult <- R10
-	.loc	1 211 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:211:0
+	.loc	1 211 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:211:0
 	{
 		mov r5, r3
 		mov r4, r3
@@ -693,13 +693,13 @@ handle_audio_request:                   # @handle_audio_request
 	#NO_APP
 .Ltmp54:
 	#DEBUG_VALUE: h <- R5
-	.loc	1 212 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:212:0
+	.loc	1 212 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:212:0
 	{
 		shl r5, r5, 3
 		shr r4, r4, r6
 	}
 .Ltmp55:
-	.loc	1 214 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:214:0
+	.loc	1 214 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:214:0
 	{
 		or r4, r5, r4
 		nop
@@ -707,14 +707,14 @@ handle_audio_request:                   # @handle_audio_request
 .Ltmp56:
 	#DEBUG_VALUE: h <- R4
 	#DEBUG_VALUE: i <- R8
-	.loc	1 217 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:217:0
+	.loc	1 217 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:217:0
 .Lxta.endpoint_labels4:
 	{
 		out res[r0], r4
 		add r8, r8, 1
 	}
 .Ltmp57:
-	.loc	1 198 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:198:0
+	.loc	1 198 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:198:0
 	{
 		lsu r4, r8, r2
 		nop
@@ -722,7 +722,7 @@ handle_audio_request:                   # @handle_audio_request
 .Ltmp58:
 .Lxta.loop_labels1:
 	# LOOPMARKER 0
-	.loc	1 198 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:198:0
+	.loc	1 198 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:198:0
 	bt r4, .LBB0_30
 .Ltmp59:
 # BB#14:                                # %switchdone.loopexit499
@@ -731,13 +731,13 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		ldw r3, sp[2]
 	}
-	.loc	1 206 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:206:0
+	.loc	1 206 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:206:0
 .Ltmp60:
 	{
 		add r3, r1, r3
 		nop
 	}
-	.loc	1 207 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:207:0
+	.loc	1 207 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:207:0
 	stw r3, dp[g_aud_from_host_rdptr]
 .Ltmp61:
 .LBB0_15:                               # %switchdone
@@ -748,7 +748,7 @@ handle_audio_request:                   # @handle_audio_request
 	}
 	bu .LBB0_16
 .LBB0_20:
-	.loc	1 177 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
+	.loc	1 177 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
 .Ltmp62:
 	{
 		shl r4, r2, 1
@@ -762,7 +762,7 @@ handle_audio_request:                   # @handle_audio_request
 		ldc r4, 0
 		stw r4, sp[3]
 	}
-	.loc	1 177 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
+	.loc	1 177 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
 	{
 		mov r6, r3
 		mov r7, r4
@@ -773,25 +773,25 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel18:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 177 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
+	.loc	1 177 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
 	#APP
 	ld16s r8, r6[r4]
 	#NO_APP
 .Ltmp65:
 	#DEBUG_VALUE: sample <- R8
-	.loc	1 178 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:0
+	.loc	1 178 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:0
 	{
 		add r6, r6, 2
 		shl r8, r8, 16
 	}
 .Ltmp66:
-	.loc	1 182 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:182:0
+	.loc	1 182 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:182:0
 	#APP
 	ldw r9, r11[r7]
 	#NO_APP
 .Ltmp67:
 	#DEBUG_VALUE: mult <- R9
-	.loc	1 183 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:183:0
+	.loc	1 183 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:183:0
 	{
 		mov r10, r4
 		mov r5, r4
@@ -799,7 +799,7 @@ handle_audio_request:                   # @handle_audio_request
 	#APP
 	maccs r10, r5, r9, r8
 	#NO_APP
-	.loc	1 185 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:185:0
+	.loc	1 185 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:185:0
 	{
 		shl r5, r10, 3
 		nop
@@ -807,14 +807,14 @@ handle_audio_request:                   # @handle_audio_request
 .Ltmp68:
 	#DEBUG_VALUE: h <- R5
 	#DEBUG_VALUE: i <- R7
-	.loc	1 186 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:186:0
+	.loc	1 186 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:186:0
 .Lxta.endpoint_labels5:
 	{
 		out res[r0], r5
 		add r7, r7, 1
 	}
 .Ltmp69:
-	.loc	1 169 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:169:0
+	.loc	1 169 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:169:0
 	{
 		lsu r5, r7, r2
 		nop
@@ -830,13 +830,13 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		ldw r11, sp[3]
 	}
-	.loc	1 177 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
+	.loc	1 177 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:177:0
 .Ltmp72:
 	{
 		add r3, r3, r11
 		nop
 	}
-	.loc	1 178 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:0
+	.loc	1 178 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:178:0
 	stw r3, dp[g_aud_from_host_rdptr]
 	{
 		mov r5, r1
@@ -847,7 +847,7 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel19:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 283 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:283:0
+	.loc	1 283 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:283:0
 	{
 		eq r3, r2, 2
 		nop
@@ -868,7 +868,7 @@ handle_audio_request:                   # @handle_audio_request
 		ldc r3, 2
 		nop
 	}
-	.loc	1 283 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:283:0
+	.loc	1 283 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:283:0
 	{
 		sub r3, r3, r2
 		ldc r11, 0
@@ -883,14 +883,14 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel20:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- R4
-	.loc	1 285 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:285:0
+	.loc	1 285 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:285:0
 .Lxta.endpoint_labels6:
 	{
 		out res[r0], r11
 		add r4, r4, 1
 	}
 .Ltmp77:
-	.loc	1 283 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:283:0
+	.loc	1 283 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:283:0
 	{
 		lsu r1, r4, r3
 		nop
@@ -902,16 +902,16 @@ handle_audio_request:                   # @handle_audio_request
 .LBB0_18:                               # %ifdone162
 .Lxtalabel21:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 289 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
+	.loc	1 289 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
 	mul r1, r5, r2
-	.loc	1 289 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
+	.loc	1 289 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
 	ldw r2, dp[aud_data_remaining_to_device]
-	.loc	1 289 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
+	.loc	1 289 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
 	{
 		sub r1, r2, r1
 		nop
 	}
-	.loc	1 289 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
+	.loc	1 289 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:289:0
 	stw r1, dp[aud_data_remaining_to_device]
 	{
 		ldc r9, 0
@@ -921,25 +921,25 @@ handle_audio_request:                   # @handle_audio_request
 .LBB0_4:                                # %ifdone
 .Lxtalabel22:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:0
+	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:0
 	ldw r1, dp[g_curSubSlot_In]
-	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:0
+	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:0
 	{
 		eq r1, r1, 4
 		stw r1, sp[3]
 	}
-	.loc	1 296 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:0
+	.loc	1 296 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:296:0
 	bf r1, .LBB0_70
 .Ltmp80:
 # BB#5:                                 # %switchcase188
 .Lxtalabel23:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 331 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:331:0
+	.loc	1 331 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:331:0
 	ldw r11, dp[g_aud_to_host_dptr]
 .Ltmp81:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: ptr <- R11
-	.loc	1 333 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:333:0
+	.loc	1 333 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:333:0
 	ldw r3, dp[g_numUsbChan_In]
 	bf r3, .LBB0_6
 .Ltmp82:
@@ -947,7 +947,7 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: ptr <- R11
 	#DEBUG_VALUE: i <- 0
-	.loc	1 343 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:343:0
+	.loc	1 343 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:343:0
 	ldw r4, dp[p_multIn]
 	{
 		mkmsk r1, 1
@@ -958,7 +958,7 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 	}
 .Ltmp83:
-	.loc	1 336 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:336:0
+	.loc	1 336 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:336:0
 	bt r1, .LBB0_64
 .Ltmp84:
 # BB#65:                                # %LoopBody229.preheader
@@ -973,9 +973,9 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel24:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 368 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
+	.loc	1 368 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
 	ldw r3, dp[g_numUsbChan_In]
-	.loc	1 368 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
+	.loc	1 368 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
 	bf r3, .LBB0_71
 .Ltmp86:
 # BB#72:                                # %LoopBody260.preheader
@@ -985,10 +985,10 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		stw r9, sp[1]
 	}
-	.loc	1 377 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:377:0
+	.loc	1 377 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:377:0
 .Ltmp87:
 	ldw r4, dp[p_multIn]
-	.loc	1 406 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:406:0
+	.loc	1 406 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:406:0
 	ldw r11, dp[packState]
 	{
 		mkmsk r1, 1
@@ -1033,7 +1033,7 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel25:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 371 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:371:0
+	.loc	1 371 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:371:0
 .Lxta.endpoint_labels7:
 	{
 		in r8, res[r0]
@@ -1041,23 +1041,23 @@ handle_audio_request:                   # @handle_audio_request
 	}
 .Ltmp91:
 	#DEBUG_VALUE: sample <- R8
-	.loc	1 377 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:377:0
+	.loc	1 377 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:377:0
 	#APP
 	ldw r1, r4[r6]
 	#NO_APP
 .Ltmp92:
 	#DEBUG_VALUE: mult <- R1
-	.loc	1 382 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:382:0
+	.loc	1 382 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:382:0
 	{
 		add r2, r11, r6
 		nop
 	}
-	.loc	1 382 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:382:0
+	.loc	1 382 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:382:0
 	{
 		zext r2, 2
 		nop
 	}
-	.loc	1 382 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:382:0
+	.loc	1 382 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:382:0
 	{
 		lsu r9, r7, r2
 		nop
@@ -1071,7 +1071,7 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: sample <- R8
 	#DEBUG_VALUE: mult <- R1
-	.loc	1 378 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:378:0
+	.loc	1 378 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:378:0
 	{
 		mov r9, r5
 		mov r10, r5
@@ -1079,7 +1079,7 @@ handle_audio_request:                   # @handle_audio_request
 	#APP
 	maccs r9, r10, r1, r8
 	#NO_APP
-	.loc	1 379 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:379:0
+	.loc	1 379 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:379:0
 	{
 		shl r8, r9, 3
 		nop
@@ -1102,7 +1102,7 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: sample <- R8
-	.loc	1 385 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:385:0
+	.loc	1 385 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:385:0
 	stw r8, dp[packData]
 	bu .LBB0_81
 .Ltmp96:
@@ -1112,49 +1112,49 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: sample <- R8
-	.loc	1 388 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
+	.loc	1 388 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
 	ldw r1, dp[packData]
-	.loc	1 388 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
+	.loc	1 388 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
 	{
 		shr r1, r1, 8
 		ldc r2, 19
 	}
-	.loc	1 388 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
+	.loc	1 388 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
 	{
 		shl r2, r9, r2
 		nop
 	}
 	ldw r9, cp[.LCPI0_2]
-	.loc	1 388 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
+	.loc	1 388 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
 	{
 		and r2, r2, r9
 		nop
 	}
-	.loc	1 388 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
+	.loc	1 388 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:388:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 389 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:389:0
+	.loc	1 389 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:389:0
 	ldw r2, dp[g_aud_to_host_dptr]
-	.loc	1 389 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:389:0
+	.loc	1 389 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:389:0
 	#APP
 	stw r1, r2[0]
 	#NO_APP
-	.loc	1 390 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:390:0
+	.loc	1 390 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:390:0
 	{
 		add r1, r2, 4
 		nop
 	}
-	.loc	1 390 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:390:0
+	.loc	1 390 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:390:0
 	stw r1, dp[g_aud_to_host_dptr]
-	.loc	1 391 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:391:0
+	.loc	1 391 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:391:0
 	ashr r2, r8, 16
-	.loc	1 391 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:391:0
+	.loc	1 391 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:391:0
 	#APP
 	stw r2, r1[0]
 	#NO_APP
-	.loc	1 392 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:392:0
+	.loc	1 392 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:392:0
 	stw r8, dp[packData]
 	bu .LBB0_81
 .Ltmp97:
@@ -1172,41 +1172,41 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		ld16s r1, r1[r5]
 	}
-	.loc	1 395 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
+	.loc	1 395 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
 	{
 		zext r1, 16
 		ldc r2, 11
 	}
-	.loc	1 395 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
+	.loc	1 395 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
 	{
 		shl r2, r9, r2
 		nop
 	}
 	ldw r9, cp[.LCPI0_1]
-	.loc	1 395 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
+	.loc	1 395 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
 	{
 		and r2, r2, r9
 		nop
 	}
-	.loc	1 395 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
+	.loc	1 395 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:395:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 396 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:396:0
+	.loc	1 396 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:396:0
 	ldw r2, dp[g_aud_to_host_dptr]
-	.loc	1 396 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:396:0
+	.loc	1 396 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:396:0
 	#APP
 	stw r1, r2[0]
 	#NO_APP
-	.loc	1 397 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:397:0
+	.loc	1 397 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:397:0
 	{
 		add r1, r2, 4
 		nop
 	}
-	.loc	1 397 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:397:0
+	.loc	1 397 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:397:0
 	stw r1, dp[g_aud_to_host_dptr]
-	.loc	1 398 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:398:0
+	.loc	1 398 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:398:0
 	stw r8, dp[packData]
 	bu .LBB0_81
 .Ltmp98:
@@ -1222,30 +1222,30 @@ handle_audio_request:                   # @handle_audio_request
 		ld8u r1, r1[r7]
 	}
 	ldw r2, cp[.LCPI0_0]
-	.loc	1 401 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:401:0
+	.loc	1 401 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:401:0
 	{
 		and r2, r8, r2
 		nop
 	}
-	.loc	1 401 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:401:0
+	.loc	1 401 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:401:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 401 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:401:0
+	.loc	1 401 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:401:0
 	stw r1, dp[packData]
-	.loc	1 402 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:402:0
+	.loc	1 402 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:402:0
 	ldw r2, dp[g_aud_to_host_dptr]
-	.loc	1 402 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:402:0
+	.loc	1 402 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:402:0
 	#APP
 	stw r1, r2[0]
 	#NO_APP
-	.loc	1 403 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:403:0
+	.loc	1 403 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:403:0
 	{
 		add r1, r2, 4
 		nop
 	}
-	.loc	1 403 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:403:0
+	.loc	1 403 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:403:0
 	stw r1, dp[g_aud_to_host_dptr]
 .Ltmp99:
 .LBB0_81:                               # %switchdone273
@@ -1253,14 +1253,14 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel31:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 368 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
+	.loc	1 368 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
 	{
 		add r6, r6, 1
 		nop
 	}
 .Ltmp100:
 	#DEBUG_VALUE: i <- R6
-	.loc	1 368 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
+	.loc	1 368 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:368:0
 	{
 		lsu r1, r6, r3
 		nop
@@ -1275,17 +1275,17 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 		ldw r1, sp[0]
 	}
-	.loc	1 371 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:371:0
+	.loc	1 371 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:371:0
 .Ltmp102:
 	{
 		add r1, r11, r1
 		nop
 	}
-	.loc	1 406 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:406:0
+	.loc	1 406 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:406:0
 .Ltmp103:
 	stw r1, dp[packState]
 .Ltmp104:
-	.loc	1 416 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
+	.loc	1 416 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
 	{
 		mov r4, r3
 		ldw r9, sp[1]
@@ -1299,7 +1299,7 @@ handle_audio_request:                   # @handle_audio_request
 		nop
 	}
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
-	.loc	1 359 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:359:0
+	.loc	1 359 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:359:0
 .Ltmp106:
 	stw r11, dp[g_aud_to_host_dptr]
 	bu .LBB0_44
@@ -1340,7 +1340,7 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: ptr <- R11
 	#DEBUG_VALUE: i <- 0
-	.loc	1 336 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:336:0
+	.loc	1 336 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:336:0
 .Lxta.endpoint_labels8:
 	{
 		in r1, res[r0]
@@ -1348,13 +1348,13 @@ handle_audio_request:                   # @handle_audio_request
 	}
 .Ltmp111:
 	#DEBUG_VALUE: sample <- R1
-	.loc	1 343 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:343:0
+	.loc	1 343 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:343:0
 	#APP
 	ldw r2, r4[r7]
 	#NO_APP
 .Ltmp112:
 	#DEBUG_VALUE: mult <- R2
-	.loc	1 344 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:344:0
+	.loc	1 344 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:344:0
 	{
 		mov r9, r6
 		mov r10, r6
@@ -1362,26 +1362,26 @@ handle_audio_request:                   # @handle_audio_request
 	#APP
 	maccs r10, r9, r2, r1
 	#NO_APP
-	.loc	1 345 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:345:0
+	.loc	1 345 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:345:0
 	{
 		shl r1, r10, 3
 		nop
 	}
 .Ltmp113:
 	#DEBUG_VALUE: sample <- R1
-	.loc	1 354 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:354:0
+	.loc	1 354 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:354:0
 	#APP
 	stw r1, r8[0]
 	#NO_APP
 .Ltmp114:
 	#DEBUG_VALUE: i <- R7
-	.loc	1 355 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:355:0
+	.loc	1 355 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:355:0
 	{
 		add r8, r8, 4
 		add r7, r7, 1
 	}
 .Ltmp115:
-	.loc	1 333 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:333:0
+	.loc	1 333 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:333:0
 	{
 		lsu r1, r7, r3
 		nop
@@ -1389,13 +1389,13 @@ handle_audio_request:                   # @handle_audio_request
 .Ltmp116:
 .Lxta.loop_labels5:
 	# LOOPMARKER 5
-	.loc	1 333 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:333:0
+	.loc	1 333 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:333:0
 	bt r1, .LBB0_67
 .Ltmp117:
 # BB#68:                                # %ifdone223.loopexit
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: ptr <- R11
-	.loc	1 336 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:336:0
+	.loc	1 336 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:336:0
 	{
 		add r11, r11, r5
 		mov r4, r3
@@ -1407,14 +1407,14 @@ handle_audio_request:                   # @handle_audio_request
 	}
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 .Ltmp119:
-	.loc	1 359 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:359:0
+	.loc	1 359 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:359:0
 	stw r11, dp[g_aud_to_host_dptr]
 .Ltmp120:
 .LBB0_44:                               # %switchdone186
 .Lxtalabel33:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	1 416 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
+	.loc	1 416 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
 	{
 		eq r1, r4, 2
 		nop
@@ -1427,7 +1427,7 @@ handle_audio_request:                   # @handle_audio_request
 		ldc r1, 2
 		nop
 	}
-	.loc	1 416 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
+	.loc	1 416 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
 	{
 		sub r11, r1, r3
 		ldc r2, 0
@@ -1438,14 +1438,14 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel34:
 	#DEBUG_VALUE: handle_audio_request:c_mix_out <- R0
 	#DEBUG_VALUE: i <- R2
-	.loc	1 418 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:418:0
+	.loc	1 418 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:418:0
 .Lxta.endpoint_labels9:
 	{
 		in r1, res[r0]
 		add r2, r2, 1
 	}
 .Ltmp123:
-	.loc	1 416 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
+	.loc	1 416 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:416:0
 	{
 		lsu r1, r2, r11
 		nop
@@ -1456,20 +1456,20 @@ handle_audio_request:                   # @handle_audio_request
 .Ltmp124:
 .LBB0_47:                               # %ifdone330
 .Lxtalabel35:
-	.loc	1 421 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:0
+	.loc	1 421 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:0
 	ldw r0, dp[sampsToWrite]
-	.loc	1 421 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:0
+	.loc	1 421 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:0
 	{
 		sub r0, r0, 1
 		nop
 	}
-	.loc	1 421 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:0
+	.loc	1 421 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:421:0
 	stw r0, dp[sampsToWrite]
 	{
 		mkmsk r4, 1
 		nop
 	}
-	.loc	1 427 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:427:9
+	.loc	1 427 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:427:9
 	{
 		lss r0, r0, r4
 		nop
@@ -1481,50 +1481,50 @@ handle_audio_request:                   # @handle_audio_request
 		ldc r0, 0
 		nop
 	}
-	.loc	1 430 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:430:0
+	.loc	1 430 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:430:0
 .Ltmp125:
 	stw r0, dp[packState]
-	.loc	1 433 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:433:0
+	.loc	1 433 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:433:0
 .Ltmp126:
 	ldw r0, dp[totalSampsToWrite]
 	{
 		nop
 		ldw r1, sp[3]
 	}
-	.loc	1 433 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:433:0
+	.loc	1 433 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:433:0
 	mul r0, r1, r0
-	.loc	1 433 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:433:0
+	.loc	1 433 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:433:0
 	mul r0, r0, r3
 .Ltmp127:
 	#DEBUG_VALUE: datasize <- R0
-	.loc	1 435 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:435:0
+	.loc	1 435 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:435:0
 	ldw r1, dp[g_aud_to_host_wrptr]
-	.loc	1 435 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:435:0
+	.loc	1 435 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:435:0
 	#APP
 	stw r0, r1[0]
 	#NO_APP
-	.loc	1 441 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
+	.loc	1 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
 	{
 		add r2, r0, 7
 		nop
 	}
 	ldw r0, cp[.LCPI0_3]
 .Ltmp128:
-	.loc	1 441 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
+	.loc	1 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
 	{
 		and r2, r2, r0
 		nop
 	}
-	.loc	1 441 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
+	.loc	1 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
 	{
 		add r6, r1, r2
 		nop
 	}
-	.loc	1 441 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
+	.loc	1 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:441:0
 	stw r6, dp[g_aud_to_host_wrptr]
-	.loc	1 444 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:13
+	.loc	1 444 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:13
 	ldw r7, dp[aud_to_host_fifo_end]
-	.loc	1 444 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:13
+	.loc	1 444 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:13
 	{
 		lsu r1, r6, r7
 		nop
@@ -1533,62 +1533,62 @@ handle_audio_request:                   # @handle_audio_request
 	bt r1, .LBB0_50
 # BB#49:                                # %iftrue349
 .Lxtalabel37:
-	.loc	1 444 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:13
+	.loc	1 444 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:444:13
 	{
 		mov r6, r8
 		nop
 	}
 .LBB0_50:                               # %iftrue349
 .Lxtalabel38:
-	.loc	1 446 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:446:0
+	.loc	1 446 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:446:0
 	stw r6, dp[g_aud_to_host_wrptr]
-	.loc	1 449 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:449:0
+	.loc	1 449 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:449:0
 	{
 		add r1, r6, 4
 		nop
 	}
-	.loc	1 449 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:449:0
+	.loc	1 449 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:449:0
 	stw r1, dp[g_aud_to_host_dptr]
-	.loc	1 455 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:455:0
+	.loc	1 455 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:455:0
 	#APP
 	ldw   r1, dp[g_speed]
 	#NO_APP
 .Ltmp129:
 	#DEBUG_VALUE: speed <- R1
-	.loc	1 458 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:458:0
+	.loc	1 458 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:458:0
 	ldw r2, dp[speedRem]
-	.loc	1 458 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:458:0
+	.loc	1 458 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:458:0
 	{
 		add r1, r2, r1
 		nop
 	}
 .Ltmp130:
-	.loc	1 459 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:459:0
+	.loc	1 459 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:459:0
 	ashr r5, r1, 16
-	.loc	1 459 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:459:0
+	.loc	1 459 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:459:0
 	stw r5, dp[totalSampsToWrite]
-	.loc	1 460 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:460:0
+	.loc	1 460 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:460:0
 	{
 		zext r1, 16
 		nop
 	}
-	.loc	1 460 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:460:0
+	.loc	1 460 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:460:0
 	stw r1, dp[speedRem]
-	.loc	1 470 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:470:0
+	.loc	1 470 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:470:0
 	ldw r1, dp[g_aud_to_host_rdptr]
-	.loc	1 470 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:470:0
+	.loc	1 470 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:470:0
 	{
 		sub r11, r1, r6
 		nop
 	}
 .Ltmp131:
 	#DEBUG_VALUE: space_left <- R11
-	.loc	1 473 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:473:13
+	.loc	1 473 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:473:13
 	{
 		lss r2, r11, r4
 		eq r1, r1, r8
 	}
-	.loc	1 473 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:473:13
+	.loc	1 473 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:473:13
 	{
 		and r1, r2, r1
 		nop
@@ -1596,7 +1596,7 @@ handle_audio_request:                   # @handle_audio_request
 	bf r1, .LBB0_52
 .Ltmp132:
 # BB#51:
-	.loc	1 475 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:475:0
+	.loc	1 475 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:475:0
 	{
 		sub r11, r7, r6
 		nop
@@ -1605,20 +1605,20 @@ handle_audio_request:                   # @handle_audio_request
 	#DEBUG_VALUE: space_left <- R11
 .LBB0_52:                               # %iftrue349
 .Lxtalabel39:
-	.loc	1 479 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
+	.loc	1 479 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
 	mul r1, r3, r5
 	{
 		nop
 		ldw r2, sp[3]
 	}
-	.loc	1 479 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
+	.loc	1 479 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
 	mul r1, r1, r2
-	.loc	1 479 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
+	.loc	1 479 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
 	{
 		add r1, r1, 4
 		nop
 	}
-	.loc	1 479 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
+	.loc	1 479 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:479:13
 	{
 		lsu r1, r11, r1
 		nop
@@ -1629,41 +1629,41 @@ handle_audio_request:                   # @handle_audio_request
 .LBB0_54:                               # %LoopBody411
                                         # =>This Inner Loop Header: Depth=1
 .Lxtalabel40:
-	.loc	1 492 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:492:0
+	.loc	1 492 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:492:0
 .Ltmp134:
 	#APP
 	ldw r3, dp[g_aud_to_host_rdptr]
 	#NO_APP
 .Ltmp135:
 	#DEBUG_VALUE: rdPtr <- R3
-	.loc	1 493 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:493:0
+	.loc	1 493 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:493:0
 	#APP
 	ldw r2, r3[0]
 	#NO_APP
 .Ltmp136:
 	#DEBUG_VALUE: datalength <- R2
-	.loc	1 496 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:496:0
+	.loc	1 496 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:496:0
 	{
 		add r2, r2, 7
 		nop
 	}
 .Ltmp137:
-	.loc	1 496 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:496:0
+	.loc	1 496 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:496:0
 	{
 		and r2, r2, r0
 		nop
 	}
 .Ltmp138:
 	#DEBUG_VALUE: datalength <- R2
-	.loc	1 499 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:499:0
+	.loc	1 499 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:499:0
 	{
 		add r3, r2, r3
 		nop
 	}
 .Ltmp139:
-	.loc	1 500 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:500:21
+	.loc	1 500 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:500:21
 	ldw r4, dp[aud_to_host_fifo_end]
-	.loc	1 500 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:500:21
+	.loc	1 500 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:500:21
 	{
 		lsu r4, r3, r4
 		nop
@@ -1674,7 +1674,7 @@ handle_audio_request:                   # @handle_audio_request
                                         #   in Loop: Header=BB0_54 Depth=1
 .Lxtalabel41:
 	#DEBUG_VALUE: datalength <- R2
-	.loc	1 502 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:502:0
+	.loc	1 502 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:502:0
 	ldw r3, dp[aud_to_host_fifo_start]
 .Ltmp141:
 	#DEBUG_VALUE: rdPtr <- R3
@@ -1682,19 +1682,19 @@ handle_audio_request:                   # @handle_audio_request
                                         #   in Loop: Header=BB0_54 Depth=1
 .Lxtalabel42:
 	#DEBUG_VALUE: datalength <- R2
-	.loc	1 505 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:505:0
+	.loc	1 505 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:505:0
 	{
 		add r11, r2, r11
 		nop
 	}
 .Ltmp142:
 	#DEBUG_VALUE: space_left <- R11
-	.loc	1 506 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:506:0
+	.loc	1 506 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:506:0
 	#APP
 	stw r3, dp[g_aud_to_host_rdptr]
 	#NO_APP
 .Ltmp143:
-	.loc	1 508 19                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:508:19
+	.loc	1 508 19                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:508:19
 	{
 		lss r2, r11, r1
 		nop
@@ -1705,14 +1705,14 @@ handle_audio_request:                   # @handle_audio_request
 	bt r2, .LBB0_54
 .Ltmp145:
 # BB#57:                                # %ifdone399.loopexit
-	.loc	1 511 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:511:0
+	.loc	1 511 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:511:0
 	ldw r5, dp[totalSampsToWrite]
 .Ltmp146:
-	.loc	1 515 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
+	.loc	1 515 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
 	ldw r9, dp[outUnderflow]
 .LBB0_58:                               # %ifdone399
 .Lxtalabel43:
-	.loc	1 511 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:511:0
+	.loc	1 511 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:511:0
 .Ltmp147:
 	stw r5, dp[sampsToWrite]
 .Ltmp148:
@@ -1720,15 +1720,15 @@ handle_audio_request:                   # @handle_audio_request
 .Lxtalabel44:
 	bt r9, .LBB0_87
 # BB#60:                                # %lhsfalse450
-	.loc	1 515 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
+	.loc	1 515 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
 	ldw r0, dp[aud_data_remaining_to_device]
-	.loc	1 515 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
+	.loc	1 515 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
 	ldw r1, dp[g_curSubSlot_Out]
-	.loc	1 515 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
+	.loc	1 515 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
 	ldw r2, dp[g_numUsbChan_Out]
-	.loc	1 515 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
+	.loc	1 515 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
 	mul r1, r2, r1
-	.loc	1 515 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
+	.loc	1 515 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:515:5
 	{
 		lsu r1, r0, r1
 		nop
@@ -1739,52 +1739,52 @@ handle_audio_request:                   # @handle_audio_request
 	bf r0, .LBB0_62
 # BB#82:                                # %iftrue461
 .Lxtalabel46:
-	.loc	1 521 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:521:0
+	.loc	1 521 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:521:0
 	ldw r1, dp[unpackState]
 	{
 		mkmsk r2, 2
 		nop
 	}
-	.loc	1 521 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:521:0
+	.loc	1 521 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:521:0
 	{
 		andnot r2, r1
 		nop
 	}
-	.loc	1 521 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:521:0
+	.loc	1 521 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:521:0
 	{
 		add r0, r2, r0
 		nop
 	}
 	ldw r1, cp[.LCPI0_3]
-	.loc	1 522 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:522:0
+	.loc	1 522 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:522:0
 	{
 		and r0, r0, r1
 		nop
 	}
-	.loc	1 525 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:525:0
+	.loc	1 525 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:525:0
 	ldw r1, dp[g_aud_from_host_rdptr]
-	.loc	1 525 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:525:0
+	.loc	1 525 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:525:0
 	{
 		add r0, r0, r1
 		nop
 	}
-	.loc	1 525 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:525:0
+	.loc	1 525 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:525:0
 	stw r0, dp[g_aud_from_host_rdptr]
 	{
 		ldc r1, 0
 		nop
 	}
-	.loc	1 527 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:527:0
+	.loc	1 527 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:527:0
 	stw r1, dp[aud_data_remaining_to_device]
 	bu .LBB0_83
 .LBB0_62:                               # %iftrue442.ifdone462_crit_edge
-	.loc	1 531 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:9
+	.loc	1 531 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:9
 	ldw r0, dp[g_aud_from_host_rdptr]
 .LBB0_83:                               # %ifdone462
 .Lxtalabel47:
-	.loc	1 531 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:9
+	.loc	1 531 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:9
 	ldw r1, dp[aud_from_host_fifo_end]
-	.loc	1 531 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:9
+	.loc	1 531 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:531:9
 	{
 		lsu r1, r0, r1
 		nop
@@ -1792,42 +1792,42 @@ handle_audio_request:                   # @handle_audio_request
 	bt r1, .LBB0_85
 # BB#84:                                # %iftrue475
 .Lxtalabel48:
-	.loc	1 533 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:533:0
+	.loc	1 533 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:533:0
 	ldw r0, dp[aud_from_host_fifo_start]
-	.loc	1 533 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:533:0
+	.loc	1 533 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:533:0
 	stw r0, dp[g_aud_from_host_rdptr]
 .LBB0_85:                               # %ifdone476
 .Lxtalabel49:
-	.loc	1 536 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:536:0
+	.loc	1 536 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:536:0
 	ldw r1, dp[g_aud_from_host_wrptr]
-	.loc	1 536 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:536:0
+	.loc	1 536 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:536:0
 	{
 		eq r1, r0, r1
 		nop
 	}
-	.loc	1 536 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:536:0
+	.loc	1 536 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:536:0
 	stw r1, dp[outUnderflow]
 	bt r1, .LBB0_87
 # BB#86:                                # %iftrue485
 .Lxtalabel50:
-	.loc	1 541 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:541:0
+	.loc	1 541 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:541:0
 	#APP
 	ldw r1, r0[0]
 	#NO_APP
-	.loc	1 541 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:541:0
+	.loc	1 541 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:541:0
 	stw r1, dp[aud_data_remaining_to_device]
 	{
 		ldc r1, 0
 		nop
 	}
-	.loc	1 543 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:543:0
+	.loc	1 543 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:543:0
 	stw r1, dp[unpackState]
-	.loc	1 545 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:545:0
+	.loc	1 545 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:545:0
 	{
 		add r0, r0, 4
 		nop
 	}
-	.loc	1 545 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:545:0
+	.loc	1 545 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:545:0
 	stw r0, dp[g_aud_from_host_rdptr]
 .Ltmp149:
 .LBB0_87:                               # %return
@@ -1887,7 +1887,7 @@ handle_audio_request:                   # @handle_audio_request
 	.cc_top decouple.function,decouple
 decouple:                               # @decouple
 .Lfunc_begin1:
-	.loc	1 585 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:585:0
+	.loc	1 585 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:585:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1928,8 +1928,8 @@ decouple:                               # @decouple
 		stw r10, sp[10]
 	}
 .Ltmp161:
-	.file	3 "F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
-	.loc	3 13 0 prologue_end     # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
+	.file	3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.loc	3 13 0 prologue_end     # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
 	ldaw r0, dp[outAudioBuff]
 	#APP
 	mov r2, r0
@@ -1937,16 +1937,16 @@ decouple:                               # @decouple
 .Ltmp162:
 	#DEBUG_VALUE: t <- R2
 	#DEBUG_VALUE: x <- R2
-	.loc	3 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
+	.loc	3 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
 	ldaw r0, dp[multOut]
 	#APP
 	mov r1, r0
 	#NO_APP
 .Ltmp163:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 598 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:0
+	.loc	1 598 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:598:0
 	stw r1, dp[p_multOut]
-	.loc	3 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
+	.loc	3 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
 .Ltmp164:
 	ldaw r0, dp[multIn]
 	#APP
@@ -1954,23 +1954,23 @@ decouple:                               # @decouple
 	#NO_APP
 .Ltmp165:
 	#DEBUG_VALUE: x <- R0
-	.loc	1 601 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:0
+	.loc	1 601 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:601:0
 	stw r0, dp[p_multIn]
-	.loc	1 604 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:604:0
+	.loc	1 604 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:604:0
 	stw r2, dp[aud_from_host_fifo_start]
 	ldc r11, 1632
-	.loc	1 605 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:605:0
+	.loc	1 605 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:605:0
 	{
 		add r3, r2, r11
 		nop
 	}
-	.loc	1 605 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:605:0
+	.loc	1 605 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:605:0
 	stw r3, dp[aud_from_host_fifo_end]
-	.loc	1 606 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:606:0
+	.loc	1 606 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:606:0
 	stw r2, dp[g_aud_from_host_wrptr]
-	.loc	1 607 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:607:0
+	.loc	1 607 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:607:0
 	stw r2, dp[g_aud_from_host_rdptr]
-	.loc	3 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
+	.loc	3 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
 .Ltmp166:
 	ldaw r2, dp[audioBuffIn]
 .Ltmp167:
@@ -1980,28 +1980,28 @@ decouple:                               # @decouple
 .Ltmp168:
 	#DEBUG_VALUE: x <- R2
 	#DEBUG_VALUE: t <- R2
-	.loc	1 611 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:611:0
+	.loc	1 611 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:611:0
 	stw r2, dp[aud_to_host_fifo_start]
-	.loc	1 612 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:612:0
+	.loc	1 612 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:612:0
 	{
 		add r3, r2, r11
 		nop
 	}
-	.loc	1 612 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:612:0
+	.loc	1 612 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:612:0
 	stw r3, dp[aud_to_host_fifo_end]
-	.loc	1 613 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:613:0
+	.loc	1 613 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:613:0
 	stw r2, dp[g_aud_to_host_wrptr]
-	.loc	1 614 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:614:0
+	.loc	1 614 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:614:0
 	stw r2, dp[g_aud_to_host_rdptr]
-	.loc	1 615 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:615:0
+	.loc	1 615 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:615:0
 	{
 		add r2, r2, 4
 		nop
 	}
 .Ltmp169:
-	.loc	1 615 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:615:0
+	.loc	1 615 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:615:0
 	stw r2, dp[g_aud_to_host_dptr]
-	.loc	3 13 0                  # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
+	.loc	3 13 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
 .Ltmp170:
 	ldaw r2, dp[inZeroBuff]
 	#APP
@@ -2010,7 +2010,7 @@ decouple:                               # @decouple
 .Ltmp171:
 	#DEBUG_VALUE: x <- R2
 	#DEBUG_VALUE: t <- R2
-	.loc	1 622 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:622:0
+	.loc	1 622 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:622:0
 	stw r2, dp[g_aud_to_host_zeros]
 	ldw r2, cp[.LCPI1_0]
 .Ltmp172:
@@ -2019,7 +2019,7 @@ decouple:                               # @decouple
 		ldc r9, 0
 		nop
 	}
-	.loc	1 628 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:628:0
+	.loc	1 628 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:628:0
 .Ltmp173:
 	#APP
 	stw r2, r1[r9]
@@ -2030,7 +2030,7 @@ decouple:                               # @decouple
 	}
 .Ltmp174:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 628 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:628:0
+	.loc	1 628 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:628:0
 	#APP
 	stw r2, r1[r6]
 	#NO_APP
@@ -2038,43 +2038,43 @@ decouple:                               # @decouple
 		ldc r3, 2
 		nop
 	}
-	.loc	1 628 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:628:0
+	.loc	1 628 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:628:0
 	#APP
 	stw r2, r1[r3]
 	#NO_APP
 .Ltmp175:
-	.loc	1 635 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:635:0
+	.loc	1 635 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:635:0
 	#APP
 	stw r2, r0[r9]
 	#NO_APP
 .Ltmp176:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 635 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:635:0
+	.loc	1 635 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:635:0
 	#APP
 	stw r2, r0[r6]
 	#NO_APP
-	.loc	1 635 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:635:0
+	.loc	1 635 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:635:0
 	#APP
 	stw r2, r0[r3]
 	#NO_APP
 .Ltmp177:
-	.loc	1 639 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
+	.loc	1 639 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
 	#APP
 	ldaw r11, dp[__handle_audio_request_kernel_stack_end];ldaw r10, sp[0]; set sp,r11;stw r10, sp[0]; krestsp 0
 	#NO_APP
-	.loc	1 639 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
+	.loc	1 639 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
 	#APP
 	kentsp 20; stw r4, sp[1]; stw r9, sp[2]; krestsp 20
 	#NO_APP
-	.loc	1 639 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
+	.loc	1 639 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
 	#APP
 	ldap r11, __handle_audio_request_handler; setv res[r4],r11
 	#NO_APP
-	.loc	1 639 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
+	.loc	1 639 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
 	#APP
 	setc res[r4], 0xa; eeu res[r4]
 	#NO_APP
-	.loc	1 639 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
+	.loc	1 639 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:639:0
 	#APP
 	setsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
@@ -2091,7 +2091,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 646 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:646:0
+	.loc	1 646 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:646:0
 	#APP
 	ldw r0, dp[g_aud_from_host_flag]
 	#NO_APP
@@ -2099,7 +2099,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_from_host_flag <- R0
 .Lxta.loop_labels8:
 	# LOOPMARKER 0
-	.loc	1 644 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:644:5
+	.loc	1 644 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:644:5
 	bf r0, .LBB1_1
 .Ltmp180:
 # BB#2:                                 # %ifdone42
@@ -2108,23 +2108,23 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 650 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:650:0
+	.loc	1 650 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:650:0
 	#APP
 	stw r9, dp[g_aud_from_host_flag]
 	#NO_APP
-	.loc	1 653 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:653:0
+	.loc	1 653 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:653:0
 	ldw r0, dp[g_aud_from_host_wrptr]
-	.loc	1 653 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:653:0
+	.loc	1 653 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:653:0
 	#APP
 	stw r0, dp[g_aud_from_host_buffer]
 	#NO_APP
-	.loc	1 654 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:0
+	.loc	1 654 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:0
 	ldw r0, dp[aud_from_host_usb_ep]
 .Ltmp181:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R0
-	.loc	1 654 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:0
+	.loc	1 654 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:0
 	ldw r1, dp[g_aud_from_host_wrptr]
-	.loc	2 434 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:434:0
+	.loc	2 434 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:434:0
 .Ltmp182:
 	#APP
 	ldw r2, r0[9]
@@ -2140,24 +2140,24 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R0
-	.loc	1 654 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:0
+	.loc	1 654 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:654:0
 	{
 		add r1, r1, 4
 		nop
 	}
 .Ltmp185:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:addr <- R1
-	.loc	2 439 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:439:0
+	.loc	2 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:439:0
 	#APP
 	ldw r2, r0[0]
 	#NO_APP
 .Ltmp186:
 	#DEBUG_VALUE: chan_array_ptr <- R2
-	.loc	2 440 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:440:0
+	.loc	2 440 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:440:0
 	#APP
 	stw r1, r0[3]
 	#NO_APP
-	.loc	2 441 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:441:0
+	.loc	2 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:441:0
 	#APP
 	stw r0, r2[0]
 	#NO_APP
@@ -2169,7 +2169,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 661 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:661:0
+	.loc	1 661 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:661:0
 	#APP
 	ldw r0, dp[g_aud_to_host_flag]
 	#NO_APP
@@ -2177,7 +2177,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_flag <- R0
 .Lxta.loop_labels9:
 	# LOOPMARKER 1
-	.loc	1 659 5                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:659:5
+	.loc	1 659 5                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:659:5
 	bf r0, .LBB1_4
 .Ltmp189:
 # BB#5:                                 # %ifdone57
@@ -2186,7 +2186,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 665 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:665:0
+	.loc	1 665 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:665:0
 	#APP
 	stw r9, dp[g_aud_to_host_flag]
 	#NO_APP
@@ -2200,7 +2200,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 876 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:876:0
+	.loc	1 876 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:876:0
 	stw r6, dp[outOverflow]
 .Ltmp191:
 .LBB1_6:                                # %LoopBody72
@@ -2210,17 +2210,17 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 685 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:685:0
+	.loc	1 685 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:685:0
 	#APP
 	#decouple-default
 	#NO_APP
-	.loc	1 689 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:689:0
+	.loc	1 689 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:689:0
 	#APP
 	ldw r0, dp[g_freqChange_flag]
 	#NO_APP
 .Ltmp192:
 	#DEBUG_VALUE: tmp <- R0
-	.loc	1 690 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:690:13
+	.loc	1 690 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:690:13
 	{
 		eq r1, r0, 8
 		nop
@@ -2241,77 +2241,77 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 .Lxtalabel61:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
-	.loc	1 742 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:742:0
+	.loc	1 742 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:742:0
 	#APP
 	clrsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
-	.loc	1 743 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:743:0
+	.loc	1 743 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:743:0
 	#APP
 	stw r9, dp[g_freqChange_flag]
 	#NO_APP
-	.loc	1 745 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:745:0
+	.loc	1 745 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:745:0
 	#APP
 	ldw r0, dp[g_formatChange_NumChans]
 	#NO_APP
-	.loc	1 745 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:745:0
+	.loc	1 745 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:745:0
 	stw r0, dp[g_numUsbChan_In]
-	.loc	1 746 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:746:0
+	.loc	1 746 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:746:0
 	#APP
 	ldw r0, dp[g_formatChange_SubSlot]
 	#NO_APP
-	.loc	1 746 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:746:0
+	.loc	1 746 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:746:0
 	stw r0, dp[g_curSubSlot_In]
-	.loc	1 747 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:747:0
+	.loc	1 747 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:747:0
 	#APP
 	ldw r0, dp[g_formatChange_DataFormat]
 	#NO_APP
 .Ltmp195:
 	#DEBUG_VALUE: dataFormat <- R0
-	.loc	1 750 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:750:0
+	.loc	1 750 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:750:0
 	stw r6, dp[inUnderflow]
-	.loc	1 751 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:751:0
+	.loc	1 751 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:751:0
 	ldw r0, dp[aud_to_host_fifo_start]
 .Ltmp196:
-	.loc	1 751 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:751:0
+	.loc	1 751 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:751:0
 	#APP
 	stw r0, dp[g_aud_to_host_rdptr]
 	#NO_APP
-	.loc	1 752 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:752:0
+	.loc	1 752 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:752:0
 	ldw r0, dp[aud_to_host_fifo_start]
-	.loc	1 752 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:752:0
+	.loc	1 752 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:752:0
 	#APP
 	stw r0, dp[g_aud_to_host_wrptr]
 	#NO_APP
-	.loc	1 753 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:753:0
+	.loc	1 753 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:753:0
 	ldw r0, dp[aud_to_host_fifo_start]
-	.loc	1 753 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:753:0
+	.loc	1 753 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:753:0
 	{
 		add r0, r0, 4
 		nop
 	}
-	.loc	1 753 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:753:0
+	.loc	1 753 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:753:0
 	#APP
 	stw r0, dp[g_aud_to_host_dptr]
 	#NO_APP
-	.loc	1 756 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:756:0
+	.loc	1 756 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:756:0
 	ldw r0, dp[g_aud_to_host_zeros]
-	.loc	1 756 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:756:0
+	.loc	1 756 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:756:0
 	#APP
 	stw r0, dp[g_aud_to_host_buffer]
 	#NO_APP
-	.loc	1 759 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:759:0
+	.loc	1 759 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:759:0
 	ldw r8, dp[aud_to_host_usb_ep]
 .Ltmp197:
 	#DEBUG_VALUE: SetupZerosSendBuffer:aud_to_host_usb_ep <- R8
 	#DEBUG_VALUE: XUD_SetReady_InPtr:ep <- R8
-	.loc	1 759 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:759:0
+	.loc	1 759 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:759:0
 	ldw r7, dp[g_curSubSlot_In]
 .Ltmp198:
 	#DEBUG_VALUE: SetupZerosSendBuffer:slotSize <- R7
 	#DEBUG_VALUE: max <- undef
 	#DEBUG_VALUE: mid <- undef
 	#DEBUG_VALUE: min <- undef
-	.loc	1 554 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:554:0
+	.loc	1 554 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:554:0
 	{
 		mov r0, r5
 		ldaw r1, sp[3]
@@ -2322,23 +2322,23 @@ decouple:                               # @decouple
 	}
 .Lxta.call_labels0:
 	bl GetADCCounts
-	.loc	1 558 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:558:0
+	.loc	1 558 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:558:0
 	#APP
 	stw r9, dp[sampsToWrite]
 	#NO_APP
-	.loc	1 559 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:559:0
+	.loc	1 559 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:559:0
 	#APP
 	stw r9, dp[totalSampsToWrite]
 	#NO_APP
-	.loc	1 561 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
+	.loc	1 561 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
 	ldw r0, dp[g_numUsbChan_In]
-	.loc	1 561 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
+	.loc	1 561 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
 	mul r0, r0, r7
 	{
 		nop
 		ldw r1, sp[2]
 	}
-	.loc	1 561 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
+	.loc	1 561 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
 	mul r0, r0, r1
 .Ltmp199:
 	#DEBUG_VALUE: mid <- R0
@@ -2347,19 +2347,19 @@ decouple:                               # @decouple
 		nop
 		stw r0, sp[2]
 	}
-	.loc	1 563 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
+	.loc	1 563 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
 	ldw r1, dp[g_aud_to_host_zeros]
-	.loc	1 563 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
+	.loc	1 563 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
 	#APP
 	stw r0, r1[0]
 	#NO_APP
-	.loc	1 570 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:570:0
+	.loc	1 570 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:570:0
 	#APP
 	ldw r1, dp[g_aud_to_host_buffer]
 	#NO_APP
 .Ltmp200:
 	#DEBUG_VALUE: p <- R1
-	.loc	2 465 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:465:0
+	.loc	2 465 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:465:0
 	#APP
 	ldw r2, r8[9]
 	#NO_APP
@@ -2379,61 +2379,61 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: XUD_SetReady_InPtr:len <- R0
 	#DEBUG_VALUE: mid <- R0
 	#DEBUG_VALUE: p <- R1
-	.loc	1 572 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:572:0
+	.loc	1 572 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:572:0
 	{
 		add r1, r1, 4
 		nop
 	}
 .Ltmp203:
-	.loc	2 472 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:472:0
+	.loc	2 472 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:472:0
 	ashr r2, r0, 2
 .Ltmp204:
 	#DEBUG_VALUE: wordlength <- R2
 	#DEBUG_VALUE: wordlength <- R3
-	.loc	2 473 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:473:0
+	.loc	2 473 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:473:0
 	{
 		and r3, r0, r10
 		shl r0, r0, 5
 	}
 .Ltmp205:
-	.loc	2 475 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:475:0
+	.loc	2 475 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:475:0
 	{
 		zext r0, 7
 		nop
 	}
 .Ltmp206:
 	#DEBUG_VALUE: taillength <- R0
-	.loc	2 477 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:477:0
+	.loc	2 477 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:477:0
 	#APP
 	ldw r11, r8[0]
 	#NO_APP
 .Ltmp207:
 	#DEBUG_VALUE: chan_array_ptr <- R11
-	.loc	2 480 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:480:0
+	.loc	2 480 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:480:0
 	#APP
 	add r1, r1, r3
 	#NO_APP
 .Ltmp208:
 	#DEBUG_VALUE: tmp <- R1
-	.loc	2 482 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:482:0
+	.loc	2 482 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:482:0
 	#APP
 	neg r2, r2
 	#NO_APP
 .Ltmp209:
 	#DEBUG_VALUE: tmp2 <- R2
-	.loc	2 485 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:485:0
+	.loc	2 485 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:485:0
 	#APP
 	stw r2, r8[6]
 	#NO_APP
-	.loc	2 488 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:488:0
+	.loc	2 488 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:488:0
 	#APP
 	stw r1, r8[3]
 	#NO_APP
-	.loc	2 491 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:491:0
+	.loc	2 491 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:491:0
 	#APP
 	stw r0, r8[7]
 	#NO_APP
-	.loc	2 493 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:493:0
+	.loc	2 493 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:493:0
 	#APP
 	stw r8, r11[0]
 	#NO_APP
@@ -2441,31 +2441,31 @@ decouple:                               # @decouple
 .LBB1_18:                               # %SetupZerosSendBuffer.exit342
                                         #   in Loop: Header=BB1_6 Depth=1
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
-	.loc	1 761 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:761:0
+	.loc	1 761 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:761:0
 	#APP
 	ldw r0, dp[g_curUsbSpeed]
 	#NO_APP
 .Ltmp211:
 	#DEBUG_VALUE: usbSpeed <- R0
-	.loc	1 764 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:0
+	.loc	1 764 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:0
 	ldw r0, dp[g_numUsbChan_In]
 .Ltmp212:
 	ldc r1, 196
-	.loc	1 764 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:0
+	.loc	1 764 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:0
 	mul r0, r0, r1
-	.loc	1 764 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:0
+	.loc	1 764 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:764:0
 	stw r0, dp[g_maxPacketSize]
-	.loc	1 771 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:771:0
+	.loc	1 771 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:771:0
 	#APP
 	stw r9, dp[g_freqChange]
 	#NO_APP
-	.loc	1 772 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:772:0
+	.loc	1 772 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:772:0
 	ldw r0, dp[buffer_aud_ctl_chan]
-	.loc	1 772 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:772:0
+	.loc	1 772 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:772:0
 	#APP
 	outct res[r0],r6
 	#NO_APP
-	.loc	1 774 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:774:0
+	.loc	1 774 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:774:0
 	#APP
 	setsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
@@ -2479,55 +2479,55 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: dsdMode <- 0
-	.loc	1 782 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:782:0
+	.loc	1 782 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:782:0
 	#APP
 	clrsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
-	.loc	1 783 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:783:0
+	.loc	1 783 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:783:0
 	#APP
 	stw r9, dp[g_freqChange_flag]
 	#NO_APP
-	.loc	1 784 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:784:0
+	.loc	1 784 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:784:0
 	#APP
 	ldw r0, dp[g_formatChange_NumChans]
 	#NO_APP
-	.loc	1 784 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:784:0
+	.loc	1 784 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:784:0
 	stw r0, dp[g_numUsbChan_Out]
-	.loc	1 785 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:785:0
+	.loc	1 785 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:785:0
 	#APP
 	ldw r0, dp[g_formatChange_SubSlot]
 	#NO_APP
-	.loc	1 785 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:785:0
+	.loc	1 785 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:785:0
 	stw r0, dp[g_curSubSlot_Out]
-	.loc	1 786 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:786:0
+	.loc	1 786 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:786:0
 	#APP
 	ldw r1, dp[g_formatChange_DataFormat]
 	#NO_APP
 .Ltmp214:
 	#DEBUG_VALUE: dataFormat <- R1
-	.loc	1 787 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:787:0
+	.loc	1 787 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:787:0
 	#APP
 	ldw r0, dp[g_formatChange_SampRes]
 	#NO_APP
 .Ltmp215:
 	#DEBUG_VALUE: sampRes <- R0
-	.loc	1 790 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:790:0
+	.loc	1 790 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:790:0
 	ldw r2, dp[aud_from_host_fifo_start]
-	.loc	1 790 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:790:0
+	.loc	1 790 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:790:0
 	#APP
 	stw r2, dp[g_aud_from_host_rdptr]
 	#NO_APP
-	.loc	1 791 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:791:0
+	.loc	1 791 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:791:0
 	ldw r2, dp[aud_from_host_fifo_start]
-	.loc	1 791 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:791:0
+	.loc	1 791 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:791:0
 	#APP
 	stw r2, dp[g_aud_from_host_wrptr]
 	#NO_APP
-	.loc	1 793 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:793:0
+	.loc	1 793 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:793:0
 	stw r9, dp[unpackState]
-	.loc	1 795 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:795:0
+	.loc	1 795 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:795:0
 	stw r6, dp[outUnderflow]
-	.loc	1 796 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:796:17
+	.loc	1 796 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:796:17
 	ldw r2, dp[outOverflow]
 	bf r2, .LBB1_35
 .Ltmp216:
@@ -2541,13 +2541,13 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: dsdMode <- 0
 	#DEBUG_VALUE: dataFormat <- R1
 	#DEBUG_VALUE: sampRes <- R0
-	.loc	1 799 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:799:0
+	.loc	1 799 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:799:0
 	ldw r2, dp[aud_from_host_usb_ep]
 .Ltmp217:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R2
-	.loc	1 799 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:799:0
+	.loc	1 799 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:799:0
 	ldw r3, dp[aud_from_host_fifo_start]
-	.loc	2 434 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:434:0
+	.loc	2 434 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:434:0
 .Ltmp218:
 	#APP
 	ldw r11, r2[9]
@@ -2567,24 +2567,24 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: dataFormat <- R1
 	#DEBUG_VALUE: sampRes <- R0
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R2
-	.loc	1 799 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:799:0
+	.loc	1 799 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:799:0
 	{
 		add r3, r3, 4
 		nop
 	}
 .Ltmp221:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:addr <- R3
-	.loc	2 439 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:439:0
+	.loc	2 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:439:0
 	#APP
 	ldw r11, r2[0]
 	#NO_APP
 .Ltmp222:
 	#DEBUG_VALUE: chan_array_ptr <- R11
-	.loc	2 440 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:440:0
+	.loc	2 440 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:440:0
 	#APP
 	stw r3, r2[3]
 	#NO_APP
-	.loc	2 441 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:441:0
+	.loc	2 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:441:0
 	#APP
 	stw r2, r11[0]
 	#NO_APP
@@ -2598,7 +2598,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: dsdMode <- 0
 	#DEBUG_VALUE: dataFormat <- R1
 	#DEBUG_VALUE: sampRes <- R0
-	.loc	1 800 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:800:0
+	.loc	1 800 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:800:0
 	stw r9, dp[outOverflow]
 .Ltmp224:
 .LBB1_35:                               # %ifdone131
@@ -2612,53 +2612,53 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: dataFormat <- R1
 	#DEBUG_VALUE: sampRes <- R0
 	ldw r2, cp[.LCPI1_1]
-	.loc	1 804 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:804:17
+	.loc	1 804 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:804:17
 	{
 		eq r1, r1, r2
 		nop
 	}
 .Ltmp225:
-	.loc	1 804 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:804:17
+	.loc	1 804 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:804:17
 .Lxta.endpoint_labels10:
 	{
 		in r2, res[r4]
 		shl r1, r1, 1
 	}
-	.loc	1 811 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:811:0
+	.loc	1 811 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:811:0
 .Lxta.endpoint_labels11:
 	{
 		outct res[r4], 8
 		nop
 	}
-	.loc	1 812 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:812:0
+	.loc	1 812 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:812:0
 .Lxta.endpoint_labels12:
 	{
 		out res[r4], r1
 		nop
 	}
-	.loc	1 813 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:813:0
+	.loc	1 813 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:813:0
 .Lxta.endpoint_labels13:
 	{
 		out res[r4], r0
 		nop
 	}
-	.loc	1 816 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:816:0
+	.loc	1 816 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:816:0
 	{
 		chkct res[r4], 1
 		nop
 	}
-	.loc	1 817 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:817:0
+	.loc	1 817 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:817:0
 	ldw r0, dp[buffer_aud_ctl_chan]
 .Ltmp226:
-	.loc	1 817 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:817:0
+	.loc	1 817 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:817:0
 	#APP
 	outct res[r0],r6
 	#NO_APP
-	.loc	1 819 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:819:0
+	.loc	1 819 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:819:0
 	#APP
 	stw r9, dp[g_freqChange]
 	#NO_APP
-	.loc	1 820 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:820:0
+	.loc	1 820 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:820:0
 	#APP
 	setsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
@@ -2670,13 +2670,13 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_from_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 826 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:826:0
+	.loc	1 826 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:826:0
 	#APP
 	ldw r0, dp[g_aud_from_host_flag]
 	#NO_APP
 .Ltmp228:
 	#DEBUG_VALUE: aud_from_host_flag <- R0
-	.loc	1 827 9                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:827:9
+	.loc	1 827 9                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:827:9
 	bf r0, .LBB1_37
 .Ltmp229:
 # BB#20:                                # %iftrue148
@@ -2685,41 +2685,41 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 834 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:834:0
+	.loc	1 834 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:834:0
 	#APP
 	ldw r0, dp[g_aud_from_host_wrptr]
 	#NO_APP
 .Ltmp230:
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
-	.loc	1 835 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:835:0
+	.loc	1 835 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:835:0
 	#APP
 	ldw r1, dp[g_aud_from_host_rdptr]
 	#NO_APP
 .Ltmp231:
 	#DEBUG_VALUE: aud_from_host_rdptr <- R1
-	.loc	1 837 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:837:0
+	.loc	1 837 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:837:0
 	#APP
 	stw r9, dp[g_aud_from_host_flag]
 	#NO_APP
-	.loc	1 838 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:838:0
+	.loc	1 838 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:838:0
 	#APP
 	ldw r3, dp[g_aud_from_host_buffer]
 	#NO_APP
 .Ltmp232:
 	#DEBUG_VALUE: released_buffer <- R3
-	.loc	1 841 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:841:0
+	.loc	1 841 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:841:0
 	#APP
 	ldw r2, r3[0]
 	#NO_APP
 .Ltmp233:
 	#DEBUG_VALUE: datalength <- R2
-	.loc	1 844 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
+	.loc	1 844 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
 	ldw r11, dp[g_numUsbChan_Out]
-	.loc	1 844 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
+	.loc	1 844 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
 	ldw r7, dp[g_curSubSlot_Out]
-	.loc	1 844 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
+	.loc	1 844 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
 	mul r11, r7, r11
-	.loc	1 844 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
+	.loc	1 844 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:844:13
 	{
 		lsu r11, r2, r11
 		nop
@@ -2740,31 +2740,31 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 .Lxtalabel70:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
-	.loc	1 848 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
+	.loc	1 848 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
 	{
 		add r2, r2, 3
 		nop
 	}
-	.loc	1 848 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
+	.loc	1 848 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
 	{
 		and r2, r2, r10
 		nop
 	}
-	.loc	1 848 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
+	.loc	1 848 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 848 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
+	.loc	1 848 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:848:0
 	{
 		add r0, r0, 4
 		nop
 	}
 .Ltmp236:
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
-	.loc	1 851 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:851:17
+	.loc	1 851 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:851:17
 	ldw r2, dp[aud_from_host_fifo_end]
-	.loc	1 851 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:851:17
+	.loc	1 851 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:851:17
 	{
 		lsu r2, r0, r2
 		nop
@@ -2775,7 +2775,7 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 .Lxtalabel71:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
-	.loc	1 853 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:853:0
+	.loc	1 853 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:853:0
 	ldw r0, dp[aud_from_host_fifo_start]
 .Ltmp238:
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
@@ -2783,7 +2783,7 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 .Lxtalabel72:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
-	.loc	1 855 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:855:0
+	.loc	1 855 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:855:0
 	#APP
 	stw r0, dp[g_aud_from_host_wrptr]
 	#NO_APP
@@ -2795,14 +2795,14 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_from_host_rdptr <- R1
-	.loc	1 860 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:860:0
+	.loc	1 860 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:860:0
 	{
 		sub r1, r1, r0
 		nop
 	}
 .Ltmp240:
 	#DEBUG_VALUE: space_left <- R1
-	.loc	1 863 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
+	.loc	1 863 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
 	{
 		lss r2, r1, r6
 		nop
@@ -2815,11 +2815,11 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 863 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
+	.loc	1 863 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
 	ldw r1, dp[g_aud_from_host_rdptr]
-	.loc	1 863 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
+	.loc	1 863 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
 	ldw r2, dp[aud_from_host_fifo_start]
-	.loc	1 863 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
+	.loc	1 863 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:863:13
 	{
 		eq r1, r1, r2
 		nop
@@ -2832,11 +2832,11 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 865 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:865:0
+	.loc	1 865 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:865:0
 	ldw r1, dp[aud_from_host_fifo_end]
-	.loc	1 865 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:865:0
+	.loc	1 865 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:865:0
 	ldw r2, dp[g_aud_from_host_wrptr]
-	.loc	1 865 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:865:0
+	.loc	1 865 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:865:0
 	{
 		sub r1, r1, r2
 		nop
@@ -2849,13 +2849,13 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 868 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:868:13
+	.loc	1 868 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:868:13
 	{
 		sub r1, r1, 1
 		nop
 	}
 	ldc r2, 1026
-	.loc	1 868 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:868:13
+	.loc	1 868 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:868:13
 	{
 		lsu r1, r2, r1
 		nop
@@ -2868,15 +2868,15 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 870 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:870:0
+	.loc	1 870 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:870:0
 	#APP
 	stw r0, dp[g_aud_from_host_buffer]
 	#NO_APP
-	.loc	1 871 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:871:0
+	.loc	1 871 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:871:0
 	ldw r1, dp[aud_from_host_usb_ep]
 .Ltmp245:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R1
-	.loc	2 434 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:434:0
+	.loc	2 434 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:434:0
 	#APP
 	ldw r2, r1[9]
 	#NO_APP
@@ -2891,24 +2891,24 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R1
-	.loc	1 871 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:871:0
+	.loc	1 871 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:871:0
 	{
 		add r0, r0, 4
 		nop
 	}
 .Ltmp248:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:addr <- R0
-	.loc	2 439 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:439:0
+	.loc	2 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:439:0
 	#APP
 	ldw r2, r1[0]
 	#NO_APP
 .Ltmp249:
 	#DEBUG_VALUE: chan_array_ptr <- R2
-	.loc	2 440 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:440:0
+	.loc	2 440 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:440:0
 	#APP
 	stw r0, r1[3]
 	#NO_APP
-	.loc	2 441 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:441:0
+	.loc	2 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:441:0
 	#APP
 	stw r1, r2[0]
 	#NO_APP
@@ -2920,7 +2920,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 884 14                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:884:14
+	.loc	1 884 14                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:884:14
 	ldw r0, dp[outOverflow]
 	bf r0, .LBB1_41
 .Ltmp251:
@@ -2930,26 +2930,26 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 889 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:889:0
+	.loc	1 889 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:889:0
 	#APP
 	ldw r0, dp[g_aud_from_host_wrptr]
 	#NO_APP
 .Ltmp252:
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
-	.loc	1 890 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:890:0
+	.loc	1 890 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:890:0
 	#APP
 	ldw r1, dp[g_aud_from_host_rdptr]
 	#NO_APP
 .Ltmp253:
 	#DEBUG_VALUE: aud_from_host_rdptr <- R1
-	.loc	1 891 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:891:0
+	.loc	1 891 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:891:0
 	{
 		sub r1, r1, r0
 		nop
 	}
 .Ltmp254:
 	#DEBUG_VALUE: space_left <- R1
-	.loc	1 892 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:892:13
+	.loc	1 892 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:892:13
 	{
 		lss r2, r1, r6
 		nop
@@ -2963,7 +2963,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
 	#DEBUG_VALUE: space_left <- R1
 	ldc r2, 1632
-	.loc	1 893 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:893:0
+	.loc	1 893 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:893:0
 	{
 		add r1, r1, r2
 		nop
@@ -2977,7 +2977,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
 	ldc r2, 815
-	.loc	1 894 13                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:894:13
+	.loc	1 894 13                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:894:13
 	{
 		lss r1, r2, r1
 		nop
@@ -2991,17 +2991,17 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
-	.loc	1 897 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:897:0
+	.loc	1 897 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:897:0
 	stw r9, dp[outOverflow]
-	.loc	1 898 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:898:0
+	.loc	1 898 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:898:0
 	#APP
 	stw r0, dp[g_aud_from_host_buffer]
 	#NO_APP
-	.loc	1 899 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:899:0
+	.loc	1 899 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:899:0
 	ldw r1, dp[aud_from_host_usb_ep]
 .Ltmp258:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R1
-	.loc	2 434 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:434:0
+	.loc	2 434 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:434:0
 	#APP
 	ldw r2, r1[9]
 	#NO_APP
@@ -3017,24 +3017,24 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_from_host_wrptr <- R0
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R1
-	.loc	1 899 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:899:0
+	.loc	1 899 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:899:0
 	{
 		add r0, r0, 4
 		nop
 	}
 .Ltmp261:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:addr <- R0
-	.loc	2 439 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:439:0
+	.loc	2 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:439:0
 	#APP
 	ldw r2, r1[0]
 	#NO_APP
 .Ltmp262:
 	#DEBUG_VALUE: chan_array_ptr <- R2
-	.loc	2 440 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:440:0
+	.loc	2 440 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:440:0
 	#APP
 	stw r0, r1[3]
 	#NO_APP
-	.loc	2 441 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:441:0
+	.loc	2 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:441:0
 	#APP
 	stw r1, r2[0]
 	#NO_APP
@@ -3045,7 +3045,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 911 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:911:0
+	.loc	1 911 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:911:0
 	#APP
 	ldw r0, dp[g_aud_to_host_flag]
 	#NO_APP
@@ -3059,13 +3059,13 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 917 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:917:0
+	.loc	1 917 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:917:0
 	#APP
 	stw r9, dp[g_aud_to_host_flag]
 	#NO_APP
-	.loc	1 919 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:919:17
+	.loc	1 919 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:919:17
 	ldw r2, dp[inUnderflow]
-	.loc	1 924 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:924:0
+	.loc	1 924 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:924:0
 .Ltmp266:
 	#APP
 	ldw r1, dp[g_aud_to_host_wrptr]
@@ -3073,7 +3073,7 @@ decouple:                               # @decouple
 .Ltmp267:
 	#DEBUG_VALUE: aud_to_host_wrptr <- R1
 	#DEBUG_VALUE: aud_to_host_wrptr <- R1
-	.loc	1 950 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:950:0
+	.loc	1 950 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:950:0
 	#APP
 	ldw r0, dp[g_aud_to_host_rdptr]
 	#NO_APP
@@ -3090,14 +3090,14 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_wrptr <- R1
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
-	.loc	1 928 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:928:0
+	.loc	1 928 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:928:0
 	{
 		sub r1, r1, r0
 		nop
 	}
 .Ltmp270:
 	#DEBUG_VALUE: fill_level <- R1
-	.loc	1 930 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:930:21
+	.loc	1 930 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:930:21
 	ashr r2, r1, 32
 	bf r2, .LBB1_45
 .Ltmp271:
@@ -3108,7 +3108,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
 	#DEBUG_VALUE: fill_level <- R1
 	ldc r2, 1632
-	.loc	1 931 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:931:0
+	.loc	1 931 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:931:0
 	{
 		add r1, r1, r2
 		nop
@@ -3122,7 +3122,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
 	ldc r2, 415
-	.loc	1 933 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:933:21
+	.loc	1 933 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:933:21
 	{
 		lss r1, r2, r1
 		nop
@@ -3136,9 +3136,9 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
-	.loc	1 935 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:935:0
+	.loc	1 935 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:935:0
 	stw r9, dp[inUnderflow]
-	.loc	1 936 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:936:0
+	.loc	1 936 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:936:0
 	#APP
 	stw r0, dp[g_aud_to_host_buffer]
 	#NO_APP
@@ -3152,39 +3152,39 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_wrptr <- R1
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
-	.loc	1 953 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:953:0
+	.loc	1 953 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:953:0
 	#APP
 	ldw r2, r0[0]
 	#NO_APP
 .Ltmp275:
 	#DEBUG_VALUE: datalength <- R2
-	.loc	1 954 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
+	.loc	1 954 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
 	{
 		add r2, r2, 3
 		nop
 	}
 .Ltmp276:
-	.loc	1 954 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
+	.loc	1 954 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
 	{
 		and r2, r2, r10
 		nop
 	}
-	.loc	1 954 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
+	.loc	1 954 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
 	{
 		add r0, r0, r2
 		nop
 	}
 .Ltmp277:
-	.loc	1 954 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
+	.loc	1 954 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:954:0
 	{
 		add r0, r0, 4
 		nop
 	}
 .Ltmp278:
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
-	.loc	1 955 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:955:21
+	.loc	1 955 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:955:21
 	ldw r2, dp[aud_to_host_fifo_end]
-	.loc	1 955 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:955:21
+	.loc	1 955 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:955:21
 	{
 		lsu r2, r0, r2
 		nop
@@ -3198,7 +3198,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_wrptr <- R1
-	.loc	1 957 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:957:0
+	.loc	1 957 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:957:0
 	ldw r0, dp[aud_to_host_fifo_start]
 .Ltmp280:
 	#DEBUG_VALUE: aud_to_host_rdptr <- R0
@@ -3209,17 +3209,17 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
 	#DEBUG_VALUE: aud_to_host_wrptr <- R1
-	.loc	1 959 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:959:0
+	.loc	1 959 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:959:0
 	#APP
 	stw r0, dp[g_aud_to_host_rdptr]
 	#NO_APP
-	.loc	1 962 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:962:21
+	.loc	1 962 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:962:21
 	{
 		eq r1, r0, r1
 		nop
 	}
 .Ltmp281:
-	.loc	1 962 21                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:962:21
+	.loc	1 962 21                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:962:21
 	bf r1, .LBB1_54
 .Ltmp282:
 # BB#55:                                # %iffalse316
@@ -3228,11 +3228,11 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 968 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:968:0
+	.loc	1 968 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:968:0
 	stw r6, dp[inUnderflow]
-	.loc	1 969 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:969:0
+	.loc	1 969 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:969:0
 	ldw r0, dp[g_aud_to_host_zeros]
-	.loc	1 969 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:969:0
+	.loc	1 969 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:969:0
 	#APP
 	stw r0, dp[g_aud_to_host_buffer]
 	#NO_APP
@@ -3244,9 +3244,9 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 940 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:940:0
+	.loc	1 940 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:940:0
 	ldw r0, dp[g_aud_to_host_zeros]
-	.loc	1 940 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:940:0
+	.loc	1 940 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:940:0
 	#APP
 	stw r0, dp[g_aud_to_host_buffer]
 	#NO_APP
@@ -3266,83 +3266,83 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 .Lxtalabel95:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
-	.loc	1 692 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:692:0
+	.loc	1 692 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:692:0
 	#APP
 	stw r9, dp[g_freqChange_flag]
 	#NO_APP
-	.loc	1 693 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:693:0
+	.loc	1 693 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:693:0
 	#APP
 	ldw r5, dp[g_freqChange_sampFreq]
 	#NO_APP
 .Ltmp286:
 	#DEBUG_VALUE: SetupZerosSendBuffer:sampFreq <- R5
 	#DEBUG_VALUE: sampFreq <- R5
-	.loc	1 697 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:697:0
+	.loc	1 697 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:697:0
 	#APP
 	clrsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
-	.loc	1 698 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:698:0
+	.loc	1 698 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:698:0
 .Lxta.endpoint_labels14:
 	{
 		in r0, res[r4]
 		nop
 	}
-	.loc	1 699 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:699:0
+	.loc	1 699 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:699:0
 .Lxta.endpoint_labels15:
 	{
 		outct res[r4], 4
 		nop
 	}
-	.loc	1 700 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:700:0
+	.loc	1 700 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:700:0
 .Lxta.endpoint_labels16:
 	{
 		out res[r4], r5
 		nop
 	}
-	.loc	1 702 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:702:0
+	.loc	1 702 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:702:0
 	stw r6, dp[inUnderflow]
-	.loc	1 703 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:703:0
+	.loc	1 703 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:703:0
 	ldw r0, dp[aud_to_host_fifo_start]
-	.loc	1 703 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:703:0
+	.loc	1 703 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:703:0
 	#APP
 	stw r0, dp[g_aud_to_host_rdptr]
 	#NO_APP
-	.loc	1 704 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:704:0
+	.loc	1 704 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:704:0
 	ldw r0, dp[aud_to_host_fifo_start]
-	.loc	1 704 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:704:0
+	.loc	1 704 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:704:0
 	#APP
 	stw r0, dp[g_aud_to_host_wrptr]
 	#NO_APP
-	.loc	1 705 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:705:0
+	.loc	1 705 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:705:0
 	ldw r0, dp[aud_to_host_fifo_start]
-	.loc	1 705 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:705:0
+	.loc	1 705 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:705:0
 	{
 		add r0, r0, 4
 		nop
 	}
-	.loc	1 705 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:705:0
+	.loc	1 705 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:705:0
 	#APP
 	stw r0, dp[g_aud_to_host_dptr]
 	#NO_APP
-	.loc	1 708 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:708:0
+	.loc	1 708 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:708:0
 	ldw r0, dp[g_aud_to_host_zeros]
-	.loc	1 708 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:708:0
+	.loc	1 708 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:708:0
 	#APP
 	stw r0, dp[g_aud_to_host_buffer]
 	#NO_APP
-	.loc	1 711 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:711:0
+	.loc	1 711 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:711:0
 	ldw r8, dp[aud_to_host_usb_ep]
 .Ltmp287:
 	#DEBUG_VALUE: SetupZerosSendBuffer:aud_to_host_usb_ep <- R8
 	#DEBUG_VALUE: XUD_SetReady_InPtr:ep <- R8
-	.loc	1 711 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:711:0
+	.loc	1 711 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:711:0
 	ldw r7, dp[g_curSubSlot_In]
 .Ltmp288:
 	#DEBUG_VALUE: SetupZerosSendBuffer:slotSize <- R7
 	#DEBUG_VALUE: max <- undef
 	#DEBUG_VALUE: mid <- undef
 	#DEBUG_VALUE: min <- undef
-	.loc	1 554 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:554:0
+	.loc	1 554 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:554:0
 	{
 		mov r0, r5
 		ldaw r1, sp[3]
@@ -3353,23 +3353,23 @@ decouple:                               # @decouple
 	}
 .Lxta.call_labels1:
 	bl GetADCCounts
-	.loc	1 558 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:558:0
+	.loc	1 558 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:558:0
 	#APP
 	stw r9, dp[sampsToWrite]
 	#NO_APP
-	.loc	1 559 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:559:0
+	.loc	1 559 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:559:0
 	#APP
 	stw r9, dp[totalSampsToWrite]
 	#NO_APP
-	.loc	1 561 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
+	.loc	1 561 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
 	ldw r0, dp[g_numUsbChan_In]
-	.loc	1 561 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
+	.loc	1 561 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
 	mul r0, r0, r7
 	{
 		nop
 		ldw r1, sp[2]
 	}
-	.loc	1 561 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
+	.loc	1 561 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:561:0
 	mul r0, r0, r1
 .Ltmp289:
 	#DEBUG_VALUE: mid <- R0
@@ -3378,19 +3378,19 @@ decouple:                               # @decouple
 		nop
 		stw r0, sp[2]
 	}
-	.loc	1 563 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
+	.loc	1 563 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
 	ldw r1, dp[g_aud_to_host_zeros]
-	.loc	1 563 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
+	.loc	1 563 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:563:0
 	#APP
 	stw r0, r1[0]
 	#NO_APP
-	.loc	1 570 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:570:0
+	.loc	1 570 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:570:0
 	#APP
 	ldw r1, dp[g_aud_to_host_buffer]
 	#NO_APP
 .Ltmp290:
 	#DEBUG_VALUE: p <- R1
-	.loc	2 465 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:465:0
+	.loc	2 465 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:465:0
 	#APP
 	ldw r2, r8[9]
 	#NO_APP
@@ -3412,61 +3412,61 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: XUD_SetReady_InPtr:len <- R0
 	#DEBUG_VALUE: mid <- R0
 	#DEBUG_VALUE: p <- R1
-	.loc	1 572 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:572:0
+	.loc	1 572 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:572:0
 	{
 		add r1, r1, 4
 		nop
 	}
 .Ltmp293:
-	.loc	2 472 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:472:0
+	.loc	2 472 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:472:0
 	ashr r2, r0, 2
 .Ltmp294:
 	#DEBUG_VALUE: wordlength <- R2
 	#DEBUG_VALUE: wordlength <- R3
-	.loc	2 473 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:473:0
+	.loc	2 473 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:473:0
 	{
 		and r3, r0, r10
 		shl r0, r0, 5
 	}
 .Ltmp295:
-	.loc	2 475 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:475:0
+	.loc	2 475 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:475:0
 	{
 		zext r0, 7
 		nop
 	}
 .Ltmp296:
 	#DEBUG_VALUE: taillength <- R0
-	.loc	2 477 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:477:0
+	.loc	2 477 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:477:0
 	#APP
 	ldw r11, r8[0]
 	#NO_APP
 .Ltmp297:
 	#DEBUG_VALUE: chan_array_ptr <- R11
-	.loc	2 480 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:480:0
+	.loc	2 480 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:480:0
 	#APP
 	add r1, r1, r3
 	#NO_APP
 .Ltmp298:
 	#DEBUG_VALUE: tmp <- R1
-	.loc	2 482 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:482:0
+	.loc	2 482 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:482:0
 	#APP
 	neg r2, r2
 	#NO_APP
 .Ltmp299:
 	#DEBUG_VALUE: tmp2 <- R2
-	.loc	2 485 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:485:0
+	.loc	2 485 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:485:0
 	#APP
 	stw r2, r8[6]
 	#NO_APP
-	.loc	2 488 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:488:0
+	.loc	2 488 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:488:0
 	#APP
 	stw r1, r8[3]
 	#NO_APP
-	.loc	2 491 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:491:0
+	.loc	2 491 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:491:0
 	#APP
 	stw r0, r8[7]
 	#NO_APP
-	.loc	2 493 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:493:0
+	.loc	2 493 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:493:0
 	#APP
 	stw r8, r11[0]
 	#NO_APP
@@ -3475,25 +3475,25 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- R5
-	.loc	1 714 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:714:0
+	.loc	1 714 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:714:0
 	stw r6, dp[outUnderflow]
-	.loc	1 715 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:715:0
+	.loc	1 715 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:715:0
 	ldw r0, dp[aud_from_host_fifo_start]
-	.loc	1 715 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:715:0
+	.loc	1 715 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:715:0
 	#APP
 	stw r0, dp[g_aud_from_host_rdptr]
 	#NO_APP
-	.loc	1 716 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:716:0
+	.loc	1 716 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:716:0
 	ldw r0, dp[aud_from_host_fifo_start]
-	.loc	1 716 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:716:0
+	.loc	1 716 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:716:0
 	#APP
 	stw r0, dp[g_aud_from_host_wrptr]
 	#NO_APP
-	.loc	1 717 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:717:0
+	.loc	1 717 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:717:0
 	#APP
 	stw r9, dp[aud_data_remaining_to_device]
 	#NO_APP
-	.loc	1 719 17                # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:719:17
+	.loc	1 719 17                # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:719:17
 	ldw r0, dp[outOverflow]
 	bf r0, .LBB1_15
 .Ltmp301:
@@ -3502,13 +3502,13 @@ decouple:                               # @decouple
 .Lxtalabel97:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- R5
-	.loc	1 722 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:722:0
+	.loc	1 722 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:722:0
 	ldw r0, dp[aud_from_host_usb_ep]
 .Ltmp302:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R0
-	.loc	1 722 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:722:0
+	.loc	1 722 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:722:0
 	ldw r1, dp[aud_from_host_fifo_start]
-	.loc	2 434 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:434:0
+	.loc	2 434 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:434:0
 .Ltmp303:
 	#APP
 	ldw r2, r0[9]
@@ -3523,24 +3523,24 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- R5
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:ep <- R0
-	.loc	1 722 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:722:0
+	.loc	1 722 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:722:0
 	{
 		add r1, r1, 4
 		nop
 	}
 .Ltmp306:
 	#DEBUG_VALUE: XUD_SetReady_OutPtr:addr <- R1
-	.loc	2 439 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:439:0
+	.loc	2 439 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:439:0
 	#APP
 	ldw r2, r0[0]
 	#NO_APP
 .Ltmp307:
 	#DEBUG_VALUE: chan_array_ptr <- R2
-	.loc	2 440 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:440:0
+	.loc	2 440 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:440:0
 	#APP
 	stw r1, r0[3]
 	#NO_APP
-	.loc	2 441 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:441:0
+	.loc	2 441 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:441:0
 	#APP
 	stw r0, r2[0]
 	#NO_APP
@@ -3549,7 +3549,7 @@ decouple:                               # @decouple
                                         #   in Loop: Header=BB1_6 Depth=1
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- R5
-	.loc	1 723 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:723:0
+	.loc	1 723 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:723:0
 	stw r9, dp[outOverflow]
 .Ltmp309:
 .LBB1_15:                               # %ifdone90
@@ -3557,26 +3557,26 @@ decouple:                               # @decouple
 .Lxtalabel99:
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- R5
-	.loc	1 727 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:727:0
+	.loc	1 727 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:727:0
 	{
 		chkct res[r4], 1
 		nop
 	}
-	.loc	1 729 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:729:0
+	.loc	1 729 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:729:0
 	#APP
 	stw r9, dp[g_freqChange]
 	#NO_APP
-	.loc	1 730 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:730:0
+	.loc	1 730 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:730:0
 	ldw r0, dp[buffer_aud_ctl_chan]
-	.loc	1 730 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:730:0
+	.loc	1 730 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:730:0
 	#APP
 	outct res[r0],r6
 	#NO_APP
-	.loc	1 732 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:732:0
+	.loc	1 732 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:732:0
 	#APP
 	setsr (((0) & ~(((1 << 0x1) - 1) << 0x1)) | (((1) << 0x1) & (((1 << 0x1) - 1) << 0x1)))
 	#NO_APP
-	.loc	1 734 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:734:0
+	.loc	1 734 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:734:0
 	stw r9, dp[speedRem]
 	bu .LBB1_6
 .Ltmp310:
@@ -3586,7 +3586,7 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 964 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:964:0
+	.loc	1 964 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:964:0
 	#APP
 	stw r0, dp[g_aud_to_host_buffer]
 	#NO_APP
@@ -3597,24 +3597,24 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: decouple:c_mix_out <- R4
 	#DEBUG_VALUE: sampFreq <- 44100
 	#DEBUG_VALUE: aud_to_host_flag <- 0
-	.loc	1 976 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:976:0
+	.loc	1 976 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:976:0
 	#APP
 	ldw r2, dp[g_aud_to_host_buffer]
 	#NO_APP
 .Ltmp312:
 	#DEBUG_VALUE: p <- R2
-	.loc	1 977 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:977:0
+	.loc	1 977 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:977:0
 	#APP
 	ldw r1, r2[0]
 	#NO_APP
 .Ltmp313:
 	#DEBUG_VALUE: len <- R1
 	#DEBUG_VALUE: XUD_SetReady_InPtr:len <- R1
-	.loc	1 978 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:978:0
+	.loc	1 978 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:978:0
 	ldw r0, dp[aud_to_host_usb_ep]
 .Ltmp314:
 	#DEBUG_VALUE: XUD_SetReady_InPtr:ep <- R0
-	.loc	2 465 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:465:0
+	.loc	2 465 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:465:0
 	#APP
 	ldw r3, r0[9]
 	#NO_APP
@@ -3632,62 +3632,62 @@ decouple:                               # @decouple
 	#DEBUG_VALUE: XUD_SetReady_InPtr:len <- R1
 	#DEBUG_VALUE: len <- R1
 	#DEBUG_VALUE: XUD_SetReady_InPtr:ep <- R0
-	.loc	1 978 0                 # F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:978:0
+	.loc	1 978 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc:978:0
 	{
 		add r2, r2, 4
 		nop
 	}
 .Ltmp317:
 	#DEBUG_VALUE: XUD_SetReady_InPtr:addr <- R2
-	.loc	2 472 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:472:0
+	.loc	2 472 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:472:0
 	ashr r3, r1, 2
 .Ltmp318:
 	#DEBUG_VALUE: wordlength <- R3
 	#DEBUG_VALUE: wordlength <- R11
-	.loc	2 473 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:473:0
+	.loc	2 473 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:473:0
 	{
 		and r11, r1, r10
 		shl r1, r1, 5
 	}
 .Ltmp319:
-	.loc	2 475 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:475:0
+	.loc	2 475 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:475:0
 	{
 		zext r1, 7
 		nop
 	}
 .Ltmp320:
 	#DEBUG_VALUE: taillength <- R1
-	.loc	2 477 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:477:0
+	.loc	2 477 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:477:0
 	#APP
 	ldw r7, r0[0]
 	#NO_APP
 .Ltmp321:
 	#DEBUG_VALUE: chan_array_ptr <- R7
-	.loc	2 480 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:480:0
+	.loc	2 480 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:480:0
 	#APP
 	add r2, r2, r11
 	#NO_APP
 .Ltmp322:
 	#DEBUG_VALUE: tmp <- R2
-	.loc	2 482 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:482:0
+	.loc	2 482 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:482:0
 	#APP
 	neg r3, r3
 	#NO_APP
 .Ltmp323:
 	#DEBUG_VALUE: tmp2 <- R3
-	.loc	2 485 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:485:0
+	.loc	2 485 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:485:0
 	#APP
 	stw r3, r0[6]
 	#NO_APP
-	.loc	2 488 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:488:0
+	.loc	2 488 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:488:0
 	#APP
 	stw r2, r0[3]
 	#NO_APP
-	.loc	2 491 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:491:0
+	.loc	2 491 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:491:0
 	#APP
 	stw r1, r0[7]
 	#NO_APP
-	.loc	2 493 0                 # F:/Projects/UI-01_sw1_hw1/module_xud/include\xud.h:493:0
+	.loc	2 493 0                 # /home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h:493:0
 	#APP
 	stw r0, r7[0]
 	#NO_APP
@@ -4140,14 +4140,14 @@ tmpBuffer:
 .Ldebug_end2:
 	.text
 .Ldebug_end3:
-	.file	4 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\timer.h"
+	.file	4 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 .Linfo_string2:
-.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"multOut"
 .Linfo_string4:
@@ -9189,16 +9189,16 @@ tmpBuffer:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	554
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	554
 	.long	.Lxta.call_labels1
@@ -9208,11 +9208,11 @@ tmpBuffer:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	1
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 	.ascii	"mixer_request"
 	.byte	0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	171
 	.long	.Laddr_end1-.Laddr_start0
@@ -9224,7 +9224,7 @@ tmpBuffer:
 .Laddr_end1:
 	.ascii	"mixer_request"
 	.byte	0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	200
 	.long	.Laddr_end3-.Laddr_start2
@@ -9236,7 +9236,7 @@ tmpBuffer:
 .Laddr_end3:
 	.ascii	"mixer_request"
 	.byte	0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	232
 	.long	.Laddr_end5-.Laddr_start4
@@ -9248,7 +9248,7 @@ tmpBuffer:
 .Laddr_end5:
 	.ascii	"out_underflow"
 	.byte	0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	138
 	.long	.Laddr_end7-.Laddr_start6
@@ -9267,106 +9267,106 @@ tmpBuffer:
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_7,.Lxta.endpoint_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	131
 	.long	.Lxta.endpoint_labels0
 .cc_bottom cc_7
 .cc_top cc_8,.Lxta.endpoint_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	142
 	.long	.Lxta.endpoint_labels1
 .cc_bottom cc_8
 .cc_top cc_9,.Lxta.endpoint_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	142
 	.long	.Lxta.endpoint_labels2
 .cc_bottom cc_9
 .cc_top cc_10,.Lxta.endpoint_labels5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	186
 	.long	.Lxta.endpoint_labels5
 .cc_bottom cc_10
 .cc_top cc_11,.Lxta.endpoint_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	217
 	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_11
 .cc_top cc_12,.Lxta.endpoint_labels3
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	268
 	.long	.Lxta.endpoint_labels3
 .cc_bottom cc_12
 .cc_top cc_13,.Lxta.endpoint_labels6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	285
 	.long	.Lxta.endpoint_labels6
 .cc_bottom cc_13
 .cc_top cc_14,.Lxta.endpoint_labels8
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	336
 	.long	.Lxta.endpoint_labels8
 .cc_bottom cc_14
 .cc_top cc_15,.Lxta.endpoint_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	371
 	.long	.Lxta.endpoint_labels7
 .cc_bottom cc_15
 .cc_top cc_16,.Lxta.endpoint_labels9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	418
 	.long	.Lxta.endpoint_labels9
 .cc_bottom cc_16
 .cc_top cc_17,.Lxta.endpoint_labels14
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	698
 	.long	.Lxta.endpoint_labels14
 .cc_bottom cc_17
 .cc_top cc_18,.Lxta.endpoint_labels15
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	699
 	.long	.Lxta.endpoint_labels15
 .cc_bottom cc_18
 .cc_top cc_19,.Lxta.endpoint_labels16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	700
 	.long	.Lxta.endpoint_labels16
 .cc_bottom cc_19
 .cc_top cc_20,.Lxta.endpoint_labels10
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	810
 	.long	.Lxta.endpoint_labels10
 .cc_bottom cc_20
 .cc_top cc_21,.Lxta.endpoint_labels11
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	811
 	.long	.Lxta.endpoint_labels11
 .cc_bottom cc_21
 .cc_top cc_22,.Lxta.endpoint_labels12
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	812
 	.long	.Lxta.endpoint_labels12
 .cc_bottom cc_22
 .cc_top cc_23,.Lxta.endpoint_labels13
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	813
 	.long	.Lxta.endpoint_labels13
@@ -9376,3916 +9376,3916 @@ tmpBuffer:
 .Lentries_start6:
 	.long	.Lentries_end7-.Lentries_start6
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_24,.Lxtalabel0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	126
 	.long	128
 	.long	.Lxtalabel0
 .cc_bottom cc_24
 .cc_top cc_25,.Lxtalabel0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	131
 	.long	131
 	.long	.Lxtalabel0
 .cc_bottom cc_25
 .cc_top cc_26,.Lxtalabel0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	136
 	.long	136
 	.long	.Lxtalabel0
 .cc_bottom cc_26
 .cc_top cc_27,.Lxtalabel0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	137
 	.long	137
 	.long	.Lxtalabel0
 .cc_bottom cc_27
 .cc_top cc_28,.Lxtalabel0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	140
 	.long	140
 	.long	.Lxtalabel0
 .cc_bottom cc_28
 .cc_top cc_29,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	141
 	.long	141
 	.long	.Lxtalabel1
 .cc_bottom cc_29
 .cc_top cc_30,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	141
 	.long	141
 	.long	.Lxtalabel1
 .cc_bottom cc_30
 .cc_top cc_31,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	141
 	.long	141
 	.long	.Lxtalabel2
 .cc_bottom cc_31
 .cc_top cc_32,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	141
 	.long	141
 	.long	.Lxtalabel2
 .cc_bottom cc_32
 .cc_top cc_33,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	142
 	.long	142
 	.long	.Lxtalabel1
 .cc_bottom cc_33
-.cc_top cc_34,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	142
-	.long	142
-	.long	.Lxtalabel1
-.cc_bottom cc_34
-.cc_top cc_35,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_34,.Lxtalabel2
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	142
 	.long	142
 	.long	.Lxtalabel2
+.cc_bottom cc_34
+.cc_top cc_35,.Lxtalabel1
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	142
+	.long	142
+	.long	.Lxtalabel1
 .cc_bottom cc_35
 .cc_top cc_36,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	142
 	.long	142
 	.long	.Lxtalabel2
 .cc_bottom cc_36
 .cc_top cc_37,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	143
 	.long	143
 	.long	.Lxtalabel1
 .cc_bottom cc_37
-.cc_top cc_38,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_38,.Lxtalabel2
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	143
 	.long	143
-	.long	.Lxtalabel1
+	.long	.Lxtalabel2
 .cc_bottom cc_38
 .cc_top cc_39,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	143
 	.long	143
 	.long	.Lxtalabel2
 .cc_bottom cc_39
-.cc_top cc_40,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_40,.Lxtalabel1
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	143
 	.long	143
-	.long	.Lxtalabel2
+	.long	.Lxtalabel1
 .cc_bottom cc_40
 .cc_top cc_41,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	146
 	.long	147
 	.long	.Lxtalabel1
 .cc_bottom cc_41
 .cc_top cc_42,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	146
 	.long	147
 	.long	.Lxtalabel2
 .cc_bottom cc_42
 .cc_top cc_43,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	148
 	.long	150
 	.long	.Lxtalabel1
 .cc_bottom cc_43
 .cc_top cc_44,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	148
 	.long	150
 	.long	.Lxtalabel2
 .cc_bottom cc_44
 .cc_top cc_45,.Lxtalabel1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	153
 	.long	153
 	.long	.Lxtalabel1
 .cc_bottom cc_45
 .cc_top cc_46,.Lxtalabel2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	153
 	.long	153
 	.long	.Lxtalabel2
 .cc_bottom cc_46
 .cc_top cc_47,.Lxtalabel3
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	154
 	.long	157
 	.long	.Lxtalabel3
 .cc_bottom cc_47
-.cc_top cc_48,.Lxtalabel4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	159
-	.long	162
-	.long	.Lxtalabel4
-.cc_bottom cc_48
-.cc_top cc_49,.Lxtalabel13
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_48,.Lxtalabel13
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	159
 	.long	162
 	.long	.Lxtalabel13
+.cc_bottom cc_48
+.cc_top cc_49,.Lxtalabel4
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	159
+	.long	162
+	.long	.Lxtalabel4
 .cc_bottom cc_49
 .cc_top cc_50,.Lxtalabel4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	164
 	.long	164
 	.long	.Lxtalabel4
 .cc_bottom cc_50
 .cc_top cc_51,.Lxtalabel13
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	164
 	.long	164
 	.long	.Lxtalabel13
 .cc_bottom cc_51
 .cc_top cc_52,.Lxtalabel15
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	169
 	.long	169
 	.long	.Lxtalabel15
 .cc_bottom cc_52
 .cc_top cc_53,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	170
 	.long	170
 	.long	.Lxtalabel18
 .cc_bottom cc_53
 .cc_top cc_54,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	172
 	.long	175
 	.long	.Lxtalabel18
 .cc_bottom cc_54
 .cc_top cc_55,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	177
 	.long	177
 	.long	.Lxtalabel18
 .cc_bottom cc_55
 .cc_top cc_56,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	178
 	.long	179
 	.long	.Lxtalabel18
 .cc_bottom cc_56
 .cc_top cc_57,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	182
 	.long	183
 	.long	.Lxtalabel18
 .cc_bottom cc_57
 .cc_top cc_58,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	185
 	.long	185
 	.long	.Lxtalabel18
 .cc_bottom cc_58
 .cc_top cc_59,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	186
 	.long	186
 	.long	.Lxtalabel18
 .cc_bottom cc_59
 .cc_top cc_60,.Lxtalabel18
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	190
 	.long	190
 	.long	.Lxtalabel18
 .cc_bottom cc_60
 .cc_top cc_61,.Lxtalabel14
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	198
 	.long	198
 	.long	.Lxtalabel14
 .cc_bottom cc_61
 .cc_top cc_62,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	199
 	.long	199
 	.long	.Lxtalabel16
 .cc_bottom cc_62
 .cc_top cc_63,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	201
 	.long	204
 	.long	.Lxtalabel16
 .cc_bottom cc_63
 .cc_top cc_64,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	206
 	.long	206
 	.long	.Lxtalabel16
 .cc_bottom cc_64
 .cc_top cc_65,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	207
 	.long	207
 	.long	.Lxtalabel16
 .cc_bottom cc_65
 .cc_top cc_66,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	210
 	.long	212
 	.long	.Lxtalabel16
 .cc_bottom cc_66
 .cc_top cc_67,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	214
 	.long	214
 	.long	.Lxtalabel16
 .cc_bottom cc_67
 .cc_top cc_68,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	217
 	.long	217
 	.long	.Lxtalabel16
 .cc_bottom cc_68
 .cc_top cc_69,.Lxtalabel16
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	221
 	.long	221
 	.long	.Lxtalabel16
 .cc_bottom cc_69
 .cc_top cc_70,.Lxtalabel5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	230
 	.long	230
 	.long	.Lxtalabel5
 .cc_bottom cc_70
 .cc_top cc_71,.Lxtalabel7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	231
 	.long	231
 	.long	.Lxtalabel7
 .cc_bottom cc_71
 .cc_top cc_72,.Lxtalabel6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	231
 	.long	231
 	.long	.Lxtalabel6
 .cc_bottom cc_72
-.cc_top cc_73,.Lxtalabel6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_73,.Lxtalabel7
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	233
 	.long	236
-	.long	.Lxtalabel6
+	.long	.Lxtalabel7
 .cc_bottom cc_73
-.cc_top cc_74,.Lxtalabel7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_74,.Lxtalabel6
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	233
 	.long	236
-	.long	.Lxtalabel7
+	.long	.Lxtalabel6
 .cc_bottom cc_74
-.cc_top cc_75,.Lxtalabel6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_75,.Lxtalabel7
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	239
+	.long	241
+	.long	.Lxtalabel7
+.cc_bottom cc_75
+.cc_top cc_76,.Lxtalabel6
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	239
 	.long	241
 	.long	.Lxtalabel6
-.cc_bottom cc_75
-.cc_top cc_76,.Lxtalabel7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	239
-	.long	241
-	.long	.Lxtalabel7
 .cc_bottom cc_76
 .cc_top cc_77,.Lxtalabel8
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	242
 	.long	242
 	.long	.Lxtalabel8
 .cc_bottom cc_77
 .cc_top cc_78,.Lxtalabel8
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	243
 	.long	246
 	.long	.Lxtalabel8
 .cc_bottom cc_78
 .cc_top cc_79,.Lxtalabel9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	247
 	.long	247
 	.long	.Lxtalabel9
 .cc_bottom cc_79
 .cc_top cc_80,.Lxtalabel9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	248
 	.long	248
 	.long	.Lxtalabel9
 .cc_bottom cc_80
 .cc_top cc_81,.Lxtalabel9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	249
 	.long	252
 	.long	.Lxtalabel9
 .cc_bottom cc_81
 .cc_top cc_82,.Lxtalabel10
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	253
 	.long	253
 	.long	.Lxtalabel10
 .cc_bottom cc_82
 .cc_top cc_83,.Lxtalabel10
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	254
 	.long	254
 	.long	.Lxtalabel10
 .cc_bottom cc_83
 .cc_top cc_84,.Lxtalabel10
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	255
 	.long	258
 	.long	.Lxtalabel10
 .cc_bottom cc_84
 .cc_top cc_85,.Lxtalabel11
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	259
 	.long	261
 	.long	.Lxtalabel11
 .cc_bottom cc_85
 .cc_top cc_86,.Lxtalabel12
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	262
 	.long	262
 	.long	.Lxtalabel12
 .cc_bottom cc_86
 .cc_top cc_87,.Lxtalabel12
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	265
 	.long	267
 	.long	.Lxtalabel12
 .cc_bottom cc_87
 .cc_top cc_88,.Lxtalabel12
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	268
 	.long	268
 	.long	.Lxtalabel12
 .cc_bottom cc_88
 .cc_top cc_89,.Lxtalabel12
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	273
 	.long	273
 	.long	.Lxtalabel12
 .cc_bottom cc_89
 .cc_top cc_90,.Lxtalabel17
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	283
 	.long	283
 	.long	.Lxtalabel17
 .cc_bottom cc_90
 .cc_top cc_91,.Lxtalabel19
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	283
 	.long	283
 	.long	.Lxtalabel19
 .cc_bottom cc_91
 .cc_top cc_92,.Lxtalabel20
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	284
 	.long	284
 	.long	.Lxtalabel20
 .cc_bottom cc_92
 .cc_top cc_93,.Lxtalabel20
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	285
 	.long	285
 	.long	.Lxtalabel20
 .cc_bottom cc_93
 .cc_top cc_94,.Lxtalabel20
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	286
 	.long	286
 	.long	.Lxtalabel20
 .cc_bottom cc_94
 .cc_top cc_95,.Lxtalabel21
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	289
 	.long	290
 	.long	.Lxtalabel21
 .cc_bottom cc_95
 .cc_top cc_96,.Lxtalabel22
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel22
 .cc_bottom cc_96
 .cc_top cc_97,.Lxtalabel22
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	296
 	.long	298
 	.long	.Lxtalabel22
 .cc_bottom cc_97
 .cc_top cc_98,.Lxtalabel23
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	327
 	.long	327
 	.long	.Lxtalabel23
 .cc_bottom cc_98
 .cc_top cc_99,.Lxtalabel23
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	331
 	.long	331
 	.long	.Lxtalabel23
 .cc_bottom cc_99
 .cc_top cc_100,.Lxtalabel23
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	333
 	.long	333
 	.long	.Lxtalabel23
 .cc_bottom cc_100
 .cc_top cc_101,.Lxtalabel32
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	334
 	.long	334
 	.long	.Lxtalabel32
 .cc_bottom cc_101
 .cc_top cc_102,.Lxtalabel32
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	336
 	.long	336
 	.long	.Lxtalabel32
 .cc_bottom cc_102
 .cc_top cc_103,.Lxtalabel32
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	340
 	.long	345
 	.long	.Lxtalabel32
 .cc_bottom cc_103
 .cc_top cc_104,.Lxtalabel32
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	354
 	.long	354
 	.long	.Lxtalabel32
 .cc_bottom cc_104
 .cc_top cc_105,.Lxtalabel32
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	355
 	.long	356
 	.long	.Lxtalabel32
 .cc_bottom cc_105
 .cc_top cc_106,.Lxtalabel24
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	368
 	.long	368
 	.long	.Lxtalabel24
 .cc_bottom cc_106
 .cc_top cc_107,.Lxtalabel25
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	369
 	.long	369
 	.long	.Lxtalabel25
 .cc_bottom cc_107
 .cc_top cc_108,.Lxtalabel26
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	369
 	.long	369
 	.long	.Lxtalabel26
 .cc_bottom cc_108
 .cc_top cc_109,.Lxtalabel25
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	371
 	.long	371
 	.long	.Lxtalabel25
 .cc_bottom cc_109
 .cc_top cc_110,.Lxtalabel26
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	371
 	.long	371
 	.long	.Lxtalabel26
 .cc_bottom cc_110
 .cc_top cc_111,.Lxtalabel25
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	374
 	.long	379
 	.long	.Lxtalabel25
 .cc_bottom cc_111
 .cc_top cc_112,.Lxtalabel26
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	374
 	.long	379
 	.long	.Lxtalabel26
 .cc_bottom cc_112
 .cc_top cc_113,.Lxtalabel25
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	382
 	.long	384
 	.long	.Lxtalabel25
 .cc_bottom cc_113
 .cc_top cc_114,.Lxtalabel26
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	382
 	.long	384
 	.long	.Lxtalabel26
 .cc_bottom cc_114
 .cc_top cc_115,.Lxtalabel27
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	385
 	.long	387
 	.long	.Lxtalabel27
 .cc_bottom cc_115
 .cc_top cc_116,.Lxtalabel28
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	388
 	.long	388
 	.long	.Lxtalabel28
 .cc_bottom cc_116
 .cc_top cc_117,.Lxtalabel28
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	389
 	.long	389
 	.long	.Lxtalabel28
 .cc_bottom cc_117
 .cc_top cc_118,.Lxtalabel28
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	390
 	.long	390
 	.long	.Lxtalabel28
 .cc_bottom cc_118
 .cc_top cc_119,.Lxtalabel28
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	391
 	.long	391
 	.long	.Lxtalabel28
 .cc_bottom cc_119
 .cc_top cc_120,.Lxtalabel28
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	392
 	.long	394
 	.long	.Lxtalabel28
 .cc_bottom cc_120
 .cc_top cc_121,.Lxtalabel29
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	395
 	.long	395
 	.long	.Lxtalabel29
 .cc_bottom cc_121
 .cc_top cc_122,.Lxtalabel29
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	396
 	.long	396
 	.long	.Lxtalabel29
 .cc_bottom cc_122
 .cc_top cc_123,.Lxtalabel29
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	397
 	.long	400
 	.long	.Lxtalabel29
 .cc_bottom cc_123
 .cc_top cc_124,.Lxtalabel30
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	401
 	.long	401
 	.long	.Lxtalabel30
 .cc_bottom cc_124
 .cc_top cc_125,.Lxtalabel30
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	402
 	.long	402
 	.long	.Lxtalabel30
 .cc_bottom cc_125
 .cc_top cc_126,.Lxtalabel30
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	403
 	.long	405
 	.long	.Lxtalabel30
 .cc_bottom cc_126
 .cc_top cc_127,.Lxtalabel31
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	406
 	.long	407
 	.long	.Lxtalabel31
 .cc_bottom cc_127
 .cc_top cc_128,.Lxtalabel24
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	416
 	.long	416
 	.long	.Lxtalabel24
 .cc_bottom cc_128
 .cc_top cc_129,.Lxtalabel33
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	416
 	.long	416
 	.long	.Lxtalabel33
 .cc_bottom cc_129
 .cc_top cc_130,.Lxtalabel34
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	417
 	.long	417
 	.long	.Lxtalabel34
 .cc_bottom cc_130
 .cc_top cc_131,.Lxtalabel34
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	418
 	.long	418
 	.long	.Lxtalabel34
 .cc_bottom cc_131
 .cc_top cc_132,.Lxtalabel34
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	419
 	.long	419
 	.long	.Lxtalabel34
 .cc_bottom cc_132
 .cc_top cc_133,.Lxtalabel35
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	421
 	.long	422
 	.long	.Lxtalabel35
 .cc_bottom cc_133
 .cc_top cc_134,.Lxtalabel35
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	424
 	.long	424
 	.long	.Lxtalabel35
 .cc_bottom cc_134
 .cc_top cc_135,.Lxtalabel35
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	427
 	.long	427
 	.long	.Lxtalabel35
 .cc_bottom cc_135
-.cc_top cc_136,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	428
-	.long	430
-	.long	.Lxtalabel36
-.cc_bottom cc_136
-.cc_top cc_137,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_136,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	428
 	.long	430
 	.long	.Lxtalabel37
-.cc_bottom cc_137
-.cc_top cc_138,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_136
+.cc_top cc_137,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	428
 	.long	430
 	.long	.Lxtalabel38
+.cc_bottom cc_137
+.cc_top cc_138,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	428
+	.long	430
+	.long	.Lxtalabel36
 .cc_bottom cc_138
 .cc_top cc_139,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	428
 	.long	430
 	.long	.Lxtalabel39
 .cc_bottom cc_139
-.cc_top cc_140,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_140,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	433
 	.long	433
-	.long	.Lxtalabel36
+	.long	.Lxtalabel39
 .cc_bottom cc_140
 .cc_top cc_141,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	433
 	.long	433
 	.long	.Lxtalabel37
 .cc_bottom cc_141
 .cc_top cc_142,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	433
 	.long	433
 	.long	.Lxtalabel38
 .cc_bottom cc_142
-.cc_top cc_143,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_143,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	433
 	.long	433
-	.long	.Lxtalabel39
+	.long	.Lxtalabel36
 .cc_bottom cc_143
-.cc_top cc_144,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_144,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	435
 	.long	435
-	.long	.Lxtalabel36
+	.long	.Lxtalabel37
 .cc_bottom cc_144
-.cc_top cc_145,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_145,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	435
+	.long	435
+	.long	.Lxtalabel36
+.cc_bottom cc_145
+.cc_top cc_146,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	435
+	.long	435
+	.long	.Lxtalabel39
+.cc_bottom cc_146
+.cc_top cc_147,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	435
 	.long	435
 	.long	.Lxtalabel38
-.cc_bottom cc_145
-.cc_top cc_146,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	435
-	.long	435
-	.long	.Lxtalabel37
-.cc_bottom cc_146
-.cc_top cc_147,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	435
-	.long	435
-	.long	.Lxtalabel39
 .cc_bottom cc_147
-.cc_top cc_148,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_148,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	438
 	.long	438
-	.long	.Lxtalabel39
+	.long	.Lxtalabel38
 .cc_bottom cc_148
-.cc_top cc_149,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_149,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	438
+	.long	438
+	.long	.Lxtalabel37
+.cc_bottom cc_149
+.cc_top cc_150,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	438
 	.long	438
 	.long	.Lxtalabel36
-.cc_bottom cc_149
-.cc_top cc_150,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	438
-	.long	438
-	.long	.Lxtalabel37
 .cc_bottom cc_150
-.cc_top cc_151,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_151,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	438
 	.long	438
-	.long	.Lxtalabel38
+	.long	.Lxtalabel39
 .cc_bottom cc_151
 .cc_top cc_152,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	441
 	.long	441
 	.long	.Lxtalabel36
 .cc_bottom cc_152
 .cc_top cc_153,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	441
 	.long	441
 	.long	.Lxtalabel38
 .cc_bottom cc_153
 .cc_top cc_154,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	441
 	.long	441
 	.long	.Lxtalabel37
 .cc_bottom cc_154
 .cc_top cc_155,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	441
 	.long	441
 	.long	.Lxtalabel39
 .cc_bottom cc_155
-.cc_top cc_156,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	444
-	.long	444
-	.long	.Lxtalabel36
-.cc_bottom cc_156
-.cc_top cc_157,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	444
-	.long	444
-	.long	.Lxtalabel38
-.cc_bottom cc_157
-.cc_top cc_158,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_156,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	444
 	.long	444
 	.long	.Lxtalabel37
-.cc_bottom cc_158
-.cc_top cc_159,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_156
+.cc_top cc_157,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	444
 	.long	444
 	.long	.Lxtalabel39
-.cc_bottom cc_159
-.cc_top cc_160,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_157
+.cc_top cc_158,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
-	.long	445
-	.long	447
+	.long	444
+	.long	444
 	.long	.Lxtalabel38
-.cc_bottom cc_160
-.cc_top cc_161,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_158
+.cc_top cc_159,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
-	.long	445
-	.long	447
-	.long	.Lxtalabel37
-.cc_bottom cc_161
-.cc_top cc_162,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.long	444
+	.long	444
+	.long	.Lxtalabel36
+.cc_bottom cc_159
+.cc_top cc_160,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	445
 	.long	447
 	.long	.Lxtalabel36
+.cc_bottom cc_160
+.cc_top cc_161,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	445
+	.long	447
+	.long	.Lxtalabel38
+.cc_bottom cc_161
+.cc_top cc_162,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	445
+	.long	447
+	.long	.Lxtalabel37
 .cc_bottom cc_162
 .cc_top cc_163,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	445
 	.long	447
 	.long	.Lxtalabel39
 .cc_bottom cc_163
 .cc_top cc_164,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	449
 	.long	449
 	.long	.Lxtalabel37
 .cc_bottom cc_164
-.cc_top cc_165,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_165,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	449
 	.long	449
-	.long	.Lxtalabel38
+	.long	.Lxtalabel39
 .cc_bottom cc_165
 .cc_top cc_166,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	449
 	.long	449
 	.long	.Lxtalabel36
 .cc_bottom cc_166
-.cc_top cc_167,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_167,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	449
 	.long	449
-	.long	.Lxtalabel39
+	.long	.Lxtalabel38
 .cc_bottom cc_167
-.cc_top cc_168,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_168,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	455
 	.long	455
-	.long	.Lxtalabel36
+	.long	.Lxtalabel37
 .cc_bottom cc_168
-.cc_top cc_169,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	455
-	.long	455
-	.long	.Lxtalabel38
-.cc_bottom cc_169
-.cc_top cc_170,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	455
-	.long	455
-	.long	.Lxtalabel37
-.cc_bottom cc_170
-.cc_top cc_171,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_169,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	455
 	.long	455
 	.long	.Lxtalabel39
-.cc_bottom cc_171
-.cc_top cc_172,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_169
+.cc_top cc_170,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel37
-.cc_bottom cc_172
-.cc_top cc_173,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.long	455
+	.long	455
+	.long	.Lxtalabel36
+.cc_bottom cc_170
+.cc_top cc_171,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	455
+	.long	455
+	.long	.Lxtalabel38
+.cc_bottom cc_171
+.cc_top cc_172,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	458
 	.long	460
 	.long	.Lxtalabel38
+.cc_bottom cc_172
+.cc_top cc_173,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel39
 .cc_bottom cc_173
-.cc_top cc_174,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_174,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel37
+.cc_bottom cc_174
+.cc_top cc_175,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	458
 	.long	460
 	.long	.Lxtalabel36
-.cc_bottom cc_174
-.cc_top cc_175,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel39
 .cc_bottom cc_175
-.cc_top cc_176,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_176,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	470
 	.long	470
-	.long	.Lxtalabel37
+	.long	.Lxtalabel36
 .cc_bottom cc_176
 .cc_top cc_177,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	470
 	.long	470
 	.long	.Lxtalabel38
 .cc_bottom cc_177
-.cc_top cc_178,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_178,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	470
 	.long	470
-	.long	.Lxtalabel36
+	.long	.Lxtalabel39
 .cc_bottom cc_178
-.cc_top cc_179,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_179,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	470
 	.long	470
-	.long	.Lxtalabel39
+	.long	.Lxtalabel37
 .cc_bottom cc_179
-.cc_top cc_180,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	473
-	.long	473
-	.long	.Lxtalabel38
-.cc_bottom cc_180
-.cc_top cc_181,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_180,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	473
 	.long	473
 	.long	.Lxtalabel36
-.cc_bottom cc_181
-.cc_top cc_182,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_180
+.cc_top cc_181,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	473
 	.long	473
-	.long	.Lxtalabel37
-.cc_bottom cc_182
-.cc_top cc_183,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.long	.Lxtalabel38
+.cc_bottom cc_181
+.cc_top cc_182,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	473
 	.long	473
 	.long	.Lxtalabel39
-.cc_bottom cc_183
-.cc_top cc_184,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_182
+.cc_top cc_183,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
-	.long	474
-	.long	476
-	.long	.Lxtalabel36
-.cc_bottom cc_184
-.cc_top cc_185,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.long	473
+	.long	473
+	.long	.Lxtalabel37
+.cc_bottom cc_183
+.cc_top cc_184,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	474
 	.long	476
 	.long	.Lxtalabel38
-.cc_bottom cc_185
-.cc_top cc_186,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_184
+.cc_top cc_185,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	474
 	.long	476
 	.long	.Lxtalabel37
+.cc_bottom cc_185
+.cc_top cc_186,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	474
+	.long	476
+	.long	.Lxtalabel36
 .cc_bottom cc_186
 .cc_top cc_187,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	474
 	.long	476
 	.long	.Lxtalabel39
 .cc_bottom cc_187
-.cc_top cc_188,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel38
-.cc_bottom cc_188
-.cc_top cc_189,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_188,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	479
 	.long	479
 	.long	.Lxtalabel37
+.cc_bottom cc_188
+.cc_top cc_189,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel39
 .cc_bottom cc_189
 .cc_top cc_190,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	479
 	.long	479
 	.long	.Lxtalabel36
 .cc_bottom cc_190
-.cc_top cc_191,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_191,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	479
 	.long	479
-	.long	.Lxtalabel39
+	.long	.Lxtalabel38
 .cc_bottom cc_191
 .cc_top cc_192,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	480
 	.long	480
 	.long	.Lxtalabel37
 .cc_bottom cc_192
 .cc_top cc_193,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	480
 	.long	480
 	.long	.Lxtalabel36
 .cc_bottom cc_193
-.cc_top cc_194,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_194,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	480
 	.long	480
-	.long	.Lxtalabel39
+	.long	.Lxtalabel38
 .cc_bottom cc_194
-.cc_top cc_195,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_195,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	480
 	.long	480
-	.long	.Lxtalabel38
-.cc_bottom cc_195
-.cc_top cc_196,.Lxtalabel36
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	485
-	.long	485
-	.long	.Lxtalabel36
-.cc_bottom cc_196
-.cc_top cc_197,.Lxtalabel38
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	485
-	.long	485
-	.long	.Lxtalabel38
-.cc_bottom cc_197
-.cc_top cc_198,.Lxtalabel39
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	485
-	.long	485
 	.long	.Lxtalabel39
-.cc_bottom cc_198
-.cc_top cc_199,.Lxtalabel37
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_195
+.cc_top cc_196,.Lxtalabel37
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	485
 	.long	485
 	.long	.Lxtalabel37
+.cc_bottom cc_196
+.cc_top cc_197,.Lxtalabel39
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	485
+	.long	485
+	.long	.Lxtalabel39
+.cc_bottom cc_197
+.cc_top cc_198,.Lxtalabel38
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	485
+	.long	485
+	.long	.Lxtalabel38
+.cc_bottom cc_198
+.cc_top cc_199,.Lxtalabel36
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	485
+	.long	485
+	.long	.Lxtalabel36
 .cc_bottom cc_199
 .cc_top cc_200,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	486
 	.long	487
 	.long	.Lxtalabel40
 .cc_bottom cc_200
-.cc_top cc_201,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	486
-	.long	487
-	.long	.Lxtalabel41
-.cc_bottom cc_201
-.cc_top cc_202,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_201,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	486
 	.long	487
 	.long	.Lxtalabel42
+.cc_bottom cc_201
+.cc_top cc_202,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	486
+	.long	487
+	.long	.Lxtalabel41
 .cc_bottom cc_202
 .cc_top cc_203,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	490
 	.long	490
 	.long	.Lxtalabel40
 .cc_bottom cc_203
-.cc_top cc_204,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	490
-	.long	490
-	.long	.Lxtalabel41
-.cc_bottom cc_204
-.cc_top cc_205,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_204,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	490
 	.long	490
 	.long	.Lxtalabel42
+.cc_bottom cc_204
+.cc_top cc_205,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	490
+	.long	490
+	.long	.Lxtalabel41
 .cc_bottom cc_205
-.cc_top cc_206,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_206,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	492
+	.long	492
+	.long	.Lxtalabel42
+.cc_bottom cc_206
+.cc_top cc_207,.Lxtalabel40
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxtalabel40
-.cc_bottom cc_206
-.cc_top cc_207,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_207
+.cc_top cc_208,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxtalabel41
-.cc_bottom cc_207
-.cc_top cc_208,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	492
-	.long	492
-	.long	.Lxtalabel42
 .cc_bottom cc_208
 .cc_top cc_209,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	493
 	.long	493
 	.long	.Lxtalabel40
 .cc_bottom cc_209
-.cc_top cc_210,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	493
-	.long	493
-	.long	.Lxtalabel41
-.cc_bottom cc_210
-.cc_top cc_211,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_210,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	493
 	.long	493
 	.long	.Lxtalabel42
+.cc_bottom cc_210
+.cc_top cc_211,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	493
+	.long	493
+	.long	.Lxtalabel41
 .cc_bottom cc_211
-.cc_top cc_212,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_212,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	496
 	.long	496
-	.long	.Lxtalabel40
+	.long	.Lxtalabel42
 .cc_bottom cc_212
 .cc_top cc_213,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxtalabel41
 .cc_bottom cc_213
-.cc_top cc_214,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_214,.Lxtalabel40
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	496
 	.long	496
-	.long	.Lxtalabel42
-.cc_bottom cc_214
-.cc_top cc_215,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	499
-	.long	500
 	.long	.Lxtalabel40
-.cc_bottom cc_215
-.cc_top cc_216,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_214
+.cc_top cc_215,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	499
 	.long	500
 	.long	.Lxtalabel41
-.cc_bottom cc_216
-.cc_top cc_217,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_215
+.cc_top cc_216,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	499
 	.long	500
 	.long	.Lxtalabel42
+.cc_bottom cc_216
+.cc_top cc_217,.Lxtalabel40
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	499
+	.long	500
+	.long	.Lxtalabel40
 .cc_bottom cc_217
-.cc_top cc_218,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_218,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	501
 	.long	503
-	.long	.Lxtalabel40
+	.long	.Lxtalabel41
 .cc_bottom cc_218
 .cc_top cc_219,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	501
 	.long	503
 	.long	.Lxtalabel42
 .cc_bottom cc_219
-.cc_top cc_220,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_220,.Lxtalabel40
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	501
 	.long	503
-	.long	.Lxtalabel41
+	.long	.Lxtalabel40
 .cc_bottom cc_220
 .cc_top cc_221,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	505
 	.long	505
 	.long	.Lxtalabel42
 .cc_bottom cc_221
-.cc_top cc_222,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	505
-	.long	505
-	.long	.Lxtalabel40
-.cc_bottom cc_222
-.cc_top cc_223,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_222,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	505
 	.long	505
 	.long	.Lxtalabel41
+.cc_bottom cc_222
+.cc_top cc_223,.Lxtalabel40
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	505
+	.long	505
+	.long	.Lxtalabel40
 .cc_bottom cc_223
 .cc_top cc_224,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	506
 	.long	506
 	.long	.Lxtalabel40
 .cc_bottom cc_224
-.cc_top cc_225,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	506
-	.long	506
-	.long	.Lxtalabel41
-.cc_bottom cc_225
-.cc_top cc_226,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_225,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	506
 	.long	506
 	.long	.Lxtalabel42
+.cc_bottom cc_225
+.cc_top cc_226,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	506
+	.long	506
+	.long	.Lxtalabel41
 .cc_bottom cc_226
 .cc_top cc_227,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxtalabel41
 .cc_bottom cc_227
 .cc_top cc_228,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxtalabel42
 .cc_bottom cc_228
 .cc_top cc_229,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxtalabel40
 .cc_bottom cc_229
 .cc_top cc_230,.Lxtalabel40
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	509
 	.long	509
 	.long	.Lxtalabel40
 .cc_bottom cc_230
-.cc_top cc_231,.Lxtalabel41
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	509
-	.long	509
-	.long	.Lxtalabel41
-.cc_bottom cc_231
-.cc_top cc_232,.Lxtalabel42
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_231,.Lxtalabel42
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	509
 	.long	509
 	.long	.Lxtalabel42
+.cc_bottom cc_231
+.cc_top cc_232,.Lxtalabel41
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	509
+	.long	509
+	.long	.Lxtalabel41
 .cc_bottom cc_232
 .cc_top cc_233,.Lxtalabel43
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	511
 	.long	512
 	.long	.Lxtalabel43
 .cc_bottom cc_233
 .cc_top cc_234,.Lxtalabel44
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	513
 	.long	513
 	.long	.Lxtalabel44
 .cc_bottom cc_234
 .cc_top cc_235,.Lxtalabel44
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	515
 	.long	515
 	.long	.Lxtalabel44
 .cc_bottom cc_235
 .cc_top cc_236,.Lxtalabel45
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	516
 	.long	516
 	.long	.Lxtalabel45
 .cc_bottom cc_236
 .cc_top cc_237,.Lxtalabel45
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	518
 	.long	518
 	.long	.Lxtalabel45
 .cc_bottom cc_237
 .cc_top cc_238,.Lxtalabel46
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	519
 	.long	519
 	.long	.Lxtalabel46
 .cc_bottom cc_238
 .cc_top cc_239,.Lxtalabel46
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	521
 	.long	522
 	.long	.Lxtalabel46
 .cc_bottom cc_239
 .cc_top cc_240,.Lxtalabel46
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	525
 	.long	525
 	.long	.Lxtalabel46
 .cc_bottom cc_240
 .cc_top cc_241,.Lxtalabel46
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	527
 	.long	528
 	.long	.Lxtalabel46
 .cc_bottom cc_241
 .cc_top cc_242,.Lxtalabel47
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	531
 	.long	531
 	.long	.Lxtalabel47
 .cc_bottom cc_242
 .cc_top cc_243,.Lxtalabel48
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	532
 	.long	534
 	.long	.Lxtalabel48
 .cc_bottom cc_243
 .cc_top cc_244,.Lxtalabel49
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	536
 	.long	536
 	.long	.Lxtalabel49
 .cc_bottom cc_244
 .cc_top cc_245,.Lxtalabel49
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	539
 	.long	539
 	.long	.Lxtalabel49
 .cc_bottom cc_245
 .cc_top cc_246,.Lxtalabel50
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	540
 	.long	540
 	.long	.Lxtalabel50
 .cc_bottom cc_246
 .cc_top cc_247,.Lxtalabel50
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	541
 	.long	541
 	.long	.Lxtalabel50
 .cc_bottom cc_247
 .cc_top cc_248,.Lxtalabel50
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	543
 	.long	543
 	.long	.Lxtalabel50
 .cc_bottom cc_248
 .cc_top cc_249,.Lxtalabel50
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	545
 	.long	546
 	.long	.Lxtalabel50
 .cc_bottom cc_249
 .cc_top cc_250,.Lxtalabel51
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	548
 	.long	548
 	.long	.Lxtalabel51
 .cc_bottom cc_250
 .cc_top cc_251,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	552
 	.long	554
 	.long	.Lxtalabel95
 .cc_bottom cc_251
 .cc_top cc_252,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	552
 	.long	554
 	.long	.Lxtalabel61
 .cc_bottom cc_252
 .cc_top cc_253,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	558
 	.long	558
 	.long	.Lxtalabel61
 .cc_bottom cc_253
 .cc_top cc_254,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	558
 	.long	558
 	.long	.Lxtalabel95
 .cc_bottom cc_254
 .cc_top cc_255,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	559
 	.long	559
 	.long	.Lxtalabel95
 .cc_bottom cc_255
 .cc_top cc_256,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	559
 	.long	559
 	.long	.Lxtalabel61
 .cc_bottom cc_256
 .cc_top cc_257,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	561
 	.long	561
 	.long	.Lxtalabel61
 .cc_bottom cc_257
 .cc_top cc_258,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	561
 	.long	561
 	.long	.Lxtalabel95
 .cc_bottom cc_258
 .cc_top cc_259,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	563
 	.long	563
 	.long	.Lxtalabel95
 .cc_bottom cc_259
 .cc_top cc_260,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	563
 	.long	563
 	.long	.Lxtalabel61
 .cc_bottom cc_260
 .cc_top cc_261,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	570
 	.long	570
 	.long	.Lxtalabel95
 .cc_bottom cc_261
 .cc_top cc_262,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	570
 	.long	570
 	.long	.Lxtalabel61
 .cc_bottom cc_262
 .cc_top cc_263,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	572
 	.long	573
 	.long	.Lxtalabel61
 .cc_bottom cc_263
 .cc_top cc_264,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	572
 	.long	573
 	.long	.Lxtalabel95
 .cc_bottom cc_264
 .cc_top cc_265,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	585
 	.long	586
 	.long	.Lxtalabel52
 .cc_bottom cc_265
 .cc_top cc_266,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	588
 	.long	589
 	.long	.Lxtalabel52
 .cc_bottom cc_266
 .cc_top cc_267,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	592
 	.long	592
 	.long	.Lxtalabel52
 .cc_bottom cc_267
 .cc_top cc_268,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	595
 	.long	595
 	.long	.Lxtalabel52
 .cc_bottom cc_268
 .cc_top cc_269,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	598
 	.long	598
 	.long	.Lxtalabel52
 .cc_bottom cc_269
 .cc_top cc_270,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	601
 	.long	601
 	.long	.Lxtalabel52
 .cc_bottom cc_270
 .cc_top cc_271,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	604
 	.long	607
 	.long	.Lxtalabel52
 .cc_bottom cc_271
 .cc_top cc_272,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	609
 	.long	609
 	.long	.Lxtalabel52
 .cc_bottom cc_272
 .cc_top cc_273,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	611
 	.long	615
 	.long	.Lxtalabel52
 .cc_bottom cc_273
 .cc_top cc_274,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	621
 	.long	622
 	.long	.Lxtalabel52
 .cc_bottom cc_274
 .cc_top cc_275,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	626
 	.long	626
 	.long	.Lxtalabel52
 .cc_bottom cc_275
 .cc_top cc_276,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	627
 	.long	629
 	.long	.Lxtalabel52
 .cc_bottom cc_276
 .cc_top cc_277,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	627
 	.long	629
 	.long	.Lxtalabel52
 .cc_bottom cc_277
 .cc_top cc_278,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	627
 	.long	629
 	.long	.Lxtalabel52
 .cc_bottom cc_278
 .cc_top cc_279,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	633
 	.long	633
 	.long	.Lxtalabel52
 .cc_bottom cc_279
 .cc_top cc_280,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	633
 	.long	633
 	.long	.Lxtalabel52
 .cc_bottom cc_280
 .cc_top cc_281,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	633
 	.long	633
 	.long	.Lxtalabel52
 .cc_bottom cc_281
 .cc_top cc_282,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	634
 	.long	636
 	.long	.Lxtalabel52
 .cc_bottom cc_282
 .cc_top cc_283,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	634
 	.long	636
 	.long	.Lxtalabel52
 .cc_bottom cc_283
 .cc_top cc_284,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	634
 	.long	636
 	.long	.Lxtalabel52
 .cc_bottom cc_284
 .cc_top cc_285,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	639
 	.long	639
 	.long	.Lxtalabel52
 .cc_bottom cc_285
 .cc_top cc_286,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	644
 	.long	644
 	.long	.Lxtalabel52
 .cc_bottom cc_286
 .cc_top cc_287,.Lxtalabel53
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	645
 	.long	645
 	.long	.Lxtalabel53
 .cc_bottom cc_287
 .cc_top cc_288,.Lxtalabel53
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	646
 	.long	646
 	.long	.Lxtalabel53
 .cc_bottom cc_288
 .cc_top cc_289,.Lxtalabel53
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	647
 	.long	647
 	.long	.Lxtalabel53
 .cc_bottom cc_289
 .cc_top cc_290,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	649
 	.long	649
 	.long	.Lxtalabel54
 .cc_bottom cc_290
 .cc_top cc_291,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	650
 	.long	650
 	.long	.Lxtalabel54
 .cc_bottom cc_291
 .cc_top cc_292,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	653
 	.long	653
 	.long	.Lxtalabel54
 .cc_bottom cc_292
 .cc_top cc_293,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	654
 	.long	654
 	.long	.Lxtalabel54
 .cc_bottom cc_293
 .cc_top cc_294,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	659
 	.long	659
 	.long	.Lxtalabel54
 .cc_bottom cc_294
 .cc_top cc_295,.Lxtalabel56
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	660
 	.long	660
 	.long	.Lxtalabel56
 .cc_bottom cc_295
 .cc_top cc_296,.Lxtalabel56
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	661
 	.long	661
 	.long	.Lxtalabel56
 .cc_bottom cc_296
 .cc_top cc_297,.Lxtalabel56
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	662
 	.long	662
 	.long	.Lxtalabel56
 .cc_bottom cc_297
 .cc_top cc_298,.Lxtalabel57
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	664
 	.long	664
 	.long	.Lxtalabel57
 .cc_bottom cc_298
 .cc_top cc_299,.Lxtalabel57
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	665
 	.long	665
 	.long	.Lxtalabel57
 .cc_bottom cc_299
 .cc_top cc_300,.Lxtalabel57
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	673
 	.long	673
 	.long	.Lxtalabel57
 .cc_bottom cc_300
-.cc_top cc_301,.Lxtalabel94
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_301,.Lxtalabel59
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	674
 	.long	675
-	.long	.Lxtalabel94
+	.long	.Lxtalabel59
 .cc_bottom cc_301
-.cc_top cc_302,.Lxtalabel59
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_302,.Lxtalabel60
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	674
 	.long	675
-	.long	.Lxtalabel59
+	.long	.Lxtalabel60
 .cc_bottom cc_302
-.cc_top cc_303,.Lxtalabel60
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_303,.Lxtalabel94
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	674
 	.long	675
-	.long	.Lxtalabel60
+	.long	.Lxtalabel94
 .cc_bottom cc_303
-.cc_top cc_304,.Lxtalabel94
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_304,.Lxtalabel59
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	684
 	.long	685
-	.long	.Lxtalabel94
+	.long	.Lxtalabel59
 .cc_bottom cc_304
-.cc_top cc_305,.Lxtalabel60
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_305,.Lxtalabel94
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	684
 	.long	685
-	.long	.Lxtalabel60
+	.long	.Lxtalabel94
 .cc_bottom cc_305
-.cc_top cc_306,.Lxtalabel59
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_306,.Lxtalabel60
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	684
 	.long	685
-	.long	.Lxtalabel59
+	.long	.Lxtalabel60
 .cc_bottom cc_306
-.cc_top cc_307,.Lxtalabel60
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_307,.Lxtalabel94
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	689
 	.long	689
-	.long	.Lxtalabel60
+	.long	.Lxtalabel94
 .cc_bottom cc_307
-.cc_top cc_308,.Lxtalabel94
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	689
-	.long	689
-	.long	.Lxtalabel94
-.cc_bottom cc_308
-.cc_top cc_309,.Lxtalabel59
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_308,.Lxtalabel59
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	689
 	.long	689
 	.long	.Lxtalabel59
-.cc_bottom cc_309
-.cc_top cc_310,.Lxtalabel94
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_308
+.cc_top cc_309,.Lxtalabel60
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
-	.long	690
-	.long	690
-	.long	.Lxtalabel94
-.cc_bottom cc_310
-.cc_top cc_311,.Lxtalabel60
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.long	689
+	.long	689
+	.long	.Lxtalabel60
+.cc_bottom cc_309
+.cc_top cc_310,.Lxtalabel60
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	690
 	.long	690
 	.long	.Lxtalabel60
-.cc_bottom cc_311
-.cc_top cc_312,.Lxtalabel59
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_310
+.cc_top cc_311,.Lxtalabel59
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	690
 	.long	690
 	.long	.Lxtalabel59
+.cc_bottom cc_311
+.cc_top cc_312,.Lxtalabel94
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	690
+	.long	690
+	.long	.Lxtalabel94
 .cc_bottom cc_312
 .cc_top cc_313,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	691
 	.long	691
 	.long	.Lxtalabel95
 .cc_bottom cc_313
 .cc_top cc_314,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	692
 	.long	692
 	.long	.Lxtalabel95
 .cc_bottom cc_314
 .cc_top cc_315,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	693
 	.long	693
 	.long	.Lxtalabel95
 .cc_bottom cc_315
 .cc_top cc_316,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	697
 	.long	697
 	.long	.Lxtalabel95
 .cc_bottom cc_316
 .cc_top cc_317,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	698
 	.long	698
 	.long	.Lxtalabel95
 .cc_bottom cc_317
 .cc_top cc_318,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	699
 	.long	699
 	.long	.Lxtalabel95
 .cc_bottom cc_318
 .cc_top cc_319,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	700
 	.long	700
 	.long	.Lxtalabel95
 .cc_bottom cc_319
 .cc_top cc_320,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	702
 	.long	702
 	.long	.Lxtalabel95
 .cc_bottom cc_320
 .cc_top cc_321,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	703
 	.long	703
 	.long	.Lxtalabel95
 .cc_bottom cc_321
 .cc_top cc_322,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	704
 	.long	704
 	.long	.Lxtalabel95
 .cc_bottom cc_322
 .cc_top cc_323,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	705
 	.long	705
 	.long	.Lxtalabel95
 .cc_bottom cc_323
 .cc_top cc_324,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	708
 	.long	708
 	.long	.Lxtalabel95
 .cc_bottom cc_324
 .cc_top cc_325,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	711
 	.long	711
 	.long	.Lxtalabel95
 .cc_bottom cc_325
 .cc_top cc_326,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	714
 	.long	714
 	.long	.Lxtalabel95
 .cc_bottom cc_326
 .cc_top cc_327,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	715
 	.long	715
 	.long	.Lxtalabel95
 .cc_bottom cc_327
 .cc_top cc_328,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	716
 	.long	716
 	.long	.Lxtalabel95
 .cc_bottom cc_328
 .cc_top cc_329,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	717
 	.long	717
 	.long	.Lxtalabel95
 .cc_bottom cc_329
 .cc_top cc_330,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	719
 	.long	719
 	.long	.Lxtalabel95
 .cc_bottom cc_330
 .cc_top cc_331,.Lxtalabel97
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	720
 	.long	720
 	.long	.Lxtalabel97
 .cc_bottom cc_331
 .cc_top cc_332,.Lxtalabel97
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	722
 	.long	724
 	.long	.Lxtalabel97
 .cc_bottom cc_332
 .cc_top cc_333,.Lxtalabel99
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	727
 	.long	727
 	.long	.Lxtalabel99
 .cc_bottom cc_333
 .cc_top cc_334,.Lxtalabel99
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	729
 	.long	729
 	.long	.Lxtalabel99
 .cc_bottom cc_334
 .cc_top cc_335,.Lxtalabel99
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	730
 	.long	730
 	.long	.Lxtalabel99
 .cc_bottom cc_335
 .cc_top cc_336,.Lxtalabel99
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	732
 	.long	732
 	.long	.Lxtalabel99
 .cc_bottom cc_336
 .cc_top cc_337,.Lxtalabel99
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	734
 	.long	736
 	.long	.Lxtalabel99
 .cc_bottom cc_337
 .cc_top cc_338,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	738
 	.long	739
 	.long	.Lxtalabel61
 .cc_bottom cc_338
 .cc_top cc_339,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	742
 	.long	742
 	.long	.Lxtalabel61
 .cc_bottom cc_339
 .cc_top cc_340,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	743
 	.long	743
 	.long	.Lxtalabel61
 .cc_bottom cc_340
 .cc_top cc_341,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	745
 	.long	745
 	.long	.Lxtalabel61
 .cc_bottom cc_341
 .cc_top cc_342,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	746
 	.long	746
 	.long	.Lxtalabel61
 .cc_bottom cc_342
 .cc_top cc_343,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	747
 	.long	747
 	.long	.Lxtalabel61
 .cc_bottom cc_343
 .cc_top cc_344,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	750
 	.long	750
 	.long	.Lxtalabel61
 .cc_bottom cc_344
 .cc_top cc_345,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	751
 	.long	751
 	.long	.Lxtalabel61
 .cc_bottom cc_345
 .cc_top cc_346,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	752
 	.long	752
 	.long	.Lxtalabel61
 .cc_bottom cc_346
 .cc_top cc_347,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	753
 	.long	753
 	.long	.Lxtalabel61
 .cc_bottom cc_347
 .cc_top cc_348,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	756
 	.long	756
 	.long	.Lxtalabel61
 .cc_bottom cc_348
 .cc_top cc_349,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	759
 	.long	759
 	.long	.Lxtalabel61
 .cc_bottom cc_349
 .cc_top cc_350,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	761
 	.long	761
 	.long	.Lxtalabel61
 .cc_bottom cc_350
 .cc_top cc_351,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	762
 	.long	762
 	.long	.Lxtalabel61
 .cc_bottom cc_351
 .cc_top cc_352,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	771
 	.long	771
 	.long	.Lxtalabel61
 .cc_bottom cc_352
 .cc_top cc_353,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	772
 	.long	772
 	.long	.Lxtalabel61
 .cc_bottom cc_353
 .cc_top cc_354,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	774
 	.long	774
 	.long	.Lxtalabel61
 .cc_bottom cc_354
 .cc_top cc_355,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	775
 	.long	775
 	.long	.Lxtalabel61
 .cc_bottom cc_355
 .cc_top cc_356,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	777
 	.long	779
 	.long	.Lxtalabel63
 .cc_bottom cc_356
 .cc_top cc_357,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	782
 	.long	782
 	.long	.Lxtalabel63
 .cc_bottom cc_357
 .cc_top cc_358,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	783
 	.long	783
 	.long	.Lxtalabel63
 .cc_bottom cc_358
 .cc_top cc_359,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	784
 	.long	784
 	.long	.Lxtalabel63
 .cc_bottom cc_359
 .cc_top cc_360,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	785
 	.long	785
 	.long	.Lxtalabel63
 .cc_bottom cc_360
 .cc_top cc_361,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	786
 	.long	786
 	.long	.Lxtalabel63
 .cc_bottom cc_361
 .cc_top cc_362,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	787
 	.long	787
 	.long	.Lxtalabel63
 .cc_bottom cc_362
 .cc_top cc_363,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	790
 	.long	790
 	.long	.Lxtalabel63
 .cc_bottom cc_363
 .cc_top cc_364,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	791
 	.long	791
 	.long	.Lxtalabel63
 .cc_bottom cc_364
 .cc_top cc_365,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	793
 	.long	793
 	.long	.Lxtalabel63
 .cc_bottom cc_365
 .cc_top cc_366,.Lxtalabel63
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	795
 	.long	796
 	.long	.Lxtalabel63
 .cc_bottom cc_366
 .cc_top cc_367,.Lxtalabel64
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	797
 	.long	797
 	.long	.Lxtalabel64
 .cc_bottom cc_367
 .cc_top cc_368,.Lxtalabel64
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	799
 	.long	801
 	.long	.Lxtalabel64
 .cc_bottom cc_368
 .cc_top cc_369,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	804
 	.long	804
 	.long	.Lxtalabel66
 .cc_bottom cc_369
 .cc_top cc_370,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	805
 	.long	807
 	.long	.Lxtalabel66
 .cc_bottom cc_370
 .cc_top cc_371,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	810
 	.long	810
 	.long	.Lxtalabel66
 .cc_bottom cc_371
 .cc_top cc_372,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	811
 	.long	811
 	.long	.Lxtalabel66
 .cc_bottom cc_372
 .cc_top cc_373,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	812
 	.long	812
 	.long	.Lxtalabel66
 .cc_bottom cc_373
 .cc_top cc_374,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	813
 	.long	813
 	.long	.Lxtalabel66
 .cc_bottom cc_374
 .cc_top cc_375,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	816
 	.long	816
 	.long	.Lxtalabel66
 .cc_bottom cc_375
 .cc_top cc_376,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	817
 	.long	817
 	.long	.Lxtalabel66
 .cc_bottom cc_376
 .cc_top cc_377,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	819
 	.long	819
 	.long	.Lxtalabel66
 .cc_bottom cc_377
 .cc_top cc_378,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	820
 	.long	820
 	.long	.Lxtalabel66
 .cc_bottom cc_378
 .cc_top cc_379,.Lxtalabel66
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	821
 	.long	821
 	.long	.Lxtalabel66
 .cc_bottom cc_379
 .cc_top cc_380,.Lxtalabel67
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	822
 	.long	822
 	.long	.Lxtalabel67
 .cc_bottom cc_380
 .cc_top cc_381,.Lxtalabel67
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	826
 	.long	826
 	.long	.Lxtalabel67
 .cc_bottom cc_381
 .cc_top cc_382,.Lxtalabel67
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	827
 	.long	827
 	.long	.Lxtalabel67
 .cc_bottom cc_382
 .cc_top cc_383,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	828
 	.long	828
 	.long	.Lxtalabel68
 .cc_bottom cc_383
 .cc_top cc_384,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	828
 	.long	828
 	.long	.Lxtalabel69
 .cc_bottom cc_384
 .cc_top cc_385,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	830
 	.long	833
 	.long	.Lxtalabel68
 .cc_bottom cc_385
 .cc_top cc_386,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	830
 	.long	833
 	.long	.Lxtalabel69
 .cc_bottom cc_386
 .cc_top cc_387,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	834
 	.long	834
 	.long	.Lxtalabel68
 .cc_bottom cc_387
 .cc_top cc_388,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	834
 	.long	834
 	.long	.Lxtalabel69
 .cc_bottom cc_388
 .cc_top cc_389,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	835
 	.long	835
 	.long	.Lxtalabel68
 .cc_bottom cc_389
 .cc_top cc_390,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	835
 	.long	835
 	.long	.Lxtalabel69
 .cc_bottom cc_390
-.cc_top cc_391,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	837
-	.long	837
-	.long	.Lxtalabel68
-.cc_bottom cc_391
-.cc_top cc_392,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_391,.Lxtalabel69
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	837
 	.long	837
 	.long	.Lxtalabel69
+.cc_bottom cc_391
+.cc_top cc_392,.Lxtalabel68
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	837
+	.long	837
+	.long	.Lxtalabel68
 .cc_bottom cc_392
 .cc_top cc_393,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	838
 	.long	838
 	.long	.Lxtalabel69
 .cc_bottom cc_393
 .cc_top cc_394,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	838
 	.long	838
 	.long	.Lxtalabel68
 .cc_bottom cc_394
 .cc_top cc_395,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	841
 	.long	841
 	.long	.Lxtalabel68
 .cc_bottom cc_395
 .cc_top cc_396,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	841
 	.long	841
 	.long	.Lxtalabel69
 .cc_bottom cc_396
 .cc_top cc_397,.Lxtalabel68
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	844
 	.long	844
 	.long	.Lxtalabel68
 .cc_bottom cc_397
 .cc_top cc_398,.Lxtalabel69
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	844
 	.long	844
 	.long	.Lxtalabel69
 .cc_bottom cc_398
-.cc_top cc_399,.Lxtalabel70
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	845
-	.long	845
-	.long	.Lxtalabel70
-.cc_bottom cc_399
-.cc_top cc_400,.Lxtalabel71
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_399,.Lxtalabel71
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	845
 	.long	845
 	.long	.Lxtalabel71
+.cc_bottom cc_399
+.cc_top cc_400,.Lxtalabel70
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	845
+	.long	845
+	.long	.Lxtalabel70
 .cc_bottom cc_400
 .cc_top cc_401,.Lxtalabel72
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	845
 	.long	845
 	.long	.Lxtalabel72
 .cc_bottom cc_401
-.cc_top cc_402,.Lxtalabel71
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_402,.Lxtalabel70
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	848
 	.long	848
-	.long	.Lxtalabel71
+	.long	.Lxtalabel70
 .cc_bottom cc_402
-.cc_top cc_403,.Lxtalabel72
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_403,.Lxtalabel71
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	848
+	.long	848
+	.long	.Lxtalabel71
+.cc_bottom cc_403
+.cc_top cc_404,.Lxtalabel72
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	848
 	.long	848
 	.long	.Lxtalabel72
-.cc_bottom cc_403
-.cc_top cc_404,.Lxtalabel70
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	848
-	.long	848
-	.long	.Lxtalabel70
 .cc_bottom cc_404
-.cc_top cc_405,.Lxtalabel71
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_405,.Lxtalabel70
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	851
+	.long	851
+	.long	.Lxtalabel70
+.cc_bottom cc_405
+.cc_top cc_406,.Lxtalabel71
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	851
 	.long	851
 	.long	.Lxtalabel71
-.cc_bottom cc_405
-.cc_top cc_406,.Lxtalabel72
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_bottom cc_406
+.cc_top cc_407,.Lxtalabel72
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	851
 	.long	851
 	.long	.Lxtalabel72
-.cc_bottom cc_406
-.cc_top cc_407,.Lxtalabel70
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	851
-	.long	851
-	.long	.Lxtalabel70
 .cc_bottom cc_407
-.cc_top cc_408,.Lxtalabel71
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_408,.Lxtalabel72
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	852
 	.long	854
-	.long	.Lxtalabel71
+	.long	.Lxtalabel72
 .cc_bottom cc_408
 .cc_top cc_409,.Lxtalabel70
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	852
 	.long	854
 	.long	.Lxtalabel70
 .cc_bottom cc_409
-.cc_top cc_410,.Lxtalabel72
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_410,.Lxtalabel71
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	852
 	.long	854
-	.long	.Lxtalabel72
+	.long	.Lxtalabel71
 .cc_bottom cc_410
-.cc_top cc_411,.Lxtalabel70
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_411,.Lxtalabel71
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	855
 	.long	855
-	.long	.Lxtalabel70
+	.long	.Lxtalabel71
 .cc_bottom cc_411
 .cc_top cc_412,.Lxtalabel72
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	855
 	.long	855
 	.long	.Lxtalabel72
 .cc_bottom cc_412
-.cc_top cc_413,.Lxtalabel71
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_413,.Lxtalabel70
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	855
 	.long	855
-	.long	.Lxtalabel71
+	.long	.Lxtalabel70
 .cc_bottom cc_413
-.cc_top cc_414,.Lxtalabel71
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	856
-	.long	856
-	.long	.Lxtalabel71
-.cc_bottom cc_414
-.cc_top cc_415,.Lxtalabel72
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_414,.Lxtalabel72
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	856
 	.long	856
 	.long	.Lxtalabel72
+.cc_bottom cc_414
+.cc_top cc_415,.Lxtalabel71
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	856
+	.long	856
+	.long	.Lxtalabel71
 .cc_bottom cc_415
 .cc_top cc_416,.Lxtalabel70
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	856
 	.long	856
 	.long	.Lxtalabel70
 .cc_bottom cc_416
 .cc_top cc_417,.Lxtalabel73
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	860
 	.long	860
 	.long	.Lxtalabel73
 .cc_bottom cc_417
 .cc_top cc_418,.Lxtalabel73
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	863
 	.long	863
 	.long	.Lxtalabel73
 .cc_bottom cc_418
 .cc_top cc_419,.Lxtalabel75
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	864
 	.long	866
 	.long	.Lxtalabel75
 .cc_bottom cc_419
 .cc_top cc_420,.Lxtalabel74
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	868
 	.long	868
 	.long	.Lxtalabel74
 .cc_bottom cc_420
 .cc_top cc_421,.Lxtalabel76
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	868
 	.long	868
 	.long	.Lxtalabel76
 .cc_bottom cc_421
 .cc_top cc_422,.Lxtalabel77
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	869
 	.long	869
 	.long	.Lxtalabel77
 .cc_bottom cc_422
 .cc_top cc_423,.Lxtalabel77
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	870
 	.long	870
 	.long	.Lxtalabel77
 .cc_bottom cc_423
 .cc_top cc_424,.Lxtalabel77
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	871
 	.long	872
 	.long	.Lxtalabel77
 .cc_bottom cc_424
 .cc_top cc_425,.Lxtalabel58
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	873
 	.long	874
 	.long	.Lxtalabel58
 .cc_bottom cc_425
 .cc_top cc_426,.Lxtalabel58
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	876
 	.long	876
 	.long	.Lxtalabel58
 .cc_bottom cc_426
 .cc_top cc_427,.Lxtalabel58
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	881
 	.long	881
 	.long	.Lxtalabel58
 .cc_bottom cc_427
 .cc_top cc_428,.Lxtalabel79
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	884
 	.long	884
 	.long	.Lxtalabel79
 .cc_bottom cc_428
-.cc_top cc_429,.Lxtalabel81
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	885
-	.long	888
-	.long	.Lxtalabel81
-.cc_bottom cc_429
-.cc_top cc_430,.Lxtalabel80
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_429,.Lxtalabel80
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	885
 	.long	888
 	.long	.Lxtalabel80
+.cc_bottom cc_429
+.cc_top cc_430,.Lxtalabel81
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	885
+	.long	888
+	.long	.Lxtalabel81
 .cc_bottom cc_430
 .cc_top cc_431,.Lxtalabel80
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	889
 	.long	889
 	.long	.Lxtalabel80
 .cc_bottom cc_431
 .cc_top cc_432,.Lxtalabel81
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	889
 	.long	889
 	.long	.Lxtalabel81
 .cc_bottom cc_432
 .cc_top cc_433,.Lxtalabel80
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	890
 	.long	890
 	.long	.Lxtalabel80
 .cc_bottom cc_433
 .cc_top cc_434,.Lxtalabel81
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	890
 	.long	890
 	.long	.Lxtalabel81
 .cc_bottom cc_434
-.cc_top cc_435,.Lxtalabel81
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	891
-	.long	892
-	.long	.Lxtalabel81
-.cc_bottom cc_435
-.cc_top cc_436,.Lxtalabel80
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_435,.Lxtalabel80
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	891
 	.long	892
 	.long	.Lxtalabel80
+.cc_bottom cc_435
+.cc_top cc_436,.Lxtalabel81
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	891
+	.long	892
+	.long	.Lxtalabel81
 .cc_bottom cc_436
 .cc_top cc_437,.Lxtalabel80
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	893
 	.long	893
 	.long	.Lxtalabel80
 .cc_bottom cc_437
 .cc_top cc_438,.Lxtalabel81
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	893
 	.long	893
 	.long	.Lxtalabel81
 .cc_bottom cc_438
 .cc_top cc_439,.Lxtalabel81
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	894
 	.long	894
 	.long	.Lxtalabel81
 .cc_bottom cc_439
 .cc_top cc_440,.Lxtalabel80
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	894
 	.long	894
 	.long	.Lxtalabel80
 .cc_bottom cc_440
 .cc_top cc_441,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	895
 	.long	895
 	.long	.Lxtalabel82
 .cc_bottom cc_441
 .cc_top cc_442,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	897
 	.long	897
 	.long	.Lxtalabel82
 .cc_bottom cc_442
 .cc_top cc_443,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	898
 	.long	898
 	.long	.Lxtalabel82
 .cc_bottom cc_443
 .cc_top cc_444,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	899
 	.long	899
 	.long	.Lxtalabel82
 .cc_bottom cc_444
 .cc_top cc_445,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	903
 	.long	903
 	.long	.Lxtalabel82
 .cc_bottom cc_445
 .cc_top cc_446,.Lxtalabel84
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	908
 	.long	908
 	.long	.Lxtalabel84
 .cc_bottom cc_446
 .cc_top cc_447,.Lxtalabel84
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	910
 	.long	910
 	.long	.Lxtalabel84
 .cc_bottom cc_447
 .cc_top cc_448,.Lxtalabel84
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	911
 	.long	911
 	.long	.Lxtalabel84
 .cc_bottom cc_448
 .cc_top cc_449,.Lxtalabel84
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	913
 	.long	913
 	.long	.Lxtalabel84
 .cc_bottom cc_449
 .cc_top cc_450,.Lxtalabel85
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	914
 	.long	914
 	.long	.Lxtalabel85
 .cc_bottom cc_450
 .cc_top cc_451,.Lxtalabel85
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	917
 	.long	917
 	.long	.Lxtalabel85
 .cc_bottom cc_451
 .cc_top cc_452,.Lxtalabel85
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	919
 	.long	919
 	.long	.Lxtalabel85
 .cc_bottom cc_452
 .cc_top cc_453,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	920
 	.long	923
 	.long	.Lxtalabel87
 .cc_bottom cc_453
 .cc_top cc_454,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	920
 	.long	923
 	.long	.Lxtalabel86
 .cc_bottom cc_454
-.cc_top cc_455,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	924
-	.long	924
-	.long	.Lxtalabel86
-.cc_bottom cc_455
-.cc_top cc_456,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_455,.Lxtalabel87
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	924
 	.long	924
 	.long	.Lxtalabel87
+.cc_bottom cc_455
+.cc_top cc_456,.Lxtalabel86
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	924
+	.long	924
+	.long	.Lxtalabel86
 .cc_bottom cc_456
 .cc_top cc_457,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	925
 	.long	925
 	.long	.Lxtalabel86
 .cc_bottom cc_457
 .cc_top cc_458,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	925
 	.long	925
 	.long	.Lxtalabel87
 .cc_bottom cc_458
 .cc_top cc_459,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	928
 	.long	928
 	.long	.Lxtalabel87
 .cc_bottom cc_459
 .cc_top cc_460,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	928
 	.long	928
 	.long	.Lxtalabel86
 .cc_bottom cc_460
-.cc_top cc_461,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	930
-	.long	930
-	.long	.Lxtalabel86
-.cc_bottom cc_461
-.cc_top cc_462,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_461,.Lxtalabel87
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	930
 	.long	930
 	.long	.Lxtalabel87
+.cc_bottom cc_461
+.cc_top cc_462,.Lxtalabel86
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	930
+	.long	930
+	.long	.Lxtalabel86
 .cc_bottom cc_462
 .cc_top cc_463,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	931
 	.long	931
 	.long	.Lxtalabel86
 .cc_bottom cc_463
 .cc_top cc_464,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	931
 	.long	931
 	.long	.Lxtalabel87
 .cc_bottom cc_464
 .cc_top cc_465,.Lxtalabel86
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	933
 	.long	933
 	.long	.Lxtalabel86
 .cc_bottom cc_465
 .cc_top cc_466,.Lxtalabel87
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	933
 	.long	933
 	.long	.Lxtalabel87
 .cc_bottom cc_466
 .cc_top cc_467,.Lxtalabel88
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	934
 	.long	935
 	.long	.Lxtalabel88
 .cc_bottom cc_467
 .cc_top cc_468,.Lxtalabel88
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	936
 	.long	936
 	.long	.Lxtalabel88
 .cc_bottom cc_468
 .cc_top cc_469,.Lxtalabel88
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	937
 	.long	937
 	.long	.Lxtalabel88
 .cc_bottom cc_469
 .cc_top cc_470,.Lxtalabel93
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	938
 	.long	939
 	.long	.Lxtalabel93
 .cc_bottom cc_470
 .cc_top cc_471,.Lxtalabel93
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	940
 	.long	940
 	.long	.Lxtalabel93
 .cc_bottom cc_471
 .cc_top cc_472,.Lxtalabel93
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	941
 	.long	941
 	.long	.Lxtalabel93
 .cc_bottom cc_472
-.cc_top cc_473,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	943
-	.long	944
-	.long	.Lxtalabel89
-.cc_bottom cc_473
-.cc_top cc_474,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_473,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	943
 	.long	944
 	.long	.Lxtalabel91
+.cc_bottom cc_473
+.cc_top cc_474,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	943
+	.long	944
+	.long	.Lxtalabel89
 .cc_bottom cc_474
 .cc_top cc_475,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	943
 	.long	944
 	.long	.Lxtalabel90
 .cc_bottom cc_475
-.cc_top cc_476,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	946
-	.long	948
-	.long	.Lxtalabel89
-.cc_bottom cc_476
-.cc_top cc_477,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_476,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	946
 	.long	948
 	.long	.Lxtalabel91
+.cc_bottom cc_476
+.cc_top cc_477,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	946
+	.long	948
+	.long	.Lxtalabel89
 .cc_bottom cc_477
 .cc_top cc_478,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	946
 	.long	948
 	.long	.Lxtalabel90
 .cc_bottom cc_478
-.cc_top cc_479,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	949
-	.long	949
-	.long	.Lxtalabel89
-.cc_bottom cc_479
-.cc_top cc_480,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	949
-	.long	949
-	.long	.Lxtalabel90
-.cc_bottom cc_480
-.cc_top cc_481,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_479,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	949
 	.long	949
 	.long	.Lxtalabel91
+.cc_bottom cc_479
+.cc_top cc_480,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	949
+	.long	949
+	.long	.Lxtalabel89
+.cc_bottom cc_480
+.cc_top cc_481,.Lxtalabel90
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	949
+	.long	949
+	.long	.Lxtalabel90
 .cc_bottom cc_481
-.cc_top cc_482,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_482,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	950
 	.long	950
-	.long	.Lxtalabel89
+	.long	.Lxtalabel91
 .cc_bottom cc_482
 .cc_top cc_483,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	950
 	.long	950
 	.long	.Lxtalabel90
 .cc_bottom cc_483
-.cc_top cc_484,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_484,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	950
 	.long	950
-	.long	.Lxtalabel91
+	.long	.Lxtalabel89
 .cc_bottom cc_484
-.cc_top cc_485,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_485,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	953
 	.long	953
-	.long	.Lxtalabel91
+	.long	.Lxtalabel89
 .cc_bottom cc_485
 .cc_top cc_486,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	953
 	.long	953
 	.long	.Lxtalabel90
 .cc_bottom cc_486
-.cc_top cc_487,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_487,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	953
 	.long	953
-	.long	.Lxtalabel89
+	.long	.Lxtalabel91
 .cc_bottom cc_487
 .cc_top cc_488,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	954
 	.long	955
 	.long	.Lxtalabel90
 .cc_bottom cc_488
-.cc_top cc_489,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	954
-	.long	955
-	.long	.Lxtalabel91
-.cc_bottom cc_489
-.cc_top cc_490,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_489,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	954
 	.long	955
 	.long	.Lxtalabel89
+.cc_bottom cc_489
+.cc_top cc_490,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	954
+	.long	955
+	.long	.Lxtalabel91
 .cc_bottom cc_490
 .cc_top cc_491,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	956
 	.long	958
 	.long	.Lxtalabel90
 .cc_bottom cc_491
 .cc_top cc_492,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	956
 	.long	958
 	.long	.Lxtalabel91
 .cc_bottom cc_492
 .cc_top cc_493,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	956
 	.long	958
 	.long	.Lxtalabel89
 .cc_bottom cc_493
-.cc_top cc_494,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_494,.Lxtalabel89
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	959
 	.long	959
-	.long	.Lxtalabel91
+	.long	.Lxtalabel89
 .cc_bottom cc_494
 .cc_top cc_495,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	959
 	.long	959
 	.long	.Lxtalabel90
 .cc_bottom cc_495
-.cc_top cc_496,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_496,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	959
 	.long	959
-	.long	.Lxtalabel89
+	.long	.Lxtalabel91
 .cc_bottom cc_496
 .cc_top cc_497,.Lxtalabel89
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	962
 	.long	962
 	.long	.Lxtalabel89
 .cc_bottom cc_497
-.cc_top cc_498,.Lxtalabel90
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
-	.byte	0
-	.long	962
-	.long	962
-	.long	.Lxtalabel90
-.cc_bottom cc_498
-.cc_top cc_499,.Lxtalabel91
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+.cc_top cc_498,.Lxtalabel91
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	962
 	.long	962
 	.long	.Lxtalabel91
+.cc_bottom cc_498
+.cc_top cc_499,.Lxtalabel90
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.byte	0
+	.long	962
+	.long	962
+	.long	.Lxtalabel90
 .cc_bottom cc_499
 .cc_top cc_500,.Lxtalabel100
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	963
 	.long	963
 	.long	.Lxtalabel100
 .cc_bottom cc_500
 .cc_top cc_501,.Lxtalabel100
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	964
 	.long	964
 	.long	.Lxtalabel100
 .cc_bottom cc_501
 .cc_top cc_502,.Lxtalabel100
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	965
 	.long	965
 	.long	.Lxtalabel100
 .cc_bottom cc_502
 .cc_top cc_503,.Lxtalabel92
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	966
 	.long	968
 	.long	.Lxtalabel92
 .cc_bottom cc_503
 .cc_top cc_504,.Lxtalabel92
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	969
 	.long	969
 	.long	.Lxtalabel92
 .cc_bottom cc_504
 .cc_top cc_505,.Lxtalabel92
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	970
 	.long	970
 	.long	.Lxtalabel92
 .cc_bottom cc_505
 .cc_top cc_506,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	974
 	.long	975
 	.long	.Lxtalabel101
 .cc_bottom cc_506
 .cc_top cc_507,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	976
 	.long	976
 	.long	.Lxtalabel101
 .cc_bottom cc_507
 .cc_top cc_508,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	977
 	.long	981
 	.long	.Lxtalabel101
 .cc_bottom cc_508
 .cc_top cc_509,.Lxtalabel84
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	982
 	.long	982
 	.long	.Lxtalabel84
 .cc_bottom cc_509
 .cc_top cc_510,.Lxtalabel84
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	984
 	.long	984
 	.long	.Lxtalabel84
 .cc_bottom cc_510
 .cc_top cc_511,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel52
 .cc_bottom cc_511
 .cc_top cc_512,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel52
 .cc_bottom cc_512
 .cc_top cc_513,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel52
 .cc_bottom cc_513
 .cc_top cc_514,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel52
 .cc_bottom cc_514
 .cc_top cc_515,.Lxtalabel52
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel52
 .cc_bottom cc_515
-.cc_top cc_516,.Lxtalabel77
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	429
-	.long	431
-	.long	.Lxtalabel77
-.cc_bottom cc_516
-.cc_top cc_517,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	429
-	.long	431
-	.long	.Lxtalabel82
-.cc_bottom cc_517
-.cc_top cc_518,.Lxtalabel97
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	429
-	.long	431
-	.long	.Lxtalabel97
-.cc_bottom cc_518
-.cc_top cc_519,.Lxtalabel64
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_516,.Lxtalabel64
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	429
 	.long	431
 	.long	.Lxtalabel64
-.cc_bottom cc_519
-.cc_top cc_520,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_bottom cc_516
+.cc_top cc_517,.Lxtalabel77
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	429
+	.long	431
+	.long	.Lxtalabel77
+.cc_bottom cc_517
+.cc_top cc_518,.Lxtalabel54
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	429
 	.long	431
 	.long	.Lxtalabel54
+.cc_bottom cc_518
+.cc_top cc_519,.Lxtalabel82
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	429
+	.long	431
+	.long	.Lxtalabel82
+.cc_bottom cc_519
+.cc_top cc_520,.Lxtalabel97
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	429
+	.long	431
+	.long	.Lxtalabel97
 .cc_bottom cc_520
-.cc_top cc_521,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_521,.Lxtalabel54
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	434
 	.long	435
-	.long	.Lxtalabel82
+	.long	.Lxtalabel54
 .cc_bottom cc_521
 .cc_top cc_522,.Lxtalabel64
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	434
 	.long	435
 	.long	.Lxtalabel64
 .cc_bottom cc_522
-.cc_top cc_523,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	434
-	.long	435
-	.long	.Lxtalabel54
-.cc_bottom cc_523
-.cc_top cc_524,.Lxtalabel77
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	434
-	.long	435
-	.long	.Lxtalabel77
-.cc_bottom cc_524
-.cc_top cc_525,.Lxtalabel97
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_523,.Lxtalabel97
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	434
 	.long	435
 	.long	.Lxtalabel97
+.cc_bottom cc_523
+.cc_top cc_524,.Lxtalabel82
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	434
+	.long	435
+	.long	.Lxtalabel82
+.cc_bottom cc_524
+.cc_top cc_525,.Lxtalabel77
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	434
+	.long	435
+	.long	.Lxtalabel77
 .cc_bottom cc_525
 .cc_top cc_526,.Lxtalabel97
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	436
 	.long	438
 	.long	.Lxtalabel97
 .cc_bottom cc_526
-.cc_top cc_527,.Lxtalabel82
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	436
-	.long	438
-	.long	.Lxtalabel82
-.cc_bottom cc_527
-.cc_top cc_528,.Lxtalabel54
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	436
-	.long	438
-	.long	.Lxtalabel54
-.cc_bottom cc_528
-.cc_top cc_529,.Lxtalabel77
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	436
-	.long	438
-	.long	.Lxtalabel77
-.cc_bottom cc_529
-.cc_top cc_530,.Lxtalabel64
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_527,.Lxtalabel64
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	436
 	.long	438
 	.long	.Lxtalabel64
+.cc_bottom cc_527
+.cc_top cc_528,.Lxtalabel77
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	436
+	.long	438
+	.long	.Lxtalabel77
+.cc_bottom cc_528
+.cc_top cc_529,.Lxtalabel82
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	436
+	.long	438
+	.long	.Lxtalabel82
+.cc_bottom cc_529
+.cc_top cc_530,.Lxtalabel54
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	436
+	.long	438
+	.long	.Lxtalabel54
 .cc_bottom cc_530
-.cc_top cc_531,.Lxtalabel65
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_531,.Lxtalabel98
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	439
+	.long	441
+	.long	.Lxtalabel98
+.cc_bottom cc_531
+.cc_top cc_532,.Lxtalabel65
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	439
 	.long	441
 	.long	.Lxtalabel65
-.cc_bottom cc_531
-.cc_top cc_532,.Lxtalabel55
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_bottom cc_532
+.cc_top cc_533,.Lxtalabel55
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	439
 	.long	441
 	.long	.Lxtalabel55
-.cc_bottom cc_532
-.cc_top cc_533,.Lxtalabel78
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	439
-	.long	441
-	.long	.Lxtalabel78
 .cc_bottom cc_533
 .cc_top cc_534,.Lxtalabel83
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	439
 	.long	441
 	.long	.Lxtalabel83
 .cc_bottom cc_534
-.cc_top cc_535,.Lxtalabel98
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_535,.Lxtalabel78
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	439
 	.long	441
-	.long	.Lxtalabel98
+	.long	.Lxtalabel78
 .cc_bottom cc_535
-.cc_top cc_536,.Lxtalabel98
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	443
-	.long	444
-	.long	.Lxtalabel98
-.cc_bottom cc_536
-.cc_top cc_537,.Lxtalabel78
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_536,.Lxtalabel78
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	443
 	.long	444
 	.long	.Lxtalabel78
+.cc_bottom cc_536
+.cc_top cc_537,.Lxtalabel65
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	443
+	.long	444
+	.long	.Lxtalabel65
 .cc_bottom cc_537
 .cc_top cc_538,.Lxtalabel83
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	443
 	.long	444
 	.long	.Lxtalabel83
 .cc_bottom cc_538
 .cc_top cc_539,.Lxtalabel55
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	443
 	.long	444
 	.long	.Lxtalabel55
 .cc_bottom cc_539
-.cc_top cc_540,.Lxtalabel65
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_540,.Lxtalabel98
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	443
 	.long	444
-	.long	.Lxtalabel65
+	.long	.Lxtalabel98
 .cc_bottom cc_540
 .cc_top cc_541,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	456
 	.long	460
 	.long	.Lxtalabel95
 .cc_bottom cc_541
 .cc_top cc_542,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	456
 	.long	460
 	.long	.Lxtalabel101
 .cc_bottom cc_542
 .cc_top cc_543,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	456
 	.long	460
 	.long	.Lxtalabel61
 .cc_bottom cc_543
-.cc_top cc_544,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_544,.Lxtalabel101
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	462
+	.long	462
+	.long	.Lxtalabel101
+.cc_bottom cc_544
+.cc_top cc_545,.Lxtalabel61
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	462
 	.long	462
 	.long	.Lxtalabel61
-.cc_bottom cc_544
-.cc_top cc_545,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_bottom cc_545
+.cc_top cc_546,.Lxtalabel95
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	462
 	.long	462
 	.long	.Lxtalabel95
-.cc_bottom cc_545
-.cc_top cc_546,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	462
-	.long	462
-	.long	.Lxtalabel101
 .cc_bottom cc_546
-.cc_top cc_547,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	465
-	.long	466
-	.long	.Lxtalabel101
-.cc_bottom cc_547
-.cc_top cc_548,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_547,.Lxtalabel61
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	465
 	.long	466
 	.long	.Lxtalabel61
+.cc_bottom cc_547
+.cc_top cc_548,.Lxtalabel101
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	465
+	.long	466
+	.long	.Lxtalabel101
 .cc_bottom cc_548
 .cc_top cc_549,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	465
 	.long	466
 	.long	.Lxtalabel95
 .cc_bottom cc_549
-.cc_top cc_550,.Lxtalabel101
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	467
-	.long	469
-	.long	.Lxtalabel101
-.cc_bottom cc_550
-.cc_top cc_551,.Lxtalabel95
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	467
-	.long	469
-	.long	.Lxtalabel95
-.cc_bottom cc_551
-.cc_top cc_552,.Lxtalabel61
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_550,.Lxtalabel61
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	467
 	.long	469
 	.long	.Lxtalabel61
+.cc_bottom cc_550
+.cc_top cc_551,.Lxtalabel101
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	467
+	.long	469
+	.long	.Lxtalabel101
+.cc_bottom cc_551
+.cc_top cc_552,.Lxtalabel95
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	467
+	.long	469
+	.long	.Lxtalabel95
 .cc_bottom cc_552
 .cc_top cc_553,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel96
 .cc_bottom cc_553
-.cc_top cc_554,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel62
-.cc_bottom cc_554
-.cc_top cc_555,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_554,.Lxtalabel102
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel102
+.cc_bottom cc_554
+.cc_top cc_555,.Lxtalabel62
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel62
 .cc_bottom cc_555
 .cc_top cc_556,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel96
 .cc_bottom cc_556
 .cc_top cc_557,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel62
 .cc_bottom cc_557
 .cc_top cc_558,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel102
 .cc_bottom cc_558
 .cc_top cc_559,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	477
 	.long	477
 	.long	.Lxtalabel96
 .cc_bottom cc_559
 .cc_top cc_560,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	477
 	.long	477
 	.long	.Lxtalabel62
 .cc_bottom cc_560
 .cc_top cc_561,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	477
 	.long	477
 	.long	.Lxtalabel102
 .cc_bottom cc_561
-.cc_top cc_562,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_562,.Lxtalabel102
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	480
 	.long	480
-	.long	.Lxtalabel96
+	.long	.Lxtalabel102
 .cc_bottom cc_562
 .cc_top cc_563,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	480
 	.long	480
 	.long	.Lxtalabel62
 .cc_bottom cc_563
-.cc_top cc_564,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_564,.Lxtalabel96
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	480
 	.long	480
-	.long	.Lxtalabel102
-.cc_bottom cc_564
-.cc_top cc_565,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	482
-	.long	482
 	.long	.Lxtalabel96
-.cc_bottom cc_565
-.cc_top cc_566,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_bottom cc_564
+.cc_top cc_565,.Lxtalabel62
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	482
 	.long	482
 	.long	.Lxtalabel62
+.cc_bottom cc_565
+.cc_top cc_566,.Lxtalabel96
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	482
+	.long	482
+	.long	.Lxtalabel96
 .cc_bottom cc_566
 .cc_top cc_567,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	482
 	.long	482
 	.long	.Lxtalabel102
 .cc_bottom cc_567
 .cc_top cc_568,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	485
 	.long	485
 	.long	.Lxtalabel62
 .cc_bottom cc_568
-.cc_top cc_569,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	485
-	.long	485
-	.long	.Lxtalabel96
-.cc_bottom cc_569
-.cc_top cc_570,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_569,.Lxtalabel102
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	485
 	.long	485
 	.long	.Lxtalabel102
+.cc_bottom cc_569
+.cc_top cc_570,.Lxtalabel96
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	485
+	.long	485
+	.long	.Lxtalabel96
 .cc_bottom cc_570
 .cc_top cc_571,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	488
 	.long	488
 	.long	.Lxtalabel96
 .cc_bottom cc_571
-.cc_top cc_572,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	488
-	.long	488
-	.long	.Lxtalabel62
-.cc_bottom cc_572
-.cc_top cc_573,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_572,.Lxtalabel102
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	488
 	.long	488
 	.long	.Lxtalabel102
+.cc_bottom cc_572
+.cc_top cc_573,.Lxtalabel62
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	488
+	.long	488
+	.long	.Lxtalabel62
 .cc_bottom cc_573
 .cc_top cc_574,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	491
 	.long	491
 	.long	.Lxtalabel62
 .cc_bottom cc_574
 .cc_top cc_575,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	491
 	.long	491
 	.long	.Lxtalabel96
 .cc_bottom cc_575
 .cc_top cc_576,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	491
 	.long	491
 	.long	.Lxtalabel102
 .cc_bottom cc_576
-.cc_top cc_577,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	493
-	.long	493
-	.long	.Lxtalabel96
-.cc_bottom cc_577
-.cc_top cc_578,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_577,.Lxtalabel62
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	493
 	.long	493
 	.long	.Lxtalabel62
+.cc_bottom cc_577
+.cc_top cc_578,.Lxtalabel96
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	493
+	.long	493
+	.long	.Lxtalabel96
 .cc_bottom cc_578
 .cc_top cc_579,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	493
 	.long	493
 	.long	.Lxtalabel102
 .cc_bottom cc_579
-.cc_top cc_580,.Lxtalabel96
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
-	.byte	0
-	.long	495
-	.long	496
-	.long	.Lxtalabel96
-.cc_bottom cc_580
-.cc_top cc_581,.Lxtalabel62
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+.cc_top cc_580,.Lxtalabel62
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	495
 	.long	496
 	.long	.Lxtalabel62
+.cc_bottom cc_580
+.cc_top cc_581,.Lxtalabel96
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.byte	0
+	.long	495
+	.long	496
+	.long	.Lxtalabel96
 .cc_bottom cc_581
 .cc_top cc_582,.Lxtalabel102
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.byte	0
 	.long	495
 	.long	496
@@ -13296,465 +13296,465 @@ tmpBuffer:
 .Lentries_start8:
 	.long	.Lentries_end9-.Lentries_start8
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_583,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	170
 	.long	170
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_583
 .cc_top cc_584,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	172
 	.long	175
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_584
 .cc_top cc_585,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	177
 	.long	177
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_585
 .cc_top cc_586,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	178
 	.long	179
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_586
 .cc_top cc_587,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	182
 	.long	183
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_587
 .cc_top cc_588,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	185
 	.long	185
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_588
 .cc_top cc_589,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	186
 	.long	186
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_589
 .cc_top cc_590,.Lxta.loop_labels2
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	190
 	.long	190
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_590
 .cc_top cc_591,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	199
 	.long	199
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_591
 .cc_top cc_592,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	201
 	.long	204
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_592
 .cc_top cc_593,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	206
 	.long	206
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_593
 .cc_top cc_594,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	207
 	.long	207
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_594
 .cc_top cc_595,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	210
 	.long	212
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_595
 .cc_top cc_596,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	214
 	.long	214
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_596
 .cc_top cc_597,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	217
 	.long	217
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_597
 .cc_top cc_598,.Lxta.loop_labels1
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	221
 	.long	221
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_598
 .cc_top cc_599,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	231
 	.long	231
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_599
 .cc_top cc_600,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	233
 	.long	236
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_600
 .cc_top cc_601,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	239
 	.long	241
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_601
 .cc_top cc_602,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	242
 	.long	242
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_602
 .cc_top cc_603,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	243
 	.long	247
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_603
 .cc_top cc_604,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	248
 	.long	248
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_604
 .cc_top cc_605,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	249
 	.long	253
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_605
 .cc_top cc_606,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	254
 	.long	254
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_606
 .cc_top cc_607,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	255
 	.long	262
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_607
 .cc_top cc_608,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	265
 	.long	267
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_608
 .cc_top cc_609,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	268
 	.long	268
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_609
 .cc_top cc_610,.Lxta.loop_labels0
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	273
 	.long	273
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_610
 .cc_top cc_611,.Lxta.loop_labels3
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	284
 	.long	284
 	.long	.Lxta.loop_labels3
 .cc_bottom cc_611
 .cc_top cc_612,.Lxta.loop_labels3
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	285
 	.long	285
 	.long	.Lxta.loop_labels3
 .cc_bottom cc_612
 .cc_top cc_613,.Lxta.loop_labels3
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	286
 	.long	286
 	.long	.Lxta.loop_labels3
 .cc_bottom cc_613
 .cc_top cc_614,.Lxta.loop_labels5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	334
 	.long	334
 	.long	.Lxta.loop_labels5
 .cc_bottom cc_614
 .cc_top cc_615,.Lxta.loop_labels5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	336
 	.long	336
 	.long	.Lxta.loop_labels5
 .cc_bottom cc_615
 .cc_top cc_616,.Lxta.loop_labels5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	340
 	.long	345
 	.long	.Lxta.loop_labels5
 .cc_bottom cc_616
 .cc_top cc_617,.Lxta.loop_labels5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	354
 	.long	354
 	.long	.Lxta.loop_labels5
 .cc_bottom cc_617
 .cc_top cc_618,.Lxta.loop_labels5
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	355
 	.long	356
 	.long	.Lxta.loop_labels5
 .cc_bottom cc_618
 .cc_top cc_619,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	369
 	.long	369
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_619
 .cc_top cc_620,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	371
 	.long	371
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_620
 .cc_top cc_621,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	374
 	.long	379
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_621
 .cc_top cc_622,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	382
 	.long	388
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_622
 .cc_top cc_623,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	389
 	.long	389
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_623
 .cc_top cc_624,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	390
 	.long	390
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_624
 .cc_top cc_625,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	391
 	.long	391
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_625
 .cc_top cc_626,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	392
 	.long	395
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_626
 .cc_top cc_627,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	396
 	.long	396
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_627
 .cc_top cc_628,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	397
 	.long	401
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_628
 .cc_top cc_629,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	402
 	.long	402
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_629
 .cc_top cc_630,.Lxta.loop_labels4
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	403
 	.long	407
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_630
 .cc_top cc_631,.Lxta.loop_labels6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	417
 	.long	417
 	.long	.Lxta.loop_labels6
 .cc_bottom cc_631
 .cc_top cc_632,.Lxta.loop_labels6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	418
 	.long	418
 	.long	.Lxta.loop_labels6
 .cc_bottom cc_632
 .cc_top cc_633,.Lxta.loop_labels6
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	419
 	.long	419
 	.long	.Lxta.loop_labels6
 .cc_bottom cc_633
 .cc_top cc_634,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	486
 	.long	487
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_634
 .cc_top cc_635,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	490
 	.long	490
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_635
 .cc_top cc_636,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_636
 .cc_top cc_637,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	493
 	.long	493
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_637
 .cc_top cc_638,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_638
 .cc_top cc_639,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	499
 	.long	503
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_639
 .cc_top cc_640,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	505
 	.long	505
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_640
 .cc_top cc_641,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	506
 	.long	506
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_641
 .cc_top cc_642,.Lxta.loop_labels7
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_642
 .cc_top cc_643,.Lxta.loop_labels8
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	645
 	.long	645
 	.long	.Lxta.loop_labels8
 .cc_bottom cc_643
 .cc_top cc_644,.Lxta.loop_labels8
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	646
 	.long	646
 	.long	.Lxta.loop_labels8
 .cc_bottom cc_644
 .cc_top cc_645,.Lxta.loop_labels8
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	647
 	.long	647
 	.long	.Lxta.loop_labels8
 .cc_bottom cc_645
 .cc_top cc_646,.Lxta.loop_labels9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	660
 	.long	660
 	.long	.Lxta.loop_labels9
 .cc_bottom cc_646
 .cc_top cc_647,.Lxta.loop_labels9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	661
 	.long	661
 	.long	.Lxta.loop_labels9
 .cc_bottom cc_647
 .cc_top cc_648,.Lxta.loop_labels9
-	.ascii	"F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc"
 	.byte	0
 	.long	662
 	.long	662

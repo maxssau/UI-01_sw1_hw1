@@ -1,13 +1,13 @@
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc"
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc" 2
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc" 2
 
-# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\print.h" 1 3
-# 34 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\print.h" 3
+# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
+# 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
 
 
@@ -110,16 +110,16 @@ int printbinln(unsigned value);
 
 
 int printstr(const char (& alias s)[]);
-# 145 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\print.h" 3
+# 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 3 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc" 2
+# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc" 2
 
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_requests.h" 1
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 1
 
 
 
-# 1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h" 1 3
-# 201 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\xccompat.h" 3
+# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
+# 201 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
 typedef streaming chanend streaming_chanend_t;
 
 typedef in buffered port:1 in_buffered_port_1_t;
@@ -133,9 +133,9 @@ typedef out buffered port:4 out_buffered_port_4_t;
 typedef out buffered port:8 out_buffered_port_8_t;
 typedef out buffered port:16 out_buffered_port_16_t;
 typedef out buffered port:32 out_buffered_port_32_t;
-# 5 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_requests.h" 2
-# 1 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h" 1
-# 10 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h"
+# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 2
+# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h" 1
+# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h"
 typedef enum
 {
     USB_CLASS_USE_CLASS = 0x00,
@@ -158,7 +158,7 @@ typedef enum
     USB_CLASS_MAPPED_INDEX_END = 17,
     USB_CLASS_VENDOR_SPECIFIC = 0xFF
 } USB_ClassCode_t;
-# 6 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_requests.h" 2
+# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 2
 
 
 
@@ -203,7 +203,7 @@ void USB_PrintSetupPacket(USB_SetupPacket_t sp);
 void USB_ComposeSetupBuffer(USB_SetupPacket_t sp, unsigned char buffer[]);
 
 void USB_ParseSetupPacket(unsigned char b[], USB_SetupPacket_t &p);
-# 5 "F:/Projects/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc" 2
+# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.xc" 2
 
 void USB_ParseSetupPacket(unsigned char b[], USB_SetupPacket_t &p)
 {

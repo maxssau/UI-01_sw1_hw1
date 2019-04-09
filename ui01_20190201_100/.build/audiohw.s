@@ -10,23 +10,23 @@
 	.set usage.anon.0,0
 	.set usage.anon.1,0
 	.set usage.anon.2,0
-	.globread Reset,CTRL_Current_Mode,"../src\\audio_hw.h:294:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
-	.globread MCLK_Config,CTRL_Current_Mode,"../src\\audio_hw.h:264:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
-	.globread SetDSD,CTRL_Current_Mode,"../src\\audio_hw.h:201:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
-	.globread SetPCM,CTRL_Current_Mode,"../src\\audio_hw.h:132:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
-	.globread UnMute,CTRL_Current_Mode,"../src\\audio_hw.h:102:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
-	.globread Mute,CTRL_Current_Mode,"../src\\audio_hw.h:74:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
-	.globwrite Reset,dac_ctrl2,"../src\\audio_hw.h:298:24: note: object used here\n                setbit(dac_ctrl2,0,reset_mode);\n                       ^~~~~~~~~"
-	.globwrite Reset,dac_control1,"../src\\audio_hw.h:299:17: note: object used here\n                dac_control1<:dac_ctrl2;\n                ^~~~~~~~~~~~"
-	.globwrite MCLK_Config,dac_mclk44_48,"../src\\audio_hw.h:270:21: note: object used here\n                    dac_mclk44_48<:1;\n                    ^~~~~~~~~~~~~"
-	.globwrite SetDSD,dac_ctrl1,"../src\\audio_hw.h:199:12: note: object used here\n    setbit(dac_ctrl1,1,1);\n           ^~~~~~~~~"
-	.globwrite SetDSD,dac_control1,"../src\\audio_hw.h:259:5: note: object used here\n    dac_control1<:dac_ctrl1;\n    ^~~~~~~~~~~~"
-	.globwrite SetPCM,dac_ctrl1,"../src\\audio_hw.h:142:28: note: object used here\n                    setbit(dac_ctrl1,2,0);\n                           ^~~~~~~~~"
-	.globwrite SetPCM,dac_control1,"../src\\audio_hw.h:176:17: note: object used here\n                dac_control1<:dac_ctrl1;\n                ^~~~~~~~~~~~"
-	.globwrite UnMute,dac_ctrl1,"../src\\audio_hw.h:106:24: note: object used here\n                setbit(dac_ctrl1,0,0);\n                       ^~~~~~~~~"
-	.globwrite UnMute,dac_control1,"../src\\audio_hw.h:107:17: note: object used here\n                dac_control1<:dac_ctrl1;\n                ^~~~~~~~~~~~"
-	.globwrite Mute,dac_ctrl1,"../src\\audio_hw.h:78:20: note: object used here\n            setbit(dac_ctrl1,0,1);\n                   ^~~~~~~~~"
-	.globwrite Mute,dac_control1,"../src\\audio_hw.h:79:13: note: object used here\n            dac_control1<:dac_ctrl1;\n            ^~~~~~~~~~~~"
+	.globread Reset,CTRL_Current_Mode,"../src/audio_hw.h:294:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
+	.globread MCLK_Config,CTRL_Current_Mode,"../src/audio_hw.h:264:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
+	.globread SetDSD,CTRL_Current_Mode,"../src/audio_hw.h:201:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
+	.globread SetPCM,CTRL_Current_Mode,"../src/audio_hw.h:132:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
+	.globread UnMute,CTRL_Current_Mode,"../src/audio_hw.h:102:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
+	.globread Mute,CTRL_Current_Mode,"../src/audio_hw.h:74:12: note: object used here\n    switch(CTRL_Current_Mode)\n           ^~~~~~~~~~~~~~~~~"
+	.globwrite Reset,dac_ctrl2,"../src/audio_hw.h:298:24: note: object used here\n                setbit(dac_ctrl2,0,reset_mode);\n                       ^~~~~~~~~"
+	.globwrite Reset,dac_control1,"../src/audio_hw.h:299:17: note: object used here\n                dac_control1<:dac_ctrl2;\n                ^~~~~~~~~~~~"
+	.globwrite MCLK_Config,dac_mclk44_48,"../src/audio_hw.h:270:21: note: object used here\n                    dac_mclk44_48<:1;\n                    ^~~~~~~~~~~~~"
+	.globwrite SetDSD,dac_ctrl1,"../src/audio_hw.h:199:12: note: object used here\n    setbit(dac_ctrl1,1,1);\n           ^~~~~~~~~"
+	.globwrite SetDSD,dac_control1,"../src/audio_hw.h:259:5: note: object used here\n    dac_control1<:dac_ctrl1;\n    ^~~~~~~~~~~~"
+	.globwrite SetPCM,dac_ctrl1,"../src/audio_hw.h:142:28: note: object used here\n                    setbit(dac_ctrl1,2,0);\n                           ^~~~~~~~~"
+	.globwrite SetPCM,dac_control1,"../src/audio_hw.h:176:17: note: object used here\n                dac_control1<:dac_ctrl1;\n                ^~~~~~~~~~~~"
+	.globwrite UnMute,dac_ctrl1,"../src/audio_hw.h:106:24: note: object used here\n                setbit(dac_ctrl1,0,0);\n                       ^~~~~~~~~"
+	.globwrite UnMute,dac_control1,"../src/audio_hw.h:107:17: note: object used here\n                dac_control1<:dac_ctrl1;\n                ^~~~~~~~~~~~"
+	.globwrite Mute,dac_ctrl1,"../src/audio_hw.h:78:20: note: object used here\n            setbit(dac_ctrl1,0,1);\n                   ^~~~~~~~~"
+	.globwrite Mute,dac_control1,"../src/audio_hw.h:79:13: note: object used here\n            dac_control1<:dac_ctrl1;\n            ^~~~~~~~~~~~"
 	.call AudioHwConfig,UnMute
 	.call AudioHwConfig,SetPCM
 	.call AudioHwConfig,SetDSD
@@ -62,27 +62,27 @@
 	.set SetDSD.locnoglobalaccess, 0
 	.set MCLK_Config.locnoglobalaccess, 0
 	.set Reset.locnoglobalaccess, 0
-	.globpassesref setbit, dac_ctrl2,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:298:17: error: call to `setbit\' in `Reset\' makes alias of global \'dac_ctrl2\'\n                setbit(dac_ctrl2,0,reset_mode);\n                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:242:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:241:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:232:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:231:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:222:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:221:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:212:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:211:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:199:5: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n    setbit(dac_ctrl1,1,1);\n    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:175:17: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                setbit(dac_ctrl1,1,0);\n                ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:172:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:171:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:162:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:161:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:152:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:151:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:143:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:142:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:106:17: error: call to `setbit\' in `UnMute\' makes alias of global \'dac_ctrl1\'\n                setbit(dac_ctrl1,0,0);\n                ^~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src\\audio_hw.h:78:13: error: call to `setbit\' in `Mute\' makes alias of global \'dac_ctrl1\'\n            setbit(dac_ctrl1,0,1);\n            ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl2,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:298:17: error: call to `setbit\' in `Reset\' makes alias of global \'dac_ctrl2\'\n                setbit(dac_ctrl2,0,reset_mode);\n                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:242:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:241:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:232:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:231:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:222:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:221:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:212:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:211:21: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:199:5: error: call to `setbit\' in `SetDSD\' makes alias of global \'dac_ctrl1\'\n    setbit(dac_ctrl1,1,1);\n    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:175:17: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                setbit(dac_ctrl1,1,0);\n                ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:172:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:171:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:162:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:161:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:152:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:151:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,1);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:143:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,3,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:142:21: error: call to `setbit\' in `SetPCM\' makes alias of global \'dac_ctrl1\'\n                    setbit(dac_ctrl1,2,0);\n                    ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:106:17: error: call to `setbit\' in `UnMute\' makes alias of global \'dac_ctrl1\'\n                setbit(dac_ctrl1,0,0);\n                ^~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref setbit, dac_ctrl1,"In file included from ../src/audiohw.xc:9:\n../src/audio_hw.h:78:13: error: call to `setbit\' in `Mute\' makes alias of global \'dac_ctrl1\'\n            setbit(dac_ctrl1,0,1);\n            ^~~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -99,7 +99,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "../src\\audio_hw.h"
+	.file	1 "../src/audio_hw.h"
 	.section	.cp.rodata.cst4,"aMc",@progbits,4
 	.cc_top .LCPI0_0.data,.LCPI0_0
 	.align	4
@@ -298,7 +298,7 @@ dac_mclk44_48.dtor:                     # @dac_mclk44_48.dtor
 	.cc_top setbit.function,setbit
 setbit:                                 # @setbit
 .Lfunc_begin6:
-	.loc	1 59 0                  # ../src\audio_hw.h:59:0
+	.loc	1 59 0                  # ../src/audio_hw.h:59:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -310,14 +310,14 @@ setbit:                                 # @setbit
 		mkmsk r3, 1
 		dualentsp 0
 	}
-	.loc	1 61 0 prologue_end     # ../src\audio_hw.h:61:0
+	.loc	1 61 0 prologue_end     # ../src/audio_hw.h:61:0
 .Ltmp6:
 	{
 		shl r1, r3, r1
 		eq r2, r2, 1
 	}
 .Ltmp7:
-	.loc	1 60 5                  # ../src\audio_hw.h:60:5
+	.loc	1 60 5                  # ../src/audio_hw.h:60:5
 	bf r2, .LBB6_2
 # BB#1:                                 # %iftrue
 .Lxtalabel1:
@@ -326,7 +326,7 @@ setbit:                                 # @setbit
 		nop
 		ldw r2, r0[0]
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r2, r2, r1
 		nop
@@ -339,7 +339,7 @@ setbit:                                 # @setbit
 		nop
 		ldw r2, r0[0]
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		andnot r2, r1
 		nop
@@ -377,7 +377,7 @@ setbit:                                 # @setbit
 	.cc_top getbit.function,getbit
 getbit:                                 # @getbit
 .Lfunc_begin7:
-	.loc	1 66 0                  # ../src\audio_hw.h:66:0
+	.loc	1 66 0                  # ../src/audio_hw.h:66:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -388,14 +388,14 @@ getbit:                                 # @getbit
 		mkmsk r2, 1
 		dualentsp 0
 	}
-	.loc	1 67 5 prologue_end     # ../src\audio_hw.h:67:5
+	.loc	1 67 5 prologue_end     # ../src/audio_hw.h:67:5
 .Ltmp10:
 	{
 		shl r1, r2, r1
 		nop
 	}
 .Ltmp11:
-	.loc	1 67 5                  # ../src\audio_hw.h:67:5
+	.loc	1 67 5                  # ../src/audio_hw.h:67:5
 	{
 		and r0, r1, r0
 		retsp 0
@@ -432,7 +432,7 @@ getbit:                                 # @getbit
 	.cc_top Mute.function,Mute
 Mute:                                   # @Mute
 .Lfunc_begin8:
-	.loc	1 73 0                  # ../src\audio_hw.h:73:0
+	.loc	1 73 0                  # ../src/audio_hw.h:73:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -441,7 +441,7 @@ Mute:                                   # @Mute
 		ldc r0, 0
 		dualentsp 0
 	}
-	.loc	1 74 0 prologue_end     # ../src\audio_hw.h:74:0
+	.loc	1 74 0 prologue_end     # ../src/audio_hw.h:74:0
 .Ltmp15:
 	ldaw r1, dp[CTRL_Current_Mode]
 	{
@@ -454,22 +454,22 @@ Mute:                                   # @Mute
 .Ltmp16:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl1]
 	{
 		mkmsk r1, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI8_0]
 .Ltmp17:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels0:
 	{
 		out res[r1], r0
@@ -519,7 +519,7 @@ Mute:                                   # @Mute
 	.cc_top UnMute.function,UnMute
 UnMute:                                 # @UnMute
 .Lfunc_begin9:
-	.loc	1 101 0                 # ../src\audio_hw.h:101:0
+	.loc	1 101 0                 # ../src/audio_hw.h:101:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -528,7 +528,7 @@ UnMute:                                 # @UnMute
 		ldc r0, 0
 		dualentsp 0
 	}
-	.loc	1 102 0 prologue_end    # ../src\audio_hw.h:102:0
+	.loc	1 102 0 prologue_end    # ../src/audio_hw.h:102:0
 .Ltmp20:
 	ldaw r1, dp[CTRL_Current_Mode]
 	{
@@ -541,19 +541,19 @@ UnMute:                                 # @UnMute
 .Ltmp21:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI9_0]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI9_1]
 .Ltmp22:
-	.loc	1 107 40                # ../src\audio_hw.h:107:40
+	.loc	1 107 40                # ../src/audio_hw.h:107:40
 .Lxta.endpoint_labels1:
 	{
 		out res[r1], r0
@@ -638,7 +638,7 @@ UnMute:                                 # @UnMute
 	.cc_top SetPCM.function,SetPCM
 SetPCM:                                 # @SetPCM
 .Lfunc_begin10:
-	.loc	1 129 0                 # ../src\audio_hw.h:129:0
+	.loc	1 129 0                 # ../src/audio_hw.h:129:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -648,7 +648,7 @@ SetPCM:                                 # @SetPCM
 		ldc r1, 0
 		dualentsp 0
 	}
-	.loc	1 132 0 prologue_end    # ../src\audio_hw.h:132:0
+	.loc	1 132 0 prologue_end    # ../src/audio_hw.h:132:0
 .Ltmp25:
 	ldaw r2, dp[CTRL_Current_Mode]
 	{
@@ -661,7 +661,7 @@ SetPCM:                                 # @SetPCM
 .Lxtalabel12:
 	#DEBUG_VALUE: SetPCM:samFreq <- R0
 	ldc r1, 49999
-	.loc	1 136 17                # ../src\audio_hw.h:136:17
+	.loc	1 136 17                # ../src/audio_hw.h:136:17
 	{
 		lsu r1, r1, r0
 		nop
@@ -672,13 +672,13 @@ SetPCM:                                 # @SetPCM
 .Lxtalabel13:
 	#DEBUG_VALUE: setbit:index <- 2
 	#DEBUG_VALUE: setbit:val <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI10_1]
 .Ltmp28:
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 3
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r1
 		nop
@@ -689,13 +689,13 @@ SetPCM:                                 # @SetPCM
 .Lxtalabel14:
 	#DEBUG_VALUE: SetPCM:samFreq <- R0
 	ldw r1, cp[.LCPI10_0]
-	.loc	1 145 17                # ../src\audio_hw.h:145:17
+	.loc	1 145 17                # ../src/audio_hw.h:145:17
 	{
 		add r1, r0, r1
 		nop
 	}
 	ldc r2, 49998
-	.loc	1 145 17                # ../src\audio_hw.h:145:17
+	.loc	1 145 17                # ../src/audio_hw.h:145:17
 	{
 		lsu r1, r2, r1
 		nop
@@ -707,36 +707,36 @@ SetPCM:                                 # @SetPCM
 	#DEBUG_VALUE: SetPCM:samFreq <- R0
 	#DEBUG_VALUE: setbit:index <- 2
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r1, dp[dac_ctrl1]
 	ldw r2, cp[.LCPI10_1]
 .Ltmp31:
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 3
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r1, r2
 		ldc r2, 4
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl1]
 .Ltmp32:
 .LBB10_5:                               # %ifdone4
 .Lxtalabel16:
 	#DEBUG_VALUE: SetPCM:samFreq <- R0
 	ldw r1, cp[.LCPI10_2]
-	.loc	1 154 17                # ../src\audio_hw.h:154:17
+	.loc	1 154 17                # ../src/audio_hw.h:154:17
 	{
 		add r2, r0, r1
 		nop
 	}
 	ldw r1, cp[.LCPI10_3]
-	.loc	1 154 17                # ../src\audio_hw.h:154:17
+	.loc	1 154 17                # ../src/audio_hw.h:154:17
 	{
 		lsu r2, r1, r2
 		nop
@@ -748,40 +748,40 @@ SetPCM:                                 # @SetPCM
 	#DEBUG_VALUE: SetPCM:samFreq <- R0
 	#DEBUG_VALUE: setbit:index <- 2
 	#DEBUG_VALUE: setbit:val <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r2, dp[dac_ctrl1]
 	ldw r3, cp[.LCPI10_1]
 .Ltmp34:
 	#DEBUG_VALUE: setbit:val <- 1
 	#DEBUG_VALUE: setbit:index <- 3
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r2, r2, r3
 		ldc r3, 8
 	}
 .Ltmp35:
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r2, r2, r3
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r2, dp[dac_ctrl1]
 .Ltmp36:
 .LBB10_7:                               # %ifdone15
 .Lxtalabel18:
 	#DEBUG_VALUE: SetPCM:samFreq <- R0
 	ldw r2, cp[.LCPI10_4]
-	.loc	1 164 17                # ../src\audio_hw.h:164:17
+	.loc	1 164 17                # ../src/audio_hw.h:164:17
 	{
 		add r2, r0, r2
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 .Ltmp37:
 	ldw r0, dp[dac_ctrl1]
 .Ltmp38:
-	.loc	1 164 17                # ../src\audio_hw.h:164:17
+	.loc	1 164 17                # ../src/audio_hw.h:164:17
 	{
 		lsu r1, r1, r2
 		nop
@@ -798,7 +798,7 @@ SetPCM:                                 # @SetPCM
 		ldc r1, 12
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 .Ltmp40:
 	{
 		or r0, r0, r1
@@ -806,7 +806,7 @@ SetPCM:                                 # @SetPCM
 	}
 .LBB10_9:                               # %ifdone31
 .Lxtalabel20:
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 .Ltmp41:
 .LBB10_10:                              # %ifdone31
@@ -814,17 +814,17 @@ SetPCM:                                 # @SetPCM
 	#DEBUG_VALUE: setbit:index <- 1
 	#DEBUG_VALUE: setbit:val <- 0
 	ldw r1, cp[.LCPI10_5]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 .Ltmp42:
 	{
 		and r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI10_6]
 .Ltmp43:
-	.loc	1 176 40                # ../src\audio_hw.h:176:40
+	.loc	1 176 40                # ../src/audio_hw.h:176:40
 .Lxta.endpoint_labels2:
 	{
 		out res[r1], r0
@@ -916,7 +916,7 @@ SetPCM:                                 # @SetPCM
 	.cc_top SetDSD.function,SetDSD
 SetDSD:                                 # @SetDSD
 .Lfunc_begin11:
-	.loc	1 195 0                 # ../src\audio_hw.h:195:0
+	.loc	1 195 0                 # ../src/audio_hw.h:195:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -929,21 +929,21 @@ SetDSD:                                 # @SetDSD
 .Ltmp46:
 	#DEBUG_VALUE: setbit:index <- 1
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0 prologue_end     # ../src\audio_hw.h:61:0
+	.loc	1 61 0 prologue_end     # ../src/audio_hw.h:61:0
 	ldw r1, dp[dac_ctrl1]
 	{
 		ldc r2, 2
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl1]
 .Ltmp47:
-	.loc	1 201 0                 # ../src\audio_hw.h:201:0
+	.loc	1 201 0                 # ../src/audio_hw.h:201:0
 	{
 		ldc r2, 0
 		nop
@@ -959,7 +959,7 @@ SetDSD:                                 # @SetDSD
 .Lxtalabel24:
 	#DEBUG_VALUE: SetDSD:samFreq <- R0
 	ldw r2, cp[.LCPI11_0]
-	.loc	1 205 17                # ../src\audio_hw.h:205:17
+	.loc	1 205 17                # ../src/audio_hw.h:205:17
 	{
 		lsu r2, r2, r0
 		nop
@@ -973,7 +973,7 @@ SetDSD:                                 # @SetDSD
 	#DEBUG_VALUE: setbit:index <- 3
 	#DEBUG_VALUE: setbit:val <- 0
 	ldw r0, cp[.LCPI11_3]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 .Ltmp50:
 	{
 		and r1, r1, r0
@@ -985,13 +985,13 @@ SetDSD:                                 # @SetDSD
 .Lxtalabel26:
 	#DEBUG_VALUE: SetDSD:samFreq <- R0
 	ldw r2, cp[.LCPI11_1]
-	.loc	1 215 17                # ../src\audio_hw.h:215:17
+	.loc	1 215 17                # ../src/audio_hw.h:215:17
 	{
 		add r2, r0, r2
 		nop
 	}
 	ldw r3, cp[.LCPI11_2]
-	.loc	1 215 17                # ../src\audio_hw.h:215:17
+	.loc	1 215 17                # ../src/audio_hw.h:215:17
 	{
 		lsu r2, r3, r2
 		nop
@@ -1006,31 +1006,31 @@ SetDSD:                                 # @SetDSD
 	#DEBUG_VALUE: setbit:index <- 3
 	#DEBUG_VALUE: setbit:val <- 0
 	ldw r2, cp[.LCPI11_3]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 .Ltmp53:
 	{
 		and r1, r1, r2
 		ldc r2, 4
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl1]
 .Ltmp54:
 .LBB11_5:                               # %ifdone4
 .Lxtalabel28:
 	#DEBUG_VALUE: SetDSD:samFreq <- R0
 	ldw r2, cp[.LCPI11_4]
-	.loc	1 225 17                # ../src\audio_hw.h:225:17
+	.loc	1 225 17                # ../src/audio_hw.h:225:17
 	{
 		add r2, r0, r2
 		nop
 	}
 	ldw r3, cp[.LCPI11_5]
-	.loc	1 225 17                # ../src\audio_hw.h:225:17
+	.loc	1 225 17                # ../src/audio_hw.h:225:17
 	{
 		lsu r2, r3, r2
 		nop
@@ -1044,14 +1044,14 @@ SetDSD:                                 # @SetDSD
 	#DEBUG_VALUE: setbit:index <- 3
 	#DEBUG_VALUE: setbit:val <- 1
 	ldw r0, cp[.LCPI11_3]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 .Ltmp56:
 	{
 		and r0, r1, r0
 		ldc r1, 8
 	}
 .Ltmp57:
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r1, r0, r1
 		nop
@@ -1062,7 +1062,7 @@ SetDSD:                                 # @SetDSD
 .Lxtalabel30:
 	#DEBUG_VALUE: SetDSD:samFreq <- R0
 	ldw r2, cp[.LCPI11_6]
-	.loc	1 235 17                # ../src\audio_hw.h:235:17
+	.loc	1 235 17                # ../src/audio_hw.h:235:17
 	{
 		lsu r0, r0, r2
 		nop
@@ -1080,7 +1080,7 @@ SetDSD:                                 # @SetDSD
 		ldc r0, 12
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 .Ltmp61:
 	{
 		or r1, r1, r0
@@ -1088,13 +1088,13 @@ SetDSD:                                 # @SetDSD
 	}
 .LBB11_9:                               # %switchdone
 .Lxtalabel32:
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl1]
 .Ltmp62:
 .LBB11_10:                              # %switchdone
 .Lxtalabel33:
 	ldw r0, cp[.LCPI11_7]
-	.loc	1 259 28                # ../src\audio_hw.h:259:28
+	.loc	1 259 28                # ../src/audio_hw.h:259:28
 .Lxta.endpoint_labels3:
 	{
 		out res[r0], r1
@@ -1138,7 +1138,7 @@ SetDSD:                                 # @SetDSD
 	.cc_top MCLK_Config.function,MCLK_Config
 MCLK_Config:                            # @MCLK_Config
 .Lfunc_begin12:
-	.loc	1 263 0                 # ../src\audio_hw.h:263:0
+	.loc	1 263 0                 # ../src/audio_hw.h:263:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1148,7 +1148,7 @@ MCLK_Config:                            # @MCLK_Config
 		ldc r1, 0
 		dualentsp 0
 	}
-	.loc	1 264 0 prologue_end    # ../src\audio_hw.h:264:0
+	.loc	1 264 0 prologue_end    # ../src/audio_hw.h:264:0
 .Ltmp65:
 	ldaw r2, dp[CTRL_Current_Mode]
 	{
@@ -1161,7 +1161,7 @@ MCLK_Config:                            # @MCLK_Config
 .Lxtalabel35:
 	#DEBUG_VALUE: MCLK_Config:mClk <- R0
 	ldw r2, cp[.LCPI12_0]
-	.loc	1 268 17                # ../src\audio_hw.h:268:17
+	.loc	1 268 17                # ../src/audio_hw.h:268:17
 	{
 		eq r0, r0, r2
 		nop
@@ -1175,7 +1175,7 @@ MCLK_Config:                            # @MCLK_Config
 		nop
 	}
 	ldw r1, cp[.LCPI12_1]
-	.loc	1 270 37                # ../src\audio_hw.h:270:37
+	.loc	1 270 37                # ../src/audio_hw.h:270:37
 .Lxta.endpoint_labels4:
 	{
 		out res[r1], r0
@@ -1185,7 +1185,7 @@ MCLK_Config:                            # @MCLK_Config
 .LBB12_3:                               # %iffalse
 .Lxtalabel37:
 	ldw r0, cp[.LCPI12_1]
-	.loc	1 274 37                # ../src\audio_hw.h:274:37
+	.loc	1 274 37                # ../src/audio_hw.h:274:37
 .Lxta.endpoint_labels5:
 	{
 		out res[r0], r1
@@ -1235,7 +1235,7 @@ MCLK_Config:                            # @MCLK_Config
 	.cc_top Reset.function,Reset
 Reset:                                  # @Reset
 .Lfunc_begin13:
-	.loc	1 291 0                 # ../src\audio_hw.h:291:0
+	.loc	1 291 0                 # ../src/audio_hw.h:291:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1246,7 +1246,7 @@ Reset:                                  # @Reset
 		ldc r1, 0
 		dualentsp 0
 	}
-	.loc	1 294 0 prologue_end    # ../src\audio_hw.h:294:0
+	.loc	1 294 0 prologue_end    # ../src/audio_hw.h:294:0
 .Ltmp70:
 	ldaw r2, dp[CTRL_Current_Mode]
 	{
@@ -1259,21 +1259,21 @@ Reset:                                  # @Reset
 	#DEBUG_VALUE: Reset:reset_mode <- undef
 .Ltmp71:
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 60 5                  # ../src\audio_hw.h:60:5
+	.loc	1 60 5                  # ../src/audio_hw.h:60:5
 	{
 		eq r1, r0, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl2]
-	.loc	1 60 5                  # ../src\audio_hw.h:60:5
+	.loc	1 60 5                  # ../src/audio_hw.h:60:5
 	bt r1, .LBB13_2
 # BB#3:                                 # %switchcase
 .Lxtalabel41:
 	#DEBUG_VALUE: Reset:reset_mode <- undef
 	#DEBUG_VALUE: setbit:index <- 0
 	ldw r1, cp[.LCPI13_0]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r1
 		nop
@@ -1286,7 +1286,7 @@ Reset:                                  # @Reset
 		mkmsk r1, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r1
 		nop
@@ -1295,11 +1295,11 @@ Reset:                                  # @Reset
 .Lxtalabel42:
 	#DEBUG_VALUE: Reset:reset_mode <- undef
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl2]
 	ldw r1, cp[.LCPI13_1]
 .Ltmp72:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels6:
 	{
 		out res[r1], r0
@@ -1343,7 +1343,7 @@ Reset:                                  # @Reset
 	.cc_top UserAudioStreamStop.function,UserAudioStreamStop
 UserAudioStreamStop:                    # @UserAudioStreamStop
 .Lfunc_begin14:
-	.loc	1 319 0                 # ../src\audio_hw.h:319:0
+	.loc	1 319 0                 # ../src/audio_hw.h:319:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1352,7 +1352,7 @@ UserAudioStreamStop:                    # @UserAudioStreamStop
 		ldc r0, 0
 		dualentsp 0
 	}
-	.loc	1 74 0 prologue_end     # ../src\audio_hw.h:74:0
+	.loc	1 74 0 prologue_end     # ../src/audio_hw.h:74:0
 .Ltmp75:
 	ldaw r1, dp[CTRL_Current_Mode]
 	{
@@ -1365,22 +1365,22 @@ UserAudioStreamStop:                    # @UserAudioStreamStop
 .Ltmp76:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl1]
 	{
 		mkmsk r1, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI14_0]
 .Ltmp77:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels7:
 	{
 		out res[r1], r0
@@ -1430,7 +1430,7 @@ UserAudioStreamStop:                    # @UserAudioStreamStop
 	.cc_top UserAudioStreamStart.function,UserAudioStreamStart
 UserAudioStreamStart:                   # @UserAudioStreamStart
 .Lfunc_begin15:
-	.loc	1 331 0                 # ../src\audio_hw.h:331:0
+	.loc	1 331 0                 # ../src/audio_hw.h:331:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1439,7 +1439,7 @@ UserAudioStreamStart:                   # @UserAudioStreamStart
 		ldc r0, 0
 		dualentsp 0
 	}
-	.loc	1 102 0 prologue_end    # ../src\audio_hw.h:102:0
+	.loc	1 102 0 prologue_end    # ../src/audio_hw.h:102:0
 .Ltmp80:
 	ldaw r1, dp[CTRL_Current_Mode]
 	{
@@ -1452,19 +1452,19 @@ UserAudioStreamStart:                   # @UserAudioStreamStart
 .Ltmp81:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI15_0]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI15_1]
 .Ltmp82:
-	.loc	1 107 40                # ../src\audio_hw.h:107:40
+	.loc	1 107 40                # ../src/audio_hw.h:107:40
 .Lxta.endpoint_labels8:
 	{
 		out res[r1], r0
@@ -1514,7 +1514,7 @@ UserAudioStreamStart:                   # @UserAudioStreamStart
 	.cc_top UserHostActive.function,UserHostActive
 UserHostActive:                         # @UserHostActive
 .Lfunc_begin16:
-	.loc	1 344 0                 # ../src\audio_hw.h:344:0
+	.loc	1 344 0                 # ../src/audio_hw.h:344:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1524,7 +1524,7 @@ UserHostActive:                         # @UserHostActive
 		ldc r1, 0
 		dualentsp 0
 	}
-	.loc	1 102 0 prologue_end    # ../src\audio_hw.h:102:0
+	.loc	1 102 0 prologue_end    # ../src/audio_hw.h:102:0
 .Ltmp85:
 	ldaw r2, dp[CTRL_Current_Mode]
 	{
@@ -1532,7 +1532,7 @@ UserHostActive:                         # @UserHostActive
 		ld8u r1, r2[r1]
 	}
 .Ltmp86:
-	.loc	1 345 5                 # ../src\audio_hw.h:345:5
+	.loc	1 345 5                 # ../src/audio_hw.h:345:5
 	bf r0, .LBB16_3
 # BB#1:                                 # %iftrue
 .Lxtalabel51:
@@ -1542,10 +1542,10 @@ UserHostActive:                         # @UserHostActive
 .Ltmp87:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI16_1]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r1
 		nop
@@ -1560,24 +1560,24 @@ UserHostActive:                         # @UserHostActive
 .Ltmp89:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl1]
 	{
 		mkmsk r1, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r1
 		nop
 	}
 .LBB16_5:                               # %return
 .Lxtalabel55:
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 	ldw r1, cp[.LCPI16_0]
 .Ltmp90:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels9:
 	{
 		out res[r1], r0
@@ -1611,7 +1611,7 @@ UserHostActive:                         # @UserHostActive
 	.cc_top wait_us.function,wait_us
 wait_us:                                # @wait_us
 .Lfunc_begin17:
-	.file	2 "../src\\audiohw.xc"
+	.file	2 "../src/audiohw.xc"
 	.loc	2 13 0                  # ../src/audiohw.xc:13:0
 	.cfi_startproc
 	.issue_mode dual
@@ -1718,7 +1718,7 @@ AudioHwInit:                            # @AudioHwInit
 		dualentsp 0
 	}
 .Ltmp98:
-	.loc	1 294 0 prologue_end    # ../src\audio_hw.h:294:0
+	.loc	1 294 0 prologue_end    # ../src/audio_hw.h:294:0
 	ldaw r1, dp[CTRL_Current_Mode]
 	{
 		nop
@@ -1731,18 +1731,18 @@ AudioHwInit:                            # @AudioHwInit
 	#DEBUG_VALUE: AudioHwInit:c_codec <- R0
 	#DEBUG_VALUE: Reset:reset_mode <- 0
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl2]
 .Ltmp100:
 	ldw r1, cp[.LCPI18_0]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r0, r1
 		nop
 	}
 	ldw r2, cp[.LCPI18_1]
 .Ltmp101:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels11:
 	{
 		out res[r2], r1
@@ -1752,7 +1752,7 @@ AudioHwInit:                            # @AudioHwInit
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 2
 	#DEBUG_VALUE: SetPCM:samFreq <- 48000
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r1, dp[dac_ctrl1]
 	ldw r3, cp[.LCPI18_2]
 .Ltmp103:
@@ -1760,7 +1760,7 @@ AudioHwInit:                            # @AudioHwInit
 	#DEBUG_VALUE: setbit:index <- 1
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 3
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r1, r3
 		nop
@@ -1768,34 +1768,34 @@ AudioHwInit:                            # @AudioHwInit
 .Ltmp104:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: Reset:reset_mode <- 1
-	.loc	1 176 40                # ../src\audio_hw.h:176:40
+	.loc	1 176 40                # ../src/audio_hw.h:176:40
 .Lxta.endpoint_labels12:
 	{
 		out res[r2], r1
 		mkmsk r3, 1
 	}
 .Ltmp105:
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r3
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl2]
 .Ltmp106:
 	#DEBUG_VALUE: setbit:val <- 1
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels13:
 	{
 		out res[r2], r0
 		or r0, r1, r3
 	}
 .Ltmp107:
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 .Ltmp108:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels14:
 	{
 		out res[r2], r0
@@ -1863,7 +1863,7 @@ _SAudioHwInit_0:                        # @_SAudioHwInit_0
 		ldc r0, 0
 		dualentsp 0
 	}
-	.loc	1 294 0 prologue_end    # ../src\audio_hw.h:294:0
+	.loc	1 294 0 prologue_end    # ../src/audio_hw.h:294:0
 .Ltmp111:
 	ldaw r1, dp[CTRL_Current_Mode]
 	{
@@ -1876,17 +1876,17 @@ _SAudioHwInit_0:                        # @_SAudioHwInit_0
 	#DEBUG_VALUE: Reset:reset_mode <- 0
 .Ltmp112:
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl2]
 	ldw r1, cp[.LCPI19_0]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r0, r1
 		nop
 	}
 	ldw r2, cp[.LCPI19_1]
 .Ltmp113:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels15:
 	{
 		out res[r2], r1
@@ -1896,7 +1896,7 @@ _SAudioHwInit_0:                        # @_SAudioHwInit_0
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 2
 	#DEBUG_VALUE: SetPCM:samFreq <- 48000
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r1, dp[dac_ctrl1]
 	ldw r3, cp[.LCPI19_2]
 .Ltmp115:
@@ -1904,7 +1904,7 @@ _SAudioHwInit_0:                        # @_SAudioHwInit_0
 	#DEBUG_VALUE: setbit:index <- 1
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 3
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r1, r3
 		nop
@@ -1912,34 +1912,34 @@ _SAudioHwInit_0:                        # @_SAudioHwInit_0
 .Ltmp116:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: Reset:reset_mode <- 1
-	.loc	1 176 40                # ../src\audio_hw.h:176:40
+	.loc	1 176 40                # ../src/audio_hw.h:176:40
 .Lxta.endpoint_labels16:
 	{
 		out res[r2], r1
 		mkmsk r3, 1
 	}
 .Ltmp117:
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r3
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl2]
 .Ltmp118:
 	#DEBUG_VALUE: setbit:val <- 1
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels17:
 	{
 		out res[r2], r0
 		or r0, r1, r3
 	}
 .Ltmp119:
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 .Ltmp120:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels18:
 	{
 		out res[r2], r0
@@ -2036,7 +2036,7 @@ AudioHwConfig:                          # @AudioHwConfig
 		stw r6, sp[4]
 	}
 .Ltmp129:
-	.loc	1 74 0 prologue_end     # ../src\audio_hw.h:74:0
+	.loc	1 74 0 prologue_end     # ../src/audio_hw.h:74:0
 	{
 		ldc r5, 0
 		nop
@@ -2058,23 +2058,23 @@ AudioHwConfig:                          # @AudioHwConfig
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+32]
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r1, dp[dac_ctrl1]
 	{
 		mkmsk r2, 1
 		nop
 	}
 .Ltmp131:
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r1, r1, r2
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl1]
 	ldw r2, cp[.LCPI20_0]
 .Ltmp132:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels19:
 	{
 		out res[r2], r1
@@ -2083,18 +2083,18 @@ AudioHwConfig:                          # @AudioHwConfig
 .Ltmp133:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: Reset:reset_mode <- 0
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r1, dp[dac_ctrl2]
 	ldw r11, cp[.LCPI20_1]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r1, r11
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl2]
 .Ltmp134:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels20:
 	{
 		out res[r2], r1
@@ -2167,7 +2167,7 @@ AudioHwConfig:                          # @AudioHwConfig
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+32]
 	#DEBUG_VALUE: MCLK_Config:mClk <- R4
 	ldw r0, cp[.LCPI20_2]
-	.loc	1 268 17                # ../src\audio_hw.h:268:17
+	.loc	1 268 17                # ../src/audio_hw.h:268:17
 .Ltmp142:
 	{
 		eq r0, r4, r0
@@ -2185,7 +2185,7 @@ AudioHwConfig:                          # @AudioHwConfig
 		nop
 	}
 	ldw r1, cp[.LCPI20_3]
-	.loc	1 270 37                # ../src\audio_hw.h:270:37
+	.loc	1 270 37                # ../src/audio_hw.h:270:37
 .Lxta.endpoint_labels21:
 	{
 		out res[r1], r0
@@ -2199,7 +2199,7 @@ AudioHwConfig:                          # @AudioHwConfig
 	#DEBUG_VALUE: AudioHwConfig:sampRes_DAC <- [SP+28]
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+32]
 	ldw r0, cp[.LCPI20_3]
-	.loc	1 274 37                # ../src\audio_hw.h:274:37
+	.loc	1 274 37                # ../src/audio_hw.h:274:37
 .Lxta.endpoint_labels22:
 	{
 		out res[r0], r5
@@ -2213,22 +2213,22 @@ AudioHwConfig:                          # @AudioHwConfig
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+32]
 	#DEBUG_VALUE: Reset:reset_mode <- 1
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl2]
 	{
 		mkmsk r1, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl2]
 	ldw r1, cp[.LCPI20_0]
 .Ltmp146:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels23:
 	{
 		out res[r1], r0
@@ -2237,19 +2237,19 @@ AudioHwConfig:                          # @AudioHwConfig
 .Ltmp147:
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r0, dp[dac_ctrl1]
 	ldw r2, cp[.LCPI20_1]
 .Ltmp148:
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r2
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 .Ltmp149:
-	.loc	1 107 40                # ../src\audio_hw.h:107:40
+	.loc	1 107 40                # ../src/audio_hw.h:107:40
 .Lxta.endpoint_labels24:
 	{
 		out res[r1], r0
@@ -2354,7 +2354,7 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 		stw r6, sp[4]
 	}
 .Ltmp159:
-	.loc	1 74 0 prologue_end     # ../src\audio_hw.h:74:0
+	.loc	1 74 0 prologue_end     # ../src/audio_hw.h:74:0
 	{
 		ldc r5, 0
 		nop
@@ -2375,23 +2375,23 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+28]
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: setbit:val <- 1
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r1, dp[dac_ctrl1]
 	{
 		mkmsk r3, 1
 		nop
 	}
 .Ltmp161:
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r1, r1, r3
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl1]
 	ldw r3, cp[.LCPI21_0]
 .Ltmp162:
-	.loc	1 79 36                 # ../src\audio_hw.h:79:36
+	.loc	1 79 36                 # ../src/audio_hw.h:79:36
 .Lxta.endpoint_labels25:
 	{
 		out res[r3], r1
@@ -2400,18 +2400,18 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 .Ltmp163:
 	#DEBUG_VALUE: setbit:index <- 0
 	#DEBUG_VALUE: Reset:reset_mode <- 0
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r1, dp[dac_ctrl2]
 	ldw r11, cp[.LCPI21_1]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r1, r1, r11
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r1, dp[dac_ctrl2]
 .Ltmp164:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels26:
 	{
 		out res[r3], r1
@@ -2479,7 +2479,7 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+28]
 	#DEBUG_VALUE: MCLK_Config:mClk <- R4
 	ldw r0, cp[.LCPI21_2]
-	.loc	1 268 17                # ../src\audio_hw.h:268:17
+	.loc	1 268 17                # ../src/audio_hw.h:268:17
 .Ltmp172:
 	{
 		eq r0, r4, r0
@@ -2496,7 +2496,7 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 		nop
 	}
 	ldw r1, cp[.LCPI21_3]
-	.loc	1 270 37                # ../src\audio_hw.h:270:37
+	.loc	1 270 37                # ../src/audio_hw.h:270:37
 .Lxta.endpoint_labels27:
 	{
 		out res[r1], r0
@@ -2509,7 +2509,7 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 	#DEBUG_VALUE: AudioHwConfig:sampRes_DAC <- R3
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+28]
 	ldw r0, cp[.LCPI21_3]
-	.loc	1 274 37                # ../src\audio_hw.h:274:37
+	.loc	1 274 37                # ../src/audio_hw.h:274:37
 .Lxta.endpoint_labels28:
 	{
 		out res[r0], r5
@@ -2522,22 +2522,22 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 	#DEBUG_VALUE: AudioHwConfig:sampRes_ADC <- [SP+28]
 	#DEBUG_VALUE: Reset:reset_mode <- 1
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	ldw r0, dp[dac_ctrl2]
 	{
 		mkmsk r1, 1
 		nop
 	}
-	.loc	1 61 0                  # ../src\audio_hw.h:61:0
+	.loc	1 61 0                  # ../src/audio_hw.h:61:0
 	{
 		or r0, r0, r1
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl2]
 	ldw r1, cp[.LCPI21_0]
 .Ltmp176:
-	.loc	1 299 40                # ../src\audio_hw.h:299:40
+	.loc	1 299 40                # ../src/audio_hw.h:299:40
 .Lxta.endpoint_labels29:
 	{
 		out res[r1], r0
@@ -2546,18 +2546,18 @@ _SAudioHwConfig_0:                      # @_SAudioHwConfig_0
 .Ltmp177:
 	#DEBUG_VALUE: setbit:val <- 0
 	#DEBUG_VALUE: setbit:index <- 0
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	ldw r0, dp[dac_ctrl1]
 	ldw r2, cp[.LCPI21_1]
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	{
 		and r0, r0, r2
 		nop
 	}
-	.loc	1 63 0                  # ../src\audio_hw.h:63:0
+	.loc	1 63 0                  # ../src/audio_hw.h:63:0
 	stw r0, dp[dac_ctrl1]
 .Ltmp178:
-	.loc	1 107 40                # ../src\audio_hw.h:107:40
+	.loc	1 107 40                # ../src/audio_hw.h:107:40
 .Lxta.endpoint_labels30:
 	{
 		out res[r1], r0
@@ -2660,14 +2660,14 @@ CTRL_Current_Mode:
 .Ldebug_end1:
 	.text
 .Ldebug_end2:
-	.file	3 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.3\\target/include\\timer.h"
+	.file	3 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
 .asciiz"../src/audiohw.xc"
 .Linfo_string2:
-.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"dac_control1"
 .Linfo_string4:
@@ -5142,7 +5142,7 @@ CTRL_Current_Mode:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
 	.ascii	"../src/audiohw.xc"
@@ -5173,3287 +5173,3287 @@ CTRL_Current_Mode:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
-.cc_top cc_4,.Lxta.endpoint_labels10
-	.ascii	"../src/audiohw.xc"
-	.byte	0
-	.long	18
-	.long	.Lxta.endpoint_labels10
-.cc_bottom cc_4
-.cc_top cc_5,.Lxta.endpoint_labels0
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_4,.Lxta.endpoint_labels0
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	79
 	.long	.Lxta.endpoint_labels0
-.cc_bottom cc_5
-.cc_top cc_6,.Lxta.endpoint_labels7
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	79
-	.long	.Lxta.endpoint_labels7
-.cc_bottom cc_6
-.cc_top cc_7,.Lxta.endpoint_labels9
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	79
-	.long	.Lxta.endpoint_labels9
-.cc_bottom cc_7
-.cc_top cc_8,.Lxta.endpoint_labels14
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	79
-	.long	.Lxta.endpoint_labels14
-.cc_bottom cc_8
-.cc_top cc_9,.Lxta.endpoint_labels18
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	79
-	.long	.Lxta.endpoint_labels18
-.cc_bottom cc_9
-.cc_top cc_10,.Lxta.endpoint_labels19
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	79
-	.long	.Lxta.endpoint_labels19
-.cc_bottom cc_10
-.cc_top cc_11,.Lxta.endpoint_labels25
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_4
+.cc_top cc_5,.Lxta.endpoint_labels25
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	79
 	.long	.Lxta.endpoint_labels25
-.cc_bottom cc_11
-.cc_top cc_12,.Lxta.endpoint_labels1
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_5
+.cc_top cc_6,.Lxta.endpoint_labels19
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	79
+	.long	.Lxta.endpoint_labels19
+.cc_bottom cc_6
+.cc_top cc_7,.Lxta.endpoint_labels18
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	79
+	.long	.Lxta.endpoint_labels18
+.cc_bottom cc_7
+.cc_top cc_8,.Lxta.endpoint_labels7
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	79
+	.long	.Lxta.endpoint_labels7
+.cc_bottom cc_8
+.cc_top cc_9,.Lxta.endpoint_labels14
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	79
+	.long	.Lxta.endpoint_labels14
+.cc_bottom cc_9
+.cc_top cc_10,.Lxta.endpoint_labels9
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	79
+	.long	.Lxta.endpoint_labels9
+.cc_bottom cc_10
+.cc_top cc_11,.Lxta.endpoint_labels1
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	107
 	.long	.Lxta.endpoint_labels1
-.cc_bottom cc_12
-.cc_top cc_13,.Lxta.endpoint_labels8
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	107
-	.long	.Lxta.endpoint_labels8
-.cc_bottom cc_13
-.cc_top cc_14,.Lxta.endpoint_labels24
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	107
-	.long	.Lxta.endpoint_labels24
-.cc_bottom cc_14
-.cc_top cc_15,.Lxta.endpoint_labels30
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_11
+.cc_top cc_12,.Lxta.endpoint_labels30
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	107
 	.long	.Lxta.endpoint_labels30
-.cc_bottom cc_15
-.cc_top cc_16,.Lxta.endpoint_labels2
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_12
+.cc_top cc_13,.Lxta.endpoint_labels24
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	107
+	.long	.Lxta.endpoint_labels24
+.cc_bottom cc_13
+.cc_top cc_14,.Lxta.endpoint_labels8
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	107
+	.long	.Lxta.endpoint_labels8
+.cc_bottom cc_14
+.cc_top cc_15,.Lxta.endpoint_labels2
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	176
 	.long	.Lxta.endpoint_labels2
-.cc_bottom cc_16
-.cc_top cc_17,.Lxta.endpoint_labels12
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_15
+.cc_top cc_16,.Lxta.endpoint_labels12
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	176
 	.long	.Lxta.endpoint_labels12
-.cc_bottom cc_17
-.cc_top cc_18,.Lxta.endpoint_labels16
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_16
+.cc_top cc_17,.Lxta.endpoint_labels16
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	176
 	.long	.Lxta.endpoint_labels16
-.cc_bottom cc_18
-.cc_top cc_19,.Lxta.endpoint_labels3
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_17
+.cc_top cc_18,.Lxta.endpoint_labels3
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	259
 	.long	.Lxta.endpoint_labels3
-.cc_bottom cc_19
-.cc_top cc_20,.Lxta.endpoint_labels4
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	270
-	.long	.Lxta.endpoint_labels4
-.cc_bottom cc_20
-.cc_top cc_21,.Lxta.endpoint_labels21
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	270
-	.long	.Lxta.endpoint_labels21
-.cc_bottom cc_21
-.cc_top cc_22,.Lxta.endpoint_labels27
-	.ascii	"../src\\audio_hw.h"
+.cc_bottom cc_18
+.cc_top cc_19,.Lxta.endpoint_labels27
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	270
 	.long	.Lxta.endpoint_labels27
+.cc_bottom cc_19
+.cc_top cc_20,.Lxta.endpoint_labels21
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	270
+	.long	.Lxta.endpoint_labels21
+.cc_bottom cc_20
+.cc_top cc_21,.Lxta.endpoint_labels4
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	270
+	.long	.Lxta.endpoint_labels4
+.cc_bottom cc_21
+.cc_top cc_22,.Lxta.endpoint_labels28
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	274
+	.long	.Lxta.endpoint_labels28
 .cc_bottom cc_22
 .cc_top cc_23,.Lxta.endpoint_labels5
-	.ascii	"../src\\audio_hw.h"
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	274
 	.long	.Lxta.endpoint_labels5
 .cc_bottom cc_23
 .cc_top cc_24,.Lxta.endpoint_labels22
-	.ascii	"../src\\audio_hw.h"
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	274
 	.long	.Lxta.endpoint_labels22
 .cc_bottom cc_24
-.cc_top cc_25,.Lxta.endpoint_labels28
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_25,.Lxta.endpoint_labels20
+	.ascii	"../src/audio_hw.h"
 	.byte	0
-	.long	274
-	.long	.Lxta.endpoint_labels28
+	.long	299
+	.long	.Lxta.endpoint_labels20
 .cc_bottom cc_25
-.cc_top cc_26,.Lxta.endpoint_labels6
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_26,.Lxta.endpoint_labels29
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	299
+	.long	.Lxta.endpoint_labels29
+.cc_bottom cc_26
+.cc_top cc_27,.Lxta.endpoint_labels26
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	299
+	.long	.Lxta.endpoint_labels26
+.cc_bottom cc_27
+.cc_top cc_28,.Lxta.endpoint_labels23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	299
+	.long	.Lxta.endpoint_labels23
+.cc_bottom cc_28
+.cc_top cc_29,.Lxta.endpoint_labels6
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	299
 	.long	.Lxta.endpoint_labels6
-.cc_bottom cc_26
-.cc_top cc_27,.Lxta.endpoint_labels11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	299
-	.long	.Lxta.endpoint_labels11
-.cc_bottom cc_27
-.cc_top cc_28,.Lxta.endpoint_labels13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	299
-	.long	.Lxta.endpoint_labels13
-.cc_bottom cc_28
-.cc_top cc_29,.Lxta.endpoint_labels15
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	299
-	.long	.Lxta.endpoint_labels15
 .cc_bottom cc_29
 .cc_top cc_30,.Lxta.endpoint_labels17
-	.ascii	"../src\\audio_hw.h"
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	299
 	.long	.Lxta.endpoint_labels17
 .cc_bottom cc_30
-.cc_top cc_31,.Lxta.endpoint_labels20
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_31,.Lxta.endpoint_labels15
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	299
-	.long	.Lxta.endpoint_labels20
+	.long	.Lxta.endpoint_labels15
 .cc_bottom cc_31
-.cc_top cc_32,.Lxta.endpoint_labels23
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_32,.Lxta.endpoint_labels13
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	299
-	.long	.Lxta.endpoint_labels23
+	.long	.Lxta.endpoint_labels13
 .cc_bottom cc_32
-.cc_top cc_33,.Lxta.endpoint_labels26
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_33,.Lxta.endpoint_labels11
+	.ascii	"../src/audio_hw.h"
 	.byte	0
 	.long	299
-	.long	.Lxta.endpoint_labels26
+	.long	.Lxta.endpoint_labels11
 .cc_bottom cc_33
-.cc_top cc_34,.Lxta.endpoint_labels29
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_34,.Lxta.endpoint_labels10
+	.ascii	"../src/audiohw.xc"
 	.byte	0
-	.long	299
-	.long	.Lxta.endpoint_labels29
+	.long	18
+	.long	.Lxta.endpoint_labels10
 .cc_bottom cc_34
 .Lentries_end3:
 	.section	.xtalabeltable,"",@progbits
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
-.cc_top cc_35,.Lxtalabel57
+.cc_top cc_35,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel62
+.cc_bottom cc_35
+.cc_top cc_36,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel13
+.cc_bottom cc_36
+.cc_top cc_37,.Lxtalabel42
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel42
+.cc_bottom cc_37
+.cc_top cc_38,.Lxtalabel15
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel15
+.cc_bottom cc_38
+.cc_top cc_39,.Lxtalabel41
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel41
+.cc_bottom cc_39
+.cc_top cc_40,.Lxtalabel17
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel17
+.cc_bottom cc_40
+.cc_top cc_41,.Lxtalabel17
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel17
+.cc_bottom cc_41
+.cc_top cc_42,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel76
+.cc_bottom cc_42
+.cc_top cc_43,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel62
+.cc_bottom cc_43
+.cc_top cc_44,.Lxtalabel19
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel19
+.cc_bottom cc_44
+.cc_top cc_45,.Lxtalabel19
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel19
+.cc_bottom cc_45
+.cc_top cc_46,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel76
+.cc_bottom cc_46
+.cc_top cc_47,.Lxtalabel20
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel20
+.cc_bottom cc_47
+.cc_top cc_48,.Lxtalabel40
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel40
+.cc_bottom cc_48
+.cc_top cc_49,.Lxtalabel21
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel21
+.cc_bottom cc_49
+.cc_top cc_50,.Lxtalabel15
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel15
+.cc_bottom cc_50
+.cc_top cc_51,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel23
+.cc_bottom cc_51
+.cc_top cc_52,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel62
+.cc_bottom cc_52
+.cc_top cc_53,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel73
+.cc_bottom cc_53
+.cc_top cc_54,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel73
+.cc_bottom cc_54
+.cc_top cc_55,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel65
+.cc_bottom cc_55
+.cc_top cc_56,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel25
+.cc_bottom cc_56
+.cc_top cc_57,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel25
+.cc_bottom cc_57
+.cc_top cc_58,.Lxtalabel31
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel31
+.cc_bottom cc_58
+.cc_top cc_59,.Lxtalabel31
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel31
+.cc_bottom cc_59
+.cc_top cc_60,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel65
+.cc_bottom cc_60
+.cc_top cc_61,.Lxtalabel29
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel29
+.cc_bottom cc_61
+.cc_top cc_62,.Lxtalabel27
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel27
+.cc_bottom cc_62
+.cc_top cc_63,.Lxtalabel27
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel27
+.cc_bottom cc_63
+.cc_top cc_64,.Lxtalabel29
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel29
+.cc_bottom cc_64
+.cc_top cc_65,.Lxtalabel45
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel45
+.cc_bottom cc_65
+.cc_top cc_66,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel59
+.cc_bottom cc_66
+.cc_top cc_67,.Lxtalabel6
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel6
+.cc_bottom cc_67
+.cc_top cc_68,.Lxtalabel54
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel54
+.cc_bottom cc_68
+.cc_top cc_69,.Lxtalabel52
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel52
+.cc_bottom cc_69
+.cc_top cc_70,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel59
+.cc_bottom cc_70
+.cc_top cc_71,.Lxtalabel48
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel48
+.cc_bottom cc_71
+.cc_top cc_72,.Lxtalabel9
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel9
+.cc_bottom cc_72
+.cc_top cc_73,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel59
+.cc_bottom cc_73
+.cc_top cc_74,.Lxtalabel0
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel0
+.cc_bottom cc_74
+.cc_top cc_75,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel84
+.cc_bottom cc_75
+.cc_top cc_76,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel13
+.cc_bottom cc_76
+.cc_top cc_77,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	60
+	.long	60
+	.long	.Lxtalabel84
+.cc_bottom cc_77
+.cc_top cc_78,.Lxtalabel1
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	61
+	.long	61
+	.long	.Lxtalabel1
+.cc_bottom cc_78
+.cc_top cc_79,.Lxtalabel2
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	62
+	.long	63
+	.long	.Lxtalabel2
+.cc_bottom cc_79
+.cc_top cc_80,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel76
+.cc_bottom cc_80
+.cc_top cc_81,.Lxtalabel3
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel3
+.cc_bottom cc_81
+.cc_top cc_82,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel65
+.cc_bottom cc_82
+.cc_top cc_83,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel59
+.cc_bottom cc_83
+.cc_top cc_84,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel73
+.cc_bottom cc_84
+.cc_top cc_85,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel62
+.cc_bottom cc_85
+.cc_top cc_86,.Lxtalabel42
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel42
+.cc_bottom cc_86
+.cc_top cc_87,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel59
+.cc_bottom cc_87
+.cc_top cc_88,.Lxtalabel40
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel40
+.cc_bottom cc_88
+.cc_top cc_89,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel84
+.cc_bottom cc_89
+.cc_top cc_90,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel62
+.cc_bottom cc_90
+.cc_top cc_91,.Lxtalabel41
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	64
+	.long	64
+	.long	.Lxtalabel41
+.cc_bottom cc_91
+.cc_top cc_92,.Lxtalabel4
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	67
+	.long	68
+	.long	.Lxtalabel4
+.cc_bottom cc_92
+.cc_top cc_93,.Lxtalabel5
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel5
+.cc_bottom cc_93
+.cc_top cc_94,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel75
+.cc_bottom cc_94
+.cc_top cc_95,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel58
+.cc_bottom cc_95
+.cc_top cc_96,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel59
+.cc_bottom cc_96
+.cc_top cc_97,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel61
+.cc_bottom cc_97
+.cc_top cc_98,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel62
+.cc_bottom cc_98
+.cc_top cc_99,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel64
+.cc_bottom cc_99
+.cc_top cc_100,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel44
+.cc_bottom cc_100
+.cc_top cc_101,.Lxtalabel53
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	73
+	.long	76
+	.long	.Lxtalabel53
+.cc_bottom cc_101
+.cc_top cc_102,.Lxtalabel54
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel54
+.cc_bottom cc_102
+.cc_top cc_103,.Lxtalabel6
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel6
+.cc_bottom cc_103
+.cc_top cc_104,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel65
+.cc_bottom cc_104
+.cc_top cc_105,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel62
+.cc_bottom cc_105
+.cc_top cc_106,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel59
+.cc_bottom cc_106
+.cc_top cc_107,.Lxtalabel45
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel45
+.cc_bottom cc_107
+.cc_top cc_108,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	77
+	.long	79
+	.long	.Lxtalabel76
+.cc_bottom cc_108
+.cc_top cc_109,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel59
+.cc_bottom cc_109
+.cc_top cc_110,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel62
+.cc_bottom cc_110
+.cc_top cc_111,.Lxtalabel54
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel54
+.cc_bottom cc_111
+.cc_top cc_112,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel65
+.cc_bottom cc_112
+.cc_top cc_113,.Lxtalabel45
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel45
+.cc_bottom cc_113
+.cc_top cc_114,.Lxtalabel6
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel6
+.cc_bottom cc_114
+.cc_top cc_115,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	85
+	.long	87
+	.long	.Lxtalabel76
+.cc_bottom cc_115
+.cc_top cc_116,.Lxtalabel53
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel53
+.cc_bottom cc_116
+.cc_top cc_117,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel75
+.cc_bottom cc_117
+.cc_top cc_118,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel62
+.cc_bottom cc_118
+.cc_top cc_119,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel59
+.cc_bottom cc_119
+.cc_top cc_120,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel58
+.cc_bottom cc_120
+.cc_top cc_121,.Lxtalabel5
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel5
+.cc_bottom cc_121
+.cc_top cc_122,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel44
+.cc_bottom cc_122
+.cc_top cc_123,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel61
+.cc_bottom cc_123
+.cc_top cc_124,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	88
+	.long	88
+	.long	.Lxtalabel64
+.cc_bottom cc_124
+.cc_top cc_125,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel64
+.cc_bottom cc_125
+.cc_top cc_126,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel62
+.cc_bottom cc_126
+.cc_top cc_127,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel75
+.cc_bottom cc_127
+.cc_top cc_128,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel61
+.cc_bottom cc_128
+.cc_top cc_129,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel44
+.cc_bottom cc_129
+.cc_top cc_130,.Lxtalabel5
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel5
+.cc_bottom cc_130
+.cc_top cc_131,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel58
+.cc_bottom cc_131
+.cc_top cc_132,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel59
+.cc_bottom cc_132
+.cc_top cc_133,.Lxtalabel53
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	90
+	.long	92
+	.long	.Lxtalabel53
+.cc_bottom cc_133
+.cc_top cc_134,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel61
+.cc_bottom cc_134
+.cc_top cc_135,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel59
+.cc_bottom cc_135
+.cc_top cc_136,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel58
+.cc_bottom cc_136
+.cc_top cc_137,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel44
+.cc_bottom cc_137
+.cc_top cc_138,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel62
+.cc_bottom cc_138
+.cc_top cc_139,.Lxtalabel53
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel53
+.cc_bottom cc_139
+.cc_top cc_140,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel75
+.cc_bottom cc_140
+.cc_top cc_141,.Lxtalabel5
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel5
+.cc_bottom cc_141
+.cc_top cc_142,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel64
+.cc_bottom cc_142
+.cc_top cc_143,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel62
+.cc_bottom cc_143
+.cc_top cc_144,.Lxtalabel53
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel53
+.cc_bottom cc_144
+.cc_top cc_145,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel58
+.cc_bottom cc_145
+.cc_top cc_146,.Lxtalabel5
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel5
+.cc_bottom cc_146
+.cc_top cc_147,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel75
+.cc_bottom cc_147
+.cc_top cc_148,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel59
+.cc_bottom cc_148
+.cc_top cc_149,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel44
+.cc_bottom cc_149
+.cc_top cc_150,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel61
+.cc_bottom cc_150
+.cc_top cc_151,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	95
+	.long	97
+	.long	.Lxtalabel64
+.cc_bottom cc_151
+.cc_top cc_152,.Lxtalabel46
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel46
+.cc_bottom cc_152
+.cc_top cc_153,.Lxtalabel7
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel7
+.cc_bottom cc_153
+.cc_top cc_154,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel65
+.cc_bottom cc_154
+.cc_top cc_155,.Lxtalabel60
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel60
+.cc_bottom cc_155
+.cc_top cc_156,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel64
+.cc_bottom cc_156
+.cc_top cc_157,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel75
+.cc_bottom cc_157
+.cc_top cc_158,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel76
+.cc_bottom cc_158
+.cc_top cc_159,.Lxtalabel63
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	98
+	.long	98
+	.long	.Lxtalabel63
+.cc_bottom cc_159
+.cc_top cc_160,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel73
+.cc_bottom cc_160
+.cc_top cc_161,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel80
+.cc_bottom cc_161
+.cc_top cc_162,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel69
+.cc_bottom cc_162
+.cc_top cc_163,.Lxtalabel51
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel51
+.cc_bottom cc_163
+.cc_top cc_164,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel84
+.cc_bottom cc_164
+.cc_top cc_165,.Lxtalabel8
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel8
+.cc_bottom cc_165
+.cc_top cc_166,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel47
+.cc_bottom cc_166
+.cc_top cc_167,.Lxtalabel9
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	105
+	.long	107
+	.long	.Lxtalabel9
+.cc_bottom cc_167
+.cc_top cc_168,.Lxtalabel52
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	105
+	.long	107
+	.long	.Lxtalabel52
+.cc_bottom cc_168
+.cc_top cc_169,.Lxtalabel48
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	105
+	.long	107
+	.long	.Lxtalabel48
+.cc_bottom cc_169
+.cc_top cc_170,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	105
+	.long	107
+	.long	.Lxtalabel73
+.cc_bottom cc_170
+.cc_top cc_171,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	105
+	.long	107
+	.long	.Lxtalabel84
+.cc_bottom cc_171
+.cc_top cc_172,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	113
+	.long	115
+	.long	.Lxtalabel84
+.cc_bottom cc_172
+.cc_top cc_173,.Lxtalabel9
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	113
+	.long	115
+	.long	.Lxtalabel9
+.cc_bottom cc_173
+.cc_top cc_174,.Lxtalabel52
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	113
+	.long	115
+	.long	.Lxtalabel52
+.cc_bottom cc_174
+.cc_top cc_175,.Lxtalabel48
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	113
+	.long	115
+	.long	.Lxtalabel48
+.cc_bottom cc_175
+.cc_top cc_176,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	113
+	.long	115
+	.long	.Lxtalabel73
+.cc_bottom cc_176
+.cc_top cc_177,.Lxtalabel51
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel51
+.cc_bottom cc_177
+.cc_top cc_178,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel69
+.cc_bottom cc_178
+.cc_top cc_179,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel84
+.cc_bottom cc_179
+.cc_top cc_180,.Lxtalabel8
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel8
+.cc_bottom cc_180
+.cc_top cc_181,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel73
+.cc_bottom cc_181
+.cc_top cc_182,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel80
+.cc_bottom cc_182
+.cc_top cc_183,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	116
+	.long	116
+	.long	.Lxtalabel47
+.cc_bottom cc_183
+.cc_top cc_184,.Lxtalabel8
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel8
+.cc_bottom cc_184
+.cc_top cc_185,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel47
+.cc_bottom cc_185
+.cc_top cc_186,.Lxtalabel51
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel51
+.cc_bottom cc_186
+.cc_top cc_187,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel84
+.cc_bottom cc_187
+.cc_top cc_188,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel80
+.cc_bottom cc_188
+.cc_top cc_189,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel69
+.cc_bottom cc_189
+.cc_top cc_190,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	118
+	.long	120
+	.long	.Lxtalabel73
+.cc_bottom cc_190
+.cc_top cc_191,.Lxtalabel8
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel8
+.cc_bottom cc_191
+.cc_top cc_192,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel69
+.cc_bottom cc_192
+.cc_top cc_193,.Lxtalabel51
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel51
+.cc_bottom cc_193
+.cc_top cc_194,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel47
+.cc_bottom cc_194
+.cc_top cc_195,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel84
+.cc_bottom cc_195
+.cc_top cc_196,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel80
+.cc_bottom cc_196
+.cc_top cc_197,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	121
+	.long	121
+	.long	.Lxtalabel73
+.cc_bottom cc_197
+.cc_top cc_198,.Lxtalabel8
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel8
+.cc_bottom cc_198
+.cc_top cc_199,.Lxtalabel51
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel51
+.cc_bottom cc_199
+.cc_top cc_200,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel47
+.cc_bottom cc_200
+.cc_top cc_201,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel84
+.cc_bottom cc_201
+.cc_top cc_202,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel80
+.cc_bottom cc_202
+.cc_top cc_203,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel73
+.cc_bottom cc_203
+.cc_top cc_204,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel69
+.cc_bottom cc_204
+.cc_top cc_205,.Lxtalabel74
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	126
+	.long	126
+	.long	.Lxtalabel74
+.cc_bottom cc_205
+.cc_top cc_206,.Lxtalabel85
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	126
+	.long	126
+	.long	.Lxtalabel85
+.cc_bottom cc_206
+.cc_top cc_207,.Lxtalabel10
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	126
+	.long	126
+	.long	.Lxtalabel10
+.cc_bottom cc_207
+.cc_top cc_208,.Lxtalabel49
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	126
+	.long	126
+	.long	.Lxtalabel49
+.cc_bottom cc_208
+.cc_top cc_209,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	129
+	.long	129
+	.long	.Lxtalabel58
+.cc_bottom cc_209
+.cc_top cc_210,.Lxtalabel11
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	129
+	.long	129
+	.long	.Lxtalabel11
+.cc_bottom cc_210
+.cc_top cc_211,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	129
+	.long	129
+	.long	.Lxtalabel62
+.cc_bottom cc_211
+.cc_top cc_212,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	129
+	.long	129
+	.long	.Lxtalabel61
+.cc_bottom cc_212
+.cc_top cc_213,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	129
+	.long	129
+	.long	.Lxtalabel59
+.cc_bottom cc_213
+.cc_top cc_214,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	132
+	.long	134
+	.long	.Lxtalabel58
+.cc_bottom cc_214
+.cc_top cc_215,.Lxtalabel11
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	132
+	.long	134
+	.long	.Lxtalabel11
+.cc_bottom cc_215
+.cc_top cc_216,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	132
+	.long	134
+	.long	.Lxtalabel62
+.cc_bottom cc_216
+.cc_top cc_217,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	132
+	.long	134
+	.long	.Lxtalabel61
+.cc_bottom cc_217
+.cc_top cc_218,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	132
+	.long	134
+	.long	.Lxtalabel59
+.cc_bottom cc_218
+.cc_top cc_219,.Lxtalabel12
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	135
+	.long	136
+	.long	.Lxtalabel12
+.cc_bottom cc_219
+.cc_top cc_220,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	135
+	.long	136
+	.long	.Lxtalabel62
+.cc_bottom cc_220
+.cc_top cc_221,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	135
+	.long	136
+	.long	.Lxtalabel59
+.cc_bottom cc_221
+.cc_top cc_222,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	137
+	.long	137
+	.long	.Lxtalabel13
+.cc_bottom cc_222
+.cc_top cc_223,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	142
+	.long	144
+	.long	.Lxtalabel13
+.cc_bottom cc_223
+.cc_top cc_224,.Lxtalabel14
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	145
+	.long	145
+	.long	.Lxtalabel14
+.cc_bottom cc_224
+.cc_top cc_225,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	145
+	.long	145
+	.long	.Lxtalabel13
+.cc_bottom cc_225
+.cc_top cc_226,.Lxtalabel15
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	146
+	.long	146
+	.long	.Lxtalabel15
+.cc_bottom cc_226
+.cc_top cc_227,.Lxtalabel15
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	151
+	.long	153
+	.long	.Lxtalabel15
+.cc_bottom cc_227
+.cc_top cc_228,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	154
+	.long	154
+	.long	.Lxtalabel13
+.cc_bottom cc_228
+.cc_top cc_229,.Lxtalabel16
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	154
+	.long	154
+	.long	.Lxtalabel16
+.cc_bottom cc_229
+.cc_top cc_230,.Lxtalabel17
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	155
+	.long	155
+	.long	.Lxtalabel17
+.cc_bottom cc_230
+.cc_top cc_231,.Lxtalabel17
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	161
+	.long	163
+	.long	.Lxtalabel17
+.cc_bottom cc_231
+.cc_top cc_232,.Lxtalabel18
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	164
+	.long	164
+	.long	.Lxtalabel18
+.cc_bottom cc_232
+.cc_top cc_233,.Lxtalabel13
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	164
+	.long	164
+	.long	.Lxtalabel13
+.cc_bottom cc_233
+.cc_top cc_234,.Lxtalabel19
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	165
+	.long	165
+	.long	.Lxtalabel19
+.cc_bottom cc_234
+.cc_top cc_235,.Lxtalabel19
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	171
+	.long	173
+	.long	.Lxtalabel19
+.cc_bottom cc_235
+.cc_top cc_236,.Lxtalabel21
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	175
+	.long	176
+	.long	.Lxtalabel21
+.cc_bottom cc_236
+.cc_top cc_237,.Lxtalabel20
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	175
+	.long	176
+	.long	.Lxtalabel20
+.cc_bottom cc_237
+.cc_top cc_238,.Lxtalabel21
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	179
+	.long	181
+	.long	.Lxtalabel21
+.cc_bottom cc_238
+.cc_top cc_239,.Lxtalabel20
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	179
+	.long	181
+	.long	.Lxtalabel20
+.cc_bottom cc_239
+.cc_top cc_240,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	182
+	.long	182
+	.long	.Lxtalabel59
+.cc_bottom cc_240
+.cc_top cc_241,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	182
+	.long	182
+	.long	.Lxtalabel58
+.cc_bottom cc_241
+.cc_top cc_242,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	182
+	.long	182
+	.long	.Lxtalabel61
+.cc_bottom cc_242
+.cc_top cc_243,.Lxtalabel11
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	182
+	.long	182
+	.long	.Lxtalabel11
+.cc_bottom cc_243
+.cc_top cc_244,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	182
+	.long	182
+	.long	.Lxtalabel62
+.cc_bottom cc_244
+.cc_top cc_245,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	184
+	.long	186
+	.long	.Lxtalabel59
+.cc_bottom cc_245
+.cc_top cc_246,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	184
+	.long	186
+	.long	.Lxtalabel61
+.cc_bottom cc_246
+.cc_top cc_247,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	184
+	.long	186
+	.long	.Lxtalabel58
+.cc_bottom cc_247
+.cc_top cc_248,.Lxtalabel11
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	184
+	.long	186
+	.long	.Lxtalabel11
+.cc_bottom cc_248
+.cc_top cc_249,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	184
+	.long	186
+	.long	.Lxtalabel62
+.cc_bottom cc_249
+.cc_top cc_250,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	187
+	.long	187
+	.long	.Lxtalabel59
+.cc_bottom cc_250
+.cc_top cc_251,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	187
+	.long	187
+	.long	.Lxtalabel61
+.cc_bottom cc_251
+.cc_top cc_252,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	187
+	.long	187
+	.long	.Lxtalabel62
+.cc_bottom cc_252
+.cc_top cc_253,.Lxtalabel11
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	187
+	.long	187
+	.long	.Lxtalabel11
+.cc_bottom cc_253
+.cc_top cc_254,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	187
+	.long	187
+	.long	.Lxtalabel58
+.cc_bottom cc_254
+.cc_top cc_255,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	189
+	.long	191
+	.long	.Lxtalabel58
+.cc_bottom cc_255
+.cc_top cc_256,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	189
+	.long	191
+	.long	.Lxtalabel62
+.cc_bottom cc_256
+.cc_top cc_257,.Lxtalabel11
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	189
+	.long	191
+	.long	.Lxtalabel11
+.cc_bottom cc_257
+.cc_top cc_258,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	189
+	.long	191
+	.long	.Lxtalabel61
+.cc_bottom cc_258
+.cc_top cc_259,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	189
+	.long	191
+	.long	.Lxtalabel59
+.cc_bottom cc_259
+.cc_top cc_260,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel58
+.cc_bottom cc_260
+.cc_top cc_261,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel62
+.cc_bottom cc_261
+.cc_top cc_262,.Lxtalabel22
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel22
+.cc_bottom cc_262
+.cc_top cc_263,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel61
+.cc_bottom cc_263
+.cc_top cc_264,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel62
+.cc_bottom cc_264
+.cc_top cc_265,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel59
+.cc_bottom cc_265
+.cc_top cc_266,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	192
+	.long	192
+	.long	.Lxtalabel59
+.cc_bottom cc_266
+.cc_top cc_267,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	195
+	.long	195
+	.long	.Lxtalabel23
+.cc_bottom cc_267
+.cc_top cc_268,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	199
+	.long	199
+	.long	.Lxtalabel23
+.cc_bottom cc_268
+.cc_top cc_269,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	201
+	.long	203
+	.long	.Lxtalabel23
+.cc_bottom cc_269
+.cc_top cc_270,.Lxtalabel24
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	204
+	.long	205
+	.long	.Lxtalabel24
+.cc_bottom cc_270
+.cc_top cc_271,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	206
+	.long	206
+	.long	.Lxtalabel25
+.cc_bottom cc_271
+.cc_top cc_272,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	211
+	.long	213
+	.long	.Lxtalabel25
+.cc_bottom cc_272
+.cc_top cc_273,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	215
+	.long	215
+	.long	.Lxtalabel25
+.cc_bottom cc_273
+.cc_top cc_274,.Lxtalabel26
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	215
+	.long	215
+	.long	.Lxtalabel26
+.cc_bottom cc_274
+.cc_top cc_275,.Lxtalabel27
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	216
+	.long	216
+	.long	.Lxtalabel27
+.cc_bottom cc_275
+.cc_top cc_276,.Lxtalabel27
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	221
+	.long	223
+	.long	.Lxtalabel27
+.cc_bottom cc_276
+.cc_top cc_277,.Lxtalabel28
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	225
+	.long	225
+	.long	.Lxtalabel28
+.cc_bottom cc_277
+.cc_top cc_278,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	225
+	.long	225
+	.long	.Lxtalabel25
+.cc_bottom cc_278
+.cc_top cc_279,.Lxtalabel29
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	226
+	.long	226
+	.long	.Lxtalabel29
+.cc_bottom cc_279
+.cc_top cc_280,.Lxtalabel29
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	231
+	.long	233
+	.long	.Lxtalabel29
+.cc_bottom cc_280
+.cc_top cc_281,.Lxtalabel30
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	235
+	.long	235
+	.long	.Lxtalabel30
+.cc_bottom cc_281
+.cc_top cc_282,.Lxtalabel29
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	235
+	.long	235
+	.long	.Lxtalabel29
+.cc_bottom cc_282
+.cc_top cc_283,.Lxtalabel25
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	235
+	.long	235
+	.long	.Lxtalabel25
+.cc_bottom cc_283
+.cc_top cc_284,.Lxtalabel31
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	236
+	.long	236
+	.long	.Lxtalabel31
+.cc_bottom cc_284
+.cc_top cc_285,.Lxtalabel31
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	241
+	.long	243
+	.long	.Lxtalabel31
+.cc_bottom cc_285
+.cc_top cc_286,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	248
+	.long	248
+	.long	.Lxtalabel23
+.cc_bottom cc_286
+.cc_top cc_287,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	250
+	.long	252
+	.long	.Lxtalabel23
+.cc_bottom cc_287
+.cc_top cc_288,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	253
+	.long	253
+	.long	.Lxtalabel23
+.cc_bottom cc_288
+.cc_top cc_289,.Lxtalabel23
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	255
+	.long	257
+	.long	.Lxtalabel23
+.cc_bottom cc_289
+.cc_top cc_290,.Lxtalabel32
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	259
+	.long	260
+	.long	.Lxtalabel32
+.cc_bottom cc_290
+.cc_top cc_291,.Lxtalabel33
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	259
+	.long	260
+	.long	.Lxtalabel33
+.cc_bottom cc_291
+.cc_top cc_292,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	263
+	.long	266
+	.long	.Lxtalabel80
+.cc_bottom cc_292
+.cc_top cc_293,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	263
+	.long	266
+	.long	.Lxtalabel69
+.cc_bottom cc_293
+.cc_top cc_294,.Lxtalabel34
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	263
+	.long	266
+	.long	.Lxtalabel34
+.cc_bottom cc_294
+.cc_top cc_295,.Lxtalabel35
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	267
+	.long	268
+	.long	.Lxtalabel35
+.cc_bottom cc_295
+.cc_top cc_296,.Lxtalabel81
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	267
+	.long	268
+	.long	.Lxtalabel81
+.cc_bottom cc_296
+.cc_top cc_297,.Lxtalabel70
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	267
+	.long	268
+	.long	.Lxtalabel70
+.cc_bottom cc_297
+.cc_top cc_298,.Lxtalabel36
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel36
+.cc_bottom cc_298
+.cc_top cc_299,.Lxtalabel71
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel71
+.cc_bottom cc_299
+.cc_top cc_300,.Lxtalabel82
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel82
+.cc_bottom cc_300
+.cc_top cc_301,.Lxtalabel72
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	272
+	.long	275
+	.long	.Lxtalabel72
+.cc_bottom cc_301
+.cc_top cc_302,.Lxtalabel83
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	272
+	.long	275
+	.long	.Lxtalabel83
+.cc_bottom cc_302
+.cc_top cc_303,.Lxtalabel37
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	272
+	.long	275
+	.long	.Lxtalabel37
+.cc_bottom cc_303
+.cc_top cc_304,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	279
+	.long	279
+	.long	.Lxtalabel69
+.cc_bottom cc_304
+.cc_top cc_305,.Lxtalabel34
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	279
+	.long	279
+	.long	.Lxtalabel34
+.cc_bottom cc_305
+.cc_top cc_306,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	279
+	.long	279
+	.long	.Lxtalabel80
+.cc_bottom cc_306
+.cc_top cc_307,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	281
+	.long	283
+	.long	.Lxtalabel69
+.cc_bottom cc_307
+.cc_top cc_308,.Lxtalabel34
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	281
+	.long	283
+	.long	.Lxtalabel34
+.cc_bottom cc_308
+.cc_top cc_309,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	281
+	.long	283
+	.long	.Lxtalabel80
+.cc_bottom cc_309
+.cc_top cc_310,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	284
+	.long	284
+	.long	.Lxtalabel69
+.cc_bottom cc_310
+.cc_top cc_311,.Lxtalabel34
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	284
+	.long	284
+	.long	.Lxtalabel34
+.cc_bottom cc_311
+.cc_top cc_312,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	284
+	.long	284
+	.long	.Lxtalabel80
+.cc_bottom cc_312
+.cc_top cc_313,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	286
+	.long	288
+	.long	.Lxtalabel69
+.cc_bottom cc_313
+.cc_top cc_314,.Lxtalabel34
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	286
+	.long	288
+	.long	.Lxtalabel34
+.cc_bottom cc_314
+.cc_top cc_315,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	286
+	.long	288
+	.long	.Lxtalabel80
+.cc_bottom cc_315
+.cc_top cc_316,.Lxtalabel38
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	289
+	.long	289
+	.long	.Lxtalabel38
+.cc_bottom cc_316
+.cc_top cc_317,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	289
+	.long	289
+	.long	.Lxtalabel84
+.cc_bottom cc_317
+.cc_top cc_318,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	289
+	.long	289
+	.long	.Lxtalabel80
+.cc_bottom cc_318
+.cc_top cc_319,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	289
+	.long	289
+	.long	.Lxtalabel73
+.cc_bottom cc_319
+.cc_top cc_320,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	289
+	.long	289
+	.long	.Lxtalabel69
+.cc_bottom cc_320
+.cc_top cc_321,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel64
+.cc_bottom cc_321
+.cc_top cc_322,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel73
+.cc_bottom cc_322
+.cc_top cc_323,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel76
+.cc_bottom cc_323
+.cc_top cc_324,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel65
+.cc_bottom cc_324
+.cc_top cc_325,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel69
+.cc_bottom cc_325
+.cc_top cc_326,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel75
+.cc_bottom cc_326
+.cc_top cc_327,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel59
+.cc_bottom cc_327
+.cc_top cc_328,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel61
+.cc_bottom cc_328
+.cc_top cc_329,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel58
+.cc_bottom cc_329
+.cc_top cc_330,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel80
+.cc_bottom cc_330
+.cc_top cc_331,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel58
+.cc_bottom cc_331
+.cc_top cc_332,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel61
+.cc_bottom cc_332
+.cc_top cc_333,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel62
+.cc_bottom cc_333
+.cc_top cc_334,.Lxtalabel39
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel39
+.cc_bottom cc_334
+.cc_top cc_335,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel84
+.cc_bottom cc_335
+.cc_top cc_336,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel76
+.cc_bottom cc_336
+.cc_top cc_337,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel61
+.cc_bottom cc_337
+.cc_top cc_338,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel69
+.cc_bottom cc_338
+.cc_top cc_339,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel59
+.cc_bottom cc_339
+.cc_top cc_340,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel58
+.cc_bottom cc_340
+.cc_top cc_341,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel65
+.cc_bottom cc_341
+.cc_top cc_342,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel84
+.cc_bottom cc_342
+.cc_top cc_343,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel73
+.cc_bottom cc_343
+.cc_top cc_344,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel80
+.cc_bottom cc_344
+.cc_top cc_345,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel61
+.cc_bottom cc_345
+.cc_top cc_346,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel64
+.cc_bottom cc_346
+.cc_top cc_347,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel62
+.cc_bottom cc_347
+.cc_top cc_348,.Lxtalabel39
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel39
+.cc_bottom cc_348
+.cc_top cc_349,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel75
+.cc_bottom cc_349
+.cc_top cc_350,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	294
+	.long	296
+	.long	.Lxtalabel58
+.cc_bottom cc_350
+.cc_top cc_351,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel59
+.cc_bottom cc_351
+.cc_top cc_352,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel62
+.cc_bottom cc_352
+.cc_top cc_353,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel73
+.cc_bottom cc_353
+.cc_top cc_354,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel76
+.cc_bottom cc_354
+.cc_top cc_355,.Lxtalabel41
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel41
+.cc_bottom cc_355
+.cc_top cc_356,.Lxtalabel42
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel42
+.cc_bottom cc_356
+.cc_top cc_357,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel59
+.cc_bottom cc_357
+.cc_top cc_358,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel84
+.cc_bottom cc_358
+.cc_top cc_359,.Lxtalabel40
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel40
+.cc_bottom cc_359
+.cc_top cc_360,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel62
+.cc_bottom cc_360
+.cc_top cc_361,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel65
+.cc_bottom cc_361
+.cc_top cc_362,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel59
+.cc_bottom cc_362
+.cc_top cc_363,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel73
+.cc_bottom cc_363
+.cc_top cc_364,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel59
+.cc_bottom cc_364
+.cc_top cc_365,.Lxtalabel42
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel42
+.cc_bottom cc_365
+.cc_top cc_366,.Lxtalabel41
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel41
+.cc_bottom cc_366
+.cc_top cc_367,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel76
+.cc_bottom cc_367
+.cc_top cc_368,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel65
+.cc_bottom cc_368
+.cc_top cc_369,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel84
+.cc_bottom cc_369
+.cc_top cc_370,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel62
+.cc_bottom cc_370
+.cc_top cc_371,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel62
+.cc_bottom cc_371
+.cc_top cc_372,.Lxtalabel40
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	301
+	.long	303
+	.long	.Lxtalabel40
+.cc_bottom cc_372
+.cc_top cc_373,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel64
+.cc_bottom cc_373
+.cc_top cc_374,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel58
+.cc_bottom cc_374
+.cc_top cc_375,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel73
+.cc_bottom cc_375
+.cc_top cc_376,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel84
+.cc_bottom cc_376
+.cc_top cc_377,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel75
+.cc_bottom cc_377
+.cc_top cc_378,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel59
+.cc_bottom cc_378
+.cc_top cc_379,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel80
+.cc_bottom cc_379
+.cc_top cc_380,.Lxtalabel39
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel39
+.cc_bottom cc_380
+.cc_top cc_381,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel61
+.cc_bottom cc_381
+.cc_top cc_382,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel58
+.cc_bottom cc_382
+.cc_top cc_383,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel62
+.cc_bottom cc_383
+.cc_top cc_384,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel65
+.cc_bottom cc_384
+.cc_top cc_385,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel61
+.cc_bottom cc_385
+.cc_top cc_386,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel76
+.cc_bottom cc_386
+.cc_top cc_387,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel69
+.cc_bottom cc_387
+.cc_top cc_388,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel58
+.cc_bottom cc_388
+.cc_top cc_389,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel75
+.cc_bottom cc_389
+.cc_top cc_390,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel61
+.cc_bottom cc_390
+.cc_top cc_391,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel59
+.cc_bottom cc_391
+.cc_top cc_392,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel73
+.cc_bottom cc_392
+.cc_top cc_393,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel84
+.cc_bottom cc_393
+.cc_top cc_394,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel61
+.cc_bottom cc_394
+.cc_top cc_395,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel69
+.cc_bottom cc_395
+.cc_top cc_396,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel76
+.cc_bottom cc_396
+.cc_top cc_397,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel58
+.cc_bottom cc_397
+.cc_top cc_398,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel65
+.cc_bottom cc_398
+.cc_top cc_399,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel80
+.cc_bottom cc_399
+.cc_top cc_400,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel62
+.cc_bottom cc_400
+.cc_top cc_401,.Lxtalabel39
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel39
+.cc_bottom cc_401
+.cc_top cc_402,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	306
+	.long	308
+	.long	.Lxtalabel64
+.cc_bottom cc_402
+.cc_top cc_403,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel84
+.cc_bottom cc_403
+.cc_top cc_404,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel76
+.cc_bottom cc_404
+.cc_top cc_405,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel80
+.cc_bottom cc_405
+.cc_top cc_406,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel58
+.cc_bottom cc_406
+.cc_top cc_407,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel75
+.cc_bottom cc_407
+.cc_top cc_408,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel65
+.cc_bottom cc_408
+.cc_top cc_409,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel64
+.cc_bottom cc_409
+.cc_top cc_410,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel59
+.cc_bottom cc_410
+.cc_top cc_411,.Lxtalabel39
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel39
+.cc_bottom cc_411
+.cc_top cc_412,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel61
+.cc_bottom cc_412
+.cc_top cc_413,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel69
+.cc_bottom cc_413
+.cc_top cc_414,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel58
+.cc_bottom cc_414
+.cc_top cc_415,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel73
+.cc_bottom cc_415
+.cc_top cc_416,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel62
+.cc_bottom cc_416
+.cc_top cc_417,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel61
+.cc_bottom cc_417
+.cc_top cc_418,.Lxtalabel39
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel39
+.cc_bottom cc_418
+.cc_top cc_419,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel80
+.cc_bottom cc_419
+.cc_top cc_420,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel62
+.cc_bottom cc_420
+.cc_top cc_421,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel61
+.cc_bottom cc_421
+.cc_top cc_422,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel84
+.cc_bottom cc_422
+.cc_top cc_423,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel61
+.cc_bottom cc_423
+.cc_top cc_424,.Lxtalabel64
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel64
+.cc_bottom cc_424
+.cc_top cc_425,.Lxtalabel65
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel65
+.cc_bottom cc_425
+.cc_top cc_426,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel59
+.cc_bottom cc_426
+.cc_top cc_427,.Lxtalabel76
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel76
+.cc_bottom cc_427
+.cc_top cc_428,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel58
+.cc_bottom cc_428
+.cc_top cc_429,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel69
+.cc_bottom cc_429
+.cc_top cc_430,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel58
+.cc_bottom cc_430
+.cc_top cc_431,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel73
+.cc_bottom cc_431
+.cc_top cc_432,.Lxtalabel75
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	311
+	.long	313
+	.long	.Lxtalabel75
+.cc_bottom cc_432
+.cc_top cc_433,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel59
+.cc_bottom cc_433
+.cc_top cc_434,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel84
+.cc_bottom cc_434
+.cc_top cc_435,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel59
+.cc_bottom cc_435
+.cc_top cc_436,.Lxtalabel59
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel59
+.cc_bottom cc_436
+.cc_top cc_437,.Lxtalabel43
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel43
+.cc_bottom cc_437
+.cc_top cc_438,.Lxtalabel84
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel84
+.cc_bottom cc_438
+.cc_top cc_439,.Lxtalabel61
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel61
+.cc_bottom cc_439
+.cc_top cc_440,.Lxtalabel58
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel58
+.cc_bottom cc_440
+.cc_top cc_441,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel73
+.cc_bottom cc_441
+.cc_top cc_442,.Lxtalabel73
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel73
+.cc_bottom cc_442
+.cc_top cc_443,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel62
+.cc_bottom cc_443
+.cc_top cc_444,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel62
+.cc_bottom cc_444
+.cc_top cc_445,.Lxtalabel80
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel80
+.cc_bottom cc_445
+.cc_top cc_446,.Lxtalabel69
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel69
+.cc_bottom cc_446
+.cc_top cc_447,.Lxtalabel66
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel66
+.cc_bottom cc_447
+.cc_top cc_448,.Lxtalabel62
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel62
+.cc_bottom cc_448
+.cc_top cc_449,.Lxtalabel77
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	315
+	.long	315
+	.long	.Lxtalabel77
+.cc_bottom cc_449
+.cc_top cc_450,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	319
+	.long	319
+	.long	.Lxtalabel44
+.cc_bottom cc_450
+.cc_top cc_451,.Lxtalabel44
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	326
+	.long	328
+	.long	.Lxtalabel44
+.cc_bottom cc_451
+.cc_top cc_452,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	331
+	.long	331
+	.long	.Lxtalabel47
+.cc_bottom cc_452
+.cc_top cc_453,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	338
+	.long	338
+	.long	.Lxtalabel47
+.cc_bottom cc_453
+.cc_top cc_454,.Lxtalabel47
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	340
+	.long	341
+	.long	.Lxtalabel47
+.cc_bottom cc_454
+.cc_top cc_455,.Lxtalabel50
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	344
+	.long	345
+	.long	.Lxtalabel50
+.cc_bottom cc_455
+.cc_top cc_456,.Lxtalabel51
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	346
+	.long	348
+	.long	.Lxtalabel51
+.cc_bottom cc_456
+.cc_top cc_457,.Lxtalabel53
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	349
+	.long	352
+	.long	.Lxtalabel53
+.cc_bottom cc_457
+.cc_top cc_458,.Lxtalabel55
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	353
+	.long	354
+	.long	.Lxtalabel55
+.cc_bottom cc_458
+.cc_top cc_459,.Lxtalabel56
+	.ascii	"../src/audio_hw.h"
+	.byte	0
+	.long	353
+	.long	354
+	.long	.Lxtalabel56
+.cc_bottom cc_459
+.cc_top cc_460,.Lxtalabel57
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	13
 	.long	15
 	.long	.Lxtalabel57
-.cc_bottom cc_35
-.cc_top cc_36,.Lxtalabel57
+.cc_bottom cc_460
+.cc_top cc_461,.Lxtalabel57
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	17
 	.long	19
 	.long	.Lxtalabel57
-.cc_bottom cc_36
-.cc_top cc_37,.Lxtalabel58
+.cc_bottom cc_461
+.cc_top cc_462,.Lxtalabel58
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	22
 	.long	22
 	.long	.Lxtalabel58
-.cc_bottom cc_37
-.cc_top cc_38,.Lxtalabel61
+.cc_bottom cc_462
+.cc_top cc_463,.Lxtalabel61
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	22
 	.long	22
 	.long	.Lxtalabel61
-.cc_bottom cc_38
-.cc_top cc_39,.Lxtalabel58
+.cc_bottom cc_463
+.cc_top cc_464,.Lxtalabel61
+	.ascii	"../src/audiohw.xc"
+	.byte	0
+	.long	24
+	.long	24
+	.long	.Lxtalabel61
+.cc_bottom cc_464
+.cc_top cc_465,.Lxtalabel58
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	24
 	.long	24
 	.long	.Lxtalabel58
-.cc_bottom cc_39
-.cc_top cc_40,.Lxtalabel61
-	.ascii	"../src/audiohw.xc"
-	.byte	0
-	.long	24
-	.long	24
-	.long	.Lxtalabel61
-.cc_bottom cc_40
-.cc_top cc_41,.Lxtalabel61
-	.ascii	"../src/audiohw.xc"
-	.byte	0
-	.long	27
-	.long	30
-	.long	.Lxtalabel61
-.cc_bottom cc_41
-.cc_top cc_42,.Lxtalabel58
+.cc_bottom cc_465
+.cc_top cc_466,.Lxtalabel58
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	27
 	.long	30
 	.long	.Lxtalabel58
-.cc_bottom cc_42
-.cc_top cc_43,.Lxtalabel75
+.cc_bottom cc_466
+.cc_top cc_467,.Lxtalabel61
+	.ascii	"../src/audiohw.xc"
+	.byte	0
+	.long	27
+	.long	30
+	.long	.Lxtalabel61
+.cc_bottom cc_467
+.cc_top cc_468,.Lxtalabel75
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	37
 	.long	40
 	.long	.Lxtalabel75
-.cc_bottom cc_43
-.cc_top cc_44,.Lxtalabel64
+.cc_bottom cc_468
+.cc_top cc_469,.Lxtalabel64
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	37
 	.long	40
 	.long	.Lxtalabel64
-.cc_bottom cc_44
-.cc_top cc_45,.Lxtalabel78
-	.ascii	"../src/audiohw.xc"
-	.byte	0
-	.long	41
-	.long	43
-	.long	.Lxtalabel78
-.cc_bottom cc_45
-.cc_top cc_46,.Lxtalabel67
+.cc_bottom cc_469
+.cc_top cc_470,.Lxtalabel67
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	41
 	.long	43
 	.long	.Lxtalabel67
-.cc_bottom cc_46
-.cc_top cc_47,.Lxtalabel79
+.cc_bottom cc_470
+.cc_top cc_471,.Lxtalabel78
 	.ascii	"../src/audiohw.xc"
 	.byte	0
-	.long	44
-	.long	47
-	.long	.Lxtalabel79
-.cc_bottom cc_47
-.cc_top cc_48,.Lxtalabel68
+	.long	41
+	.long	43
+	.long	.Lxtalabel78
+.cc_bottom cc_471
+.cc_top cc_472,.Lxtalabel68
 	.ascii	"../src/audiohw.xc"
 	.byte	0
 	.long	44
 	.long	47
 	.long	.Lxtalabel68
-.cc_bottom cc_48
-.cc_top cc_49,.Lxtalabel69
-	.ascii	"../src/audiohw.xc"
-	.byte	0
-	.long	49
-	.long	53
-	.long	.Lxtalabel69
-.cc_bottom cc_49
-.cc_top cc_50,.Lxtalabel80
-	.ascii	"../src/audiohw.xc"
-	.byte	0
-	.long	49
-	.long	53
-	.long	.Lxtalabel80
-.cc_bottom cc_50
-.cc_top cc_51,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel25
-.cc_bottom cc_51
-.cc_top cc_52,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel84
-.cc_bottom cc_52
-.cc_top cc_53,.Lxtalabel0
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel0
-.cc_bottom cc_53
-.cc_top cc_54,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel84
-.cc_bottom cc_54
-.cc_top cc_55,.Lxtalabel48
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel48
-.cc_bottom cc_55
-.cc_top cc_56,.Lxtalabel45
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel45
-.cc_bottom cc_56
-.cc_top cc_57,.Lxtalabel9
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel9
-.cc_bottom cc_57
-.cc_top cc_58,.Lxtalabel27
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel27
-.cc_bottom cc_58
-.cc_top cc_59,.Lxtalabel27
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel27
-.cc_bottom cc_59
-.cc_top cc_60,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel62
-.cc_bottom cc_60
-.cc_top cc_61,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel76
-.cc_bottom cc_61
-.cc_top cc_62,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel62
-.cc_bottom cc_62
-.cc_top cc_63,.Lxtalabel42
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel42
-.cc_bottom cc_63
-.cc_top cc_64,.Lxtalabel41
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel41
-.cc_bottom cc_64
-.cc_top cc_65,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel13
-.cc_bottom cc_65
-.cc_top cc_66,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel13
-.cc_bottom cc_66
-.cc_top cc_67,.Lxtalabel29
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel29
-.cc_bottom cc_67
-.cc_top cc_68,.Lxtalabel29
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel29
-.cc_bottom cc_68
-.cc_top cc_69,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel59
-.cc_bottom cc_69
-.cc_top cc_70,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel73
-.cc_bottom cc_70
-.cc_top cc_71,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel62
-.cc_bottom cc_71
-.cc_top cc_72,.Lxtalabel15
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel15
-.cc_bottom cc_72
-.cc_top cc_73,.Lxtalabel15
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel15
-.cc_bottom cc_73
-.cc_top cc_74,.Lxtalabel40
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel40
-.cc_bottom cc_74
-.cc_top cc_75,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel65
-.cc_bottom cc_75
-.cc_top cc_76,.Lxtalabel17
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel17
-.cc_bottom cc_76
-.cc_top cc_77,.Lxtalabel17
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel17
-.cc_bottom cc_77
-.cc_top cc_78,.Lxtalabel54
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel54
-.cc_bottom cc_78
-.cc_top cc_79,.Lxtalabel52
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel52
-.cc_bottom cc_79
-.cc_top cc_80,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel59
-.cc_bottom cc_80
-.cc_top cc_81,.Lxtalabel19
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel19
-.cc_bottom cc_81
-.cc_top cc_82,.Lxtalabel19
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel19
-.cc_bottom cc_82
-.cc_top cc_83,.Lxtalabel31
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel31
-.cc_bottom cc_83
-.cc_top cc_84,.Lxtalabel31
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel31
-.cc_bottom cc_84
-.cc_top cc_85,.Lxtalabel20
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel20
-.cc_bottom cc_85
-.cc_top cc_86,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel73
-.cc_bottom cc_86
-.cc_top cc_87,.Lxtalabel6
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel6
-.cc_bottom cc_87
-.cc_top cc_88,.Lxtalabel21
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel21
-.cc_bottom cc_88
-.cc_top cc_89,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel65
-.cc_bottom cc_89
-.cc_top cc_90,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel25
-.cc_bottom cc_90
-.cc_top cc_91,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel59
-.cc_bottom cc_91
-.cc_top cc_92,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel23
-.cc_bottom cc_92
-.cc_top cc_93,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	60
-	.long	60
-	.long	.Lxtalabel76
-.cc_bottom cc_93
-.cc_top cc_94,.Lxtalabel1
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel1
-.cc_bottom cc_94
-.cc_top cc_95,.Lxtalabel2
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	62
-	.long	63
-	.long	.Lxtalabel2
-.cc_bottom cc_95
-.cc_top cc_96,.Lxtalabel3
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel3
-.cc_bottom cc_96
-.cc_top cc_97,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel59
-.cc_bottom cc_97
-.cc_top cc_98,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel73
-.cc_bottom cc_98
-.cc_top cc_99,.Lxtalabel40
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel40
-.cc_bottom cc_99
-.cc_top cc_100,.Lxtalabel41
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel41
-.cc_bottom cc_100
-.cc_top cc_101,.Lxtalabel42
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel42
-.cc_bottom cc_101
-.cc_top cc_102,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel65
-.cc_bottom cc_102
-.cc_top cc_103,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel59
-.cc_bottom cc_103
-.cc_top cc_104,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel84
-.cc_bottom cc_104
-.cc_top cc_105,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel76
-.cc_bottom cc_105
-.cc_top cc_106,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel62
-.cc_bottom cc_106
-.cc_top cc_107,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	64
-	.long	64
-	.long	.Lxtalabel62
-.cc_bottom cc_107
-.cc_top cc_108,.Lxtalabel4
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	67
-	.long	68
-	.long	.Lxtalabel4
-.cc_bottom cc_108
-.cc_top cc_109,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel75
-.cc_bottom cc_109
-.cc_top cc_110,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel64
-.cc_bottom cc_110
-.cc_top cc_111,.Lxtalabel5
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel5
-.cc_bottom cc_111
-.cc_top cc_112,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel62
-.cc_bottom cc_112
-.cc_top cc_113,.Lxtalabel53
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel53
-.cc_bottom cc_113
-.cc_top cc_114,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel44
-.cc_bottom cc_114
-.cc_top cc_115,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel59
-.cc_bottom cc_115
-.cc_top cc_116,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel61
-.cc_bottom cc_116
-.cc_top cc_117,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	73
-	.long	76
-	.long	.Lxtalabel58
-.cc_bottom cc_117
-.cc_top cc_118,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel76
-.cc_bottom cc_118
-.cc_top cc_119,.Lxtalabel6
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel6
-.cc_bottom cc_119
-.cc_top cc_120,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel65
-.cc_bottom cc_120
-.cc_top cc_121,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel59
-.cc_bottom cc_121
-.cc_top cc_122,.Lxtalabel54
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel54
-.cc_bottom cc_122
-.cc_top cc_123,.Lxtalabel45
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel45
-.cc_bottom cc_123
-.cc_top cc_124,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	77
-	.long	79
-	.long	.Lxtalabel62
-.cc_bottom cc_124
-.cc_top cc_125,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel62
-.cc_bottom cc_125
-.cc_top cc_126,.Lxtalabel6
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel6
-.cc_bottom cc_126
-.cc_top cc_127,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel59
-.cc_bottom cc_127
-.cc_top cc_128,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel65
-.cc_bottom cc_128
-.cc_top cc_129,.Lxtalabel54
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel54
-.cc_bottom cc_129
-.cc_top cc_130,.Lxtalabel45
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel45
-.cc_bottom cc_130
-.cc_top cc_131,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	85
-	.long	87
-	.long	.Lxtalabel76
-.cc_bottom cc_131
-.cc_top cc_132,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel64
-.cc_bottom cc_132
-.cc_top cc_133,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel58
-.cc_bottom cc_133
-.cc_top cc_134,.Lxtalabel5
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel5
-.cc_bottom cc_134
-.cc_top cc_135,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel44
-.cc_bottom cc_135
-.cc_top cc_136,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel62
-.cc_bottom cc_136
-.cc_top cc_137,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel75
-.cc_bottom cc_137
-.cc_top cc_138,.Lxtalabel53
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel53
-.cc_bottom cc_138
-.cc_top cc_139,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel59
-.cc_bottom cc_139
-.cc_top cc_140,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	88
-	.long	88
-	.long	.Lxtalabel61
-.cc_bottom cc_140
-.cc_top cc_141,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel62
-.cc_bottom cc_141
-.cc_top cc_142,.Lxtalabel5
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel5
-.cc_bottom cc_142
-.cc_top cc_143,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel58
-.cc_bottom cc_143
-.cc_top cc_144,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel64
-.cc_bottom cc_144
-.cc_top cc_145,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel59
-.cc_bottom cc_145
-.cc_top cc_146,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel61
-.cc_bottom cc_146
-.cc_top cc_147,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel44
-.cc_bottom cc_147
-.cc_top cc_148,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel75
-.cc_bottom cc_148
-.cc_top cc_149,.Lxtalabel53
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	90
-	.long	92
-	.long	.Lxtalabel53
-.cc_bottom cc_149
-.cc_top cc_150,.Lxtalabel53
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel53
-.cc_bottom cc_150
-.cc_top cc_151,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel75
-.cc_bottom cc_151
-.cc_top cc_152,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel58
-.cc_bottom cc_152
-.cc_top cc_153,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel64
-.cc_bottom cc_153
-.cc_top cc_154,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel59
-.cc_bottom cc_154
-.cc_top cc_155,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel44
-.cc_bottom cc_155
-.cc_top cc_156,.Lxtalabel5
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel5
-.cc_bottom cc_156
-.cc_top cc_157,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel62
-.cc_bottom cc_157
-.cc_top cc_158,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel61
-.cc_bottom cc_158
-.cc_top cc_159,.Lxtalabel5
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel5
-.cc_bottom cc_159
-.cc_top cc_160,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel61
-.cc_bottom cc_160
-.cc_top cc_161,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel58
-.cc_bottom cc_161
-.cc_top cc_162,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel75
-.cc_bottom cc_162
-.cc_top cc_163,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel64
-.cc_bottom cc_163
-.cc_top cc_164,.Lxtalabel53
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel53
-.cc_bottom cc_164
-.cc_top cc_165,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel44
-.cc_bottom cc_165
-.cc_top cc_166,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel59
-.cc_bottom cc_166
-.cc_top cc_167,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	95
-	.long	97
-	.long	.Lxtalabel62
-.cc_bottom cc_167
-.cc_top cc_168,.Lxtalabel7
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel7
-.cc_bottom cc_168
-.cc_top cc_169,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel65
-.cc_bottom cc_169
-.cc_top cc_170,.Lxtalabel46
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel46
-.cc_bottom cc_170
-.cc_top cc_171,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel75
-.cc_bottom cc_171
-.cc_top cc_172,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel76
-.cc_bottom cc_172
-.cc_top cc_173,.Lxtalabel63
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel63
-.cc_bottom cc_173
-.cc_top cc_174,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel64
-.cc_bottom cc_174
-.cc_top cc_175,.Lxtalabel60
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	98
-	.long	98
-	.long	.Lxtalabel60
-.cc_bottom cc_175
-.cc_top cc_176,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel84
-.cc_bottom cc_176
-.cc_top cc_177,.Lxtalabel51
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel51
-.cc_bottom cc_177
-.cc_top cc_178,.Lxtalabel8
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel8
-.cc_bottom cc_178
-.cc_top cc_179,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel73
-.cc_bottom cc_179
-.cc_top cc_180,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel47
-.cc_bottom cc_180
-.cc_top cc_181,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel80
-.cc_bottom cc_181
-.cc_top cc_182,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel69
-.cc_bottom cc_182
-.cc_top cc_183,.Lxtalabel48
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	105
-	.long	107
-	.long	.Lxtalabel48
-.cc_bottom cc_183
-.cc_top cc_184,.Lxtalabel9
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	105
-	.long	107
-	.long	.Lxtalabel9
-.cc_bottom cc_184
-.cc_top cc_185,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	105
-	.long	107
-	.long	.Lxtalabel84
-.cc_bottom cc_185
-.cc_top cc_186,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	105
-	.long	107
-	.long	.Lxtalabel73
-.cc_bottom cc_186
-.cc_top cc_187,.Lxtalabel52
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	105
-	.long	107
-	.long	.Lxtalabel52
-.cc_bottom cc_187
-.cc_top cc_188,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	113
-	.long	115
-	.long	.Lxtalabel73
-.cc_bottom cc_188
-.cc_top cc_189,.Lxtalabel52
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	113
-	.long	115
-	.long	.Lxtalabel52
-.cc_bottom cc_189
-.cc_top cc_190,.Lxtalabel48
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	113
-	.long	115
-	.long	.Lxtalabel48
-.cc_bottom cc_190
-.cc_top cc_191,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	113
-	.long	115
-	.long	.Lxtalabel84
-.cc_bottom cc_191
-.cc_top cc_192,.Lxtalabel9
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	113
-	.long	115
-	.long	.Lxtalabel9
-.cc_bottom cc_192
-.cc_top cc_193,.Lxtalabel8
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel8
-.cc_bottom cc_193
-.cc_top cc_194,.Lxtalabel51
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel51
-.cc_bottom cc_194
-.cc_top cc_195,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel73
-.cc_bottom cc_195
-.cc_top cc_196,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel84
-.cc_bottom cc_196
-.cc_top cc_197,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel69
-.cc_bottom cc_197
-.cc_top cc_198,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel47
-.cc_bottom cc_198
-.cc_top cc_199,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	116
-	.long	116
-	.long	.Lxtalabel80
-.cc_bottom cc_199
-.cc_top cc_200,.Lxtalabel8
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel8
-.cc_bottom cc_200
-.cc_top cc_201,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel47
-.cc_bottom cc_201
-.cc_top cc_202,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel84
-.cc_bottom cc_202
-.cc_top cc_203,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel73
-.cc_bottom cc_203
-.cc_top cc_204,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel69
-.cc_bottom cc_204
-.cc_top cc_205,.Lxtalabel51
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel51
-.cc_bottom cc_205
-.cc_top cc_206,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	118
-	.long	120
-	.long	.Lxtalabel80
-.cc_bottom cc_206
-.cc_top cc_207,.Lxtalabel8
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel8
-.cc_bottom cc_207
-.cc_top cc_208,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel69
-.cc_bottom cc_208
-.cc_top cc_209,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel73
-.cc_bottom cc_209
-.cc_top cc_210,.Lxtalabel51
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel51
-.cc_bottom cc_210
-.cc_top cc_211,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel80
-.cc_bottom cc_211
-.cc_top cc_212,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel47
-.cc_bottom cc_212
-.cc_top cc_213,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	121
-	.long	121
-	.long	.Lxtalabel84
-.cc_bottom cc_213
-.cc_top cc_214,.Lxtalabel8
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel8
-.cc_bottom cc_214
-.cc_top cc_215,.Lxtalabel51
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel51
-.cc_bottom cc_215
-.cc_top cc_216,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel80
-.cc_bottom cc_216
-.cc_top cc_217,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel73
-.cc_bottom cc_217
-.cc_top cc_218,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel84
-.cc_bottom cc_218
-.cc_top cc_219,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel47
-.cc_bottom cc_219
-.cc_top cc_220,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel69
-.cc_bottom cc_220
-.cc_top cc_221,.Lxtalabel10
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	126
-	.long	126
-	.long	.Lxtalabel10
-.cc_bottom cc_221
-.cc_top cc_222,.Lxtalabel85
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	126
-	.long	126
-	.long	.Lxtalabel85
-.cc_bottom cc_222
-.cc_top cc_223,.Lxtalabel74
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	126
-	.long	126
-	.long	.Lxtalabel74
-.cc_bottom cc_223
-.cc_top cc_224,.Lxtalabel49
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	126
-	.long	126
-	.long	.Lxtalabel49
-.cc_bottom cc_224
-.cc_top cc_225,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	129
-	.long	129
-	.long	.Lxtalabel61
-.cc_bottom cc_225
-.cc_top cc_226,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	129
-	.long	129
-	.long	.Lxtalabel58
-.cc_bottom cc_226
-.cc_top cc_227,.Lxtalabel11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	129
-	.long	129
-	.long	.Lxtalabel11
-.cc_bottom cc_227
-.cc_top cc_228,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	129
-	.long	129
-	.long	.Lxtalabel59
-.cc_bottom cc_228
-.cc_top cc_229,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	129
-	.long	129
-	.long	.Lxtalabel62
-.cc_bottom cc_229
-.cc_top cc_230,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	132
-	.long	134
-	.long	.Lxtalabel61
-.cc_bottom cc_230
-.cc_top cc_231,.Lxtalabel11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	132
-	.long	134
-	.long	.Lxtalabel11
-.cc_bottom cc_231
-.cc_top cc_232,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	132
-	.long	134
-	.long	.Lxtalabel58
-.cc_bottom cc_232
-.cc_top cc_233,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	132
-	.long	134
-	.long	.Lxtalabel62
-.cc_bottom cc_233
-.cc_top cc_234,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	132
-	.long	134
-	.long	.Lxtalabel59
-.cc_bottom cc_234
-.cc_top cc_235,.Lxtalabel12
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	135
-	.long	136
-	.long	.Lxtalabel12
-.cc_bottom cc_235
-.cc_top cc_236,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	135
-	.long	136
-	.long	.Lxtalabel59
-.cc_bottom cc_236
-.cc_top cc_237,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	135
-	.long	136
-	.long	.Lxtalabel62
-.cc_bottom cc_237
-.cc_top cc_238,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	137
-	.long	137
-	.long	.Lxtalabel13
-.cc_bottom cc_238
-.cc_top cc_239,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	142
-	.long	144
-	.long	.Lxtalabel13
-.cc_bottom cc_239
-.cc_top cc_240,.Lxtalabel14
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	145
-	.long	145
-	.long	.Lxtalabel14
-.cc_bottom cc_240
-.cc_top cc_241,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	145
-	.long	145
-	.long	.Lxtalabel13
-.cc_bottom cc_241
-.cc_top cc_242,.Lxtalabel15
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	146
-	.long	146
-	.long	.Lxtalabel15
-.cc_bottom cc_242
-.cc_top cc_243,.Lxtalabel15
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	151
-	.long	153
-	.long	.Lxtalabel15
-.cc_bottom cc_243
-.cc_top cc_244,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	154
-	.long	154
-	.long	.Lxtalabel13
-.cc_bottom cc_244
-.cc_top cc_245,.Lxtalabel16
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	154
-	.long	154
-	.long	.Lxtalabel16
-.cc_bottom cc_245
-.cc_top cc_246,.Lxtalabel17
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	155
-	.long	155
-	.long	.Lxtalabel17
-.cc_bottom cc_246
-.cc_top cc_247,.Lxtalabel17
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	161
-	.long	163
-	.long	.Lxtalabel17
-.cc_bottom cc_247
-.cc_top cc_248,.Lxtalabel13
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	164
-	.long	164
-	.long	.Lxtalabel13
-.cc_bottom cc_248
-.cc_top cc_249,.Lxtalabel18
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	164
-	.long	164
-	.long	.Lxtalabel18
-.cc_bottom cc_249
-.cc_top cc_250,.Lxtalabel19
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	165
-	.long	165
-	.long	.Lxtalabel19
-.cc_bottom cc_250
-.cc_top cc_251,.Lxtalabel19
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	171
-	.long	173
-	.long	.Lxtalabel19
-.cc_bottom cc_251
-.cc_top cc_252,.Lxtalabel21
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	175
-	.long	176
-	.long	.Lxtalabel21
-.cc_bottom cc_252
-.cc_top cc_253,.Lxtalabel20
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	175
-	.long	176
-	.long	.Lxtalabel20
-.cc_bottom cc_253
-.cc_top cc_254,.Lxtalabel21
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	179
-	.long	181
-	.long	.Lxtalabel21
-.cc_bottom cc_254
-.cc_top cc_255,.Lxtalabel20
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	179
-	.long	181
-	.long	.Lxtalabel20
-.cc_bottom cc_255
-.cc_top cc_256,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	182
-	.long	182
-	.long	.Lxtalabel62
-.cc_bottom cc_256
-.cc_top cc_257,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	182
-	.long	182
-	.long	.Lxtalabel59
-.cc_bottom cc_257
-.cc_top cc_258,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	182
-	.long	182
-	.long	.Lxtalabel61
-.cc_bottom cc_258
-.cc_top cc_259,.Lxtalabel11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	182
-	.long	182
-	.long	.Lxtalabel11
-.cc_bottom cc_259
-.cc_top cc_260,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	182
-	.long	182
-	.long	.Lxtalabel58
-.cc_bottom cc_260
-.cc_top cc_261,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	184
-	.long	186
-	.long	.Lxtalabel62
-.cc_bottom cc_261
-.cc_top cc_262,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	184
-	.long	186
-	.long	.Lxtalabel59
-.cc_bottom cc_262
-.cc_top cc_263,.Lxtalabel11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	184
-	.long	186
-	.long	.Lxtalabel11
-.cc_bottom cc_263
-.cc_top cc_264,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	184
-	.long	186
-	.long	.Lxtalabel61
-.cc_bottom cc_264
-.cc_top cc_265,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	184
-	.long	186
-	.long	.Lxtalabel58
-.cc_bottom cc_265
-.cc_top cc_266,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	187
-	.long	187
-	.long	.Lxtalabel62
-.cc_bottom cc_266
-.cc_top cc_267,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	187
-	.long	187
-	.long	.Lxtalabel59
-.cc_bottom cc_267
-.cc_top cc_268,.Lxtalabel11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	187
-	.long	187
-	.long	.Lxtalabel11
-.cc_bottom cc_268
-.cc_top cc_269,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	187
-	.long	187
-	.long	.Lxtalabel61
-.cc_bottom cc_269
-.cc_top cc_270,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	187
-	.long	187
-	.long	.Lxtalabel58
-.cc_bottom cc_270
-.cc_top cc_271,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	189
-	.long	191
-	.long	.Lxtalabel62
-.cc_bottom cc_271
-.cc_top cc_272,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	189
-	.long	191
-	.long	.Lxtalabel59
-.cc_bottom cc_272
-.cc_top cc_273,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	189
-	.long	191
-	.long	.Lxtalabel61
-.cc_bottom cc_273
-.cc_top cc_274,.Lxtalabel11
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	189
-	.long	191
-	.long	.Lxtalabel11
-.cc_bottom cc_274
-.cc_top cc_275,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	189
-	.long	191
-	.long	.Lxtalabel58
-.cc_bottom cc_275
-.cc_top cc_276,.Lxtalabel22
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel22
-.cc_bottom cc_276
-.cc_top cc_277,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel59
-.cc_bottom cc_277
-.cc_top cc_278,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel61
-.cc_bottom cc_278
-.cc_top cc_279,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel62
-.cc_bottom cc_279
-.cc_top cc_280,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel62
-.cc_bottom cc_280
-.cc_top cc_281,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel59
-.cc_bottom cc_281
-.cc_top cc_282,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	192
-	.long	192
-	.long	.Lxtalabel58
-.cc_bottom cc_282
-.cc_top cc_283,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	195
-	.long	195
-	.long	.Lxtalabel23
-.cc_bottom cc_283
-.cc_top cc_284,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	199
-	.long	199
-	.long	.Lxtalabel23
-.cc_bottom cc_284
-.cc_top cc_285,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	201
-	.long	203
-	.long	.Lxtalabel23
-.cc_bottom cc_285
-.cc_top cc_286,.Lxtalabel24
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	204
-	.long	205
-	.long	.Lxtalabel24
-.cc_bottom cc_286
-.cc_top cc_287,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	206
-	.long	206
-	.long	.Lxtalabel25
-.cc_bottom cc_287
-.cc_top cc_288,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	211
-	.long	213
-	.long	.Lxtalabel25
-.cc_bottom cc_288
-.cc_top cc_289,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	215
-	.long	215
-	.long	.Lxtalabel25
-.cc_bottom cc_289
-.cc_top cc_290,.Lxtalabel26
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	215
-	.long	215
-	.long	.Lxtalabel26
-.cc_bottom cc_290
-.cc_top cc_291,.Lxtalabel27
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	216
-	.long	216
-	.long	.Lxtalabel27
-.cc_bottom cc_291
-.cc_top cc_292,.Lxtalabel27
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	221
-	.long	223
-	.long	.Lxtalabel27
-.cc_bottom cc_292
-.cc_top cc_293,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	225
-	.long	225
-	.long	.Lxtalabel25
-.cc_bottom cc_293
-.cc_top cc_294,.Lxtalabel28
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	225
-	.long	225
-	.long	.Lxtalabel28
-.cc_bottom cc_294
-.cc_top cc_295,.Lxtalabel29
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	226
-	.long	226
-	.long	.Lxtalabel29
-.cc_bottom cc_295
-.cc_top cc_296,.Lxtalabel29
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	231
-	.long	233
-	.long	.Lxtalabel29
-.cc_bottom cc_296
-.cc_top cc_297,.Lxtalabel25
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	235
-	.long	235
-	.long	.Lxtalabel25
-.cc_bottom cc_297
-.cc_top cc_298,.Lxtalabel29
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	235
-	.long	235
-	.long	.Lxtalabel29
-.cc_bottom cc_298
-.cc_top cc_299,.Lxtalabel30
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	235
-	.long	235
-	.long	.Lxtalabel30
-.cc_bottom cc_299
-.cc_top cc_300,.Lxtalabel31
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	236
-	.long	236
-	.long	.Lxtalabel31
-.cc_bottom cc_300
-.cc_top cc_301,.Lxtalabel31
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	241
-	.long	243
-	.long	.Lxtalabel31
-.cc_bottom cc_301
-.cc_top cc_302,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	248
-	.long	248
-	.long	.Lxtalabel23
-.cc_bottom cc_302
-.cc_top cc_303,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	250
-	.long	252
-	.long	.Lxtalabel23
-.cc_bottom cc_303
-.cc_top cc_304,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	253
-	.long	253
-	.long	.Lxtalabel23
-.cc_bottom cc_304
-.cc_top cc_305,.Lxtalabel23
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	255
-	.long	257
-	.long	.Lxtalabel23
-.cc_bottom cc_305
-.cc_top cc_306,.Lxtalabel33
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	259
-	.long	260
-	.long	.Lxtalabel33
-.cc_bottom cc_306
-.cc_top cc_307,.Lxtalabel32
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	259
-	.long	260
-	.long	.Lxtalabel32
-.cc_bottom cc_307
-.cc_top cc_308,.Lxtalabel34
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	263
-	.long	266
-	.long	.Lxtalabel34
-.cc_bottom cc_308
-.cc_top cc_309,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	263
-	.long	266
-	.long	.Lxtalabel80
-.cc_bottom cc_309
-.cc_top cc_310,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	263
-	.long	266
-	.long	.Lxtalabel69
-.cc_bottom cc_310
-.cc_top cc_311,.Lxtalabel70
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	267
-	.long	268
-	.long	.Lxtalabel70
-.cc_bottom cc_311
-.cc_top cc_312,.Lxtalabel35
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	267
-	.long	268
-	.long	.Lxtalabel35
-.cc_bottom cc_312
-.cc_top cc_313,.Lxtalabel81
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	267
-	.long	268
-	.long	.Lxtalabel81
-.cc_bottom cc_313
-.cc_top cc_314,.Lxtalabel36
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel36
-.cc_bottom cc_314
-.cc_top cc_315,.Lxtalabel82
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel82
-.cc_bottom cc_315
-.cc_top cc_316,.Lxtalabel71
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel71
-.cc_bottom cc_316
-.cc_top cc_317,.Lxtalabel37
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	272
-	.long	275
-	.long	.Lxtalabel37
-.cc_bottom cc_317
-.cc_top cc_318,.Lxtalabel72
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	272
-	.long	275
-	.long	.Lxtalabel72
-.cc_bottom cc_318
-.cc_top cc_319,.Lxtalabel83
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	272
-	.long	275
-	.long	.Lxtalabel83
-.cc_bottom cc_319
-.cc_top cc_320,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	279
-	.long	279
-	.long	.Lxtalabel69
-.cc_bottom cc_320
-.cc_top cc_321,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	279
-	.long	279
-	.long	.Lxtalabel80
-.cc_bottom cc_321
-.cc_top cc_322,.Lxtalabel34
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	279
-	.long	279
-	.long	.Lxtalabel34
-.cc_bottom cc_322
-.cc_top cc_323,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	281
-	.long	283
-	.long	.Lxtalabel69
-.cc_bottom cc_323
-.cc_top cc_324,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	281
-	.long	283
-	.long	.Lxtalabel80
-.cc_bottom cc_324
-.cc_top cc_325,.Lxtalabel34
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	281
-	.long	283
-	.long	.Lxtalabel34
-.cc_bottom cc_325
-.cc_top cc_326,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	284
-	.long	284
-	.long	.Lxtalabel80
-.cc_bottom cc_326
-.cc_top cc_327,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	284
-	.long	284
-	.long	.Lxtalabel69
-.cc_bottom cc_327
-.cc_top cc_328,.Lxtalabel34
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	284
-	.long	284
-	.long	.Lxtalabel34
-.cc_bottom cc_328
-.cc_top cc_329,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	286
-	.long	288
-	.long	.Lxtalabel80
-.cc_bottom cc_329
-.cc_top cc_330,.Lxtalabel34
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	286
-	.long	288
-	.long	.Lxtalabel34
-.cc_bottom cc_330
-.cc_top cc_331,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	286
-	.long	288
-	.long	.Lxtalabel69
-.cc_bottom cc_331
-.cc_top cc_332,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	289
-	.long	289
-	.long	.Lxtalabel73
-.cc_bottom cc_332
-.cc_top cc_333,.Lxtalabel38
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	289
-	.long	289
-	.long	.Lxtalabel38
-.cc_bottom cc_333
-.cc_top cc_334,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	289
-	.long	289
-	.long	.Lxtalabel84
-.cc_bottom cc_334
-.cc_top cc_335,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	289
-	.long	289
-	.long	.Lxtalabel80
-.cc_bottom cc_335
-.cc_top cc_336,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	289
-	.long	289
-	.long	.Lxtalabel69
-.cc_bottom cc_336
-.cc_top cc_337,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel75
-.cc_bottom cc_337
-.cc_top cc_338,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel76
-.cc_bottom cc_338
-.cc_top cc_339,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel59
-.cc_bottom cc_339
-.cc_top cc_340,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel64
-.cc_bottom cc_340
-.cc_top cc_341,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel58
-.cc_bottom cc_341
-.cc_top cc_342,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel65
-.cc_bottom cc_342
-.cc_top cc_343,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel61
-.cc_bottom cc_343
-.cc_top cc_344,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel80
-.cc_bottom cc_344
-.cc_top cc_345,.Lxtalabel39
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel39
-.cc_bottom cc_345
-.cc_top cc_346,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel58
-.cc_bottom cc_346
-.cc_top cc_347,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel61
-.cc_bottom cc_347
-.cc_top cc_348,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel84
-.cc_bottom cc_348
-.cc_top cc_349,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel73
-.cc_bottom cc_349
-.cc_top cc_350,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel69
-.cc_bottom cc_350
-.cc_top cc_351,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel62
-.cc_bottom cc_351
-.cc_top cc_352,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel65
-.cc_bottom cc_352
-.cc_top cc_353,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel58
-.cc_bottom cc_353
-.cc_top cc_354,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel59
-.cc_bottom cc_354
-.cc_top cc_355,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel64
-.cc_bottom cc_355
-.cc_top cc_356,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel80
-.cc_bottom cc_356
-.cc_top cc_357,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel75
-.cc_bottom cc_357
-.cc_top cc_358,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel61
-.cc_bottom cc_358
-.cc_top cc_359,.Lxtalabel39
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel39
-.cc_bottom cc_359
-.cc_top cc_360,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel76
-.cc_bottom cc_360
-.cc_top cc_361,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel58
-.cc_bottom cc_361
-.cc_top cc_362,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel61
-.cc_bottom cc_362
-.cc_top cc_363,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel84
-.cc_bottom cc_363
-.cc_top cc_364,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel73
-.cc_bottom cc_364
-.cc_top cc_365,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel69
-.cc_bottom cc_365
-.cc_top cc_366,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	294
-	.long	296
-	.long	.Lxtalabel62
-.cc_bottom cc_366
-.cc_top cc_367,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel62
-.cc_bottom cc_367
-.cc_top cc_368,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel84
-.cc_bottom cc_368
-.cc_top cc_369,.Lxtalabel41
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel41
-.cc_bottom cc_369
-.cc_top cc_370,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel65
-.cc_bottom cc_370
-.cc_top cc_371,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel73
-.cc_bottom cc_371
-.cc_top cc_372,.Lxtalabel40
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel40
-.cc_bottom cc_372
-.cc_top cc_373,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel59
-.cc_bottom cc_373
-.cc_top cc_374,.Lxtalabel42
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel42
-.cc_bottom cc_374
-.cc_top cc_375,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel76
-.cc_bottom cc_375
-.cc_top cc_376,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel62
-.cc_bottom cc_376
-.cc_top cc_377,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel59
-.cc_bottom cc_377
-.cc_top cc_378,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel59
-.cc_bottom cc_378
-.cc_top cc_379,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel59
-.cc_bottom cc_379
-.cc_top cc_380,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel62
-.cc_bottom cc_380
-.cc_top cc_381,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel65
-.cc_bottom cc_381
-.cc_top cc_382,.Lxtalabel42
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel42
-.cc_bottom cc_382
-.cc_top cc_383,.Lxtalabel41
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel41
-.cc_bottom cc_383
-.cc_top cc_384,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel76
-.cc_bottom cc_384
-.cc_top cc_385,.Lxtalabel40
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel40
-.cc_bottom cc_385
-.cc_top cc_386,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel62
-.cc_bottom cc_386
-.cc_top cc_387,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel73
-.cc_bottom cc_387
-.cc_top cc_388,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	301
-	.long	303
-	.long	.Lxtalabel84
-.cc_bottom cc_388
-.cc_top cc_389,.Lxtalabel39
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel39
-.cc_bottom cc_389
-.cc_top cc_390,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel65
-.cc_bottom cc_390
-.cc_top cc_391,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel59
-.cc_bottom cc_391
-.cc_top cc_392,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel73
-.cc_bottom cc_392
-.cc_top cc_393,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel61
-.cc_bottom cc_393
-.cc_top cc_394,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel76
-.cc_bottom cc_394
-.cc_top cc_395,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel84
-.cc_bottom cc_395
-.cc_top cc_396,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel62
-.cc_bottom cc_396
-.cc_top cc_397,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel75
-.cc_bottom cc_397
-.cc_top cc_398,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel64
-.cc_bottom cc_398
-.cc_top cc_399,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel69
-.cc_bottom cc_399
-.cc_top cc_400,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel58
-.cc_bottom cc_400
-.cc_top cc_401,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel58
-.cc_bottom cc_401
-.cc_top cc_402,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel80
-.cc_bottom cc_402
-.cc_top cc_403,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel61
-.cc_bottom cc_403
-.cc_top cc_404,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel73
-.cc_bottom cc_404
-.cc_top cc_405,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel58
-.cc_bottom cc_405
-.cc_top cc_406,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel59
-.cc_bottom cc_406
-.cc_top cc_407,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel61
-.cc_bottom cc_407
-.cc_top cc_408,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel84
-.cc_bottom cc_408
-.cc_top cc_409,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel61
-.cc_bottom cc_409
-.cc_top cc_410,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel65
-.cc_bottom cc_410
-.cc_top cc_411,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel76
-.cc_bottom cc_411
-.cc_top cc_412,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel75
-.cc_bottom cc_412
-.cc_top cc_413,.Lxtalabel39
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel39
-.cc_bottom cc_413
-.cc_top cc_414,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel64
-.cc_bottom cc_414
-.cc_top cc_415,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel80
-.cc_bottom cc_415
-.cc_top cc_416,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel58
-.cc_bottom cc_416
-.cc_top cc_417,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel62
-.cc_bottom cc_417
-.cc_top cc_418,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	306
-	.long	308
-	.long	.Lxtalabel69
-.cc_bottom cc_418
-.cc_top cc_419,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel61
-.cc_bottom cc_419
-.cc_top cc_420,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel59
-.cc_bottom cc_420
-.cc_top cc_421,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel84
-.cc_bottom cc_421
-.cc_top cc_422,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel69
-.cc_bottom cc_422
-.cc_top cc_423,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel62
-.cc_bottom cc_423
-.cc_top cc_424,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel58
-.cc_bottom cc_424
-.cc_top cc_425,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel75
-.cc_bottom cc_425
-.cc_top cc_426,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel76
-.cc_bottom cc_426
-.cc_top cc_427,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel64
-.cc_bottom cc_427
-.cc_top cc_428,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel58
-.cc_bottom cc_428
-.cc_top cc_429,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel65
-.cc_bottom cc_429
-.cc_top cc_430,.Lxtalabel39
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel39
-.cc_bottom cc_430
-.cc_top cc_431,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel61
-.cc_bottom cc_431
-.cc_top cc_432,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel73
-.cc_bottom cc_432
-.cc_top cc_433,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel80
-.cc_bottom cc_433
-.cc_top cc_434,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel58
-.cc_bottom cc_434
-.cc_top cc_435,.Lxtalabel76
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel76
-.cc_bottom cc_435
-.cc_top cc_436,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel61
-.cc_bottom cc_436
-.cc_top cc_437,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel59
-.cc_bottom cc_437
-.cc_top cc_438,.Lxtalabel39
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel39
-.cc_bottom cc_438
-.cc_top cc_439,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel80
-.cc_bottom cc_439
-.cc_top cc_440,.Lxtalabel64
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel64
-.cc_bottom cc_440
-.cc_top cc_441,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel69
-.cc_bottom cc_441
-.cc_top cc_442,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel62
-.cc_bottom cc_442
-.cc_top cc_443,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel58
-.cc_bottom cc_443
-.cc_top cc_444,.Lxtalabel75
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel75
-.cc_bottom cc_444
-.cc_top cc_445,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel84
-.cc_bottom cc_445
-.cc_top cc_446,.Lxtalabel65
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel65
-.cc_bottom cc_446
-.cc_top cc_447,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel73
-.cc_bottom cc_447
-.cc_top cc_448,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	311
-	.long	313
-	.long	.Lxtalabel61
-.cc_bottom cc_448
-.cc_top cc_449,.Lxtalabel43
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel43
-.cc_bottom cc_449
-.cc_top cc_450,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel84
-.cc_bottom cc_450
-.cc_top cc_451,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel59
-.cc_bottom cc_451
-.cc_top cc_452,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel59
-.cc_bottom cc_452
-.cc_top cc_453,.Lxtalabel61
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel61
-.cc_bottom cc_453
-.cc_top cc_454,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel62
-.cc_bottom cc_454
-.cc_top cc_455,.Lxtalabel69
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel69
-.cc_bottom cc_455
-.cc_top cc_456,.Lxtalabel58
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel58
-.cc_bottom cc_456
-.cc_top cc_457,.Lxtalabel66
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel66
-.cc_bottom cc_457
-.cc_top cc_458,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel73
-.cc_bottom cc_458
-.cc_top cc_459,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel62
-.cc_bottom cc_459
-.cc_top cc_460,.Lxtalabel62
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel62
-.cc_bottom cc_460
-.cc_top cc_461,.Lxtalabel77
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel77
-.cc_bottom cc_461
-.cc_top cc_462,.Lxtalabel84
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel84
-.cc_bottom cc_462
-.cc_top cc_463,.Lxtalabel59
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel59
-.cc_bottom cc_463
-.cc_top cc_464,.Lxtalabel73
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel73
-.cc_bottom cc_464
-.cc_top cc_465,.Lxtalabel80
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	315
-	.long	315
-	.long	.Lxtalabel80
-.cc_bottom cc_465
-.cc_top cc_466,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	319
-	.long	319
-	.long	.Lxtalabel44
-.cc_bottom cc_466
-.cc_top cc_467,.Lxtalabel44
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	326
-	.long	328
-	.long	.Lxtalabel44
-.cc_bottom cc_467
-.cc_top cc_468,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	331
-	.long	331
-	.long	.Lxtalabel47
-.cc_bottom cc_468
-.cc_top cc_469,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	338
-	.long	338
-	.long	.Lxtalabel47
-.cc_bottom cc_469
-.cc_top cc_470,.Lxtalabel47
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	340
-	.long	341
-	.long	.Lxtalabel47
-.cc_bottom cc_470
-.cc_top cc_471,.Lxtalabel50
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	344
-	.long	345
-	.long	.Lxtalabel50
-.cc_bottom cc_471
-.cc_top cc_472,.Lxtalabel51
-	.ascii	"../src\\audio_hw.h"
-	.byte	0
-	.long	346
-	.long	348
-	.long	.Lxtalabel51
 .cc_bottom cc_472
-.cc_top cc_473,.Lxtalabel53
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_473,.Lxtalabel79
+	.ascii	"../src/audiohw.xc"
 	.byte	0
-	.long	349
-	.long	352
-	.long	.Lxtalabel53
+	.long	44
+	.long	47
+	.long	.Lxtalabel79
 .cc_bottom cc_473
-.cc_top cc_474,.Lxtalabel55
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_474,.Lxtalabel80
+	.ascii	"../src/audiohw.xc"
 	.byte	0
-	.long	353
-	.long	354
-	.long	.Lxtalabel55
+	.long	49
+	.long	53
+	.long	.Lxtalabel80
 .cc_bottom cc_474
-.cc_top cc_475,.Lxtalabel56
-	.ascii	"../src\\audio_hw.h"
+.cc_top cc_475,.Lxtalabel69
+	.ascii	"../src/audiohw.xc"
 	.byte	0
-	.long	353
-	.long	354
-	.long	.Lxtalabel56
+	.long	49
+	.long	53
+	.long	.Lxtalabel69
 .cc_bottom cc_475
 .Lentries_end5:
 	.section	.trap_info,"",@progbits

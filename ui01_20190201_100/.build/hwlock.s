@@ -21,7 +21,7 @@
 	.cc_top hwlock_alloc.function,hwlock_alloc
 hwlock_alloc:
 .Lfunc_begin0:
-	.file	1 "F:/Projects/UI-01_sw1_hw1/module_locks/src\\hwlock.h"
+	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/hwlock.h"
 	.loc	1 30 0
 	.cfi_startproc
 	.issue_mode dual
@@ -178,9 +178,9 @@ hwlock_release:
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"F:/Projects/UI-01_sw1_hw1/module_locks/src\\hwlock.c"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_locks/src/hwlock.c"
 .Linfo_string2:
-.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"hwlock_release"
 .Linfo_string4:

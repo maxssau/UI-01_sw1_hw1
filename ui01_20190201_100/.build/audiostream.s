@@ -20,9 +20,9 @@
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"F:/Projects/UI-01_sw1_hw1/module_usb_audio/audiostream\\audiostream.c"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audiostream/audiostream.c"
 .Linfo_string2:
-.asciiz"F:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
+.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.section	.debug_info,"",@progbits
 .L.debug_info_begin0:
 	.long	27

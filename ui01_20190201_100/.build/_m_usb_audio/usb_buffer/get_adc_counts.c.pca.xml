@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="F:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/get_adc_counts.c">
+<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/get_adc_counts.c">
   <fCall global="true" name="GetADCCounts"/>
   <fCall global="true" name="GetADCCounts.nstackwords"/>
   <fCall global="true" name="GetADCCounts.maxcores"/>
