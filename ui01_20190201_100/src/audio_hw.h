@@ -13,14 +13,21 @@
 #ifndef AUDIOHW_H_
 #define AUDIOHW_H_
 
-//#include "gpio_access.h"
+#include "swlock.h"
+#include <xs1.h>
 
-/*#ifndef _P4C_
+#ifndef _P4C_
 #define _P4C_
 #define PORT4C_PEEK(X) {asm("peek %0, res[%1]":"=r"(X):"r"(XS1_PORT_4C));}
 #define PORT4C_OUT(X)  {asm("out res[%0], %1"::"r"(XS1_PORT_4C),"r"(X));}
 #endif
-*/
+
+#ifndef _P4D_
+#define _P4D_
+#define PORT4D_PEEK(X) {asm("peek %0, res[%1]":"=r"(X):"r"(XS1_PORT_4D));}
+#define PORT4D_OUT(X)  {asm("out res[%0], %1"::"r"(XS1_PORT_4D),"r"(X));}
+#endif
+
 //#include <i2c.h>
 
 // 2 HW interfaces: DAC Board and Control Board
@@ -71,12 +78,14 @@ unsigned char CTRL_Current_Mode=0;
 
 void Mute()
 {
+    unsigned __port_ctrl;
+    PORT4C_PEEK(__port_ctrl);
     switch(CTRL_Current_Mode)
     {
         case 0:
         {
-            setbit(dac_ctrl1,0,1);
-            dac_control1<:dac_ctrl1;
+            setbit(__port_ctrl,0,1);
+            PORT4C_OUT(__port_ctrl);
             /*unsigned dac_ctrl1;
             port4C_lock_peek(&dac_ctrl1);
             setbit(dac_ctrl1,0,1);
@@ -94,17 +103,24 @@ void Mute()
 
         }
         break;
-    }
+        default:
+        {
+
+        }
+        break;
+    };
 };
 
 void UnMute()
 {
+    unsigned __port_ctrl;
+    PORT4C_PEEK(__port_ctrl);
     switch(CTRL_Current_Mode)
         {
             case 0:
             {
-                setbit(dac_ctrl1,0,0);
-                dac_control1<:dac_ctrl1;
+                setbit(__port_ctrl,0,0);
+                PORT4C_OUT(__port_ctrl);
                 /*unsigned dac_ctrl1;
                 port4C_lock_peek(&dac_ctrl1);
                 setbit(dac_ctrl1,0,0);
@@ -122,6 +138,11 @@ void UnMute()
 
             }
             break;
+            default:
+            {
+
+            }
+            break;
         }
 };
 
@@ -129,6 +150,8 @@ void SetPCM(unsigned samFreq)
 {
     //unsigned dac_ctrl1;
     //port4C_lock_peek(&dac_ctrl1);
+    unsigned __port_ctrl;
+    PORT4C_PEEK(__port_ctrl);
     switch(CTRL_Current_Mode)
     {
             case 0:
@@ -139,8 +162,8 @@ void SetPCM(unsigned samFreq)
                     // 44.1 & 48 kHz
                     //set_gpio_1(2,0);
                     //set_gpio_1(3,0);
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,0);
                 };
                 if(samFreq>50000 && samFreq <100000)
                 {
@@ -148,8 +171,8 @@ void SetPCM(unsigned samFreq)
                     // 88.2 & 96 kHz
                     //set_gpio_1(2,1);
                     //set_gpio_1(3,0);
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,0);
                 };
                 if(samFreq>100000 && samFreq <200000)
                 {
@@ -158,8 +181,8 @@ void SetPCM(unsigned samFreq)
 
                     //set_gpio_1(2,0);
                     //set_gpio_1(3,1);
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,1);
                 };
                 if(samFreq>300000 && samFreq <400000)
                 {
@@ -168,12 +191,13 @@ void SetPCM(unsigned samFreq)
 
                     //set_gpio_1(2,1);
                     //set_gpio_1(3,1);
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,1);
                 };
                 // set PCM mode on DSD pin
                 setbit(dac_ctrl1,1,0);
-                dac_control1<:dac_ctrl1;
+                PORT4C_OUT(__port_ctrl);
+
                 //set_gpio_1(1,0);
                 //port4C_out_unlock(dac_ctrl1);
             }
@@ -196,7 +220,9 @@ void SetDSD(unsigned samFreq)
     //unsigned dac_ctrl1;
     //port4C_lock_peek(&dac_ctrl1);
     // set DSD bit
-    setbit(dac_ctrl1,1,1);
+    unsigned __port_ctrl;
+    PORT4C_PEEK(__port_ctrl);
+    setbit(__port_ctrl,1,1);
     //dac_control1<:dac_ctrl1;
     switch(CTRL_Current_Mode)
         {
@@ -208,8 +234,8 @@ void SetDSD(unsigned samFreq)
 
                     //set_gpio_1(2,0);
                     //set_gpio_1(3,0);
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,0);
                 };
 
                 if(samFreq>3100000 && samFreq<6200000)
@@ -218,8 +244,8 @@ void SetDSD(unsigned samFreq)
 
                     //set_gpio_1(2,1);
                     //set_gpio_1(3,0);
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,0);
                 };
 
                 if(samFreq>6200000 && samFreq<12300000)
@@ -228,8 +254,8 @@ void SetDSD(unsigned samFreq)
 
                     //set_gpio_1(2,0);
                     //set_gpio_1(3,1);
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,1);
                 };
 
                 if(samFreq>12300000)
@@ -238,8 +264,8 @@ void SetDSD(unsigned samFreq)
 
                     //set_gpio_1(2,1);
                     //set_gpio_1(3,1);
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,1);
                 };
                 //set_gpio_1(1,1);
             }
@@ -256,7 +282,7 @@ void SetDSD(unsigned samFreq)
             break;
         }
     //port4C_out_unlock(dac_ctrl1);
-    dac_control1<:dac_ctrl1;
+    PORT4C_OUT(__port_ctrl);
 };
 
 void MCLK_Config(unsigned mClk)
@@ -291,12 +317,14 @@ void Reset(unsigned char reset_mode)
 {
     //unsigned dac_ctrl2;
     //port4C_lock_peek(&dac_ctrl2);
+    unsigned __port_ctrl;
+    PORT4D_PEEK(__port_ctrl);
     switch(CTRL_Current_Mode)
         {
             case 0:
             {
-                setbit(dac_ctrl2,0,reset_mode);
-                dac_control1<:dac_ctrl2;
+                setbit(__port_ctrl,0,reset_mode);
+                PORT4D_OUT(__port_ctrl);
                 //set_gpio_2(0,reset_mode);
             }
             break;
@@ -342,15 +370,50 @@ void UserAudioStreamStart()
 
 void UserHostActive(int active)
 {
+    // need add reset operations for power saving
     if(active==1)
     {
         UnMute();
+        unsigned __port_ctrl;
+        PORT4D_PEEK(__port_ctrl);
+        setbit(__port_ctrl,0,1);
+        PORT4D_OUT(__port_ctrl);
     }
     else
     {
         Mute();
+        unsigned __port_ctrl;
+        PORT4D_PEEK(__port_ctrl);
+        setbit(__port_ctrl,0,0);
+        PORT4D_OUT(__port_ctrl);
     }
     return;
 }
 
+void XUD_UserSuspend(void)
+{
+
+    UserHostActive(0);
+}
+
+void XUD_UserResume(void)
+{
+    unsigned config;
+
+    /* Clear the reboot interrupt */
+    //DISABLE_INTERRUPTS();
+    //asm("edu res[%0]"::"r"(g_rebootTimer));
+
+    asm("ldw %0, dp[g_currentConfig]" : "=r" (config):);
+
+    if(config == 1)
+    {
+        UserHostActive(1);
+    }
+    else
+    {
+        UserHostActive(0);
+        // DAC/ADC sleep
+    }
+}
 #endif /* AUDIOHW_H_ */
