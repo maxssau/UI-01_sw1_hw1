@@ -1,17 +1,17 @@
 <preCompilationAnalysis>
-<fInfo name="compute_bus_off_ticks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+<fInfo name="compute_bus_off_ticks" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
   <arg num="0" specialize="false">
     <values>
     </values>
   </arg>
 </fInfo>
-<fInfo name="compute_low_period_ticks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+<fInfo name="compute_low_period_ticks" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
   <arg num="0" specialize="false">
     <values>
     </values>
   </arg>
 </fInfo>
-<fInfo name="high_pulse" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="high_pulse" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -26,7 +26,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="high_pulse_sample" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="4">
+<fInfo name="high_pulse_sample" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="4">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -45,7 +45,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="release_clock_and_wait" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
+<fInfo name="release_clock_and_wait" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -61,7 +61,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="start_bit" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="5">
+<fInfo name="start_bit" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="5">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -85,7 +85,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="stop_bit" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="4">
+<fInfo name="stop_bit" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="4">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -104,7 +104,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="tx8" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="5">
+<fInfo name="tx8" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="5">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -128,7 +128,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="adjust_fall" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="adjust_fall" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -145,7 +145,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="adjust_for_slip" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="adjust_for_slip" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -163,137 +163,19 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="compute_bus_off_ticks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+<fInfo name="compute_bus_off_ticks" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
   <arg num="0" specialize="false">
     <values>
     </values>
   </arg>
 </fInfo>
-<fInfo name="compute_low_period_ticks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+<fInfo name="compute_low_period_ticks" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
   <arg num="0" specialize="false">
     <values>
     </values>
   </arg>
 </fInfo>
-<fInfo name="high_pulse_drive" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
-  <arg num="0" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="1" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="2" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="3" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="4" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="5" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="6" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="high_pulse_sample" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="6">
-  <arg num="0" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="1" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="2" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="3" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="4" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="5" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="start_bit" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
-  <arg num="0" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="1" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="2" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="3" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="4" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="5" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="6" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="stop_bit" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="6">
-  <arg num="0" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="1" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="2" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="3" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="4" specialize="false">
-    <values>
-    </values>
-  </arg>
-  <arg num="5" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="tx8" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
+<fInfo name="high_pulse_drive" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -325,7 +207,125 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="wait_for_clock_high" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="4">
+<fInfo name="high_pulse_sample" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="6">
+  <arg num="0" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="1" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="2" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="3" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="4" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="5" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="start_bit" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
+  <arg num="0" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="1" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="2" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="3" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="4" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="5" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="6" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="stop_bit" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="6">
+  <arg num="0" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="1" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="2" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="3" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="4" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="5" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="tx8" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
+  <arg num="0" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="1" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="3" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="4" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="5" specialize="false">
+    <values>
+    </values>
+  </arg>
+  <arg num="6" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="wait_for_clock_high" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="4">
   <arg num="0" specialize="false">
     <values>
     </values>
@@ -345,30 +345,30 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="ensure_setup_time" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="0">
+<fInfo name="ensure_setup_time" global="false" unit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="0">
 </fInfo>
-<fInfo name="DFU_Abort" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
+<fInfo name="DFU_Abort" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
 </fInfo>
-<fInfo name="DFU_CloseFlash" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
+<fInfo name="DFU_CloseFlash" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
 </fInfo>
-<fInfo name="DFU_ClrStatus" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
+<fInfo name="DFU_ClrStatus" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
 </fInfo>
-<fInfo name="DFU_Detach" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="3">
+<fInfo name="DFU_Detach" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -392,7 +392,7 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="DFU_Dnload" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="6">
+<fInfo name="DFU_Dnload" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="6">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -434,7 +434,7 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="DFU_GetState" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="4">
+<fInfo name="DFU_GetState" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="4">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -464,7 +464,7 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="DFU_GetStatus" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="4">
+<fInfo name="DFU_GetStatus" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="4">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -494,9 +494,9 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="DFU_OpenFlash" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
+<fInfo name="DFU_OpenFlash" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
 </fInfo>
-<fInfo name="DFU_Upload" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="4">
+<fInfo name="DFU_Upload" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="4">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -518,18 +518,18 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="GetDFUFlag" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
+<fInfo name="GetDFUFlag" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
 </fInfo>
-<fInfo name="SetDFUFlag" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
+<fInfo name="SetDFUFlag" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="1">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
 </fInfo>
-<fInfo name="XMOS_DFU_LoadState" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
+<fInfo name="XMOS_DFU_LoadState" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
 </fInfo>
-<fInfo name="XMOS_DFU_RevertFactory" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="1">
+<fInfo name="XMOS_DFU_RevertFactory" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="1">
   <arg num="0" specialize="true">
     <values>
       <value type="null"/>
@@ -541,9 +541,9 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="XMOS_DFU_SaveState" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
+<fInfo name="XMOS_DFU_SaveState" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="0">
 </fInfo>
-<fInfo name="XMOS_DFU_SelectImage" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="2">
+<fInfo name="XMOS_DFU_SelectImage" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="2">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -561,7 +561,7 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="DoSampleTransfer" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -580,14 +580,14 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="InitPorts" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+<fInfo name="InitPorts" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
 </fInfo>
-<fInfo name="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="5">
+<fInfo name="deliver" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="5">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -623,14 +623,14 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="doI2SClocks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+<fInfo name="doI2SClocks" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
 </fInfo>
-<fInfo name="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="2">
+<fInfo name="dummy_deliver" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/audio.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="2">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -642,7 +642,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="longMul" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="3">
+<fInfo name="longMul" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="true" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -666,7 +666,7 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="storeFreq" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
+<fInfo name="storeFreq" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -683,7 +683,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="storeInt" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
+<fInfo name="storeInt" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -701,7 +701,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="storeShort" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
+<fInfo name="storeShort" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -725,7 +725,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="updateMasterVol" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="2">
+<fInfo name="updateMasterVol" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="2">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -737,38 +737,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="updateVol" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
-  <arg num="0" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="1" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="2" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="GetSamplesFromDevice" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
-  <arg num="0" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="GetSamplesFromHost" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
-  <arg num="0" specialize="false">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fInfo>
-<fInfo name="GiveSamplesToDevice" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="updateVol" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" specialize="false" noreturn="false" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -785,7 +754,21 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="GiveSamplesToHost" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="GetSamplesFromDevice" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+  <arg num="0" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="GetSamplesFromHost" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="1">
+  <arg num="0" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="GiveSamplesToDevice" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -802,7 +785,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="mixer1" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="true" doNotSpecialize="false" numParams="3">
+<fInfo name="GiveSamplesToHost" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -819,7 +802,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="SetupZerosSendBuffer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+<fInfo name="mixer1" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" specialize="false" noreturn="true" doNotSpecialize="false" numParams="3">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -836,7 +819,24 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="testct_byref" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/usb_buffer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="2">
+<fInfo name="SetupZerosSendBuffer" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="3">
+  <arg num="0" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="testct_byref" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer/usb_buffer.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="2">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -848,7 +848,7 @@
     </values>
   </arg>
 </fInfo>
-<fInfo name="min" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFunctions.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="2">
+<fInfo name="min" global="false" unit="C:/Projects/UI-01_sw1_hw1/module_xud/src/XUD_EpFunctions.xc" specialize="false" noreturn="false" doNotSpecialize="true" numParams="2">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -1099,7 +1099,7 @@
 <fInfo name="DFUHandler" global="true" specialize="true" noreturn="false" doNotSpecialize="false" numParams="2">
   <arg num="0" specialize="true">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value>
     </values>
   </arg>
   <arg num="1" specialize="true">
@@ -1109,7 +1109,7 @@
   </arg>
  <specializations>
    <specialization id="0">
-    <arg num="0"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value></values></arg>
+    <arg num="0"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value></values></arg>
     <arg num="1"><values><value type="null"/></values></arg>
    </specialization>
  </specializations>
@@ -1140,6 +1140,13 @@
     </values>
   </arg>
   <arg num="3" specialize="false">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fInfo>
+<fInfo name="HandleRebootTimeout" global="true" specialize="false" noreturn="true" doNotSpecialize="false" numParams="1">
+  <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
     </values>
@@ -1797,7 +1804,7 @@
 <fInfo name="i2c_master" global="true" specialize="true" noreturn="false" doNotSpecialize="false" numParams="5">
   <arg num="0" specialize="true">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value>
     </values>
   </arg>
   <arg num="1" specialize="true">
@@ -1819,7 +1826,7 @@
   </arg>
  <specializations>
    <specialization id="0">
-    <arg num="0"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value></values></arg>
+    <arg num="0"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value></values></arg>
     <arg num="1"><values><value type="intval"><intval isSigned="true" val="1"/></value></values></arg>
     <arg num="2"><values><value type="unknown"/></values></arg>
     <arg num="3"><values><value type="unknown"/></values></arg>
@@ -1865,7 +1872,7 @@
   </arg>
   <arg num="2" specialize="true">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value>
     </values>
   </arg>
   <arg num="3" specialize="false">
@@ -1876,7 +1883,7 @@
    <specialization id="0">
     <arg num="0"><values><value type="interface"/></values></arg>
     <arg num="1"><values><value type="unknown"/></values></arg>
-    <arg num="2"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value></values></arg>
+    <arg num="2"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_Si2c_master_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" impId="0" param="0"/></value></values></arg>
     <arg num="3"><values><value type="unknown"/></values></arg>
    </specialization>
  </specializations>
@@ -2177,7 +2184,7 @@
   </arg>
   <arg num="4" specialize="true">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value>
     </values>
   </arg>
  <specializations>
@@ -2186,7 +2193,7 @@
     <arg num="1"><values><value type="unknown"/></values></arg>
     <arg num="2"><values><value type="null"/></values></arg>
     <arg num="3"><values><value type="null"/></values></arg>
-    <arg num="4"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value></values></arg>
+    <arg num="4"><values><value type="interface"><interfaceInfo index="0" type="dist" func="_SDFUHandler_0" global="true" impUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" impId="0" param="0"/></value></values></arg>
    </specialization>
  </specializations>
 </fInfo>
@@ -2379,14 +2386,14 @@
     </values>
   </arg>
 </fInfo>
-<fCall name="i2c_master" global="true" callerUnit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" numArgs="5" impId="0" specializationId="0">
+<fCall name="i2c_master" global="true" callerUnit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" numArgs="5" impId="0" specializationId="0">
 </fCall>
-<fCall name="i2c_master_async_aux" global="true" callerUnit="/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" numArgs="4" impId="1" specializationId="0">
+<fCall name="i2c_master_async_aux" global="true" callerUnit="C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" numArgs="4" impId="1" specializationId="0">
 </fCall>
-<fCall name="DFUHandler" global="true" callerUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" numArgs="2" impId="0" specializationId="0">
+<fCall name="DFUHandler" global="true" callerUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" numArgs="2" impId="0" specializationId="0">
 </fCall>
-<fCall name="usb_audio_core" global="true" callerUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" numArgs="5" impId="1" specializationId="0">
+<fCall name="usb_audio_core" global="true" callerUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" numArgs="5" impId="1" specializationId="0">
 </fCall>
-<fCall name="usb_audio_io" global="true" callerUnit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/main.xc" numArgs="8" impId="2" specializationId="0">
+<fCall name="usb_audio_io" global="true" callerUnit="C:/Projects/UI-01_sw1_hw1/module_usb_audio/main.xc" numArgs="8" impId="2" specializationId="0">
 </fCall>
 </preCompilationAnalysis>

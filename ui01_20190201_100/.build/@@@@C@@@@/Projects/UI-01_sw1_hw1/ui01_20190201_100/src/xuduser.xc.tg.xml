@@ -1,0 +1,29 @@
+<taskgraph>
+<task>
+  <name>delay_seconds</name>
+  <inFunction>delay_seconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_milliseconds</name>
+  <inFunction>delay_milliseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_microseconds</name>
+  <inFunction>delay_microseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>HandleRebootTimeout</name>
+  <inFunction>HandleRebootTimeout</inFunction>
+</task>
+<task>
+  <name>XUD_UserSuspend</name>
+  <inFunction>XUD_UserSuspend</inFunction>
+</task>
+<task>
+  <name>XUD_UserResume</name>
+  <inFunction>XUD_UserResume</inFunction>
+</task>
+</taskgraph>

@@ -1,0 +1,5 @@
+<preCompilationAnalysis file="../src/interrupt.c">
+  <fCall global="true" name="__HandleRebootTimeout_kernel_stack_end"/>
+  <fCall global="true" name="__HandleRebootTimeout_handler"/>
+  <fCall global="true" name="HandleRebootTimeout"/>
+</preCompilationAnalysis>

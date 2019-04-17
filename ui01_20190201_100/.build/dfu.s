@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -178,20 +178,20 @@
 	.set usage.anon.26,0
 	.set usage.anon.27,0
 	.set usage.anon.28,0
-	.globread DFUReportResetState,usage.anon.15,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:47: note: object used here\n            if (currentTime - DFUTimerStart > DFUResetTimeout)\n                                              ^~~~~~~~~~~~~~~"
-	.globread DFUReportResetState,usage.anon.14,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:31: note: object used here\n            if (currentTime - DFUTimerStart > DFUResetTimeout)\n                              ^~~~~~~~~~~~~"
-	.globread usage.anon.19,usage.anon.20,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:52: note: object used here\n    data_buffer[0] = timeout << 8 | (unsigned char)DFU_status;\n                                                   ^~~~~~~~~~"
-	.globwrite DFUDeviceRequests,usage.anon.24,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:557:5: note: object used here\n    g_DFU_state = dfuState;\n    ^~~~~~~~~~~"
-	.globwrite usage.anon.25,usage.anon.13,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:5: note: object used here\n    DFUTimer :> s;\n    ^~~~~~~~"
-	.globwrite DFUReportResetState,usage.anon.13,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:357:13: note: object used here\n            DFUTimer :> currentTime;\n            ^~~~~~~~"
-	.globwrite DFUReportResetState,usage.anon.24,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:347:9: note: object used here\n        g_DFU_state = STATE_DFU_IDLE;\n        ^~~~~~~~~~~"
-	.globwrite usage.anon.18,usage.anon.17,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:232:9: note: object used here\n        subPagesLeft = 0;\n        ^~~~~~~~~~~~"
-	.globwrite usage.anon.16,usage.anon.17,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:186:13: note: object used here\n            subPagesLeft = 4;\n            ^~~~~~~~~~~~"
-	.globwrite usage.anon.12,usage.anon.15,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:9: note: object used here\n        DFUResetTimeout = timeout * 100000;\n        ^~~~~~~~~~~~~~~"
-	.globwrite usage.anon.12,usage.anon.14,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:21: note: object used here\n        DFUTimer :> DFUTimerStart;\n                    ^~~~~~~~~~~~~"
-	.globwrite usage.anon.12,usage.anon.13,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:9: note: object used here\n        DFUTimer :> DFUTimerStart;\n        ^~~~~~~~"
-	.globwrite usage.anon.11,usage.anon.10,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:82:9: note: object used here\n        DFU_flash_connected = 0;\n        ^~~~~~~~~~~~~~~~~~~"
-	.globwrite usage.anon.9,usage.anon.10,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:69:6: note: object used here\n        DFU_flash_connected = 1;\n        ^~~~~~~~~~~~~~~~~~~"
+	.globread DFUReportResetState,usage.anon.15,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:47: note: object used here\n            if (currentTime - DFUTimerStart > DFUResetTimeout)\n                                              ^~~~~~~~~~~~~~~"
+	.globread DFUReportResetState,usage.anon.14,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:31: note: object used here\n            if (currentTime - DFUTimerStart > DFUResetTimeout)\n                              ^~~~~~~~~~~~~"
+	.globread usage.anon.19,usage.anon.20,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:52: note: object used here\n    data_buffer[0] = timeout << 8 | (unsigned char)DFU_status;\n                                                   ^~~~~~~~~~"
+	.globwrite DFUDeviceRequests,usage.anon.24,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:557:5: note: object used here\n    g_DFU_state = dfuState;\n    ^~~~~~~~~~~"
+	.globwrite usage.anon.25,usage.anon.13,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:5: note: object used here\n    DFUTimer :> s;\n    ^~~~~~~~"
+	.globwrite DFUReportResetState,usage.anon.13,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:357:13: note: object used here\n            DFUTimer :> currentTime;\n            ^~~~~~~~"
+	.globwrite DFUReportResetState,usage.anon.24,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:347:9: note: object used here\n        g_DFU_state = STATE_DFU_IDLE;\n        ^~~~~~~~~~~"
+	.globwrite usage.anon.18,usage.anon.17,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:232:9: note: object used here\n        subPagesLeft = 0;\n        ^~~~~~~~~~~~"
+	.globwrite usage.anon.16,usage.anon.17,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:186:13: note: object used here\n            subPagesLeft = 4;\n            ^~~~~~~~~~~~"
+	.globwrite usage.anon.12,usage.anon.15,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:9: note: object used here\n        DFUResetTimeout = timeout * 100000;\n        ^~~~~~~~~~~~~~~"
+	.globwrite usage.anon.12,usage.anon.14,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:21: note: object used here\n        DFUTimer :> DFUTimerStart;\n                    ^~~~~~~~~~~~~"
+	.globwrite usage.anon.12,usage.anon.13,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:9: note: object used here\n        DFUTimer :> DFUTimerStart;\n        ^~~~~~~~"
+	.globwrite usage.anon.11,usage.anon.10,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:82:9: note: object used here\n        DFU_flash_connected = 0;\n        ^~~~~~~~~~~~~~~~~~~"
+	.globwrite usage.anon.9,usage.anon.10,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:69:6: note: object used here\n        DFU_flash_connected = 1;\n        ^~~~~~~~~~~~~~~~~~~"
 	.call DFUDeviceRequests,usage.anon.7
 	.call DFUDeviceRequests,XUD_GetBuffer
 	.call DFUDeviceRequests,XUD_DoSetRequestStatus
@@ -254,17 +254,17 @@
 	.set DFUDeviceRequests.locnoglobalaccess, 0
 	.set DFUHandler.locnointerfaceaccess, 0
 	.set DFUDeviceRequests.locnointerfaceaccess, 0
-	.assert 1,usage.anon.28.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:519:43: error: call to function `XMOS_DFU_LoadState\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_LoadState();\n                                          ^~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.27.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:514:43: error: call to function `XMOS_DFU_SaveState\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_SaveState();\n                                          ^~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.26.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:43: error: call to function `XMOS_DFU_SelectImage\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_SelectImage(sp.wValue, c_user_cmd);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.25.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:493:43: error: call to function `XMOS_DFU_RevertFactory\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_RevertFactory(c_user_cmd);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.23.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:483:43: error: call to function `DFU_Abort\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_Abort(tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.22.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:43: error: call to function `DFU_GetState\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_GetState(sp.wLength, data_out, c_user_cmd, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.21.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:472:43: error: call to function `DFU_ClrStatus\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_ClrStatus(tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.19.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:43: error: call to function `DFU_GetStatus\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_GetStatus(sp.wLength, data_out, c_user_cmd, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.18.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:43: error: call to function `DFU_Upload\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_Upload(sp.wLength, sp.wValue, data_out, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.16.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:37: error: call to function `DFU_Dnload\' which selects on a notification in a combinable function select case\n                        returnVal = DFU_Dnload(sp.wLength, sp.wValue, data, c_user_cmd, return_data_len, tmpDfuState);\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.12.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:43: error: call to function `DFU_Detach\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_Detach(sp.wValue, c_user_cmd, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.28.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:519:43: error: call to function `XMOS_DFU_LoadState\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_LoadState();\n                                          ^~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.27.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:514:43: error: call to function `XMOS_DFU_SaveState\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_SaveState();\n                                          ^~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.26.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:43: error: call to function `XMOS_DFU_SelectImage\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_SelectImage(sp.wValue, c_user_cmd);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.25.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:493:43: error: call to function `XMOS_DFU_RevertFactory\' which selects on a notification in a combinable function select case\n                        return_data_len = XMOS_DFU_RevertFactory(c_user_cmd);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.23.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:483:43: error: call to function `DFU_Abort\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_Abort(tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.22.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:43: error: call to function `DFU_GetState\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_GetState(sp.wLength, data_out, c_user_cmd, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.21.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:472:43: error: call to function `DFU_ClrStatus\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_ClrStatus(tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.19.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:43: error: call to function `DFU_GetStatus\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_GetStatus(sp.wLength, data_out, c_user_cmd, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.18.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:43: error: call to function `DFU_Upload\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_Upload(sp.wLength, sp.wValue, data_out, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.16.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:37: error: call to function `DFU_Dnload\' which selects on a notification in a combinable function select case\n                        returnVal = DFU_Dnload(sp.wLength, sp.wValue, data, c_user_cmd, return_data_len, tmpDfuState);\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.12.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:43: error: call to function `DFU_Detach\' which selects on a notification in a combinable function select case\n                        return_data_len = DFU_Detach(sp.wValue, c_user_cmd, tmpDfuState);\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -281,8 +281,8 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_dfu/src\\dfu.xc"
+	.file	2 "C:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
 	.text
 	.globl	_i.i_dfu.DFUHandler._c0.finish
 	.align	4
@@ -368,7 +368,7 @@ _i.i_dfu.DFUHandler._c0.finish:         # @_i.i_dfu.DFUHandler._c0.finish
 	.cc_top _i.i_dfu.DFUHandler._c0.HandleDfuRequest.function,_i.i_dfu.DFUHandler._c0.HandleDfuRequest
 _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRequest
 .Lfunc_begin1:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -435,10 +435,10 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		stw r5, r4[0]
 	}
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 .Ltmp13:
 	stw r5, sp[67]
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 .Ltmp14:
 	stw r0, sp[66]
 	{
@@ -451,7 +451,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	}
 .Ltmp15:
 	ldc r2, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r2, r2, r3
 		nop
@@ -499,14 +499,14 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:dfuState <- R0
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r0, sp[66]
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		ldc r5, 0
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp19:
 	bf r0, .LBB1_10
 .Ltmp20:
@@ -518,13 +518,13 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp21:
 	stw r0, sp[66]
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp22:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	bu .LBB1_4
 .Ltmp23:
@@ -535,7 +535,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer <- R7
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r5, r9
 		nop
@@ -549,22 +549,22 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer <- R7
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		ldaw r2, sp[50]
 		ldw r0, r7[r5]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r2[r5]
 .Ltmp24:
 	#DEBUG_VALUE: i <- R5
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r5, r5, 1
 		ldc r0, 16
 	}
 .Ltmp25:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r5, r0
 		nop
@@ -578,7 +578,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		add r0, r1, 8
 		ldc r6, 0
@@ -587,7 +587,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		ld16s r0, r0[r6]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r0, 16
 		add r1, r1, 4
@@ -597,7 +597,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		ld16s r1, r1[r6]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r1, 16
 		nop
@@ -605,7 +605,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	ldaw r2, sp[66]
 .Ltmp28:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -668,7 +668,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		ldc r5, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r5, sp[67]
 	{
 		mkmsk r6, 1
@@ -683,7 +683,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer <- R7
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		add r0, r1, 8
 		ldc r6, 0
@@ -692,7 +692,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		ld16s r0, r0[r6]
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		zext r0, 16
 		ldaw r8, sp[34]
@@ -700,7 +700,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	ldaw r2, sp[66]
 .Ltmp36:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r8
 		nop
@@ -715,7 +715,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	}
 .Ltmp39:
 	#DEBUG_VALUE: i <- 0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r5, sp[67]
 	{
 		ldc r0, 16
@@ -730,7 +730,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		lsu r2, r1, r9
 		nop
@@ -749,16 +749,16 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		ldw r2, r8[r1]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	stw r2, r7[r1]
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		add r1, r1, 1
 		nop
 	}
 .Ltmp41:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r1, r0
 		nop
@@ -781,13 +781,13 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		ldc r6, 0
 		nop
 	}
-	.loc	1 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
+	.loc	1 267 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
 .Ltmp43:
 	{
 		eq r1, r0, 6
 		stw r6, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 	bt r1, .LBB1_23
 .Ltmp44:
 # BB#19:                                # %switchcase55
@@ -835,13 +835,13 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:dfuState <- R0
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 	{
 		eq r0, r0, 10
 		nop
 	}
 .Ltmp49:
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB1_31
 .Ltmp50:
 # BB#32:                                # %switchcase92
@@ -862,12 +862,12 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:dfuState <- R0
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 311 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
+	.loc	1 311 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
 	{
 		ldc r1, 8
 		stw r0, sp[2]
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 	{
 		lsu r1, r1, r0
 		nop
@@ -905,7 +905,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp55:
 .LBB1_38:                               # %DFU_GetState.exit
@@ -918,7 +918,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		mkmsk r5, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r5, sp[67]
 .Ltmp56:
 	#DEBUG_VALUE: i <- 0
@@ -939,7 +939,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		lsu r3, r2, r9
 		nop
@@ -961,16 +961,16 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		ldw r3, r0[r2]
 	}
 .Ltmp60:
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	stw r3, r7[r2]
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		add r2, r2, 1
 		nop
 	}
 .Ltmp61:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r3, r2, r1
 		nop
@@ -995,7 +995,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r5, 0
 		nop
@@ -1012,11 +1012,11 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels2:
 	bl DFUCustomFlashEnable
 .Ltmp65:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels3:
 	bl flash_cmd_init
 .Ltmp66:
@@ -1032,47 +1032,47 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r6[r5]
 .Ltmp68:
 .LBB1_44:                               # %DFU_OpenFlash.exit211
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels4:
 	bl flash_cmd_erase_all
 .Ltmp69:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp70:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI1_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels0:
 	{
 		in r0, res[r1]
@@ -1081,7 +1081,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 .Ltmp71:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	bu .LBB1_4
 .Ltmp72:
@@ -1093,7 +1093,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		ldc r5, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r5, sp[67]
 	ldw r2, cp[.LCPI1_1]
 	{
@@ -1114,7 +1114,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 .Lxtalabel28:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 	stw r0, sp[66]
 .Ltmp75:
 .LBB1_34:                               # %switchcase178
@@ -1127,7 +1127,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	}
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 .Ltmp76:
 .LBB1_4:
@@ -1149,7 +1149,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 .Ltmp78:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[66]
 	{
 		mkmsk r1, 1
@@ -1179,7 +1179,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		add r0, r1, 4
 		nop
@@ -1188,15 +1188,15 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		ld16s r6, r0[r5]
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r6, 16
 		mkmsk r7, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp81:
 	stw r7, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r8, 0
 		nop
@@ -1212,11 +1212,11 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 .Lxtalabel33:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels5:
 	bl DFUCustomFlashEnable
 .Ltmp83:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels6:
 	bl flash_cmd_init
 .Ltmp84:
@@ -1227,28 +1227,28 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 .Lxtalabel34:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r7, r9[r8]
 .Ltmp86:
 .LBB1_13:                               # %DFU_OpenFlash.exit
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	ldw r0, cp[.LCPI1_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r6, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp87:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	bu .LBB1_4
 .Ltmp88:
@@ -1278,7 +1278,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 .Ltmp90:
 .LBB1_24:                               # %DFU_GetStatus.exit
 .Lxtalabel37:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r0, sp[66]
 .Ltmp91:
 .LBB1_25:                               # %DFU_GetStatus.exit
@@ -1293,7 +1293,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		stw r0, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r2, sp[67]
 .Ltmp92:
 	#DEBUG_VALUE: i <- 0
@@ -1314,7 +1314,7 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		lsu r11, r3, r9
 		nop
@@ -1333,16 +1333,16 @@ _i.i_dfu.DFUHandler._c0.HandleDfuRequest: # @_i.i_dfu.DFUHandler._c0.HandleDfuRe
 		nop
 		ldw r11, r0[r3]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	stw r11, r7[r3]
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		add r3, r3, 1
 		nop
 	}
 .Ltmp94:
 	#DEBUG_VALUE: i <- R3
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r3, r1
 		nop
@@ -1466,7 +1466,7 @@ _i.i_dfu.DFUHandler.0.finish:           # @_i.i_dfu.DFUHandler.0.finish
 	.cc_top _i.i_dfu.DFUHandler.0.HandleDfuRequest.function,_i.i_dfu.DFUHandler.0.HandleDfuRequest
 _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuRequest
 .Lfunc_begin3:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1523,10 +1523,10 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldc r4, 0
 		nop
 	}
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 .Ltmp110:
 	stw r4, sp[67]
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 .Ltmp111:
 	stw r2, sp[66]
 	{
@@ -1539,7 +1539,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	}
 .Ltmp112:
 	ldc r0, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r0, r0, r3
 		nop
@@ -1584,14 +1584,14 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:dfuState <- R2
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r2, sp[66]
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		ldc r4, 0
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp116:
 	bf r2, .LBB3_10
 .Ltmp117:
@@ -1602,12 +1602,12 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp118:
 	stw r0, sp[66]
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp119:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 	bu .LBB3_4
 .Ltmp120:
@@ -1617,7 +1617,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer <- R6
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r4, r8
 		nop
@@ -1630,22 +1630,22 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer <- R6
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		ldaw r2, sp[50]
 		ldw r0, r6[r4]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r2[r4]
 .Ltmp121:
 	#DEBUG_VALUE: i <- R4
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r4, r4, 1
 		ldc r0, 16
 	}
 .Ltmp122:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r4, r0
 		nop
@@ -1658,7 +1658,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Lxtalabel46:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		add r0, r1, 8
 		ldc r5, 0
@@ -1667,7 +1667,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		ld16s r0, r0[r5]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r0, 16
 		add r1, r1, 4
@@ -1677,7 +1677,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		ld16s r1, r1[r5]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r1, 16
 		nop
@@ -1685,7 +1685,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	ldaw r2, sp[66]
 .Ltmp125:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -1745,7 +1745,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldc r4, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r4, sp[67]
 	{
 		mkmsk r5, 1
@@ -1759,7 +1759,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer <- R6
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		add r0, r1, 8
 		ldc r5, 0
@@ -1768,7 +1768,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		ld16s r0, r0[r5]
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		zext r0, 16
 		ldaw r7, sp[34]
@@ -1776,7 +1776,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	ldaw r2, sp[66]
 .Ltmp133:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r7
 		nop
@@ -1791,7 +1791,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	}
 .Ltmp136:
 	#DEBUG_VALUE: i <- 0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r4, sp[67]
 	{
 		ldc r0, 16
@@ -1805,7 +1805,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		lsu r2, r1, r8
 		nop
@@ -1823,16 +1823,16 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		ldw r2, r7[r1]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	stw r2, r6[r1]
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		add r1, r1, 1
 		nop
 	}
 .Ltmp138:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r1, r0
 		nop
@@ -1854,13 +1854,13 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldc r5, 0
 		nop
 	}
-	.loc	1 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
+	.loc	1 267 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
 .Ltmp140:
 	{
 		eq r1, r2, 6
 		stw r5, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 	bt r1, .LBB3_23
 .Ltmp141:
 # BB#19:                                # %switchcase54
@@ -1904,12 +1904,12 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Lxtalabel56:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:dfuState <- R2
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 	{
 		eq r0, r2, 10
 		nop
 	}
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB3_31
 .Ltmp146:
 # BB#32:                                # %switchcase91
@@ -1928,12 +1928,12 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:dfuState <- R2
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 311 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
+	.loc	1 311 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
 	{
 		ldc r0, 8
 		stw r2, sp[2]
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 	{
 		lsu r0, r0, r2
 		nop
@@ -1968,7 +1968,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp150:
 .LBB3_38:                               # %DFU_GetState.exit
@@ -1980,7 +1980,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		mkmsk r4, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r4, sp[67]
 .Ltmp151:
 	#DEBUG_VALUE: i <- 0
@@ -2000,7 +2000,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		lsu r3, r2, r8
 		nop
@@ -2021,16 +2021,16 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldw r3, r0[r2]
 	}
 .Ltmp155:
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	stw r3, r6[r2]
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		add r2, r2, 1
 		nop
 	}
 .Ltmp156:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r3, r2, r1
 		nop
@@ -2053,7 +2053,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Lxtalabel64:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r4, 0
 		nop
@@ -2069,11 +2069,11 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Lxtalabel65:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels9:
 	bl DFUCustomFlashEnable
 .Ltmp160:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels10:
 	bl flash_cmd_init
 .Ltmp161:
@@ -2088,46 +2088,46 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r5[r4]
 .Ltmp163:
 .LBB3_44:                               # %DFU_OpenFlash.exit208
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels11:
 	bl flash_cmd_erase_all
 .Ltmp164:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp165:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI3_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels1:
 	{
 		in r0, res[r1]
@@ -2135,7 +2135,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	}
 .Ltmp166:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 	bu .LBB3_4
 .Ltmp167:
@@ -2146,7 +2146,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		ldc r4, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r4, sp[67]
 	ldw r2, cp[.LCPI3_1]
 	{
@@ -2165,7 +2165,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .LBB3_33:                               # %switchcase91
 .Lxtalabel68:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 	stw r0, sp[66]
 .Ltmp170:
 .LBB3_34:                               # %switchcase177
@@ -2176,7 +2176,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 	}
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 .Ltmp171:
 .LBB3_4:
@@ -2196,7 +2196,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Lxtalabel71:
 .Ltmp173:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[66]
 	{
 		clre
@@ -2219,7 +2219,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Lxtalabel72:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		add r0, r1, 4
 		nop
@@ -2228,15 +2228,15 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		ld16s r5, r0[r4]
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r5, 16
 		mkmsk r6, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp175:
 	stw r6, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r7, 0
 		nop
@@ -2251,11 +2251,11 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 # BB#11:                                # %iftrue.i196
 .Lxtalabel73:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels12:
 	bl DFUCustomFlashEnable
 .Ltmp177:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels13:
 	bl flash_cmd_init
 .Ltmp178:
@@ -2265,26 +2265,26 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 # BB#12:                                # %ifdone3.i
 .Lxtalabel74:
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r6, r8[r7]
 .Ltmp180:
 .LBB3_13:                               # %DFU_OpenFlash.exit
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	ldw r0, cp[.LCPI3_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r5, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp181:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 	bu .LBB3_4
 .Ltmp182:
@@ -2312,7 +2312,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 .Ltmp184:
 .LBB3_24:                               # %DFU_GetStatus.exit
 .Lxtalabel77:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r2, sp[66]
 .Ltmp185:
 .LBB3_25:                               # %DFU_GetStatus.exit
@@ -2326,7 +2326,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		stw r2, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r0, sp[67]
 .Ltmp186:
 	#DEBUG_VALUE: i <- 0
@@ -2346,7 +2346,7 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 	#DEBUG_VALUE: _i.i_dfu.DFUHandler.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		lsu r11, r3, r8
 		nop
@@ -2364,16 +2364,16 @@ _i.i_dfu.DFUHandler.0.HandleDfuRequest: # @_i.i_dfu.DFUHandler.0.HandleDfuReques
 		nop
 		ldw r11, r1[r3]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	stw r11, r6[r3]
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		add r3, r3, 1
 		nop
 	}
 .Ltmp188:
 	#DEBUG_VALUE: i <- R3
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r3, r2
 		nop
@@ -2495,7 +2495,7 @@ _i.i_dfu._SDFUHandler_0._c0.finish:     # @_i.i_dfu._SDFUHandler_0._c0.finish
 	.cc_top _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest.function,_i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest
 _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest
 .Lfunc_begin5:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -2562,10 +2562,10 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		stw r5, r4[0]
 	}
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 .Ltmp206:
 	stw r5, sp[67]
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 .Ltmp207:
 	stw r0, sp[66]
 	{
@@ -2578,7 +2578,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	}
 .Ltmp208:
 	ldc r2, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r2, r2, r3
 		nop
@@ -2626,14 +2626,14 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:dfuState <- R0
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r0, sp[66]
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		ldc r5, 0
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp212:
 	bf r0, .LBB5_10
 .Ltmp213:
@@ -2645,13 +2645,13 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp214:
 	stw r0, sp[66]
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp215:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	bu .LBB5_4
 .Ltmp216:
@@ -2662,7 +2662,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer <- R7
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r5, r9
 		nop
@@ -2676,22 +2676,22 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer <- R7
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		ldaw r2, sp[50]
 		ldw r0, r7[r5]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r2[r5]
 .Ltmp217:
 	#DEBUG_VALUE: i <- R5
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r5, r5, 1
 		ldc r0, 16
 	}
 .Ltmp218:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r5, r0
 		nop
@@ -2705,7 +2705,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		add r0, r1, 8
 		ldc r6, 0
@@ -2714,7 +2714,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		ld16s r0, r0[r6]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r0, 16
 		add r1, r1, 4
@@ -2724,7 +2724,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		ld16s r1, r1[r6]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r1, 16
 		nop
@@ -2732,7 +2732,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	ldaw r2, sp[66]
 .Ltmp221:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -2795,7 +2795,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		ldc r5, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r5, sp[67]
 	{
 		mkmsk r6, 1
@@ -2810,7 +2810,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer <- R7
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		add r0, r1, 8
 		ldc r6, 0
@@ -2819,7 +2819,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		ld16s r0, r0[r6]
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		zext r0, 16
 		ldaw r8, sp[34]
@@ -2827,7 +2827,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	ldaw r2, sp[66]
 .Ltmp229:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r8
 		nop
@@ -2842,7 +2842,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	}
 .Ltmp232:
 	#DEBUG_VALUE: i <- 0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r5, sp[67]
 	{
 		ldc r0, 16
@@ -2857,7 +2857,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		lsu r2, r1, r9
 		nop
@@ -2876,16 +2876,16 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		ldw r2, r8[r1]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	stw r2, r7[r1]
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		add r1, r1, 1
 		nop
 	}
 .Ltmp234:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r1, r0
 		nop
@@ -2908,13 +2908,13 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		ldc r6, 0
 		nop
 	}
-	.loc	1 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
+	.loc	1 267 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
 .Ltmp236:
 	{
 		eq r1, r0, 6
 		stw r6, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 	bt r1, .LBB5_23
 .Ltmp237:
 # BB#19:                                # %switchcase53
@@ -2962,13 +2962,13 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:dfuState <- R0
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 	{
 		eq r0, r0, 10
 		nop
 	}
 .Ltmp242:
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB5_31
 .Ltmp243:
 # BB#32:                                # %switchcase90
@@ -2989,12 +2989,12 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:dfuState <- R0
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 311 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
+	.loc	1 311 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
 	{
 		ldc r1, 8
 		stw r0, sp[2]
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 	{
 		lsu r1, r1, r0
 		nop
@@ -3032,7 +3032,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp248:
 .LBB5_38:                               # %DFU_GetState.exit
@@ -3045,7 +3045,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		mkmsk r5, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r5, sp[67]
 .Ltmp249:
 	#DEBUG_VALUE: i <- 0
@@ -3066,7 +3066,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		lsu r3, r2, r9
 		nop
@@ -3088,16 +3088,16 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		ldw r3, r0[r2]
 	}
 .Ltmp253:
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	stw r3, r7[r2]
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		add r2, r2, 1
 		nop
 	}
 .Ltmp254:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r3, r2, r1
 		nop
@@ -3122,7 +3122,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r5, 0
 		nop
@@ -3139,11 +3139,11 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels16:
 	bl DFUCustomFlashEnable
 .Ltmp258:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels17:
 	bl flash_cmd_init
 .Ltmp259:
@@ -3159,47 +3159,47 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r6[r5]
 .Ltmp261:
 .LBB5_44:                               # %DFU_OpenFlash.exit205
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels18:
 	bl flash_cmd_erase_all
 .Ltmp262:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp263:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI5_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels2:
 	{
 		in r0, res[r1]
@@ -3208,7 +3208,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 .Ltmp264:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	bu .LBB5_4
 .Ltmp265:
@@ -3220,7 +3220,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		ldc r5, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r5, sp[67]
 	ldw r2, cp[.LCPI5_1]
 	{
@@ -3241,7 +3241,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 .Lxtalabel108:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 	stw r0, sp[66]
 .Ltmp268:
 .LBB5_34:                               # %switchcase173
@@ -3254,7 +3254,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	}
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 .Ltmp269:
 .LBB5_4:
@@ -3276,7 +3276,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 .Ltmp271:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[66]
 	{
 		mkmsk r1, 1
@@ -3306,7 +3306,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		add r0, r1, 4
 		nop
@@ -3315,15 +3315,15 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		ld16s r6, r0[r5]
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r6, 16
 		mkmsk r7, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp274:
 	stw r7, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r8, 0
 		nop
@@ -3339,11 +3339,11 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 .Lxtalabel113:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels19:
 	bl DFUCustomFlashEnable
 .Ltmp276:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels20:
 	bl flash_cmd_init
 .Ltmp277:
@@ -3354,28 +3354,28 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 .Lxtalabel114:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r7, r9[r8]
 .Ltmp279:
 .LBB5_13:                               # %DFU_OpenFlash.exit
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	ldw r0, cp[.LCPI5_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r6, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:p <- R4
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp280:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	bu .LBB5_4
 .Ltmp281:
@@ -3405,7 +3405,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 .Ltmp283:
 .LBB5_24:                               # %DFU_GetStatus.exit
 .Lxtalabel117:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r0, sp[66]
 .Ltmp284:
 .LBB5_25:                               # %DFU_GetStatus.exit
@@ -3420,7 +3420,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		stw r0, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r2, sp[67]
 .Ltmp285:
 	#DEBUG_VALUE: i <- 0
@@ -3441,7 +3441,7 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		lsu r11, r3, r9
 		nop
@@ -3460,16 +3460,16 @@ _i.i_dfu._SDFUHandler_0._c0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0._c0.Han
 		nop
 		ldw r11, r0[r3]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	stw r11, r7[r3]
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		add r3, r3, 1
 		nop
 	}
 .Ltmp287:
 	#DEBUG_VALUE: i <- R3
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r3, r1
 		nop
@@ -3593,7 +3593,7 @@ _i.i_dfu._SDFUHandler_0.0.finish:       # @_i.i_dfu._SDFUHandler_0.0.finish
 	.cc_top _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest.function,_i.i_dfu._SDFUHandler_0.0.HandleDfuRequest
 _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleDfuRequest
 .Lfunc_begin7:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -3650,10 +3650,10 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldc r4, 0
 		nop
 	}
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 .Ltmp303:
 	stw r4, sp[67]
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 .Ltmp304:
 	stw r2, sp[66]
 	{
@@ -3666,7 +3666,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	}
 .Ltmp305:
 	ldc r0, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r0, r0, r3
 		nop
@@ -3711,14 +3711,14 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:dfuState <- R2
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r2, sp[66]
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		ldc r4, 0
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp309:
 	bf r2, .LBB7_10
 .Ltmp310:
@@ -3729,12 +3729,12 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp311:
 	stw r0, sp[66]
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp312:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 	bu .LBB7_4
 .Ltmp313:
@@ -3744,7 +3744,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer <- R6
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r4, r8
 		nop
@@ -3757,22 +3757,22 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer <- R6
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		ldaw r2, sp[50]
 		ldw r0, r6[r4]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r2[r4]
 .Ltmp314:
 	#DEBUG_VALUE: i <- R4
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r4, r4, 1
 		ldc r0, 16
 	}
 .Ltmp315:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r4, r0
 		nop
@@ -3785,7 +3785,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Lxtalabel126:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		add r0, r1, 8
 		ldc r5, 0
@@ -3794,7 +3794,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		ld16s r0, r0[r5]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r0, 16
 		add r1, r1, 4
@@ -3804,7 +3804,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		ld16s r1, r1[r5]
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		zext r1, 16
 		nop
@@ -3812,7 +3812,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	ldaw r2, sp[66]
 .Ltmp318:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -3872,7 +3872,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldc r4, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r4, sp[67]
 	{
 		mkmsk r5, 1
@@ -3886,7 +3886,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer <- R6
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		add r0, r1, 8
 		ldc r5, 0
@@ -3895,7 +3895,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		ld16s r0, r0[r5]
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		zext r0, 16
 		ldaw r7, sp[34]
@@ -3903,7 +3903,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	ldaw r2, sp[66]
 .Ltmp326:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r7
 		nop
@@ -3918,7 +3918,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	}
 .Ltmp329:
 	#DEBUG_VALUE: i <- 0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r4, sp[67]
 	{
 		ldc r0, 16
@@ -3932,7 +3932,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		lsu r2, r1, r8
 		nop
@@ -3950,16 +3950,16 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		ldw r2, r7[r1]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	stw r2, r6[r1]
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		add r1, r1, 1
 		nop
 	}
 .Ltmp331:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r1, r0
 		nop
@@ -3981,13 +3981,13 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldc r5, 0
 		nop
 	}
-	.loc	1 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
+	.loc	1 267 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:267:0
 .Ltmp333:
 	{
 		eq r1, r2, 6
 		stw r5, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 	bt r1, .LBB7_23
 .Ltmp334:
 # BB#19:                                # %switchcase52
@@ -4031,12 +4031,12 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Lxtalabel136:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:dfuState <- R2
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 	{
 		eq r0, r2, 10
 		nop
 	}
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB7_31
 .Ltmp339:
 # BB#32:                                # %switchcase89
@@ -4055,12 +4055,12 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:dfuState <- R2
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 311 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
+	.loc	1 311 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:311:0
 	{
 		ldc r0, 8
 		stw r2, sp[2]
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 	{
 		lsu r0, r0, r2
 		nop
@@ -4095,7 +4095,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp343:
 .LBB7_38:                               # %DFU_GetState.exit
@@ -4107,7 +4107,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		mkmsk r4, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r4, sp[67]
 .Ltmp344:
 	#DEBUG_VALUE: i <- 0
@@ -4127,7 +4127,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		lsu r3, r2, r8
 		nop
@@ -4148,16 +4148,16 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldw r3, r0[r2]
 	}
 .Ltmp348:
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	stw r3, r6[r2]
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		add r2, r2, 1
 		nop
 	}
 .Ltmp349:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r3, r2, r1
 		nop
@@ -4180,7 +4180,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Lxtalabel144:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r4, 0
 		nop
@@ -4196,11 +4196,11 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Lxtalabel145:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels23:
 	bl DFUCustomFlashEnable
 .Ltmp353:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels24:
 	bl flash_cmd_init
 .Ltmp354:
@@ -4215,46 +4215,46 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r5[r4]
 .Ltmp356:
 .LBB7_44:                               # %DFU_OpenFlash.exit202
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels25:
 	bl flash_cmd_erase_all
 .Ltmp357:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp358:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI7_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels3:
 	{
 		in r0, res[r1]
@@ -4262,7 +4262,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	}
 .Ltmp359:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 	bu .LBB7_4
 .Ltmp360:
@@ -4273,7 +4273,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		ldc r4, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r4, sp[67]
 	ldw r2, cp[.LCPI7_1]
 	{
@@ -4292,7 +4292,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .LBB7_33:                               # %switchcase89
 .Lxtalabel148:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 	stw r0, sp[66]
 .Ltmp363:
 .LBB7_34:                               # %switchcase172
@@ -4303,7 +4303,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 	}
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 .Ltmp364:
 .LBB7_4:
@@ -4323,7 +4323,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Lxtalabel151:
 .Ltmp366:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[66]
 	{
 		clre
@@ -4346,7 +4346,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Lxtalabel152:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:sp <- R1
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		add r0, r1, 4
 		nop
@@ -4355,15 +4355,15 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		ld16s r5, r0[r4]
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r5, 16
 		mkmsk r6, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp368:
 	stw r6, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r7, 0
 		nop
@@ -4378,11 +4378,11 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 # BB#11:                                # %iftrue.i190
 .Lxtalabel153:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels26:
 	bl DFUCustomFlashEnable
 .Ltmp370:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels27:
 	bl flash_cmd_init
 .Ltmp371:
@@ -4392,26 +4392,26 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 # BB#12:                                # %ifdone3.i
 .Lxtalabel154:
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r6, r8[r7]
 .Ltmp373:
 .LBB7_13:                               # %DFU_OpenFlash.exit
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	ldw r0, cp[.LCPI7_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r5, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 .Ltmp374:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r4, sp[67]
 	bu .LBB7_4
 .Ltmp375:
@@ -4439,7 +4439,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 .Ltmp377:
 .LBB7_24:                               # %DFU_GetStatus.exit
 .Lxtalabel157:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r2, sp[66]
 .Ltmp378:
 .LBB7_25:                               # %DFU_GetStatus.exit
@@ -4453,7 +4453,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		stw r2, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r0, sp[67]
 .Ltmp379:
 	#DEBUG_VALUE: i <- 0
@@ -4473,7 +4473,7 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 	#DEBUG_VALUE: _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest:data_buffer_length <- R3
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		lsu r11, r3, r8
 		nop
@@ -4491,16 +4491,16 @@ _i.i_dfu._SDFUHandler_0.0.HandleDfuRequest: # @_i.i_dfu._SDFUHandler_0.0.HandleD
 		nop
 		ldw r11, r1[r3]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	stw r11, r6[r3]
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		add r3, r3, 1
 		nop
 	}
 .Ltmp381:
 	#DEBUG_VALUE: i <- R3
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r3, r2
 		nop
@@ -4931,7 +4931,7 @@ _i.i_dfu._chan_yield.HandleDfuRequest:  # @_i.i_dfu._chan_yield.HandleDfuRequest
 	.cc_top DFUDelay.function,DFUDelay
 DFUDelay:                               # @DFUDelay
 .Lfunc_begin12:
-	.loc	1 49 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:49:0
+	.loc	1 49 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:49:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -4943,30 +4943,30 @@ DFUDelay:                               # @DFUDelay
 		dualentsp 0
 	}
 .Ltmp402:
-	.loc	1 53 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
+	.loc	1 53 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
 	{
 		get r11, id
 		nop
 	}
-	.loc	1 53 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
+	.loc	1 53 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
 	ldaw r2, dp[__timers]
-	.loc	1 53 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
+	.loc	1 53 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
 	{
 		add r0, r1, r0
 		ldw r2, r2[r11]
 	}
 .Ltmp403:
-	.loc	1 53 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
+	.loc	1 53 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
 	{
 		setd res[r2], r0
 		nop
 	}
-	.loc	1 53 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
+	.loc	1 53 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
 	{
 		setc res[r2], 9
 		nop
 	}
-	.loc	1 53 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
+	.loc	1 53 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:53:0
 .Ltmp404:
 .Lxta.endpoint_labels4:
 	{
@@ -4994,7 +4994,7 @@ DFUDelay:                               # @DFUDelay
 	.cc_top DFU_Dnload.function,DFU_Dnload
 DFU_Dnload:                             # @DFU_Dnload
 .Lfunc_begin13:
-	.loc	1 109 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:109:0
+	.loc	1 109 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:109:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -5049,7 +5049,7 @@ DFU_Dnload:                             # @DFU_Dnload
 		mov r5, r1
 		mov r6, r0
 	}
-	.loc	1 118 5 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:118:5
+	.loc	1 118 5 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:118:5
 .Ltmp416:
 	{
 		ldc r8, 0
@@ -5068,11 +5068,11 @@ DFU_Dnload:                             # @DFU_Dnload
 # BB#1:                                 # %iftrue.i
 .Lxtalabel162:
 	#DEBUG_VALUE: fromDfuIdle <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp417:
 .Lxta.call_labels28:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp418:
 .Lxta.call_labels29:
 	bl flash_cmd_init
@@ -5087,7 +5087,7 @@ DFU_Dnload:                             # @DFU_Dnload
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 118 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:118:5
+	.loc	1 118 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:118:5
 	st8 r0, r7[r8]
 .LBB13_3:                               # %ifdone
 .Lxtalabel164:
@@ -5100,7 +5100,7 @@ DFU_Dnload:                             # @DFU_Dnload
 		nop
 		ldw r0, r7[0]
 	}
-	.loc	1 123 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:123:0
+	.loc	1 123 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:123:0
 	{
 		eq r9, r0, 2
 		nop
@@ -5126,7 +5126,7 @@ DFU_Dnload:                             # @DFU_Dnload
 		ldc r0, 10
 		nop
 	}
-	.loc	1 129 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:129:0
+	.loc	1 129 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:129:0
 	{
 		mkmsk r0, 1
 		stw r0, r7[0]
@@ -5135,7 +5135,7 @@ DFU_Dnload:                             # @DFU_Dnload
 .LBB13_8:                               # %iffalse.critedge
 .Lxtalabel169:
 	#DEBUG_VALUE: fromDfuIdle <- 0
-	.loc	1 147 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:147:5
+	.loc	1 147 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:147:5
 	bf r6, .LBB13_9
 # BB#13:                                # %iffalse27
 .Lxtalabel170:
@@ -5155,7 +5155,7 @@ DFU_Dnload:                             # @DFU_Dnload
 	#DEBUG_VALUE: flash_page_index <- 0
 	#DEBUG_VALUE: cmd_data <- [SP+8]
 	#DEBUG_VALUE: s <- 0
-	.loc	1 178 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:178:0
+	.loc	1 178 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:178:0
 .Lxta.call_labels30:
 	bl flash_cmd_erase_all
 .Ltmp423:
@@ -5166,7 +5166,7 @@ DFU_Dnload:                             # @DFU_Dnload
 	#DEBUG_VALUE: flash_cmd <- 0
 	#DEBUG_VALUE: flash_page_index <- 0
 	#DEBUG_VALUE: cmd_data <- [SP+8]
-	.loc	1 182 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:182:9
+	.loc	1 182 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:182:9
 	{
 		zext r5, 2
 		nop
@@ -5184,22 +5184,22 @@ DFU_Dnload:                             # @DFU_Dnload
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 184 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:184:0
+	.loc	1 184 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:184:0
 	xor r0, r9, r0
-	.loc	1 184 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:184:0
+	.loc	1 184 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:184:0
 	{
 		ldaw r0, sp[2]
 		stw r0, sp[2]
 	}
 	ldc r1, 64
-	.loc	1 185 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:185:0
+	.loc	1 185 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:185:0
 .Lxta.call_labels31:
 	bl flash_cmd_write_page
 	{
 		ldc r0, 4
 		nop
 	}
-	.loc	1 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:186:0
+	.loc	1 186 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:186:0
 	stw r0, dp[subPagesLeft]
 .Ltmp425:
 .LBB13_17:                              # %afterboundcheck71
@@ -5210,28 +5210,28 @@ DFU_Dnload:                             # @DFU_Dnload
 	#DEBUG_VALUE: flash_cmd <- 0
 	#DEBUG_VALUE: flash_page_index <- 0
 	#DEBUG_VALUE: cmd_data <- [SP+8]
-	.loc	1 191 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:191:0
+	.loc	1 191 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:191:0
 	{
 		ldaw r1, sp[2]
 		ldw r0, r4[r8]
 	}
-	.loc	1 191 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:191:0
+	.loc	1 191 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:191:0
 	stw r0, r1[r8]
-	.loc	1 189 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:189:0
+	.loc	1 189 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:189:0
 	{
 		add r8, r8, 1
 		nop
 	}
 .Ltmp426:
 	#DEBUG_VALUE: i <- R8
-	.loc	1 189 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:189:0
+	.loc	1 189 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:189:0
 	{
 		shr r0, r8, 4
 		nop
 	}
 .Lxta.loop_labels16:
 	# LOOPMARKER 0
-	.loc	1 189 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:189:0
+	.loc	1 189 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:189:0
 	bf r0, .LBB13_17
 .Ltmp427:
 # BB#18:                                # %ifdone60
@@ -5245,17 +5245,17 @@ DFU_Dnload:                             # @DFU_Dnload
 		nop
 	}
 	ldc r1, 64
-	.loc	1 194 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:194:0
+	.loc	1 194 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:194:0
 .Lxta.call_labels32:
 	bl flash_cmd_write_page_data
-	.loc	1 195 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:195:0
+	.loc	1 195 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:195:0
 	ldw r0, dp[subPagesLeft]
-	.loc	1 195 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:195:0
+	.loc	1 195 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:195:0
 	{
 		sub r0, r0, 1
 		nop
 	}
-	.loc	1 195 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:195:0
+	.loc	1 195 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:195:0
 	stw r0, dp[subPagesLeft]
 	{
 		mkmsk r0, 2
@@ -5268,7 +5268,7 @@ DFU_Dnload:                             # @DFU_Dnload
 	#DEBUG_VALUE: fromDfuIdle <- 0
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: cmd_data <- [SP+136]
-	.loc	1 152 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:152:9
+	.loc	1 152 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:152:9
 	ldw r0, dp[subPagesLeft]
 	bf r0, .LBB13_12
 .Ltmp429:
@@ -5283,7 +5283,7 @@ DFU_Dnload:                             # @DFU_Dnload
 		ldc r5, 0
 	}
 	ldc r6, 64
-	.loc	1 154 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:154:0
+	.loc	1 154 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:154:0
 .Ltmp430:
 	{
 		mov r0, r4
@@ -5302,23 +5302,23 @@ DFU_Dnload:                             # @DFU_Dnload
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: cmd_data <- [SP+136]
 	#DEBUG_VALUE: subPagePad <- [SP+72]
-	.loc	1 157 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:157:0
+	.loc	1 157 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:157:0
 	{
 		mov r0, r4
 		mov r1, r6
 	}
 .Lxta.call_labels33:
 	bl flash_cmd_write_page_data
-	.loc	1 155 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:155:0
+	.loc	1 155 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:155:0
 	{
 		add r5, r5, 1
 		nop
 	}
 .Ltmp432:
 	#DEBUG_VALUE: i <- R5
-	.loc	1 155 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:155:0
+	.loc	1 155 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:155:0
 	ldw r0, dp[subPagesLeft]
-	.loc	1 155 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:155:0
+	.loc	1 155 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:155:0
 	{
 		lsu r0, r5, r0
 		nop
@@ -5336,13 +5336,13 @@ DFU_Dnload:                             # @DFU_Dnload
 		ldc r0, 2
 		nop
 	}
-	.loc	1 161 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:161:0
+	.loc	1 161 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:161:0
 	{
 		ldaw r0, sp[34]
 		stw r0, sp[34]
 	}
 	ldc r1, 64
-	.loc	1 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:162:0
+	.loc	1 162 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:162:0
 .Lxta.call_labels34:
 	bl flash_cmd_write_page
 	{
@@ -5353,7 +5353,7 @@ DFU_Dnload:                             # @DFU_Dnload
 .LBB13_19:                              # %ifdone22
 .Lxtalabel180:
 	#DEBUG_VALUE: fromDfuIdle <- 0
-	.loc	1 197 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:197:0
+	.loc	1 197 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:197:0
 	{
 		ldc r0, 0
 		stw r0, r7[0]
@@ -5404,7 +5404,7 @@ DFU_Dnload:                             # @DFU_Dnload
 	.cc_top DFU_Upload.function,DFU_Upload
 DFU_Upload:                             # @DFU_Upload
 .Lfunc_begin14:
-	.loc	1 205 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:205:0
+	.loc	1 205 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:205:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -5440,7 +5440,7 @@ DFU_Upload:                             # @DFU_Upload
 		mov r5, r1
 		mov r7, r0
 	}
-	.loc	1 212 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:212:0
+	.loc	1 212 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:212:0
 .Ltmp445:
 	{
 		ldc r6, 0
@@ -5456,11 +5456,11 @@ DFU_Upload:                             # @DFU_Upload
 .Lxtalabel182:
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
 	#DEBUG_VALUE: firstRead <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp446:
 .Lxta.call_labels35:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp447:
 .Lxta.call_labels36:
 	bl flash_cmd_init
@@ -5476,7 +5476,7 @@ DFU_Upload:                             # @DFU_Upload
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:212:0
+	.loc	1 212 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:212:0
 	st8 r0, r8[r6]
 .LBB14_3:                               # %DFU_OpenFlash.exit
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
@@ -5485,7 +5485,7 @@ DFU_Upload:                             # @DFU_Upload
 		nop
 		ldw r1, r4[0]
 	}
-	.loc	1 214 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:214:0
+	.loc	1 214 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:214:0
 	{
 		eq r0, r1, 2
 		nop
@@ -5519,7 +5519,7 @@ DFU_Upload:                             # @DFU_Upload
 .Lxtalabel187:
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
 	#DEBUG_VALUE: firstRead <- 0
-	.loc	1 229 10                # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:229:10
+	.loc	1 229 10                # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:229:10
 	bf r0, .LBB14_10
 # BB#9:                                 # %ifdone11.thread
 .Lxtalabel188:
@@ -5530,7 +5530,7 @@ DFU_Upload:                             # @DFU_Upload
 		ldc r0, 0
 		nop
 	}
-	.loc	1 232 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:232:0
+	.loc	1 232 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:232:0
 	stw r0, dp[subPagesLeft]
 	bu .LBB14_12
 .LBB14_10:                              # %ifdone11
@@ -5538,7 +5538,7 @@ DFU_Upload:                             # @DFU_Upload
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
 .Ltmp451:
 	#DEBUG_VALUE: firstRead <- 0
-	.loc	1 235 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:235:5
+	.loc	1 235 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:235:5
 	ldw r0, dp[subPagesLeft]
 	bt r0, .LBB14_13
 # BB#11:
@@ -5551,26 +5551,26 @@ DFU_Upload:                             # @DFU_Upload
 .Lxtalabel190:
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
 	#DEBUG_VALUE: firstRead <- 0
-	.loc	1 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:237:0
+	.loc	1 237 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:237:0
 	{
 		ldaw r0, sp[2]
 		stw r0, sp[2]
 	}
 	ldc r1, 64
-	.loc	1 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:240:0
+	.loc	1 240 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:240:0
 .Lxta.call_labels37:
 	bl flash_cmd_read_page
 	{
 		ldc r0, 4
 		nop
 	}
-	.loc	1 241 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:241:0
+	.loc	1 241 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:241:0
 	stw r0, dp[subPagesLeft]
 	{
 		nop
 		ldw r0, sp[2]
 	}
-	.loc	1 244 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:244:9
+	.loc	1 244 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:244:9
 	{
 		eq r0, r0, 1
 		nop
@@ -5584,7 +5584,7 @@ DFU_Upload:                             # @DFU_Upload
 		ldc r6, 0
 		nop
 	}
-	.loc	1 246 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:246:0
+	.loc	1 246 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:246:0
 	stw r6, dp[subPagesLeft]
 	{
 		ldc r0, 2
@@ -5596,21 +5596,21 @@ DFU_Upload:                             # @DFU_Upload
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
 	#DEBUG_VALUE: firstRead <- 0
 	ldc r6, 64
-	.loc	1 254 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:254:0
+	.loc	1 254 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:254:0
 	{
 		mov r0, r5
 		mov r1, r6
 	}
 .Lxta.call_labels38:
 	bl flash_cmd_read_page_data
-	.loc	1 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:256:0
+	.loc	1 256 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:256:0
 	ldw r0, dp[subPagesLeft]
-	.loc	1 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:256:0
+	.loc	1 256 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:256:0
 	{
 		sub r0, r0, 1
 		nop
 	}
-	.loc	1 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:256:0
+	.loc	1 256 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:256:0
 	stw r0, dp[subPagesLeft]
 	{
 		ldc r0, 9
@@ -5618,7 +5618,7 @@ DFU_Upload:                             # @DFU_Upload
 	}
 .LBB14_15:                              # %return
 	#DEBUG_VALUE: DFU_Upload:block_num <- 0
-	.loc	1 248 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:248:0
+	.loc	1 248 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:248:0
 	{
 		mov r0, r6
 		stw r0, r4[0]
@@ -5667,7 +5667,7 @@ DFU_Upload:                             # @DFU_Upload
 	.cc_top DFUReportResetState.function,DFUReportResetState
 DFUReportResetState:                    # @DFUReportResetState
 .Lfunc_begin15:
-	.loc	1 335 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:335:0
+	.loc	1 335 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:335:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -5692,7 +5692,7 @@ DFUReportResetState:                    # @DFUReportResetState
 	#DEBUG_VALUE: currentTime <- 0
 	ldw r0, cp[.LCPI15_0]
 .Ltmp458:
-	.loc	1 32 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:32:0
+	.loc	1 32 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:32:0
 	#APP
 	ldw r0, r0[0]
 	#NO_APP
@@ -5701,7 +5701,7 @@ DFUReportResetState:                    # @DFUReportResetState
 	#DEBUG_VALUE: x <- R0
 	ldw r1, cp[.LCPI15_1]
 .Ltmp460:
-	.loc	1 343 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:343:5
+	.loc	1 343 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:343:5
 	{
 		eq r0, r0, r1
 		nop
@@ -5719,7 +5719,7 @@ DFUReportResetState:                    # @DFUReportResetState
 		nop
 	}
 .Ltmp463:
-	.loc	1 347 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:347:0
+	.loc	1 347 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:347:0
 	stw r0, dp[g_DFU_state]
 	{
 		mkmsk r0, 1
@@ -5732,13 +5732,13 @@ DFUReportResetState:                    # @DFUReportResetState
 	#DEBUG_VALUE: DFUReportResetState:c_user_cmd <- R0
 	#DEBUG_VALUE: inDFU <- 0
 	#DEBUG_VALUE: currentTime <- 0
-	.loc	1 351 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:351:0
+	.loc	1 351 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:351:0
 	ldw r2, dp[g_DFU_state]
 	{
 		ldc r1, 10
 		nop
 	}
-	.loc	1 351 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:351:0
+	.loc	1 351 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:351:0
 	{
 		lsu r0, r1, r2
 		nop
@@ -5768,15 +5768,15 @@ DFUReportResetState:                    # @DFUReportResetState
 .Lxtalabel197:
 .Ltmp468:
 	#DEBUG_VALUE: DFUReportResetState:c_user_cmd <- R0
-	.loc	1 388 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:388:0
+	.loc	1 388 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:388:0
 	{
 		ldc r0, 0
 		nop
 	}
 .Ltmp469:
-	.loc	1 360 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:360:0
+	.loc	1 360 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:360:0
 	stw r0, dp[g_DFU_state]
-	.loc	1 388 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:388:0
+	.loc	1 388 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:388:0
 	ldaw r4, dp[DFU_flash_connected]
 	{
 		nop
@@ -5787,15 +5787,15 @@ DFUReportResetState:                    # @DFUReportResetState
 .Lxtalabel198:
 .Ltmp470:
 	#DEBUG_VALUE: DFUReportResetState:c_user_cmd <- R0
-	.loc	1 80 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:80:0
+	.loc	1 80 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:80:0
 .Lxta.call_labels39:
 	bl DFUCustomFlashDisable
 .Ltmp471:
-	.loc	1 81 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:81:0
+	.loc	1 81 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:81:0
 .Lxta.call_labels40:
 	bl flash_cmd_deinit
 .Ltmp472:
-	.loc	1 388 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:388:0
+	.loc	1 388 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:388:0
 	{
 		ldc r0, 0
 		nop
@@ -5823,26 +5823,26 @@ DFUReportResetState:                    # @DFUReportResetState
 		ldc r1, 2
 		nop
 	}
-	.loc	1 355 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:355:0
+	.loc	1 355 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:355:0
 	stw r1, dp[g_DFU_state]
-	.loc	1 357 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:357:0
+	.loc	1 357 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:357:0
 	{
 		gettime r1
 		nop
 	}
 .Ltmp475:
 	#DEBUG_VALUE: currentTime <- R1
-	.loc	1 358 13                # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
+	.loc	1 358 13                # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
 	ldw r2, dp[DFUTimerStart]
-	.loc	1 358 13                # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
+	.loc	1 358 13                # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
 	{
 		sub r1, r1, r2
 		nop
 	}
 .Ltmp476:
-	.loc	1 358 13                # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
+	.loc	1 358 13                # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
 	ldw r2, dp[DFUResetTimeout]
-	.loc	1 358 13                # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
+	.loc	1 358 13                # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:358:13
 	{
 		lsu r1, r2, r1
 		nop
@@ -5855,7 +5855,7 @@ DFUReportResetState:                    # @DFUReportResetState
 	#DEBUG_VALUE: DFUReportResetState:c_user_cmd <- R0
 	#DEBUG_VALUE: inDFU <- 0
 	#DEBUG_VALUE: currentTime <- 0
-	.loc	1 381 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:381:0
+	.loc	1 381 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:381:0
 	stw r1, dp[g_DFU_state]
 .Ltmp478:
 	#DEBUG_VALUE: inDFU <- 1
@@ -5925,7 +5925,7 @@ DFUReportResetState:                    # @DFUReportResetState
 	.cc_top DFUHandler.function,DFUHandler
 DFUHandler:                             # @DFUHandler
 .Lfunc_begin16:
-	.loc	1 427 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:427:0
+	.loc	1 427 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:427:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -5964,12 +5964,12 @@ DFUHandler:                             # @DFUHandler
 	}
 .Ltmp490:
 	#DEBUG_VALUE: DFUHandler:i <- R1
-	.loc	1 403 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		get r11, id
 		stw r1, sp[11]
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r0, dp[__timers]
 	{
 		nop
@@ -5981,18 +5981,18 @@ DFUHandler:                             # @DFUHandler
 	}
 .Ltmp491:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		ldw r8, r1[0]
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		ldc r7, 0
@@ -6021,7 +6021,7 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r1, sp[76]
 .Ltmp494:
 	#DEBUG_VALUE: newDfuState <- R1
@@ -6062,18 +6062,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp495:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -6147,10 +6147,10 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: reset_device_after_ack <- 0
 	#DEBUG_VALUE: dfuState <- R1
 	#DEBUG_VALUE: tmpDfuState <- R1
-	.loc	1 436 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 	stw r7, sp[77]
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 .Ltmp501:
 	stw r1, sp[76]
 	#DEBUG_VALUE: returnVal <- 0
@@ -6159,38 +6159,38 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp502:
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r8], r4
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		in r3, res[r8]
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		chkct res[r8], 1
 		zext r3, 8
 	}
 	ldc r0, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r0, r0, r3
 		nop
@@ -6232,43 +6232,43 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel208:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r1, sp[76]
 	{
 		ldc r0, 4
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r8], r7
 		ldc r0, 2
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		in r9, res[r8]
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		chkct res[r8], 1
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp506:
 	bf r1, .LBB16_8
 .Ltmp507:
@@ -6281,7 +6281,7 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp508:
 	stw r0, sp[76]
 	bu .LBB16_13
@@ -6292,7 +6292,7 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel210:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r1, r0, r9
 		nop
@@ -6306,45 +6306,45 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 .Ltmp511:
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r8], r4
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		in r1, res[r8]
 		nop
 	}
 .Ltmp512:
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		chkct res[r8], 1
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r1, r2[r0]
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r0, r0, 1
 		nop
 	}
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r1, r0, r5
 		nop
@@ -6367,64 +6367,64 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp514:
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r0, res[r8]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r8], 1
 		zext r0, 16
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r7
 		ldc r1, 2
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r1, res[r8]
 		nop
 	}
 .Ltmp515:
 	#DEBUG_VALUE: tmpDfuState <- undef
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r8], 1
 		zext r1, 16
@@ -6437,14 +6437,14 @@ DFUHandler:                             # @DFUHandler
 .Ltmp516:
 	#DEBUG_VALUE: return_data_len <- undef
 	ldaw r3, sp[77]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 .Lxta.call_labels41:
 	bl DFU_Dnload
 .Ltmp517:
 	#DEBUG_VALUE: returnVal <- R0
 	ldw r1, sp[77]
 .Ltmp518:
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r2, sp[76]
 .Ltmp519:
 	#DEBUG_VALUE: newDfuState <- R2
@@ -6485,18 +6485,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp520:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -6547,9 +6547,9 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: reset_device_after_ack <- 1
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp525:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -6591,18 +6591,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp527:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -6629,68 +6629,68 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp529:
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r0, res[r8]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r8], 1
 		zext r0, 16
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r7
 		ldc r1, 2
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r1, res[r8]
 		nop
 	}
 	#DEBUG_VALUE: tmpDfuState <- undef
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r8], 1
 		ldaw r9, sp[44]
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r9
 		nop
@@ -6701,7 +6701,7 @@ DFUHandler:                             # @DFUHandler
 .Ltmp530:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: return_data_len <- R0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r0, sp[77]
 	{
 		mov r1, r7
@@ -6718,40 +6718,40 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: data_out <- [SP+176]
 	#DEBUG_VALUE: tmpDfuState <- undef
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r6
 		ldw r2, r9[r1]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r2
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		outct res[r8], 2
 		nop
 	}
 .Ltmp532:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		chkct res[r8], 1
 		add r1, r1, 1
 	}
 .Ltmp533:
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r1, r5
 		nop
@@ -6770,28 +6770,28 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 4
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 .Ltmp535:
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		in r0, res[r8]
 		nop
@@ -6799,12 +6799,12 @@ DFUHandler:                             # @DFUHandler
 .Ltmp536:
 	#DEBUG_VALUE: timeout <- 0
 	#DEBUG_VALUE: DFU_GetStatus:request_len <- 0
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		chkct res[r8], 1
 		stw r7, sp[28]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 .Ltmp537:
 	{
 		eq r0, r1, 6
@@ -6854,7 +6854,7 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel221:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 	{
 		eq r1, r1, 10
 		ldc r0, 2
@@ -6877,13 +6877,13 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel223:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 	stw r0, sp[76]
 .Ltmp545:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 472 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:472:0
+	.loc	1 472 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:472:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp546:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -6925,18 +6925,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp548:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -6957,35 +6957,35 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 4
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 .Ltmp550:
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		in r0, res[r8]
 		nop
 	}
 .Ltmp551:
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		chkct res[r8], 1
 		stw r1, sp[12]
@@ -6994,7 +6994,7 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 8
 		nop
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 .Ltmp552:
 	{
 		lsu r0, r0, r1
@@ -7028,7 +7028,7 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[76]
 .Ltmp556:
 .LBB16_34:                              # %DFU_GetState.exit
@@ -7037,7 +7037,7 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: return_data_len <- 1
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r10, sp[77]
 .Ltmp557:
 	#DEBUG_VALUE: i <- 0
@@ -7054,48 +7054,48 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: return_data_len <- 1
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r6
 		ldw r1, r2[r0]
 	}
 .Ltmp559:
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		outct res[r8], 2
 		nop
 	}
 .Ltmp560:
 	#DEBUG_VALUE: i <- R0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		chkct res[r8], 1
 		add r0, r0, 1
 	}
 .Ltmp561:
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r1, r0, r5
 		nop
 	}
 .Lxta.loop_labels20:
 	# LOOPMARKER 0
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	bt r1, .LBB16_35
 .Ltmp562:
 # BB#36:                                #   in Loop: Header=BB16_1 Depth=1
@@ -7116,14 +7116,14 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 2
 		nop
 	}
-	.loc	1 329 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:329:0
+	.loc	1 329 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:329:0
 .Ltmp564:
 	stw r0, sp[76]
 .Ltmp565:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 483 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:483:0
+	.loc	1 483 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:483:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp566:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7165,18 +7165,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp568:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7194,7 +7194,7 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: s <- 0
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
 	{
 		nop
@@ -7208,11 +7208,11 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels43:
 	bl DFUCustomFlashEnable
 .Ltmp571:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels44:
 	bl flash_cmd_init
 .Ltmp572:
@@ -7225,10 +7225,10 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: s <- 0
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
 .Ltmp574:
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r10, r0[r7]
 .Ltmp575:
 .LBB16_42:                              # %DFU_OpenFlash.exit305
@@ -7236,11 +7236,11 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels45:
 	bl flash_cmd_erase_all
 .Ltmp576:
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		nop
@@ -7248,24 +7248,24 @@ DFUHandler:                             # @DFUHandler
 .Ltmp577:
 	#DEBUG_VALUE: s <- R0
 	ldw r1, cp[.LCPI16_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Ltmp578:
 	{
 		add r0, r0, r1
 		ldw r1, sp[10]
 	}
 .Ltmp579:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels5:
 	{
 		in r0, res[r1]
@@ -7274,9 +7274,9 @@ DFUHandler:                             # @DFUHandler
 .Ltmp580:
 	#DEBUG_VALUE: s <- R0
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 493 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:493:0
+	.loc	1 493 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:493:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp581:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7317,18 +7317,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp582:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7348,9 +7348,9 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: reset_device_after_ack <- 1
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 285483025
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp584:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7393,18 +7393,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp586:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7424,9 +7424,9 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: reset_device_after_ack <- 1
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 505 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:505:0
+	.loc	1 505 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:505:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp588:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7468,18 +7468,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp590:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7500,41 +7500,41 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 4
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 .Ltmp592:
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r8], r7
 		ldc r0, 2
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		in r0, res[r8]
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		chkct res[r8], 1
 		nop
 	}
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp593:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7576,18 +7576,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp595:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7605,9 +7605,9 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 514 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:514:0
+	.loc	1 514 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:514:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp597:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7649,18 +7649,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp599:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7678,9 +7678,9 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 519 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:519:0
+	.loc	1 519 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:519:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp601:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7722,18 +7722,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp603:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7750,15 +7750,15 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel238:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r9, 16
 		nop
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp605:
 	stw r10, sp[76]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
 	{
 		nop
@@ -7771,11 +7771,11 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel239:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels46:
 	bl DFUCustomFlashEnable
 .Ltmp607:
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Lxta.call_labels47:
 	bl flash_cmd_init
 .Ltmp608:
@@ -7787,9 +7787,9 @@ DFUHandler:                             # @DFUHandler
 .Lxtalabel240:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r10, r0[r7]
 .Ltmp610:
 .LBB16_11:                              # %DFU_OpenFlash.exit
@@ -7797,16 +7797,16 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	ldw r0, cp[.LCPI16_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r9, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 .Ltmp611:
 .LBB16_13:                              # %DFU_Detach.exit
@@ -7815,9 +7815,9 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp612:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -7859,18 +7859,18 @@ DFUHandler:                             # @DFUHandler
 		nop
 	}
 .Ltmp614:
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		clre
 		nop
 	}
 	ldap r11, .Ltmp492
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		setv res[r8], r11
 		nop
 	}
-	.loc	1 430 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
+	.loc	1 430 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:430:9
 	{
 		eeu res[r8]
 		nop
@@ -7893,11 +7893,11 @@ DFUHandler:                             # @DFUHandler
 		ldc r0, 2
 		nop
 	}
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 .Ltmp616:
 	stw r0, sp[76]
 .Ltmp617:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r1, r0
 		ldaw r2, sp[28]
@@ -7918,10 +7918,10 @@ DFUHandler:                             # @DFUHandler
 .LBB16_20:                              # %DFU_GetStatus.exit
                                         #   in Loop: Header=BB16_1 Depth=1
 .Lxtalabel244:
-	.loc	1 273 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:273:0
+	.loc	1 273 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:273:0
 	stw r0, sp[76]
 .Ltmp621:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r1, r0
 		nop
@@ -7939,7 +7939,7 @@ DFUHandler:                             # @DFUHandler
 		nop
 		stw r1, sp[29]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r6, sp[77]
 .Ltmp623:
 	#DEBUG_VALUE: i <- 0
@@ -7956,41 +7956,41 @@ DFUHandler:                             # @DFUHandler
 	#DEBUG_VALUE: DFUHandler:c_user_cmd <- R1
 	#DEBUG_VALUE: return_data_len <- 6
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r6
 		ldw r1, r2[r0]
 	}
 .Ltmp625:
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		outct res[r8], 2
 		nop
 	}
 .Ltmp626:
 	#DEBUG_VALUE: i <- R0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		chkct res[r8], 1
 		add r0, r0, 1
 	}
 .Ltmp627:
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r1, r0, r5
 		nop
@@ -8525,7 +8525,7 @@ DFUHandler.fini:                        # @DFUHandler.fini
 	.cc_top DFUHandler.select.0.case.0.function,DFUHandler.select.0.case.0
 DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Lfunc_begin23:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -8630,11 +8630,11 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r2, 0
 	}
 .Ltmp671:
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 	stw r2, sp[67]
 .Ltmp672:
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 	stw r0, sp[66]
 	{
 		ldc r3, 5
@@ -8642,38 +8642,38 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	}
 .Ltmp673:
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r3
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r2
 		mkmsk r11, 2
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		in r5, res[r6]
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		chkct res[r6], 1
 		zext r5, 8
 	}
 	ldc r7, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r7, r7, r5
 		nop
@@ -8703,43 +8703,43 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	.jmptable32 .LBB23_12,.LBB23_19,.LBB23_30,.LBB23_21,.LBB23_32,.LBB23_37,.LBB23_42
 .LBB23_12:                              # %switchcase62
 .Lxtalabel252:
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r0, sp[66]
 	{
 		ldc r1, 4
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r1
 		ldc r5, 0
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r5
 		ldc r1, 2
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		in r7, res[r6]
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		chkct res[r6], 1
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp674:
 	bf r0, .LBB23_13
 # BB#17:                                # %iffalse.i
@@ -8748,7 +8748,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp675:
 	stw r0, sp[66]
 	bu .LBB23_18
@@ -8756,7 +8756,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .LBB23_19:                              # %afterboundcheck
                                         # =>This Inner Loop Header: Depth=1
 .Lxtalabel254:
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r2, r1
 		nop
@@ -8766,47 +8766,47 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ecallf r0
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r11
 		mkmsk r8, 1
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		chkct res[r6], 1
 		ldaw r3, sp[50]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r3[r2]
 .Ltmp677:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r2, r2, 1
 		ldc r0, 16
 	}
 .Ltmp678:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r2, r0
 		nop
@@ -8821,62 +8821,62 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r1, 4
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		ldc r7, 0
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r7
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r6], 1
 		zext r0, 16
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r7
 		ldc r1, 2
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r1, res[r6]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r6], 1
 		zext r1, 16
@@ -8884,7 +8884,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	ldaw r2, sp[66]
 .Ltmp680:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -8953,7 +8953,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r5, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -8972,63 +8972,63 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r1, 4
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 .Ltmp688:
 	{
 		out res[r6], r1
 		ldc r8, 0
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r6], 1
 		zext r0, 16
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r8
 		ldc r1, 2
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r1, res[r6]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r6], 1
 		ldaw r5, sp[34]
@@ -9036,7 +9036,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	ldaw r2, sp[66]
 .Ltmp689:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r5
 		nop
@@ -9046,7 +9046,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Ltmp690:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: return_data_len <- R0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r0, sp[67]
 	{
 		mkmsk r0, 1
@@ -9058,40 +9058,40 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Lxtalabel262:
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r7
 		ldw r2, r5[r8]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp692:
 	#DEBUG_VALUE: i <- R8
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		chkct res[r6], 1
 		add r8, r8, 1
 	}
 .Ltmp693:
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r8, r1
 		nop
@@ -9108,28 +9108,28 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r2, 4
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 .Ltmp695:
 	{
 		out res[r6], r2
 		ldc r1, 0
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		in r2, res[r6]
 		nop
@@ -9137,12 +9137,12 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Ltmp696:
 	#DEBUG_VALUE: timeout <- 0
 	#DEBUG_VALUE: DFU_GetStatus:request_len <- 0
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		chkct res[r6], 1
 		stw r1, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 .Ltmp697:
 	{
 		eq r2, r0, 6
@@ -9177,13 +9177,13 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	bu .LBB23_27
 .LBB23_32:                              # %switchcase169
 .Lxtalabel267:
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 .Ltmp699:
 	{
 		eq r0, r0, 10
 		nop
 	}
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB23_33
 .Ltmp700:
 # BB#34:                                # %switchcase169
@@ -9201,35 +9201,35 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r2, 4
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 .Ltmp702:
 	{
 		out res[r6], r2
 		ldc r1, 0
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		in r2, res[r6]
 		nop
 	}
 .Ltmp703:
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		chkct res[r6], 1
 		stw r0, sp[2]
@@ -9238,7 +9238,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r2, 8
 		nop
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 .Ltmp704:
 	{
 		lsu r2, r2, r0
@@ -9268,7 +9268,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp706:
 .LBB23_40:                              # %DFU_GetState.exit
@@ -9279,7 +9279,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r0, sp[67]
 .Ltmp707:
 	#DEBUG_VALUE: i <- 0
@@ -9294,40 +9294,40 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	#DEBUG_VALUE: return_data_len <- 1
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r7
 		ldw r11, r2[r1]
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp709:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		chkct res[r6], 1
 		add r1, r1, 1
 	}
 .Ltmp710:
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r11, r1, r3
 		nop
@@ -9348,7 +9348,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Lxtalabel275:
 .Ltmp712:
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r5, 0
 		nop
@@ -9362,11 +9362,11 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 # BB#44:                                # %iftrue.i354
 .Lxtalabel276:
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp713:
 .Lxta.call_labels50:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp714:
 .Lxta.call_labels51:
 	bl flash_cmd_init
@@ -9381,44 +9381,44 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r6[r5]
 .LBB23_46:                              # %DFU_OpenFlash.exit357
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels52:
 	bl flash_cmd_erase_all
 .Ltmp717:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp718:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI23_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels6:
 	{
 		in r0, res[r1]
@@ -9435,7 +9435,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r5, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -9453,32 +9453,32 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		ldc r0, 4
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r0
 		ldc r5, 0
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r5
 		ldc r0, 2
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		chkct res[r6], 1
 		nop
@@ -9491,7 +9491,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	}
 .LBB23_35:                              # %switchcase169
 .Lxtalabel280:
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 .Ltmp720:
 	stw r0, sp[66]
 .Ltmp721:
@@ -9505,7 +9505,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .LBB23_18:                              # %DFU_Detach.exit
 .Lxtalabel282:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -9528,7 +9528,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r1, sp[66]
 .Ltmp723:
 	#DEBUG_VALUE: newDfuState <- R1
@@ -9585,15 +9585,15 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	# RETURN_REG_HOLDER
 .LBB23_13:                              # %iftrue.i
 .Lxtalabel285:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r7, 16
 		mkmsk r6, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp725:
 	stw r6, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r8, 0
 		nop
@@ -9606,11 +9606,11 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	bt r0, .LBB23_16
 # BB#14:                                # %iftrue.i345
 .Lxtalabel286:
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp726:
 .Lxta.call_labels53:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp727:
 .Lxta.call_labels54:
 	bl flash_cmd_init
@@ -9620,20 +9620,20 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Ltmp729:
 # BB#15:                                # %ifdone3.i
 .Lxtalabel287:
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r6, r9[r8]
 .LBB23_16:                              # %DFU_OpenFlash.exit
 	ldw r0, cp[.LCPI23_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r7, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	bu .LBB23_18
 .Ltmp730:
@@ -9649,15 +9649,15 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 .Ltmp731:
 .LBB23_27:                              # %DFU_GetStatus.exit
 .Lxtalabel289:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r0, sp[66]
 	bu .LBB23_28
 .LBB23_25:                              # %switchcase6.i
 .Lxtalabel290:
-	.loc	1 280 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:280:0
+	.loc	1 280 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:280:0
 	stw r3, sp[66]
 .Ltmp732:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r0, r3
 		nop
@@ -9673,7 +9673,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 		nop
 		stw r0, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r7, sp[67]
 .Ltmp734:
 	#DEBUG_VALUE: i <- 0
@@ -9692,40 +9692,40 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	#DEBUG_VALUE: return_data_len <- 6
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r7
 		ldw r11, r2[r1]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp736:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		chkct res[r6], 1
 		add r1, r1, 1
 	}
 .Ltmp737:
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r1, r3
 		nop
@@ -9780,7 +9780,7 @@ DFUHandler.select.0.case.0:             # @DFUHandler.select.0.case.0
 	.cc_top DFUHandler.select.yield.case.0.function,DFUHandler.select.yield.case.0
 DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Lfunc_begin24:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -9885,11 +9885,11 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r2, 0
 	}
 .Ltmp749:
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 	stw r2, sp[67]
 .Ltmp750:
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 	stw r0, sp[66]
 	{
 		ldc r3, 5
@@ -9897,38 +9897,38 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	}
 .Ltmp751:
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r3
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r2
 		mkmsk r11, 2
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		in r5, res[r6]
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		chkct res[r6], 1
 		zext r5, 8
 	}
 	ldc r7, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r7, r7, r5
 		nop
@@ -9958,43 +9958,43 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	.jmptable32 .LBB24_12,.LBB24_19,.LBB24_30,.LBB24_21,.LBB24_32,.LBB24_37,.LBB24_42
 .LBB24_12:                              # %switchcase62
 .Lxtalabel297:
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r0, sp[66]
 	{
 		ldc r1, 4
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r1
 		ldc r5, 0
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r5
 		ldc r1, 2
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		in r7, res[r6]
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		chkct res[r6], 1
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp752:
 	bf r0, .LBB24_13
 # BB#17:                                # %iffalse.i
@@ -10003,7 +10003,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp753:
 	stw r0, sp[66]
 	bu .LBB24_18
@@ -10011,7 +10011,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .LBB24_19:                              # %afterboundcheck
                                         # =>This Inner Loop Header: Depth=1
 .Lxtalabel299:
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r2, r1
 		nop
@@ -10021,47 +10021,47 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ecallf r0
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r11
 		mkmsk r8, 1
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		chkct res[r6], 1
 		ldaw r3, sp[50]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r3[r2]
 .Ltmp755:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r2, r2, 1
 		ldc r0, 16
 	}
 .Ltmp756:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r2, r0
 		nop
@@ -10076,62 +10076,62 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r1, 4
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		ldc r7, 0
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r7
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r6], 1
 		zext r0, 16
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r7
 		ldc r1, 2
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r1, res[r6]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r6], 1
 		zext r1, 16
@@ -10139,7 +10139,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	ldaw r2, sp[66]
 .Ltmp758:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -10208,7 +10208,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r5, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -10227,63 +10227,63 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r1, 4
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 .Ltmp766:
 	{
 		out res[r6], r1
 		ldc r8, 0
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r6], 1
 		zext r0, 16
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r8
 		ldc r1, 2
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r1, res[r6]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r6], 1
 		ldaw r5, sp[34]
@@ -10291,7 +10291,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	ldaw r2, sp[66]
 .Ltmp767:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r5
 		nop
@@ -10301,7 +10301,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Ltmp768:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: return_data_len <- R0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r0, sp[67]
 	{
 		mkmsk r0, 1
@@ -10313,40 +10313,40 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Lxtalabel307:
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r7
 		ldw r2, r5[r8]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp770:
 	#DEBUG_VALUE: i <- R8
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		chkct res[r6], 1
 		add r8, r8, 1
 	}
 .Ltmp771:
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r8, r1
 		nop
@@ -10363,28 +10363,28 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r2, 4
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 .Ltmp773:
 	{
 		out res[r6], r2
 		ldc r1, 0
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		in r2, res[r6]
 		nop
@@ -10392,12 +10392,12 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Ltmp774:
 	#DEBUG_VALUE: timeout <- 0
 	#DEBUG_VALUE: DFU_GetStatus:request_len <- 0
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		chkct res[r6], 1
 		stw r1, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 .Ltmp775:
 	{
 		eq r2, r0, 6
@@ -10432,13 +10432,13 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	bu .LBB24_27
 .LBB24_32:                              # %switchcase169
 .Lxtalabel312:
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 .Ltmp777:
 	{
 		eq r0, r0, 10
 		nop
 	}
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB24_33
 .Ltmp778:
 # BB#34:                                # %switchcase169
@@ -10456,35 +10456,35 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r2, 4
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 .Ltmp780:
 	{
 		out res[r6], r2
 		ldc r1, 0
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		in r2, res[r6]
 		nop
 	}
 .Ltmp781:
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		chkct res[r6], 1
 		stw r0, sp[2]
@@ -10493,7 +10493,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r2, 8
 		nop
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 .Ltmp782:
 	{
 		lsu r2, r2, r0
@@ -10523,7 +10523,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp784:
 .LBB24_40:                              # %DFU_GetState.exit
@@ -10534,7 +10534,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r0, sp[67]
 .Ltmp785:
 	#DEBUG_VALUE: i <- 0
@@ -10549,40 +10549,40 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	#DEBUG_VALUE: return_data_len <- 1
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r7
 		ldw r11, r2[r1]
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp787:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		chkct res[r6], 1
 		add r1, r1, 1
 	}
 .Ltmp788:
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r11, r1, r3
 		nop
@@ -10603,7 +10603,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Lxtalabel320:
 .Ltmp790:
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r5, 0
 		nop
@@ -10617,11 +10617,11 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 # BB#44:                                # %iftrue.i354
 .Lxtalabel321:
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp791:
 .Lxta.call_labels57:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp792:
 .Lxta.call_labels58:
 	bl flash_cmd_init
@@ -10636,44 +10636,44 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r6[r5]
 .LBB24_46:                              # %DFU_OpenFlash.exit357
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels59:
 	bl flash_cmd_erase_all
 .Ltmp795:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp796:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI24_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels7:
 	{
 		in r0, res[r1]
@@ -10690,7 +10690,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r5, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -10708,32 +10708,32 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		ldc r0, 4
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r0
 		ldc r5, 0
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r5
 		ldc r0, 2
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		chkct res[r6], 1
 		nop
@@ -10746,7 +10746,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	}
 .LBB24_35:                              # %switchcase169
 .Lxtalabel325:
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 .Ltmp798:
 	stw r0, sp[66]
 .Ltmp799:
@@ -10760,7 +10760,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .LBB24_18:                              # %DFU_Detach.exit
 .Lxtalabel327:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -10783,7 +10783,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r1, sp[66]
 .Ltmp801:
 	#DEBUG_VALUE: newDfuState <- R1
@@ -10840,15 +10840,15 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	# RETURN_REG_HOLDER
 .LBB24_13:                              # %iftrue.i
 .Lxtalabel330:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r7, 16
 		mkmsk r6, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp803:
 	stw r6, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r8, 0
 		nop
@@ -10861,11 +10861,11 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	bt r0, .LBB24_16
 # BB#14:                                # %iftrue.i345
 .Lxtalabel331:
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp804:
 .Lxta.call_labels60:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp805:
 .Lxta.call_labels61:
 	bl flash_cmd_init
@@ -10875,20 +10875,20 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Ltmp807:
 # BB#15:                                # %ifdone3.i
 .Lxtalabel332:
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r6, r9[r8]
 .LBB24_16:                              # %DFU_OpenFlash.exit
 	ldw r0, cp[.LCPI24_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r7, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	bu .LBB24_18
 .Ltmp808:
@@ -10904,15 +10904,15 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 .Ltmp809:
 .LBB24_27:                              # %DFU_GetStatus.exit
 .Lxtalabel334:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r0, sp[66]
 	bu .LBB24_28
 .LBB24_25:                              # %switchcase6.i
 .Lxtalabel335:
-	.loc	1 280 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:280:0
+	.loc	1 280 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:280:0
 	stw r3, sp[66]
 .Ltmp810:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r0, r3
 		nop
@@ -10928,7 +10928,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 		nop
 		stw r0, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r7, sp[67]
 .Ltmp812:
 	#DEBUG_VALUE: i <- 0
@@ -10947,40 +10947,40 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	#DEBUG_VALUE: return_data_len <- 6
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r7
 		ldw r11, r2[r1]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp814:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		chkct res[r6], 1
 		add r1, r1, 1
 	}
 .Ltmp815:
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r1, r3
 		nop
@@ -11035,7 +11035,7 @@ DFUHandler.select.yield.case.0:         # @DFUHandler.select.yield.case.0
 	.cc_top DFUHandler.select.case.0.function,DFUHandler.select.case.0
 DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Lfunc_begin25:
-	.loc	1 432 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
+	.loc	1 432 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:432:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -11140,11 +11140,11 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r2, 0
 	}
 .Ltmp827:
-	.loc	1 436 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 	stw r2, sp[67]
 .Ltmp828:
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 	stw r0, sp[66]
 	{
 		ldc r3, 5
@@ -11152,38 +11152,38 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	}
 .Ltmp829:
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r3
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r2
 		mkmsk r11, 2
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		in r5, res[r6]
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		chkct res[r6], 1
 		zext r5, 8
 	}
 	ldc r7, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r7, r7, r5
 		nop
@@ -11213,43 +11213,43 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	.jmptable32 .LBB25_12,.LBB25_19,.LBB25_30,.LBB25_21,.LBB25_32,.LBB25_37,.LBB25_42
 .LBB25_12:                              # %switchcase62
 .Lxtalabel342:
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r0, sp[66]
 	{
 		ldc r1, 4
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r1
 		ldc r5, 0
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r5
 		ldc r1, 2
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		in r7, res[r6]
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		chkct res[r6], 1
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp830:
 	bf r0, .LBB25_13
 # BB#17:                                # %iffalse.i
@@ -11258,7 +11258,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp831:
 	stw r0, sp[66]
 	bu .LBB25_18
@@ -11266,7 +11266,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .LBB25_19:                              # %afterboundcheck
                                         # =>This Inner Loop Header: Depth=1
 .Lxtalabel344:
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r0, r2, r1
 		nop
@@ -11276,47 +11276,47 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ecallf r0
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r11
 		mkmsk r8, 1
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		chkct res[r6], 1
 		ldaw r3, sp[50]
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r0, r3[r2]
 .Ltmp833:
 	#DEBUG_VALUE: i <- R2
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r2, r2, 1
 		ldc r0, 16
 	}
 .Ltmp834:
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r0, r2, r0
 		nop
@@ -11331,62 +11331,62 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r1, 4
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		ldc r7, 0
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r7
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r6], 1
 		zext r0, 16
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r7
 		ldc r1, 2
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r1, res[r6]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r6], 1
 		zext r1, 16
@@ -11394,7 +11394,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	ldaw r2, sp[66]
 .Ltmp836:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		ldaw r2, sp[50]
 		stw r2, sp[1]
@@ -11463,7 +11463,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r5, 0
 		nop
 	}
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -11482,63 +11482,63 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r1, 4
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 .Ltmp844:
 	{
 		out res[r6], r1
 		ldc r8, 0
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r6], 1
 		zext r0, 16
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r8
 		ldc r1, 2
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r1, res[r6]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r6], 1
 		ldaw r5, sp[34]
@@ -11546,7 +11546,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	ldaw r2, sp[66]
 .Ltmp845:
 	#DEBUG_VALUE: tmpDfuState <- [R2+0]
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r5
 		nop
@@ -11556,7 +11556,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Ltmp846:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: return_data_len <- R0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r0, sp[67]
 	{
 		mkmsk r0, 1
@@ -11568,40 +11568,40 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Lxtalabel352:
 	#DEBUG_VALUE: data_out <- [SP+136]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r7
 		ldw r2, r5[r8]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r8
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp848:
 	#DEBUG_VALUE: i <- R8
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		chkct res[r6], 1
 		add r8, r8, 1
 	}
 .Ltmp849:
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r8, r1
 		nop
@@ -11618,28 +11618,28 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r2, 4
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 .Ltmp851:
 	{
 		out res[r6], r2
 		ldc r1, 0
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		in r2, res[r6]
 		nop
@@ -11647,12 +11647,12 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Ltmp852:
 	#DEBUG_VALUE: timeout <- 0
 	#DEBUG_VALUE: DFU_GetStatus:request_len <- 0
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		chkct res[r6], 1
 		stw r1, sp[18]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 .Ltmp853:
 	{
 		eq r2, r0, 6
@@ -11687,13 +11687,13 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	bu .LBB25_27
 .LBB25_32:                              # %switchcase169
 .Lxtalabel357:
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 .Ltmp855:
 	{
 		eq r0, r0, 10
 		nop
 	}
-	.loc	1 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
+	.loc	1 300 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:300:0
 	bt r0, .LBB25_33
 .Ltmp856:
 # BB#34:                                # %switchcase169
@@ -11711,35 +11711,35 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r2, 4
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 .Ltmp858:
 	{
 		out res[r6], r2
 		ldc r1, 0
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r6], r2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		in r2, res[r6]
 		nop
 	}
 .Ltmp859:
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		chkct res[r6], 1
 		stw r0, sp[2]
@@ -11748,7 +11748,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r2, 8
 		nop
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 .Ltmp860:
 	{
 		lsu r2, r2, r0
@@ -11778,7 +11778,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[66]
 .Ltmp862:
 .LBB25_40:                              # %DFU_GetState.exit
@@ -11789,7 +11789,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r0, sp[67]
 .Ltmp863:
 	#DEBUG_VALUE: i <- 0
@@ -11804,40 +11804,40 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	#DEBUG_VALUE: return_data_len <- 1
 	#DEBUG_VALUE: data_out <- [SP+8]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r7
 		ldw r11, r2[r1]
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp865:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		chkct res[r6], 1
 		add r1, r1, 1
 	}
 .Ltmp866:
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r11, r1, r3
 		nop
@@ -11858,7 +11858,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Lxtalabel365:
 .Ltmp868:
 	#DEBUG_VALUE: s <- 0
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	{
 		ldc r5, 0
 		nop
@@ -11872,11 +11872,11 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 # BB#44:                                # %iftrue.i354
 .Lxtalabel366:
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp869:
 .Lxta.call_labels64:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp870:
 .Lxta.call_labels65:
 	bl flash_cmd_init
@@ -11891,44 +11891,44 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r0, r6[r5]
 .LBB25_46:                              # %DFU_OpenFlash.exit357
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels66:
 	bl flash_cmd_erase_all
 .Ltmp873:
 	#DEBUG_VALUE: s <- R0
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		get r11, id
 	}
 .Ltmp874:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r1, dp[__timers]
 	{
 		nop
 		ldw r1, r1[r11]
 	}
 	ldw r2, cp[.LCPI25_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		add r0, r0, r2
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels8:
 	{
 		in r0, res[r1]
@@ -11945,7 +11945,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r5, 0
 		nop
 	}
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -11963,32 +11963,32 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		ldc r0, 4
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r0
 		ldc r5, 0
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r5
 		ldc r0, 2
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		outct res[r6], 2
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		in r0, res[r6]
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		chkct res[r6], 1
 		nop
@@ -12001,7 +12001,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	}
 .LBB25_35:                              # %switchcase169
 .Lxtalabel370:
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 .Ltmp876:
 	stw r0, sp[66]
 .Ltmp877:
@@ -12015,7 +12015,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .LBB25_18:                              # %DFU_Detach.exit
 .Lxtalabel372:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r5, sp[67]
 	{
 		mkmsk r0, 1
@@ -12038,7 +12038,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r1, sp[66]
 .Ltmp879:
 	#DEBUG_VALUE: newDfuState <- R1
@@ -12095,15 +12095,15 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	# RETURN_REG_HOLDER
 .LBB25_13:                              # %iftrue.i
 .Lxtalabel375:
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r7, 16
 		mkmsk r6, 1
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp881:
 	stw r6, sp[66]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	{
 		ldc r8, 0
 		nop
@@ -12116,11 +12116,11 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	bt r0, .LBB25_16
 # BB#14:                                # %iftrue.i345
 .Lxtalabel376:
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Ltmp882:
 .Lxta.call_labels67:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp883:
 .Lxta.call_labels68:
 	bl flash_cmd_init
@@ -12130,20 +12130,20 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Ltmp885:
 # BB#15:                                # %ifdone3.i
 .Lxtalabel377:
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r6, r9[r8]
 .LBB25_16:                              # %DFU_OpenFlash.exit
 	ldw r0, cp[.LCPI25_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r7, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 	bu .LBB25_18
 .Ltmp886:
@@ -12159,15 +12159,15 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 .Ltmp887:
 .LBB25_27:                              # %DFU_GetStatus.exit
 .Lxtalabel379:
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 	stw r0, sp[66]
 	bu .LBB25_28
 .LBB25_25:                              # %switchcase6.i
 .Lxtalabel380:
-	.loc	1 280 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:280:0
+	.loc	1 280 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:280:0
 	stw r3, sp[66]
 .Ltmp888:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r0, r3
 		nop
@@ -12183,7 +12183,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 		nop
 		stw r0, sp[19]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r7, sp[67]
 .Ltmp890:
 	#DEBUG_VALUE: i <- 0
@@ -12202,40 +12202,40 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	#DEBUG_VALUE: return_data_len <- 6
 	#DEBUG_VALUE: data_out <- [SP+72]
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r7
 		ldw r11, r2[r1]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r0
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r1
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r6], r11
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		outct res[r6], 2
 		nop
 	}
 .Ltmp892:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		chkct res[r6], 1
 		add r1, r1, 1
 	}
 .Ltmp893:
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r11, r1, r3
 		nop
@@ -12291,7 +12291,7 @@ DFUHandler.select.case.0:               # @DFUHandler.select.case.0
 	.cc_top _SDFUHandler_0.function,_SDFUHandler_0
 _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lfunc_begin26:
-	.loc	1 427 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:427:0
+	.loc	1 427 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:427:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -12329,12 +12329,12 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	}
 .Ltmp905:
 	#DEBUG_VALUE: DFUHandler:i <- R1
-	.loc	1 403 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		get r11, id
 		stw r1, sp[11]
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	ldaw r0, dp[__timers]
 	{
 		nop
@@ -12382,7 +12382,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r1, sp[76]
 .Ltmp909:
 	#DEBUG_VALUE: newDfuState <- R1
@@ -12501,10 +12501,10 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Ltmp913:
 	#DEBUG_VALUE: dfuState <- R1
 	#DEBUG_VALUE: tmpDfuState <- R1
-	.loc	1 436 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
+	.loc	1 436 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:436:0
 	stw r7, sp[77]
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 438 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
+	.loc	1 438 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:438:0
 .Ltmp914:
 	stw r1, sp[76]
 	#DEBUG_VALUE: returnVal <- 0
@@ -12513,38 +12513,38 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		nop
 	}
 .Ltmp915:
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		out res[r8], r4
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		in r3, res[r8]
 		nop
 	}
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		chkct res[r8], 1
 		zext r3, 8
 	}
 	ldc r0, 239
-	.loc	1 442 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
+	.loc	1 442 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:442:0
 	{
 		lss r0, r0, r3
 		nop
@@ -12583,43 +12583,43 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel389:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 445 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
+	.loc	1 445 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:445:0
 	stw r1, sp[76]
 	{
 		ldc r0, 4
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r8], r7
 		ldc r0, 2
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		in r9, res[r8]
 		nop
 	}
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		chkct res[r8], 1
 		nop
 	}
-	.loc	1 89 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
+	.loc	1 89 5                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:89:5
 .Ltmp919:
 	bf r1, .LBB26_8
 .Ltmp920:
@@ -12631,7 +12631,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 103 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
+	.loc	1 103 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:103:0
 .Ltmp921:
 	stw r0, sp[76]
 	bu .LBB26_13
@@ -12641,7 +12641,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         # =>  This Inner Loop Header: Depth=2
 .Lxtalabel391:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		lsu r1, r0, r9
 		nop
@@ -12652,44 +12652,44 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		nop
 	}
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r8], r4
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		in r1, res[r8]
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	{
 		chkct res[r8], 1
 		nop
 	}
-	.loc	1 453 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
+	.loc	1 453 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:0
 	stw r1, r2[r0]
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		add r0, r0, 1
 		nop
 	}
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:452:0
 	{
 		lss r1, r0, r5
 		nop
@@ -12710,64 +12710,64 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		mov r1, r0
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r0, res[r8]
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r8], 1
 		zext r0, 16
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r7
 		ldc r1, 2
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		in r1, res[r8]
 		nop
 	}
 .Ltmp924:
 	#DEBUG_VALUE: tmpDfuState <- undef
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 	{
 		chkct res[r8], 1
 		zext r1, 16
@@ -12780,14 +12780,14 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Ltmp925:
 	#DEBUG_VALUE: return_data_len <- undef
 	ldaw r3, sp[77]
-	.loc	1 454 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
+	.loc	1 454 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:454:0
 .Lxta.call_labels69:
 	bl DFU_Dnload
 .Ltmp926:
 	#DEBUG_VALUE: returnVal <- R0
 	ldw r1, sp[77]
 .Ltmp927:
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r2, sp[76]
 .Ltmp928:
 	#DEBUG_VALUE: newDfuState <- R2
@@ -12882,9 +12882,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: reset_device_after_ack <- 1
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 489 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
+	.loc	1 489 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:489:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp932:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -12957,69 +12957,69 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		mov r1, r0
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 .Ltmp934:
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r0, res[r8]
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r8], 1
 		zext r0, 16
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r7
 		ldc r1, 2
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		in r1, res[r8]
 		nop
 	}
 	#DEBUG_VALUE: tmpDfuState <- undef
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		chkct res[r8], 1
 		ldaw r9, sp[44]
 	}
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	{
 		mov r1, r9
 		nop
@@ -13030,7 +13030,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Ltmp935:
 	#DEBUG_VALUE: i <- 0
 	#DEBUG_VALUE: return_data_len <- R0
-	.loc	1 459 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
+	.loc	1 459 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:459:0
 	stw r0, sp[77]
 	{
 		mov r1, r7
@@ -13046,40 +13046,40 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: data_out <- [SP+176]
 	#DEBUG_VALUE: tmpDfuState <- undef
 	#DEBUG_VALUE: i <- 0
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r6
 		ldw r2, r9[r1]
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		out res[r8], r2
 		nop
 	}
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		outct res[r8], 2
 		nop
 	}
 .Ltmp937:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 461 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
+	.loc	1 461 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:0
 	{
 		chkct res[r8], 1
 		add r1, r1, 1
 	}
 .Ltmp938:
-	.loc	1 460 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
+	.loc	1 460 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:460:0
 	{
 		lss r2, r1, r5
 		nop
@@ -13097,28 +13097,28 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 4
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 .Ltmp940:
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		in r0, res[r8]
 		nop
@@ -13126,12 +13126,12 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Ltmp941:
 	#DEBUG_VALUE: timeout <- 0
 	#DEBUG_VALUE: DFU_GetStatus:request_len <- 0
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		chkct res[r8], 1
 		stw r7, sp[28]
 	}
-	.loc	1 269 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
+	.loc	1 269 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:269:0
 .Ltmp942:
 	{
 		eq r0, r1, 6
@@ -13177,7 +13177,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel402:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 298 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
+	.loc	1 298 5                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:298:5
 	{
 		eq r1, r1, 10
 		ldc r0, 2
@@ -13197,13 +13197,13 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel404:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 304 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
+	.loc	1 304 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:304:0
 	stw r0, sp[76]
 .Ltmp949:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 472 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:472:0
+	.loc	1 472 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:472:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp950:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13271,35 +13271,35 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 4
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 .Ltmp952:
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r8], r7
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		in r0, res[r8]
 		nop
 	}
 .Ltmp953:
 	#DEBUG_VALUE: DFU_GetState:request_len <- 0
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	{
 		chkct res[r8], 1
 		stw r1, sp[12]
@@ -13308,7 +13308,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 8
 		nop
 	}
-	.loc	1 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
+	.loc	1 313 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:313:0
 .Ltmp954:
 	{
 		lsu r0, r0, r1
@@ -13339,7 +13339,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 10
 		nop
 	}
-	.loc	1 318 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
+	.loc	1 318 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:318:0
 	stw r0, sp[76]
 .Ltmp957:
 .LBB26_34:                              # %DFU_GetState.exit
@@ -13347,7 +13347,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel408:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: return_data_len <- 1
-	.loc	1 477 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
+	.loc	1 477 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:477:0
 	stw r10, sp[77]
 .Ltmp958:
 	#DEBUG_VALUE: i <- 0
@@ -13363,47 +13363,47 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: return_data_len <- 1
 	#DEBUG_VALUE: i <- 0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r6
 		ldw r1, r2[r0]
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		outct res[r8], 2
 		nop
 	}
 .Ltmp960:
 	#DEBUG_VALUE: i <- R0
-	.loc	1 479 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
+	.loc	1 479 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:0
 	{
 		chkct res[r8], 1
 		add r0, r0, 1
 	}
 .Ltmp961:
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	{
 		lss r1, r0, r5
 		nop
 	}
 .Lxta.loop_labels36:
 	# LOOPMARKER 0
-	.loc	1 478 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
+	.loc	1 478 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:478:0
 	bt r1, .LBB26_35
 .Ltmp962:
 # BB#36:                                #   in Loop: Header=BB26_1 Depth=1
@@ -13422,14 +13422,14 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 2
 		nop
 	}
-	.loc	1 329 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:329:0
+	.loc	1 329 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:329:0
 .Ltmp964:
 	stw r0, sp[76]
 .Ltmp965:
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 483 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:483:0
+	.loc	1 483 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:483:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp966:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13494,7 +13494,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel411:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: s <- 0
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
 	{
 		nop
@@ -13507,10 +13507,10 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel412:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: s <- 0
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels71:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp969:
 .Lxta.call_labels72:
 	bl flash_cmd_init
@@ -13523,20 +13523,20 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel413:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: s <- 0
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
 .Ltmp972:
-	.loc	1 398 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
+	.loc	1 398 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:398:0
 	st8 r10, r0[r7]
 .Ltmp973:
 .LBB26_42:                              # %DFU_OpenFlash.exit305
                                         #   in Loop: Header=BB26_1 Depth=1
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: s <- 0
-	.loc	1 400 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
+	.loc	1 400 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:400:0
 .Lxta.call_labels73:
 	bl flash_cmd_erase_all
-	.loc	1 402 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
+	.loc	1 402 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:402:0
 	{
 		gettime r0
 		nop
@@ -13544,24 +13544,24 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Ltmp974:
 	#DEBUG_VALUE: s <- R0
 	ldw r1, cp[.LCPI26_2]
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Ltmp975:
 	{
 		add r0, r0, r1
 		ldw r1, sp[10]
 	}
 .Ltmp976:
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setd res[r1], r0
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 	{
 		setc res[r1], 9
 		nop
 	}
-	.loc	1 403 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
+	.loc	1 403 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:403:0
 .Lxta.endpoint_labels9:
 	{
 		in r0, res[r1]
@@ -13570,9 +13570,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Ltmp977:
 	#DEBUG_VALUE: s <- R0
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 493 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:493:0
+	.loc	1 493 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:493:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp978:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13639,9 +13639,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: reset_device_after_ack <- 1
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 285483025
-	.loc	1 499 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
+	.loc	1 499 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:499:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp980:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13709,9 +13709,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: reset_device_after_ack <- 1
 	#DEBUG_VALUE: return_data_len <- 0
 	#DEBUG_VALUE: dfu_reset_override <- 0
-	.loc	1 505 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:505:0
+	.loc	1 505 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:505:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp982:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13779,40 +13779,40 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 4
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r8], r7
 		ldc r0, 2
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		outct res[r8], 2
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		in r0, res[r8]
 		nop
 	}
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	{
 		chkct res[r8], 1
 		nop
 	}
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 509 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
+	.loc	1 509 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:509:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp984:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13877,9 +13877,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel417:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 514 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:514:0
+	.loc	1 514 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:514:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp986:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -13944,9 +13944,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel418:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 519 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:519:0
+	.loc	1 519 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:519:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp988:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -14010,15 +14010,15 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel419:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	{
 		zext r9, 16
 		nop
 	}
-	.loc	1 91 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
+	.loc	1 91 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:91:0
 .Ltmp990:
 	stw r10, sp[76]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
 	{
 		nop
@@ -14030,10 +14030,10 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel420:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
+	.loc	1 62 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:62:0
 .Lxta.call_labels74:
 	bl DFUCustomFlashEnable
-	.loc	1 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
+	.loc	1 63 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:63:0
 .Ltmp992:
 .Lxta.call_labels75:
 	bl flash_cmd_init
@@ -14045,25 +14045,25 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel421:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	ldaw r0, dp[DFU_flash_connected]
-	.loc	1 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
+	.loc	1 93 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:93:0
 	st8 r10, r0[r7]
 .Ltmp995:
 .LBB26_11:                              # %DFU_OpenFlash.exit
                                         #   in Loop: Header=BB26_1 Depth=1
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	ldw r0, cp[.LCPI26_3]
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	mul r0, r9, r0
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:96:0
 	stw r0, dp[DFUResetTimeout]
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	{
 		gettime r0
 		nop
 	}
-	.loc	1 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
+	.loc	1 99 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:99:0
 	stw r0, dp[DFUTimerStart]
 .Ltmp996:
 .LBB26_13:                              # %DFU_Detach.exit
@@ -14071,9 +14071,9 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .Lxtalabel422:
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: return_data_len <- 0
-	.loc	1 446 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
+	.loc	1 446 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:446:0
 	stw r7, sp[77]
-	.loc	1 525 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
+	.loc	1 525 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:525:0
 	ldw r0, sp[76]
 .Ltmp997:
 	#DEBUG_VALUE: newDfuState <- R0
@@ -14143,11 +14143,11 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		ldc r0, 2
 		nop
 	}
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:284:0
 .Ltmp999:
 	stw r0, sp[76]
 .Ltmp1000:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r1, r0
 		ldaw r2, sp[28]
@@ -14166,10 +14166,10 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 .LBB26_20:                              # %DFU_GetStatus.exit
                                         #   in Loop: Header=BB26_1 Depth=1
 .Lxtalabel425:
-	.loc	1 273 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:273:0
+	.loc	1 273 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:273:0
 	stw r0, sp[76]
 .Ltmp1003:
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	{
 		mov r1, r0
 		nop
@@ -14186,7 +14186,7 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 		nop
 		stw r1, sp[29]
 	}
-	.loc	1 466 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
+	.loc	1 466 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:466:0
 	stw r6, sp[77]
 .Ltmp1005:
 	#DEBUG_VALUE: i <- 0
@@ -14202,40 +14202,40 @@ _SDFUHandler_0:                         # @_SDFUHandler_0
 	#DEBUG_VALUE: DFUHandler:i <- [SP+44]
 	#DEBUG_VALUE: return_data_len <- 6
 	#DEBUG_VALUE: i <- 0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r6
 		ldw r1, r2[r0]
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r10
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		outct res[r8], 2
 		nop
 	}
 .Ltmp1007:
 	#DEBUG_VALUE: i <- R0
-	.loc	1 468 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
+	.loc	1 468 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:0
 	{
 		chkct res[r8], 1
 		add r0, r0, 1
 	}
 .Ltmp1008:
-	.loc	1 467 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
+	.loc	1 467 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:467:0
 	{
 		lss r1, r0, r5
 		nop
@@ -14614,7 +14614,7 @@ _SDFUHandler_0.fini:                    # @_SDFUHandler_0.fini
 	.cc_top DFUDeviceRequests.function,DFUDeviceRequests
 DFUDeviceRequests:                      # @DFUDeviceRequests
 .Lfunc_begin33:
-	.loc	1 535 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:535:0
+	.loc	1 535 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:535:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -14685,7 +14685,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 .Ltmp1037:
 	#DEBUG_VALUE: returnVal <- 0
 	#DEBUG_VALUE: reset_device_after_ack <- 0
-	.loc	1 537 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:537:0
+	.loc	1 537 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:537:0
 	{
 		ldc r9, 2
 		stw r3, sp[21]
@@ -14708,7 +14708,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 	#DEBUG_VALUE: DFUDeviceRequests:reset <- R8
 	#DEBUG_VALUE: reset_device_after_ack <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 547 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:547:9
+	.loc	1 547 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:547:9
 	{
 		add r0, r6, 8
 		ldc r3, 0
@@ -14718,7 +14718,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		ld16s r0, r0[r3]
 	}
-	.loc	1 547 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:547:9
+	.loc	1 547 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:547:9
 	{
 		zext r0, 16
 		nop
@@ -14745,7 +14745,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 .Ltmp1041:
 	ldc r3, 68
 .Ltmp1042:
-	.loc	1 548 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:548:0
+	.loc	1 548 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:548:0
 	{
 		mov r0, r4
 		nop
@@ -14781,7 +14781,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		ldw r11, r1[0]
 	}
-	.loc	1 552 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:552:0
+	.loc	1 552 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:552:0
 	ldw r1, dp[g_DFU_state]
 	{
 		ldc r2, 17
@@ -14791,7 +14791,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		stw r2, sp[2]
 	}
-	.loc	1 552 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:552:0
+	.loc	1 552 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:552:0
 	{
 		ldaw r2, sp[4]
 		stw r1, sp[1]
@@ -14816,13 +14816,13 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		ldw r1, sp[3]
 	}
 	ldw r3, cp[.LCPI33_0]
-	.loc	1 25 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:25:0
+	.loc	1 25 0                  # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:25:0
 .Ltmp1046:
 	#APP
 	stw r2, r3[0]
 	#NO_APP
 .Ltmp1047:
-	.loc	1 557 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:557:0
+	.loc	1 557 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:557:0
 	stw r1, dp[g_DFU_state]
 	bt r0, .LBB33_7
 .Ltmp1048:
@@ -14841,7 +14841,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		ld8u r0, r6[r9]
 	}
-	.loc	1 562 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:562:9
+	.loc	1 562 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:562:9
 	{
 		eq r0, r0, 1
 		nop
@@ -14858,7 +14858,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 	#DEBUG_VALUE: DFUDeviceRequests:reset <- R8
 	#DEBUG_VALUE: reset_device_after_ack <- 0
 	#DEBUG_VALUE: returnVal <- 0
-	.loc	1 562 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:562:9
+	.loc	1 562 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:562:9
 	{
 		add r0, r6, 8
 		ldc r1, 0
@@ -14867,7 +14867,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		ld16s r0, r0[r1]
 	}
-	.loc	1 562 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:562:9
+	.loc	1 562 9                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:562:9
 	{
 		zext r0, 16
 		nop
@@ -14893,7 +14893,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		stw r0, sp[2]
 	}
-	.loc	1 564 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:564:0
+	.loc	1 564 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:564:0
 	{
 		ldaw r2, sp[4]
 		stw r11, sp[1]
@@ -14923,7 +14923,7 @@ DFUDeviceRequests:                      # @DFUDeviceRequests
 		nop
 		ldw r0, r5[0]
 	}
-	.loc	1 568 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:568:0
+	.loc	1 568 0                 # C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:568:0
 .Lxta.call_labels79:
 	bl XUD_DoSetRequestStatus
 .Ltmp1054:
@@ -15032,14 +15032,14 @@ subPagesLeft:
 .Ldebug_end1:
 	.text
 .Ldebug_end2:
-	.file	4 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
+	.file	4 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"g_DFU_state"
 .Linfo_string4:
@@ -25084,484 +25084,484 @@ subPagesLeft:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
-.cc_top cc_0,.Lxta.call_labels57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels57
-.cc_bottom cc_0
-.cc_top cc_1,.Lxta.call_labels43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels43
-.cc_bottom cc_1
-.cc_top cc_2,.Lxta.call_labels46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels46
-.cc_bottom cc_2
-.cc_top cc_3,.Lxta.call_labels35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels35
-.cc_bottom cc_3
-.cc_top cc_4,.Lxta.call_labels71
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels71
-.cc_bottom cc_4
-.cc_top cc_5,.Lxta.call_labels50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels50
-.cc_bottom cc_5
-.cc_top cc_6,.Lxta.call_labels53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels53
-.cc_bottom cc_6
-.cc_top cc_7,.Lxta.call_labels28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels28
-.cc_bottom cc_7
-.cc_top cc_8,.Lxta.call_labels26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels26
-.cc_bottom cc_8
-.cc_top cc_9,.Lxta.call_labels23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels23
-.cc_bottom cc_9
-.cc_top cc_10,.Lxta.call_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels19
-.cc_bottom cc_10
-.cc_top cc_11,.Lxta.call_labels60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_0,.Lxta.call_labels60
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	62
 	.long	.Lxta.call_labels60
-.cc_bottom cc_11
-.cc_top cc_12,.Lxta.call_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels16
-.cc_bottom cc_12
-.cc_top cc_13,.Lxta.call_labels74
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_0
+.cc_top cc_1,.Lxta.call_labels74
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	62
 	.long	.Lxta.call_labels74
-.cc_bottom cc_13
-.cc_top cc_14,.Lxta.call_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels12
-.cc_bottom cc_14
-.cc_top cc_15,.Lxta.call_labels64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels64
-.cc_bottom cc_15
-.cc_top cc_16,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1
+.cc_top cc_2,.Lxta.call_labels2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	62
 	.long	.Lxta.call_labels2
-.cc_bottom cc_16
-.cc_top cc_17,.Lxta.call_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	62
-	.long	.Lxta.call_labels9
-.cc_bottom cc_17
-.cc_top cc_18,.Lxta.call_labels67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_2
+.cc_top cc_3,.Lxta.call_labels67
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	62
 	.long	.Lxta.call_labels67
-.cc_bottom cc_18
-.cc_top cc_19,.Lxta.call_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_3
+.cc_top cc_4,.Lxta.call_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels12
+.cc_bottom cc_4
+.cc_top cc_5,.Lxta.call_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	62
 	.long	.Lxta.call_labels5
+.cc_bottom cc_5
+.cc_top cc_6,.Lxta.call_labels16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels16
+.cc_bottom cc_6
+.cc_top cc_7,.Lxta.call_labels71
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels71
+.cc_bottom cc_7
+.cc_top cc_8,.Lxta.call_labels19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels19
+.cc_bottom cc_8
+.cc_top cc_9,.Lxta.call_labels9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels9
+.cc_bottom cc_9
+.cc_top cc_10,.Lxta.call_labels64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels64
+.cc_bottom cc_10
+.cc_top cc_11,.Lxta.call_labels57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels57
+.cc_bottom cc_11
+.cc_top cc_12,.Lxta.call_labels23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels23
+.cc_bottom cc_12
+.cc_top cc_13,.Lxta.call_labels26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels26
+.cc_bottom cc_13
+.cc_top cc_14,.Lxta.call_labels28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels28
+.cc_bottom cc_14
+.cc_top cc_15,.Lxta.call_labels50
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels50
+.cc_bottom cc_15
+.cc_top cc_16,.Lxta.call_labels53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels53
+.cc_bottom cc_16
+.cc_top cc_17,.Lxta.call_labels46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels46
+.cc_bottom cc_17
+.cc_top cc_18,.Lxta.call_labels35
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels35
+.cc_bottom cc_18
+.cc_top cc_19,.Lxta.call_labels43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	62
+	.long	.Lxta.call_labels43
 .cc_bottom cc_19
-.cc_top cc_20,.Lxta.call_labels29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels29
-.cc_bottom cc_20
-.cc_top cc_21,.Lxta.call_labels68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels68
-.cc_bottom cc_21
-.cc_top cc_22,.Lxta.call_labels72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels72
-.cc_bottom cc_22
-.cc_top cc_23,.Lxta.call_labels44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels44
-.cc_bottom cc_23
-.cc_top cc_24,.Lxta.call_labels47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels47
-.cc_bottom cc_24
-.cc_top cc_25,.Lxta.call_labels36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels36
-.cc_bottom cc_25
-.cc_top cc_26,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels3
-.cc_bottom cc_26
-.cc_top cc_27,.Lxta.call_labels51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels51
-.cc_bottom cc_27
-.cc_top cc_28,.Lxta.call_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels6
-.cc_bottom cc_28
-.cc_top cc_29,.Lxta.call_labels61
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels61
-.cc_bottom cc_29
-.cc_top cc_30,.Lxta.call_labels65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels65
-.cc_bottom cc_30
-.cc_top cc_31,.Lxta.call_labels27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels27
-.cc_bottom cc_31
-.cc_top cc_32,.Lxta.call_labels75
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels75
-.cc_bottom cc_32
-.cc_top cc_33,.Lxta.call_labels54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels54
-.cc_bottom cc_33
-.cc_top cc_34,.Lxta.call_labels24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels24
-.cc_bottom cc_34
-.cc_top cc_35,.Lxta.call_labels58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels58
-.cc_bottom cc_35
-.cc_top cc_36,.Lxta.call_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	63
-	.long	.Lxta.call_labels20
-.cc_bottom cc_36
-.cc_top cc_37,.Lxta.call_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_20,.Lxta.call_labels10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	63
 	.long	.Lxta.call_labels10
-.cc_bottom cc_37
-.cc_top cc_38,.Lxta.call_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_20
+.cc_top cc_21,.Lxta.call_labels58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	63
-	.long	.Lxta.call_labels17
-.cc_bottom cc_38
-.cc_top cc_39,.Lxta.call_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxta.call_labels58
+.cc_bottom cc_21
+.cc_top cc_22,.Lxta.call_labels3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels3
+.cc_bottom cc_22
+.cc_top cc_23,.Lxta.call_labels72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels72
+.cc_bottom cc_23
+.cc_top cc_24,.Lxta.call_labels24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels24
+.cc_bottom cc_24
+.cc_top cc_25,.Lxta.call_labels54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels54
+.cc_bottom cc_25
+.cc_top cc_26,.Lxta.call_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels6
+.cc_bottom cc_26
+.cc_top cc_27,.Lxta.call_labels27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels27
+.cc_bottom cc_27
+.cc_top cc_28,.Lxta.call_labels68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels68
+.cc_bottom cc_28
+.cc_top cc_29,.Lxta.call_labels29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels29
+.cc_bottom cc_29
+.cc_top cc_30,.Lxta.call_labels20
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels20
+.cc_bottom cc_30
+.cc_top cc_31,.Lxta.call_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	63
 	.long	.Lxta.call_labels13
+.cc_bottom cc_31
+.cc_top cc_32,.Lxta.call_labels51
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels51
+.cc_bottom cc_32
+.cc_top cc_33,.Lxta.call_labels47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels47
+.cc_bottom cc_33
+.cc_top cc_34,.Lxta.call_labels65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels65
+.cc_bottom cc_34
+.cc_top cc_35,.Lxta.call_labels17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels17
+.cc_bottom cc_35
+.cc_top cc_36,.Lxta.call_labels36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels36
+.cc_bottom cc_36
+.cc_top cc_37,.Lxta.call_labels44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels44
+.cc_bottom cc_37
+.cc_top cc_38,.Lxta.call_labels61
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels61
+.cc_bottom cc_38
+.cc_top cc_39,.Lxta.call_labels75
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	63
+	.long	.Lxta.call_labels75
 .cc_bottom cc_39
 .cc_top cc_40,.Lxta.call_labels39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	80
 	.long	.Lxta.call_labels39
 .cc_bottom cc_40
 .cc_top cc_41,.Lxta.call_labels40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	81
 	.long	.Lxta.call_labels40
 .cc_bottom cc_41
 .cc_top cc_42,.Lxta.call_labels33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	157
 	.long	.Lxta.call_labels33
 .cc_bottom cc_42
 .cc_top cc_43,.Lxta.call_labels34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	162
 	.long	.Lxta.call_labels34
 .cc_bottom cc_43
 .cc_top cc_44,.Lxta.call_labels30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	178
 	.long	.Lxta.call_labels30
 .cc_bottom cc_44
 .cc_top cc_45,.Lxta.call_labels31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	185
 	.long	.Lxta.call_labels31
 .cc_bottom cc_45
 .cc_top cc_46,.Lxta.call_labels32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	194
 	.long	.Lxta.call_labels32
 .cc_bottom cc_46
 .cc_top cc_47,.Lxta.call_labels37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	240
 	.long	.Lxta.call_labels37
 .cc_bottom cc_47
 .cc_top cc_48,.Lxta.call_labels38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	254
 	.long	.Lxta.call_labels38
 .cc_bottom cc_48
-.cc_top cc_49,.Lxta.call_labels45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	400
-	.long	.Lxta.call_labels45
-.cc_bottom cc_49
-.cc_top cc_50,.Lxta.call_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_49,.Lxta.call_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	.Lxta.call_labels18
+.cc_bottom cc_49
+.cc_top cc_50,.Lxta.call_labels45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	400
+	.long	.Lxta.call_labels45
 .cc_bottom cc_50
-.cc_top cc_51,.Lxta.call_labels59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_51,.Lxta.call_labels52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	400
+	.long	.Lxta.call_labels52
+.cc_bottom cc_51
+.cc_top cc_52,.Lxta.call_labels25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	400
+	.long	.Lxta.call_labels25
+.cc_bottom cc_52
+.cc_top cc_53,.Lxta.call_labels59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	.Lxta.call_labels59
-.cc_bottom cc_51
-.cc_top cc_52,.Lxta.call_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	400
-	.long	.Lxta.call_labels11
-.cc_bottom cc_52
-.cc_top cc_53,.Lxta.call_labels73
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	400
-	.long	.Lxta.call_labels73
 .cc_bottom cc_53
 .cc_top cc_54,.Lxta.call_labels66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	.Lxta.call_labels66
 .cc_bottom cc_54
-.cc_top cc_55,.Lxta.call_labels25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_55,.Lxta.call_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
-	.long	.Lxta.call_labels25
+	.long	.Lxta.call_labels11
 .cc_bottom cc_55
-.cc_top cc_56,.Lxta.call_labels52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	400
-	.long	.Lxta.call_labels52
-.cc_bottom cc_56
-.cc_top cc_57,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_56,.Lxta.call_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	.Lxta.call_labels4
+.cc_bottom cc_56
+.cc_top cc_57,.Lxta.call_labels73
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	400
+	.long	.Lxta.call_labels73
 .cc_bottom cc_57
-.cc_top cc_58,.Lxta.call_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_58,.Lxta.call_labels48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
-	.long	.Lxta.call_labels7
+	.long	.Lxta.call_labels48
 .cc_bottom cc_58
-.cc_top cc_59,.Lxta.call_labels41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_59,.Lxta.call_labels21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
-	.long	.Lxta.call_labels41
+	.long	.Lxta.call_labels21
 .cc_bottom cc_59
-.cc_top cc_60,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_60,.Lxta.call_labels55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	454
+	.long	.Lxta.call_labels55
+.cc_bottom cc_60
+.cc_top cc_61,.Lxta.call_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	.Lxta.call_labels0
-.cc_bottom cc_60
-.cc_top cc_61,.Lxta.call_labels69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	454
-	.long	.Lxta.call_labels69
 .cc_bottom cc_61
 .cc_top cc_62,.Lxta.call_labels62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	.Lxta.call_labels62
 .cc_bottom cc_62
 .cc_top cc_63,.Lxta.call_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	.Lxta.call_labels14
 .cc_bottom cc_63
-.cc_top cc_64,.Lxta.call_labels21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_64,.Lxta.call_labels69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
-	.long	.Lxta.call_labels21
+	.long	.Lxta.call_labels69
 .cc_bottom cc_64
-.cc_top cc_65,.Lxta.call_labels55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_65,.Lxta.call_labels7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
-	.long	.Lxta.call_labels55
+	.long	.Lxta.call_labels7
 .cc_bottom cc_65
-.cc_top cc_66,.Lxta.call_labels48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_66,.Lxta.call_labels41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
-	.long	.Lxta.call_labels48
+	.long	.Lxta.call_labels41
 .cc_bottom cc_66
-.cc_top cc_67,.Lxta.call_labels70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels70
-.cc_bottom cc_67
-.cc_top cc_68,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels1
-.cc_bottom cc_68
-.cc_top cc_69,.Lxta.call_labels63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels63
-.cc_bottom cc_69
-.cc_top cc_70,.Lxta.call_labels56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels56
-.cc_bottom cc_70
-.cc_top cc_71,.Lxta.call_labels49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels49
-.cc_bottom cc_71
-.cc_top cc_72,.Lxta.call_labels42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_67,.Lxta.call_labels42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	459
 	.long	.Lxta.call_labels42
-.cc_bottom cc_72
-.cc_top cc_73,.Lxta.call_labels22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels22
-.cc_bottom cc_73
-.cc_top cc_74,.Lxta.call_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	459
-	.long	.Lxta.call_labels15
-.cc_bottom cc_74
-.cc_top cc_75,.Lxta.call_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_67
+.cc_top cc_68,.Lxta.call_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	459
 	.long	.Lxta.call_labels8
+.cc_bottom cc_68
+.cc_top cc_69,.Lxta.call_labels49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels49
+.cc_bottom cc_69
+.cc_top cc_70,.Lxta.call_labels70
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels70
+.cc_bottom cc_70
+.cc_top cc_71,.Lxta.call_labels63
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels63
+.cc_bottom cc_71
+.cc_top cc_72,.Lxta.call_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels15
+.cc_bottom cc_72
+.cc_top cc_73,.Lxta.call_labels56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels56
+.cc_bottom cc_73
+.cc_top cc_74,.Lxta.call_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels1
+.cc_bottom cc_74
+.cc_top cc_75,.Lxta.call_labels22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	459
+	.long	.Lxta.call_labels22
 .cc_bottom cc_75
 .cc_top cc_76,.Lxta.call_labels76
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	548
 	.long	.Lxta.call_labels76
 .cc_bottom cc_76
 .cc_top cc_77,.Lxta.call_labels77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	552
 	.long	.Lxta.call_labels77
 .cc_bottom cc_77
 .cc_top cc_78,.Lxta.call_labels78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	564
 	.long	.Lxta.call_labels78
 .cc_bottom cc_78
 .cc_top cc_79,.Lxta.call_labels79
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	568
 	.long	.Lxta.call_labels79
@@ -25571,64 +25571,64 @@ subPagesLeft:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_80,.Lxta.endpoint_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	53
 	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_80
 .cc_top cc_81,.Lxta.endpoint_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels0
 .cc_bottom cc_81
 .cc_top cc_82,.Lxta.endpoint_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels1
 .cc_bottom cc_82
 .cc_top cc_83,.Lxta.endpoint_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels2
 .cc_bottom cc_83
 .cc_top cc_84,.Lxta.endpoint_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels3
 .cc_bottom cc_84
 .cc_top cc_85,.Lxta.endpoint_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels5
 .cc_bottom cc_85
 .cc_top cc_86,.Lxta.endpoint_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels6
 .cc_bottom cc_86
 .cc_top cc_87,.Lxta.endpoint_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels7
 .cc_bottom cc_87
 .cc_top cc_88,.Lxta.endpoint_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels8
 .cc_bottom cc_88
 .cc_top cc_89,.Lxta.endpoint_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	403
 	.long	.Lxta.endpoint_labels9
@@ -25638,7640 +25638,7640 @@ subPagesLeft:
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_90,.Lxtalabel432
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	24
 	.long	26
 	.long	.Lxtalabel432
 .cc_bottom cc_90
 .cc_top cc_91,.Lxtalabel193
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	30
 	.long	34
 	.long	.Lxtalabel193
 .cc_bottom cc_91
 .cc_top cc_92,.Lxtalabel160
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	49
 	.long	54
 	.long	.Lxtalabel160
 .cc_bottom cc_92
-.cc_top cc_93,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel64
-.cc_bottom cc_93
-.cc_top cc_94,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel152
-.cc_bottom cc_94
-.cc_top cc_95,.Lxtalabel238
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel238
-.cc_bottom cc_95
-.cc_top cc_96,.Lxtalabel419
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel419
-.cc_bottom cc_96
-.cc_top cc_97,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel230
-.cc_bottom cc_97
-.cc_top cc_98,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel320
-.cc_bottom cc_98
-.cc_top cc_99,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel411
-.cc_bottom cc_99
-.cc_top cc_100,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel24
-.cc_bottom cc_100
-.cc_top cc_101,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_93,.Lxtalabel72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
 	.long	.Lxtalabel72
-.cc_bottom cc_101
-.cc_top cc_102,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_93
+.cc_top cc_94,.Lxtalabel411
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
-	.long	.Lxtalabel112
-.cc_bottom cc_102
-.cc_top cc_103,.Lxtalabel161
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel411
+.cc_bottom cc_94
+.cc_top cc_95,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
-	.long	.Lxtalabel161
-.cc_bottom cc_103
-.cc_top cc_104,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel64
+.cc_bottom cc_95
+.cc_top cc_96,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
 	.long	.Lxtalabel365
-.cc_bottom cc_104
-.cc_top cc_105,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel144
-.cc_bottom cc_105
-.cc_top cc_106,.Lxtalabel285
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_96
+.cc_top cc_97,.Lxtalabel285
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
 	.long	.Lxtalabel285
-.cc_bottom cc_106
-.cc_top cc_107,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_97
+.cc_top cc_98,.Lxtalabel112
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
-	.long	.Lxtalabel104
-.cc_bottom cc_107
-.cc_top cc_108,.Lxtalabel181
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel181
-.cc_bottom cc_108
-.cc_top cc_109,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel32
-.cc_bottom cc_109
-.cc_top cc_110,.Lxtalabel375
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	58
-	.long	59
-	.long	.Lxtalabel375
-.cc_bottom cc_110
-.cc_top cc_111,.Lxtalabel330
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel112
+.cc_bottom cc_98
+.cc_top cc_99,.Lxtalabel330
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
 	.long	.Lxtalabel330
-.cc_bottom cc_111
-.cc_top cc_112,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_99
+.cc_top cc_100,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel32
+.cc_bottom cc_100
+.cc_top cc_101,.Lxtalabel419
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel419
+.cc_bottom cc_101
+.cc_top cc_102,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel104
+.cc_bottom cc_102
+.cc_top cc_103,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel144
+.cc_bottom cc_103
+.cc_top cc_104,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel230
+.cc_bottom cc_104
+.cc_top cc_105,.Lxtalabel375
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel375
+.cc_bottom cc_105
+.cc_top cc_106,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	58
 	.long	59
 	.long	.Lxtalabel275
+.cc_bottom cc_106
+.cc_top cc_107,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel152
+.cc_bottom cc_107
+.cc_top cc_108,.Lxtalabel161
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel161
+.cc_bottom cc_108
+.cc_top cc_109,.Lxtalabel181
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel181
+.cc_bottom cc_109
+.cc_top cc_110,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel24
+.cc_bottom cc_110
+.cc_top cc_111,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel320
+.cc_bottom cc_111
+.cc_top cc_112,.Lxtalabel238
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	58
+	.long	59
+	.long	.Lxtalabel238
 .cc_bottom cc_112
-.cc_top cc_113,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_113,.Lxtalabel162
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
-	.long	.Lxtalabel65
+	.long	.Lxtalabel162
 .cc_bottom cc_113
-.cc_top cc_114,.Lxtalabel33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel33
-.cc_bottom cc_114
-.cc_top cc_115,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel182
-.cc_bottom cc_115
-.cc_top cc_116,.Lxtalabel412
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel412
-.cc_bottom cc_116
-.cc_top cc_117,.Lxtalabel231
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel231
-.cc_bottom cc_117
-.cc_top cc_118,.Lxtalabel331
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel331
-.cc_bottom cc_118
-.cc_top cc_119,.Lxtalabel145
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel145
-.cc_bottom cc_119
-.cc_top cc_120,.Lxtalabel73
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel73
-.cc_bottom cc_120
-.cc_top cc_121,.Lxtalabel366
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel366
-.cc_bottom cc_121
-.cc_top cc_122,.Lxtalabel113
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_114,.Lxtalabel113
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
 	.long	.Lxtalabel113
-.cc_bottom cc_122
-.cc_top cc_123,.Lxtalabel420
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_114
+.cc_top cc_115,.Lxtalabel145
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel145
+.cc_bottom cc_115
+.cc_top cc_116,.Lxtalabel366
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel366
+.cc_bottom cc_116
+.cc_top cc_117,.Lxtalabel420
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
 	.long	.Lxtalabel420
-.cc_bottom cc_123
-.cc_top cc_124,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_117
+.cc_top cc_118,.Lxtalabel153
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel153
+.cc_bottom cc_118
+.cc_top cc_119,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel182
+.cc_bottom cc_119
+.cc_top cc_120,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel65
+.cc_bottom cc_120
+.cc_top cc_121,.Lxtalabel286
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel286
+.cc_bottom cc_121
+.cc_top cc_122,.Lxtalabel25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
 	.long	.Lxtalabel25
-.cc_bottom cc_124
-.cc_top cc_125,.Lxtalabel321
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel321
-.cc_bottom cc_125
-.cc_top cc_126,.Lxtalabel276
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_122
+.cc_top cc_123,.Lxtalabel276
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
 	.long	.Lxtalabel276
-.cc_bottom cc_126
-.cc_top cc_127,.Lxtalabel376
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_123
+.cc_top cc_124,.Lxtalabel73
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel73
+.cc_bottom cc_124
+.cc_top cc_125,.Lxtalabel376
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
 	.long	.Lxtalabel376
-.cc_bottom cc_127
-.cc_top cc_128,.Lxtalabel153
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_125
+.cc_top cc_126,.Lxtalabel33
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
-	.long	.Lxtalabel153
+	.long	.Lxtalabel33
+.cc_bottom cc_126
+.cc_top cc_127,.Lxtalabel331
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel331
+.cc_bottom cc_127
+.cc_top cc_128,.Lxtalabel321
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel321
 .cc_bottom cc_128
-.cc_top cc_129,.Lxtalabel239
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_129,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	60
+	.long	64
+	.long	.Lxtalabel105
+.cc_bottom cc_129
+.cc_top cc_130,.Lxtalabel239
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
 	.long	.Lxtalabel239
-.cc_bottom cc_129
-.cc_top cc_130,.Lxtalabel286
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	60
-	.long	64
-	.long	.Lxtalabel286
 .cc_bottom cc_130
-.cc_top cc_131,.Lxtalabel162
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_131,.Lxtalabel412
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
-	.long	.Lxtalabel162
+	.long	.Lxtalabel412
 .cc_bottom cc_131
-.cc_top cc_132,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_132,.Lxtalabel231
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	60
 	.long	64
-	.long	.Lxtalabel105
+	.long	.Lxtalabel231
 .cc_bottom cc_132
-.cc_top cc_133,.Lxtalabel376
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel376
-.cc_bottom cc_133
-.cc_top cc_134,.Lxtalabel73
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_133,.Lxtalabel73
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
 	.long	.Lxtalabel73
-.cc_bottom cc_134
-.cc_top cc_135,.Lxtalabel153
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel153
-.cc_bottom cc_135
-.cc_top cc_136,.Lxtalabel145
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel145
-.cc_bottom cc_136
-.cc_top cc_137,.Lxtalabel321
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_133
+.cc_top cc_134,.Lxtalabel321
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
 	.long	.Lxtalabel321
+.cc_bottom cc_134
+.cc_top cc_135,.Lxtalabel366
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel366
+.cc_bottom cc_135
+.cc_top cc_136,.Lxtalabel376
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel376
+.cc_bottom cc_136
+.cc_top cc_137,.Lxtalabel113
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel113
 .cc_bottom cc_137
-.cc_top cc_138,.Lxtalabel286
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel286
-.cc_bottom cc_138
-.cc_top cc_139,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel25
-.cc_bottom cc_139
-.cc_top cc_140,.Lxtalabel420
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel420
-.cc_bottom cc_140
-.cc_top cc_141,.Lxtalabel162
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_138,.Lxtalabel162
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
 	.long	.Lxtalabel162
-.cc_bottom cc_141
-.cc_top cc_142,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_138
+.cc_top cc_139,.Lxtalabel145
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
-	.long	.Lxtalabel105
-.cc_bottom cc_142
-.cc_top cc_143,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel145
+.cc_bottom cc_139
+.cc_top cc_140,.Lxtalabel153
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel153
+.cc_bottom cc_140
+.cc_top cc_141,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
 	.long	.Lxtalabel65
-.cc_bottom cc_143
-.cc_top cc_144,.Lxtalabel366
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel366
-.cc_bottom cc_144
-.cc_top cc_145,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel182
-.cc_bottom cc_145
-.cc_top cc_146,.Lxtalabel276
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel276
-.cc_bottom cc_146
-.cc_top cc_147,.Lxtalabel33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel33
-.cc_bottom cc_147
-.cc_top cc_148,.Lxtalabel113
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel113
-.cc_bottom cc_148
-.cc_top cc_149,.Lxtalabel231
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	65
-	.long	67
-	.long	.Lxtalabel231
-.cc_bottom cc_149
-.cc_top cc_150,.Lxtalabel331
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_141
+.cc_top cc_142,.Lxtalabel331
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
 	.long	.Lxtalabel331
-.cc_bottom cc_150
-.cc_top cc_151,.Lxtalabel412
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_142
+.cc_top cc_143,.Lxtalabel33
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
-	.long	.Lxtalabel412
-.cc_bottom cc_151
-.cc_top cc_152,.Lxtalabel239
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel33
+.cc_bottom cc_143
+.cc_top cc_144,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel105
+.cc_bottom cc_144
+.cc_top cc_145,.Lxtalabel25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel25
+.cc_bottom cc_145
+.cc_top cc_146,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel182
+.cc_bottom cc_146
+.cc_top cc_147,.Lxtalabel420
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel420
+.cc_bottom cc_147
+.cc_top cc_148,.Lxtalabel239
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	65
 	.long	67
 	.long	.Lxtalabel239
+.cc_bottom cc_148
+.cc_top cc_149,.Lxtalabel412
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel412
+.cc_bottom cc_149
+.cc_top cc_150,.Lxtalabel286
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel286
+.cc_bottom cc_150
+.cc_top cc_151,.Lxtalabel231
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel231
+.cc_bottom cc_151
+.cc_top cc_152,.Lxtalabel276
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	65
+	.long	67
+	.long	.Lxtalabel276
 .cc_bottom cc_152
 .cc_top cc_153,.Lxtalabel146
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
 	.long	.Lxtalabel146
 .cc_bottom cc_153
-.cc_top cc_154,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_154,.Lxtalabel26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
-	.long	.Lxtalabel66
+	.long	.Lxtalabel26
 .cc_bottom cc_154
-.cc_top cc_155,.Lxtalabel322
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_155,.Lxtalabel367
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
-	.long	.Lxtalabel322
+	.long	.Lxtalabel367
 .cc_bottom cc_155
 .cc_top cc_156,.Lxtalabel163
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
 	.long	.Lxtalabel163
 .cc_bottom cc_156
-.cc_top cc_157,.Lxtalabel240
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel240
-.cc_bottom cc_157
-.cc_top cc_158,.Lxtalabel183
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel183
-.cc_bottom cc_158
-.cc_top cc_159,.Lxtalabel114
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_157,.Lxtalabel114
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
 	.long	.Lxtalabel114
-.cc_bottom cc_159
-.cc_top cc_160,.Lxtalabel26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel26
-.cc_bottom cc_160
-.cc_top cc_161,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel106
-.cc_bottom cc_161
-.cc_top cc_162,.Lxtalabel277
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel277
-.cc_bottom cc_162
-.cc_top cc_163,.Lxtalabel232
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel232
-.cc_bottom cc_163
-.cc_top cc_164,.Lxtalabel154
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel154
-.cc_bottom cc_164
-.cc_top cc_165,.Lxtalabel367
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel367
-.cc_bottom cc_165
-.cc_top cc_166,.Lxtalabel413
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel413
-.cc_bottom cc_166
-.cc_top cc_167,.Lxtalabel332
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel332
-.cc_bottom cc_167
-.cc_top cc_168,.Lxtalabel421
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel421
-.cc_bottom cc_168
-.cc_top cc_169,.Lxtalabel287
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel287
-.cc_bottom cc_169
-.cc_top cc_170,.Lxtalabel74
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	69
-	.long	70
-	.long	.Lxtalabel74
-.cc_bottom cc_170
-.cc_top cc_171,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_157
+.cc_top cc_158,.Lxtalabel34
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
 	.long	.Lxtalabel34
-.cc_bottom cc_171
-.cc_top cc_172,.Lxtalabel377
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_158
+.cc_top cc_159,.Lxtalabel332
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel332
+.cc_bottom cc_159
+.cc_top cc_160,.Lxtalabel421
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel421
+.cc_bottom cc_160
+.cc_top cc_161,.Lxtalabel183
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel183
+.cc_bottom cc_161
+.cc_top cc_162,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel66
+.cc_bottom cc_162
+.cc_top cc_163,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel106
+.cc_bottom cc_163
+.cc_top cc_164,.Lxtalabel74
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel74
+.cc_bottom cc_164
+.cc_top cc_165,.Lxtalabel240
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel240
+.cc_bottom cc_165
+.cc_top cc_166,.Lxtalabel277
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel277
+.cc_bottom cc_166
+.cc_top cc_167,.Lxtalabel413
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel413
+.cc_bottom cc_167
+.cc_top cc_168,.Lxtalabel322
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel322
+.cc_bottom cc_168
+.cc_top cc_169,.Lxtalabel232
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel232
+.cc_bottom cc_169
+.cc_top cc_170,.Lxtalabel287
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel287
+.cc_bottom cc_170
+.cc_top cc_171,.Lxtalabel377
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	69
 	.long	70
 	.long	.Lxtalabel377
+.cc_bottom cc_171
+.cc_top cc_172,.Lxtalabel154
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	69
+	.long	70
+	.long	.Lxtalabel154
 .cc_bottom cc_172
 .cc_top cc_173,.Lxtalabel197
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	76
 	.long	77
 	.long	.Lxtalabel197
 .cc_bottom cc_173
 .cc_top cc_174,.Lxtalabel198
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	78
 	.long	83
 	.long	.Lxtalabel198
 .cc_bottom cc_174
-.cc_top cc_175,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_175,.Lxtalabel297
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	88
 	.long	89
-	.long	.Lxtalabel43
+	.long	.Lxtalabel297
 .cc_bottom cc_175
-.cc_top cc_176,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_176,.Lxtalabel252
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	88
 	.long	89
-	.long	.Lxtalabel3
+	.long	.Lxtalabel252
 .cc_bottom cc_176
-.cc_top cc_177,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	88
-	.long	89
-	.long	.Lxtalabel83
-.cc_bottom cc_177
-.cc_top cc_178,.Lxtalabel342
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_177,.Lxtalabel342
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	88
 	.long	89
 	.long	.Lxtalabel342
+.cc_bottom cc_177
+.cc_top cc_178,.Lxtalabel83
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	88
+	.long	89
+	.long	.Lxtalabel83
 .cc_bottom cc_178
 .cc_top cc_179,.Lxtalabel123
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	88
 	.long	89
 	.long	.Lxtalabel123
 .cc_bottom cc_179
-.cc_top cc_180,.Lxtalabel389
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	88
-	.long	89
-	.long	.Lxtalabel389
-.cc_bottom cc_180
-.cc_top cc_181,.Lxtalabel297
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	88
-	.long	89
-	.long	.Lxtalabel297
-.cc_bottom cc_181
-.cc_top cc_182,.Lxtalabel208
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_180,.Lxtalabel208
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	88
 	.long	89
 	.long	.Lxtalabel208
-.cc_bottom cc_182
-.cc_top cc_183,.Lxtalabel252
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_180
+.cc_top cc_181,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	88
 	.long	89
-	.long	.Lxtalabel252
+	.long	.Lxtalabel3
+.cc_bottom cc_181
+.cc_top cc_182,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	88
+	.long	89
+	.long	.Lxtalabel43
+.cc_bottom cc_182
+.cc_top cc_183,.Lxtalabel389
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	88
+	.long	89
+	.long	.Lxtalabel389
 .cc_bottom cc_183
-.cc_top cc_184,.Lxtalabel375
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel375
-.cc_bottom cc_184
-.cc_top cc_185,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel72
-.cc_bottom cc_185
-.cc_top cc_186,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel152
-.cc_bottom cc_186
-.cc_top cc_187,.Lxtalabel285
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel285
-.cc_bottom cc_187
-.cc_top cc_188,.Lxtalabel238
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel238
-.cc_bottom cc_188
-.cc_top cc_189,.Lxtalabel419
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel419
-.cc_bottom cc_189
-.cc_top cc_190,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_184,.Lxtalabel112
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	90
 	.long	91
 	.long	.Lxtalabel112
-.cc_bottom cc_190
-.cc_top cc_191,.Lxtalabel330
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	90
-	.long	91
-	.long	.Lxtalabel330
-.cc_bottom cc_191
-.cc_top cc_192,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_184
+.cc_top cc_185,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	90
 	.long	91
 	.long	.Lxtalabel32
-.cc_bottom cc_192
-.cc_top cc_193,.Lxtalabel285
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_185
+.cc_top cc_186,.Lxtalabel72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	93
-	.long	93
-	.long	.Lxtalabel285
-.cc_bottom cc_193
-.cc_top cc_194,.Lxtalabel330
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	90
+	.long	91
+	.long	.Lxtalabel72
+.cc_bottom cc_186
+.cc_top cc_187,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	93
-	.long	93
+	.long	90
+	.long	91
+	.long	.Lxtalabel152
+.cc_bottom cc_187
+.cc_top cc_188,.Lxtalabel330
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	90
+	.long	91
 	.long	.Lxtalabel330
-.cc_bottom cc_194
-.cc_top cc_195,.Lxtalabel375
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_188
+.cc_top cc_189,.Lxtalabel285
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	93
-	.long	93
+	.long	90
+	.long	91
+	.long	.Lxtalabel285
+.cc_bottom cc_189
+.cc_top cc_190,.Lxtalabel238
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	90
+	.long	91
+	.long	.Lxtalabel238
+.cc_bottom cc_190
+.cc_top cc_191,.Lxtalabel419
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	90
+	.long	91
+	.long	.Lxtalabel419
+.cc_bottom cc_191
+.cc_top cc_192,.Lxtalabel375
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	90
+	.long	91
 	.long	.Lxtalabel375
-.cc_bottom cc_195
-.cc_top cc_196,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_192
+.cc_top cc_193,.Lxtalabel112
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	93
 	.long	93
 	.long	.Lxtalabel112
+.cc_bottom cc_193
+.cc_top cc_194,.Lxtalabel375
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel375
+.cc_bottom cc_194
+.cc_top cc_195,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel32
+.cc_bottom cc_195
+.cc_top cc_196,.Lxtalabel285
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	93
+	.long	93
+	.long	.Lxtalabel285
 .cc_bottom cc_196
-.cc_top cc_197,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_197,.Lxtalabel419
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	93
 	.long	93
-	.long	.Lxtalabel72
+	.long	.Lxtalabel419
 .cc_bottom cc_197
-.cc_top cc_198,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_198,.Lxtalabel330
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	93
 	.long	93
-	.long	.Lxtalabel152
+	.long	.Lxtalabel330
 .cc_bottom cc_198
 .cc_top cc_199,.Lxtalabel238
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	93
 	.long	93
 	.long	.Lxtalabel238
 .cc_bottom cc_199
-.cc_top cc_200,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_200,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	93
 	.long	93
-	.long	.Lxtalabel32
+	.long	.Lxtalabel152
 .cc_bottom cc_200
-.cc_top cc_201,.Lxtalabel419
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_201,.Lxtalabel72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	93
 	.long	93
-	.long	.Lxtalabel419
+	.long	.Lxtalabel72
 .cc_bottom cc_201
-.cc_top cc_202,.Lxtalabel285
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_202,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	96
 	.long	96
-	.long	.Lxtalabel285
+	.long	.Lxtalabel152
 .cc_bottom cc_202
 .cc_top cc_203,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	96
 	.long	96
 	.long	.Lxtalabel112
 .cc_bottom cc_203
-.cc_top cc_204,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_204,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	96
 	.long	96
-	.long	.Lxtalabel152
+	.long	.Lxtalabel32
 .cc_bottom cc_204
-.cc_top cc_205,.Lxtalabel238
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	96
-	.long	96
-	.long	.Lxtalabel238
-.cc_bottom cc_205
-.cc_top cc_206,.Lxtalabel375
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_205,.Lxtalabel375
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	96
 	.long	96
 	.long	.Lxtalabel375
-.cc_bottom cc_206
-.cc_top cc_207,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	96
-	.long	96
-	.long	.Lxtalabel32
-.cc_bottom cc_207
-.cc_top cc_208,.Lxtalabel330
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_205
+.cc_top cc_206,.Lxtalabel330
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	96
 	.long	96
 	.long	.Lxtalabel330
-.cc_bottom cc_208
-.cc_top cc_209,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	96
-	.long	96
-	.long	.Lxtalabel72
-.cc_bottom cc_209
-.cc_top cc_210,.Lxtalabel419
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_206
+.cc_top cc_207,.Lxtalabel419
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	96
 	.long	96
 	.long	.Lxtalabel419
-.cc_bottom cc_210
-.cc_top cc_211,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_207
+.cc_top cc_208,.Lxtalabel238
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	99
-	.long	100
-	.long	.Lxtalabel32
-.cc_bottom cc_211
-.cc_top cc_212,.Lxtalabel330
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	99
-	.long	100
-	.long	.Lxtalabel330
-.cc_bottom cc_212
-.cc_top cc_213,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	99
-	.long	100
-	.long	.Lxtalabel72
-.cc_bottom cc_213
-.cc_top cc_214,.Lxtalabel238
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	99
-	.long	100
+	.long	96
+	.long	96
 	.long	.Lxtalabel238
-.cc_bottom cc_214
-.cc_top cc_215,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_208
+.cc_top cc_209,.Lxtalabel285
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	96
+	.long	96
+	.long	.Lxtalabel285
+.cc_bottom cc_209
+.cc_top cc_210,.Lxtalabel72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	96
+	.long	96
+	.long	.Lxtalabel72
+.cc_bottom cc_210
+.cc_top cc_211,.Lxtalabel112
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	99
 	.long	100
 	.long	.Lxtalabel112
-.cc_bottom cc_215
-.cc_top cc_216,.Lxtalabel285
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_211
+.cc_top cc_212,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	99
 	.long	100
-	.long	.Lxtalabel285
-.cc_bottom cc_216
-.cc_top cc_217,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel32
+.cc_bottom cc_212
+.cc_top cc_213,.Lxtalabel330
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	99
 	.long	100
-	.long	.Lxtalabel152
-.cc_bottom cc_217
-.cc_top cc_218,.Lxtalabel375
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	99
-	.long	100
-	.long	.Lxtalabel375
-.cc_bottom cc_218
-.cc_top cc_219,.Lxtalabel419
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel330
+.cc_bottom cc_213
+.cc_top cc_214,.Lxtalabel419
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	99
 	.long	100
 	.long	.Lxtalabel419
+.cc_bottom cc_214
+.cc_top cc_215,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	99
+	.long	100
+	.long	.Lxtalabel152
+.cc_bottom cc_215
+.cc_top cc_216,.Lxtalabel375
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	99
+	.long	100
+	.long	.Lxtalabel375
+.cc_bottom cc_216
+.cc_top cc_217,.Lxtalabel72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	99
+	.long	100
+	.long	.Lxtalabel72
+.cc_bottom cc_217
+.cc_top cc_218,.Lxtalabel285
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	99
+	.long	100
+	.long	.Lxtalabel285
+.cc_bottom cc_218
+.cc_top cc_219,.Lxtalabel238
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	99
+	.long	100
+	.long	.Lxtalabel238
 .cc_bottom cc_219
-.cc_top cc_220,.Lxtalabel44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_220,.Lxtalabel298
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
-	.long	.Lxtalabel44
+	.long	.Lxtalabel298
 .cc_bottom cc_220
 .cc_top cc_221,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
 	.long	.Lxtalabel4
 .cc_bottom cc_221
-.cc_top cc_222,.Lxtalabel343
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel343
-.cc_bottom cc_222
-.cc_top cc_223,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_222,.Lxtalabel84
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
 	.long	.Lxtalabel84
+.cc_bottom cc_222
+.cc_top cc_223,.Lxtalabel390
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel390
 .cc_bottom cc_223
 .cc_top cc_224,.Lxtalabel253
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
 	.long	.Lxtalabel253
 .cc_bottom cc_224
-.cc_top cc_225,.Lxtalabel390
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_225,.Lxtalabel44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
-	.long	.Lxtalabel390
+	.long	.Lxtalabel44
 .cc_bottom cc_225
-.cc_top cc_226,.Lxtalabel209
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	101
-	.long	104
-	.long	.Lxtalabel209
-.cc_bottom cc_226
-.cc_top cc_227,.Lxtalabel124
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_226,.Lxtalabel124
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
 	.long	.Lxtalabel124
-.cc_bottom cc_227
-.cc_top cc_228,.Lxtalabel298
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_226
+.cc_top cc_227,.Lxtalabel343
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	101
 	.long	104
-	.long	.Lxtalabel298
+	.long	.Lxtalabel343
+.cc_bottom cc_227
+.cc_top cc_228,.Lxtalabel209
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	101
+	.long	104
+	.long	.Lxtalabel209
 .cc_bottom cc_228
-.cc_top cc_229,.Lxtalabel422
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	105
-	.long	106
-	.long	.Lxtalabel422
-.cc_bottom cc_229
-.cc_top cc_230,.Lxtalabel372
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	105
-	.long	106
-	.long	.Lxtalabel372
-.cc_bottom cc_230
-.cc_top cc_231,.Lxtalabel327
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	105
-	.long	106
-	.long	.Lxtalabel327
-.cc_bottom cc_231
-.cc_top cc_232,.Lxtalabel282
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_229,.Lxtalabel282
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	105
 	.long	106
 	.long	.Lxtalabel282
-.cc_bottom cc_232
-.cc_top cc_233,.Lxtalabel241
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_229
+.cc_top cc_230,.Lxtalabel327
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	105
+	.long	106
+	.long	.Lxtalabel327
+.cc_bottom cc_230
+.cc_top cc_231,.Lxtalabel422
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	105
+	.long	106
+	.long	.Lxtalabel422
+.cc_bottom cc_231
+.cc_top cc_232,.Lxtalabel241
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	105
 	.long	106
 	.long	.Lxtalabel241
+.cc_bottom cc_232
+.cc_top cc_233,.Lxtalabel372
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	105
+	.long	106
+	.long	.Lxtalabel372
 .cc_bottom cc_233
 .cc_top cc_234,.Lxtalabel161
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	109
 	.long	112
 	.long	.Lxtalabel161
 .cc_bottom cc_234
 .cc_top cc_235,.Lxtalabel161
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	118
 	.long	118
 	.long	.Lxtalabel161
 .cc_bottom cc_235
 .cc_top cc_236,.Lxtalabel161
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	119
 	.long	121
 	.long	.Lxtalabel161
 .cc_bottom cc_236
-.cc_top cc_237,.Lxtalabel164
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	123
-	.long	125
-	.long	.Lxtalabel164
-.cc_bottom cc_237
-.cc_top cc_238,.Lxtalabel165
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_237,.Lxtalabel165
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	123
 	.long	125
 	.long	.Lxtalabel165
+.cc_bottom cc_237
+.cc_top cc_238,.Lxtalabel164
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	123
+	.long	125
+	.long	.Lxtalabel164
 .cc_bottom cc_238
 .cc_top cc_239,.Lxtalabel164
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	126
 	.long	126
 	.long	.Lxtalabel164
 .cc_bottom cc_239
 .cc_top cc_240,.Lxtalabel165
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	126
 	.long	126
 	.long	.Lxtalabel165
 .cc_bottom cc_240
 .cc_top cc_241,.Lxtalabel166
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	127
 	.long	128
 	.long	.Lxtalabel166
 .cc_bottom cc_241
 .cc_top cc_242,.Lxtalabel167
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	127
 	.long	128
 	.long	.Lxtalabel167
 .cc_bottom cc_242
 .cc_top cc_243,.Lxtalabel168
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	129
 	.long	131
 	.long	.Lxtalabel168
 .cc_bottom cc_243
-.cc_top cc_244,.Lxtalabel166
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	133
-	.long	133
-	.long	.Lxtalabel166
-.cc_bottom cc_244
-.cc_top cc_245,.Lxtalabel167
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_244,.Lxtalabel167
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	133
 	.long	133
 	.long	.Lxtalabel167
+.cc_bottom cc_244
+.cc_top cc_245,.Lxtalabel166
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	133
+	.long	133
+	.long	.Lxtalabel166
 .cc_bottom cc_245
 .cc_top cc_246,.Lxtalabel169
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	138
 	.long	138
 	.long	.Lxtalabel169
 .cc_bottom cc_246
 .cc_top cc_247,.Lxtalabel169
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	139
 	.long	141
 	.long	.Lxtalabel169
 .cc_bottom cc_247
 .cc_top cc_248,.Lxtalabel169
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	147
 	.long	147
 	.long	.Lxtalabel169
 .cc_bottom cc_248
 .cc_top cc_249,.Lxtalabel176
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	148
 	.long	148
 	.long	.Lxtalabel176
 .cc_bottom cc_249
 .cc_top cc_250,.Lxtalabel176
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	150
 	.long	152
 	.long	.Lxtalabel176
 .cc_bottom cc_250
 .cc_top cc_251,.Lxtalabel177
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	153
 	.long	155
 	.long	.Lxtalabel177
 .cc_bottom cc_251
 .cc_top cc_252,.Lxtalabel178
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	156
 	.long	158
 	.long	.Lxtalabel178
 .cc_bottom cc_252
 .cc_top cc_253,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	161
 	.long	162
 	.long	.Lxtalabel179
 .cc_bottom cc_253
 .cc_top cc_254,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	164
 	.long	165
 	.long	.Lxtalabel179
 .cc_bottom cc_254
 .cc_top cc_255,.Lxtalabel170
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	166
 	.long	171
 	.long	.Lxtalabel170
 .cc_bottom cc_255
 .cc_top cc_256,.Lxtalabel170
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	173
 	.long	173
 	.long	.Lxtalabel170
 .cc_bottom cc_256
 .cc_top cc_257,.Lxtalabel171
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	174
 	.long	175
 	.long	.Lxtalabel171
 .cc_bottom cc_257
 .cc_top cc_258,.Lxtalabel171
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	178
 	.long	179
 	.long	.Lxtalabel171
 .cc_bottom cc_258
 .cc_top cc_259,.Lxtalabel172
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	182
 	.long	182
 	.long	.Lxtalabel172
 .cc_bottom cc_259
 .cc_top cc_260,.Lxtalabel173
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	183
 	.long	187
 	.long	.Lxtalabel173
 .cc_bottom cc_260
 .cc_top cc_261,.Lxtalabel174
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	190
 	.long	192
 	.long	.Lxtalabel174
 .cc_bottom cc_261
 .cc_top cc_262,.Lxtalabel175
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	194
 	.long	195
 	.long	.Lxtalabel175
 .cc_bottom cc_262
 .cc_top cc_263,.Lxtalabel175
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	197
 	.long	198
 	.long	.Lxtalabel175
 .cc_bottom cc_263
 .cc_top cc_264,.Lxtalabel180
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	200
 	.long	201
 	.long	.Lxtalabel180
 .cc_bottom cc_264
 .cc_top cc_265,.Lxtalabel181
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	205
 	.long	207
 	.long	.Lxtalabel181
 .cc_bottom cc_265
 .cc_top cc_266,.Lxtalabel181
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	212
 	.long	212
 	.long	.Lxtalabel181
 .cc_bottom cc_266
 .cc_top cc_267,.Lxtalabel181
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	214
 	.long	216
 	.long	.Lxtalabel181
 .cc_bottom cc_267
 .cc_top cc_268,.Lxtalabel181
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	217
 	.long	217
 	.long	.Lxtalabel181
 .cc_bottom cc_268
-.cc_top cc_269,.Lxtalabel184
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	218
-	.long	219
-	.long	.Lxtalabel184
-.cc_bottom cc_269
-.cc_top cc_270,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_269,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	218
 	.long	219
 	.long	.Lxtalabel185
+.cc_bottom cc_269
+.cc_top cc_270,.Lxtalabel184
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	218
+	.long	219
+	.long	.Lxtalabel184
 .cc_bottom cc_270
 .cc_top cc_271,.Lxtalabel186
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	220
 	.long	222
 	.long	.Lxtalabel186
 .cc_bottom cc_271
 .cc_top cc_272,.Lxtalabel184
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	224
 	.long	224
 	.long	.Lxtalabel184
 .cc_bottom cc_272
 .cc_top cc_273,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	224
 	.long	224
 	.long	.Lxtalabel185
 .cc_bottom cc_273
 .cc_top cc_274,.Lxtalabel187
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	229
 	.long	229
 	.long	.Lxtalabel187
 .cc_bottom cc_274
 .cc_top cc_275,.Lxtalabel188
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	230
 	.long	233
 	.long	.Lxtalabel188
 .cc_bottom cc_275
 .cc_top cc_276,.Lxtalabel189
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	235
 	.long	235
 	.long	.Lxtalabel189
 .cc_bottom cc_276
 .cc_top cc_277,.Lxtalabel188
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	235
 	.long	235
 	.long	.Lxtalabel188
 .cc_bottom cc_277
 .cc_top cc_278,.Lxtalabel190
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	236
 	.long	237
 	.long	.Lxtalabel190
 .cc_bottom cc_278
 .cc_top cc_279,.Lxtalabel190
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	240
 	.long	241
 	.long	.Lxtalabel190
 .cc_bottom cc_279
 .cc_top cc_280,.Lxtalabel190
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	244
 	.long	244
 	.long	.Lxtalabel190
 .cc_bottom cc_280
 .cc_top cc_281,.Lxtalabel191
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	245
 	.long	246
 	.long	.Lxtalabel191
 .cc_bottom cc_281
 .cc_top cc_282,.Lxtalabel191
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	248
 	.long	250
 	.long	.Lxtalabel191
 .cc_bottom cc_282
 .cc_top cc_283,.Lxtalabel190
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	251
 	.long	251
 	.long	.Lxtalabel190
 .cc_bottom cc_283
 .cc_top cc_284,.Lxtalabel192
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	254
 	.long	254
 	.long	.Lxtalabel192
 .cc_bottom cc_284
 .cc_top cc_285,.Lxtalabel192
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	256
 	.long	256
 	.long	.Lxtalabel192
 .cc_bottom cc_285
 .cc_top cc_286,.Lxtalabel192
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	258
 	.long	258
 	.long	.Lxtalabel192
 .cc_bottom cc_286
 .cc_top cc_287,.Lxtalabel192
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	260
 	.long	261
 	.long	.Lxtalabel192
 .cc_bottom cc_287
-.cc_top cc_288,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel263
-.cc_bottom cc_288
-.cc_top cc_289,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel308
-.cc_bottom cc_289
-.cc_top cc_290,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel12
-.cc_bottom cc_290
-.cc_top cc_291,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel92
-.cc_bottom cc_291
-.cc_top cc_292,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel13
-.cc_bottom cc_292
-.cc_top cc_293,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel398
-.cc_bottom cc_293
-.cc_top cc_294,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel14
-.cc_bottom cc_294
-.cc_top cc_295,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel94
-.cc_bottom cc_295
-.cc_top cc_296,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel264
-.cc_bottom cc_296
-.cc_top cc_297,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel265
-.cc_bottom cc_297
-.cc_top cc_298,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel353
-.cc_bottom cc_298
-.cc_top cc_299,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel355
-.cc_bottom cc_299
-.cc_top cc_300,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel93
-.cc_bottom cc_300
-.cc_top cc_301,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel399
-.cc_bottom cc_301
-.cc_top cc_302,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel354
-.cc_bottom cc_302
-.cc_top cc_303,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel400
-.cc_bottom cc_303
-.cc_top cc_304,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel54
-.cc_bottom cc_304
-.cc_top cc_305,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel134
-.cc_bottom cc_305
-.cc_top cc_306,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel133
-.cc_bottom cc_306
-.cc_top cc_307,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel309
-.cc_bottom cc_307
-.cc_top cc_308,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel217
-.cc_bottom cc_308
-.cc_top cc_309,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	264
-	.long	265
-	.long	.Lxtalabel132
-.cc_bottom cc_309
-.cc_top cc_310,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_288,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	264
 	.long	265
 	.long	.Lxtalabel218
-.cc_bottom cc_310
-.cc_top cc_311,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_288
+.cc_top cc_289,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	264
 	.long	265
-	.long	.Lxtalabel52
-.cc_bottom cc_311
-.cc_top cc_312,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel12
+.cc_bottom cc_289
+.cc_top cc_290,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	264
 	.long	265
-	.long	.Lxtalabel53
-.cc_bottom cc_312
-.cc_top cc_313,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel353
+.cc_bottom cc_290
+.cc_top cc_291,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	264
 	.long	265
-	.long	.Lxtalabel219
-.cc_bottom cc_313
-.cc_top cc_314,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel13
+.cc_bottom cc_291
+.cc_top cc_292,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel94
+.cc_bottom cc_292
+.cc_top cc_293,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel14
+.cc_bottom cc_293
+.cc_top cc_294,.Lxtalabel400
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel400
+.cc_bottom cc_294
+.cc_top cc_295,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel399
+.cc_bottom cc_295
+.cc_top cc_296,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel398
+.cc_bottom cc_296
+.cc_top cc_297,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	264
 	.long	265
 	.long	.Lxtalabel310
-.cc_bottom cc_314
-.cc_top cc_315,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_297
+.cc_top cc_298,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel94
-.cc_bottom cc_315
-.cc_top cc_316,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	264
+	.long	265
+	.long	.Lxtalabel52
+.cc_bottom cc_298
+.cc_top cc_299,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	267
-	.long	267
+	.long	264
+	.long	265
+	.long	.Lxtalabel263
+.cc_bottom cc_299
+.cc_top cc_300,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel53
+.cc_bottom cc_300
+.cc_top cc_301,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel309
+.cc_bottom cc_301
+.cc_top cc_302,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel54
+.cc_bottom cc_302
+.cc_top cc_303,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel264
+.cc_bottom cc_303
+.cc_top cc_304,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel265
+.cc_bottom cc_304
+.cc_top cc_305,.Lxtalabel217
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel217
+.cc_bottom cc_305
+.cc_top cc_306,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel308
+.cc_bottom cc_306
+.cc_top cc_307,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel134
+.cc_bottom cc_307
+.cc_top cc_308,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel92
+.cc_bottom cc_308
+.cc_top cc_309,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
 	.long	.Lxtalabel133
-.cc_bottom cc_316
-.cc_top cc_317,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_309
+.cc_top cc_310,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel355
+.cc_bottom cc_310
+.cc_top cc_311,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel93
+.cc_bottom cc_311
+.cc_top cc_312,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel132
+.cc_bottom cc_312
+.cc_top cc_313,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel354
+.cc_bottom cc_313
+.cc_top cc_314,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	264
+	.long	265
+	.long	.Lxtalabel219
+.cc_bottom cc_314
+.cc_top cc_315,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel354
-.cc_bottom cc_317
-.cc_top cc_318,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel355
-.cc_bottom cc_318
-.cc_top cc_319,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel134
-.cc_bottom cc_319
-.cc_top cc_320,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel93
-.cc_bottom cc_320
-.cc_top cc_321,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel265
-.cc_bottom cc_321
-.cc_top cc_322,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel353
-.cc_bottom cc_322
-.cc_top cc_323,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_315
+.cc_top cc_316,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel132
-.cc_bottom cc_323
-.cc_top cc_324,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_316
+.cc_top cc_317,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
-	.long	.Lxtalabel264
+	.long	.Lxtalabel13
+.cc_bottom cc_317
+.cc_top cc_318,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel399
+.cc_bottom cc_318
+.cc_top cc_319,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel12
+.cc_bottom cc_319
+.cc_top cc_320,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel263
+.cc_bottom cc_320
+.cc_top cc_321,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel308
+.cc_bottom cc_321
+.cc_top cc_322,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel265
+.cc_bottom cc_322
+.cc_top cc_323,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel218
+.cc_bottom cc_323
+.cc_top cc_324,.Lxtalabel400
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel400
 .cc_bottom cc_324
 .cc_top cc_325,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel217
 .cc_bottom cc_325
-.cc_top cc_326,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel263
-.cc_bottom cc_326
-.cc_top cc_327,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel218
-.cc_bottom cc_327
-.cc_top cc_328,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_326,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel310
-.cc_bottom cc_328
-.cc_top cc_329,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel219
-.cc_bottom cc_329
-.cc_top cc_330,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel309
-.cc_bottom cc_330
-.cc_top cc_331,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel308
-.cc_bottom cc_331
-.cc_top cc_332,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_326
+.cc_top cc_327,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel52
-.cc_bottom cc_332
-.cc_top cc_333,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel13
-.cc_bottom cc_333
-.cc_top cc_334,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_327
+.cc_top cc_328,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel398
+.cc_bottom cc_328
+.cc_top cc_329,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel92
+.cc_bottom cc_329
+.cc_top cc_330,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel94
+.cc_bottom cc_330
+.cc_top cc_331,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel134
+.cc_bottom cc_331
+.cc_top cc_332,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel133
+.cc_bottom cc_332
+.cc_top cc_333,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel353
+.cc_bottom cc_333
+.cc_top cc_334,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel53
 .cc_bottom cc_334
 .cc_top cc_335,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
 	.long	.Lxtalabel14
 .cc_bottom cc_335
-.cc_top cc_336,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_336,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	267
 	.long	267
-	.long	.Lxtalabel12
-.cc_bottom cc_336
-.cc_top cc_337,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel53
-.cc_bottom cc_337
-.cc_top cc_338,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel399
-.cc_bottom cc_338
-.cc_top cc_339,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel92
-.cc_bottom cc_339
-.cc_top cc_340,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel400
-.cc_bottom cc_340
-.cc_top cc_341,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	267
-	.long	267
-	.long	.Lxtalabel54
-.cc_bottom cc_341
-.cc_top cc_342,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel218
-.cc_bottom cc_342
-.cc_top cc_343,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel132
-.cc_bottom cc_343
-.cc_top cc_344,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel13
-.cc_bottom cc_344
-.cc_top cc_345,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel133
-.cc_bottom cc_345
-.cc_top cc_346,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel14
-.cc_bottom cc_346
-.cc_top cc_347,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel134
-.cc_bottom cc_347
-.cc_top cc_348,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel308
-.cc_bottom cc_348
-.cc_top cc_349,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel309
-.cc_bottom cc_349
-.cc_top cc_350,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel219
-.cc_bottom cc_350
-.cc_top cc_351,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel310
-.cc_bottom cc_351
-.cc_top cc_352,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel217
-.cc_bottom cc_352
-.cc_top cc_353,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel400
-.cc_bottom cc_353
-.cc_top cc_354,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel353
-.cc_bottom cc_354
-.cc_top cc_355,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel52
-.cc_bottom cc_355
-.cc_top cc_356,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel54
-.cc_bottom cc_356
-.cc_top cc_357,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel53
-.cc_bottom cc_357
-.cc_top cc_358,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel263
-.cc_bottom cc_358
-.cc_top cc_359,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel94
-.cc_bottom cc_359
-.cc_top cc_360,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel265
-.cc_bottom cc_360
-.cc_top cc_361,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel264
-.cc_bottom cc_361
-.cc_top cc_362,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel398
-.cc_bottom cc_362
-.cc_top cc_363,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel399
-.cc_bottom cc_363
-.cc_top cc_364,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
 	.long	.Lxtalabel93
-.cc_bottom cc_364
-.cc_top cc_365,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_336
+.cc_top cc_337,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	269
-	.long	271
-	.long	.Lxtalabel92
-.cc_bottom cc_365
-.cc_top cc_366,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	269
-	.long	271
+	.long	267
+	.long	267
 	.long	.Lxtalabel355
-.cc_bottom cc_366
-.cc_top cc_367,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_337
+.cc_top cc_338,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel54
+.cc_bottom cc_338
+.cc_top cc_339,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel264
+.cc_bottom cc_339
+.cc_top cc_340,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel219
+.cc_bottom cc_340
+.cc_top cc_341,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	267
+	.long	267
+	.long	.Lxtalabel309
+.cc_bottom cc_341
+.cc_top cc_342,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	269
 	.long	271
 	.long	.Lxtalabel12
-.cc_bottom cc_367
-.cc_top cc_368,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_342
+.cc_top cc_343,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	269
 	.long	271
 	.long	.Lxtalabel354
-.cc_bottom cc_368
-.cc_top cc_369,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_343
+.cc_top cc_344,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel134
-.cc_bottom cc_369
-.cc_top cc_370,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	269
+	.long	271
+	.long	.Lxtalabel54
+.cc_bottom cc_344
+.cc_top cc_345,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	272
-	.long	272
+	.long	269
+	.long	271
+	.long	.Lxtalabel52
+.cc_bottom cc_345
+.cc_top cc_346,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel218
+.cc_bottom cc_346
+.cc_top cc_347,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel309
+.cc_bottom cc_347
+.cc_top cc_348,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel13
+.cc_bottom cc_348
+.cc_top cc_349,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel92
+.cc_bottom cc_349
+.cc_top cc_350,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel353
+.cc_bottom cc_350
+.cc_top cc_351,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel308
+.cc_bottom cc_351
+.cc_top cc_352,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel398
+.cc_bottom cc_352
+.cc_top cc_353,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel93
+.cc_bottom cc_353
+.cc_top cc_354,.Lxtalabel217
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
 	.long	.Lxtalabel217
+.cc_bottom cc_354
+.cc_top cc_355,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel264
+.cc_bottom cc_355
+.cc_top cc_356,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel265
+.cc_bottom cc_356
+.cc_top cc_357,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel263
+.cc_bottom cc_357
+.cc_top cc_358,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel14
+.cc_bottom cc_358
+.cc_top cc_359,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel133
+.cc_bottom cc_359
+.cc_top cc_360,.Lxtalabel400
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel400
+.cc_bottom cc_360
+.cc_top cc_361,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel94
+.cc_bottom cc_361
+.cc_top cc_362,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel53
+.cc_bottom cc_362
+.cc_top cc_363,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel355
+.cc_bottom cc_363
+.cc_top cc_364,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel399
+.cc_bottom cc_364
+.cc_top cc_365,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel219
+.cc_bottom cc_365
+.cc_top cc_366,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel134
+.cc_bottom cc_366
+.cc_top cc_367,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel310
+.cc_bottom cc_367
+.cc_top cc_368,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	269
+	.long	271
+	.long	.Lxtalabel132
+.cc_bottom cc_368
+.cc_top cc_369,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel14
+.cc_bottom cc_369
+.cc_top cc_370,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel218
 .cc_bottom cc_370
 .cc_top cc_371,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	272
 	.long	272
 	.long	.Lxtalabel400
 .cc_bottom cc_371
-.cc_top cc_372,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel54
-.cc_bottom cc_372
-.cc_top cc_373,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel133
-.cc_bottom cc_373
-.cc_top cc_374,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel93
-.cc_bottom cc_374
-.cc_top cc_375,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel53
-.cc_bottom cc_375
-.cc_top cc_376,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel265
-.cc_bottom cc_376
-.cc_top cc_377,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel132
-.cc_bottom cc_377
-.cc_top cc_378,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_372,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	272
 	.long	272
 	.long	.Lxtalabel399
-.cc_bottom cc_378
-.cc_top cc_379,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel52
-.cc_bottom cc_379
-.cc_top cc_380,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel13
-.cc_bottom cc_380
-.cc_top cc_381,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel218
-.cc_bottom cc_381
-.cc_top cc_382,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel264
-.cc_bottom cc_382
-.cc_top cc_383,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel219
-.cc_bottom cc_383
-.cc_top cc_384,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel310
-.cc_bottom cc_384
-.cc_top cc_385,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel12
-.cc_bottom cc_385
-.cc_top cc_386,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel309
-.cc_bottom cc_386
-.cc_top cc_387,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel263
-.cc_bottom cc_387
-.cc_top cc_388,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_372
+.cc_top cc_373,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	272
 	.long	272
 	.long	.Lxtalabel398
-.cc_bottom cc_388
-.cc_top cc_389,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_373
+.cc_top cc_374,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	272
 	.long	272
-	.long	.Lxtalabel308
-.cc_bottom cc_389
-.cc_top cc_390,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel52
+.cc_bottom cc_374
+.cc_top cc_375,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	272
 	.long	272
-	.long	.Lxtalabel14
-.cc_bottom cc_390
-.cc_top cc_391,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel354
-.cc_bottom cc_391
-.cc_top cc_392,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel353
-.cc_bottom cc_392
-.cc_top cc_393,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel94
-.cc_bottom cc_393
-.cc_top cc_394,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	272
-	.long	272
-	.long	.Lxtalabel92
-.cc_bottom cc_394
-.cc_top cc_395,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel54
+.cc_bottom cc_375
+.cc_top cc_376,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	272
 	.long	272
 	.long	.Lxtalabel355
+.cc_bottom cc_376
+.cc_top cc_377,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel354
+.cc_bottom cc_377
+.cc_top cc_378,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel353
+.cc_bottom cc_378
+.cc_top cc_379,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel92
+.cc_bottom cc_379
+.cc_top cc_380,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel93
+.cc_bottom cc_380
+.cc_top cc_381,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel94
+.cc_bottom cc_381
+.cc_top cc_382,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel53
+.cc_bottom cc_382
+.cc_top cc_383,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel310
+.cc_bottom cc_383
+.cc_top cc_384,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel309
+.cc_bottom cc_384
+.cc_top cc_385,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel308
+.cc_bottom cc_385
+.cc_top cc_386,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel132
+.cc_bottom cc_386
+.cc_top cc_387,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel133
+.cc_bottom cc_387
+.cc_top cc_388,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel134
+.cc_bottom cc_388
+.cc_top cc_389,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel265
+.cc_bottom cc_389
+.cc_top cc_390,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel264
+.cc_bottom cc_390
+.cc_top cc_391,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel263
+.cc_bottom cc_391
+.cc_top cc_392,.Lxtalabel217
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel217
+.cc_bottom cc_392
+.cc_top cc_393,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel219
+.cc_bottom cc_393
+.cc_top cc_394,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel12
+.cc_bottom cc_394
+.cc_top cc_395,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	272
+	.long	272
+	.long	.Lxtalabel13
 .cc_bottom cc_395
-.cc_top cc_396,.Lxtalabel220
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_396,.Lxtalabel95
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	273
 	.long	275
-	.long	.Lxtalabel220
+	.long	.Lxtalabel95
 .cc_bottom cc_396
 .cc_top cc_397,.Lxtalabel401
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	273
 	.long	275
 	.long	.Lxtalabel401
 .cc_bottom cc_397
-.cc_top cc_398,.Lxtalabel95
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	273
-	.long	275
-	.long	.Lxtalabel95
-.cc_bottom cc_398
-.cc_top cc_399,.Lxtalabel135
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	273
-	.long	275
-	.long	.Lxtalabel135
-.cc_bottom cc_399
-.cc_top cc_400,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	273
-	.long	275
-	.long	.Lxtalabel55
-.cc_bottom cc_400
-.cc_top cc_401,.Lxtalabel311
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_398,.Lxtalabel311
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	273
 	.long	275
 	.long	.Lxtalabel311
-.cc_bottom cc_401
-.cc_top cc_402,.Lxtalabel15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_398
+.cc_top cc_399,.Lxtalabel55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	273
+	.long	275
+	.long	.Lxtalabel55
+.cc_bottom cc_399
+.cc_top cc_400,.Lxtalabel15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	273
 	.long	275
 	.long	.Lxtalabel15
-.cc_bottom cc_402
-.cc_top cc_403,.Lxtalabel266
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	273
-	.long	275
-	.long	.Lxtalabel266
-.cc_bottom cc_403
-.cc_top cc_404,.Lxtalabel356
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_400
+.cc_top cc_401,.Lxtalabel356
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	273
 	.long	275
 	.long	.Lxtalabel356
+.cc_bottom cc_401
+.cc_top cc_402,.Lxtalabel266
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	273
+	.long	275
+	.long	.Lxtalabel266
+.cc_bottom cc_402
+.cc_top cc_403,.Lxtalabel135
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	273
+	.long	275
+	.long	.Lxtalabel135
+.cc_bottom cc_403
+.cc_top cc_404,.Lxtalabel220
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	273
+	.long	275
+	.long	.Lxtalabel220
 .cc_bottom cc_404
-.cc_top cc_405,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel263
-.cc_bottom cc_405
-.cc_top cc_406,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel132
-.cc_bottom cc_406
-.cc_top cc_407,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel12
-.cc_bottom cc_407
-.cc_top cc_408,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel264
-.cc_bottom cc_408
-.cc_top cc_409,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel133
-.cc_bottom cc_409
-.cc_top cc_410,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel355
-.cc_bottom cc_410
-.cc_top cc_411,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel52
-.cc_bottom cc_411
-.cc_top cc_412,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel399
-.cc_bottom cc_412
-.cc_top cc_413,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel353
-.cc_bottom cc_413
-.cc_top cc_414,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel134
-.cc_bottom cc_414
-.cc_top cc_415,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel93
-.cc_bottom cc_415
-.cc_top cc_416,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel92
-.cc_bottom cc_416
-.cc_top cc_417,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_405,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
 	.long	.Lxtalabel53
-.cc_bottom cc_417
-.cc_top cc_418,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_405
+.cc_top cc_406,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
-	.long	.Lxtalabel54
-.cc_bottom cc_418
-.cc_top cc_419,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel94
-.cc_bottom cc_419
-.cc_top cc_420,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel265
-.cc_bottom cc_420
-.cc_top cc_421,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel399
+.cc_bottom cc_406
+.cc_top cc_407,.Lxtalabel400
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
 	.long	.Lxtalabel400
-.cc_bottom cc_421
-.cc_top cc_422,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel13
-.cc_bottom cc_422
-.cc_top cc_423,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel14
-.cc_bottom cc_423
-.cc_top cc_424,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel308
-.cc_bottom cc_424
-.cc_top cc_425,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel217
-.cc_bottom cc_425
-.cc_top cc_426,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel398
-.cc_bottom cc_426
-.cc_top cc_427,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	278
-	.long	279
-	.long	.Lxtalabel309
-.cc_bottom cc_427
-.cc_top cc_428,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_407
+.cc_top cc_408,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
 	.long	.Lxtalabel218
-.cc_bottom cc_428
-.cc_top cc_429,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_408
+.cc_top cc_409,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
-	.long	.Lxtalabel310
-.cc_bottom cc_429
-.cc_top cc_430,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel265
+.cc_bottom cc_409
+.cc_top cc_410,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
 	.long	.Lxtalabel354
-.cc_bottom cc_430
-.cc_top cc_431,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_410
+.cc_top cc_411,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel264
+.cc_bottom cc_411
+.cc_top cc_412,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel398
+.cc_bottom cc_412
+.cc_top cc_413,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel92
+.cc_bottom cc_413
+.cc_top cc_414,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel263
+.cc_bottom cc_414
+.cc_top cc_415,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel132
+.cc_bottom cc_415
+.cc_top cc_416,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel93
+.cc_bottom cc_416
+.cc_top cc_417,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel94
+.cc_bottom cc_417
+.cc_top cc_418,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel355
+.cc_bottom cc_418
+.cc_top cc_419,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel353
+.cc_bottom cc_419
+.cc_top cc_420,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel309
+.cc_bottom cc_420
+.cc_top cc_421,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel133
+.cc_bottom cc_421
+.cc_top cc_422,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel52
+.cc_bottom cc_422
+.cc_top cc_423,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel54
+.cc_bottom cc_423
+.cc_top cc_424,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel134
+.cc_bottom cc_424
+.cc_top cc_425,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel308
+.cc_bottom cc_425
+.cc_top cc_426,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel310
+.cc_bottom cc_426
+.cc_top cc_427,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	278
 	.long	279
 	.long	.Lxtalabel219
+.cc_bottom cc_427
+.cc_top cc_428,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel12
+.cc_bottom cc_428
+.cc_top cc_429,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel13
+.cc_bottom cc_429
+.cc_top cc_430,.Lxtalabel217
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel217
+.cc_bottom cc_430
+.cc_top cc_431,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	278
+	.long	279
+	.long	.Lxtalabel14
 .cc_bottom cc_431
-.cc_top cc_432,.Lxtalabel335
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel335
-.cc_bottom cc_432
-.cc_top cc_433,.Lxtalabel156
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel156
-.cc_bottom cc_433
-.cc_top cc_434,.Lxtalabel243
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel243
-.cc_bottom cc_434
-.cc_top cc_435,.Lxtalabel116
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel116
-.cc_bottom cc_435
-.cc_top cc_436,.Lxtalabel380
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel380
-.cc_bottom cc_436
-.cc_top cc_437,.Lxtalabel424
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel424
-.cc_bottom cc_437
-.cc_top cc_438,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	280
-	.long	282
-	.long	.Lxtalabel36
-.cc_bottom cc_438
-.cc_top cc_439,.Lxtalabel290
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_432,.Lxtalabel290
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	280
 	.long	282
 	.long	.Lxtalabel290
-.cc_bottom cc_439
-.cc_top cc_440,.Lxtalabel76
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_432
+.cc_top cc_433,.Lxtalabel335
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel335
+.cc_bottom cc_433
+.cc_top cc_434,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel36
+.cc_bottom cc_434
+.cc_top cc_435,.Lxtalabel380
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel380
+.cc_bottom cc_435
+.cc_top cc_436,.Lxtalabel116
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel116
+.cc_bottom cc_436
+.cc_top cc_437,.Lxtalabel156
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel156
+.cc_bottom cc_437
+.cc_top cc_438,.Lxtalabel76
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	280
 	.long	282
 	.long	.Lxtalabel76
+.cc_bottom cc_438
+.cc_top cc_439,.Lxtalabel243
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel243
+.cc_bottom cc_439
+.cc_top cc_440,.Lxtalabel424
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	280
+	.long	282
+	.long	.Lxtalabel424
 .cc_bottom cc_440
-.cc_top cc_441,.Lxtalabel35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	284
-	.long	286
-	.long	.Lxtalabel35
-.cc_bottom cc_441
-.cc_top cc_442,.Lxtalabel242
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	284
-	.long	286
-	.long	.Lxtalabel242
-.cc_bottom cc_442
-.cc_top cc_443,.Lxtalabel333
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	284
-	.long	286
-	.long	.Lxtalabel333
-.cc_bottom cc_443
-.cc_top cc_444,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	284
-	.long	286
-	.long	.Lxtalabel115
-.cc_bottom cc_444
-.cc_top cc_445,.Lxtalabel155
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	284
-	.long	286
-	.long	.Lxtalabel155
-.cc_bottom cc_445
-.cc_top cc_446,.Lxtalabel288
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_441,.Lxtalabel288
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	284
 	.long	286
 	.long	.Lxtalabel288
-.cc_bottom cc_446
-.cc_top cc_447,.Lxtalabel378
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_441
+.cc_top cc_442,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	284
 	.long	286
-	.long	.Lxtalabel378
-.cc_bottom cc_447
-.cc_top cc_448,.Lxtalabel423
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel115
+.cc_bottom cc_442
+.cc_top cc_443,.Lxtalabel35
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	284
 	.long	286
-	.long	.Lxtalabel423
-.cc_bottom cc_448
-.cc_top cc_449,.Lxtalabel75
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel35
+.cc_bottom cc_443
+.cc_top cc_444,.Lxtalabel155
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	284
+	.long	286
+	.long	.Lxtalabel155
+.cc_bottom cc_444
+.cc_top cc_445,.Lxtalabel75
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	284
 	.long	286
 	.long	.Lxtalabel75
+.cc_bottom cc_445
+.cc_top cc_446,.Lxtalabel333
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	284
+	.long	286
+	.long	.Lxtalabel333
+.cc_bottom cc_446
+.cc_top cc_447,.Lxtalabel423
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	284
+	.long	286
+	.long	.Lxtalabel423
+.cc_bottom cc_447
+.cc_top cc_448,.Lxtalabel378
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	284
+	.long	286
+	.long	.Lxtalabel378
+.cc_bottom cc_448
+.cc_top cc_449,.Lxtalabel242
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	284
+	.long	286
+	.long	.Lxtalabel242
 .cc_bottom cc_449
-.cc_top cc_450,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel399
-.cc_bottom cc_450
-.cc_top cc_451,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel265
-.cc_bottom cc_451
-.cc_top cc_452,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel92
-.cc_bottom cc_452
-.cc_top cc_453,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel94
-.cc_bottom cc_453
-.cc_top cc_454,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel308
-.cc_bottom cc_454
-.cc_top cc_455,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel398
-.cc_bottom cc_455
-.cc_top cc_456,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel263
-.cc_bottom cc_456
-.cc_top cc_457,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel14
-.cc_bottom cc_457
-.cc_top cc_458,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel13
-.cc_bottom cc_458
-.cc_top cc_459,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel353
-.cc_bottom cc_459
-.cc_top cc_460,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel54
-.cc_bottom cc_460
-.cc_top cc_461,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel53
-.cc_bottom cc_461
-.cc_top cc_462,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel12
-.cc_bottom cc_462
-.cc_top cc_463,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel217
-.cc_bottom cc_463
-.cc_top cc_464,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel52
-.cc_bottom cc_464
-.cc_top cc_465,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel309
-.cc_bottom cc_465
-.cc_top cc_466,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel355
-.cc_bottom cc_466
-.cc_top cc_467,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel354
-.cc_bottom cc_467
-.cc_top cc_468,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	287
-	.long	288
-	.long	.Lxtalabel218
-.cc_bottom cc_468
-.cc_top cc_469,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_450,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
 	.long	.Lxtalabel310
-.cc_bottom cc_469
-.cc_top cc_470,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_450
+.cc_top cc_451,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
-	.long	.Lxtalabel219
-.cc_bottom cc_470
-.cc_top cc_471,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel263
+.cc_bottom cc_451
+.cc_top cc_452,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
 	.long	.Lxtalabel264
-.cc_bottom cc_471
-.cc_top cc_472,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_452
+.cc_top cc_453,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel53
+.cc_bottom cc_453
+.cc_top cc_454,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
 	.long	.Lxtalabel132
-.cc_bottom cc_472
-.cc_top cc_473,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_454
+.cc_top cc_455,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
-	.long	.Lxtalabel133
-.cc_bottom cc_473
-.cc_top cc_474,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel52
+.cc_bottom cc_455
+.cc_top cc_456,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
-	.long	.Lxtalabel400
-.cc_bottom cc_474
-.cc_top cc_475,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel398
+.cc_bottom cc_456
+.cc_top cc_457,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
-	.long	.Lxtalabel93
-.cc_bottom cc_475
-.cc_top cc_476,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel92
+.cc_bottom cc_457
+.cc_top cc_458,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel219
+.cc_bottom cc_458
+.cc_top cc_459,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel54
+.cc_bottom cc_459
+.cc_top cc_460,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel354
+.cc_bottom cc_460
+.cc_top cc_461,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel308
+.cc_bottom cc_461
+.cc_top cc_462,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	287
 	.long	288
 	.long	.Lxtalabel134
+.cc_bottom cc_462
+.cc_top cc_463,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel353
+.cc_bottom cc_463
+.cc_top cc_464,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel93
+.cc_bottom cc_464
+.cc_top cc_465,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel12
+.cc_bottom cc_465
+.cc_top cc_466,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel94
+.cc_bottom cc_466
+.cc_top cc_467,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel13
+.cc_bottom cc_467
+.cc_top cc_468,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel309
+.cc_bottom cc_468
+.cc_top cc_469,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel133
+.cc_bottom cc_469
+.cc_top cc_470,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel218
+.cc_bottom cc_470
+.cc_top cc_471,.Lxtalabel217
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel217
+.cc_bottom cc_471
+.cc_top cc_472,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel355
+.cc_bottom cc_472
+.cc_top cc_473,.Lxtalabel400
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel400
+.cc_bottom cc_473
+.cc_top cc_474,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel399
+.cc_bottom cc_474
+.cc_top cc_475,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel265
+.cc_bottom cc_475
+.cc_top cc_476,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	287
+	.long	288
+	.long	.Lxtalabel14
 .cc_bottom cc_476
-.cc_top cc_477,.Lxtalabel245
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel245
-.cc_bottom cc_477
-.cc_top cc_478,.Lxtalabel244
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel244
-.cc_bottom cc_478
-.cc_top cc_479,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel78
-.cc_bottom cc_479
-.cc_top cc_480,.Lxtalabel157
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel157
-.cc_bottom cc_480
-.cc_top cc_481,.Lxtalabel158
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel158
-.cc_bottom cc_481
-.cc_top cc_482,.Lxtalabel336
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_477,.Lxtalabel336
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	290
 	.long	290
 	.long	.Lxtalabel336
-.cc_bottom cc_482
-.cc_top cc_483,.Lxtalabel291
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_477
+.cc_top cc_478,.Lxtalabel157
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	290
 	.long	290
-	.long	.Lxtalabel291
-.cc_bottom cc_483
-.cc_top cc_484,.Lxtalabel289
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel289
-.cc_bottom cc_484
-.cc_top cc_485,.Lxtalabel379
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel379
-.cc_bottom cc_485
-.cc_top cc_486,.Lxtalabel381
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel381
-.cc_bottom cc_486
-.cc_top cc_487,.Lxtalabel334
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel334
-.cc_bottom cc_487
-.cc_top cc_488,.Lxtalabel425
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel425
-.cc_bottom cc_488
-.cc_top cc_489,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel38
-.cc_bottom cc_489
-.cc_top cc_490,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel37
-.cc_bottom cc_490
-.cc_top cc_491,.Lxtalabel426
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel426
-.cc_bottom cc_491
-.cc_top cc_492,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	290
-	.long	290
-	.long	.Lxtalabel77
-.cc_bottom cc_492
-.cc_top cc_493,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel157
+.cc_bottom cc_478
+.cc_top cc_479,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	290
 	.long	290
 	.long	.Lxtalabel118
-.cc_bottom cc_493
-.cc_top cc_494,.Lxtalabel117
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_479
+.cc_top cc_480,.Lxtalabel291
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel291
+.cc_bottom cc_480
+.cc_top cc_481,.Lxtalabel117
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	290
 	.long	290
 	.long	.Lxtalabel117
+.cc_bottom cc_481
+.cc_top cc_482,.Lxtalabel379
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel379
+.cc_bottom cc_482
+.cc_top cc_483,.Lxtalabel289
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel289
+.cc_bottom cc_483
+.cc_top cc_484,.Lxtalabel78
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel78
+.cc_bottom cc_484
+.cc_top cc_485,.Lxtalabel425
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel425
+.cc_bottom cc_485
+.cc_top cc_486,.Lxtalabel37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel37
+.cc_bottom cc_486
+.cc_top cc_487,.Lxtalabel381
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel381
+.cc_bottom cc_487
+.cc_top cc_488,.Lxtalabel426
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel426
+.cc_bottom cc_488
+.cc_top cc_489,.Lxtalabel244
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel244
+.cc_bottom cc_489
+.cc_top cc_490,.Lxtalabel245
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel245
+.cc_bottom cc_490
+.cc_top cc_491,.Lxtalabel77
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel77
+.cc_bottom cc_491
+.cc_top cc_492,.Lxtalabel158
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel158
+.cc_bottom cc_492
+.cc_top cc_493,.Lxtalabel334
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel334
+.cc_bottom cc_493
+.cc_top cc_494,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	290
+	.long	290
+	.long	.Lxtalabel38
 .cc_bottom cc_494
-.cc_top cc_495,.Lxtalabel425
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_495,.Lxtalabel37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel37
+.cc_bottom cc_495
+.cc_top cc_496,.Lxtalabel336
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel336
+.cc_bottom cc_496
+.cc_top cc_497,.Lxtalabel425
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel425
-.cc_bottom cc_495
-.cc_top cc_496,.Lxtalabel291
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel291
-.cc_bottom cc_496
-.cc_top cc_497,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel118
 .cc_bottom cc_497
-.cc_top cc_498,.Lxtalabel289
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_498,.Lxtalabel117
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
-	.long	.Lxtalabel289
+	.long	.Lxtalabel117
 .cc_bottom cc_498
 .cc_top cc_499,.Lxtalabel426
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel426
 .cc_bottom cc_499
-.cc_top cc_500,.Lxtalabel336
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_500,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
-	.long	.Lxtalabel336
+	.long	.Lxtalabel118
 .cc_bottom cc_500
-.cc_top cc_501,.Lxtalabel158
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_501,.Lxtalabel245
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
-	.long	.Lxtalabel158
+	.long	.Lxtalabel245
 .cc_bottom cc_501
-.cc_top cc_502,.Lxtalabel157
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_502,.Lxtalabel244
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
-	.long	.Lxtalabel157
+	.long	.Lxtalabel244
 .cc_bottom cc_502
-.cc_top cc_503,.Lxtalabel379
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_503,.Lxtalabel291
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
-	.long	.Lxtalabel379
+	.long	.Lxtalabel291
 .cc_bottom cc_503
-.cc_top cc_504,.Lxtalabel334
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel334
-.cc_bottom cc_504
-.cc_top cc_505,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_504,.Lxtalabel78
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel78
+.cc_bottom cc_504
+.cc_top cc_505,.Lxtalabel289
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel289
 .cc_bottom cc_505
 .cc_top cc_506,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel77
 .cc_bottom cc_506
-.cc_top cc_507,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_507,.Lxtalabel379
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	292
 	.long	292
-	.long	.Lxtalabel37
-.cc_bottom cc_507
-.cc_top cc_508,.Lxtalabel244
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel244
-.cc_bottom cc_508
-.cc_top cc_509,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel38
-.cc_bottom cc_509
-.cc_top cc_510,.Lxtalabel381
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel381
-.cc_bottom cc_510
-.cc_top cc_511,.Lxtalabel245
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel245
-.cc_bottom cc_511
-.cc_top cc_512,.Lxtalabel117
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel117
-.cc_bottom cc_512
-.cc_top cc_513,.Lxtalabel381
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel381
-.cc_bottom cc_513
-.cc_top cc_514,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel77
-.cc_bottom cc_514
-.cc_top cc_515,.Lxtalabel425
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel425
-.cc_bottom cc_515
-.cc_top cc_516,.Lxtalabel379
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
 	.long	.Lxtalabel379
-.cc_bottom cc_516
-.cc_top cc_517,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_507
+.cc_top cc_508,.Lxtalabel334
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	294
-	.long	294
+	.long	292
+	.long	292
+	.long	.Lxtalabel334
+.cc_bottom cc_508
+.cc_top cc_509,.Lxtalabel157
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel157
+.cc_bottom cc_509
+.cc_top cc_510,.Lxtalabel158
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel158
+.cc_bottom cc_510
+.cc_top cc_511,.Lxtalabel381
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel381
+.cc_bottom cc_511
+.cc_top cc_512,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	292
+	.long	292
 	.long	.Lxtalabel38
-.cc_bottom cc_517
-.cc_top cc_518,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel78
-.cc_bottom cc_518
-.cc_top cc_519,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel37
-.cc_bottom cc_519
-.cc_top cc_520,.Lxtalabel334
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_512
+.cc_top cc_513,.Lxtalabel334
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel334
-.cc_bottom cc_520
-.cc_top cc_521,.Lxtalabel289
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel289
-.cc_bottom cc_521
-.cc_top cc_522,.Lxtalabel117
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel117
-.cc_bottom cc_522
-.cc_top cc_523,.Lxtalabel245
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel245
-.cc_bottom cc_523
-.cc_top cc_524,.Lxtalabel291
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	294
-	.long	294
-	.long	.Lxtalabel291
-.cc_bottom cc_524
-.cc_top cc_525,.Lxtalabel336
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_513
+.cc_top cc_514,.Lxtalabel336
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel336
-.cc_bottom cc_525
-.cc_top cc_526,.Lxtalabel157
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_514
+.cc_top cc_515,.Lxtalabel117
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
-	.long	.Lxtalabel157
-.cc_bottom cc_526
-.cc_top cc_527,.Lxtalabel158
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel117
+.cc_bottom cc_515
+.cc_top cc_516,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
-	.long	.Lxtalabel158
-.cc_bottom cc_527
-.cc_top cc_528,.Lxtalabel244
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel118
+.cc_bottom cc_516
+.cc_top cc_517,.Lxtalabel78
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel78
+.cc_bottom cc_517
+.cc_top cc_518,.Lxtalabel381
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel381
+.cc_bottom cc_518
+.cc_top cc_519,.Lxtalabel291
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel291
+.cc_bottom cc_519
+.cc_top cc_520,.Lxtalabel289
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel289
+.cc_bottom cc_520
+.cc_top cc_521,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel38
+.cc_bottom cc_521
+.cc_top cc_522,.Lxtalabel77
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel77
+.cc_bottom cc_522
+.cc_top cc_523,.Lxtalabel244
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel244
+.cc_bottom cc_523
+.cc_top cc_524,.Lxtalabel37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel37
+.cc_bottom cc_524
+.cc_top cc_525,.Lxtalabel157
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel157
+.cc_bottom cc_525
+.cc_top cc_526,.Lxtalabel158
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel158
+.cc_bottom cc_526
+.cc_top cc_527,.Lxtalabel245
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel245
+.cc_bottom cc_527
+.cc_top cc_528,.Lxtalabel379
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	294
+	.long	294
+	.long	.Lxtalabel379
 .cc_bottom cc_528
 .cc_top cc_529,.Lxtalabel426
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
 	.long	.Lxtalabel426
 .cc_bottom cc_529
-.cc_top cc_530,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_530,.Lxtalabel425
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	294
 	.long	294
-	.long	.Lxtalabel118
+	.long	.Lxtalabel425
 .cc_bottom cc_530
-.cc_top cc_531,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel97
-.cc_bottom cc_531
-.cc_top cc_532,.Lxtalabel404
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel404
-.cc_bottom cc_532
-.cc_top cc_533,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel96
-.cc_bottom cc_533
-.cc_top cc_534,.Lxtalabel313
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel313
-.cc_bottom cc_534
-.cc_top cc_535,.Lxtalabel312
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel312
-.cc_bottom cc_535
-.cc_top cc_536,.Lxtalabel148
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_531,.Lxtalabel148
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel148
-.cc_bottom cc_536
-.cc_top cc_537,.Lxtalabel357
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_531
+.cc_top cc_532,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
-	.long	.Lxtalabel357
-.cc_bottom cc_537
-.cc_top cc_538,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel108
+.cc_bottom cc_532
+.cc_top cc_533,.Lxtalabel280
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel280
+.cc_bottom cc_533
+.cc_top cc_534,.Lxtalabel56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel56
+.cc_bottom cc_534
+.cc_top cc_535,.Lxtalabel404
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel404
+.cc_bottom cc_535
+.cc_top cc_536,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel17
+.cc_bottom cc_536
+.cc_top cc_537,.Lxtalabel370
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel370
+.cc_bottom cc_537
+.cc_top cc_538,.Lxtalabel57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel57
 .cc_bottom cc_538
-.cc_top cc_539,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_539,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel68
+.cc_bottom cc_539
+.cc_top cc_540,.Lxtalabel16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel16
+.cc_bottom cc_540
+.cc_top cc_541,.Lxtalabel223
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel223
+.cc_bottom cc_541
+.cc_top cc_542,.Lxtalabel28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel28
-.cc_bottom cc_539
-.cc_top cc_540,.Lxtalabel268
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_542
+.cc_top cc_543,.Lxtalabel268
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel268
-.cc_bottom cc_540
-.cc_top cc_541,.Lxtalabel402
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel402
-.cc_bottom cc_541
-.cc_top cc_542,.Lxtalabel221
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel221
-.cc_bottom cc_542
-.cc_top cc_543,.Lxtalabel325
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel325
 .cc_bottom cc_543
 .cc_top cc_544,.Lxtalabel267
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel267
 .cc_bottom cc_544
-.cc_top cc_545,.Lxtalabel403
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_545,.Lxtalabel222
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel222
+.cc_bottom cc_545
+.cc_top cc_546,.Lxtalabel221
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel221
+.cc_bottom cc_546
+.cc_top cc_547,.Lxtalabel403
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel403
-.cc_bottom cc_545
-.cc_top cc_546,.Lxtalabel222
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel222
-.cc_bottom cc_546
-.cc_top cc_547,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel68
 .cc_bottom cc_547
-.cc_top cc_548,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_548,.Lxtalabel325
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
-	.long	.Lxtalabel17
+	.long	.Lxtalabel325
 .cc_bottom cc_548
-.cc_top cc_549,.Lxtalabel223
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_549,.Lxtalabel137
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
-	.long	.Lxtalabel223
+	.long	.Lxtalabel137
 .cc_bottom cc_549
-.cc_top cc_550,.Lxtalabel280
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_550,.Lxtalabel313
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
-	.long	.Lxtalabel280
+	.long	.Lxtalabel313
 .cc_bottom cc_550
-.cc_top cc_551,.Lxtalabel358
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_551,.Lxtalabel312
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
-	.long	.Lxtalabel358
+	.long	.Lxtalabel312
 .cc_bottom cc_551
-.cc_top cc_552,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_552,.Lxtalabel97
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel97
+.cc_bottom cc_552
+.cc_top cc_553,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	297
+	.long	298
+	.long	.Lxtalabel96
+.cc_bottom cc_553
+.cc_top cc_554,.Lxtalabel136
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
 	.long	.Lxtalabel136
-.cc_bottom cc_552
-.cc_top cc_553,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel16
-.cc_bottom cc_553
-.cc_top cc_554,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel57
 .cc_bottom cc_554
-.cc_top cc_555,.Lxtalabel370
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_555,.Lxtalabel402
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	297
 	.long	298
-	.long	.Lxtalabel370
-.cc_bottom cc_555
-.cc_top cc_556,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel137
-.cc_bottom cc_556
-.cc_top cc_557,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	297
-	.long	298
-	.long	.Lxtalabel108
-.cc_bottom cc_557
-.cc_top cc_558,.Lxtalabel280
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel280
-.cc_bottom cc_558
-.cc_top cc_559,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel16
-.cc_bottom cc_559
-.cc_top cc_560,.Lxtalabel402
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
 	.long	.Lxtalabel402
-.cc_bottom cc_560
-.cc_top cc_561,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_555
+.cc_top cc_556,.Lxtalabel358
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel97
-.cc_bottom cc_561
-.cc_top cc_562,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	297
+	.long	298
+	.long	.Lxtalabel358
+.cc_bottom cc_556
+.cc_top cc_557,.Lxtalabel357
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel17
-.cc_bottom cc_562
-.cc_top cc_563,.Lxtalabel223
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel223
-.cc_bottom cc_563
-.cc_top cc_564,.Lxtalabel222
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel222
-.cc_bottom cc_564
-.cc_top cc_565,.Lxtalabel313
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel313
-.cc_bottom cc_565
-.cc_top cc_566,.Lxtalabel312
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel312
-.cc_bottom cc_566
-.cc_top cc_567,.Lxtalabel357
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
+	.long	297
+	.long	298
 	.long	.Lxtalabel357
-.cc_bottom cc_567
-.cc_top cc_568,.Lxtalabel221
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_557
+.cc_top cc_558,.Lxtalabel221
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel221
-.cc_bottom cc_568
-.cc_top cc_569,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_558
+.cc_top cc_559,.Lxtalabel403
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel68
-.cc_bottom cc_569
-.cc_top cc_570,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel403
+.cc_bottom cc_559
+.cc_top cc_560,.Lxtalabel370
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel108
-.cc_bottom cc_570
-.cc_top cc_571,.Lxtalabel404
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel404
-.cc_bottom cc_571
-.cc_top cc_572,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel370
+.cc_bottom cc_560
+.cc_top cc_561,.Lxtalabel57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel57
-.cc_bottom cc_572
-.cc_top cc_573,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_561
+.cc_top cc_562,.Lxtalabel313
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel56
-.cc_bottom cc_573
-.cc_top cc_574,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel313
+.cc_bottom cc_562
+.cc_top cc_563,.Lxtalabel28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel28
+.cc_bottom cc_563
+.cc_top cc_564,.Lxtalabel280
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel280
+.cc_bottom cc_564
+.cc_top cc_565,.Lxtalabel137
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel137
+.cc_bottom cc_565
+.cc_top cc_566,.Lxtalabel402
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel402
+.cc_bottom cc_566
+.cc_top cc_567,.Lxtalabel56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel56
+.cc_bottom cc_567
+.cc_top cc_568,.Lxtalabel404
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel404
+.cc_bottom cc_568
+.cc_top cc_569,.Lxtalabel357
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel357
+.cc_bottom cc_569
+.cc_top cc_570,.Lxtalabel148
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel148
+.cc_bottom cc_570
+.cc_top cc_571,.Lxtalabel358
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel358
+.cc_bottom cc_571
+.cc_top cc_572,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel96
+.cc_bottom cc_572
+.cc_top cc_573,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel108
+.cc_bottom cc_573
+.cc_top cc_574,.Lxtalabel136
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel136
 .cc_bottom cc_574
 .cc_top cc_575,.Lxtalabel325
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel325
 .cc_bottom cc_575
-.cc_top cc_576,.Lxtalabel370
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_576,.Lxtalabel312
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel370
+	.long	.Lxtalabel312
 .cc_bottom cc_576
-.cc_top cc_577,.Lxtalabel148
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel148
-.cc_bottom cc_577
-.cc_top cc_578,.Lxtalabel268
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel268
-.cc_bottom cc_578
-.cc_top cc_579,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel136
-.cc_bottom cc_579
-.cc_top cc_580,.Lxtalabel403
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel403
-.cc_bottom cc_580
-.cc_top cc_581,.Lxtalabel358
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel358
-.cc_bottom cc_581
-.cc_top cc_582,.Lxtalabel267
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_577,.Lxtalabel267
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel267
+.cc_bottom cc_577
+.cc_top cc_578,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel17
+.cc_bottom cc_578
+.cc_top cc_579,.Lxtalabel16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel16
+.cc_bottom cc_579
+.cc_top cc_580,.Lxtalabel223
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel223
+.cc_bottom cc_580
+.cc_top cc_581,.Lxtalabel222
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel222
+.cc_bottom cc_581
+.cc_top cc_582,.Lxtalabel97
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel97
 .cc_bottom cc_582
-.cc_top cc_583,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_583,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel96
+	.long	.Lxtalabel68
 .cc_bottom cc_583
-.cc_top cc_584,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_584,.Lxtalabel268
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel28
+	.long	.Lxtalabel268
 .cc_bottom cc_584
-.cc_top cc_585,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel99
-.cc_bottom cc_585
-.cc_top cc_586,.Lxtalabel359
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel359
-.cc_bottom cc_586
-.cc_top cc_587,.Lxtalabel315
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel315
-.cc_bottom cc_587
-.cc_top cc_588,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel19
-.cc_bottom cc_588
-.cc_top cc_589,.Lxtalabel405
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel405
-.cc_bottom cc_589
-.cc_top cc_590,.Lxtalabel314
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel314
-.cc_bottom cc_590
-.cc_top cc_591,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel58
-.cc_bottom cc_591
-.cc_top cc_592,.Lxtalabel270
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel270
-.cc_bottom cc_592
-.cc_top cc_593,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	310
-	.long	311
-	.long	.Lxtalabel59
-.cc_bottom cc_593
-.cc_top cc_594,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_585,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
 	.long	.Lxtalabel18
-.cc_bottom cc_594
-.cc_top cc_595,.Lxtalabel138
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_585
+.cc_top cc_586,.Lxtalabel138
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
 	.long	.Lxtalabel138
-.cc_bottom cc_595
-.cc_top cc_596,.Lxtalabel139
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_586
+.cc_top cc_587,.Lxtalabel314
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
-	.long	.Lxtalabel139
-.cc_bottom cc_596
-.cc_top cc_597,.Lxtalabel224
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel314
+.cc_bottom cc_587
+.cc_top cc_588,.Lxtalabel360
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
-	.long	.Lxtalabel224
-.cc_bottom cc_597
-.cc_top cc_598,.Lxtalabel225
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel360
+.cc_bottom cc_588
+.cc_top cc_589,.Lxtalabel225
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
 	.long	.Lxtalabel225
-.cc_bottom cc_598
-.cc_top cc_599,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_589
+.cc_top cc_590,.Lxtalabel359
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel359
+.cc_bottom cc_590
+.cc_top cc_591,.Lxtalabel315
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel315
+.cc_bottom cc_591
+.cc_top cc_592,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel59
+.cc_bottom cc_592
+.cc_top cc_593,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel99
+.cc_bottom cc_593
+.cc_top cc_594,.Lxtalabel270
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel270
+.cc_bottom cc_594
+.cc_top cc_595,.Lxtalabel98
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
 	.long	.Lxtalabel98
+.cc_bottom cc_595
+.cc_top cc_596,.Lxtalabel224
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel224
+.cc_bottom cc_596
+.cc_top cc_597,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel58
+.cc_bottom cc_597
+.cc_top cc_598,.Lxtalabel139
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel139
+.cc_bottom cc_598
+.cc_top cc_599,.Lxtalabel405
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	310
+	.long	311
+	.long	.Lxtalabel405
 .cc_bottom cc_599
 .cc_top cc_600,.Lxtalabel406
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
 	.long	.Lxtalabel406
 .cc_bottom cc_600
-.cc_top cc_601,.Lxtalabel360
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_601,.Lxtalabel269
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
-	.long	.Lxtalabel360
+	.long	.Lxtalabel269
 .cc_bottom cc_601
-.cc_top cc_602,.Lxtalabel269
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_602,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	310
 	.long	311
-	.long	.Lxtalabel269
-.cc_bottom cc_602
-.cc_top cc_603,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel58
-.cc_bottom cc_603
-.cc_top cc_604,.Lxtalabel270
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel270
-.cc_bottom cc_604
-.cc_top cc_605,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel59
-.cc_bottom cc_605
-.cc_top cc_606,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel18
-.cc_bottom cc_606
-.cc_top cc_607,.Lxtalabel360
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel360
-.cc_bottom cc_607
-.cc_top cc_608,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel99
-.cc_bottom cc_608
-.cc_top cc_609,.Lxtalabel314
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel314
-.cc_bottom cc_609
-.cc_top cc_610,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
 	.long	.Lxtalabel19
-.cc_bottom cc_610
-.cc_top cc_611,.Lxtalabel138
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel138
-.cc_bottom cc_611
-.cc_top cc_612,.Lxtalabel405
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel405
-.cc_bottom cc_612
-.cc_top cc_613,.Lxtalabel269
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel269
-.cc_bottom cc_613
-.cc_top cc_614,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel98
-.cc_bottom cc_614
-.cc_top cc_615,.Lxtalabel406
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel406
-.cc_bottom cc_615
-.cc_top cc_616,.Lxtalabel315
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_602
+.cc_top cc_603,.Lxtalabel315
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	313
 	.long	315
 	.long	.Lxtalabel315
-.cc_bottom cc_616
-.cc_top cc_617,.Lxtalabel359
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_603
+.cc_top cc_604,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	313
 	.long	315
-	.long	.Lxtalabel359
-.cc_bottom cc_617
-.cc_top cc_618,.Lxtalabel224
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	313
-	.long	315
-	.long	.Lxtalabel224
-.cc_bottom cc_618
-.cc_top cc_619,.Lxtalabel225
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel58
+.cc_bottom cc_604
+.cc_top cc_605,.Lxtalabel225
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	313
 	.long	315
 	.long	.Lxtalabel225
-.cc_bottom cc_619
-.cc_top cc_620,.Lxtalabel139
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_605
+.cc_top cc_606,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel99
+.cc_bottom cc_606
+.cc_top cc_607,.Lxtalabel270
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel270
+.cc_bottom cc_607
+.cc_top cc_608,.Lxtalabel359
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel359
+.cc_bottom cc_608
+.cc_top cc_609,.Lxtalabel269
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel269
+.cc_bottom cc_609
+.cc_top cc_610,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel59
+.cc_bottom cc_610
+.cc_top cc_611,.Lxtalabel139
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	313
 	.long	315
 	.long	.Lxtalabel139
-.cc_bottom cc_620
-.cc_top cc_621,.Lxtalabel139
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_611
+.cc_top cc_612,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel139
-.cc_bottom cc_621
-.cc_top cc_622,.Lxtalabel224
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	313
+	.long	315
+	.long	.Lxtalabel19
+.cc_bottom cc_612
+.cc_top cc_613,.Lxtalabel314
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel224
-.cc_bottom cc_622
-.cc_top cc_623,.Lxtalabel270
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	313
+	.long	315
+	.long	.Lxtalabel314
+.cc_bottom cc_613
+.cc_top cc_614,.Lxtalabel360
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel270
-.cc_bottom cc_623
-.cc_top cc_624,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	313
+	.long	315
+	.long	.Lxtalabel360
+.cc_bottom cc_614
+.cc_top cc_615,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	316
-	.long	316
+	.long	313
+	.long	315
 	.long	.Lxtalabel18
+.cc_bottom cc_615
+.cc_top cc_616,.Lxtalabel138
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel138
+.cc_bottom cc_616
+.cc_top cc_617,.Lxtalabel98
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel98
+.cc_bottom cc_617
+.cc_top cc_618,.Lxtalabel406
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel406
+.cc_bottom cc_618
+.cc_top cc_619,.Lxtalabel405
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel405
+.cc_bottom cc_619
+.cc_top cc_620,.Lxtalabel224
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	313
+	.long	315
+	.long	.Lxtalabel224
+.cc_bottom cc_620
+.cc_top cc_621,.Lxtalabel314
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel314
+.cc_bottom cc_621
+.cc_top cc_622,.Lxtalabel315
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel315
+.cc_bottom cc_622
+.cc_top cc_623,.Lxtalabel359
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel359
+.cc_bottom cc_623
+.cc_top cc_624,.Lxtalabel360
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel360
 .cc_bottom cc_624
 .cc_top cc_625,.Lxtalabel405
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	316
 	.long	316
 	.long	.Lxtalabel405
 .cc_bottom cc_625
-.cc_top cc_626,.Lxtalabel225
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_626,.Lxtalabel406
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	316
 	.long	316
-	.long	.Lxtalabel225
+	.long	.Lxtalabel406
 .cc_bottom cc_626
-.cc_top cc_627,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_627,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	316
 	.long	316
-	.long	.Lxtalabel59
+	.long	.Lxtalabel18
 .cc_bottom cc_627
 .cc_top cc_628,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	316
 	.long	316
 	.long	.Lxtalabel19
 .cc_bottom cc_628
-.cc_top cc_629,.Lxtalabel269
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel269
-.cc_bottom cc_629
-.cc_top cc_630,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel99
-.cc_bottom cc_630
-.cc_top cc_631,.Lxtalabel406
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel406
-.cc_bottom cc_631
-.cc_top cc_632,.Lxtalabel359
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel359
-.cc_bottom cc_632
-.cc_top cc_633,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel98
-.cc_bottom cc_633
-.cc_top cc_634,.Lxtalabel360
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel360
-.cc_bottom cc_634
-.cc_top cc_635,.Lxtalabel315
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel315
-.cc_bottom cc_635
-.cc_top cc_636,.Lxtalabel314
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel314
-.cc_bottom cc_636
-.cc_top cc_637,.Lxtalabel138
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	316
-	.long	316
-	.long	.Lxtalabel138
-.cc_bottom cc_637
-.cc_top cc_638,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_629,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	316
 	.long	316
 	.long	.Lxtalabel58
+.cc_bottom cc_629
+.cc_top cc_630,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel59
+.cc_bottom cc_630
+.cc_top cc_631,.Lxtalabel98
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel98
+.cc_bottom cc_631
+.cc_top cc_632,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel99
+.cc_bottom cc_632
+.cc_top cc_633,.Lxtalabel138
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel138
+.cc_bottom cc_633
+.cc_top cc_634,.Lxtalabel139
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel139
+.cc_bottom cc_634
+.cc_top cc_635,.Lxtalabel269
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel269
+.cc_bottom cc_635
+.cc_top cc_636,.Lxtalabel224
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel224
+.cc_bottom cc_636
+.cc_top cc_637,.Lxtalabel225
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel225
+.cc_bottom cc_637
+.cc_top cc_638,.Lxtalabel270
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	316
+	.long	316
+	.long	.Lxtalabel270
 .cc_bottom cc_638
 .cc_top cc_639,.Lxtalabel60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	318
 	.long	320
 	.long	.Lxtalabel60
 .cc_bottom cc_639
-.cc_top cc_640,.Lxtalabel361
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_640,.Lxtalabel140
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	318
+	.long	320
+	.long	.Lxtalabel140
+.cc_bottom cc_640
+.cc_top cc_641,.Lxtalabel361
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	318
 	.long	320
 	.long	.Lxtalabel361
-.cc_bottom cc_640
-.cc_top cc_641,.Lxtalabel226
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	318
-	.long	320
-	.long	.Lxtalabel226
 .cc_bottom cc_641
-.cc_top cc_642,.Lxtalabel100
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_642,.Lxtalabel271
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	318
 	.long	320
-	.long	.Lxtalabel100
+	.long	.Lxtalabel271
 .cc_bottom cc_642
 .cc_top cc_643,.Lxtalabel20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	318
 	.long	320
 	.long	.Lxtalabel20
 .cc_bottom cc_643
-.cc_top cc_644,.Lxtalabel316
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	318
-	.long	320
-	.long	.Lxtalabel316
-.cc_bottom cc_644
-.cc_top cc_645,.Lxtalabel140
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	318
-	.long	320
-	.long	.Lxtalabel140
-.cc_bottom cc_645
-.cc_top cc_646,.Lxtalabel271
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	318
-	.long	320
-	.long	.Lxtalabel271
-.cc_bottom cc_646
-.cc_top cc_647,.Lxtalabel407
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_644,.Lxtalabel407
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	318
 	.long	320
 	.long	.Lxtalabel407
+.cc_bottom cc_644
+.cc_top cc_645,.Lxtalabel100
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	318
+	.long	320
+	.long	.Lxtalabel100
+.cc_bottom cc_645
+.cc_top cc_646,.Lxtalabel316
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	318
+	.long	320
+	.long	.Lxtalabel316
+.cc_bottom cc_646
+.cc_top cc_647,.Lxtalabel226
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	318
+	.long	320
+	.long	.Lxtalabel226
 .cc_bottom cc_647
-.cc_top cc_648,.Lxtalabel315
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_648,.Lxtalabel359
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	321
 	.long	322
-	.long	.Lxtalabel315
+	.long	.Lxtalabel359
 .cc_bottom cc_648
-.cc_top cc_649,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel98
-.cc_bottom cc_649
-.cc_top cc_650,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_649,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	321
 	.long	322
 	.long	.Lxtalabel59
+.cc_bottom cc_649
+.cc_top cc_650,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel18
 .cc_bottom cc_650
 .cc_top cc_651,.Lxtalabel406
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	321
 	.long	322
 	.long	.Lxtalabel406
 .cc_bottom cc_651
-.cc_top cc_652,.Lxtalabel270
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel270
-.cc_bottom cc_652
-.cc_top cc_653,.Lxtalabel225
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel225
-.cc_bottom cc_653
-.cc_top cc_654,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel58
-.cc_bottom cc_654
-.cc_top cc_655,.Lxtalabel359
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel359
-.cc_bottom cc_655
-.cc_top cc_656,.Lxtalabel224
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel224
-.cc_bottom cc_656
-.cc_top cc_657,.Lxtalabel405
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel405
-.cc_bottom cc_657
-.cc_top cc_658,.Lxtalabel139
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel139
-.cc_bottom cc_658
-.cc_top cc_659,.Lxtalabel360
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel360
-.cc_bottom cc_659
-.cc_top cc_660,.Lxtalabel269
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel269
-.cc_bottom cc_660
-.cc_top cc_661,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel18
-.cc_bottom cc_661
-.cc_top cc_662,.Lxtalabel314
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel314
-.cc_bottom cc_662
-.cc_top cc_663,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	321
-	.long	322
-	.long	.Lxtalabel99
-.cc_bottom cc_663
-.cc_top cc_664,.Lxtalabel138
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_652,.Lxtalabel138
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	321
 	.long	322
 	.long	.Lxtalabel138
-.cc_bottom cc_664
-.cc_top cc_665,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_652
+.cc_top cc_653,.Lxtalabel224
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel224
+.cc_bottom cc_653
+.cc_top cc_654,.Lxtalabel315
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel315
+.cc_bottom cc_654
+.cc_top cc_655,.Lxtalabel314
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel314
+.cc_bottom cc_655
+.cc_top cc_656,.Lxtalabel360
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel360
+.cc_bottom cc_656
+.cc_top cc_657,.Lxtalabel225
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel225
+.cc_bottom cc_657
+.cc_top cc_658,.Lxtalabel270
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel270
+.cc_bottom cc_658
+.cc_top cc_659,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	321
 	.long	322
 	.long	.Lxtalabel19
+.cc_bottom cc_659
+.cc_top cc_660,.Lxtalabel405
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel405
+.cc_bottom cc_660
+.cc_top cc_661,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel58
+.cc_bottom cc_661
+.cc_top cc_662,.Lxtalabel98
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel98
+.cc_bottom cc_662
+.cc_top cc_663,.Lxtalabel139
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel139
+.cc_bottom cc_663
+.cc_top cc_664,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel99
+.cc_bottom cc_664
+.cc_top cc_665,.Lxtalabel269
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	321
+	.long	322
+	.long	.Lxtalabel269
 .cc_bottom cc_665
 .cc_top cc_666,.Lxtalabel362
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	324
 	.long	325
 	.long	.Lxtalabel362
 .cc_bottom cc_666
-.cc_top cc_667,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	324
-	.long	325
-	.long	.Lxtalabel101
-.cc_bottom cc_667
-.cc_top cc_668,.Lxtalabel141
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	324
-	.long	325
-	.long	.Lxtalabel141
-.cc_bottom cc_668
-.cc_top cc_669,.Lxtalabel21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	324
-	.long	325
-	.long	.Lxtalabel21
-.cc_bottom cc_669
-.cc_top cc_670,.Lxtalabel272
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	324
-	.long	325
-	.long	.Lxtalabel272
-.cc_bottom cc_670
-.cc_top cc_671,.Lxtalabel61
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	324
-	.long	325
-	.long	.Lxtalabel61
-.cc_bottom cc_671
-.cc_top cc_672,.Lxtalabel317
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	324
-	.long	325
-	.long	.Lxtalabel317
-.cc_bottom cc_672
-.cc_top cc_673,.Lxtalabel227
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_667,.Lxtalabel227
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	324
 	.long	325
 	.long	.Lxtalabel227
-.cc_bottom cc_673
-.cc_top cc_674,.Lxtalabel408
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_667
+.cc_top cc_668,.Lxtalabel317
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	324
+	.long	325
+	.long	.Lxtalabel317
+.cc_bottom cc_668
+.cc_top cc_669,.Lxtalabel272
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	324
+	.long	325
+	.long	.Lxtalabel272
+.cc_bottom cc_669
+.cc_top cc_670,.Lxtalabel101
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	324
+	.long	325
+	.long	.Lxtalabel101
+.cc_bottom cc_670
+.cc_top cc_671,.Lxtalabel408
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	324
 	.long	325
 	.long	.Lxtalabel408
+.cc_bottom cc_671
+.cc_top cc_672,.Lxtalabel61
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	324
+	.long	325
+	.long	.Lxtalabel61
+.cc_bottom cc_672
+.cc_top cc_673,.Lxtalabel21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	324
+	.long	325
+	.long	.Lxtalabel21
+.cc_bottom cc_673
+.cc_top cc_674,.Lxtalabel141
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	324
+	.long	325
+	.long	.Lxtalabel141
 .cc_bottom cc_674
-.cc_top cc_675,.Lxtalabel364
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_675,.Lxtalabel23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	328
 	.long	331
-	.long	.Lxtalabel364
+	.long	.Lxtalabel23
 .cc_bottom cc_675
-.cc_top cc_676,.Lxtalabel143
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	328
-	.long	331
-	.long	.Lxtalabel143
-.cc_bottom cc_676
-.cc_top cc_677,.Lxtalabel229
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	328
-	.long	331
-	.long	.Lxtalabel229
-.cc_bottom cc_677
-.cc_top cc_678,.Lxtalabel63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	328
-	.long	331
-	.long	.Lxtalabel63
-.cc_bottom cc_678
-.cc_top cc_679,.Lxtalabel274
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	328
-	.long	331
-	.long	.Lxtalabel274
-.cc_bottom cc_679
-.cc_top cc_680,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_676,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	328
 	.long	331
 	.long	.Lxtalabel103
+.cc_bottom cc_676
+.cc_top cc_677,.Lxtalabel274
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	328
+	.long	331
+	.long	.Lxtalabel274
+.cc_bottom cc_677
+.cc_top cc_678,.Lxtalabel410
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	328
+	.long	331
+	.long	.Lxtalabel410
+.cc_bottom cc_678
+.cc_top cc_679,.Lxtalabel143
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	328
+	.long	331
+	.long	.Lxtalabel143
+.cc_bottom cc_679
+.cc_top cc_680,.Lxtalabel364
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	328
+	.long	331
+	.long	.Lxtalabel364
 .cc_bottom cc_680
 .cc_top cc_681,.Lxtalabel319
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	328
 	.long	331
 	.long	.Lxtalabel319
 .cc_bottom cc_681
-.cc_top cc_682,.Lxtalabel410
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_682,.Lxtalabel229
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	328
 	.long	331
-	.long	.Lxtalabel410
+	.long	.Lxtalabel229
 .cc_bottom cc_682
-.cc_top cc_683,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_683,.Lxtalabel63
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	328
 	.long	331
-	.long	.Lxtalabel23
+	.long	.Lxtalabel63
 .cc_bottom cc_683
 .cc_top cc_684,.Lxtalabel193
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	335
 	.long	337
 	.long	.Lxtalabel193
 .cc_bottom cc_684
 .cc_top cc_685,.Lxtalabel193
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	339
 	.long	340
 	.long	.Lxtalabel193
 .cc_bottom cc_685
 .cc_top cc_686,.Lxtalabel193
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	343
 	.long	343
 	.long	.Lxtalabel193
 .cc_bottom cc_686
 .cc_top cc_687,.Lxtalabel194
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	344
 	.long	349
 	.long	.Lxtalabel194
 .cc_bottom cc_687
-.cc_top cc_688,.Lxtalabel195
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	351
-	.long	353
-	.long	.Lxtalabel195
-.cc_bottom cc_688
-.cc_top cc_689,.Lxtalabel199
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	351
-	.long	353
-	.long	.Lxtalabel199
-.cc_bottom cc_689
-.cc_top cc_690,.Lxtalabel196
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_688,.Lxtalabel196
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	351
 	.long	353
 	.long	.Lxtalabel196
+.cc_bottom cc_688
+.cc_top cc_689,.Lxtalabel195
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	351
+	.long	353
+	.long	.Lxtalabel195
+.cc_bottom cc_689
+.cc_top cc_690,.Lxtalabel199
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	351
+	.long	353
+	.long	.Lxtalabel199
 .cc_bottom cc_690
 .cc_top cc_691,.Lxtalabel199
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	354
 	.long	354
 	.long	.Lxtalabel199
 .cc_bottom cc_691
-.cc_top cc_692,.Lxtalabel196
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	354
-	.long	354
-	.long	.Lxtalabel196
-.cc_bottom cc_692
-.cc_top cc_693,.Lxtalabel195
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_692,.Lxtalabel195
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	354
 	.long	354
 	.long	.Lxtalabel195
+.cc_bottom cc_692
+.cc_top cc_693,.Lxtalabel196
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	354
+	.long	354
+	.long	.Lxtalabel196
 .cc_bottom cc_693
 .cc_top cc_694,.Lxtalabel200
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	355
 	.long	355
 	.long	.Lxtalabel200
 .cc_bottom cc_694
 .cc_top cc_695,.Lxtalabel200
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	357
 	.long	358
 	.long	.Lxtalabel200
 .cc_bottom cc_695
 .cc_top cc_696,.Lxtalabel200
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	359
 	.long	362
 	.long	.Lxtalabel200
 .cc_bottom cc_696
 .cc_top cc_697,.Lxtalabel200
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	363
 	.long	366
 	.long	.Lxtalabel200
 .cc_bottom cc_697
-.cc_top cc_698,.Lxtalabel199
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	369
-	.long	369
-	.long	.Lxtalabel199
-.cc_bottom cc_698
-.cc_top cc_699,.Lxtalabel196
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	369
-	.long	369
-	.long	.Lxtalabel196
-.cc_bottom cc_699
-.cc_top cc_700,.Lxtalabel195
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_698,.Lxtalabel195
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	369
 	.long	369
 	.long	.Lxtalabel195
+.cc_bottom cc_698
+.cc_top cc_699,.Lxtalabel199
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	369
+	.long	369
+	.long	.Lxtalabel199
+.cc_bottom cc_699
+.cc_top cc_700,.Lxtalabel196
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	369
+	.long	369
+	.long	.Lxtalabel196
 .cc_bottom cc_700
 .cc_top cc_701,.Lxtalabel201
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	381
 	.long	384
 	.long	.Lxtalabel201
 .cc_bottom cc_701
 .cc_top cc_702,.Lxtalabel197
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	386
 	.long	386
 	.long	.Lxtalabel197
 .cc_bottom cc_702
 .cc_top cc_703,.Lxtalabel197
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	387
 	.long	389
 	.long	.Lxtalabel197
 .cc_bottom cc_703
-.cc_top cc_704,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_704,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
-	.long	.Lxtalabel24
+	.long	.Lxtalabel275
 .cc_bottom cc_704
-.cc_top cc_705,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	395
-	.long	396
-	.long	.Lxtalabel365
-.cc_bottom cc_705
-.cc_top cc_706,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_705,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
 	.long	.Lxtalabel144
-.cc_bottom cc_706
-.cc_top cc_707,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_705
+.cc_top cc_706,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
 	.long	.Lxtalabel64
-.cc_bottom cc_707
-.cc_top cc_708,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_706
+.cc_top cc_707,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
-	.long	.Lxtalabel320
+	.long	.Lxtalabel104
+.cc_bottom cc_707
+.cc_top cc_708,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	395
+	.long	396
+	.long	.Lxtalabel230
 .cc_bottom cc_708
 .cc_top cc_709,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
 	.long	.Lxtalabel411
 .cc_bottom cc_709
-.cc_top cc_710,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_710,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
-	.long	.Lxtalabel275
+	.long	.Lxtalabel365
 .cc_bottom cc_710
-.cc_top cc_711,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_711,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
-	.long	.Lxtalabel104
+	.long	.Lxtalabel24
 .cc_bottom cc_711
-.cc_top cc_712,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_712,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	395
 	.long	396
-	.long	.Lxtalabel230
-.cc_bottom cc_712
-.cc_top cc_713,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	398
-	.long	398
-	.long	.Lxtalabel144
-.cc_bottom cc_713
-.cc_top cc_714,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	398
-	.long	398
 	.long	.Lxtalabel320
-.cc_bottom cc_714
-.cc_top cc_715,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_712
+.cc_top cc_713,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	398
 	.long	398
 	.long	.Lxtalabel64
+.cc_bottom cc_713
+.cc_top cc_714,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	398
+	.long	398
+	.long	.Lxtalabel144
+.cc_bottom cc_714
+.cc_top cc_715,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	398
+	.long	398
+	.long	.Lxtalabel230
 .cc_bottom cc_715
-.cc_top cc_716,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_716,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	398
 	.long	398
-	.long	.Lxtalabel24
+	.long	.Lxtalabel104
 .cc_bottom cc_716
-.cc_top cc_717,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_717,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	398
 	.long	398
-	.long	.Lxtalabel411
+	.long	.Lxtalabel320
 .cc_bottom cc_717
 .cc_top cc_718,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	398
 	.long	398
 	.long	.Lxtalabel275
 .cc_bottom cc_718
-.cc_top cc_719,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_719,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	398
+	.long	398
+	.long	.Lxtalabel24
+.cc_bottom cc_719
+.cc_top cc_720,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	398
 	.long	398
 	.long	.Lxtalabel365
-.cc_bottom cc_719
-.cc_top cc_720,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	398
-	.long	398
-	.long	.Lxtalabel104
 .cc_bottom cc_720
-.cc_top cc_721,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_721,.Lxtalabel411
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	398
 	.long	398
-	.long	.Lxtalabel230
+	.long	.Lxtalabel411
 .cc_bottom cc_721
-.cc_top cc_722,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_722,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	400
+	.long	400
+	.long	.Lxtalabel230
+.cc_bottom cc_722
+.cc_top cc_723,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	400
+	.long	400
+	.long	.Lxtalabel104
+.cc_bottom cc_723
+.cc_top cc_724,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
 	.long	.Lxtalabel24
-.cc_bottom cc_722
-.cc_top cc_723,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_724
+.cc_top cc_725,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
 	.long	.Lxtalabel144
-.cc_bottom cc_723
-.cc_top cc_724,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_725
+.cc_top cc_726,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
-	.long	.Lxtalabel104
-.cc_bottom cc_724
-.cc_top cc_725,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel320
+.cc_bottom cc_726
+.cc_top cc_727,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
 	.long	.Lxtalabel275
-.cc_bottom cc_725
-.cc_top cc_726,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	400
-	.long	400
-	.long	.Lxtalabel230
-.cc_bottom cc_726
-.cc_top cc_727,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	400
-	.long	400
-	.long	.Lxtalabel365
 .cc_bottom cc_727
 .cc_top cc_728,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
 	.long	.Lxtalabel64
 .cc_bottom cc_728
-.cc_top cc_729,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_729,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
-	.long	.Lxtalabel320
+	.long	.Lxtalabel365
 .cc_bottom cc_729
 .cc_top cc_730,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	400
 	.long	400
 	.long	.Lxtalabel411
 .cc_bottom cc_730
-.cc_top cc_731,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	402
-	.long	403
-	.long	.Lxtalabel24
-.cc_bottom cc_731
-.cc_top cc_732,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	402
-	.long	403
-	.long	.Lxtalabel64
-.cc_bottom cc_732
-.cc_top cc_733,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_731,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	402
 	.long	403
 	.long	.Lxtalabel320
+.cc_bottom cc_731
+.cc_top cc_732,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	402
+	.long	403
+	.long	.Lxtalabel230
+.cc_bottom cc_732
+.cc_top cc_733,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	402
+	.long	403
+	.long	.Lxtalabel104
 .cc_bottom cc_733
 .cc_top cc_734,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	402
 	.long	403
 	.long	.Lxtalabel411
 .cc_bottom cc_734
-.cc_top cc_735,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_735,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	402
+	.long	403
+	.long	.Lxtalabel275
+.cc_bottom cc_735
+.cc_top cc_736,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	402
 	.long	403
 	.long	.Lxtalabel144
-.cc_bottom cc_735
-.cc_top cc_736,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	402
-	.long	403
-	.long	.Lxtalabel230
 .cc_bottom cc_736
 .cc_top cc_737,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	402
 	.long	403
 	.long	.Lxtalabel365
 .cc_bottom cc_737
-.cc_top cc_738,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_738,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	402
 	.long	403
-	.long	.Lxtalabel275
-.cc_bottom cc_738
-.cc_top cc_739,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	402
-	.long	403
-	.long	.Lxtalabel104
-.cc_bottom cc_739
-.cc_top cc_740,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	405
-	.long	406
-	.long	.Lxtalabel230
-.cc_bottom cc_740
-.cc_top cc_741,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	405
-	.long	406
-	.long	.Lxtalabel104
-.cc_bottom cc_741
-.cc_top cc_742,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	405
-	.long	406
-	.long	.Lxtalabel24
-.cc_bottom cc_742
-.cc_top cc_743,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	405
-	.long	406
-	.long	.Lxtalabel411
-.cc_bottom cc_743
-.cc_top cc_744,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	405
-	.long	406
 	.long	.Lxtalabel64
-.cc_bottom cc_744
-.cc_top cc_745,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_738
+.cc_top cc_739,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	405
-	.long	406
-	.long	.Lxtalabel365
-.cc_bottom cc_745
-.cc_top cc_746,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	402
+	.long	403
+	.long	.Lxtalabel24
+.cc_bottom cc_739
+.cc_top cc_740,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	405
 	.long	406
 	.long	.Lxtalabel320
-.cc_bottom cc_746
-.cc_top cc_747,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_740
+.cc_top cc_741,.Lxtalabel411
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	405
 	.long	406
-	.long	.Lxtalabel275
-.cc_bottom cc_747
-.cc_top cc_748,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel411
+.cc_bottom cc_741
+.cc_top cc_742,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	405
 	.long	406
 	.long	.Lxtalabel144
+.cc_bottom cc_742
+.cc_top cc_743,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	405
+	.long	406
+	.long	.Lxtalabel275
+.cc_bottom cc_743
+.cc_top cc_744,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	405
+	.long	406
+	.long	.Lxtalabel230
+.cc_bottom cc_744
+.cc_top cc_745,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	405
+	.long	406
+	.long	.Lxtalabel64
+.cc_bottom cc_745
+.cc_top cc_746,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	405
+	.long	406
+	.long	.Lxtalabel104
+.cc_bottom cc_746
+.cc_top cc_747,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	405
+	.long	406
+	.long	.Lxtalabel24
+.cc_bottom cc_747
+.cc_top cc_748,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	405
+	.long	406
+	.long	.Lxtalabel365
 .cc_bottom cc_748
 .cc_top cc_749,.Lxtalabel202
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	427
 	.long	428
 	.long	.Lxtalabel202
 .cc_bottom cc_749
-.cc_top cc_750,.Lxtalabel428
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	427
-	.long	428
-	.long	.Lxtalabel428
-.cc_bottom cc_750
-.cc_top cc_751,.Lxtalabel383
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_750,.Lxtalabel383
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	427
 	.long	428
 	.long	.Lxtalabel383
-.cc_bottom cc_751
-.cc_top cc_752,.Lxtalabel247
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_750
+.cc_top cc_751,.Lxtalabel247
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	427
 	.long	428
 	.long	.Lxtalabel247
+.cc_bottom cc_751
+.cc_top cc_752,.Lxtalabel428
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	427
+	.long	428
+	.long	.Lxtalabel428
 .cc_bottom cc_752
-.cc_top cc_753,.Lxtalabel248
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	435
-	.long	439
-	.long	.Lxtalabel248
-.cc_bottom cc_753
-.cc_top cc_754,.Lxtalabel385
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	435
-	.long	439
-	.long	.Lxtalabel385
-.cc_bottom cc_754
-.cc_top cc_755,.Lxtalabel338
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	435
-	.long	439
-	.long	.Lxtalabel338
-.cc_bottom cc_755
-.cc_top cc_756,.Lxtalabel204
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_753,.Lxtalabel204
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	435
 	.long	439
 	.long	.Lxtalabel204
-.cc_bottom cc_756
-.cc_top cc_757,.Lxtalabel293
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_753
+.cc_top cc_754,.Lxtalabel338
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	435
+	.long	439
+	.long	.Lxtalabel338
+.cc_bottom cc_754
+.cc_top cc_755,.Lxtalabel293
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	435
 	.long	439
 	.long	.Lxtalabel293
+.cc_bottom cc_755
+.cc_top cc_756,.Lxtalabel385
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	435
+	.long	439
+	.long	.Lxtalabel385
+.cc_bottom cc_756
+.cc_top cc_757,.Lxtalabel248
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	435
+	.long	439
+	.long	.Lxtalabel248
 .cc_bottom cc_757
-.cc_top cc_758,.Lxtalabel385
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_758,.Lxtalabel248
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	442
 	.long	444
-	.long	.Lxtalabel385
+	.long	.Lxtalabel248
 .cc_bottom cc_758
 .cc_top cc_759,.Lxtalabel338
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	442
 	.long	444
 	.long	.Lxtalabel338
 .cc_bottom cc_759
-.cc_top cc_760,.Lxtalabel204
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_760,.Lxtalabel385
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	442
 	.long	444
-	.long	.Lxtalabel204
+	.long	.Lxtalabel385
 .cc_bottom cc_760
 .cc_top cc_761,.Lxtalabel293
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	442
 	.long	444
 	.long	.Lxtalabel293
 .cc_bottom cc_761
-.cc_top cc_762,.Lxtalabel248
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_762,.Lxtalabel204
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	442
 	.long	444
-	.long	.Lxtalabel248
+	.long	.Lxtalabel204
 .cc_bottom cc_762
-.cc_top cc_763,.Lxtalabel342
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_763,.Lxtalabel389
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	445
 	.long	448
-	.long	.Lxtalabel342
+	.long	.Lxtalabel389
 .cc_bottom cc_763
-.cc_top cc_764,.Lxtalabel297
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_764,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	445
 	.long	448
-	.long	.Lxtalabel297
+	.long	.Lxtalabel3
 .cc_bottom cc_764
-.cc_top cc_765,.Lxtalabel123
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	445
-	.long	448
-	.long	.Lxtalabel123
-.cc_bottom cc_765
-.cc_top cc_766,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_765,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	445
 	.long	448
 	.long	.Lxtalabel43
-.cc_bottom cc_766
-.cc_top cc_767,.Lxtalabel389
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	445
-	.long	448
-	.long	.Lxtalabel389
-.cc_bottom cc_767
-.cc_top cc_768,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	445
-	.long	448
-	.long	.Lxtalabel83
-.cc_bottom cc_768
-.cc_top cc_769,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	445
-	.long	448
-	.long	.Lxtalabel3
-.cc_bottom cc_769
-.cc_top cc_770,.Lxtalabel252
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_765
+.cc_top cc_766,.Lxtalabel252
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	445
 	.long	448
 	.long	.Lxtalabel252
-.cc_bottom cc_770
-.cc_top cc_771,.Lxtalabel208
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_766
+.cc_top cc_767,.Lxtalabel342
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	445
+	.long	448
+	.long	.Lxtalabel342
+.cc_bottom cc_767
+.cc_top cc_768,.Lxtalabel208
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	445
 	.long	448
 	.long	.Lxtalabel208
-.cc_bottom cc_771
-.cc_top cc_772,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_768
+.cc_top cc_769,.Lxtalabel83
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	450
-	.long	450
-	.long	.Lxtalabel3
-.cc_bottom cc_772
-.cc_top cc_773,.Lxtalabel342
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	445
+	.long	448
+	.long	.Lxtalabel83
+.cc_bottom cc_769
+.cc_top cc_770,.Lxtalabel123
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	450
-	.long	450
-	.long	.Lxtalabel342
-.cc_bottom cc_773
-.cc_top cc_774,.Lxtalabel123
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	450
-	.long	450
+	.long	445
+	.long	448
 	.long	.Lxtalabel123
-.cc_bottom cc_774
-.cc_top cc_775,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_770
+.cc_top cc_771,.Lxtalabel297
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	445
+	.long	448
+	.long	.Lxtalabel297
+.cc_bottom cc_771
+.cc_top cc_772,.Lxtalabel83
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	450
 	.long	450
 	.long	.Lxtalabel83
-.cc_bottom cc_775
-.cc_top cc_776,.Lxtalabel389
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_772
+.cc_top cc_773,.Lxtalabel208
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	450
 	.long	450
-	.long	.Lxtalabel389
+	.long	.Lxtalabel208
+.cc_bottom cc_773
+.cc_top cc_774,.Lxtalabel252
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	450
+	.long	450
+	.long	.Lxtalabel252
+.cc_bottom cc_774
+.cc_top cc_775,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	450
+	.long	450
+	.long	.Lxtalabel3
+.cc_bottom cc_775
+.cc_top cc_776,.Lxtalabel342
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	450
+	.long	450
+	.long	.Lxtalabel342
 .cc_bottom cc_776
 .cc_top cc_777,.Lxtalabel297
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	450
 	.long	450
 	.long	.Lxtalabel297
 .cc_bottom cc_777
-.cc_top cc_778,.Lxtalabel208
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_778,.Lxtalabel123
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	450
 	.long	450
-	.long	.Lxtalabel208
+	.long	.Lxtalabel123
 .cc_bottom cc_778
-.cc_top cc_779,.Lxtalabel252
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_779,.Lxtalabel389
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	450
 	.long	450
-	.long	.Lxtalabel252
+	.long	.Lxtalabel389
 .cc_bottom cc_779
 .cc_top cc_780,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	450
 	.long	450
 	.long	.Lxtalabel43
 .cc_bottom cc_780
-.cc_top cc_781,.Lxtalabel393
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_781,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel393
+	.long	.Lxtalabel2
 .cc_bottom cc_781
-.cc_top cc_782,.Lxtalabel346
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_782,.Lxtalabel388
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel346
+	.long	.Lxtalabel388
 .cc_bottom cc_782
-.cc_top cc_783,.Lxtalabel301
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_783,.Lxtalabel212
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel301
+	.long	.Lxtalabel212
 .cc_bottom cc_783
 .cc_top cc_784,.Lxtalabel304
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel304
 .cc_bottom cc_784
-.cc_top cc_785,.Lxtalabel394
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_785,.Lxtalabel393
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel393
+.cc_bottom cc_785
+.cc_top cc_786,.Lxtalabel394
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel394
-.cc_bottom cc_785
-.cc_top cc_786,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel0
 .cc_bottom cc_786
-.cc_top cc_787,.Lxtalabel296
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_787,.Lxtalabel387
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel296
+	.long	.Lxtalabel387
 .cc_bottom cc_787
-.cc_top cc_788,.Lxtalabel295
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_788,.Lxtalabel207
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel295
+	.long	.Lxtalabel207
 .cc_bottom cc_788
-.cc_top cc_789,.Lxtalabel294
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_789,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel294
+	.long	.Lxtalabel41
 .cc_bottom cc_789
 .cc_top cc_790,.Lxtalabel386
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel386
 .cc_bottom cc_790
-.cc_top cc_791,.Lxtalabel349
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel349
-.cc_bottom cc_791
-.cc_top cc_792,.Lxtalabel388
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel388
-.cc_bottom cc_792
-.cc_top cc_793,.Lxtalabel341
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel341
-.cc_bottom cc_793
-.cc_top cc_794,.Lxtalabel340
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel340
-.cc_bottom cc_794
-.cc_top cc_795,.Lxtalabel339
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel339
-.cc_bottom cc_795
-.cc_top cc_796,.Lxtalabel387
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel387
-.cc_bottom cc_796
-.cc_top cc_797,.Lxtalabel207
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel207
-.cc_bottom cc_797
-.cc_top cc_798,.Lxtalabel259
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel259
-.cc_bottom cc_798
-.cc_top cc_799,.Lxtalabel256
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel256
-.cc_bottom cc_799
-.cc_top cc_800,.Lxtalabel251
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel251
-.cc_bottom cc_800
-.cc_top cc_801,.Lxtalabel250
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel250
-.cc_bottom cc_801
-.cc_top cc_802,.Lxtalabel249
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel249
-.cc_bottom cc_802
-.cc_top cc_803,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel7
-.cc_bottom cc_803
-.cc_top cc_804,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel8
-.cc_bottom cc_804
-.cc_top cc_805,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel42
-.cc_bottom cc_805
-.cc_top cc_806,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel41
-.cc_bottom cc_806
-.cc_top cc_807,.Lxtalabel40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel40
-.cc_bottom cc_807
-.cc_top cc_808,.Lxtalabel213
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel213
-.cc_bottom cc_808
-.cc_top cc_809,.Lxtalabel212
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel212
-.cc_bottom cc_809
-.cc_top cc_810,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel47
-.cc_bottom cc_810
-.cc_top cc_811,.Lxtalabel206
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_791,.Lxtalabel206
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel206
-.cc_bottom cc_811
-.cc_top cc_812,.Lxtalabel205
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_791
+.cc_top cc_792,.Lxtalabel40
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel40
+.cc_bottom cc_792
+.cc_top cc_793,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel42
+.cc_bottom cc_793
+.cc_top cc_794,.Lxtalabel205
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel205
+.cc_bottom cc_794
+.cc_top cc_795,.Lxtalabel213
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel213
+.cc_bottom cc_795
+.cc_top cc_796,.Lxtalabel81
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel81
+.cc_bottom cc_796
+.cc_top cc_797,.Lxtalabel1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel1
+.cc_bottom cc_797
+.cc_top cc_798,.Lxtalabel256
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel256
+.cc_bottom cc_798
+.cc_top cc_799,.Lxtalabel251
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel251
+.cc_bottom cc_799
+.cc_top cc_800,.Lxtalabel8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel8
+.cc_bottom cc_800
+.cc_top cc_801,.Lxtalabel7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel7
+.cc_bottom cc_801
+.cc_top cc_802,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel47
+.cc_bottom cc_802
+.cc_top cc_803,.Lxtalabel48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel48
+.cc_bottom cc_803
+.cc_top cc_804,.Lxtalabel341
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel341
+.cc_bottom cc_804
+.cc_top cc_805,.Lxtalabel0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel0
+.cc_bottom cc_805
+.cc_top cc_806,.Lxtalabel249
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel249
+.cc_bottom cc_806
+.cc_top cc_807,.Lxtalabel250
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel250
+.cc_bottom cc_807
+.cc_top cc_808,.Lxtalabel340
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel340
+.cc_bottom cc_808
+.cc_top cc_809,.Lxtalabel88
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel88
+.cc_bottom cc_809
+.cc_top cc_810,.Lxtalabel87
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel87
+.cc_bottom cc_810
+.cc_top cc_811,.Lxtalabel339
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel339
+.cc_bottom cc_811
+.cc_top cc_812,.Lxtalabel259
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel259
 .cc_bottom cc_812
 .cc_top cc_813,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel80
 .cc_bottom cc_813
-.cc_top cc_814,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel81
-.cc_bottom cc_814
-.cc_top cc_815,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel82
-.cc_bottom cc_815
-.cc_top cc_816,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel87
-.cc_bottom cc_816
-.cc_top cc_817,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel88
-.cc_bottom cc_817
-.cc_top cc_818,.Lxtalabel128
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_814,.Lxtalabel128
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel128
-.cc_bottom cc_818
-.cc_top cc_819,.Lxtalabel127
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_814
+.cc_top cc_815,.Lxtalabel349
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel349
+.cc_bottom cc_815
+.cc_top cc_816,.Lxtalabel127
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel127
-.cc_bottom cc_819
-.cc_top cc_820,.Lxtalabel122
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_816
+.cc_top cc_817,.Lxtalabel346
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel346
+.cc_bottom cc_817
+.cc_top cc_818,.Lxtalabel122
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel122
-.cc_bottom cc_820
-.cc_top cc_821,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_818
+.cc_top cc_819,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel121
+.cc_bottom cc_819
+.cc_top cc_820,.Lxtalabel294
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel294
+.cc_bottom cc_820
+.cc_top cc_821,.Lxtalabel295
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel295
 .cc_bottom cc_821
-.cc_top cc_822,.Lxtalabel120
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_822,.Lxtalabel296
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	451
+	.long	452
+	.long	.Lxtalabel296
+.cc_bottom cc_822
+.cc_top cc_823,.Lxtalabel120
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
 	.long	.Lxtalabel120
-.cc_bottom cc_822
-.cc_top cc_823,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	451
-	.long	452
-	.long	.Lxtalabel48
 .cc_bottom cc_823
-.cc_top cc_824,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_824,.Lxtalabel301
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel1
+	.long	.Lxtalabel301
 .cc_bottom cc_824
-.cc_top cc_825,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_825,.Lxtalabel82
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	451
 	.long	452
-	.long	.Lxtalabel2
+	.long	.Lxtalabel82
 .cc_bottom cc_825
-.cc_top cc_826,.Lxtalabel210
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxtalabel210
-.cc_bottom cc_826
-.cc_top cc_827,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_826,.Lxtalabel45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxtalabel45
+.cc_bottom cc_826
+.cc_top cc_827,.Lxtalabel210
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxtalabel210
 .cc_bottom cc_827
-.cc_top cc_828,.Lxtalabel125
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxtalabel125
-.cc_bottom cc_828
-.cc_top cc_829,.Lxtalabel254
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxtalabel254
-.cc_bottom cc_829
-.cc_top cc_830,.Lxtalabel299
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxtalabel299
-.cc_bottom cc_830
-.cc_top cc_831,.Lxtalabel391
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_828,.Lxtalabel391
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxtalabel391
-.cc_bottom cc_831
-.cc_top cc_832,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_828
+.cc_top cc_829,.Lxtalabel5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxtalabel5
-.cc_bottom cc_832
-.cc_top cc_833,.Lxtalabel344
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_829
+.cc_top cc_830,.Lxtalabel344
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxtalabel344
+.cc_bottom cc_830
+.cc_top cc_831,.Lxtalabel125
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxtalabel125
+.cc_bottom cc_831
+.cc_top cc_832,.Lxtalabel254
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxtalabel254
+.cc_bottom cc_832
+.cc_top cc_833,.Lxtalabel299
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxtalabel299
 .cc_bottom cc_833
 .cc_top cc_834,.Lxtalabel85
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxtalabel85
 .cc_bottom cc_834
-.cc_top cc_835,.Lxtalabel126
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_835,.Lxtalabel211
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	455
-	.long	.Lxtalabel126
+	.long	.Lxtalabel211
 .cc_bottom cc_835
-.cc_top cc_836,.Lxtalabel300
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_836,.Lxtalabel392
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	455
-	.long	.Lxtalabel300
+	.long	.Lxtalabel392
 .cc_bottom cc_836
 .cc_top cc_837,.Lxtalabel345
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	455
 	.long	.Lxtalabel345
 .cc_bottom cc_837
-.cc_top cc_838,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	454
-	.long	455
-	.long	.Lxtalabel46
-.cc_bottom cc_838
-.cc_top cc_839,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	454
-	.long	455
-	.long	.Lxtalabel6
-.cc_bottom cc_839
-.cc_top cc_840,.Lxtalabel211
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	454
-	.long	455
-	.long	.Lxtalabel211
-.cc_bottom cc_840
-.cc_top cc_841,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_838,.Lxtalabel86
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	455
 	.long	.Lxtalabel86
-.cc_bottom cc_841
-.cc_top cc_842,.Lxtalabel392
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_838
+.cc_top cc_839,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	455
-	.long	.Lxtalabel392
-.cc_bottom cc_842
-.cc_top cc_843,.Lxtalabel255
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel46
+.cc_bottom cc_839
+.cc_top cc_840,.Lxtalabel126
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	454
+	.long	455
+	.long	.Lxtalabel126
+.cc_bottom cc_840
+.cc_top cc_841,.Lxtalabel300
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	454
+	.long	455
+	.long	.Lxtalabel300
+.cc_bottom cc_841
+.cc_top cc_842,.Lxtalabel255
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	454
 	.long	455
 	.long	.Lxtalabel255
+.cc_bottom cc_842
+.cc_top cc_843,.Lxtalabel6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	454
+	.long	455
+	.long	.Lxtalabel6
 .cc_bottom cc_843
-.cc_top cc_844,.Lxtalabel392
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_844,.Lxtalabel86
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	457
 	.long	457
-	.long	.Lxtalabel392
+	.long	.Lxtalabel86
 .cc_bottom cc_844
 .cc_top cc_845,.Lxtalabel300
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	457
 	.long	457
 	.long	.Lxtalabel300
 .cc_bottom cc_845
-.cc_top cc_846,.Lxtalabel126
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_846,.Lxtalabel345
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	457
+	.long	457
+	.long	.Lxtalabel345
+.cc_bottom cc_846
+.cc_top cc_847,.Lxtalabel126
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	457
 	.long	457
 	.long	.Lxtalabel126
-.cc_bottom cc_846
-.cc_top cc_847,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	457
-	.long	457
-	.long	.Lxtalabel6
 .cc_bottom cc_847
 .cc_top cc_848,.Lxtalabel211
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	457
 	.long	457
 	.long	.Lxtalabel211
 .cc_bottom cc_848
-.cc_top cc_849,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	457
-	.long	457
-	.long	.Lxtalabel46
-.cc_bottom cc_849
-.cc_top cc_850,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	457
-	.long	457
-	.long	.Lxtalabel86
-.cc_bottom cc_850
-.cc_top cc_851,.Lxtalabel345
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	457
-	.long	457
-	.long	.Lxtalabel345
-.cc_bottom cc_851
-.cc_top cc_852,.Lxtalabel255
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_849,.Lxtalabel255
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	457
 	.long	457
 	.long	.Lxtalabel255
+.cc_bottom cc_849
+.cc_top cc_850,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	457
+	.long	457
+	.long	.Lxtalabel46
+.cc_bottom cc_850
+.cc_top cc_851,.Lxtalabel6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	457
+	.long	457
+	.long	.Lxtalabel6
+.cc_bottom cc_851
+.cc_top cc_852,.Lxtalabel392
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	457
+	.long	457
+	.long	.Lxtalabel392
 .cc_bottom cc_852
-.cc_top cc_853,.Lxtalabel215
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel215
-.cc_bottom cc_853
-.cc_top cc_854,.Lxtalabel130
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel130
-.cc_bottom cc_854
-.cc_top cc_855,.Lxtalabel351
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel351
-.cc_bottom cc_855
-.cc_top cc_856,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel90
-.cc_bottom cc_856
-.cc_top cc_857,.Lxtalabel50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel50
-.cc_bottom cc_857
-.cc_top cc_858,.Lxtalabel306
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel306
-.cc_bottom cc_858
-.cc_top cc_859,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel10
-.cc_bottom cc_859
-.cc_top cc_860,.Lxtalabel396
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	458
-	.long	460
-	.long	.Lxtalabel396
-.cc_bottom cc_860
-.cc_top cc_861,.Lxtalabel261
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_853,.Lxtalabel261
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	458
 	.long	460
 	.long	.Lxtalabel261
+.cc_bottom cc_853
+.cc_top cc_854,.Lxtalabel306
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel306
+.cc_bottom cc_854
+.cc_top cc_855,.Lxtalabel215
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel215
+.cc_bottom cc_855
+.cc_top cc_856,.Lxtalabel396
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel396
+.cc_bottom cc_856
+.cc_top cc_857,.Lxtalabel351
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel351
+.cc_bottom cc_857
+.cc_top cc_858,.Lxtalabel50
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel50
+.cc_bottom cc_858
+.cc_top cc_859,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel90
+.cc_bottom cc_859
+.cc_top cc_860,.Lxtalabel130
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel130
+.cc_bottom cc_860
+.cc_top cc_861,.Lxtalabel10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	458
+	.long	460
+	.long	.Lxtalabel10
 .cc_bottom cc_861
 .cc_top cc_862,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxtalabel51
 .cc_bottom cc_862
-.cc_top cc_863,.Lxtalabel397
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxtalabel397
-.cc_bottom cc_863
-.cc_top cc_864,.Lxtalabel91
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxtalabel91
-.cc_bottom cc_864
-.cc_top cc_865,.Lxtalabel216
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxtalabel216
-.cc_bottom cc_865
-.cc_top cc_866,.Lxtalabel262
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_863,.Lxtalabel262
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxtalabel262
+.cc_bottom cc_863
+.cc_top cc_864,.Lxtalabel307
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxtalabel307
+.cc_bottom cc_864
+.cc_top cc_865,.Lxtalabel397
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxtalabel397
+.cc_bottom cc_865
+.cc_top cc_866,.Lxtalabel11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxtalabel11
 .cc_bottom cc_866
 .cc_top cc_867,.Lxtalabel352
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxtalabel352
 .cc_bottom cc_867
-.cc_top cc_868,.Lxtalabel131
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_868,.Lxtalabel216
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxtalabel216
+.cc_bottom cc_868
+.cc_top cc_869,.Lxtalabel91
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxtalabel91
+.cc_bottom cc_869
+.cc_top cc_870,.Lxtalabel131
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxtalabel131
-.cc_bottom cc_868
-.cc_top cc_869,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxtalabel11
-.cc_bottom cc_869
-.cc_top cc_870,.Lxtalabel307
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxtalabel307
 .cc_bottom cc_870
-.cc_top cc_871,.Lxtalabel354
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel354
-.cc_bottom cc_871
-.cc_top cc_872,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel53
-.cc_bottom cc_872
-.cc_top cc_873,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel52
-.cc_bottom cc_873
-.cc_top cc_874,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel93
-.cc_bottom cc_874
-.cc_top cc_875,.Lxtalabel398
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_871,.Lxtalabel398
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
 	.long	.Lxtalabel398
-.cc_bottom cc_875
-.cc_top cc_876,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel12
-.cc_bottom cc_876
-.cc_top cc_877,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel13
-.cc_bottom cc_877
-.cc_top cc_878,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel133
-.cc_bottom cc_878
-.cc_top cc_879,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel14
-.cc_bottom cc_879
-.cc_top cc_880,.Lxtalabel265
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel265
-.cc_bottom cc_880
-.cc_top cc_881,.Lxtalabel399
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_871
+.cc_top cc_872,.Lxtalabel399
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
 	.long	.Lxtalabel399
-.cc_bottom cc_881
-.cc_top cc_882,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel92
-.cc_bottom cc_882
-.cc_top cc_883,.Lxtalabel264
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel264
-.cc_bottom cc_883
-.cc_top cc_884,.Lxtalabel263
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_872
+.cc_top cc_873,.Lxtalabel263
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
 	.long	.Lxtalabel263
-.cc_bottom cc_884
-.cc_top cc_885,.Lxtalabel353
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel353
-.cc_bottom cc_885
-.cc_top cc_886,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel94
-.cc_bottom cc_886
-.cc_top cc_887,.Lxtalabel217
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel217
-.cc_bottom cc_887
-.cc_top cc_888,.Lxtalabel310
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel310
-.cc_bottom cc_888
-.cc_top cc_889,.Lxtalabel309
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel309
-.cc_bottom cc_889
-.cc_top cc_890,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel134
-.cc_bottom cc_890
-.cc_top cc_891,.Lxtalabel218
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel218
-.cc_bottom cc_891
-.cc_top cc_892,.Lxtalabel219
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel219
-.cc_bottom cc_892
-.cc_top cc_893,.Lxtalabel355
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	465
-	.long	467
-	.long	.Lxtalabel355
-.cc_bottom cc_893
-.cc_top cc_894,.Lxtalabel400
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_873
+.cc_top cc_874,.Lxtalabel400
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
 	.long	.Lxtalabel400
-.cc_bottom cc_894
-.cc_top cc_895,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_874
+.cc_top cc_875,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
-	.long	.Lxtalabel132
-.cc_bottom cc_895
-.cc_top cc_896,.Lxtalabel308
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel133
+.cc_bottom cc_875
+.cc_top cc_876,.Lxtalabel354
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel354
+.cc_bottom cc_876
+.cc_top cc_877,.Lxtalabel353
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel353
+.cc_bottom cc_877
+.cc_top cc_878,.Lxtalabel218
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel218
+.cc_bottom cc_878
+.cc_top cc_879,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel134
+.cc_bottom cc_879
+.cc_top cc_880,.Lxtalabel308
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
 	.long	.Lxtalabel308
-.cc_bottom cc_896
-.cc_top cc_897,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_880
+.cc_top cc_881,.Lxtalabel309
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel309
+.cc_bottom cc_881
+.cc_top cc_882,.Lxtalabel310
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel310
+.cc_bottom cc_882
+.cc_top cc_883,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel93
+.cc_bottom cc_883
+.cc_top cc_884,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel94
+.cc_bottom cc_884
+.cc_top cc_885,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel92
+.cc_bottom cc_885
+.cc_top cc_886,.Lxtalabel265
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel265
+.cc_bottom cc_886
+.cc_top cc_887,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel14
+.cc_bottom cc_887
+.cc_top cc_888,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel13
+.cc_bottom cc_888
+.cc_top cc_889,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel12
+.cc_bottom cc_889
+.cc_top cc_890,.Lxtalabel264
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel264
+.cc_bottom cc_890
+.cc_top cc_891,.Lxtalabel219
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel219
+.cc_bottom cc_891
+.cc_top cc_892,.Lxtalabel217
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel217
+.cc_bottom cc_892
+.cc_top cc_893,.Lxtalabel52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel52
+.cc_bottom cc_893
+.cc_top cc_894,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel53
+.cc_bottom cc_894
+.cc_top cc_895,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	465
 	.long	467
 	.long	.Lxtalabel54
+.cc_bottom cc_895
+.cc_top cc_896,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel132
+.cc_bottom cc_896
+.cc_top cc_897,.Lxtalabel355
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	465
+	.long	467
+	.long	.Lxtalabel355
 .cc_bottom cc_897
 .cc_top cc_898,.Lxtalabel79
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxtalabel79
 .cc_bottom cc_898
-.cc_top cc_899,.Lxtalabel119
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_899,.Lxtalabel382
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
-	.long	.Lxtalabel119
+	.long	.Lxtalabel382
 .cc_bottom cc_899
-.cc_top cc_900,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxtalabel39
-.cc_bottom cc_900
-.cc_top cc_901,.Lxtalabel292
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxtalabel292
-.cc_bottom cc_901
-.cc_top cc_902,.Lxtalabel159
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_900,.Lxtalabel159
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxtalabel159
-.cc_bottom cc_902
-.cc_top cc_903,.Lxtalabel427
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_900
+.cc_top cc_901,.Lxtalabel119
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxtalabel119
+.cc_bottom cc_901
+.cc_top cc_902,.Lxtalabel427
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxtalabel427
+.cc_bottom cc_902
+.cc_top cc_903,.Lxtalabel292
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxtalabel292
 .cc_bottom cc_903
 .cc_top cc_904,.Lxtalabel337
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxtalabel337
 .cc_bottom cc_904
-.cc_top cc_905,.Lxtalabel246
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_905,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxtalabel39
+.cc_bottom cc_905
+.cc_top cc_906,.Lxtalabel246
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxtalabel246
-.cc_bottom cc_905
-.cc_top cc_906,.Lxtalabel382
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxtalabel382
 .cc_bottom cc_906
 .cc_top cc_907,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel56
 .cc_bottom cc_907
-.cc_top cc_908,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_908,.Lxtalabel370
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
-	.long	.Lxtalabel136
+	.long	.Lxtalabel370
 .cc_bottom cc_908
-.cc_top cc_909,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_909,.Lxtalabel223
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel223
+.cc_bottom cc_909
+.cc_top cc_910,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel17
-.cc_bottom cc_909
-.cc_top cc_910,.Lxtalabel357
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel357
 .cc_bottom cc_910
-.cc_top cc_911,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel137
-.cc_bottom cc_911
-.cc_top cc_912,.Lxtalabel402
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel402
-.cc_bottom cc_912
-.cc_top cc_913,.Lxtalabel358
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel358
-.cc_bottom cc_913
-.cc_top cc_914,.Lxtalabel221
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel221
-.cc_bottom cc_914
-.cc_top cc_915,.Lxtalabel403
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel403
-.cc_bottom cc_915
-.cc_top cc_916,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel57
-.cc_bottom cc_916
-.cc_top cc_917,.Lxtalabel267
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel267
-.cc_bottom cc_917
-.cc_top cc_918,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel108
-.cc_bottom cc_918
-.cc_top cc_919,.Lxtalabel370
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel370
-.cc_bottom cc_919
-.cc_top cc_920,.Lxtalabel268
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel268
-.cc_bottom cc_920
-.cc_top cc_921,.Lxtalabel223
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel223
-.cc_bottom cc_921
-.cc_top cc_922,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel97
-.cc_bottom cc_922
-.cc_top cc_923,.Lxtalabel222
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_911,.Lxtalabel222
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel222
-.cc_bottom cc_923
-.cc_top cc_924,.Lxtalabel325
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_911
+.cc_top cc_912,.Lxtalabel325
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel325
-.cc_bottom cc_924
-.cc_top cc_925,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_912
+.cc_top cc_913,.Lxtalabel136
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
-	.long	.Lxtalabel96
-.cc_bottom cc_925
-.cc_top cc_926,.Lxtalabel312
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel136
+.cc_bottom cc_913
+.cc_top cc_914,.Lxtalabel357
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
-	.long	.Lxtalabel312
-.cc_bottom cc_926
-.cc_top cc_927,.Lxtalabel404
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel404
-.cc_bottom cc_927
-.cc_top cc_928,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel68
-.cc_bottom cc_928
-.cc_top cc_929,.Lxtalabel313
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel313
-.cc_bottom cc_929
-.cc_top cc_930,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel28
-.cc_bottom cc_930
-.cc_top cc_931,.Lxtalabel148
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	472
-	.long	473
-	.long	.Lxtalabel148
-.cc_bottom cc_931
-.cc_top cc_932,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel357
+.cc_bottom cc_914
+.cc_top cc_915,.Lxtalabel16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel16
-.cc_bottom cc_932
-.cc_top cc_933,.Lxtalabel280
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_915
+.cc_top cc_916,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel96
+.cc_bottom cc_916
+.cc_top cc_917,.Lxtalabel358
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel358
+.cc_bottom cc_917
+.cc_top cc_918,.Lxtalabel268
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel268
+.cc_bottom cc_918
+.cc_top cc_919,.Lxtalabel221
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel221
+.cc_bottom cc_919
+.cc_top cc_920,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel108
+.cc_bottom cc_920
+.cc_top cc_921,.Lxtalabel267
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel267
+.cc_bottom cc_921
+.cc_top cc_922,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel68
+.cc_bottom cc_922
+.cc_top cc_923,.Lxtalabel28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel28
+.cc_bottom cc_923
+.cc_top cc_924,.Lxtalabel148
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel148
+.cc_bottom cc_924
+.cc_top cc_925,.Lxtalabel312
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel312
+.cc_bottom cc_925
+.cc_top cc_926,.Lxtalabel402
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel402
+.cc_bottom cc_926
+.cc_top cc_927,.Lxtalabel403
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel403
+.cc_bottom cc_927
+.cc_top cc_928,.Lxtalabel404
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	472
+	.long	473
+	.long	.Lxtalabel404
+.cc_bottom cc_928
+.cc_top cc_929,.Lxtalabel280
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	472
 	.long	473
 	.long	.Lxtalabel280
-.cc_bottom cc_933
-.cc_top cc_934,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_929
+.cc_top cc_930,.Lxtalabel137
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel96
-.cc_bottom cc_934
-.cc_top cc_935,.Lxtalabel404
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	472
+	.long	473
+	.long	.Lxtalabel137
+.cc_bottom cc_930
+.cc_top cc_931,.Lxtalabel313
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel404
-.cc_bottom cc_935
-.cc_top cc_936,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	472
+	.long	473
+	.long	.Lxtalabel313
+.cc_bottom cc_931
+.cc_top cc_932,.Lxtalabel57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel108
-.cc_bottom cc_936
-.cc_top cc_937,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel56
-.cc_bottom cc_937
-.cc_top cc_938,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel97
-.cc_bottom cc_938
-.cc_top cc_939,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel68
-.cc_bottom cc_939
-.cc_top cc_940,.Lxtalabel403
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel403
-.cc_bottom cc_940
-.cc_top cc_941,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
+	.long	472
+	.long	473
 	.long	.Lxtalabel57
-.cc_bottom cc_941
-.cc_top cc_942,.Lxtalabel370
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_932
+.cc_top cc_933,.Lxtalabel97
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel370
-.cc_bottom cc_942
-.cc_top cc_943,.Lxtalabel267
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel267
-.cc_bottom cc_943
-.cc_top cc_944,.Lxtalabel223
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	472
+	.long	473
+	.long	.Lxtalabel97
+.cc_bottom cc_933
+.cc_top cc_934,.Lxtalabel223
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel223
-.cc_bottom cc_944
-.cc_top cc_945,.Lxtalabel222
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_934
+.cc_top cc_935,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel108
+.cc_bottom cc_935
+.cc_top cc_936,.Lxtalabel222
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel222
-.cc_bottom cc_945
-.cc_top cc_946,.Lxtalabel221
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_936
+.cc_top cc_937,.Lxtalabel221
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel221
-.cc_bottom cc_946
-.cc_top cc_947,.Lxtalabel268
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_937
+.cc_top cc_938,.Lxtalabel357
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
-	.long	.Lxtalabel268
+	.long	.Lxtalabel357
+.cc_bottom cc_938
+.cc_top cc_939,.Lxtalabel136
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel136
+.cc_bottom cc_939
+.cc_top cc_940,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel68
+.cc_bottom cc_940
+.cc_top cc_941,.Lxtalabel28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel28
+.cc_bottom cc_941
+.cc_top cc_942,.Lxtalabel403
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel403
+.cc_bottom cc_942
+.cc_top cc_943,.Lxtalabel370
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel370
+.cc_bottom cc_943
+.cc_top cc_944,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel17
+.cc_bottom cc_944
+.cc_top cc_945,.Lxtalabel404
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel404
+.cc_bottom cc_945
+.cc_top cc_946,.Lxtalabel97
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel97
+.cc_bottom cc_946
+.cc_top cc_947,.Lxtalabel57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel57
 .cc_bottom cc_947
 .cc_top cc_948,.Lxtalabel312
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel312
 .cc_bottom cc_948
-.cc_top cc_949,.Lxtalabel313
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_949,.Lxtalabel268
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
-	.long	.Lxtalabel313
+	.long	.Lxtalabel268
 .cc_bottom cc_949
-.cc_top cc_950,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_950,.Lxtalabel56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
-	.long	.Lxtalabel17
+	.long	.Lxtalabel56
 .cc_bottom cc_950
-.cc_top cc_951,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel28
-.cc_bottom cc_951
-.cc_top cc_952,.Lxtalabel148
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel148
-.cc_bottom cc_952
-.cc_top cc_953,.Lxtalabel280
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel280
-.cc_bottom cc_953
-.cc_top cc_954,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel16
-.cc_bottom cc_954
-.cc_top cc_955,.Lxtalabel402
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_951,.Lxtalabel402
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel402
-.cc_bottom cc_955
-.cc_top cc_956,.Lxtalabel325
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel325
-.cc_bottom cc_956
-.cc_top cc_957,.Lxtalabel358
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel358
-.cc_bottom cc_957
-.cc_top cc_958,.Lxtalabel357
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	475
-	.long	475
-	.long	.Lxtalabel357
-.cc_bottom cc_958
-.cc_top cc_959,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_951
+.cc_top cc_952,.Lxtalabel137
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
 	.long	.Lxtalabel137
+.cc_bottom cc_952
+.cc_top cc_953,.Lxtalabel16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel16
+.cc_bottom cc_953
+.cc_top cc_954,.Lxtalabel148
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel148
+.cc_bottom cc_954
+.cc_top cc_955,.Lxtalabel267
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel267
+.cc_bottom cc_955
+.cc_top cc_956,.Lxtalabel280
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel280
+.cc_bottom cc_956
+.cc_top cc_957,.Lxtalabel325
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel325
+.cc_bottom cc_957
+.cc_top cc_958,.Lxtalabel358
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel358
+.cc_bottom cc_958
+.cc_top cc_959,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	475
+	.long	475
+	.long	.Lxtalabel96
 .cc_bottom cc_959
-.cc_top cc_960,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_960,.Lxtalabel313
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	475
 	.long	475
-	.long	.Lxtalabel136
+	.long	.Lxtalabel313
 .cc_bottom cc_960
-.cc_top cc_961,.Lxtalabel360
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel360
-.cc_bottom cc_961
-.cc_top cc_962,.Lxtalabel359
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel359
-.cc_bottom cc_962
-.cc_top cc_963,.Lxtalabel138
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel138
-.cc_bottom cc_963
-.cc_top cc_964,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel59
-.cc_bottom cc_964
-.cc_top cc_965,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel58
-.cc_bottom cc_965
-.cc_top cc_966,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel98
-.cc_bottom cc_966
-.cc_top cc_967,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel99
-.cc_bottom cc_967
-.cc_top cc_968,.Lxtalabel224
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_961,.Lxtalabel224
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
 	.long	.Lxtalabel224
-.cc_bottom cc_968
-.cc_top cc_969,.Lxtalabel139
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel139
-.cc_bottom cc_969
-.cc_top cc_970,.Lxtalabel405
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel405
-.cc_bottom cc_970
-.cc_top cc_971,.Lxtalabel225
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_961
+.cc_top cc_962,.Lxtalabel225
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
 	.long	.Lxtalabel225
-.cc_bottom cc_971
-.cc_top cc_972,.Lxtalabel270
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_962
+.cc_top cc_963,.Lxtalabel139
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
-	.long	.Lxtalabel270
-.cc_bottom cc_972
-.cc_top cc_973,.Lxtalabel406
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel139
+.cc_bottom cc_963
+.cc_top cc_964,.Lxtalabel405
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
-	.long	.Lxtalabel406
-.cc_bottom cc_973
-.cc_top cc_974,.Lxtalabel269
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel405
+.cc_bottom cc_964
+.cc_top cc_965,.Lxtalabel269
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
 	.long	.Lxtalabel269
-.cc_bottom cc_974
-.cc_top cc_975,.Lxtalabel315
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_965
+.cc_top cc_966,.Lxtalabel270
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
-	.long	.Lxtalabel315
-.cc_bottom cc_975
-.cc_top cc_976,.Lxtalabel314
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	476
-	.long	478
-	.long	.Lxtalabel314
-.cc_bottom cc_976
-.cc_top cc_977,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel270
+.cc_bottom cc_966
+.cc_top cc_967,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
 	.long	.Lxtalabel19
+.cc_bottom cc_967
+.cc_top cc_968,.Lxtalabel406
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel406
+.cc_bottom cc_968
+.cc_top cc_969,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel99
+.cc_bottom cc_969
+.cc_top cc_970,.Lxtalabel314
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel314
+.cc_bottom cc_970
+.cc_top cc_971,.Lxtalabel98
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel98
+.cc_bottom cc_971
+.cc_top cc_972,.Lxtalabel315
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel315
+.cc_bottom cc_972
+.cc_top cc_973,.Lxtalabel138
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel138
+.cc_bottom cc_973
+.cc_top cc_974,.Lxtalabel359
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel359
+.cc_bottom cc_974
+.cc_top cc_975,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel59
+.cc_bottom cc_975
+.cc_top cc_976,.Lxtalabel360
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel360
+.cc_bottom cc_976
+.cc_top cc_977,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	476
+	.long	478
+	.long	.Lxtalabel58
 .cc_bottom cc_977
 .cc_top cc_978,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	476
 	.long	478
 	.long	.Lxtalabel18
 .cc_bottom cc_978
-.cc_top cc_979,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel22
-.cc_bottom cc_979
-.cc_top cc_980,.Lxtalabel142
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel142
-.cc_bottom cc_980
-.cc_top cc_981,.Lxtalabel228
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel228
-.cc_bottom cc_981
-.cc_top cc_982,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel62
-.cc_bottom cc_982
-.cc_top cc_983,.Lxtalabel409
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel409
-.cc_bottom cc_983
-.cc_top cc_984,.Lxtalabel273
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_979,.Lxtalabel273
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	479
 	.long	479
 	.long	.Lxtalabel273
-.cc_bottom cc_984
-.cc_top cc_985,.Lxtalabel363
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_979
+.cc_top cc_980,.Lxtalabel409
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	479
 	.long	479
-	.long	.Lxtalabel363
-.cc_bottom cc_985
-.cc_top cc_986,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxtalabel102
-.cc_bottom cc_986
-.cc_top cc_987,.Lxtalabel318
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel409
+.cc_bottom cc_980
+.cc_top cc_981,.Lxtalabel318
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	479
 	.long	479
 	.long	.Lxtalabel318
+.cc_bottom cc_981
+.cc_top cc_982,.Lxtalabel228
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel228
+.cc_bottom cc_982
+.cc_top cc_983,.Lxtalabel142
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel142
+.cc_bottom cc_983
+.cc_top cc_984,.Lxtalabel62
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel62
+.cc_bottom cc_984
+.cc_top cc_985,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel102
+.cc_bottom cc_985
+.cc_top cc_986,.Lxtalabel363
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel363
+.cc_bottom cc_986
+.cc_top cc_987,.Lxtalabel22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxtalabel22
 .cc_bottom cc_987
-.cc_top cc_988,.Lxtalabel229
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_988,.Lxtalabel319
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	483
 	.long	484
-	.long	.Lxtalabel229
+	.long	.Lxtalabel319
 .cc_bottom cc_988
-.cc_top cc_989,.Lxtalabel364
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_989,.Lxtalabel410
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	483
 	.long	484
-	.long	.Lxtalabel364
+	.long	.Lxtalabel410
 .cc_bottom cc_989
 .cc_top cc_990,.Lxtalabel63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	483
 	.long	484
 	.long	.Lxtalabel63
 .cc_bottom cc_990
-.cc_top cc_991,.Lxtalabel319
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_991,.Lxtalabel229
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	483
 	.long	484
-	.long	.Lxtalabel319
+	.long	.Lxtalabel229
 .cc_bottom cc_991
-.cc_top cc_992,.Lxtalabel143
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	483
-	.long	484
-	.long	.Lxtalabel143
-.cc_bottom cc_992
-.cc_top cc_993,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	483
-	.long	484
-	.long	.Lxtalabel23
-.cc_bottom cc_993
-.cc_top cc_994,.Lxtalabel410
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	483
-	.long	484
-	.long	.Lxtalabel410
-.cc_bottom cc_994
-.cc_top cc_995,.Lxtalabel274
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_992,.Lxtalabel274
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	483
 	.long	484
 	.long	.Lxtalabel274
-.cc_bottom cc_995
-.cc_top cc_996,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_992
+.cc_top cc_993,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	483
 	.long	484
 	.long	.Lxtalabel103
+.cc_bottom cc_993
+.cc_top cc_994,.Lxtalabel143
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	483
+	.long	484
+	.long	.Lxtalabel143
+.cc_bottom cc_994
+.cc_top cc_995,.Lxtalabel364
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	483
+	.long	484
+	.long	.Lxtalabel364
+.cc_bottom cc_995
+.cc_top cc_996,.Lxtalabel23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	483
+	.long	484
+	.long	.Lxtalabel23
 .cc_bottom cc_996
-.cc_top cc_997,.Lxtalabel364
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_997,.Lxtalabel143
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	487
 	.long	487
-	.long	.Lxtalabel364
+	.long	.Lxtalabel143
 .cc_bottom cc_997
-.cc_top cc_998,.Lxtalabel63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_998,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	487
+	.long	487
+	.long	.Lxtalabel103
+.cc_bottom cc_998
+.cc_top cc_999,.Lxtalabel63
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	487
 	.long	487
 	.long	.Lxtalabel63
-.cc_bottom cc_998
-.cc_top cc_999,.Lxtalabel410
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	487
-	.long	487
-	.long	.Lxtalabel410
 .cc_bottom cc_999
-.cc_top cc_1000,.Lxtalabel229
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	487
-	.long	487
-	.long	.Lxtalabel229
-.cc_bottom cc_1000
-.cc_top cc_1001,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	487
-	.long	487
-	.long	.Lxtalabel103
-.cc_bottom cc_1001
-.cc_top cc_1002,.Lxtalabel274
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1000,.Lxtalabel274
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	487
 	.long	487
 	.long	.Lxtalabel274
-.cc_bottom cc_1002
-.cc_top cc_1003,.Lxtalabel319
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1000
+.cc_top cc_1001,.Lxtalabel364
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	487
+	.long	487
+	.long	.Lxtalabel364
+.cc_bottom cc_1001
+.cc_top cc_1002,.Lxtalabel319
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	487
 	.long	487
 	.long	.Lxtalabel319
-.cc_bottom cc_1003
-.cc_top cc_1004,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1002
+.cc_top cc_1003,.Lxtalabel23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	487
 	.long	487
 	.long	.Lxtalabel23
-.cc_bottom cc_1004
-.cc_top cc_1005,.Lxtalabel143
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1003
+.cc_top cc_1004,.Lxtalabel229
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	487
 	.long	487
-	.long	.Lxtalabel143
+	.long	.Lxtalabel229
+.cc_bottom cc_1004
+.cc_top cc_1005,.Lxtalabel410
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	487
+	.long	487
+	.long	.Lxtalabel410
 .cc_bottom cc_1005
 .cc_top cc_1006,.Lxtalabel260
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	488
 	.long	490
 	.long	.Lxtalabel260
 .cc_bottom cc_1006
 .cc_top cc_1007,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	488
 	.long	490
 	.long	.Lxtalabel9
 .cc_bottom cc_1007
-.cc_top cc_1008,.Lxtalabel129
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	488
-	.long	490
-	.long	.Lxtalabel129
-.cc_bottom cc_1008
-.cc_top cc_1009,.Lxtalabel89
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	488
-	.long	490
-	.long	.Lxtalabel89
-.cc_bottom cc_1009
-.cc_top cc_1010,.Lxtalabel395
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	488
-	.long	490
-	.long	.Lxtalabel395
-.cc_bottom cc_1010
-.cc_top cc_1011,.Lxtalabel350
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1008,.Lxtalabel350
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	488
 	.long	490
 	.long	.Lxtalabel350
-.cc_bottom cc_1011
-.cc_top cc_1012,.Lxtalabel214
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1008
+.cc_top cc_1009,.Lxtalabel214
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	488
 	.long	490
 	.long	.Lxtalabel214
-.cc_bottom cc_1012
-.cc_top cc_1013,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1009
+.cc_top cc_1010,.Lxtalabel49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	488
 	.long	490
 	.long	.Lxtalabel49
+.cc_bottom cc_1010
+.cc_top cc_1011,.Lxtalabel89
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	488
+	.long	490
+	.long	.Lxtalabel89
+.cc_bottom cc_1011
+.cc_top cc_1012,.Lxtalabel129
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	488
+	.long	490
+	.long	.Lxtalabel129
+.cc_bottom cc_1012
+.cc_top cc_1013,.Lxtalabel395
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	488
+	.long	490
+	.long	.Lxtalabel395
 .cc_bottom cc_1013
 .cc_top cc_1014,.Lxtalabel305
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	488
 	.long	490
 	.long	.Lxtalabel305
 .cc_bottom cc_1014
-.cc_top cc_1015,.Lxtalabel214
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1015,.Lxtalabel9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
-	.long	.Lxtalabel214
+	.long	.Lxtalabel9
 .cc_bottom cc_1015
 .cc_top cc_1016,.Lxtalabel260
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxtalabel260
 .cc_bottom cc_1016
-.cc_top cc_1017,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1017,.Lxtalabel49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
-	.long	.Lxtalabel9
+	.long	.Lxtalabel49
 .cc_bottom cc_1017
-.cc_top cc_1018,.Lxtalabel395
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1018,.Lxtalabel129
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
-	.long	.Lxtalabel395
+	.long	.Lxtalabel129
 .cc_bottom cc_1018
 .cc_top cc_1019,.Lxtalabel350
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxtalabel350
 .cc_bottom cc_1019
-.cc_top cc_1020,.Lxtalabel305
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1020,.Lxtalabel395
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
-	.long	.Lxtalabel305
+	.long	.Lxtalabel395
 .cc_bottom cc_1020
-.cc_top cc_1021,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1021,.Lxtalabel214
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
-	.long	.Lxtalabel49
+	.long	.Lxtalabel214
 .cc_bottom cc_1021
-.cc_top cc_1022,.Lxtalabel129
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	492
-	.long	492
-	.long	.Lxtalabel129
-.cc_bottom cc_1022
-.cc_top cc_1023,.Lxtalabel89
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1022,.Lxtalabel89
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxtalabel89
+.cc_bottom cc_1022
+.cc_top cc_1023,.Lxtalabel305
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	492
+	.long	492
+	.long	.Lxtalabel305
 .cc_bottom cc_1023
-.cc_top cc_1024,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1024,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	493
 	.long	494
-	.long	.Lxtalabel24
+	.long	.Lxtalabel144
 .cc_bottom cc_1024
-.cc_top cc_1025,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	493
-	.long	494
-	.long	.Lxtalabel411
-.cc_bottom cc_1025
-.cc_top cc_1026,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	493
-	.long	494
-	.long	.Lxtalabel104
-.cc_bottom cc_1026
-.cc_top cc_1027,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1025,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel275
-.cc_bottom cc_1027
-.cc_top cc_1028,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1025
+.cc_top cc_1026,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel230
-.cc_bottom cc_1028
-.cc_top cc_1029,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1026
+.cc_top cc_1027,.Lxtalabel411
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	493
+	.long	494
+	.long	.Lxtalabel411
+.cc_bottom cc_1027
+.cc_top cc_1028,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel64
-.cc_bottom cc_1029
-.cc_top cc_1030,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1028
+.cc_top cc_1029,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel365
-.cc_bottom cc_1030
-.cc_top cc_1031,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	493
-	.long	494
-	.long	.Lxtalabel144
-.cc_bottom cc_1031
-.cc_top cc_1032,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1029
+.cc_top cc_1030,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	493
 	.long	494
 	.long	.Lxtalabel320
+.cc_bottom cc_1030
+.cc_top cc_1031,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	493
+	.long	494
+	.long	.Lxtalabel104
+.cc_bottom cc_1031
+.cc_top cc_1032,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	493
+	.long	494
+	.long	.Lxtalabel24
 .cc_bottom cc_1032
-.cc_top cc_1033,.Lxtalabel230
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1033,.Lxtalabel275
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	496
+	.long	496
+	.long	.Lxtalabel275
+.cc_bottom cc_1033
+.cc_top cc_1034,.Lxtalabel230
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxtalabel230
-.cc_bottom cc_1033
-.cc_top cc_1034,.Lxtalabel365
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1034
+.cc_top cc_1035,.Lxtalabel411
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	496
 	.long	496
-	.long	.Lxtalabel365
-.cc_bottom cc_1034
-.cc_top cc_1035,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel411
+.cc_bottom cc_1035
+.cc_top cc_1036,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	496
+	.long	496
+	.long	.Lxtalabel104
+.cc_bottom cc_1036
+.cc_top cc_1037,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	496
+	.long	496
+	.long	.Lxtalabel144
+.cc_bottom cc_1037
+.cc_top cc_1038,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxtalabel64
-.cc_bottom cc_1035
-.cc_top cc_1036,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1038
+.cc_top cc_1039,.Lxtalabel365
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	496
+	.long	496
+	.long	.Lxtalabel365
+.cc_bottom cc_1039
+.cc_top cc_1040,.Lxtalabel320
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	496
+	.long	496
+	.long	.Lxtalabel320
+.cc_bottom cc_1040
+.cc_top cc_1041,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	496
 	.long	496
 	.long	.Lxtalabel24
-.cc_bottom cc_1036
-.cc_top cc_1037,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	496
-	.long	496
-	.long	.Lxtalabel104
-.cc_bottom cc_1037
-.cc_top cc_1038,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	496
-	.long	496
-	.long	.Lxtalabel144
-.cc_bottom cc_1038
-.cc_top cc_1039,.Lxtalabel320
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	496
-	.long	496
-	.long	.Lxtalabel320
-.cc_bottom cc_1039
-.cc_top cc_1040,.Lxtalabel411
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	496
-	.long	496
-	.long	.Lxtalabel411
-.cc_bottom cc_1040
-.cc_top cc_1041,.Lxtalabel275
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	496
-	.long	496
-	.long	.Lxtalabel275
 .cc_bottom cc_1041
-.cc_top cc_1042,.Lxtalabel278
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1042,.Lxtalabel323
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	497
+	.long	500
+	.long	.Lxtalabel323
+.cc_bottom cc_1042
+.cc_top cc_1043,.Lxtalabel278
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
 	.long	.Lxtalabel278
-.cc_bottom cc_1042
-.cc_top cc_1043,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	497
-	.long	500
-	.long	.Lxtalabel27
 .cc_bottom cc_1043
-.cc_top cc_1044,.Lxtalabel233
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1044,.Lxtalabel414
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
-	.long	.Lxtalabel233
+	.long	.Lxtalabel414
 .cc_bottom cc_1044
-.cc_top cc_1045,.Lxtalabel147
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	497
-	.long	500
-	.long	.Lxtalabel147
-.cc_bottom cc_1045
-.cc_top cc_1046,.Lxtalabel368
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1045,.Lxtalabel368
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
 	.long	.Lxtalabel368
+.cc_bottom cc_1045
+.cc_top cc_1046,.Lxtalabel107
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	497
+	.long	500
+	.long	.Lxtalabel107
 .cc_bottom cc_1046
 .cc_top cc_1047,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
 	.long	.Lxtalabel67
 .cc_bottom cc_1047
-.cc_top cc_1048,.Lxtalabel323
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1048,.Lxtalabel233
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
-	.long	.Lxtalabel323
+	.long	.Lxtalabel233
 .cc_bottom cc_1048
-.cc_top cc_1049,.Lxtalabel414
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1049,.Lxtalabel147
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
-	.long	.Lxtalabel414
+	.long	.Lxtalabel147
 .cc_bottom cc_1049
-.cc_top cc_1050,.Lxtalabel107
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1050,.Lxtalabel27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	497
 	.long	500
-	.long	.Lxtalabel107
+	.long	.Lxtalabel27
 .cc_bottom cc_1050
 .cc_top cc_1051,.Lxtalabel278
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	502
 	.long	502
 	.long	.Lxtalabel278
 .cc_bottom cc_1051
-.cc_top cc_1052,.Lxtalabel233
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	502
-	.long	502
-	.long	.Lxtalabel233
-.cc_bottom cc_1052
-.cc_top cc_1053,.Lxtalabel147
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	502
-	.long	502
-	.long	.Lxtalabel147
-.cc_bottom cc_1053
-.cc_top cc_1054,.Lxtalabel323
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1052,.Lxtalabel323
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	502
 	.long	502
 	.long	.Lxtalabel323
-.cc_bottom cc_1054
-.cc_top cc_1055,.Lxtalabel414
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1052
+.cc_top cc_1053,.Lxtalabel233
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	502
+	.long	502
+	.long	.Lxtalabel233
+.cc_bottom cc_1053
+.cc_top cc_1054,.Lxtalabel414
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	502
 	.long	502
 	.long	.Lxtalabel414
-.cc_bottom cc_1055
-.cc_top cc_1056,.Lxtalabel107
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1054
+.cc_top cc_1055,.Lxtalabel107
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	502
 	.long	502
 	.long	.Lxtalabel107
-.cc_bottom cc_1056
-.cc_top cc_1057,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	502
-	.long	502
-	.long	.Lxtalabel27
-.cc_bottom cc_1057
-.cc_top cc_1058,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1055
+.cc_top cc_1056,.Lxtalabel67
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	502
 	.long	502
 	.long	.Lxtalabel67
-.cc_bottom cc_1058
-.cc_top cc_1059,.Lxtalabel368
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1056
+.cc_top cc_1057,.Lxtalabel368
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	502
 	.long	502
 	.long	.Lxtalabel368
-.cc_bottom cc_1059
-.cc_top cc_1060,.Lxtalabel234
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1057
+.cc_top cc_1058,.Lxtalabel27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	503
-	.long	506
-	.long	.Lxtalabel234
-.cc_bottom cc_1060
-.cc_top cc_1061,.Lxtalabel415
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	502
+	.long	502
+	.long	.Lxtalabel27
+.cc_bottom cc_1058
+.cc_top cc_1059,.Lxtalabel147
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	502
+	.long	502
+	.long	.Lxtalabel147
+.cc_bottom cc_1059
+.cc_top cc_1060,.Lxtalabel415
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	503
 	.long	506
 	.long	.Lxtalabel415
+.cc_bottom cc_1060
+.cc_top cc_1061,.Lxtalabel234
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	503
+	.long	506
+	.long	.Lxtalabel234
 .cc_bottom cc_1061
 .cc_top cc_1062,.Lxtalabel234
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxtalabel234
 .cc_bottom cc_1062
 .cc_top cc_1063,.Lxtalabel415
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxtalabel415
 .cc_bottom cc_1063
-.cc_top cc_1064,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	509
-	.long	510
-	.long	.Lxtalabel109
-.cc_bottom cc_1064
-.cc_top cc_1065,.Lxtalabel279
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1064,.Lxtalabel279
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	509
 	.long	510
 	.long	.Lxtalabel279
+.cc_bottom cc_1064
+.cc_top cc_1065,.Lxtalabel235
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	509
+	.long	510
+	.long	.Lxtalabel235
 .cc_bottom cc_1065
-.cc_top cc_1066,.Lxtalabel324
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	509
-	.long	510
-	.long	.Lxtalabel324
-.cc_bottom cc_1066
-.cc_top cc_1067,.Lxtalabel369
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	509
-	.long	510
-	.long	.Lxtalabel369
-.cc_bottom cc_1067
-.cc_top cc_1068,.Lxtalabel149
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	509
-	.long	510
-	.long	.Lxtalabel149
-.cc_bottom cc_1068
-.cc_top cc_1069,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1066,.Lxtalabel29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	509
 	.long	510
 	.long	.Lxtalabel29
-.cc_bottom cc_1069
-.cc_top cc_1070,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1066
+.cc_top cc_1067,.Lxtalabel324
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	509
+	.long	510
+	.long	.Lxtalabel324
+.cc_bottom cc_1067
+.cc_top cc_1068,.Lxtalabel369
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	509
+	.long	510
+	.long	.Lxtalabel369
+.cc_bottom cc_1068
+.cc_top cc_1069,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	509
 	.long	510
 	.long	.Lxtalabel69
-.cc_bottom cc_1070
-.cc_top cc_1071,.Lxtalabel416
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1069
+.cc_top cc_1070,.Lxtalabel416
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	509
 	.long	510
 	.long	.Lxtalabel416
-.cc_bottom cc_1071
-.cc_top cc_1072,.Lxtalabel235
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1070
+.cc_top cc_1071,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	509
 	.long	510
-	.long	.Lxtalabel235
-.cc_bottom cc_1072
-.cc_top cc_1073,.Lxtalabel149
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel109
+.cc_bottom cc_1071
+.cc_top cc_1072,.Lxtalabel149
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
-	.long	512
-	.long	512
+	.long	509
+	.long	510
 	.long	.Lxtalabel149
+.cc_bottom cc_1072
+.cc_top cc_1073,.Lxtalabel416
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	512
+	.long	512
+	.long	.Lxtalabel416
 .cc_bottom cc_1073
-.cc_top cc_1074,.Lxtalabel369
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1074,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
-	.long	.Lxtalabel369
+	.long	.Lxtalabel69
 .cc_bottom cc_1074
-.cc_top cc_1075,.Lxtalabel235
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1075,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
-	.long	.Lxtalabel235
+	.long	.Lxtalabel109
 .cc_bottom cc_1075
 .cc_top cc_1076,.Lxtalabel324
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
 	.long	.Lxtalabel324
 .cc_bottom cc_1076
-.cc_top cc_1077,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1077,.Lxtalabel149
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
-	.long	.Lxtalabel29
+	.long	.Lxtalabel149
 .cc_bottom cc_1077
-.cc_top cc_1078,.Lxtalabel416
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1078,.Lxtalabel369
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
-	.long	.Lxtalabel416
+	.long	.Lxtalabel369
 .cc_bottom cc_1078
-.cc_top cc_1079,.Lxtalabel279
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1079,.Lxtalabel235
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	512
+	.long	512
+	.long	.Lxtalabel235
+.cc_bottom cc_1079
+.cc_top cc_1080,.Lxtalabel279
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
 	.long	.Lxtalabel279
-.cc_bottom cc_1079
-.cc_top cc_1080,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	512
-	.long	512
-	.long	.Lxtalabel109
 .cc_bottom cc_1080
-.cc_top cc_1081,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1081,.Lxtalabel29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	512
 	.long	512
-	.long	.Lxtalabel69
+	.long	.Lxtalabel29
 .cc_bottom cc_1081
 .cc_top cc_1082,.Lxtalabel326
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	514
 	.long	515
 	.long	.Lxtalabel326
 .cc_bottom cc_1082
-.cc_top cc_1083,.Lxtalabel281
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	514
-	.long	515
-	.long	.Lxtalabel281
-.cc_bottom cc_1083
-.cc_top cc_1084,.Lxtalabel371
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1083,.Lxtalabel371
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	514
 	.long	515
 	.long	.Lxtalabel371
-.cc_bottom cc_1084
-.cc_top cc_1085,.Lxtalabel417
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1083
+.cc_top cc_1084,.Lxtalabel417
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	514
 	.long	515
 	.long	.Lxtalabel417
-.cc_bottom cc_1085
-.cc_top cc_1086,.Lxtalabel236
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1084
+.cc_top cc_1085,.Lxtalabel236
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	514
 	.long	515
 	.long	.Lxtalabel236
+.cc_bottom cc_1085
+.cc_top cc_1086,.Lxtalabel281
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	514
+	.long	515
+	.long	.Lxtalabel281
 .cc_bottom cc_1086
-.cc_top cc_1087,.Lxtalabel371
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1087,.Lxtalabel326
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	517
 	.long	517
-	.long	.Lxtalabel371
+	.long	.Lxtalabel326
 .cc_bottom cc_1087
 .cc_top cc_1088,.Lxtalabel281
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	517
 	.long	517
 	.long	.Lxtalabel281
 .cc_bottom cc_1088
-.cc_top cc_1089,.Lxtalabel236
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1089,.Lxtalabel371
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	517
+	.long	517
+	.long	.Lxtalabel371
+.cc_bottom cc_1089
+.cc_top cc_1090,.Lxtalabel236
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	517
 	.long	517
 	.long	.Lxtalabel236
-.cc_bottom cc_1089
-.cc_top cc_1090,.Lxtalabel326
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	517
-	.long	517
-	.long	.Lxtalabel326
 .cc_bottom cc_1090
 .cc_top cc_1091,.Lxtalabel417
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	517
 	.long	517
 	.long	.Lxtalabel417
 .cc_bottom cc_1091
 .cc_top cc_1092,.Lxtalabel237
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	519
 	.long	520
 	.long	.Lxtalabel237
 .cc_bottom cc_1092
 .cc_top cc_1093,.Lxtalabel418
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	519
 	.long	520
 	.long	.Lxtalabel418
 .cc_bottom cc_1093
-.cc_top cc_1094,.Lxtalabel237
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	522
-	.long	522
-	.long	.Lxtalabel237
-.cc_bottom cc_1094
-.cc_top cc_1095,.Lxtalabel418
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1094,.Lxtalabel418
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	522
 	.long	522
 	.long	.Lxtalabel418
+.cc_bottom cc_1094
+.cc_top cc_1095,.Lxtalabel237
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	522
+	.long	522
+	.long	.Lxtalabel237
 .cc_bottom cc_1095
-.cc_top cc_1096,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel0
-.cc_bottom cc_1096
-.cc_top cc_1097,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel87
-.cc_bottom cc_1097
-.cc_top cc_1098,.Lxtalabel257
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel257
-.cc_bottom cc_1098
-.cc_top cc_1099,.Lxtalabel213
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1096,.Lxtalabel213
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel213
-.cc_bottom cc_1099
-.cc_top cc_1100,.Lxtalabel212
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1096
+.cc_top cc_1097,.Lxtalabel0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
-	.long	.Lxtalabel212
-.cc_bottom cc_1100
-.cc_top cc_1101,.Lxtalabel207
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel207
-.cc_bottom cc_1101
-.cc_top cc_1102,.Lxtalabel206
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel206
-.cc_bottom cc_1102
-.cc_top cc_1103,.Lxtalabel205
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel205
-.cc_bottom cc_1103
-.cc_top cc_1104,.Lxtalabel128
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel128
-.cc_bottom cc_1104
-.cc_top cc_1105,.Lxtalabel127
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel0
+.cc_bottom cc_1097
+.cc_top cc_1098,.Lxtalabel127
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel127
-.cc_bottom cc_1105
-.cc_top cc_1106,.Lxtalabel122
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel122
-.cc_bottom cc_1106
-.cc_top cc_1107,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel121
-.cc_bottom cc_1107
-.cc_top cc_1108,.Lxtalabel120
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel120
-.cc_bottom cc_1108
-.cc_top cc_1109,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel88
-.cc_bottom cc_1109
-.cc_top cc_1110,.Lxtalabel393
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel393
-.cc_bottom cc_1110
-.cc_top cc_1111,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel82
-.cc_bottom cc_1111
-.cc_top cc_1112,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel81
-.cc_bottom cc_1112
-.cc_top cc_1113,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel80
-.cc_bottom cc_1113
-.cc_top cc_1114,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1098
+.cc_top cc_1099,.Lxtalabel48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel48
-.cc_bottom cc_1114
-.cc_top cc_1115,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1099
+.cc_top cc_1100,.Lxtalabel120
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
-	.long	.Lxtalabel47
-.cc_bottom cc_1115
-.cc_top cc_1116,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel42
-.cc_bottom cc_1116
-.cc_top cc_1117,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel41
-.cc_bottom cc_1117
-.cc_top cc_1118,.Lxtalabel40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel120
+.cc_bottom cc_1100
+.cc_top cc_1101,.Lxtalabel40
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel40
-.cc_bottom cc_1118
-.cc_top cc_1119,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1101
+.cc_top cc_1102,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
-	.long	.Lxtalabel8
-.cc_bottom cc_1119
-.cc_top cc_1120,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel41
+.cc_bottom cc_1102
+.cc_top cc_1103,.Lxtalabel87
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
-	.long	.Lxtalabel7
-.cc_bottom cc_1120
-.cc_top cc_1121,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel87
+.cc_bottom cc_1103
+.cc_top cc_1104,.Lxtalabel88
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
-	.long	.Lxtalabel2
-.cc_bottom cc_1121
-.cc_top cc_1122,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	523
-	.long	524
-	.long	.Lxtalabel1
-.cc_bottom cc_1122
-.cc_top cc_1123,.Lxtalabel394
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel88
+.cc_bottom cc_1104
+.cc_top cc_1105,.Lxtalabel394
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel394
-.cc_bottom cc_1123
-.cc_top cc_1124,.Lxtalabel388
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1105
+.cc_top cc_1106,.Lxtalabel128
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel128
+.cc_bottom cc_1106
+.cc_top cc_1107,.Lxtalabel393
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel393
+.cc_bottom cc_1107
+.cc_top cc_1108,.Lxtalabel207
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel207
+.cc_bottom cc_1108
+.cc_top cc_1109,.Lxtalabel257
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel257
+.cc_bottom cc_1109
+.cc_top cc_1110,.Lxtalabel1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel1
+.cc_bottom cc_1110
+.cc_top cc_1111,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel42
+.cc_bottom cc_1111
+.cc_top cc_1112,.Lxtalabel82
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel82
+.cc_bottom cc_1112
+.cc_top cc_1113,.Lxtalabel388
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel388
-.cc_bottom cc_1124
-.cc_top cc_1125,.Lxtalabel302
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1113
+.cc_top cc_1114,.Lxtalabel81
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
-	.long	.Lxtalabel302
-.cc_bottom cc_1125
-.cc_top cc_1126,.Lxtalabel387
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel81
+.cc_bottom cc_1114
+.cc_top cc_1115,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel2
+.cc_bottom cc_1115
+.cc_top cc_1116,.Lxtalabel387
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel387
-.cc_bottom cc_1126
-.cc_top cc_1127,.Lxtalabel386
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1116
+.cc_top cc_1117,.Lxtalabel206
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel206
+.cc_bottom cc_1117
+.cc_top cc_1118,.Lxtalabel8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel8
+.cc_bottom cc_1118
+.cc_top cc_1119,.Lxtalabel7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel7
+.cc_bottom cc_1119
+.cc_top cc_1120,.Lxtalabel302
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel302
+.cc_bottom cc_1120
+.cc_top cc_1121,.Lxtalabel386
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel386
-.cc_bottom cc_1127
-.cc_top cc_1128,.Lxtalabel347
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1121
+.cc_top cc_1122,.Lxtalabel205
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel205
+.cc_bottom cc_1122
+.cc_top cc_1123,.Lxtalabel212
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel212
+.cc_bottom cc_1123
+.cc_top cc_1124,.Lxtalabel80
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel80
+.cc_bottom cc_1124
+.cc_top cc_1125,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel121
+.cc_bottom cc_1125
+.cc_top cc_1126,.Lxtalabel122
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel122
+.cc_bottom cc_1126
+.cc_top cc_1127,.Lxtalabel347
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	523
 	.long	524
 	.long	.Lxtalabel347
+.cc_bottom cc_1127
+.cc_top cc_1128,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	523
+	.long	524
+	.long	.Lxtalabel47
 .cc_bottom cc_1128
-.cc_top cc_1129,.Lxtalabel328
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1129,.Lxtalabel151
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
-	.long	.Lxtalabel328
+	.long	.Lxtalabel151
 .cc_bottom cc_1129
-.cc_top cc_1130,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1130,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
-	.long	.Lxtalabel70
+	.long	.Lxtalabel30
 .cc_bottom cc_1130
-.cc_top cc_1131,.Lxtalabel71
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	525
-	.long	526
-	.long	.Lxtalabel71
-.cc_bottom cc_1131
-.cc_top cc_1132,.Lxtalabel374
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1131,.Lxtalabel374
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel374
+.cc_bottom cc_1131
+.cc_top cc_1132,.Lxtalabel71
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	525
+	.long	526
+	.long	.Lxtalabel71
 .cc_bottom cc_1132
-.cc_top cc_1133,.Lxtalabel373
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1133,.Lxtalabel329
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
-	.long	.Lxtalabel373
+	.long	.Lxtalabel329
 .cc_bottom cc_1133
-.cc_top cc_1134,.Lxtalabel348
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1134,.Lxtalabel328
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
-	.long	.Lxtalabel348
+	.long	.Lxtalabel328
 .cc_bottom cc_1134
-.cc_top cc_1135,.Lxtalabel384
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1135,.Lxtalabel303
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
-	.long	.Lxtalabel384
+	.long	.Lxtalabel303
 .cc_bottom cc_1135
 .cc_top cc_1136,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel110
 .cc_bottom cc_1136
-.cc_top cc_1137,.Lxtalabel111
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	525
-	.long	526
-	.long	.Lxtalabel111
-.cc_bottom cc_1137
-.cc_top cc_1138,.Lxtalabel329
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	525
-	.long	526
-	.long	.Lxtalabel329
-.cc_bottom cc_1138
-.cc_top cc_1139,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1137,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel31
-.cc_bottom cc_1139
-.cc_top cc_1140,.Lxtalabel303
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1137
+.cc_top cc_1138,.Lxtalabel348
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
-	.long	.Lxtalabel303
-.cc_bottom cc_1140
-.cc_top cc_1141,.Lxtalabel150
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	525
-	.long	526
-	.long	.Lxtalabel150
-.cc_bottom cc_1141
-.cc_top cc_1142,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	525
-	.long	526
-	.long	.Lxtalabel30
-.cc_bottom cc_1142
-.cc_top cc_1143,.Lxtalabel151
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	525
-	.long	526
-	.long	.Lxtalabel151
-.cc_bottom cc_1143
-.cc_top cc_1144,.Lxtalabel203
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel348
+.cc_bottom cc_1138
+.cc_top cc_1139,.Lxtalabel203
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel203
-.cc_bottom cc_1144
-.cc_top cc_1145,.Lxtalabel284
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1139
+.cc_top cc_1140,.Lxtalabel384
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	525
+	.long	526
+	.long	.Lxtalabel384
+.cc_bottom cc_1140
+.cc_top cc_1141,.Lxtalabel70
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	525
+	.long	526
+	.long	.Lxtalabel70
+.cc_bottom cc_1141
+.cc_top cc_1142,.Lxtalabel284
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel284
-.cc_bottom cc_1145
-.cc_top cc_1146,.Lxtalabel283
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1142
+.cc_top cc_1143,.Lxtalabel373
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	525
+	.long	526
+	.long	.Lxtalabel373
+.cc_bottom cc_1143
+.cc_top cc_1144,.Lxtalabel283
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel283
-.cc_bottom cc_1146
-.cc_top cc_1147,.Lxtalabel258
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1144
+.cc_top cc_1145,.Lxtalabel258
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	525
 	.long	526
 	.long	.Lxtalabel258
+.cc_bottom cc_1145
+.cc_top cc_1146,.Lxtalabel150
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	525
+	.long	526
+	.long	.Lxtalabel150
+.cc_bottom cc_1146
+.cc_top cc_1147,.Lxtalabel111
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	525
+	.long	526
+	.long	.Lxtalabel111
 .cc_bottom cc_1147
-.cc_top cc_1148,.Lxtalabel258
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1148,.Lxtalabel303
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	528
 	.long	528
-	.long	.Lxtalabel258
+	.long	.Lxtalabel303
 .cc_bottom cc_1148
-.cc_top cc_1149,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel31
-.cc_bottom cc_1149
-.cc_top cc_1150,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel30
-.cc_bottom cc_1150
-.cc_top cc_1151,.Lxtalabel384
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1149,.Lxtalabel384
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	528
 	.long	528
 	.long	.Lxtalabel384
-.cc_bottom cc_1151
-.cc_top cc_1152,.Lxtalabel374
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel374
-.cc_bottom cc_1152
-.cc_top cc_1153,.Lxtalabel373
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel373
-.cc_bottom cc_1153
-.cc_top cc_1154,.Lxtalabel71
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel71
-.cc_bottom cc_1154
-.cc_top cc_1155,.Lxtalabel348
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel348
-.cc_bottom cc_1155
-.cc_top cc_1156,.Lxtalabel329
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel329
-.cc_bottom cc_1156
-.cc_top cc_1157,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel110
-.cc_bottom cc_1157
-.cc_top cc_1158,.Lxtalabel111
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel111
-.cc_bottom cc_1158
-.cc_top cc_1159,.Lxtalabel328
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel328
-.cc_bottom cc_1159
-.cc_top cc_1160,.Lxtalabel303
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel303
-.cc_bottom cc_1160
-.cc_top cc_1161,.Lxtalabel150
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel150
-.cc_bottom cc_1161
-.cc_top cc_1162,.Lxtalabel151
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	528
-	.long	528
-	.long	.Lxtalabel151
-.cc_bottom cc_1162
-.cc_top cc_1163,.Lxtalabel203
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1149
+.cc_top cc_1150,.Lxtalabel203
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	528
 	.long	528
 	.long	.Lxtalabel203
-.cc_bottom cc_1163
-.cc_top cc_1164,.Lxtalabel284
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1150
+.cc_top cc_1151,.Lxtalabel71
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	528
 	.long	528
-	.long	.Lxtalabel284
-.cc_bottom cc_1164
-.cc_top cc_1165,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxtalabel71
+.cc_bottom cc_1151
+.cc_top cc_1152,.Lxtalabel70
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	528
 	.long	528
 	.long	.Lxtalabel70
-.cc_bottom cc_1165
-.cc_top cc_1166,.Lxtalabel283
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1152
+.cc_top cc_1153,.Lxtalabel151
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel151
+.cc_bottom cc_1153
+.cc_top cc_1154,.Lxtalabel283
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	528
 	.long	528
 	.long	.Lxtalabel283
+.cc_bottom cc_1154
+.cc_top cc_1155,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel30
+.cc_bottom cc_1155
+.cc_top cc_1156,.Lxtalabel373
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel373
+.cc_bottom cc_1156
+.cc_top cc_1157,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel31
+.cc_bottom cc_1157
+.cc_top cc_1158,.Lxtalabel329
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel329
+.cc_bottom cc_1158
+.cc_top cc_1159,.Lxtalabel284
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel284
+.cc_bottom cc_1159
+.cc_top cc_1160,.Lxtalabel110
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel110
+.cc_bottom cc_1160
+.cc_top cc_1161,.Lxtalabel258
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel258
+.cc_bottom cc_1161
+.cc_top cc_1162,.Lxtalabel111
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel111
+.cc_bottom cc_1162
+.cc_top cc_1163,.Lxtalabel150
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel150
+.cc_bottom cc_1163
+.cc_top cc_1164,.Lxtalabel328
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel328
+.cc_bottom cc_1164
+.cc_top cc_1165,.Lxtalabel348
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel348
+.cc_bottom cc_1165
+.cc_top cc_1166,.Lxtalabel374
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	528
+	.long	528
+	.long	.Lxtalabel374
 .cc_bottom cc_1166
 .cc_top cc_1167,.Lxtalabel429
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	535
 	.long	542
 	.long	.Lxtalabel429
 .cc_bottom cc_1167
 .cc_top cc_1168,.Lxtalabel429
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	544
 	.long	544
 	.long	.Lxtalabel429
 .cc_bottom cc_1168
 .cc_top cc_1169,.Lxtalabel430
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	545
 	.long	545
 	.long	.Lxtalabel430
 .cc_bottom cc_1169
 .cc_top cc_1170,.Lxtalabel430
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	547
 	.long	547
 	.long	.Lxtalabel430
 .cc_bottom cc_1170
 .cc_top cc_1171,.Lxtalabel431
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	548
 	.long	548
 	.long	.Lxtalabel431
 .cc_bottom cc_1171
 .cc_top cc_1172,.Lxtalabel432
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	552
 	.long	552
 	.long	.Lxtalabel432
 .cc_bottom cc_1172
 .cc_top cc_1173,.Lxtalabel432
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	554
 	.long	554
 	.long	.Lxtalabel432
 .cc_bottom cc_1173
 .cc_top cc_1174,.Lxtalabel432
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	557
 	.long	557
 	.long	.Lxtalabel432
 .cc_bottom cc_1174
 .cc_top cc_1175,.Lxtalabel432
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	560
 	.long	560
 	.long	.Lxtalabel432
 .cc_bottom cc_1175
 .cc_top cc_1176,.Lxtalabel433
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	561
 	.long	562
 	.long	.Lxtalabel433
 .cc_bottom cc_1176
 .cc_top cc_1177,.Lxtalabel434
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	563
 	.long	565
 	.long	.Lxtalabel434
 .cc_bottom cc_1177
 .cc_top cc_1178,.Lxtalabel435
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	566
 	.long	569
 	.long	.Lxtalabel435
 .cc_bottom cc_1178
 .cc_top cc_1179,.Lxtalabel436
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	573
 	.long	575
 	.long	.Lxtalabel436
 .cc_bottom cc_1179
 .cc_top cc_1180,.Lxtalabel437
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	577
 	.long	578
@@ -33282,273 +33282,273 @@ subPagesLeft:
 .Lentries_start6:
 	.long	.Lentries_end7-.Lentries_start6
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_1181,.Lxta.loop_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	156
 	.long	158
 	.long	.Lxta.loop_labels17
 .cc_bottom cc_1181
 .cc_top cc_1182,.Lxta.loop_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	190
 	.long	192
 	.long	.Lxta.loop_labels16
 .cc_bottom cc_1182
-.cc_top cc_1183,.Lxta.loop_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1183,.Lxta.loop_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
-	.long	.Lxta.loop_labels8
+	.long	.Lxta.loop_labels0
 .cc_bottom cc_1183
-.cc_top cc_1184,.Lxta.loop_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1184,.Lxta.loop_labels30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
-	.long	.Lxta.loop_labels18
+	.long	.Lxta.loop_labels30
 .cc_bottom cc_1184
 .cc_top cc_1185,.Lxta.loop_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxta.loop_labels12
 .cc_bottom cc_1185
-.cc_top cc_1186,.Lxta.loop_labels22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1186,.Lxta.loop_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
-	.long	.Lxta.loop_labels22
+	.long	.Lxta.loop_labels18
 .cc_bottom cc_1186
-.cc_top cc_1187,.Lxta.loop_labels26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxta.loop_labels26
-.cc_bottom cc_1187
-.cc_top cc_1188,.Lxta.loop_labels30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxta.loop_labels30
-.cc_bottom cc_1188
-.cc_top cc_1189,.Lxta.loop_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1187,.Lxta.loop_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxta.loop_labels4
+.cc_bottom cc_1187
+.cc_top cc_1188,.Lxta.loop_labels26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxta.loop_labels26
+.cc_bottom cc_1188
+.cc_top cc_1189,.Lxta.loop_labels22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxta.loop_labels22
 .cc_bottom cc_1189
-.cc_top cc_1190,.Lxta.loop_labels34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1190,.Lxta.loop_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	453
+	.long	453
+	.long	.Lxta.loop_labels8
+.cc_bottom cc_1190
+.cc_top cc_1191,.Lxta.loop_labels34
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	453
 	.long	453
 	.long	.Lxta.loop_labels34
-.cc_bottom cc_1190
-.cc_top cc_1191,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	453
-	.long	453
-	.long	.Lxta.loop_labels0
 .cc_bottom cc_1191
-.cc_top cc_1192,.Lxta.loop_labels27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxta.loop_labels27
-.cc_bottom cc_1192
-.cc_top cc_1193,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1192,.Lxta.loop_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxta.loop_labels1
-.cc_bottom cc_1193
-.cc_top cc_1194,.Lxta.loop_labels23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1192
+.cc_top cc_1193,.Lxta.loop_labels23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxta.loop_labels23
+.cc_bottom cc_1193
+.cc_top cc_1194,.Lxta.loop_labels27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxta.loop_labels27
 .cc_bottom cc_1194
-.cc_top cc_1195,.Lxta.loop_labels31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1195,.Lxta.loop_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxta.loop_labels5
+.cc_bottom cc_1195
+.cc_top cc_1196,.Lxta.loop_labels31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxta.loop_labels31
-.cc_bottom cc_1195
-.cc_top cc_1196,.Lxta.loop_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxta.loop_labels19
 .cc_bottom cc_1196
 .cc_top cc_1197,.Lxta.loop_labels35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxta.loop_labels35
 .cc_bottom cc_1197
-.cc_top cc_1198,.Lxta.loop_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxta.loop_labels13
-.cc_bottom cc_1198
-.cc_top cc_1199,.Lxta.loop_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	461
-	.long	461
-	.long	.Lxta.loop_labels5
-.cc_bottom cc_1199
-.cc_top cc_1200,.Lxta.loop_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1198,.Lxta.loop_labels9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	461
 	.long	461
 	.long	.Lxta.loop_labels9
+.cc_bottom cc_1198
+.cc_top cc_1199,.Lxta.loop_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxta.loop_labels13
+.cc_bottom cc_1199
+.cc_top cc_1200,.Lxta.loop_labels19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	461
+	.long	461
+	.long	.Lxta.loop_labels19
 .cc_bottom cc_1200
-.cc_top cc_1201,.Lxta.loop_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxta.loop_labels7
-.cc_bottom cc_1201
-.cc_top cc_1202,.Lxta.loop_labels37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxta.loop_labels37
-.cc_bottom cc_1202
-.cc_top cc_1203,.Lxta.loop_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1201,.Lxta.loop_labels3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxta.loop_labels3
-.cc_bottom cc_1203
-.cc_top cc_1204,.Lxta.loop_labels33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1201
+.cc_top cc_1202,.Lxta.loop_labels7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
-	.long	.Lxta.loop_labels33
+	.long	.Lxta.loop_labels7
+.cc_bottom cc_1202
+.cc_top cc_1203,.Lxta.loop_labels25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxta.loop_labels25
+.cc_bottom cc_1203
+.cc_top cc_1204,.Lxta.loop_labels21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxta.loop_labels21
 .cc_bottom cc_1204
 .cc_top cc_1205,.Lxta.loop_labels29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxta.loop_labels29
 .cc_bottom cc_1205
-.cc_top cc_1206,.Lxta.loop_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxta.loop_labels15
-.cc_bottom cc_1206
-.cc_top cc_1207,.Lxta.loop_labels25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxta.loop_labels25
-.cc_bottom cc_1207
-.cc_top cc_1208,.Lxta.loop_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1206,.Lxta.loop_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxta.loop_labels11
+.cc_bottom cc_1206
+.cc_top cc_1207,.Lxta.loop_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxta.loop_labels15
+.cc_bottom cc_1207
+.cc_top cc_1208,.Lxta.loop_labels33
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxta.loop_labels33
 .cc_bottom cc_1208
-.cc_top cc_1209,.Lxta.loop_labels21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1209,.Lxta.loop_labels37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	468
 	.long	468
-	.long	.Lxta.loop_labels21
+	.long	.Lxta.loop_labels37
 .cc_bottom cc_1209
-.cc_top cc_1210,.Lxta.loop_labels24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxta.loop_labels24
-.cc_bottom cc_1210
-.cc_top cc_1211,.Lxta.loop_labels28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxta.loop_labels28
-.cc_bottom cc_1211
-.cc_top cc_1212,.Lxta.loop_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxta.loop_labels10
-.cc_bottom cc_1212
-.cc_top cc_1213,.Lxta.loop_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxta.loop_labels6
-.cc_bottom cc_1213
-.cc_top cc_1214,.Lxta.loop_labels32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxta.loop_labels32
-.cc_bottom cc_1214
-.cc_top cc_1215,.Lxta.loop_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
-	.byte	0
-	.long	479
-	.long	479
-	.long	.Lxta.loop_labels20
-.cc_bottom cc_1215
-.cc_top cc_1216,.Lxta.loop_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_top cc_1210,.Lxta.loop_labels2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	479
 	.long	479
 	.long	.Lxta.loop_labels2
-.cc_bottom cc_1216
-.cc_top cc_1217,.Lxta.loop_labels36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+.cc_bottom cc_1210
+.cc_top cc_1211,.Lxta.loop_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	479
 	.long	479
-	.long	.Lxta.loop_labels36
-.cc_bottom cc_1217
-.cc_top cc_1218,.Lxta.loop_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.long	.Lxta.loop_labels6
+.cc_bottom cc_1211
+.cc_top cc_1212,.Lxta.loop_labels24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxta.loop_labels24
+.cc_bottom cc_1212
+.cc_top cc_1213,.Lxta.loop_labels14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
 	.byte	0
 	.long	479
 	.long	479
 	.long	.Lxta.loop_labels14
+.cc_bottom cc_1213
+.cc_top cc_1214,.Lxta.loop_labels28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxta.loop_labels28
+.cc_bottom cc_1214
+.cc_top cc_1215,.Lxta.loop_labels32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxta.loop_labels32
+.cc_bottom cc_1215
+.cc_top cc_1216,.Lxta.loop_labels10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxta.loop_labels10
+.cc_bottom cc_1216
+.cc_top cc_1217,.Lxta.loop_labels20
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxta.loop_labels20
+.cc_bottom cc_1217
+.cc_top cc_1218,.Lxta.loop_labels36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc"
+	.byte	0
+	.long	479
+	.long	479
+	.long	.Lxta.loop_labels36
 .cc_bottom cc_1218
 .Lentries_end7:
 	.section	.trap_info,"",@progbits
@@ -33557,7 +33557,7 @@ subPagesLeft:
 	.long	1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str0:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_0,.Ltrap_info0
 	.long	.Ltrap_info0
@@ -33565,7 +33565,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_0
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_1,.Ltrap_info1
 	.long	.Ltrap_info1
@@ -33573,7 +33573,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_2,.Ltrap_info2
 	.long	.Ltrap_info2
@@ -33581,7 +33581,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_2
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str3:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_3,.Ltrap_info3
 	.long	.Ltrap_info3
@@ -33589,7 +33589,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_3
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str4:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_4,.Ltrap_info4
 	.long	.Ltrap_info4
@@ -33597,7 +33597,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_4
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str5:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_5,.Ltrap_info5
 	.long	.Ltrap_info5
@@ -33605,7 +33605,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_5
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str6:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_6,.Ltrap_info6
 	.long	.Ltrap_info6
@@ -33613,7 +33613,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_6
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str7:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_7,.Ltrap_info7
 	.long	.Ltrap_info7
@@ -33621,7 +33621,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_7
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str8:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_8,.Ltrap_info8
 	.long	.Ltrap_info8
@@ -33629,7 +33629,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_8
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str9:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_9,.Ltrap_info9
 	.long	.Ltrap_info9
@@ -33637,7 +33637,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_9
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str10:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_10,.Ltrap_info10
 	.long	.Ltrap_info10
@@ -33645,7 +33645,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_10
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str11:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_11,.Ltrap_info11
 	.long	.Ltrap_info11
@@ -33653,7 +33653,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_11
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str12:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_12,.Ltrap_info12
 	.long	.Ltrap_info12
@@ -33661,7 +33661,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_12
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str13:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:461:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_13,.Ltrap_info13
 	.long	.Ltrap_info13
@@ -33669,7 +33669,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_13
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str14:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:479:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_14,.Ltrap_info14
 	.long	.Ltrap_info14
@@ -33677,7 +33677,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_14
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str15:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:468:29: error: out of bounds array access\n                            data_buffer[i] = data_out[i];\n                            ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_15,.Ltrap_info15
 	.long	.Ltrap_info15
@@ -33685,7 +33685,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_15
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str16:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_16,.Ltrap_info16
 	.long	.Ltrap_info16
@@ -33693,7 +33693,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_16
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str17:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_17,.Ltrap_info17
 	.long	.Ltrap_info17
@@ -33701,7 +33701,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_17
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str18:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_18,.Ltrap_info18
 	.long	.Ltrap_info18
@@ -33709,7 +33709,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_18
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str19:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_19,.Ltrap_info19
 	.long	.Ltrap_info19
@@ -33717,7 +33717,7 @@ subPagesLeft:
 .cc_bottom cc_trapinfo_19
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str20:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_dfu/src/dfu.xc:453:39: error: out of bounds array or pointer access\n                            data[i] = data_buffer[i];\n                                      ^~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_20,.Ltrap_info20
 	.long	.Ltrap_info20

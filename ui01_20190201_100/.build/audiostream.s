@@ -18,11 +18,11 @@
 .Ldebug_end0:
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+.asciiz"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audiostream/audiostream.c"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/audiostream\\audiostream.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.section	.debug_info,"",@progbits
 .L.debug_info_begin0:
 	.long	27
@@ -59,7 +59,7 @@
 	.section	.debug_ranges,"",@progbits
 	.section	.debug_loc,"",@progbits
 
-	.ident	"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+	.ident	"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 	.section	.trap_info,"",@progbits
 .Ltrap_info_entries_start0:
 	.long	.Ltrap_info_entries_end0-.Ltrap_info_entries_start0

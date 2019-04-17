@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/powersave/archU_powerSaving.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/powersave/archU_powerSaving.xc"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -18,11 +18,11 @@
 .Ldebug_end0:
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/powersave/archU_powerSaving.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/powersave/archU_powerSaving.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.section	.debug_info,"",@progbits
 .L.debug_info_begin0:
 	.long	27                      # Length of Unit

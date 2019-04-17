@@ -14,7 +14,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_locks/src\\swlock.h"
 	.text
 	.globl	swlock_init
 	.align	4
@@ -22,7 +22,7 @@
 	.cc_top swlock_init.function,swlock_init
 swlock_init:
 .Lfunc_begin0:
-	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.c"
+	.file	2 "C:/Projects/UI-01_sw1_hw1/module_locks/src\\swlock.c"
 	.loc	2 10 0
 	.cfi_startproc
 	.issue_mode dual
@@ -159,11 +159,11 @@ swlock_release:
 .Ldebug_end0:
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+.asciiz"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.c"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_locks/src\\swlock.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"SWLOCK_NOT_ACQUIRED"
 .Linfo_string4:
@@ -528,7 +528,7 @@ swlock_release:
 .LpubTypes_end0:
 	.cfi_sections .debug_frame
 
-	.ident	"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+	.ident	"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 	.typestring swlock_init, "f{0}(p(ui))"
 	.typestring swlock_acquire, "f{0}(p(ui))"
 	.typestring swlock_try_acquire, "f{si}(p(ui))"

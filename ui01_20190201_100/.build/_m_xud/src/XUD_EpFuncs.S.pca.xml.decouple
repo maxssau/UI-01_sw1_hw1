@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S">
+<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S">
   <fCall global="true" name="main.maxcores"/>
   <fCall global="true" name="XUD_GetSetupData"/>
   <fCall global="true" name="XUD_GetSetupData.nstackwords"/>

@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -7,8 +7,8 @@
 	.set usage.anon.0,0
 	.set usage.anon.1,0
 	.set usage.anon.2,0
-	.globwrite ConfigAudioPorts,clk_audio_bclk,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:36:16: note: object used here\n    stop_clock(clk_audio_bclk);\n               ^~~~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:572:67: note: expanded from macro \'stop_clock\'\n#define stop_clock(clk)                      __builtin_stop_clock(clk)\n                                                                  ^"
-	.globwrite ConfigAudioPorts,p_mclk_in,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:48: note: object used here\n    configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));\n                                               ^~~~~~~~~"
+	.globwrite ConfigAudioPorts,clk_audio_bclk,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:36:16: note: object used here\n    stop_clock(clk_audio_bclk);\n               ^~~~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:572:67: note: expanded from macro \'stop_clock\'\n#define stop_clock(clk)                      __builtin_stop_clock(clk)\n                                                                  ^"
+	.globwrite ConfigAudioPorts,p_mclk_in,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:48: note: object used here\n    configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));\n                                               ^~~~~~~~~"
 	.call ConfigAudioPorts,configure_port_clock_output
 	.call ConfigAudioPorts,configure_out_port
 	.call ConfigAudioPorts,configure_in_port
@@ -18,12 +18,12 @@
 	.call usage.anon.0,delay_ticks_longlong
 	.set ConfigAudioPorts.locnoside, 0
 	.set ConfigAudioPorts.locnoglobalaccess, 0
-	.globpassesref configure_in_port, clk_audio_bclk,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:9: error: call to `configure_in_port\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n        configure_in_port_no_ready(p_i2s_adc[i], clk_audio_bclk);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:227:44: note: expanded from macro \'configure_in_port_no_ready\'\n#define configure_in_port_no_ready(p, clk) configure_in_port(p, clk)\n                                           ^~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref configure_out_port, clk_audio_bclk,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:9: error: call to `configure_out_port\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n        configure_out_port_no_ready(p_i2s_dac[i], clk_audio_bclk, 0);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:256:54: note: expanded from macro \'configure_out_port_no_ready\'\n#define configure_out_port_no_ready(p, clk, initial) configure_out_port(p, clk, initial)\n                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref configure_out_port, clk_audio_bclk,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:89:9: error: call to `configure_out_port\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n        configure_out_port_no_ready(p_lrclk, clk_audio_bclk, 0);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:256:54: note: expanded from macro \'configure_out_port_no_ready\'\n#define configure_out_port_no_ready(p, clk, initial) configure_out_port(p, clk, initial)\n                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref configure_port_clock_output, clk_audio_bclk,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:61:5: error: call to `configure_port_clock_output\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n    configure_port_clock_output(p_bclk, clk_audio_bclk);\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref configure_clock_src_divide, p_mclk_in,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:5: error: call to `configure_clock_src_divide\' in `ConfigAudioPorts\' makes alias of global \'p_mclk_in\'\n    configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref configure_clock_src_divide, clk_audio_bclk,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:5: error: call to `configure_clock_src_divide\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n    configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref configure_in_port, clk_audio_bclk,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:9: error: call to `configure_in_port\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n        configure_in_port_no_ready(p_i2s_adc[i], clk_audio_bclk);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:227:44: note: expanded from macro \'configure_in_port_no_ready\'\n#define configure_in_port_no_ready(p, clk) configure_in_port(p, clk)\n                                           ^~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref configure_out_port, clk_audio_bclk,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:9: error: call to `configure_out_port\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n        configure_out_port_no_ready(p_i2s_dac[i], clk_audio_bclk, 0);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:256:54: note: expanded from macro \'configure_out_port_no_ready\'\n#define configure_out_port_no_ready(p, clk, initial) configure_out_port(p, clk, initial)\n                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref configure_out_port, clk_audio_bclk,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:89:9: error: call to `configure_out_port\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n        configure_out_port_no_ready(p_lrclk, clk_audio_bclk, 0);\n        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:256:54: note: expanded from macro \'configure_out_port_no_ready\'\n#define configure_out_port_no_ready(p, clk, initial) configure_out_port(p, clk, initial)\n                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref configure_port_clock_output, clk_audio_bclk,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:61:5: error: call to `configure_port_clock_output\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n    configure_port_clock_output(p_bclk, clk_audio_bclk);\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref configure_clock_src_divide, p_mclk_in,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:5: error: call to `configure_clock_src_divide\' in `ConfigAudioPorts\' makes alias of global \'p_mclk_in\'\n    configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref configure_clock_src_divide, clk_audio_bclk,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:5: error: call to `configure_clock_src_divide\' in `ConfigAudioPorts\' makes alias of global \'clk_audio_bclk\'\n    configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));\n    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -47,8 +47,8 @@
 	.cc_top ConfigAudioPorts.function,ConfigAudioPorts
 ConfigAudioPorts:                       # @ConfigAudioPorts
 .Lfunc_begin0:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
-	.loc	1 32 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:32:0
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports\\audioports.xc"
+	.loc	1 32 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:32:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -111,10 +111,10 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 		ldw r1, sp[11]
 	}
 	#DEBUG_VALUE: ConfigAudioPorts:p_lrclk <- R1
-	.loc	1 36 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:36:0
+	.loc	1 36 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:36:0
 .Ltmp13:
 	ldw r3, dp[clk_audio_bclk]
-	.loc	1 36 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:36:0
+	.loc	1 36 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:36:0
 	{
 		setc res[r3], 7
 		nop
@@ -130,7 +130,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	#DEBUG_VALUE: ConfigAudioPorts:p_bclk <- R9
 	#DEBUG_VALUE: ConfigAudioPorts:divide <- R0
 	#DEBUG_VALUE: ConfigAudioPorts:p_lrclk <- R1
-	.loc	1 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:40:0
+	.loc	1 40 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:40:0
 	{
 		setc res[r1], 23
 		nop
@@ -155,7 +155,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 		ldc r1, 0
 		nop
 	}
-	.loc	1 45 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:45:0
+	.loc	1 45 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:45:0
 .Ltmp16:
 	{
 		lss r2, r1, r4
@@ -173,7 +173,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	#DEBUG_VALUE: ConfigAudioPorts:p_bclk <- R9
 	#DEBUG_VALUE: ConfigAudioPorts:divide <- R0
 	#DEBUG_VALUE: ConfigAudioPorts:p_lrclk <- undef
-	.loc	1 47 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:47:0
+	.loc	1 47 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:47:0
 	{
 		lsu r2, r1, r11
 		nop
@@ -196,13 +196,13 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	}
 .Ltmp18:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 47 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:47:0
+	.loc	1 47 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:47:0
 	{
 		setc res[r2], 23
 		add r1, r1, 1
 	}
 .Ltmp19:
-	.loc	1 45 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:45:0
+	.loc	1 45 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:45:0
 	{
 		lss r2, r1, r4
 		nop
@@ -225,7 +225,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 		ldc r1, 0
 		nop
 	}
-	.loc	1 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:52:0
+	.loc	1 52 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:52:0
 .Ltmp21:
 	{
 		lss r2, r1, r7
@@ -243,7 +243,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	#DEBUG_VALUE: ConfigAudioPorts:p_bclk <- R9
 	#DEBUG_VALUE: ConfigAudioPorts:divide <- R0
 	#DEBUG_VALUE: ConfigAudioPorts:p_lrclk <- undef
-	.loc	1 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:54:0
+	.loc	1 54 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:54:0
 	{
 		lsu r2, r1, r10
 		nop
@@ -266,13 +266,13 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	}
 .Ltmp23:
 	#DEBUG_VALUE: i <- R1
-	.loc	1 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:54:0
+	.loc	1 54 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:54:0
 	{
 		setc res[r2], 23
 		add r1, r1, 1
 	}
 .Ltmp24:
-	.loc	1 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:52:0
+	.loc	1 52 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:52:0
 	{
 		lss r2, r1, r7
 		nop
@@ -290,14 +290,14 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	#DEBUG_VALUE: ConfigAudioPorts:p_bclk <- R9
 	#DEBUG_VALUE: ConfigAudioPorts:divide <- R0
 	#DEBUG_VALUE: ConfigAudioPorts:p_lrclk <- undef
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:0
 	ldw r1, dp[p_mclk_in]
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:0
 	{
 		shr r2, r0, 1
 		nop
 	}
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:60:0
 	{
 		zext r2, 8
 		mov r6, r3
@@ -309,7 +309,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .Ltmp26:
 .Lxta.call_labels0:
 	bl configure_clock_src_divide
-	.loc	1 61 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:61:0
+	.loc	1 61 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:61:0
 	{
 		mov r0, r9
 		mov r1, r6
@@ -335,7 +335,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 		ldc r2, 0
 		mov r1, r6
 	}
-	.loc	1 89 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:89:0
+	.loc	1 89 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:89:0
 .Lxta.call_labels2:
 	bl configure_out_port
 .Ltmp29:
@@ -364,7 +364,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	#DEBUG_VALUE: ConfigAudioPorts:numPortsDac <- R7
 	#DEBUG_VALUE: ConfigAudioPorts:p_i2s_adc <- R5
 	#DEBUG_VALUE: ConfigAudioPorts:numPortsAdc <- R4
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:0
 	{
 		lsu r0, r6, r10
 		nop
@@ -378,7 +378,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	#DEBUG_VALUE: ConfigAudioPorts:numPortsDac <- R7
 	#DEBUG_VALUE: ConfigAudioPorts:p_i2s_adc <- R5
 	#DEBUG_VALUE: ConfigAudioPorts:numPortsAdc <- R4
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:0
 	{
 		mov r1, r9
 		ldw r0, r8[r6]
@@ -387,17 +387,17 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 		ldc r2, 0
 		nop
 	}
-	.loc	1 96 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:0
+	.loc	1 96 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:0
 .Lxta.call_labels3:
 	bl configure_out_port
-	.loc	1 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:94:0
+	.loc	1 94 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:94:0
 	{
 		add r6, r6, 1
 		nop
 	}
 .Ltmp32:
 	#DEBUG_VALUE: i <- R6
-	.loc	1 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:94:0
+	.loc	1 94 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:94:0
 	{
 		lss r0, r6, r7
 		nop
@@ -431,7 +431,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 		nop
 		ldw r0, sp[16]
 	}
-	.loc	1 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:0
+	.loc	1 104 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:0
 .Ltmp36:
 	{
 		lsu r0, r6, r0
@@ -444,22 +444,22 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	}
 	#DEBUG_VALUE: ConfigAudioPorts:p_i2s_adc <- R5
 	#DEBUG_VALUE: ConfigAudioPorts:numPortsAdc <- R4
-	.loc	1 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:0
+	.loc	1 104 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:0
 	{
 		mov r1, r7
 		ldw r0, r5[r6]
 	}
-	.loc	1 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:0
+	.loc	1 104 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:0
 .Lxta.call_labels4:
 	bl configure_in_port
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:102:0
 	{
 		add r6, r6, 1
 		nop
 	}
 .Ltmp37:
 	#DEBUG_VALUE: i <- R6
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:102:0
 	{
 		lss r0, r6, r4
 		nop
@@ -470,7 +470,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .Ltmp38:
 .LBB0_6:                                # %ifdone83
 .Lxtalabel12:
-	.loc	1 109 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:109:0
+	.loc	1 109 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:109:0
 	{
 		setc res[r7], 15
 		ldw r10, sp[8]
@@ -499,14 +499,14 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	.cfi_endproc
 
 .Ldebug_end0:
-	.file	2 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
+	.file	2 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"delay_seconds"
 .Linfo_string4:
@@ -1121,34 +1121,34 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	60
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	61
 	.long	.Lxta.call_labels1
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	89
 	.long	.Lxta.call_labels2
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	96
 	.long	.Lxta.call_labels3
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	104
 	.long	.Lxta.call_labels4
@@ -1158,213 +1158,213 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_5,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	32
 	.long	32
 	.long	.Lxtalabel0
 .cc_bottom cc_5
 .cc_top cc_6,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	36
 	.long	36
 	.long	.Lxtalabel0
 .cc_bottom cc_6
 .cc_top cc_7,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	38
 	.long	38
 	.long	.Lxtalabel0
 .cc_bottom cc_7
 .cc_top cc_8,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	39
 	.long	39
 	.long	.Lxtalabel1
 .cc_bottom cc_8
 .cc_top cc_9,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	40
 	.long	40
 	.long	.Lxtalabel1
 .cc_bottom cc_9
 .cc_top cc_10,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	41
 	.long	41
 	.long	.Lxtalabel1
 .cc_bottom cc_10
 .cc_top cc_11,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	42
 	.long	42
 	.long	.Lxtalabel2
 .cc_bottom cc_11
 .cc_top cc_12,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	45
 	.long	45
 	.long	.Lxtalabel2
 .cc_bottom cc_12
 .cc_top cc_13,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	46
 	.long	46
 	.long	.Lxtalabel3
 .cc_bottom cc_13
 .cc_top cc_14,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	47
 	.long	47
 	.long	.Lxtalabel3
 .cc_bottom cc_14
 .cc_top cc_15,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	48
 	.long	48
 	.long	.Lxtalabel3
 .cc_bottom cc_15
 .cc_top cc_16,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	52
 	.long	52
 	.long	.Lxtalabel4
 .cc_bottom cc_16
 .cc_top cc_17,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	53
 	.long	53
 	.long	.Lxtalabel5
 .cc_bottom cc_17
 .cc_top cc_18,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	54
 	.long	54
 	.long	.Lxtalabel5
 .cc_bottom cc_18
 .cc_top cc_19,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	55
 	.long	55
 	.long	.Lxtalabel5
 .cc_bottom cc_19
 .cc_top cc_20,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	60
 	.long	61
 	.long	.Lxtalabel6
 .cc_bottom cc_20
 .cc_top cc_21,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	86
 	.long	86
 	.long	.Lxtalabel6
 .cc_bottom cc_21
 .cc_top cc_22,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	87
 	.long	87
 	.long	.Lxtalabel7
 .cc_bottom cc_22
 .cc_top cc_23,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	89
 	.long	89
 	.long	.Lxtalabel7
 .cc_bottom cc_23
 .cc_top cc_24,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	90
 	.long	90
 	.long	.Lxtalabel7
 .cc_bottom cc_24
 .cc_top cc_25,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	94
 	.long	94
 	.long	.Lxtalabel8
 .cc_bottom cc_25
 .cc_top cc_26,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	95
 	.long	95
 	.long	.Lxtalabel9
 .cc_bottom cc_26
 .cc_top cc_27,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	96
 	.long	96
 	.long	.Lxtalabel9
 .cc_bottom cc_27
 .cc_top cc_28,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	97
 	.long	97
 	.long	.Lxtalabel9
 .cc_bottom cc_28
 .cc_top cc_29,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	102
 	.long	102
 	.long	.Lxtalabel10
 .cc_bottom cc_29
 .cc_top cc_30,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	103
 	.long	103
 	.long	.Lxtalabel11
 .cc_bottom cc_30
 .cc_top cc_31,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	104
 	.long	104
 	.long	.Lxtalabel11
 .cc_bottom cc_31
 .cc_top cc_32,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	105
 	.long	105
 	.long	.Lxtalabel11
 .cc_bottom cc_32
 .cc_top cc_33,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	109
 	.long	109
 	.long	.Lxtalabel12
 .cc_bottom cc_33
 .cc_top cc_34,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	151
 	.long	151
@@ -1375,87 +1375,87 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_35,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	46
 	.long	46
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_35
 .cc_top cc_36,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	47
 	.long	47
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_36
 .cc_top cc_37,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	48
 	.long	48
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_37
 .cc_top cc_38,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	53
 	.long	53
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_38
 .cc_top cc_39,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	54
 	.long	54
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_39
 .cc_top cc_40,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	55
 	.long	55
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_40
 .cc_top cc_41,.Lxta.loop_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	95
 	.long	95
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_41
 .cc_top cc_42,.Lxta.loop_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	96
 	.long	96
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_42
 .cc_top cc_43,.Lxta.loop_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	97
 	.long	97
 	.long	.Lxta.loop_labels2
 .cc_bottom cc_43
 .cc_top cc_44,.Lxta.loop_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	103
 	.long	103
 	.long	.Lxta.loop_labels3
 .cc_bottom cc_44
 .cc_top cc_45,.Lxta.loop_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	104
 	.long	104
 	.long	.Lxta.loop_labels3
 .cc_bottom cc_45
 .cc_top cc_46,.Lxta.loop_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 	.byte	0
 	.long	105
 	.long	105
@@ -1468,7 +1468,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 	.long	1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str0:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:47:18: error: out of bounds array access\n        clearbuf(p_i2s_adc[i]);\n                 ^~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:1070:67: note: expanded from macro 'clearbuf'\n#define clearbuf(p)                          __builtin_clear_buff(p)\n                                                                  ^\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:47:18: error: out of bounds array access\n        clearbuf(p_i2s_adc[i]);\n                 ^~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:1070:67: note: expanded from macro 'clearbuf'\n#define clearbuf(p)                          __builtin_clear_buff(p)\n                                                                  ^\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_0,.Ltrap_info0
 	.long	.Ltrap_info0
@@ -1476,7 +1476,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .cc_bottom cc_trapinfo_0
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:54:18: error: out of bounds array access\n        clearbuf(p_i2s_dac[i]);\n                 ^~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:1070:67: note: expanded from macro 'clearbuf'\n#define clearbuf(p)                          __builtin_clear_buff(p)\n                                                                  ^\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:54:18: error: out of bounds array access\n        clearbuf(p_i2s_dac[i]);\n                 ^~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:1070:67: note: expanded from macro 'clearbuf'\n#define clearbuf(p)                          __builtin_clear_buff(p)\n                                                                  ^\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_1,.Ltrap_info1
 	.long	.Ltrap_info1
@@ -1484,7 +1484,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .cc_bottom cc_trapinfo_1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:37: error: out of bounds array access\n        configure_out_port_no_ready(p_i2s_dac[i], clk_audio_bclk, 0);\n                                    ^~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:256:73: note: expanded from macro 'configure_out_port_no_ready'\n#define configure_out_port_no_ready(p, clk, initial) configure_out_port(p, clk, initial)\n                                                                        ^\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:96:37: error: out of bounds array access\n        configure_out_port_no_ready(p_i2s_dac[i], clk_audio_bclk, 0);\n                                    ^~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:256:73: note: expanded from macro 'configure_out_port_no_ready'\n#define configure_out_port_no_ready(p, clk, initial) configure_out_port(p, clk, initial)\n                                                                        ^\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_2,.Ltrap_info2
 	.long	.Ltrap_info2
@@ -1492,7 +1492,7 @@ ConfigAudioPorts:                       # @ConfigAudioPorts
 .cc_bottom cc_trapinfo_2
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str3:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:36: error: out of bounds array access\n        configure_in_port_no_ready(p_i2s_adc[i], clk_audio_bclk);\n                                   ^~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:227:62: note: expanded from macro 'configure_in_port_no_ready'\n#define configure_in_port_no_ready(p, clk) configure_in_port(p, clk)\n                                                             ^\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc:104:36: error: out of bounds array access\n        configure_in_port_no_ready(p_i2s_adc[i], clk_audio_bclk);\n                                   ^~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:227:62: note: expanded from macro 'configure_in_port_no_ready'\n#define configure_in_port_no_ready(p, clk) configure_in_port(p, clk)\n                                                             ^\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_3,.Ltrap_info3
 	.long	.Ltrap_info3

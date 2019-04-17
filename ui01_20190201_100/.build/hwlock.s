@@ -21,7 +21,7 @@
 	.cc_top hwlock_alloc.function,hwlock_alloc
 hwlock_alloc:
 .Lfunc_begin0:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/hwlock.h"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_locks/src\\hwlock.h"
 	.loc	1 30 0
 	.cfi_startproc
 	.issue_mode dual
@@ -176,11 +176,11 @@ hwlock_release:
 .Ldebug_end0:
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+.asciiz"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/hwlock.c"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_locks/src\\hwlock.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"hwlock_release"
 .Linfo_string4:
@@ -465,7 +465,7 @@ hwlock_release:
 .LpubTypes_end0:
 	.cfi_sections .debug_frame
 
-	.ident	"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+	.ident	"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 	.typestring hwlock_alloc, "f{ui}(0)"
 	.typestring hwlock_free, "f{0}(ui)"
 	.typestring hwlock_acquire, "f{0}(ui)"

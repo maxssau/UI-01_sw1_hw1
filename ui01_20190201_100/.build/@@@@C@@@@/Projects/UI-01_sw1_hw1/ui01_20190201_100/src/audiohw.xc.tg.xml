@@ -1,0 +1,83 @@
+<taskgraph>
+<task>
+  <name>delay_seconds</name>
+  <inFunction>delay_seconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_milliseconds</name>
+  <inFunction>delay_milliseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_microseconds</name>
+  <inFunction>delay_microseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>setbit</name>
+  <inFunction>setbit</inFunction>
+</task>
+<task>
+  <name>getbit</name>
+  <inFunction>getbit</inFunction>
+</task>
+<task>
+  <name>Mute</name>
+  <inFunction>Mute</inFunction>
+</task>
+<task>
+  <name>UnMute</name>
+  <inFunction>UnMute</inFunction>
+</task>
+<task>
+  <name>SetPCM</name>
+  <inFunction>SetPCM</inFunction>
+</task>
+<task>
+  <name>SetDSD</name>
+  <inFunction>SetDSD</inFunction>
+</task>
+<task>
+  <name>MCLK_Config</name>
+  <inFunction>MCLK_Config</inFunction>
+</task>
+<task>
+  <name>Reset</name>
+  <inFunction>Reset</inFunction>
+</task>
+<task>
+  <name>UserAudioStreamStop</name>
+  <inFunction>UserAudioStreamStop</inFunction>
+</task>
+<task>
+  <name>UserAudioStreamStart</name>
+  <inFunction>UserAudioStreamStart</inFunction>
+</task>
+<task>
+  <name>UserHostActive</name>
+  <inFunction>UserHostActive</inFunction>
+</task>
+<task>
+  <name>XUD_UserSuspend</name>
+  <inFunction>XUD_UserSuspend</inFunction>
+  <calledFunction>UserHostActive</calledFunction>
+</task>
+<task>
+  <name>XUD_UserResume</name>
+  <inFunction>XUD_UserResume</inFunction>
+</task>
+<task>
+  <name>wait_us</name>
+  <inFunction>wait_us</inFunction>
+</task>
+<task>
+  <name>AudioHwInit</name>
+  <inFunction>AudioHwInit</inFunction>
+  <endOfSeqCalledFunction>Mute</endOfSeqCalledFunction>
+</task>
+<task>
+  <name>AudioHwConfig</name>
+  <inFunction>AudioHwConfig</inFunction>
+</task>
+</taskgraph>

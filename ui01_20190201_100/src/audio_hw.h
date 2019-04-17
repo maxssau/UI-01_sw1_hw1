@@ -389,18 +389,17 @@ void UserHostActive(int active)
     }
     return;
 }
-
+/*
 void XUD_UserSuspend(void)
 {
 
     UserHostActive(0);
-}
-
+}*/
+/*
 void XUD_UserResume(void)
 {
     unsigned config;
 
-    /* Clear the reboot interrupt */
     //DISABLE_INTERRUPTS();
     //asm("edu res[%0]"::"r"(g_rebootTimer));
 
@@ -415,5 +414,5 @@ void XUD_UserResume(void)
         UserHostActive(0);
         // DAC/ADC sleep
     }
-}
+}*/
 #endif /* AUDIOHW_H_ */

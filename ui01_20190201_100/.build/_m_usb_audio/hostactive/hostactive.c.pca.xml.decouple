@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c">
+<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c">
   <fCall global="true" name="UserHostActive"/>
   <fCall global="true" name="UserHostActive.nstackwords"/>
   <fCall global="true" name="UserHostActive.maxcores"/>

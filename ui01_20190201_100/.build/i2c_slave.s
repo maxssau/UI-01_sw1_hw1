@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
                                         # Start of file scope inline assembly
 	.inline_definition __i_i2c_master_if_read_reg
 	.inline_definition __i_i2c_master_if_write_reg
@@ -30,7 +30,7 @@
 	.globl i2c_slave.select.yield.enable.cases.maxchanends
 	.set i2c_slave.select.yield.enable.cases,0
 	.globl i2c_slave.select.yield.enable.cases
-	.set i2c_slave.select.yield.enable.cases.nstackwords, 0 $M (i2c_slave.select.yield.case.2.nstackwords) $M (i2c_slave.select.yield.case.0.nstackwords) $M (i2c_slave.select.yield.case.1.nstackwords)
+	.set i2c_slave.select.yield.enable.cases.nstackwords, 0 $M (i2c_slave.select.yield.case.0.nstackwords) $M (i2c_slave.select.yield.case.1.nstackwords) $M (i2c_slave.select.yield.case.2.nstackwords)
 	.globl i2c_slave.select.yield.enable.cases.nstackwords
 	.set i2c_slave.select.enable.savedstate,16
 	.globl i2c_slave.select.enable.savedstate
@@ -347,7 +347,7 @@
 	.set usage.anon.7.locnointerfaceaccess, 0
 	.set i2c_slave.locnointerfaceaccess, 0
 	.set i2c_slave.locnonotificationselect, 0
-	.assert 1,usage.anon.11.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:219:13: error: call to function `ensure_setup_time\' which selects on a notification in a combinable function select case\n            ensure_setup_time();\n            ^~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.11.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:219:13: error: call to function `ensure_setup_time\' which selects on a notification in a combinable function select case\n            ensure_setup_time();\n            ^~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -364,8 +364,8 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
-	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/lib_i2c/api\\i2c.h"
+	.file	2 "C:/Projects/UI-01_sw1_hw1/lib_i2c/src\\i2c_slave.xc"
 	.text
 	.weak	_i.i2c_master_if._chan.shutdown
 	.align	4
@@ -2276,7 +2276,7 @@ _i.i2c_slave_callback_if._chan_yield.ack_read_request: # @_i.i2c_slave_callback_
 	.cc_top i2c_slave.function,i2c_slave
 i2c_slave:                              # @i2c_slave
 .Lfunc_begin30:
-	.loc	2 27 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:27:0
+	.loc	2 27 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:27:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -2328,12 +2328,12 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: state <- 0
 	#DEBUG_VALUE: i2c_slave:i <- [SP+40]
 	mkmsk r1, 1
-	.loc	2 37 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 .Ltmp192:
 	setd res[r6], r1
-	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 	setc res[r6], 17
-	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 .Ltmp193:
 .Lxta.endpoint_labels0:
 	in r0, res[r6]
@@ -2383,15 +2383,15 @@ i2c_slave:                              # @i2c_slave
 	mov r9, r8
 	mov r4, r2
 	mov r5, r0
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	clre
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	ldw r0, sp[10]                  # 4-byte Folded Reload
 	ldw r0, r0[1]
 	ldap r11, .Ltmp197
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setv res[r0], r11
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	eeu res[r0]
 	bf r1, .LBB30_3
 .Ltmp198:
@@ -2408,16 +2408,16 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setd res[r7], r4
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setc res[r7], 17
 	ldap r11, .Ltmp199
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setv res[r7], r11
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	eeu res[r7]
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	ldw r2, sp[11]                  # 4-byte Folded Reload
 	bf r2, .LBB30_4
 .Ltmp200:
@@ -2434,14 +2434,14 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setd res[r6], r10
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setc res[r6], 17
 	ldap r11, .Ltmp201
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	setv res[r6], r11
-	.loc	2 39 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
+	.loc	2 39 5                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:39:5
 	eeu res[r6]
 .Ltmp202:
 .LBB30_4:                               # %selectguarddone11
@@ -2457,7 +2457,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 261 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:261:0
+	.loc	2 261 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:261:0
 
 	.xtabranch .LBB30_5, .LBB30_6, .LBB30_55
 	waiteu
@@ -2477,11 +2477,11 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 42 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 .Lxta.endpoint_labels1:
 	in r0, res[r7]
 .Ltmp204:
-	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
+	.loc	2 43 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
 	sub r3, r1, 1
 	ldc r0, 6
 	lsu r11, r0, r3
@@ -2524,16 +2524,16 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 	setc res[r6], 1
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 .Lxta.endpoint_labels2:
 	in r2, res[r6]
 .Ltmp208:
 	#DEBUG_VALUE: bit <- R2
 	ldc r0, 6
 	ldw r1, sp[9]                   # 4-byte Folded Reload
-	.loc	2 53 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
+	.loc	2 53 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
 	lss r0, r0, r1
 	bt r0, .LBB30_12
 .Ltmp209:
@@ -2545,14 +2545,14 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: bit <- R2
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	ldw r0, sp[8]                   # 4-byte Folded Reload
 	shl r0, r0, 1
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	or r0, r2, r0
 .Ltmp210:
 	#DEBUG_VALUE: data <- [SP+32]
-	.loc	2 55 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
+	.loc	2 55 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
 	stw r0, sp[8]                   # 4-byte Folded Spill
 	add r1, r1, 1
 .Ltmp211:
@@ -2583,21 +2583,21 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 231 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:231:0
+	.loc	2 231 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:231:0
 .Lxta.endpoint_labels3:
 	in r0, res[r6]
 .Ltmp215:
-	.loc	2 232 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
+	.loc	2 232 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
 	eq r0, r10, 1
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 .Ltmp216:
 	setc res[r7], 1
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 	in r3, res[r7]
 .Ltmp217:
 	#DEBUG_VALUE: val <- R3
 	#DEBUG_VALUE: val <- R3
-	.loc	2 232 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
+	.loc	2 232 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
 	bf r0, .LBB30_59
 .Ltmp218:
 # BB#56:                                # %iftrue210
@@ -2660,15 +2660,15 @@ i2c_slave:                              # @i2c_slave
 	ldw r1, sp[10]                  # 4-byte Folded Reload
 .Ltmp221:
 	#DEBUG_VALUE: i2c_slave:i <- R1
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r0, r1[0]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r1[3]
 .Ltmp222:
 	#DEBUG_VALUE: i2c_slave:i <- [SP+40]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r1[4]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 .Lxta.call_labels0:
 	bla r1
 	mkmsk r0, 1
@@ -2694,10 +2694,10 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
 	#DEBUG_VALUE: val <- R3
-	.loc	2 251 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
+	.loc	2 251 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
 	eq r0, r3, 1
 	ldc r2, 0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	mov r3, r2
 .Ltmp224:
 	bt r0, .LBB30_61
@@ -2732,7 +2732,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	mov r11, r2
 	bt r0, .LBB30_63
 .Ltmp227:
@@ -2766,7 +2766,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	mov r8, r2
 	bt r0, .LBB30_65
 .Ltmp229:
@@ -2816,7 +2816,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	mov r2, r4
 .Ltmp232:
 .LBB30_67:                              # %iffalse216
@@ -2879,18 +2879,18 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	ldc r2, 0
-	.loc	2 79 19                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:79:19
+	.loc	2 79 19                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:79:19
 .Lxta.endpoint_labels4:
 	out res[r7], r2
 	ldw r1, sp[10]                  # 4-byte Folded Reload
 .Ltmp237:
 	#DEBUG_VALUE: i2c_slave:i <- R1
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r0, r1[0]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r1[3]
 .Ltmp238:
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 	ldw r3, sp[7]                   # 4-byte Folded Reload
 .Ltmp239:
 	#DEBUG_VALUE: i2c_slave:i <- [SP+40]
@@ -2903,7 +2903,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r1[0]
 	bu .LBB30_20
 .Ltmp241:
@@ -2929,13 +2929,13 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 	setc res[r6], 1
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 .Ltmp243:
 .Lxta.endpoint_labels5:
 	in r0, res[r6]
-	.loc	2 122 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
+	.loc	2 122 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
 	eq r3, r9, 7
 	mov r0, r5
 	ldc r1, 0
@@ -2996,9 +2996,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 	eq r0, r4, 1
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 	bf r0, .LBB30_50
 .Ltmp248:
 # BB#47:                                # %iftrue154
@@ -3008,17 +3008,17 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 	setc res[r6], 1
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 .Lxta.endpoint_labels6:
 	in r2, res[r6]
 .Ltmp249:
 	#DEBUG_VALUE: bit <- R2
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	ldw r0, sp[8]                   # 4-byte Folded Reload
 	shl r0, r0, 1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	mov r1, r2
 	zext r1, 1
 	ldw r3, sp[9]                   # 4-byte Folded Reload
@@ -3032,7 +3032,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: bit <- R2
-	.loc	2 190 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:190:13
+	.loc	2 190 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:190:13
 	eq r10, r2, 0
 	mkmsk r2, 1
 .Ltmp251:
@@ -3045,12 +3045,12 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	or r0, r1, r0
 .Ltmp253:
 	#DEBUG_VALUE: data <- [SP+32]
 	#DEBUG_VALUE: scl_val <- 0
-	.loc	2 199 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
+	.loc	2 199 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
 	stw r0, sp[8]                   # 4-byte Folded Spill
 	add r3, r3, 1
 .Ltmp254:
@@ -3071,9 +3071,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	eq r0, r4, 1
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	bf r0, .LBB30_39
 .Ltmp257:
 # BB#30:                                # %iftrue96
@@ -3084,10 +3084,10 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	ldw r2, sp[9]                   # 4-byte Folded Reload
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	eq r0, r2, 8
 	ldc r1, 0
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	bf r0, .LBB30_38
 .Ltmp258:
 # BB#31:                                # %iftrue103
@@ -3097,9 +3097,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 	setc res[r6], 1
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 .Lxta.endpoint_labels7:
 	in r0, res[r6]
 .Ltmp259:
@@ -3115,7 +3115,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 147 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
+	.loc	2 147 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
 	mov r2, r1
 .Ltmp261:
 .LBB30_33:                              # %iftrue103
@@ -3126,7 +3126,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 147 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
+	.loc	2 147 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
 	mov r3, r1
 	bt r0, .LBB30_35
 .Ltmp262:
@@ -3149,7 +3149,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: bit <- R0
 	stw r2, sp[9]                   # 4-byte Folded Spill
-	.loc	2 147 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
+	.loc	2 147 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
 	eq r2, r0, 0
 	bt r0, .LBB30_37
 .Ltmp264:
@@ -3183,7 +3183,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: stop_bit_check <- 0
-	.loc	2 206 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
+	.loc	2 206 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
 	ldw r0, sp[9]                   # 4-byte Folded Reload
 	eq r3, r0, 8
 	mov r0, r5
@@ -3203,28 +3203,28 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: stop_bit_check <- 0
 	ldc r4, 0
-	.loc	2 208 23                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:208:23
+	.loc	2 208 23                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:208:23
 .Lxta.endpoint_labels8:
 	out res[r7], r4
 	ldw r1, sp[10]                  # 4-byte Folded Reload
 .Ltmp268:
 	#DEBUG_VALUE: i2c_slave:i <- R1
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r0, r1[0]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r1, r1[3]
 .Ltmp269:
 	#DEBUG_VALUE: i2c_slave:i <- [SP+40]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r2, r1[3]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r1, sp[8]                   # 4-byte Folded Reload
 	zext r1, 8
 .Lxta.call_labels1:
 	bla r2
 .Ltmp270:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 210 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
+	.loc	2 210 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
 	eq r0, r0, 1
 .Ltmp271:
 	bf r0, .LBB30_54
@@ -3237,9 +3237,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: stop_bit_check <- 0
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 	setc res[r6], 1
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 .Ltmp273:
 .Lxta.endpoint_labels9:
 	in r0, res[r6]
@@ -3254,9 +3254,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	ldc r0, 8
 	ldw r1, sp[9]                   # 4-byte Folded Reload
-	.loc	2 156 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
+	.loc	2 156 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
 	lss r0, r1, r0
-	.loc	2 156 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
+	.loc	2 156 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
 	bf r0, .LBB30_73
 .Ltmp275:
 # BB#40:                                # %iftrue118
@@ -3267,7 +3267,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	ldw r4, sp[8]                   # 4-byte Folded Reload
-	.loc	2 157 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:157:13
+	.loc	2 157 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:157:13
 	bf r1, .LBB30_41
 .Ltmp276:
 # BB#45:                                # %iffalse131
@@ -3277,10 +3277,10 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 	mov r0, r4
 	zext r0, 1
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 .Lxta.endpoint_labels10:
 	out res[r6], r0
 	bu .LBB30_42
@@ -3292,14 +3292,14 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 87 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:87:0
+	.loc	2 87 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:87:0
 	ldw r1, r1[1]
 .Ltmp278:
 .LBB30_20:                              # %ifdone48
                                         #   in Loop: Header=BB30_1 Depth=1
 .Lxtalabel51:
 	mov r4, r2
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 .Lxta.call_labels2:
 	bla r1
 	mov r1, r4
@@ -3310,10 +3310,10 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: ignore_stop_bit <- 0
-	.loc	2 91 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
+	.loc	2 91 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
 	eq r0, r0, 1
 .Ltmp280:
-	.loc	2 91 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
+	.loc	2 91 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
 	bf r0, .LBB30_23
 .Ltmp281:
 # BB#21:                                # %iftrue58
@@ -3324,9 +3324,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: ignore_stop_bit <- 0
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 	setc res[r6], 1
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 .Ltmp282:
 .Lxta.endpoint_labels11:
 	in r0, res[r6]
@@ -3342,11 +3342,11 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: ignore_stop_bit <- 0
-	.loc	2 97 21                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:97:21
+	.loc	2 97 21                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:97:21
 .Lxta.endpoint_labels12:
 	out res[r6], r1
 	mkmsk r8, 3
-	.loc	2 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:99:0
+	.loc	2 99 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:99:0
 	ldw r0, sp[7]                   # 4-byte Folded Reload
 	bt r0, .LBB30_22
 .Ltmp284:
@@ -3373,14 +3373,14 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: ignore_stop_bit <- 0
 	#DEBUG_VALUE: scl_val <- 1
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp287:
 .Lxta.call_labels3:
 	bl delay_ticks
 .Ltmp288:
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 	setc res[r7], 1
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 .Ltmp289:
 .Lxta.endpoint_labels13:
 	in r0, res[r7]
@@ -3397,7 +3397,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: bit <- R2
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 	ldw r0, sp[6]                   # 4-byte Folded Reload
 	ldw r1, sp[8]                   # 4-byte Folded Reload
 	eq r0, r1, r0
@@ -3410,7 +3410,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 65 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
+	.loc	2 65 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
 	ldw r2, sp[7]                   # 4-byte Folded Reload
 .Ltmp292:
 .LBB30_14:                              # %ifdone27
@@ -3453,7 +3453,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: scl_val <- 0
-	.loc	2 152 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
+	.loc	2 152 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
 	add r2, r2, 1
 .Ltmp296:
 	#DEBUG_VALUE: bitnum <- R2
@@ -3471,9 +3471,9 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 	setc res[r6], 1
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 .Ltmp299:
 .Lxta.endpoint_labels14:
 	in r0, res[r6]
@@ -3504,7 +3504,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	#DEBUG_VALUE: stop_bit_check <- 0
-	.loc	2 215 25                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:215:25
+	.loc	2 215 25                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:215:25
 .Lxta.endpoint_labels15:
 	out res[r6], r4
 .Ltmp302:
@@ -3518,14 +3518,14 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: state <- 3
 	#DEBUG_VALUE: stop_bit_check <- 0
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp303:
 .Lxta.call_labels4:
 	bl delay_ticks
 .Ltmp304:
-	.loc	2 222 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
+	.loc	2 222 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
 	setc res[r7], 1
-	.loc	2 222 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
+	.loc	2 222 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
 .Ltmp305:
 .Lxta.endpoint_labels16:
 	in r0, res[r7]
@@ -3546,44 +3546,44 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
 	ldc r0, 0
-	.loc	2 159 25                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:159:25
+	.loc	2 159 25                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:159:25
 .Lxta.endpoint_labels17:
 	out res[r7], r0
 	ldw r1, sp[10]                  # 4-byte Folded Reload
 .Ltmp307:
 	#DEBUG_VALUE: i2c_slave:i <- R1
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r0, r1[0]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r1[3]
 .Ltmp308:
 	#DEBUG_VALUE: i2c_slave:i <- [SP+40]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r1[2]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 .Lxta.call_labels5:
 	bla r1
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	bitrev r0, r0
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	shr r4, r0, 24
 .Ltmp309:
 	#DEBUG_VALUE: data <- R4
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 	mov r0, r4
 	zext r0, 1
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 .Lxta.endpoint_labels18:
 	out res[r6], r0
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp310:
 .Lxta.call_labels6:
 	bl delay_ticks
 .Ltmp311:
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 	setc res[r7], 1
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 .Ltmp312:
 .Lxta.endpoint_labels19:
 	in r0, res[r7]
@@ -3595,7 +3595,7 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: i2c_slave:p_scl <- R7
 	#DEBUG_VALUE: i2c_slave:p_sda <- R6
 	#DEBUG_VALUE: i2c_slave:device_addr <- undef
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	ashr r4, r4, 1
 .Ltmp314:
 	#DEBUG_VALUE: data <- R4
@@ -3627,10 +3627,10 @@ i2c_slave:                              # @i2c_slave
 	#DEBUG_VALUE: rw <- 0
 	#DEBUG_VALUE: stop_bit_check <- 0
 	#DEBUG_VALUE: ignore_stop_bit <- 1
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	chkct res[r0], 1
 	mkmsk r0, 1
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	ldw r1, sp[10]                  # 4-byte Folded Reload
 	stw r0, r1[2]
 	ldw r10, sp[18]                 # 4-byte Folded Reload
@@ -3674,44 +3674,44 @@ i2c_slave.init.1:                       # @i2c_slave.init.1
 	#DEBUG_VALUE: i2c_slave.init.1:i2c_slave.init.1.state_ptr <- R0
 	ldc r1, 0
 	stw r1, r0[1]
-	.loc	2 28 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:28:0
+	.loc	2 28 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:28:0
 .Ltmp321:
 	stw r1, r0[6]
-	.loc	2 29 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:29:0
+	.loc	2 29 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:29:0
 .Ltmp322:
 	stw r1, r0[7]
-	.loc	2 30 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:30:0
+	.loc	2 30 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:30:0
 .Ltmp323:
 	stw r1, r0[8]
-	.loc	2 32 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:32:0
+	.loc	2 32 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:32:0
 .Ltmp324:
 	stw r1, r0[10]
 	ldc r2, 48
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:34:0
 .Ltmp325:
 	add r2, r0, r2
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:34:0
 	stw r1, r2[0]
 	ldc r2, 52
-	.loc	2 35 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:35:0
+	.loc	2 35 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:35:0
 .Ltmp326:
 	add r2, r0, r2
-	.loc	2 35 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:35:0
+	.loc	2 35 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:35:0
 	stw r1, r2[0]
 	ldc r1, 56
-	.loc	2 36 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:36:0
+	.loc	2 36 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:36:0
 .Ltmp327:
 	add r1, r0, r1
 	mkmsk r2, 1
-	.loc	2 36 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:36:0
+	.loc	2 36 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:36:0
 	stw r2, r1[0]
-	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 	ldw r1, r0[4]
-	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 	setd res[r1], r2
-	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 	setc res[r1], 17
-	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
+	.loc	2 37 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:37:0
 .Ltmp328:
 .Lxta.endpoint_labels20:
 	in r1, res[r1]
@@ -4029,22 +4029,22 @@ i2c_slave.fini:                         # @i2c_slave.fini
 	.cc_top i2c_slave.select.yield.case.0.function,i2c_slave.select.yield.case.0
 i2c_slave.select.yield.case.0:          # @i2c_slave.select.yield.case.0
 .Lfunc_begin36:
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
 .Lxtalabel72:
 	ENTSP_lu6 0
 	get r11, ed
-	.loc	2 40 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 .Ltmp351:
 	ldw r0, r11[2]
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	ldw r1, r0[1]
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	chkct res[r1], 1
 	mkmsk r1, 1
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	stw r1, r0[2]
 	ldc r0, 0
 	stw r0, r11[0]
@@ -4066,7 +4066,7 @@ i2c_slave.select.yield.case.0:          # @i2c_slave.select.yield.case.0
 	.cc_top i2c_slave.select.yield.case.1.function,i2c_slave.select.yield.case.1
 i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 .Lfunc_begin37:
-	.loc	2 42 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -4088,17 +4088,17 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 	.cfi_offset 7, -4
 	get r11, ed
 	mov r4, r11
-	.loc	2 42 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 .Ltmp360:
 	ldw r0, r4[3]
-	.loc	2 42 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 .Ltmp361:
 .Lxta.endpoint_labels21:
 	in r1, res[r0]
 .Ltmp362:
-	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
+	.loc	2 43 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
 	ldw r1, r4[6]
-	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
+	.loc	2 43 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
 	sub r1, r1, 1
 	ldc r5, 6
 	lsu r2, r5, r1
@@ -4113,69 +4113,69 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 	.jmptable .LBB37_2,.LBB37_15,.LBB37_11,.LBB37_21,.LBB37_47,.LBB37_38,.LBB37_28
 .LBB37_2:                               # %switchcase
 .Lxtalabel75:
-	.loc	2 46 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
+	.loc	2 46 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
 	ldw r0, r4[9]
-	.loc	2 46 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
+	.loc	2 46 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
 	bf r0, .LBB37_3
 # BB#4:                                 # %ifdone
 .Lxtalabel76:
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 .Ltmp363:
 	ldw r0, r4[4]
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 	setc res[r0], 1
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 .Lxta.endpoint_labels22:
 	in r0, res[r0]
 .Ltmp364:
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 53 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
+	.loc	2 53 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
 	ldw r1, r4[10]
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	ldw r2, r4[11]
-	.loc	2 53 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
+	.loc	2 53 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
 	lss r3, r5, r1
 	bt r3, .LBB37_6
 .Ltmp365:
 # BB#5:                                 # %iftrue7
 .Lxtalabel77:
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	shl r2, r2, 1
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	or r0, r2, r0
 .Ltmp366:
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	stw r0, r4[11]
-	.loc	2 55 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
+	.loc	2 55 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
 	add r0, r1, 1
-	.loc	2 55 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
+	.loc	2 55 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
 	stw r0, r4[10]
 	bu .LBB37_9
 .Ltmp367:
 .LBB37_15:                              # %switchcase40
 .Lxtalabel78:
 	ldc r6, 0
-	.loc	2 79 19                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:79:19
+	.loc	2 79 19                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:79:19
 .Lxta.endpoint_labels23:
 	out res[r0], r6
 	ldc r0, 48
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 .Ltmp368:
 	add r7, r4, r0
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 	ldw r2, r7[0]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r4[2]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r0, r1[0]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r1[3]
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 	bf r2, .LBB37_16
 # BB#12:                                # %iftrue50
 .Lxtalabel79:
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r1[0]
 	bu .LBB37_13
 .Ltmp369:
@@ -4184,35 +4184,35 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 	ldc r0, 4
 .LBB37_8:                               # %ifdone23
 .Lxtalabel81:
-	.loc	2 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:62:0
+	.loc	2 62 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:62:0
 .Ltmp370:
 	stw r0, r4[6]
 .LBB37_9:                               # %ifdone23
 .Lxtalabel82:
 	ldc r0, 0
-	.loc	2 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:67:0
+	.loc	2 67 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:67:0
 	stw r0, r4[9]
 	bu .LBB37_48
 .Ltmp371:
 .LBB37_21:                              # %switchcase96
 .Lxtalabel83:
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 	ldw r0, r4[4]
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 	setc res[r0], 1
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 .Ltmp372:
 .Lxta.endpoint_labels24:
 	in r0, res[r0]
-	.loc	2 122 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
+	.loc	2 122 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
 	ldw r0, r4[7]
-	.loc	2 122 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
+	.loc	2 122 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
 	eq r1, r0, 6
 	bf r1, .LBB37_22
 # BB#26:                                # %iftrue116
 .Lxtalabel84:
 	ldc r1, 0
-	.loc	2 125 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:125:0
+	.loc	2 125 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:125:0
 	stw r1, r4[11]
 	mkmsk r1, 1
 	bu .LBB37_24
@@ -4220,113 +4220,113 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 .LBB37_47:                              # %switchcase2
 .Lxtalabel85:
 	ldc r0, 0
-	.loc	2 72 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:72:0
+	.loc	2 72 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:72:0
 	stw r0, r4[7]
 	mkmsk r0, 1
-	.loc	2 73 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:73:0
+	.loc	2 73 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:73:0
 	stw r0, r4[9]
 	mkmsk r0, 2
-	.loc	2 74 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:74:0
+	.loc	2 74 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:74:0
 	stw r0, r4[6]
 	bu .LBB37_48
 .LBB37_38:                              # %switchcase136
 .Lxtalabel86:
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 .Ltmp374:
 	ldw r1, r4[9]
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 	eq r1, r1, 1
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 	bf r1, .LBB37_42
 # BB#39:                                # %iftrue227
 .Lxtalabel87:
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 .Ltmp375:
 	ldw r0, r4[4]
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 	setc res[r0], 1
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 .Lxta.endpoint_labels25:
 	in r1, res[r0]
 .Ltmp376:
 	#DEBUG_VALUE: bit <- R1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	ldw r0, r4[11]
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	shl r0, r0, 1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	mov r2, r1
 	zext r2, 1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	or r0, r0, r2
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	stw r0, r4[11]
-	.loc	2 189 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:189:11
+	.loc	2 189 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:189:11
 	ldw r0, r4[10]
 	bt r0, .LBB37_41
 .Ltmp377:
 # BB#40:                                # %iftrue245
 .Lxtalabel88:
 	#DEBUG_VALUE: bit <- R1
-	.loc	2 190 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:190:13
+	.loc	2 190 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:190:13
 	eq r1, r1, 0
 .Ltmp378:
-	.loc	2 193 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:193:0
+	.loc	2 193 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:193:0
 	stw r1, r4[8]
 	ldc r1, 52
-	.loc	2 196 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
+	.loc	2 196 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
 	add r1, r4, r1
 	mkmsk r2, 1
-	.loc	2 196 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
+	.loc	2 196 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
 	stw r2, r1[0]
 .LBB37_41:                              # %ifdone246
 .Lxtalabel89:
 	ldc r1, 0
-	.loc	2 198 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:198:0
+	.loc	2 198 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:198:0
 	stw r1, r4[9]
-	.loc	2 199 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
+	.loc	2 199 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
 	add r0, r0, 1
-	.loc	2 199 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
+	.loc	2 199 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
 	stw r0, r4[10]
 	bu .LBB37_48
 .Ltmp379:
 .LBB37_28:                              # %switchcase102
 .Lxtalabel90:
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	ldw r1, r4[9]
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	eq r2, r1, 1
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	ldw r1, r4[10]
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	bf r2, .LBB37_33
 # BB#29:                                # %iftrue137
 .Lxtalabel91:
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	eq r0, r1, 8
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	bf r0, .LBB37_49
 # BB#30:                                # %iftrue145
 .Lxtalabel92:
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 .Ltmp380:
 	ldw r0, r4[4]
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 	setc res[r0], 1
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 .Lxta.endpoint_labels26:
 	in r0, res[r0]
 .Ltmp381:
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 141 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:141:13
+	.loc	2 141 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:141:13
 	bf r0, .LBB37_32
 .Ltmp382:
 # BB#31:                                # %iftrue156
 .Lxtalabel93:
 	ldc r0, 0
-	.loc	2 143 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:143:0
+	.loc	2 143 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:143:0
 	stw r0, r4[6]
-	.loc	2 144 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:144:0
+	.loc	2 144 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:144:0
 	stw r0, r4[8]
 	bu .LBB37_48
 .Ltmp383:
@@ -4339,56 +4339,56 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 	ldc r1, 0
 .LBB37_24:                              # %ifdone107
 .Lxtalabel96:
-	.loc	2 123 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:123:0
+	.loc	2 123 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:123:0
 	stw r1, r4[9]
 	bu .LBB37_25
 .LBB37_42:                              # %iffalse234
 .Lxtalabel97:
 	ldc r1, 52
-	.loc	2 204 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
+	.loc	2 204 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
 .Ltmp384:
 	add r1, r4, r1
 	ldc r5, 0
-	.loc	2 204 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
+	.loc	2 204 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
 	stw r5, r1[0]
-	.loc	2 206 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
+	.loc	2 206 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
 	ldw r1, r4[10]
-	.loc	2 206 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
+	.loc	2 206 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
 	eq r1, r1, 8
 	bf r1, .LBB37_3
 # BB#43:                                # %iftrue269
 .Lxtalabel98:
-	.loc	2 208 23                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:208:23
+	.loc	2 208 23                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:208:23
 .Lxta.endpoint_labels27:
 	out res[r0], r5
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 .Ltmp385:
 	ldw r1, r4[2]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r0, r1[0]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r1, r1[3]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r2, r1[3]
 	ldc r1, 44
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ld8u r1, r4[r1]
 .Lxta.call_labels7:
 	bla r2
 .Ltmp386:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 210 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
+	.loc	2 210 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
 	eq r1, r0, 1
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 	ldw r0, r4[4]
 .Ltmp387:
-	.loc	2 210 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
+	.loc	2 210 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
 	bf r1, .LBB37_46
 # BB#44:                                # %iftrue288
 .Lxtalabel99:
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 	setc res[r0], 1
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 .Ltmp388:
 .Lxta.endpoint_labels28:
 	in r0, res[r0]
@@ -4397,76 +4397,76 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 .LBB37_33:                              # %iffalse144
 .Lxtalabel100:
 	ldc r2, 8
-	.loc	2 156 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
+	.loc	2 156 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
 	lss r2, r1, r2
-	.loc	2 156 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
+	.loc	2 156 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
 	bf r2, .LBB37_50
 # BB#34:                                # %iftrue173
 .Lxtalabel101:
-	.loc	2 157 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:157:13
+	.loc	2 157 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:157:13
 	bf r1, .LBB37_35
 # BB#37:                                # %iffalse188
 .Lxtalabel102:
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 .Ltmp390:
 	ldw r1, r4[4]
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 	ldw r0, r4[11]
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 	mov r2, r0
 	zext r2, 1
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 .Lxta.endpoint_labels29:
 	out res[r1], r2
 	bu .LBB37_36
 .Ltmp391:
 .LBB37_16:                              # %iffalse55
 .Lxtalabel103:
-	.loc	2 87 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:87:0
+	.loc	2 87 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:87:0
 	ldw r1, r1[1]
 .LBB37_13:                              # %ifdone51
 .Lxtalabel104:
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 .Lxta.call_labels8:
 	bla r1
 .Ltmp392:
 	#DEBUG_VALUE: ack <- R0
 	ldc r1, 56
-	.loc	2 90 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
+	.loc	2 90 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
 	add r1, r4, r1
-	.loc	2 90 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
+	.loc	2 90 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
 	stw r6, r1[0]
-	.loc	2 91 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
+	.loc	2 91 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
 	eq r1, r0, 1
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 	ldw r0, r4[4]
 .Ltmp393:
-	.loc	2 91 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
+	.loc	2 91 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
 	bf r1, .LBB37_17
 # BB#14:                                # %iftrue65
 .Lxtalabel105:
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 	setc res[r0], 1
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 .Ltmp394:
 .Lxta.endpoint_labels30:
 	in r0, res[r0]
-	.loc	2 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:94:0
+	.loc	2 94 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:94:0
 	stw r6, r4[7]
 	bu .LBB37_19
 .LBB37_17:                              # %iffalse70
 .Lxtalabel106:
-	.loc	2 97 21                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:97:21
+	.loc	2 97 21                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:97:21
 .Lxta.endpoint_labels31:
 	out res[r0], r6
-	.loc	2 98 11                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
+	.loc	2 98 11                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
 	ldw r0, r7[0]
-	.loc	2 98 11                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
+	.loc	2 98 11                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
 	bf r0, .LBB37_20
 # BB#18:                                # %iftrue78
 .Lxtalabel107:
 	mkmsk r0, 3
-	.loc	2 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:99:0
+	.loc	2 99 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:99:0
 	stw r0, r4[7]
 	bu .LBB37_19
 .Ltmp395:
@@ -4474,81 +4474,81 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 .Lxtalabel108:
 	#DEBUG_VALUE: bit <- R0
 	ldc r1, 20
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 .Ltmp396:
 	ld8u r1, r4[r1]
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 	eq r1, r2, r1
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 	bf r1, .LBB37_7
 .Ltmp397:
 # BB#10:                                # %iffalse
 .Lxtalabel109:
 	#DEBUG_VALUE: bit <- R0
 	ldc r1, 2
-	.loc	2 64 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:64:0
+	.loc	2 64 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:64:0
 	stw r1, r4[6]
 	ldc r1, 48
-	.loc	2 65 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
+	.loc	2 65 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
 	add r1, r4, r1
-	.loc	2 65 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
+	.loc	2 65 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
 	stw r0, r1[0]
 	bu .LBB37_9
 .Ltmp398:
 .LBB37_49:                              # %iffalse152
 .Lxtalabel110:
 	ldc r0, 0
-	.loc	2 151 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:151:0
+	.loc	2 151 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:151:0
 .Ltmp399:
 	stw r0, r4[9]
-	.loc	2 152 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
+	.loc	2 152 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
 	add r0, r1, 1
-	.loc	2 152 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
+	.loc	2 152 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
 	stw r0, r4[10]
 	bu .LBB37_48
 .LBB37_27:                              # %iffalse123
 .Lxtalabel111:
 	ldc r1, 0
-	.loc	2 128 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:128:0
+	.loc	2 128 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:128:0
 	stw r1, r4[8]
 .LBB37_25:                              # %ifdone107
 .Lxtalabel112:
-	.loc	2 130 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:130:0
+	.loc	2 130 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:130:0
 	stw r0, r4[6]
 	ldc r0, 0
-	.loc	2 131 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:131:0
+	.loc	2 131 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:131:0
 	stw r0, r4[10]
 	bu .LBB37_48
 .LBB37_50:                              # %iffalse180
 .Lxtalabel113:
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 .Ltmp400:
 	ldw r0, r4[4]
 	bu .LBB37_51
 .Ltmp401:
 .LBB37_20:                              # %iffalse83
 .Lxtalabel114:
-	.loc	2 101 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:101:0
+	.loc	2 101 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:101:0
 	stw r5, r4[7]
 .LBB37_19:                              # %ifdone66
 .Lxtalabel115:
 	mkmsk r0, 1
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:104:0
 	stw r0, r4[9]
 	mkmsk r0, 2
-	.loc	2 105 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:105:0
+	.loc	2 105 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:105:0
 	stw r0, r4[6]
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp402:
 .Lxta.call_labels9:
 	bl delay_ticks
 .Ltmp403:
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 	ldw r0, r4[3]
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 	setc res[r0], 1
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 .Ltmp404:
 .Lxta.endpoint_labels32:
 	in r0, res[r0]
@@ -4560,29 +4560,29 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 	bu .LBB37_8
 .LBB37_46:                              # %iffalse293
 .Lxtalabel117:
-	.loc	2 215 25                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:215:25
+	.loc	2 215 25                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:215:25
 .Ltmp406:
 .Lxta.endpoint_labels33:
 	out res[r0], r5
 .LBB37_45:                              # %ifdone289
 .Lxtalabel118:
 	mkmsk r0, 2
-	.loc	2 217 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:217:0
+	.loc	2 217 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:217:0
 	stw r0, r4[6]
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp407:
 .Lxta.call_labels10:
 	bl delay_ticks
 .Ltmp408:
-	.loc	2 222 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
+	.loc	2 222 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
 	ldw r0, r4[3]
 .Ltmp409:
 .LBB37_51:                              # %iftrue
 .Lxtalabel119:
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 	setc res[r0], 1
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 .Ltmp410:
 .Lxta.endpoint_labels34:
 	in r0, res[r0]
@@ -4591,70 +4591,70 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 .LBB37_32:                              # %iffalse159
 .Lxtalabel120:
 	ldc r0, 0
-	.loc	2 146 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:146:0
+	.loc	2 146 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:146:0
 .Ltmp412:
 	stw r0, r4[10]
-	.loc	2 147 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
+	.loc	2 147 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
 	stw r0, r4[9]
 	bu .LBB37_48
 .Ltmp413:
 .LBB37_35:                              # %iftrue181
 .Lxtalabel121:
 	ldc r1, 0
-	.loc	2 159 25                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:159:25
+	.loc	2 159 25                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:159:25
 .Lxta.endpoint_labels35:
 	out res[r0], r1
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r4[2]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r0, r1[0]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r1[3]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r1[2]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 .Lxta.call_labels11:
 	bla r1
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	bitrev r0, r0
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	shr r0, r0, 24
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	stw r0, r4[11]
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 	ldw r1, r4[4]
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 	zext r0, 1
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 .Lxta.endpoint_labels36:
 	out res[r1], r0
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp414:
 .Lxta.call_labels12:
 	bl delay_ticks
 .Ltmp415:
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 	ldw r0, r4[3]
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 	setc res[r0], 1
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 .Ltmp416:
 .Lxta.endpoint_labels37:
 	in r0, res[r0]
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	ldw r0, r4[11]
 .LBB37_36:                              # %ifdone182
 .Lxtalabel122:
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	ashr r0, r0, 1
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	stw r0, r4[11]
 .Ltmp417:
 .LBB37_3:                               # %iftrue
 .Lxtalabel123:
 	mkmsk r0, 1
-	.loc	2 47 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:47:0
+	.loc	2 47 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:47:0
 	stw r0, r4[9]
 .Ltmp418:
 .LBB37_48:                              # %return
@@ -4678,7 +4678,7 @@ i2c_slave.select.yield.case.1:          # @i2c_slave.select.yield.case.1
 	.cc_top i2c_slave.select.yield.case.2.function,i2c_slave.select.yield.case.2
 i2c_slave.select.yield.case.2:          # @i2c_slave.select.yield.case.2
 .Lfunc_begin38:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -4695,27 +4695,27 @@ i2c_slave.select.yield.case.2:          # @i2c_slave.select.yield.case.2
 	.cfi_offset 5, -4
 	get r11, ed
 	mov r4, r11
-	.loc	2 230 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
+	.loc	2 230 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
 .Ltmp424:
 	ldw r0, r4[4]
-	.loc	2 231 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:231:0
+	.loc	2 231 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:231:0
 .Ltmp425:
 .Lxta.endpoint_labels38:
 	in r0, res[r0]
 .Ltmp426:
-	.loc	2 232 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
+	.loc	2 232 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
 	ldw r1, r4[8]
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 .Ltmp427:
 	ldw r0, r4[3]
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 	setc res[r0], 1
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 	in r0, res[r0]
 .Ltmp428:
 	#DEBUG_VALUE: val <- R0
 	#DEBUG_VALUE: val <- R0
-	.loc	2 232 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
+	.loc	2 232 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
 	eq r1, r1, 1
 	bf r1, .LBB38_6
 .Ltmp429:
@@ -4727,37 +4727,37 @@ i2c_slave.select.yield.case.2:          # @i2c_slave.select.yield.case.2
 # BB#2:                                 # %iftrue3
 .Lxtalabel127:
 	ldc r0, 56
-	.loc	2 238 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
+	.loc	2 238 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
 .Ltmp431:
 	add r5, r4, r0
-	.loc	2 238 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
+	.loc	2 238 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
 	ldw r0, r5[0]
 	bt r0, .LBB38_4
 # BB#3:                                 # %iftrue6
 .Lxtalabel128:
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r4[2]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r0, r1[0]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r1[3]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r1[4]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 .Lxta.call_labels13:
 	bla r1
 .LBB38_4:                               # %ifdone7
 .Lxtalabel129:
 	ldc r0, 0
-	.loc	2 241 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:241:0
+	.loc	2 241 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:241:0
 	stw r0, r4[6]
 	mkmsk r1, 1
-	.loc	2 242 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:242:0
+	.loc	2 242 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:242:0
 	stw r1, r5[0]
 	ldc r1, 52
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
 	add r1, r4, r1
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
 	stw r0, r1[0]
 .Ltmp432:
 .LBB38_5:                               # %ifdone4
@@ -4768,27 +4768,27 @@ i2c_slave.select.yield.case.2:          # @i2c_slave.select.yield.case.2
 .Lxtalabel131:
 .Ltmp433:
 	#DEBUG_VALUE: val <- R0
-	.loc	2 251 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
+	.loc	2 251 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
 	eq r0, r0, 1
 .Ltmp434:
-	.loc	2 251 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
+	.loc	2 251 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
 	bf r0, .LBB38_8
 # BB#7:                                 # %iftrue23
 .Lxtalabel132:
 	mkmsk r0, 1
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:252:0
 	stw r0, r4[6]
 	ldc r0, 0
-	.loc	2 253 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:253:0
+	.loc	2 253 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:253:0
 	stw r0, r4[10]
-	.loc	2 254 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:254:0
+	.loc	2 254 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:254:0
 	stw r0, r4[11]
-	.loc	2 255 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:255:0
+	.loc	2 255 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:255:0
 	stw r0, r4[9]
 	ldc r1, 52
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	add r1, r4, r1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	stw r0, r1[0]
 	bu .LBB38_10
 .LBB38_8:                               # %iffalse28
@@ -4796,7 +4796,7 @@ i2c_slave.select.yield.case.2:          # @i2c_slave.select.yield.case.2
 	mkmsk r0, 1
 .LBB38_9:                               # %return
 .Lxtalabel134:
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:258:0
 	stw r0, r4[8]
 .Ltmp435:
 .LBB38_10:                              # %return
@@ -4819,22 +4819,22 @@ i2c_slave.select.yield.case.2:          # @i2c_slave.select.yield.case.2
 	.cc_top i2c_slave.select.case.0.function,i2c_slave.select.case.0
 i2c_slave.select.case.0:                # @i2c_slave.select.case.0
 .Lfunc_begin39:
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
 .Lxtalabel136:
 	ENTSP_lu6 0
 	get r11, ed
-	.loc	2 40 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 .Ltmp437:
 	ldw r0, r11[2]
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	ldw r1, r0[1]
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	chkct res[r1], 1
 	mkmsk r1, 1
-	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
+	.loc	2 40 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:40:0
 	stw r1, r0[2]
 	ldc r0, 0
 	stw r0, r11[0]
@@ -4856,7 +4856,7 @@ i2c_slave.select.case.0:                # @i2c_slave.select.case.0
 	.cc_top i2c_slave.select.case.1.function,i2c_slave.select.case.1
 i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 .Lfunc_begin40:
-	.loc	2 42 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -4878,17 +4878,17 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 	.cfi_offset 7, -4
 	get r11, ed
 	mov r4, r11
-	.loc	2 42 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 .Ltmp446:
 	ldw r0, r4[3]
-	.loc	2 42 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
+	.loc	2 42 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:42:0
 .Ltmp447:
 .Lxta.endpoint_labels39:
 	in r1, res[r0]
 .Ltmp448:
-	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
+	.loc	2 43 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
 	ldw r1, r4[6]
-	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
+	.loc	2 43 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:43:0
 	sub r1, r1, 1
 	ldc r5, 6
 	lsu r2, r5, r1
@@ -4903,69 +4903,69 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 	.jmptable .LBB40_2,.LBB40_15,.LBB40_11,.LBB40_21,.LBB40_47,.LBB40_38,.LBB40_28
 .LBB40_2:                               # %switchcase
 .Lxtalabel139:
-	.loc	2 46 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
+	.loc	2 46 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
 	ldw r0, r4[9]
-	.loc	2 46 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
+	.loc	2 46 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:46:9
 	bf r0, .LBB40_3
 # BB#4:                                 # %ifdone
 .Lxtalabel140:
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 .Ltmp449:
 	ldw r0, r4[4]
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 	setc res[r0], 1
-	.loc	2 52 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
+	.loc	2 52 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:52:0
 .Lxta.endpoint_labels40:
 	in r0, res[r0]
 .Ltmp450:
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 53 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
+	.loc	2 53 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
 	ldw r1, r4[10]
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	ldw r2, r4[11]
-	.loc	2 53 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
+	.loc	2 53 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:53:9
 	lss r3, r5, r1
 	bt r3, .LBB40_6
 .Ltmp451:
 # BB#5:                                 # %iftrue7
 .Lxtalabel141:
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	shl r2, r2, 1
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	or r0, r2, r0
 .Ltmp452:
-	.loc	2 54 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
+	.loc	2 54 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:54:0
 	stw r0, r4[11]
-	.loc	2 55 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
+	.loc	2 55 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
 	add r0, r1, 1
-	.loc	2 55 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
+	.loc	2 55 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:55:0
 	stw r0, r4[10]
 	bu .LBB40_9
 .Ltmp453:
 .LBB40_15:                              # %switchcase40
 .Lxtalabel142:
 	ldc r6, 0
-	.loc	2 79 19                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:79:19
+	.loc	2 79 19                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:79:19
 .Lxta.endpoint_labels41:
 	out res[r0], r6
 	ldc r0, 48
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 .Ltmp454:
 	add r7, r4, r0
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 	ldw r2, r7[0]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r4[2]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r0, r1[0]
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r1[3]
-	.loc	2 84 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
+	.loc	2 84 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:84:9
 	bf r2, .LBB40_16
 # BB#12:                                # %iftrue50
 .Lxtalabel143:
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 	ldw r1, r1[0]
 	bu .LBB40_13
 .Ltmp455:
@@ -4974,35 +4974,35 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 	ldc r0, 4
 .LBB40_8:                               # %ifdone23
 .Lxtalabel145:
-	.loc	2 62 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:62:0
+	.loc	2 62 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:62:0
 .Ltmp456:
 	stw r0, r4[6]
 .LBB40_9:                               # %ifdone23
 .Lxtalabel146:
 	ldc r0, 0
-	.loc	2 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:67:0
+	.loc	2 67 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:67:0
 	stw r0, r4[9]
 	bu .LBB40_48
 .Ltmp457:
 .LBB40_21:                              # %switchcase96
 .Lxtalabel147:
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 	ldw r0, r4[4]
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 	setc res[r0], 1
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:121:0
 .Ltmp458:
 .Lxta.endpoint_labels42:
 	in r0, res[r0]
-	.loc	2 122 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
+	.loc	2 122 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
 	ldw r0, r4[7]
-	.loc	2 122 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
+	.loc	2 122 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:122:9
 	eq r1, r0, 6
 	bf r1, .LBB40_22
 # BB#26:                                # %iftrue116
 .Lxtalabel148:
 	ldc r1, 0
-	.loc	2 125 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:125:0
+	.loc	2 125 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:125:0
 	stw r1, r4[11]
 	mkmsk r1, 1
 	bu .LBB40_24
@@ -5010,113 +5010,113 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 .LBB40_47:                              # %switchcase2
 .Lxtalabel149:
 	ldc r0, 0
-	.loc	2 72 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:72:0
+	.loc	2 72 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:72:0
 	stw r0, r4[7]
 	mkmsk r0, 1
-	.loc	2 73 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:73:0
+	.loc	2 73 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:73:0
 	stw r0, r4[9]
 	mkmsk r0, 2
-	.loc	2 74 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:74:0
+	.loc	2 74 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:74:0
 	stw r0, r4[6]
 	bu .LBB40_48
 .LBB40_38:                              # %switchcase136
 .Lxtalabel150:
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 .Ltmp460:
 	ldw r1, r4[9]
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 	eq r1, r1, 1
-	.loc	2 184 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
+	.loc	2 184 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:184:9
 	bf r1, .LBB40_42
 # BB#39:                                # %iftrue227
 .Lxtalabel151:
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 .Ltmp461:
 	ldw r0, r4[4]
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 	setc res[r0], 1
-	.loc	2 187 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
+	.loc	2 187 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:187:0
 .Lxta.endpoint_labels43:
 	in r1, res[r0]
 .Ltmp462:
 	#DEBUG_VALUE: bit <- R1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	ldw r0, r4[11]
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	shl r0, r0, 1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	mov r2, r1
 	zext r2, 1
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	or r0, r0, r2
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:188:0
 	stw r0, r4[11]
-	.loc	2 189 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:189:11
+	.loc	2 189 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:189:11
 	ldw r0, r4[10]
 	bt r0, .LBB40_41
 .Ltmp463:
 # BB#40:                                # %iftrue245
 .Lxtalabel152:
 	#DEBUG_VALUE: bit <- R1
-	.loc	2 190 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:190:13
+	.loc	2 190 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:190:13
 	eq r1, r1, 0
 .Ltmp464:
-	.loc	2 193 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:193:0
+	.loc	2 193 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:193:0
 	stw r1, r4[8]
 	ldc r1, 52
-	.loc	2 196 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
+	.loc	2 196 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
 	add r1, r4, r1
 	mkmsk r2, 1
-	.loc	2 196 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
+	.loc	2 196 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:196:0
 	stw r2, r1[0]
 .LBB40_41:                              # %ifdone246
 .Lxtalabel153:
 	ldc r1, 0
-	.loc	2 198 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:198:0
+	.loc	2 198 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:198:0
 	stw r1, r4[9]
-	.loc	2 199 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
+	.loc	2 199 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
 	add r0, r0, 1
-	.loc	2 199 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
+	.loc	2 199 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:199:0
 	stw r0, r4[10]
 	bu .LBB40_48
 .Ltmp465:
 .LBB40_28:                              # %switchcase102
 .Lxtalabel154:
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	ldw r1, r4[9]
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	eq r2, r1, 1
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	ldw r1, r4[10]
-	.loc	2 135 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
+	.loc	2 135 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:135:9
 	bf r2, .LBB40_33
 # BB#29:                                # %iftrue137
 .Lxtalabel155:
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	eq r0, r1, 8
-	.loc	2 137 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
+	.loc	2 137 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:137:11
 	bf r0, .LBB40_49
 # BB#30:                                # %iftrue145
 .Lxtalabel156:
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 .Ltmp466:
 	ldw r0, r4[4]
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 	setc res[r0], 1
-	.loc	2 140 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
+	.loc	2 140 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:140:0
 .Lxta.endpoint_labels44:
 	in r0, res[r0]
 .Ltmp467:
 	#DEBUG_VALUE: bit <- R0
-	.loc	2 141 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:141:13
+	.loc	2 141 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:141:13
 	bf r0, .LBB40_32
 .Ltmp468:
 # BB#31:                                # %iftrue156
 .Lxtalabel157:
 	ldc r0, 0
-	.loc	2 143 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:143:0
+	.loc	2 143 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:143:0
 	stw r0, r4[6]
-	.loc	2 144 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:144:0
+	.loc	2 144 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:144:0
 	stw r0, r4[8]
 	bu .LBB40_48
 .Ltmp469:
@@ -5129,56 +5129,56 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 	ldc r1, 0
 .LBB40_24:                              # %ifdone107
 .Lxtalabel160:
-	.loc	2 123 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:123:0
+	.loc	2 123 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:123:0
 	stw r1, r4[9]
 	bu .LBB40_25
 .LBB40_42:                              # %iffalse234
 .Lxtalabel161:
 	ldc r1, 52
-	.loc	2 204 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
+	.loc	2 204 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
 .Ltmp470:
 	add r1, r4, r1
 	ldc r5, 0
-	.loc	2 204 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
+	.loc	2 204 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:204:0
 	stw r5, r1[0]
-	.loc	2 206 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
+	.loc	2 206 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
 	ldw r1, r4[10]
-	.loc	2 206 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
+	.loc	2 206 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:206:11
 	eq r1, r1, 8
 	bf r1, .LBB40_3
 # BB#43:                                # %iftrue269
 .Lxtalabel162:
-	.loc	2 208 23                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:208:23
+	.loc	2 208 23                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:208:23
 .Lxta.endpoint_labels45:
 	out res[r0], r5
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 .Ltmp471:
 	ldw r1, r4[2]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r0, r1[0]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r1, r1[3]
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ldw r2, r1[3]
 	ldc r1, 44
-	.loc	2 209 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
+	.loc	2 209 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:209:0
 	ld8u r1, r4[r1]
 .Lxta.call_labels14:
 	bla r2
 .Ltmp472:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 210 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
+	.loc	2 210 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
 	eq r1, r0, 1
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 	ldw r0, r4[4]
 .Ltmp473:
-	.loc	2 210 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
+	.loc	2 210 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:210:13
 	bf r1, .LBB40_46
 # BB#44:                                # %iftrue288
 .Lxtalabel163:
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 	setc res[r0], 1
-	.loc	2 212 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
+	.loc	2 212 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:212:0
 .Ltmp474:
 .Lxta.endpoint_labels46:
 	in r0, res[r0]
@@ -5187,76 +5187,76 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 .LBB40_33:                              # %iffalse144
 .Lxtalabel164:
 	ldc r2, 8
-	.loc	2 156 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
+	.loc	2 156 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
 	lss r2, r1, r2
-	.loc	2 156 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
+	.loc	2 156 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:156:11
 	bf r2, .LBB40_50
 # BB#34:                                # %iftrue173
 .Lxtalabel165:
-	.loc	2 157 13                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:157:13
+	.loc	2 157 13                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:157:13
 	bf r1, .LBB40_35
 # BB#37:                                # %iffalse188
 .Lxtalabel166:
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 .Ltmp476:
 	ldw r1, r4[4]
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 	ldw r0, r4[11]
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 	mov r2, r0
 	zext r2, 1
-	.loc	2 172 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
+	.loc	2 172 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:172:34
 .Lxta.endpoint_labels47:
 	out res[r1], r2
 	bu .LBB40_36
 .Ltmp477:
 .LBB40_16:                              # %iffalse55
 .Lxtalabel167:
-	.loc	2 87 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:87:0
+	.loc	2 87 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:87:0
 	ldw r1, r1[1]
 .LBB40_13:                              # %ifdone51
 .Lxtalabel168:
-	.loc	2 85 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
+	.loc	2 85 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:85:0
 .Lxta.call_labels15:
 	bla r1
 .Ltmp478:
 	#DEBUG_VALUE: ack <- R0
 	ldc r1, 56
-	.loc	2 90 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
+	.loc	2 90 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
 	add r1, r4, r1
-	.loc	2 90 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
+	.loc	2 90 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:90:0
 	stw r6, r1[0]
-	.loc	2 91 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
+	.loc	2 91 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
 	eq r1, r0, 1
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 	ldw r0, r4[4]
 .Ltmp479:
-	.loc	2 91 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
+	.loc	2 91 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:91:9
 	bf r1, .LBB40_17
 # BB#14:                                # %iftrue65
 .Lxtalabel169:
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 	setc res[r0], 1
-	.loc	2 93 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
+	.loc	2 93 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:93:0
 .Ltmp480:
 .Lxta.endpoint_labels48:
 	in r0, res[r0]
-	.loc	2 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:94:0
+	.loc	2 94 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:94:0
 	stw r6, r4[7]
 	bu .LBB40_19
 .LBB40_17:                              # %iffalse70
 .Lxtalabel170:
-	.loc	2 97 21                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:97:21
+	.loc	2 97 21                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:97:21
 .Lxta.endpoint_labels49:
 	out res[r0], r6
-	.loc	2 98 11                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
+	.loc	2 98 11                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
 	ldw r0, r7[0]
-	.loc	2 98 11                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
+	.loc	2 98 11                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:98:11
 	bf r0, .LBB40_20
 # BB#18:                                # %iftrue78
 .Lxtalabel171:
 	mkmsk r0, 3
-	.loc	2 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:99:0
+	.loc	2 99 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:99:0
 	stw r0, r4[7]
 	bu .LBB40_19
 .Ltmp481:
@@ -5264,81 +5264,81 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 .Lxtalabel172:
 	#DEBUG_VALUE: bit <- R0
 	ldc r1, 20
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 .Ltmp482:
 	ld8u r1, r4[r1]
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 	eq r1, r2, r1
-	.loc	2 61 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
+	.loc	2 61 9                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:61:9
 	bf r1, .LBB40_7
 .Ltmp483:
 # BB#10:                                # %iffalse
 .Lxtalabel173:
 	#DEBUG_VALUE: bit <- R0
 	ldc r1, 2
-	.loc	2 64 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:64:0
+	.loc	2 64 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:64:0
 	stw r1, r4[6]
 	ldc r1, 48
-	.loc	2 65 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
+	.loc	2 65 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
 	add r1, r4, r1
-	.loc	2 65 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
+	.loc	2 65 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:65:0
 	stw r0, r1[0]
 	bu .LBB40_9
 .Ltmp484:
 .LBB40_49:                              # %iffalse152
 .Lxtalabel174:
 	ldc r0, 0
-	.loc	2 151 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:151:0
+	.loc	2 151 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:151:0
 .Ltmp485:
 	stw r0, r4[9]
-	.loc	2 152 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
+	.loc	2 152 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
 	add r0, r1, 1
-	.loc	2 152 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
+	.loc	2 152 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:152:0
 	stw r0, r4[10]
 	bu .LBB40_48
 .LBB40_27:                              # %iffalse123
 .Lxtalabel175:
 	ldc r1, 0
-	.loc	2 128 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:128:0
+	.loc	2 128 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:128:0
 	stw r1, r4[8]
 .LBB40_25:                              # %ifdone107
 .Lxtalabel176:
-	.loc	2 130 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:130:0
+	.loc	2 130 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:130:0
 	stw r0, r4[6]
 	ldc r0, 0
-	.loc	2 131 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:131:0
+	.loc	2 131 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:131:0
 	stw r0, r4[10]
 	bu .LBB40_48
 .LBB40_50:                              # %iffalse180
 .Lxtalabel177:
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 .Ltmp486:
 	ldw r0, r4[4]
 	bu .LBB40_51
 .Ltmp487:
 .LBB40_20:                              # %iffalse83
 .Lxtalabel178:
-	.loc	2 101 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:101:0
+	.loc	2 101 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:101:0
 	stw r5, r4[7]
 .LBB40_19:                              # %ifdone66
 .Lxtalabel179:
 	mkmsk r0, 1
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:104:0
 	stw r0, r4[9]
 	mkmsk r0, 2
-	.loc	2 105 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:105:0
+	.loc	2 105 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:105:0
 	stw r0, r4[6]
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp488:
 .Lxta.call_labels16:
 	bl delay_ticks
 .Ltmp489:
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 	ldw r0, r4[3]
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 	setc res[r0], 1
-	.loc	2 110 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
+	.loc	2 110 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:110:0
 .Ltmp490:
 .Lxta.endpoint_labels50:
 	in r0, res[r0]
@@ -5350,29 +5350,29 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 	bu .LBB40_8
 .LBB40_46:                              # %iffalse293
 .Lxtalabel181:
-	.loc	2 215 25                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:215:25
+	.loc	2 215 25                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:215:25
 .Ltmp492:
 .Lxta.endpoint_labels51:
 	out res[r0], r5
 .LBB40_45:                              # %ifdone289
 .Lxtalabel182:
 	mkmsk r0, 2
-	.loc	2 217 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:217:0
+	.loc	2 217 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:217:0
 	stw r0, r4[6]
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp493:
 .Lxta.call_labels17:
 	bl delay_ticks
 .Ltmp494:
-	.loc	2 222 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
+	.loc	2 222 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:222:0
 	ldw r0, r4[3]
 .Ltmp495:
 .LBB40_51:                              # %iftrue
 .Lxtalabel183:
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 	setc res[r0], 1
-	.loc	2 177 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
+	.loc	2 177 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:177:0
 .Ltmp496:
 .Lxta.endpoint_labels52:
 	in r0, res[r0]
@@ -5381,70 +5381,70 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 .LBB40_32:                              # %iffalse159
 .Lxtalabel184:
 	ldc r0, 0
-	.loc	2 146 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:146:0
+	.loc	2 146 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:146:0
 .Ltmp498:
 	stw r0, r4[10]
-	.loc	2 147 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
+	.loc	2 147 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:147:0
 	stw r0, r4[9]
 	bu .LBB40_48
 .Ltmp499:
 .LBB40_35:                              # %iftrue181
 .Lxtalabel185:
 	ldc r1, 0
-	.loc	2 159 25                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:159:25
+	.loc	2 159 25                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:159:25
 .Lxta.endpoint_labels53:
 	out res[r0], r1
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r4[2]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r0, r1[0]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r1[3]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 	ldw r1, r1[2]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:160:0
 .Lxta.call_labels18:
 	bla r1
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	bitrev r0, r0
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	shr r0, r0, 24
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:162:0
 	stw r0, r4[11]
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 	ldw r1, r4[4]
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 	zext r0, 1
-	.loc	2 165 34                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
+	.loc	2 165 34                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:165:34
 .Lxta.endpoint_labels54:
 	out res[r1], r0
 	ldc r0, 10
-	.loc	2 20 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
+	.loc	2 20 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:20:0
 .Ltmp500:
 .Lxta.call_labels19:
 	bl delay_ticks
 .Ltmp501:
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 	ldw r0, r4[3]
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 	setc res[r0], 1
-	.loc	2 170 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
+	.loc	2 170 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:170:0
 .Ltmp502:
 .Lxta.endpoint_labels55:
 	in r0, res[r0]
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	ldw r0, r4[11]
 .LBB40_36:                              # %ifdone182
 .Lxtalabel186:
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	ashr r0, r0, 1
-	.loc	2 174 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
+	.loc	2 174 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:174:0
 	stw r0, r4[11]
 .Ltmp503:
 .LBB40_3:                               # %iftrue
 .Lxtalabel187:
 	mkmsk r0, 1
-	.loc	2 47 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:47:0
+	.loc	2 47 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:47:0
 	stw r0, r4[9]
 .Ltmp504:
 .LBB40_48:                              # %return
@@ -5468,7 +5468,7 @@ i2c_slave.select.case.1:                # @i2c_slave.select.case.1
 	.cc_top i2c_slave.select.case.2.function,i2c_slave.select.case.2
 i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 .Lfunc_begin41:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -5485,27 +5485,27 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 	.cfi_offset 5, -4
 	get r11, ed
 	mov r4, r11
-	.loc	2 230 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
+	.loc	2 230 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:230:0
 .Ltmp510:
 	ldw r0, r4[4]
-	.loc	2 231 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:231:0
+	.loc	2 231 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:231:0
 .Ltmp511:
 .Lxta.endpoint_labels56:
 	in r0, res[r0]
 .Ltmp512:
-	.loc	2 232 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
+	.loc	2 232 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
 	ldw r1, r4[8]
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 .Ltmp513:
 	ldw r0, r4[3]
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 	setc res[r0], 1
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:236:0
 	in r0, res[r0]
 .Ltmp514:
 	#DEBUG_VALUE: val <- R0
 	#DEBUG_VALUE: val <- R0
-	.loc	2 232 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
+	.loc	2 232 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:232:7
 	eq r1, r1, 1
 	bf r1, .LBB41_6
 .Ltmp515:
@@ -5517,37 +5517,37 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 # BB#2:                                 # %iftrue3
 .Lxtalabel191:
 	ldc r0, 56
-	.loc	2 238 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
+	.loc	2 238 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
 .Ltmp517:
 	add r5, r4, r0
-	.loc	2 238 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
+	.loc	2 238 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:238:11
 	ldw r0, r5[0]
 	bt r0, .LBB41_4
 # BB#3:                                 # %iftrue6
 .Lxtalabel192:
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r4[2]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r0, r1[0]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r1[3]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 	ldw r1, r1[4]
-	.loc	2 239 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
+	.loc	2 239 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:239:0
 .Lxta.call_labels20:
 	bla r1
 .LBB41_4:                               # %ifdone7
 .Lxtalabel193:
 	ldc r0, 0
-	.loc	2 241 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:241:0
+	.loc	2 241 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:241:0
 	stw r0, r4[6]
 	mkmsk r1, 1
-	.loc	2 242 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:242:0
+	.loc	2 242 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:242:0
 	stw r1, r5[0]
 	ldc r1, 52
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
 	add r1, r4, r1
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:243:0
 	stw r0, r1[0]
 .Ltmp518:
 .LBB41_5:                               # %ifdone4
@@ -5558,27 +5558,27 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 .Lxtalabel195:
 .Ltmp519:
 	#DEBUG_VALUE: val <- R0
-	.loc	2 251 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
+	.loc	2 251 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
 	eq r0, r0, 1
 .Ltmp520:
-	.loc	2 251 9                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
+	.loc	2 251 9                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:251:9
 	bf r0, .LBB41_8
 # BB#7:                                 # %iftrue23
 .Lxtalabel196:
 	mkmsk r0, 1
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:252:0
 	stw r0, r4[6]
 	ldc r0, 0
-	.loc	2 253 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:253:0
+	.loc	2 253 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:253:0
 	stw r0, r4[10]
-	.loc	2 254 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:254:0
+	.loc	2 254 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:254:0
 	stw r0, r4[11]
-	.loc	2 255 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:255:0
+	.loc	2 255 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:255:0
 	stw r0, r4[9]
 	ldc r1, 52
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	add r1, r4, r1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:256:0
 	stw r0, r1[0]
 	bu .LBB41_10
 .LBB41_8:                               # %iffalse28
@@ -5586,7 +5586,7 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 	mkmsk r0, 1
 .LBB41_9:                               # %return
 .Lxtalabel198:
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc:258:0
 	stw r0, r4[8]
 .Ltmp521:
 .LBB41_10:                              # %return
@@ -5605,14 +5605,14 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 	.cfi_endproc
 
 .Ldebug_end0:
-	.file	4 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
+	.file	4 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"I2C_NACK"
 .Linfo_string4:
@@ -9392,8 +9392,8 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 	.typestring _i.i2c_slave_callback_if._chan_yield.ack_read_request, "f{e(i2c_slave_ack_t){m(I2C_SLAVE_ACK){0},m(I2C_SLAVE_NACK){1}}}(&(s(yieldArg){m(dest){chd},m(yield){ui}}))"
 	.overlay_reference _i.i2c_slave_callback_if._chan_yield.ack_read_request,_i.i2c_slave_callback_if._client_call_y.fns
 	.typestring i2c_slave, "k:f{0}(ic(i2c_slave_callback_if){m(ack_read_request){f{e(i2c_slave_ack_t){m(I2C_SLAVE_ACK){0},m(I2C_SLAVE_NACK){1}}}(0)},m(ack_write_request){f{e(i2c_slave_ack_t){m(I2C_SLAVE_ACK){0},m(I2C_SLAVE_NACK){1}}}(0)},m(master_requires_data){f{uc}(0)},m(master_sent_data){f{e(i2c_slave_ack_t){m(I2C_SLAVE_ACK){0},m(I2C_SLAVE_NACK){1}}}(uc)},m(stop_bit){f{0}(0)},m(shutdown){st:f{0}(0)}},p,p,uc)"
-	.overlay_reference i2c_slave,_i.i2c_slave_callback_if.ack_read_request.fns
 	.overlay_reference i2c_slave,_i.i2c_slave_callback_if.ack_write_request.fns
+	.overlay_reference i2c_slave,_i.i2c_slave_callback_if.ack_read_request.fns
 	.overlay_reference i2c_slave,_i.i2c_slave_callback_if.master_requires_data.fns
 	.overlay_reference i2c_slave,_i.i2c_slave_callback_if.master_sent_data.fns
 	.overlay_reference i2c_slave,_i.i2c_slave_callback_if.stop_bit.fns
@@ -9403,13 +9403,13 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 	.typestring i2c_slave.select.enable, "k:fe{0}()"
 	.typestring i2c_slave.fini, "k:f{0}(u:q(ui))"
 	.typestring delay_ticks, "f{0}(ui)"
-	.overlay_reference i2c_slave.select.yield.case.1,_i.i2c_slave_callback_if.ack_read_request.fns
 	.overlay_reference i2c_slave.select.yield.case.1,_i.i2c_slave_callback_if.ack_write_request.fns
+	.overlay_reference i2c_slave.select.yield.case.1,_i.i2c_slave_callback_if.ack_read_request.fns
 	.overlay_reference i2c_slave.select.yield.case.1,_i.i2c_slave_callback_if.master_requires_data.fns
 	.overlay_reference i2c_slave.select.yield.case.1,_i.i2c_slave_callback_if.master_sent_data.fns
 	.overlay_reference i2c_slave.select.yield.case.2,_i.i2c_slave_callback_if.stop_bit.fns
-	.overlay_reference i2c_slave.select.case.1,_i.i2c_slave_callback_if.ack_read_request.fns
 	.overlay_reference i2c_slave.select.case.1,_i.i2c_slave_callback_if.ack_write_request.fns
+	.overlay_reference i2c_slave.select.case.1,_i.i2c_slave_callback_if.ack_read_request.fns
 	.overlay_reference i2c_slave.select.case.1,_i.i2c_slave_callback_if.master_requires_data.fns
 	.overlay_reference i2c_slave.select.case.1,_i.i2c_slave_callback_if.master_sent_data.fns
 	.overlay_reference i2c_slave.select.case.2,_i.i2c_slave_callback_if.stop_bit.fns
@@ -9417,130 +9417,130 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
-.cc_top cc_0,.Lxta.call_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	20
-	.long	.Lxta.call_labels19
-.cc_bottom cc_0
-.cc_top cc_1,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_0,.Lxta.call_labels3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels3
-.cc_bottom cc_1
-.cc_top cc_2,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_0
+.cc_top cc_1,.Lxta.call_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels4
-.cc_bottom cc_2
-.cc_top cc_3,.Lxta.call_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_1
+.cc_top cc_2,.Lxta.call_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels6
-.cc_bottom cc_3
-.cc_top cc_4,.Lxta.call_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_2
+.cc_top cc_3,.Lxta.call_labels9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels9
-.cc_bottom cc_4
-.cc_top cc_5,.Lxta.call_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_3
+.cc_top cc_4,.Lxta.call_labels10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels10
-.cc_bottom cc_5
-.cc_top cc_6,.Lxta.call_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_4
+.cc_top cc_5,.Lxta.call_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels12
+.cc_bottom cc_5
+.cc_top cc_6,.Lxta.call_labels16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	20
+	.long	.Lxta.call_labels16
 .cc_bottom cc_6
 .cc_top cc_7,.Lxta.call_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	.Lxta.call_labels17
 .cc_bottom cc_7
-.cc_top cc_8,.Lxta.call_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_8,.Lxta.call_labels19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
-	.long	.Lxta.call_labels16
+	.long	.Lxta.call_labels19
 .cc_bottom cc_8
 .cc_top cc_9,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	85
 	.long	.Lxta.call_labels2
 .cc_bottom cc_9
 .cc_top cc_10,.Lxta.call_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	85
 	.long	.Lxta.call_labels8
 .cc_bottom cc_10
 .cc_top cc_11,.Lxta.call_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	85
 	.long	.Lxta.call_labels15
 .cc_bottom cc_11
 .cc_top cc_12,.Lxta.call_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	160
 	.long	.Lxta.call_labels5
 .cc_bottom cc_12
-.cc_top cc_13,.Lxta.call_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	160
-	.long	.Lxta.call_labels18
-.cc_bottom cc_13
-.cc_top cc_14,.Lxta.call_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_13,.Lxta.call_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	160
 	.long	.Lxta.call_labels11
+.cc_bottom cc_13
+.cc_top cc_14,.Lxta.call_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	160
+	.long	.Lxta.call_labels18
 .cc_bottom cc_14
 .cc_top cc_15,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	209
 	.long	.Lxta.call_labels1
 .cc_bottom cc_15
-.cc_top cc_16,.Lxta.call_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	209
-	.long	.Lxta.call_labels14
-.cc_bottom cc_16
-.cc_top cc_17,.Lxta.call_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_16,.Lxta.call_labels7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	209
 	.long	.Lxta.call_labels7
-.cc_bottom cc_17
-.cc_top cc_18,.Lxta.call_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_16
+.cc_top cc_17,.Lxta.call_labels14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	239
-	.long	.Lxta.call_labels13
-.cc_bottom cc_18
-.cc_top cc_19,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	209
+	.long	.Lxta.call_labels14
+.cc_bottom cc_17
+.cc_top cc_18,.Lxta.call_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	239
 	.long	.Lxta.call_labels0
+.cc_bottom cc_18
+.cc_top cc_19,.Lxta.call_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	239
+	.long	.Lxta.call_labels13
 .cc_bottom cc_19
 .cc_top cc_20,.Lxta.call_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	239
 	.long	.Lxta.call_labels20
@@ -9550,346 +9550,346 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_21,.Lxta.endpoint_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	37
 	.long	.Lxta.endpoint_labels0
 .cc_bottom cc_21
 .cc_top cc_22,.Lxta.endpoint_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	37
 	.long	.Lxta.endpoint_labels20
 .cc_bottom cc_22
 .cc_top cc_23,.Lxta.endpoint_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	39
 	.long	.Lxta.endpoint_labels1
 .cc_bottom cc_23
 .cc_top cc_24,.Lxta.endpoint_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	39
 	.long	.Lxta.endpoint_labels3
 .cc_bottom cc_24
 .cc_top cc_25,.Lxta.endpoint_labels39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	42
 	.long	.Lxta.endpoint_labels39
 .cc_bottom cc_25
 .cc_top cc_26,.Lxta.endpoint_labels21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	42
 	.long	.Lxta.endpoint_labels21
 .cc_bottom cc_26
 .cc_top cc_27,.Lxta.endpoint_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	52
 	.long	.Lxta.endpoint_labels2
 .cc_bottom cc_27
 .cc_top cc_28,.Lxta.endpoint_labels40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	52
 	.long	.Lxta.endpoint_labels40
 .cc_bottom cc_28
 .cc_top cc_29,.Lxta.endpoint_labels22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	52
 	.long	.Lxta.endpoint_labels22
 .cc_bottom cc_29
 .cc_top cc_30,.Lxta.endpoint_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	79
 	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_30
 .cc_top cc_31,.Lxta.endpoint_labels41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	79
 	.long	.Lxta.endpoint_labels41
 .cc_bottom cc_31
 .cc_top cc_32,.Lxta.endpoint_labels23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	79
 	.long	.Lxta.endpoint_labels23
 .cc_bottom cc_32
-.cc_top cc_33,.Lxta.endpoint_labels48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	93
-	.long	.Lxta.endpoint_labels48
-.cc_bottom cc_33
-.cc_top cc_34,.Lxta.endpoint_labels30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_33,.Lxta.endpoint_labels30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	93
 	.long	.Lxta.endpoint_labels30
-.cc_bottom cc_34
-.cc_top cc_35,.Lxta.endpoint_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_33
+.cc_top cc_34,.Lxta.endpoint_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	93
 	.long	.Lxta.endpoint_labels11
-.cc_bottom cc_35
-.cc_top cc_36,.Lxta.endpoint_labels49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_34
+.cc_top cc_35,.Lxta.endpoint_labels48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	97
-	.long	.Lxta.endpoint_labels49
-.cc_bottom cc_36
-.cc_top cc_37,.Lxta.endpoint_labels31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	93
+	.long	.Lxta.endpoint_labels48
+.cc_bottom cc_35
+.cc_top cc_36,.Lxta.endpoint_labels31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	97
 	.long	.Lxta.endpoint_labels31
-.cc_bottom cc_37
-.cc_top cc_38,.Lxta.endpoint_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_36
+.cc_top cc_37,.Lxta.endpoint_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	97
 	.long	.Lxta.endpoint_labels12
-.cc_bottom cc_38
-.cc_top cc_39,.Lxta.endpoint_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_37
+.cc_top cc_38,.Lxta.endpoint_labels49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	110
-	.long	.Lxta.endpoint_labels13
-.cc_bottom cc_39
-.cc_top cc_40,.Lxta.endpoint_labels50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	97
+	.long	.Lxta.endpoint_labels49
+.cc_bottom cc_38
+.cc_top cc_39,.Lxta.endpoint_labels50
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	110
 	.long	.Lxta.endpoint_labels50
+.cc_bottom cc_39
+.cc_top cc_40,.Lxta.endpoint_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	110
+	.long	.Lxta.endpoint_labels13
 .cc_bottom cc_40
 .cc_top cc_41,.Lxta.endpoint_labels32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	110
 	.long	.Lxta.endpoint_labels32
 .cc_bottom cc_41
-.cc_top cc_42,.Lxta.endpoint_labels42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	121
-	.long	.Lxta.endpoint_labels42
-.cc_bottom cc_42
-.cc_top cc_43,.Lxta.endpoint_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_42,.Lxta.endpoint_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	121
 	.long	.Lxta.endpoint_labels5
-.cc_bottom cc_43
-.cc_top cc_44,.Lxta.endpoint_labels24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_42
+.cc_top cc_43,.Lxta.endpoint_labels24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	121
 	.long	.Lxta.endpoint_labels24
+.cc_bottom cc_43
+.cc_top cc_44,.Lxta.endpoint_labels42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	121
+	.long	.Lxta.endpoint_labels42
 .cc_bottom cc_44
-.cc_top cc_45,.Lxta.endpoint_labels44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_45,.Lxta.endpoint_labels26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	140
-	.long	.Lxta.endpoint_labels44
+	.long	.Lxta.endpoint_labels26
 .cc_bottom cc_45
 .cc_top cc_46,.Lxta.endpoint_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	140
 	.long	.Lxta.endpoint_labels7
 .cc_bottom cc_46
-.cc_top cc_47,.Lxta.endpoint_labels26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_47,.Lxta.endpoint_labels44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	140
-	.long	.Lxta.endpoint_labels26
+	.long	.Lxta.endpoint_labels44
 .cc_bottom cc_47
 .cc_top cc_48,.Lxta.endpoint_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	159
 	.long	.Lxta.endpoint_labels17
 .cc_bottom cc_48
-.cc_top cc_49,.Lxta.endpoint_labels53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	159
-	.long	.Lxta.endpoint_labels53
-.cc_bottom cc_49
-.cc_top cc_50,.Lxta.endpoint_labels35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_49,.Lxta.endpoint_labels35
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	159
 	.long	.Lxta.endpoint_labels35
+.cc_bottom cc_49
+.cc_top cc_50,.Lxta.endpoint_labels53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	159
+	.long	.Lxta.endpoint_labels53
 .cc_bottom cc_50
 .cc_top cc_51,.Lxta.endpoint_labels36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	165
 	.long	.Lxta.endpoint_labels36
 .cc_bottom cc_51
-.cc_top cc_52,.Lxta.endpoint_labels54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	165
-	.long	.Lxta.endpoint_labels54
-.cc_bottom cc_52
-.cc_top cc_53,.Lxta.endpoint_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_52,.Lxta.endpoint_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	165
 	.long	.Lxta.endpoint_labels18
+.cc_bottom cc_52
+.cc_top cc_53,.Lxta.endpoint_labels54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	165
+	.long	.Lxta.endpoint_labels54
 .cc_bottom cc_53
-.cc_top cc_54,.Lxta.endpoint_labels55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_54,.Lxta.endpoint_labels19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	170
-	.long	.Lxta.endpoint_labels55
+	.long	.Lxta.endpoint_labels19
 .cc_bottom cc_54
 .cc_top cc_55,.Lxta.endpoint_labels37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	170
 	.long	.Lxta.endpoint_labels37
 .cc_bottom cc_55
-.cc_top cc_56,.Lxta.endpoint_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_56,.Lxta.endpoint_labels55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	170
-	.long	.Lxta.endpoint_labels19
+	.long	.Lxta.endpoint_labels55
 .cc_bottom cc_56
 .cc_top cc_57,.Lxta.endpoint_labels29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	172
 	.long	.Lxta.endpoint_labels29
 .cc_bottom cc_57
 .cc_top cc_58,.Lxta.endpoint_labels47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	172
 	.long	.Lxta.endpoint_labels47
 .cc_bottom cc_58
 .cc_top cc_59,.Lxta.endpoint_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	172
 	.long	.Lxta.endpoint_labels10
 .cc_bottom cc_59
-.cc_top cc_60,.Lxta.endpoint_labels52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	177
-	.long	.Lxta.endpoint_labels52
-.cc_bottom cc_60
-.cc_top cc_61,.Lxta.endpoint_labels34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_60,.Lxta.endpoint_labels34
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	177
 	.long	.Lxta.endpoint_labels34
-.cc_bottom cc_61
-.cc_top cc_62,.Lxta.endpoint_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_60
+.cc_top cc_61,.Lxta.endpoint_labels14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	177
 	.long	.Lxta.endpoint_labels14
+.cc_bottom cc_61
+.cc_top cc_62,.Lxta.endpoint_labels52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	177
+	.long	.Lxta.endpoint_labels52
 .cc_bottom cc_62
 .cc_top cc_63,.Lxta.endpoint_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	187
 	.long	.Lxta.endpoint_labels6
 .cc_bottom cc_63
-.cc_top cc_64,.Lxta.endpoint_labels43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	187
-	.long	.Lxta.endpoint_labels43
-.cc_bottom cc_64
-.cc_top cc_65,.Lxta.endpoint_labels25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_64,.Lxta.endpoint_labels25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	187
 	.long	.Lxta.endpoint_labels25
+.cc_bottom cc_64
+.cc_top cc_65,.Lxta.endpoint_labels43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	187
+	.long	.Lxta.endpoint_labels43
 .cc_bottom cc_65
 .cc_top cc_66,.Lxta.endpoint_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	208
 	.long	.Lxta.endpoint_labels8
 .cc_bottom cc_66
-.cc_top cc_67,.Lxta.endpoint_labels45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	208
-	.long	.Lxta.endpoint_labels45
-.cc_bottom cc_67
-.cc_top cc_68,.Lxta.endpoint_labels27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_67,.Lxta.endpoint_labels27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	208
 	.long	.Lxta.endpoint_labels27
+.cc_bottom cc_67
+.cc_top cc_68,.Lxta.endpoint_labels45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	208
+	.long	.Lxta.endpoint_labels45
 .cc_bottom cc_68
-.cc_top cc_69,.Lxta.endpoint_labels28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	212
-	.long	.Lxta.endpoint_labels28
-.cc_bottom cc_69
-.cc_top cc_70,.Lxta.endpoint_labels46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	212
-	.long	.Lxta.endpoint_labels46
-.cc_bottom cc_70
-.cc_top cc_71,.Lxta.endpoint_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_69,.Lxta.endpoint_labels9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	212
 	.long	.Lxta.endpoint_labels9
-.cc_bottom cc_71
-.cc_top cc_72,.Lxta.endpoint_labels51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_69
+.cc_top cc_70,.Lxta.endpoint_labels28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	215
-	.long	.Lxta.endpoint_labels51
-.cc_bottom cc_72
-.cc_top cc_73,.Lxta.endpoint_labels33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	212
+	.long	.Lxta.endpoint_labels28
+.cc_bottom cc_70
+.cc_top cc_71,.Lxta.endpoint_labels46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	212
+	.long	.Lxta.endpoint_labels46
+.cc_bottom cc_71
+.cc_top cc_72,.Lxta.endpoint_labels33
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	215
 	.long	.Lxta.endpoint_labels33
-.cc_bottom cc_73
-.cc_top cc_74,.Lxta.endpoint_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_72
+.cc_top cc_73,.Lxta.endpoint_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	215
 	.long	.Lxta.endpoint_labels15
+.cc_bottom cc_73
+.cc_top cc_74,.Lxta.endpoint_labels51
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	215
+	.long	.Lxta.endpoint_labels51
 .cc_bottom cc_74
 .cc_top cc_75,.Lxta.endpoint_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	222
 	.long	.Lxta.endpoint_labels16
 .cc_bottom cc_75
 .cc_top cc_76,.Lxta.endpoint_labels38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	230
 	.long	.Lxta.endpoint_labels38
 .cc_bottom cc_76
 .cc_top cc_77,.Lxta.endpoint_labels56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	230
 	.long	.Lxta.endpoint_labels56
@@ -9899,1911 +9899,1911 @@ i2c_slave.select.case.2:                # @i2c_slave.select.case.2
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
-.cc_top cc_78,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	18
-	.long	18
-	.long	.Lxtalabel118
-.cc_bottom cc_78
-.cc_top cc_79,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	18
-	.long	18
-	.long	.Lxtalabel55
-.cc_bottom cc_79
-.cc_top cc_80,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	18
-	.long	18
-	.long	.Lxtalabel65
-.cc_bottom cc_80
-.cc_top cc_81,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_78,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	18
 	.long	18
 	.long	.Lxtalabel66
+.cc_bottom cc_78
+.cc_top cc_79,.Lxtalabel179
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	18
+	.long	18
+	.long	.Lxtalabel179
+.cc_bottom cc_79
+.cc_top cc_80,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	18
+	.long	18
+	.long	.Lxtalabel182
+.cc_bottom cc_80
+.cc_top cc_81,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	18
+	.long	18
+	.long	.Lxtalabel185
 .cc_bottom cc_81
 .cc_top cc_82,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	18
 	.long	18
 	.long	.Lxtalabel115
 .cc_bottom cc_82
-.cc_top cc_83,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_83,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	18
 	.long	18
-	.long	.Lxtalabel121
+	.long	.Lxtalabel65
 .cc_bottom cc_83
-.cc_top cc_84,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_84,.Lxtalabel55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	18
 	.long	18
-	.long	.Lxtalabel179
+	.long	.Lxtalabel55
 .cc_bottom cc_84
-.cc_top cc_85,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_85,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	18
 	.long	18
-	.long	.Lxtalabel182
-.cc_bottom cc_85
-.cc_top cc_86,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	18
-	.long	18
-	.long	.Lxtalabel185
-.cc_bottom cc_86
-.cc_top cc_87,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	20
-	.long	21
-	.long	.Lxtalabel185
-.cc_bottom cc_87
-.cc_top cc_88,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	20
-	.long	21
-	.long	.Lxtalabel121
-.cc_bottom cc_88
-.cc_top cc_89,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	20
-	.long	21
 	.long	.Lxtalabel118
-.cc_bottom cc_89
-.cc_top cc_90,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_85
+.cc_top cc_86,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	20
-	.long	21
-	.long	.Lxtalabel115
-.cc_bottom cc_90
-.cc_top cc_91,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	18
+	.long	18
+	.long	.Lxtalabel121
+.cc_bottom cc_86
+.cc_top cc_87,.Lxtalabel179
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	21
 	.long	.Lxtalabel179
-.cc_bottom cc_91
-.cc_top cc_92,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	20
-	.long	21
-	.long	.Lxtalabel66
-.cc_bottom cc_92
-.cc_top cc_93,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_87
+.cc_top cc_88,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	21
 	.long	.Lxtalabel65
-.cc_bottom cc_93
-.cc_top cc_94,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_88
+.cc_top cc_89,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	21
 	.long	.Lxtalabel182
-.cc_bottom cc_94
-.cc_top cc_95,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_89
+.cc_top cc_90,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	20
+	.long	21
+	.long	.Lxtalabel185
+.cc_bottom cc_90
+.cc_top cc_91,.Lxtalabel55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	20
 	.long	21
 	.long	.Lxtalabel55
+.cc_bottom cc_91
+.cc_top cc_92,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	20
+	.long	21
+	.long	.Lxtalabel115
+.cc_bottom cc_92
+.cc_top cc_93,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	20
+	.long	21
+	.long	.Lxtalabel118
+.cc_bottom cc_93
+.cc_top cc_94,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	20
+	.long	21
+	.long	.Lxtalabel121
+.cc_bottom cc_94
+.cc_top cc_95,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	20
+	.long	21
+	.long	.Lxtalabel66
 .cc_bottom cc_95
 .cc_top cc_96,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	27
 	.long	38
 	.long	.Lxtalabel0
 .cc_bottom cc_96
 .cc_top cc_97,.Lxtalabel71
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	27
 	.long	38
 	.long	.Lxtalabel71
 .cc_bottom cc_97
 .cc_top cc_98,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	39
 	.long	40
 	.long	.Lxtalabel2
 .cc_bottom cc_98
 .cc_top cc_99,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	39
 	.long	40
 	.long	.Lxtalabel68
 .cc_bottom cc_99
 .cc_top cc_100,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	39
 	.long	40
 	.long	.Lxtalabel69
 .cc_bottom cc_100
 .cc_top cc_101,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	41
 	.long	42
 	.long	.Lxtalabel70
 .cc_bottom cc_101
-.cc_top cc_102,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	41
-	.long	42
-	.long	.Lxtalabel136
-.cc_bottom cc_102
-.cc_top cc_103,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_102,.Lxtalabel72
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	41
 	.long	42
 	.long	.Lxtalabel72
+.cc_bottom cc_102
+.cc_top cc_103,.Lxtalabel136
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	41
+	.long	42
+	.long	.Lxtalabel136
 .cc_bottom cc_103
-.cc_top cc_104,.Lxtalabel74
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_104,.Lxtalabel138
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	43
 	.long	44
-	.long	.Lxtalabel74
+	.long	.Lxtalabel138
 .cc_bottom cc_104
 .cc_top cc_105,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	43
 	.long	44
 	.long	.Lxtalabel3
 .cc_bottom cc_105
 .cc_top cc_106,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	43
 	.long	44
 	.long	.Lxtalabel4
 .cc_bottom cc_106
-.cc_top cc_107,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	43
-	.long	44
-	.long	.Lxtalabel137
-.cc_bottom cc_107
-.cc_top cc_108,.Lxtalabel138
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	43
-	.long	44
-	.long	.Lxtalabel138
-.cc_bottom cc_108
-.cc_top cc_109,.Lxtalabel73
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_107,.Lxtalabel73
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	43
 	.long	44
 	.long	.Lxtalabel73
+.cc_bottom cc_107
+.cc_top cc_108,.Lxtalabel74
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	43
+	.long	44
+	.long	.Lxtalabel74
+.cc_bottom cc_108
+.cc_top cc_109,.Lxtalabel137
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	43
+	.long	44
+	.long	.Lxtalabel137
 .cc_bottom cc_109
-.cc_top cc_110,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	46
-	.long	46
-	.long	.Lxtalabel5
-.cc_bottom cc_110
-.cc_top cc_111,.Lxtalabel75
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	46
-	.long	46
-	.long	.Lxtalabel75
-.cc_bottom cc_111
-.cc_top cc_112,.Lxtalabel139
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_110,.Lxtalabel139
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	46
 	.long	46
 	.long	.Lxtalabel139
+.cc_bottom cc_110
+.cc_top cc_111,.Lxtalabel5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	46
+	.long	46
+	.long	.Lxtalabel5
+.cc_bottom cc_111
+.cc_top cc_112,.Lxtalabel75
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	46
+	.long	46
+	.long	.Lxtalabel75
 .cc_bottom cc_112
-.cc_top cc_113,.Lxtalabel119
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	47
-	.long	49
-	.long	.Lxtalabel119
-.cc_bottom cc_113
-.cc_top cc_114,.Lxtalabel183
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	47
-	.long	49
-	.long	.Lxtalabel183
-.cc_bottom cc_114
-.cc_top cc_115,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_113,.Lxtalabel5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	47
 	.long	49
 	.long	.Lxtalabel5
-.cc_bottom cc_115
-.cc_top cc_116,.Lxtalabel123
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	47
-	.long	49
-	.long	.Lxtalabel123
-.cc_bottom cc_116
-.cc_top cc_117,.Lxtalabel187
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_113
+.cc_top cc_114,.Lxtalabel187
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	47
 	.long	49
 	.long	.Lxtalabel187
+.cc_bottom cc_114
+.cc_top cc_115,.Lxtalabel123
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	47
+	.long	49
+	.long	.Lxtalabel123
+.cc_bottom cc_115
+.cc_top cc_116,.Lxtalabel119
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	47
+	.long	49
+	.long	.Lxtalabel119
+.cc_bottom cc_116
+.cc_top cc_117,.Lxtalabel183
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	47
+	.long	49
+	.long	.Lxtalabel183
 .cc_bottom cc_117
-.cc_top cc_118,.Lxtalabel76
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	51
-	.long	53
-	.long	.Lxtalabel76
-.cc_bottom cc_118
-.cc_top cc_119,.Lxtalabel140
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	51
-	.long	53
-	.long	.Lxtalabel140
-.cc_bottom cc_119
-.cc_top cc_120,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_118,.Lxtalabel6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	51
 	.long	53
 	.long	.Lxtalabel6
-.cc_bottom cc_120
-.cc_top cc_121,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_118
+.cc_top cc_119,.Lxtalabel76
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	54
-	.long	58
-	.long	.Lxtalabel77
-.cc_bottom cc_121
-.cc_top cc_122,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	51
+	.long	53
+	.long	.Lxtalabel76
+.cc_bottom cc_119
+.cc_top cc_120,.Lxtalabel140
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	51
+	.long	53
+	.long	.Lxtalabel140
+.cc_bottom cc_120
+.cc_top cc_121,.Lxtalabel7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	54
 	.long	58
 	.long	.Lxtalabel7
+.cc_bottom cc_121
+.cc_top cc_122,.Lxtalabel77
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	54
+	.long	58
+	.long	.Lxtalabel77
 .cc_bottom cc_122
 .cc_top cc_123,.Lxtalabel141
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	54
 	.long	58
 	.long	.Lxtalabel141
 .cc_bottom cc_123
-.cc_top cc_124,.Lxtalabel172
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel172
-.cc_bottom cc_124
-.cc_top cc_125,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel108
-.cc_bottom cc_125
-.cc_top cc_126,.Lxtalabel60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel60
-.cc_bottom cc_126
-.cc_top cc_127,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel59
-.cc_bottom cc_127
-.cc_top cc_128,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel58
-.cc_bottom cc_128
-.cc_top cc_129,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	61
-	.long	61
-	.long	.Lxtalabel57
-.cc_bottom cc_129
-.cc_top cc_130,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_124,.Lxtalabel56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	61
 	.long	61
 	.long	.Lxtalabel56
-.cc_bottom cc_130
-.cc_top cc_131,.Lxtalabel116
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_124
+.cc_top cc_125,.Lxtalabel57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	62
-	.long	63
-	.long	.Lxtalabel116
-.cc_bottom cc_131
-.cc_top cc_132,.Lxtalabel180
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	61
+	.long	61
+	.long	.Lxtalabel57
+.cc_bottom cc_125
+.cc_top cc_126,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	61
+	.long	61
+	.long	.Lxtalabel108
+.cc_bottom cc_126
+.cc_top cc_127,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	61
+	.long	61
+	.long	.Lxtalabel58
+.cc_bottom cc_127
+.cc_top cc_128,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	61
+	.long	61
+	.long	.Lxtalabel59
+.cc_bottom cc_128
+.cc_top cc_129,.Lxtalabel60
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	61
+	.long	61
+	.long	.Lxtalabel60
+.cc_bottom cc_129
+.cc_top cc_130,.Lxtalabel172
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	61
+	.long	61
+	.long	.Lxtalabel172
+.cc_bottom cc_130
+.cc_top cc_131,.Lxtalabel180
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	62
 	.long	63
 	.long	.Lxtalabel180
+.cc_bottom cc_131
+.cc_top cc_132,.Lxtalabel116
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	62
+	.long	63
+	.long	.Lxtalabel116
 .cc_bottom cc_132
 .cc_top cc_133,.Lxtalabel173
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	64
 	.long	66
 	.long	.Lxtalabel173
 .cc_bottom cc_133
 .cc_top cc_134,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	64
 	.long	66
 	.long	.Lxtalabel109
 .cc_bottom cc_134
-.cc_top cc_135,.Lxtalabel146
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	67
-	.long	68
-	.long	.Lxtalabel146
-.cc_bottom cc_135
-.cc_top cc_136,.Lxtalabel145
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_135,.Lxtalabel145
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	67
 	.long	68
 	.long	.Lxtalabel145
+.cc_bottom cc_135
+.cc_top cc_136,.Lxtalabel146
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	67
+	.long	68
+	.long	.Lxtalabel146
 .cc_bottom cc_136
 .cc_top cc_137,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	67
 	.long	68
 	.long	.Lxtalabel81
 .cc_bottom cc_137
 .cc_top cc_138,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	67
 	.long	68
 	.long	.Lxtalabel82
 .cc_bottom cc_138
-.cc_top cc_139,.Lxtalabel146
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	70
-	.long	70
-	.long	.Lxtalabel146
-.cc_bottom cc_139
-.cc_top cc_140,.Lxtalabel145
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_139,.Lxtalabel145
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	70
 	.long	70
 	.long	.Lxtalabel145
+.cc_bottom cc_139
+.cc_top cc_140,.Lxtalabel146
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	70
+	.long	70
+	.long	.Lxtalabel146
 .cc_bottom cc_140
 .cc_top cc_141,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	70
 	.long	70
 	.long	.Lxtalabel81
 .cc_bottom cc_141
 .cc_top cc_142,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	70
 	.long	70
 	.long	.Lxtalabel82
 .cc_bottom cc_142
-.cc_top cc_143,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	72
-	.long	75
-	.long	.Lxtalabel30
-.cc_bottom cc_143
-.cc_top cc_144,.Lxtalabel149
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_143,.Lxtalabel149
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	72
 	.long	75
 	.long	.Lxtalabel149
-.cc_bottom cc_144
-.cc_top cc_145,.Lxtalabel85
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_143
+.cc_top cc_144,.Lxtalabel85
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	72
 	.long	75
 	.long	.Lxtalabel85
+.cc_bottom cc_144
+.cc_top cc_145,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	72
+	.long	75
+	.long	.Lxtalabel30
 .cc_bottom cc_145
-.cc_top cc_146,.Lxtalabel85
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_146,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	77
 	.long	77
-	.long	.Lxtalabel85
+	.long	.Lxtalabel30
 .cc_bottom cc_146
 .cc_top cc_147,.Lxtalabel149
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	77
 	.long	77
 	.long	.Lxtalabel149
 .cc_bottom cc_147
-.cc_top cc_148,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_148,.Lxtalabel85
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	77
 	.long	77
-	.long	.Lxtalabel30
+	.long	.Lxtalabel85
 .cc_bottom cc_148
 .cc_top cc_149,.Lxtalabel142
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	79
 	.long	79
 	.long	.Lxtalabel142
 .cc_bottom cc_149
 .cc_top cc_150,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	79
 	.long	79
 	.long	.Lxtalabel24
 .cc_bottom cc_150
 .cc_top cc_151,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	79
 	.long	79
 	.long	.Lxtalabel78
 .cc_bottom cc_151
-.cc_top cc_152,.Lxtalabel142
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	83
-	.long	84
-	.long	.Lxtalabel142
-.cc_bottom cc_152
-.cc_top cc_153,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	83
-	.long	84
-	.long	.Lxtalabel24
-.cc_bottom cc_153
-.cc_top cc_154,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_152,.Lxtalabel78
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	83
 	.long	84
 	.long	.Lxtalabel78
-.cc_bottom cc_154
-.cc_top cc_155,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_152
+.cc_top cc_153,.Lxtalabel142
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	85
-	.long	86
-	.long	.Lxtalabel25
-.cc_bottom cc_155
-.cc_top cc_156,.Lxtalabel143
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	83
+	.long	84
+	.long	.Lxtalabel142
+.cc_bottom cc_153
+.cc_top cc_154,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	83
+	.long	84
+	.long	.Lxtalabel24
+.cc_bottom cc_154
+.cc_top cc_155,.Lxtalabel143
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	85
 	.long	86
 	.long	.Lxtalabel143
+.cc_bottom cc_155
+.cc_top cc_156,.Lxtalabel25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	85
+	.long	86
+	.long	.Lxtalabel25
 .cc_bottom cc_156
 .cc_top cc_157,.Lxtalabel79
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	85
 	.long	86
 	.long	.Lxtalabel79
 .cc_bottom cc_157
-.cc_top cc_158,.Lxtalabel50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	87
-	.long	88
-	.long	.Lxtalabel50
-.cc_bottom cc_158
-.cc_top cc_159,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_158,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	87
 	.long	88
 	.long	.Lxtalabel103
+.cc_bottom cc_158
+.cc_top cc_159,.Lxtalabel50
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	87
+	.long	88
+	.long	.Lxtalabel50
 .cc_bottom cc_159
 .cc_top cc_160,.Lxtalabel167
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	87
 	.long	88
 	.long	.Lxtalabel167
 .cc_bottom cc_160
 .cc_top cc_161,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	90
 	.long	91
 	.long	.Lxtalabel104
 .cc_bottom cc_161
 .cc_top cc_162,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	90
 	.long	91
 	.long	.Lxtalabel51
 .cc_bottom cc_162
 .cc_top cc_163,.Lxtalabel168
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	90
 	.long	91
 	.long	.Lxtalabel168
 .cc_bottom cc_163
 .cc_top cc_164,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	93
 	.long	95
 	.long	.Lxtalabel52
 .cc_bottom cc_164
 .cc_top cc_165,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	93
 	.long	95
 	.long	.Lxtalabel105
 .cc_bottom cc_165
 .cc_top cc_166,.Lxtalabel169
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	93
 	.long	95
 	.long	.Lxtalabel169
 .cc_bottom cc_166
-.cc_top cc_167,.Lxtalabel170
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	97
-	.long	98
-	.long	.Lxtalabel170
-.cc_bottom cc_167
-.cc_top cc_168,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	97
-	.long	98
-	.long	.Lxtalabel53
-.cc_bottom cc_168
-.cc_top cc_169,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_167,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	97
 	.long	98
 	.long	.Lxtalabel54
-.cc_bottom cc_169
-.cc_top cc_170,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_167
+.cc_top cc_168,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	97
 	.long	98
 	.long	.Lxtalabel106
+.cc_bottom cc_168
+.cc_top cc_169,.Lxtalabel170
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	97
+	.long	98
+	.long	.Lxtalabel170
+.cc_bottom cc_169
+.cc_top cc_170,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	97
+	.long	98
+	.long	.Lxtalabel53
 .cc_bottom cc_170
 .cc_top cc_171,.Lxtalabel171
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	99
 	.long	100
 	.long	.Lxtalabel171
 .cc_bottom cc_171
 .cc_top cc_172,.Lxtalabel107
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	99
 	.long	100
 	.long	.Lxtalabel107
 .cc_bottom cc_172
-.cc_top cc_173,.Lxtalabel178
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	101
-	.long	102
-	.long	.Lxtalabel178
-.cc_bottom cc_173
-.cc_top cc_174,.Lxtalabel114
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_173,.Lxtalabel114
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	101
 	.long	102
 	.long	.Lxtalabel114
-.cc_bottom cc_174
-.cc_top cc_175,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_173
+.cc_top cc_174,.Lxtalabel178
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	104
-	.long	105
-	.long	.Lxtalabel115
-.cc_bottom cc_175
-.cc_top cc_176,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	101
+	.long	102
+	.long	.Lxtalabel178
+.cc_bottom cc_174
+.cc_top cc_175,.Lxtalabel179
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	104
 	.long	105
 	.long	.Lxtalabel179
+.cc_bottom cc_175
+.cc_top cc_176,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	104
+	.long	105
+	.long	.Lxtalabel115
 .cc_bottom cc_176
 .cc_top cc_177,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	104
 	.long	105
 	.long	.Lxtalabel55
 .cc_bottom cc_177
-.cc_top cc_178,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_178,.Lxtalabel55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	107
 	.long	107
-	.long	.Lxtalabel115
+	.long	.Lxtalabel55
 .cc_bottom cc_178
-.cc_top cc_179,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_179,.Lxtalabel179
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	107
 	.long	107
-	.long	.Lxtalabel55
+	.long	.Lxtalabel179
 .cc_bottom cc_179
-.cc_top cc_180,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_180,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	107
 	.long	107
-	.long	.Lxtalabel179
+	.long	.Lxtalabel115
 .cc_bottom cc_180
-.cc_top cc_181,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	110
-	.long	111
-	.long	.Lxtalabel55
-.cc_bottom cc_181
-.cc_top cc_182,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	110
-	.long	111
-	.long	.Lxtalabel179
-.cc_bottom cc_182
-.cc_top cc_183,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_181,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	110
 	.long	111
 	.long	.Lxtalabel115
+.cc_bottom cc_181
+.cc_top cc_182,.Lxtalabel55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	110
+	.long	111
+	.long	.Lxtalabel55
+.cc_bottom cc_182
+.cc_top cc_183,.Lxtalabel179
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	110
+	.long	111
+	.long	.Lxtalabel179
 .cc_bottom cc_183
 .cc_top cc_184,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	113
 	.long	113
 	.long	.Lxtalabel55
 .cc_bottom cc_184
-.cc_top cc_185,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	113
-	.long	113
-	.long	.Lxtalabel115
-.cc_bottom cc_185
-.cc_top cc_186,.Lxtalabel179
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_185,.Lxtalabel179
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	113
 	.long	113
 	.long	.Lxtalabel179
-.cc_bottom cc_186
-.cc_top cc_187,.Lxtalabel26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_185
+.cc_top cc_186,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	115
-	.long	117
-	.long	.Lxtalabel26
-.cc_bottom cc_187
-.cc_top cc_188,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	113
+	.long	113
+	.long	.Lxtalabel115
+.cc_bottom cc_186
+.cc_top cc_187,.Lxtalabel80
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	115
 	.long	117
 	.long	.Lxtalabel80
-.cc_bottom cc_188
-.cc_top cc_189,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_187
+.cc_top cc_188,.Lxtalabel144
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	115
 	.long	117
 	.long	.Lxtalabel144
+.cc_bottom cc_188
+.cc_top cc_189,.Lxtalabel26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	115
+	.long	117
+	.long	.Lxtalabel26
 .cc_bottom cc_189
 .cc_top cc_190,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	119
 	.long	119
 	.long	.Lxtalabel80
 .cc_bottom cc_190
 .cc_top cc_191,.Lxtalabel26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	119
 	.long	119
 	.long	.Lxtalabel26
 .cc_bottom cc_191
 .cc_top cc_192,.Lxtalabel144
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	119
 	.long	119
 	.long	.Lxtalabel144
 .cc_bottom cc_192
-.cc_top cc_193,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	121
-	.long	122
-	.long	.Lxtalabel83
-.cc_bottom cc_193
-.cc_top cc_194,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	121
-	.long	122
-	.long	.Lxtalabel27
-.cc_bottom cc_194
-.cc_top cc_195,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	121
-	.long	122
-	.long	.Lxtalabel28
-.cc_bottom cc_195
-.cc_top cc_196,.Lxtalabel147
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	121
-	.long	122
-	.long	.Lxtalabel147
-.cc_bottom cc_196
-.cc_top cc_197,.Lxtalabel158
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	121
-	.long	122
-	.long	.Lxtalabel158
-.cc_bottom cc_197
-.cc_top cc_198,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_193,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	121
 	.long	122
 	.long	.Lxtalabel94
-.cc_bottom cc_198
-.cc_top cc_199,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_193
+.cc_top cc_194,.Lxtalabel147
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	123
-	.long	124
-	.long	.Lxtalabel28
-.cc_bottom cc_199
-.cc_top cc_200,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	121
+	.long	122
+	.long	.Lxtalabel147
+.cc_bottom cc_194
+.cc_top cc_195,.Lxtalabel83
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	123
-	.long	124
+	.long	121
+	.long	122
+	.long	.Lxtalabel83
+.cc_bottom cc_195
+.cc_top cc_196,.Lxtalabel27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	121
+	.long	122
 	.long	.Lxtalabel27
-.cc_bottom cc_200
-.cc_top cc_201,.Lxtalabel95
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_196
+.cc_top cc_197,.Lxtalabel28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	121
+	.long	122
+	.long	.Lxtalabel28
+.cc_bottom cc_197
+.cc_top cc_198,.Lxtalabel158
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	121
+	.long	122
+	.long	.Lxtalabel158
+.cc_bottom cc_198
+.cc_top cc_199,.Lxtalabel95
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	123
 	.long	124
 	.long	.Lxtalabel95
-.cc_bottom cc_201
-.cc_top cc_202,.Lxtalabel159
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_199
+.cc_top cc_200,.Lxtalabel159
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	123
 	.long	124
 	.long	.Lxtalabel159
+.cc_bottom cc_200
+.cc_top cc_201,.Lxtalabel27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	123
+	.long	124
+	.long	.Lxtalabel27
+.cc_bottom cc_201
+.cc_top cc_202,.Lxtalabel28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	123
+	.long	124
+	.long	.Lxtalabel28
 .cc_bottom cc_202
-.cc_top cc_203,.Lxtalabel148
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	125
-	.long	127
-	.long	.Lxtalabel148
-.cc_bottom cc_203
-.cc_top cc_204,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	125
-	.long	127
-	.long	.Lxtalabel29
-.cc_bottom cc_204
-.cc_top cc_205,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_203,.Lxtalabel84
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	125
 	.long	127
 	.long	.Lxtalabel84
+.cc_bottom cc_203
+.cc_top cc_204,.Lxtalabel148
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	125
+	.long	127
+	.long	.Lxtalabel148
+.cc_bottom cc_204
+.cc_top cc_205,.Lxtalabel29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	125
+	.long	127
+	.long	.Lxtalabel29
 .cc_bottom cc_205
-.cc_top cc_206,.Lxtalabel175
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_206,.Lxtalabel63
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	128
 	.long	129
-	.long	.Lxtalabel175
+	.long	.Lxtalabel63
 .cc_bottom cc_206
 .cc_top cc_207,.Lxtalabel111
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	128
 	.long	129
 	.long	.Lxtalabel111
 .cc_bottom cc_207
-.cc_top cc_208,.Lxtalabel63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_208,.Lxtalabel175
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	128
 	.long	129
-	.long	.Lxtalabel63
+	.long	.Lxtalabel175
 .cc_bottom cc_208
-.cc_top cc_209,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_209,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	130
 	.long	132
-	.long	.Lxtalabel112
+	.long	.Lxtalabel96
 .cc_bottom cc_209
 .cc_top cc_210,.Lxtalabel160
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	130
 	.long	132
 	.long	.Lxtalabel160
 .cc_bottom cc_210
-.cc_top cc_211,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_211,.Lxtalabel112
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	130
 	.long	132
-	.long	.Lxtalabel96
+	.long	.Lxtalabel112
 .cc_bottom cc_211
 .cc_top cc_212,.Lxtalabel176
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	130
 	.long	132
 	.long	.Lxtalabel176
 .cc_bottom cc_212
-.cc_top cc_213,.Lxtalabel160
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_213,.Lxtalabel176
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	134
 	.long	134
-	.long	.Lxtalabel160
+	.long	.Lxtalabel176
 .cc_bottom cc_213
 .cc_top cc_214,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	134
 	.long	134
 	.long	.Lxtalabel112
 .cc_bottom cc_214
-.cc_top cc_215,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_215,.Lxtalabel160
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	134
+	.long	134
+	.long	.Lxtalabel160
+.cc_bottom cc_215
+.cc_top cc_216,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	134
 	.long	134
 	.long	.Lxtalabel96
-.cc_bottom cc_215
-.cc_top cc_216,.Lxtalabel176
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	134
-	.long	134
-	.long	.Lxtalabel176
 .cc_bottom cc_216
 .cc_top cc_217,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	135
 	.long	135
 	.long	.Lxtalabel90
 .cc_bottom cc_217
 .cc_top cc_218,.Lxtalabel154
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	135
 	.long	135
 	.long	.Lxtalabel154
 .cc_bottom cc_218
 .cc_top cc_219,.Lxtalabel35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	135
 	.long	135
 	.long	.Lxtalabel35
 .cc_bottom cc_219
 .cc_top cc_220,.Lxtalabel91
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	137
 	.long	137
 	.long	.Lxtalabel91
 .cc_bottom cc_220
-.cc_top cc_221,.Lxtalabel155
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	137
-	.long	137
-	.long	.Lxtalabel155
-.cc_bottom cc_221
-.cc_top cc_222,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_221,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	137
 	.long	137
 	.long	.Lxtalabel36
-.cc_bottom cc_222
-.cc_top cc_223,.Lxtalabel156
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_221
+.cc_top cc_222,.Lxtalabel155
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	139
-	.long	141
-	.long	.Lxtalabel156
-.cc_bottom cc_223
-.cc_top cc_224,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	137
+	.long	137
+	.long	.Lxtalabel155
+.cc_bottom cc_222
+.cc_top cc_223,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	139
 	.long	141
 	.long	.Lxtalabel92
-.cc_bottom cc_224
-.cc_top cc_225,.Lxtalabel40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	139
-	.long	141
-	.long	.Lxtalabel40
-.cc_bottom cc_225
-.cc_top cc_226,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	139
-	.long	141
-	.long	.Lxtalabel39
-.cc_bottom cc_226
-.cc_top cc_227,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	139
-	.long	141
-	.long	.Lxtalabel43
-.cc_bottom cc_227
-.cc_top cc_228,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_223
+.cc_top cc_224,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	139
 	.long	141
 	.long	.Lxtalabel42
-.cc_bottom cc_228
-.cc_top cc_229,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_224
+.cc_top cc_225,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	139
 	.long	141
-	.long	.Lxtalabel37
-.cc_bottom cc_229
-.cc_top cc_230,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	.Lxtalabel39
+.cc_bottom cc_225
+.cc_top cc_226,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	139
 	.long	141
 	.long	.Lxtalabel38
-.cc_bottom cc_230
-.cc_top cc_231,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_226
+.cc_top cc_227,.Lxtalabel37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	139
+	.long	141
+	.long	.Lxtalabel37
+.cc_bottom cc_227
+.cc_top cc_228,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	139
 	.long	141
 	.long	.Lxtalabel41
-.cc_bottom cc_231
-.cc_top cc_232,.Lxtalabel157
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_228
+.cc_top cc_229,.Lxtalabel40
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	143
-	.long	145
-	.long	.Lxtalabel157
-.cc_bottom cc_232
-.cc_top cc_233,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	139
+	.long	141
+	.long	.Lxtalabel40
+.cc_bottom cc_229
+.cc_top cc_230,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	139
+	.long	141
+	.long	.Lxtalabel43
+.cc_bottom cc_230
+.cc_top cc_231,.Lxtalabel156
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	139
+	.long	141
+	.long	.Lxtalabel156
+.cc_bottom cc_231
+.cc_top cc_232,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	143
 	.long	145
 	.long	.Lxtalabel93
+.cc_bottom cc_232
+.cc_top cc_233,.Lxtalabel157
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	143
+	.long	145
+	.long	.Lxtalabel157
 .cc_bottom cc_233
 .cc_top cc_234,.Lxtalabel184
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	146
 	.long	148
 	.long	.Lxtalabel184
 .cc_bottom cc_234
 .cc_top cc_235,.Lxtalabel120
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	146
 	.long	148
 	.long	.Lxtalabel120
 .cc_bottom cc_235
 .cc_top cc_236,.Lxtalabel174
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	151
 	.long	153
 	.long	.Lxtalabel174
 .cc_bottom cc_236
 .cc_top cc_237,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	151
 	.long	153
 	.long	.Lxtalabel110
 .cc_bottom cc_237
 .cc_top cc_238,.Lxtalabel61
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	151
 	.long	153
 	.long	.Lxtalabel61
 .cc_bottom cc_238
-.cc_top cc_239,.Lxtalabel164
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	156
-	.long	156
-	.long	.Lxtalabel164
-.cc_bottom cc_239
-.cc_top cc_240,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_239,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	156
 	.long	156
 	.long	.Lxtalabel47
-.cc_bottom cc_240
-.cc_top cc_241,.Lxtalabel100
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_239
+.cc_top cc_240,.Lxtalabel100
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	156
 	.long	156
 	.long	.Lxtalabel100
+.cc_bottom cc_240
+.cc_top cc_241,.Lxtalabel164
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	156
+	.long	156
+	.long	.Lxtalabel164
 .cc_bottom cc_241
 .cc_top cc_242,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	157
 	.long	157
 	.long	.Lxtalabel48
 .cc_bottom cc_242
-.cc_top cc_243,.Lxtalabel165
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	157
-	.long	157
-	.long	.Lxtalabel165
-.cc_bottom cc_243
-.cc_top cc_244,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_243,.Lxtalabel101
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	157
 	.long	157
 	.long	.Lxtalabel101
-.cc_bottom cc_244
-.cc_top cc_245,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_243
+.cc_top cc_244,.Lxtalabel165
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	159
-	.long	160
-	.long	.Lxtalabel121
-.cc_bottom cc_245
-.cc_top cc_246,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	157
+	.long	157
+	.long	.Lxtalabel165
+.cc_bottom cc_244
+.cc_top cc_245,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	159
 	.long	160
 	.long	.Lxtalabel66
-.cc_bottom cc_246
-.cc_top cc_247,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_245
+.cc_top cc_246,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	159
 	.long	160
 	.long	.Lxtalabel185
+.cc_bottom cc_246
+.cc_top cc_247,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	159
+	.long	160
+	.long	.Lxtalabel121
 .cc_bottom cc_247
 .cc_top cc_248,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	162
 	.long	162
 	.long	.Lxtalabel121
 .cc_bottom cc_248
 .cc_top cc_249,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	162
 	.long	162
 	.long	.Lxtalabel66
 .cc_bottom cc_249
 .cc_top cc_250,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	162
 	.long	162
 	.long	.Lxtalabel185
 .cc_bottom cc_250
-.cc_top cc_251,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_251,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	165
 	.long	165
-	.long	.Lxtalabel66
+	.long	.Lxtalabel121
 .cc_bottom cc_251
-.cc_top cc_252,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_252,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	165
 	.long	165
-	.long	.Lxtalabel185
+	.long	.Lxtalabel66
 .cc_bottom cc_252
-.cc_top cc_253,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_253,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	165
 	.long	165
-	.long	.Lxtalabel121
+	.long	.Lxtalabel185
 .cc_bottom cc_253
-.cc_top cc_254,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_254,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	167
 	.long	167
-	.long	.Lxtalabel185
+	.long	.Lxtalabel121
 .cc_bottom cc_254
-.cc_top cc_255,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	167
-	.long	167
-	.long	.Lxtalabel121
-.cc_bottom cc_255
-.cc_top cc_256,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_255,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	167
 	.long	167
 	.long	.Lxtalabel66
+.cc_bottom cc_255
+.cc_top cc_256,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	167
+	.long	167
+	.long	.Lxtalabel185
 .cc_bottom cc_256
-.cc_top cc_257,.Lxtalabel185
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_257,.Lxtalabel121
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	170
+	.long	171
+	.long	.Lxtalabel121
+.cc_bottom cc_257
+.cc_top cc_258,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	170
+	.long	171
+	.long	.Lxtalabel66
+.cc_bottom cc_258
+.cc_top cc_259,.Lxtalabel185
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	170
 	.long	171
 	.long	.Lxtalabel185
-.cc_bottom cc_257
-.cc_top cc_258,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	170
-	.long	171
-	.long	.Lxtalabel121
-.cc_bottom cc_258
-.cc_top cc_259,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	170
-	.long	171
-	.long	.Lxtalabel66
 .cc_bottom cc_259
-.cc_top cc_260,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	172
-	.long	173
-	.long	.Lxtalabel49
-.cc_bottom cc_260
-.cc_top cc_261,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	172
-	.long	173
-	.long	.Lxtalabel102
-.cc_bottom cc_261
-.cc_top cc_262,.Lxtalabel166
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_260,.Lxtalabel166
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	172
 	.long	173
 	.long	.Lxtalabel166
+.cc_bottom cc_260
+.cc_top cc_261,.Lxtalabel49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	172
+	.long	173
+	.long	.Lxtalabel49
+.cc_bottom cc_261
+.cc_top cc_262,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	172
+	.long	173
+	.long	.Lxtalabel102
 .cc_bottom cc_262
 .cc_top cc_263,.Lxtalabel186
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	174
 	.long	175
 	.long	.Lxtalabel186
 .cc_bottom cc_263
 .cc_top cc_264,.Lxtalabel122
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	174
 	.long	175
 	.long	.Lxtalabel122
 .cc_bottom cc_264
 .cc_top cc_265,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	174
 	.long	175
 	.long	.Lxtalabel67
 .cc_bottom cc_265
-.cc_top cc_266,.Lxtalabel113
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_266,.Lxtalabel177
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	177
 	.long	178
-	.long	.Lxtalabel113
+	.long	.Lxtalabel177
 .cc_bottom cc_266
 .cc_top cc_267,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	177
 	.long	178
 	.long	.Lxtalabel62
 .cc_bottom cc_267
-.cc_top cc_268,.Lxtalabel177
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_268,.Lxtalabel113
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	177
 	.long	178
-	.long	.Lxtalabel177
+	.long	.Lxtalabel113
 .cc_bottom cc_268
 .cc_top cc_269,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	184
 	.long	184
 	.long	.Lxtalabel86
 .cc_bottom cc_269
 .cc_top cc_270,.Lxtalabel150
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	184
 	.long	184
 	.long	.Lxtalabel150
 .cc_bottom cc_270
 .cc_top cc_271,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	184
 	.long	184
 	.long	.Lxtalabel31
 .cc_bottom cc_271
-.cc_top cc_272,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	186
-	.long	189
-	.long	.Lxtalabel87
-.cc_bottom cc_272
-.cc_top cc_273,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_272,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	186
 	.long	189
 	.long	.Lxtalabel32
-.cc_bottom cc_273
-.cc_top cc_274,.Lxtalabel151
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_272
+.cc_top cc_273,.Lxtalabel151
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	186
 	.long	189
 	.long	.Lxtalabel151
-.cc_bottom cc_274
-.cc_top cc_275,.Lxtalabel33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_273
+.cc_top cc_274,.Lxtalabel87
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	190
-	.long	190
-	.long	.Lxtalabel33
-.cc_bottom cc_275
-.cc_top cc_276,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	186
+	.long	189
+	.long	.Lxtalabel87
+.cc_bottom cc_274
+.cc_top cc_275,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	190
 	.long	190
 	.long	.Lxtalabel152
+.cc_bottom cc_275
+.cc_top cc_276,.Lxtalabel33
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	190
+	.long	190
+	.long	.Lxtalabel33
 .cc_bottom cc_276
 .cc_top cc_277,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	190
 	.long	190
 	.long	.Lxtalabel88
 .cc_bottom cc_277
-.cc_top cc_278,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	196
-	.long	197
-	.long	.Lxtalabel88
-.cc_bottom cc_278
-.cc_top cc_279,.Lxtalabel152
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_278,.Lxtalabel152
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	196
 	.long	197
 	.long	.Lxtalabel152
+.cc_bottom cc_278
+.cc_top cc_279,.Lxtalabel88
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	196
+	.long	197
+	.long	.Lxtalabel88
 .cc_bottom cc_279
-.cc_top cc_280,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	198
-	.long	200
-	.long	.Lxtalabel34
-.cc_bottom cc_280
-.cc_top cc_281,.Lxtalabel89
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	198
-	.long	200
-	.long	.Lxtalabel89
-.cc_bottom cc_281
-.cc_top cc_282,.Lxtalabel153
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_280,.Lxtalabel153
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	198
 	.long	200
 	.long	.Lxtalabel153
-.cc_bottom cc_282
-.cc_top cc_283,.Lxtalabel44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_280
+.cc_top cc_281,.Lxtalabel34
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	204
-	.long	204
-	.long	.Lxtalabel44
-.cc_bottom cc_283
-.cc_top cc_284,.Lxtalabel161
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	198
+	.long	200
+	.long	.Lxtalabel34
+.cc_bottom cc_281
+.cc_top cc_282,.Lxtalabel89
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	198
+	.long	200
+	.long	.Lxtalabel89
+.cc_bottom cc_282
+.cc_top cc_283,.Lxtalabel161
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	204
 	.long	204
 	.long	.Lxtalabel161
+.cc_bottom cc_283
+.cc_top cc_284,.Lxtalabel44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	204
+	.long	204
+	.long	.Lxtalabel44
 .cc_bottom cc_284
 .cc_top cc_285,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	204
 	.long	204
 	.long	.Lxtalabel97
 .cc_bottom cc_285
-.cc_top cc_286,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	206
-	.long	206
-	.long	.Lxtalabel97
-.cc_bottom cc_286
-.cc_top cc_287,.Lxtalabel44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_286,.Lxtalabel44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	206
 	.long	206
 	.long	.Lxtalabel44
-.cc_bottom cc_287
-.cc_top cc_288,.Lxtalabel161
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_286
+.cc_top cc_287,.Lxtalabel161
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	206
 	.long	206
 	.long	.Lxtalabel161
+.cc_bottom cc_287
+.cc_top cc_288,.Lxtalabel97
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	206
+	.long	206
+	.long	.Lxtalabel97
 .cc_bottom cc_288
 .cc_top cc_289,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	208
 	.long	210
 	.long	.Lxtalabel45
 .cc_bottom cc_289
 .cc_top cc_290,.Lxtalabel162
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	208
 	.long	210
 	.long	.Lxtalabel162
 .cc_bottom cc_290
 .cc_top cc_291,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	208
 	.long	210
 	.long	.Lxtalabel98
 .cc_bottom cc_291
-.cc_top cc_292,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	212
-	.long	213
-	.long	.Lxtalabel46
-.cc_bottom cc_292
-.cc_top cc_293,.Lxtalabel163
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_292,.Lxtalabel163
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	212
 	.long	213
 	.long	.Lxtalabel163
-.cc_bottom cc_293
-.cc_top cc_294,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_292
+.cc_top cc_293,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	212
 	.long	213
 	.long	.Lxtalabel99
-.cc_bottom cc_294
-.cc_top cc_295,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_293
+.cc_top cc_294,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	215
-	.long	216
-	.long	.Lxtalabel64
-.cc_bottom cc_295
-.cc_top cc_296,.Lxtalabel117
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	212
+	.long	213
+	.long	.Lxtalabel46
+.cc_bottom cc_294
+.cc_top cc_295,.Lxtalabel117
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	215
 	.long	216
 	.long	.Lxtalabel117
+.cc_bottom cc_295
+.cc_top cc_296,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	215
+	.long	216
+	.long	.Lxtalabel64
 .cc_bottom cc_296
 .cc_top cc_297,.Lxtalabel181
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	215
 	.long	216
 	.long	.Lxtalabel181
 .cc_bottom cc_297
-.cc_top cc_298,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_298,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	217
 	.long	217
-	.long	.Lxtalabel182
+	.long	.Lxtalabel65
 .cc_bottom cc_298
-.cc_top cc_299,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_299,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	217
 	.long	217
-	.long	.Lxtalabel65
+	.long	.Lxtalabel118
 .cc_bottom cc_299
-.cc_top cc_300,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_300,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	217
 	.long	217
-	.long	.Lxtalabel118
+	.long	.Lxtalabel182
 .cc_bottom cc_300
-.cc_top cc_301,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_301,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	219
 	.long	219
-	.long	.Lxtalabel118
+	.long	.Lxtalabel65
 .cc_bottom cc_301
-.cc_top cc_302,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_302,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	219
 	.long	219
-	.long	.Lxtalabel182
+	.long	.Lxtalabel118
 .cc_bottom cc_302
-.cc_top cc_303,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_303,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	219
 	.long	219
-	.long	.Lxtalabel65
-.cc_bottom cc_303
-.cc_top cc_304,.Lxtalabel182
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	222
-	.long	223
 	.long	.Lxtalabel182
-.cc_bottom cc_304
-.cc_top cc_305,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	222
-	.long	223
-	.long	.Lxtalabel65
-.cc_bottom cc_305
-.cc_top cc_306,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_303
+.cc_top cc_304,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	222
 	.long	223
 	.long	.Lxtalabel118
+.cc_bottom cc_304
+.cc_top cc_305,.Lxtalabel182
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	222
+	.long	223
+	.long	.Lxtalabel182
+.cc_bottom cc_305
+.cc_top cc_306,.Lxtalabel65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	222
+	.long	223
+	.long	.Lxtalabel65
 .cc_bottom cc_306
 .cc_top cc_307,.Lxtalabel188
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	228
 	.long	228
 	.long	.Lxtalabel188
 .cc_bottom cc_307
 .cc_top cc_308,.Lxtalabel124
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	228
 	.long	228
 	.long	.Lxtalabel124
 .cc_bottom cc_308
-.cc_top cc_309,.Lxtalabel188
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	230
-	.long	231
-	.long	.Lxtalabel188
-.cc_bottom cc_309
-.cc_top cc_310,.Lxtalabel124
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_309,.Lxtalabel124
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	230
 	.long	231
 	.long	.Lxtalabel124
+.cc_bottom cc_309
+.cc_top cc_310,.Lxtalabel188
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	230
+	.long	231
+	.long	.Lxtalabel188
 .cc_bottom cc_310
 .cc_top cc_311,.Lxtalabel125
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	232
 	.long	232
 	.long	.Lxtalabel125
 .cc_bottom cc_311
 .cc_top cc_312,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	232
 	.long	232
 	.long	.Lxtalabel8
 .cc_bottom cc_312
 .cc_top cc_313,.Lxtalabel189
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	232
 	.long	232
 	.long	.Lxtalabel189
 .cc_bottom cc_313
 .cc_top cc_314,.Lxtalabel126
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	235
 	.long	237
 	.long	.Lxtalabel126
 .cc_bottom cc_314
 .cc_top cc_315,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	235
 	.long	237
 	.long	.Lxtalabel9
 .cc_bottom cc_315
 .cc_top cc_316,.Lxtalabel190
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	235
 	.long	237
 	.long	.Lxtalabel190
 .cc_bottom cc_316
-.cc_top cc_317,.Lxtalabel127
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	238
-	.long	238
-	.long	.Lxtalabel127
-.cc_bottom cc_317
-.cc_top cc_318,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_317,.Lxtalabel10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	238
 	.long	238
 	.long	.Lxtalabel10
+.cc_bottom cc_317
+.cc_top cc_318,.Lxtalabel127
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	238
+	.long	238
+	.long	.Lxtalabel127
 .cc_bottom cc_318
 .cc_top cc_319,.Lxtalabel191
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	238
 	.long	238
 	.long	.Lxtalabel191
 .cc_bottom cc_319
-.cc_top cc_320,.Lxtalabel128
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	239
-	.long	240
-	.long	.Lxtalabel128
-.cc_bottom cc_320
-.cc_top cc_321,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_320,.Lxtalabel11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	239
 	.long	240
 	.long	.Lxtalabel11
+.cc_bottom cc_320
+.cc_top cc_321,.Lxtalabel128
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	239
+	.long	240
+	.long	.Lxtalabel128
 .cc_bottom cc_321
 .cc_top cc_322,.Lxtalabel192
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	239
 	.long	240
 	.long	.Lxtalabel192
 .cc_bottom cc_322
 .cc_top cc_323,.Lxtalabel129
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	241
 	.long	244
 	.long	.Lxtalabel129
 .cc_bottom cc_323
 .cc_top cc_324,.Lxtalabel193
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	241
 	.long	244
 	.long	.Lxtalabel193
 .cc_bottom cc_324
-.cc_top cc_325,.Lxtalabel194
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	245
-	.long	246
-	.long	.Lxtalabel194
-.cc_bottom cc_325
-.cc_top cc_326,.Lxtalabel130
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_325,.Lxtalabel130
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	245
 	.long	246
 	.long	.Lxtalabel130
+.cc_bottom cc_325
+.cc_top cc_326,.Lxtalabel194
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	245
+	.long	246
+	.long	.Lxtalabel194
 .cc_bottom cc_326
-.cc_top cc_327,.Lxtalabel195
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_327,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
-	.long	.Lxtalabel195
+	.long	.Lxtalabel13
 .cc_bottom cc_327
-.cc_top cc_328,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	249
-	.long	251
-	.long	.Lxtalabel1
-.cc_bottom cc_328
-.cc_top cc_329,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_328,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel12
-.cc_bottom cc_329
-.cc_top cc_330,.Lxtalabel131
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	249
-	.long	251
-	.long	.Lxtalabel131
-.cc_bottom cc_330
-.cc_top cc_331,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_328
+.cc_top cc_329,.Lxtalabel23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel23
+.cc_bottom cc_329
+.cc_top cc_330,.Lxtalabel20
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	249
+	.long	251
+	.long	.Lxtalabel20
+.cc_bottom cc_330
+.cc_top cc_331,.Lxtalabel1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	249
+	.long	251
+	.long	.Lxtalabel1
 .cc_bottom cc_331
 .cc_top cc_332,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel22
 .cc_bottom cc_332
-.cc_top cc_333,.Lxtalabel21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_333,.Lxtalabel131
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	249
+	.long	251
+	.long	.Lxtalabel131
+.cc_bottom cc_333
+.cc_top cc_334,.Lxtalabel21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel21
-.cc_bottom cc_333
-.cc_top cc_334,.Lxtalabel20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	249
-	.long	251
-	.long	.Lxtalabel20
 .cc_bottom cc_334
 .cc_top cc_335,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel19
 .cc_bottom cc_335
 .cc_top cc_336,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel18
 .cc_bottom cc_336
 .cc_top cc_337,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel17
 .cc_bottom cc_337
 .cc_top cc_338,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel16
 .cc_bottom cc_338
 .cc_top cc_339,.Lxtalabel15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel15
 .cc_bottom cc_339
 .cc_top cc_340,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
 	.long	.Lxtalabel14
 .cc_bottom cc_340
-.cc_top cc_341,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_341,.Lxtalabel195
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	249
 	.long	251
-	.long	.Lxtalabel13
+	.long	.Lxtalabel195
 .cc_bottom cc_341
-.cc_top cc_342,.Lxtalabel196
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
-	.byte	0
-	.long	252
-	.long	257
-	.long	.Lxtalabel196
-.cc_bottom cc_342
-.cc_top cc_343,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_342,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	252
 	.long	257
 	.long	.Lxtalabel132
-.cc_bottom cc_343
-.cc_top cc_344,.Lxtalabel197
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_bottom cc_342
+.cc_top cc_343,.Lxtalabel196
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
-	.long	258
-	.long	259
-	.long	.Lxtalabel197
-.cc_bottom cc_344
-.cc_top cc_345,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.long	252
+	.long	257
+	.long	.Lxtalabel196
+.cc_bottom cc_343
+.cc_top cc_344,.Lxtalabel133
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	258
 	.long	259
 	.long	.Lxtalabel133
+.cc_bottom cc_344
+.cc_top cc_345,.Lxtalabel197
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.byte	0
+	.long	258
+	.long	259
+	.long	.Lxtalabel197
 .cc_bottom cc_345
 .cc_top cc_346,.Lxtalabel135
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	261
 	.long	262
 	.long	.Lxtalabel135
 .cc_bottom cc_346
-.cc_top cc_347,.Lxtalabel199
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_347,.Lxtalabel134
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	261
 	.long	262
-	.long	.Lxtalabel199
+	.long	.Lxtalabel134
 .cc_bottom cc_347
 .cc_top cc_348,.Lxtalabel198
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	261
 	.long	262
 	.long	.Lxtalabel198
 .cc_bottom cc_348
-.cc_top cc_349,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
+.cc_top cc_349,.Lxtalabel199
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_slave.xc"
 	.byte	0
 	.long	261
 	.long	262
-	.long	.Lxtalabel134
+	.long	.Lxtalabel199
 .cc_bottom cc_349
 .Lentries_end5:
 	.section	.trap_info,"",@progbits

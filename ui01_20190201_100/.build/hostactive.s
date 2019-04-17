@@ -21,7 +21,7 @@
 	.cc_top UserHostActive.function,UserHostActive
 UserHostActive:
 .Lfunc_begin0:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/hostactive\\hostactive.c"
 	.loc	1 4 0
 	.cfi_startproc
 	.issue_mode dual
@@ -58,11 +58,11 @@ UserHostActive:
 .Ldebug_end0:
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+.asciiz"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/hostactive\\hostactive.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"UserHostActive"
 .Linfo_string4:
@@ -205,7 +205,7 @@ UserHostActive:
 .LpubTypes_end0:
 	.cfi_sections .debug_frame
 
-	.ident	"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+	.ident	"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 	.typestring UserHostActive, "f{0}(si)"
 	.section	.trap_info,"",@progbits
 .Ltrap_info_entries_start0:

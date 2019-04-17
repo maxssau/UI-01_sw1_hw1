@@ -14,15 +14,15 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/descriptors.h"
-	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_descriptors.h"
-	.file	3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudiocommon.h"
-	.file	4 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
-	.file	5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/dfu.h"
-	.file	6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/endpoint0.c"
-	.file	7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
-	.file	8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/descriptor_defs.h"
-	.file	9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\descriptors.h"
+	.file	2 "C:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_descriptors.h"
+	.file	3 "C:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usbaudiocommon.h"
+	.file	4 "C:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usbaudio20.h"
+	.file	5 "C:/Projects/UI-01_sw1_hw1/module_dfu/src\\dfu.h"
+	.file	6 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\endpoint0.c"
+	.file	7 "C:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
+	.file	8 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\descriptor_defs.h"
+	.file	9 "C:/Projects/UI-01_sw1_hw1/module_usb_audio\\devicedefines.h"
 	.section	.cp.rodata.cst4,"aMc",@progbits,4
 	.cc_top .LCPI0_0.data,.LCPI0_0
 	.align	4
@@ -2184,15 +2184,15 @@ mixer1Crossbar:
 .Ldebug_end4:
 	.text
 .Ldebug_end5:
-	.file	10 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h"
-	.file	11 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h"
+	.file	10 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xccompat.h"
+	.file	11 "C:/Projects/UI-01_sw1_hw1/module_usb_shared/src\\usb_std_requests.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+.asciiz"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/endpoint0.c"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\endpoint0.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"g_strTable"
 .Linfo_string4:
@@ -6024,7 +6024,7 @@ mixer1Crossbar:
 .LpubTypes_end0:
 	.cfi_sections .debug_frame
 
-	.ident	"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+	.ident	"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 	.typestring Endpoint0, "f{0}(ui,ui,ui,ui,ui,ui,ui)"
 	.typestring XUD_InitEp, "f{ui}(ui)"
 	.typestring DFUReportResetState, "f{si}(ui)"

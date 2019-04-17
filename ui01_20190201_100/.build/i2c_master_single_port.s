@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
                                         # Start of file scope inline assembly
 	.inline_definition __i_i2c_master_if_read_reg
 	.inline_definition __i_i2c_master_if_write_reg
@@ -736,12 +736,12 @@
 	.set usage.anon.6.locnointerfaceaccess, 0
 	.set usage.anon.7.locnointerfaceaccess, 0
 	.set i2c_master_single_port.locnointerfaceaccess, 0
-	.assert 1,usage.anon.19.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:15: error: call to function `tx8\' which selects on a notification in a combinable function select case\n        ack = tx8(p_i2c, buf[j], kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time);\n              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.18.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:7: error: call to function `stop_bit\' which selects on a notification in a combinable function select case\n      stop_bit(p_i2c, kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time);\n      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.17.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:7: error: call to function `start_bit\' which selects on a notification in a combinable function select case\n      start_bit(p_i2c, kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time, stopped);\n      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.16.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:24: error: call to function `high_pulse_sample\' which selects on a notification in a combinable function select case\n            int temp = high_pulse_sample(p_i2c, kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time);\n                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.14.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:11: error: call to function `wait_for_clock_high\' which selects on a notification in a combinable function select case\n          wait_for_clock_high(p_i2c, scl_bit_position, fall_time, (bit_time * 3) / 4);\n          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.assert 1,usage.anon.12.actnonotificationselect,"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:43: error: call to function `compute_low_period_ticks\' which selects on a notification in a combinable function select case\n          tmr when timerafter(fall_time + compute_low_period_ticks(kbits_per_second)) :> void;\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h:1710:69: note: expanded from macro \'timerafter\'\n#define timerafter(val)                       __builtin_timer_after(val)\n                                                                    ^"
+	.assert 1,usage.anon.19.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:15: error: call to function `tx8\' which selects on a notification in a combinable function select case\n        ack = tx8(p_i2c, buf[j], kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time);\n              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.18.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:7: error: call to function `stop_bit\' which selects on a notification in a combinable function select case\n      stop_bit(p_i2c, kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time);\n      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.17.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:7: error: call to function `start_bit\' which selects on a notification in a combinable function select case\n      start_bit(p_i2c, kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time, stopped);\n      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.16.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:24: error: call to function `high_pulse_sample\' which selects on a notification in a combinable function select case\n            int temp = high_pulse_sample(p_i2c, kbits_per_second, scl_bit_position, sda_bit_position, other_bits_mask, fall_time);\n                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.14.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:11: error: call to function `wait_for_clock_high\' which selects on a notification in a combinable function select case\n          wait_for_clock_high(p_i2c, scl_bit_position, fall_time, (bit_time * 3) / 4);\n          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.assert 1,usage.anon.12.actnonotificationselect,"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:43: error: call to function `compute_low_period_ticks\' which selects on a notification in a combinable function select case\n          tmr when timerafter(fall_time + compute_low_period_ticks(kbits_per_second)) :> void;\n                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nC:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\xs1.h:1710:69: note: expanded from macro \'timerafter\'\n#define timerafter(val)                       __builtin_timer_after(val)\n                                                                    ^"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -758,8 +758,8 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
-	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/lib_i2c/api\\i2c.h"
+	.file	2 "C:/Projects/UI-01_sw1_hw1/lib_i2c/src\\i2c_master_single_port.xc"
 	.text
 	.globl	_i.i2c_master_if.i2c_master_single_port._c0.shutdown
 	.align	4
@@ -800,7 +800,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.shutdown: # @_i.i2c_master_if.i2c_ma
 	.cc_top _i.i2c_master_if.i2c_master_single_port._c0.send_stop_bit.function,_i.i2c_master_if.i2c_master_single_port._c0.send_stop_bit
 _i.i2c_master_if.i2c_master_single_port._c0.send_stop_bit: # @_i.i2c_master_if.i2c_master_single_port._c0.send_stop_bit
 .Lfunc_begin1:
-	.loc	2 309 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:309:0
+	.loc	2 309 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:309:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -824,35 +824,35 @@ _i.i2c_master_if.i2c_master_single_port._c0.send_stop_bit: # @_i.i2c_master_if.i
 # BB#2:                                 # %ifdone
 	ldc r0, 0
 	stw r0, r4[0]
-	.loc	2 312 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
+	.loc	2 312 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
 .Ltmp6:
 	gettime r11
 .Ltmp7:
 	#DEBUG_VALUE: fall_time <- R11
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r0, r4[8]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r1, r4[9]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r2, r4[10]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r3, r4[11]
 	ldc r5, 48
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	add r5, r4, r5
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r5, r5[0]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	stw r5, sp[1]
 	stw r11, sp[2]
 .Lxta.call_labels0:
 	bl stop_bit
 .Ltmp8:
 	ldc r0, 68
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	add r0, r4, r0
 	mkmsk r1, 32
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	stw r1, r0[0]
 	mkmsk r0, 1
 	stw r0, r4[0]
@@ -889,7 +889,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.send_stop_bit: # @_i.i2c_master_if.i
 	.cc_top _i.i2c_master_if.i2c_master_single_port._c0.read.function,_i.i2c_master_if.i2c_master_single_port._c0.read
 _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master_single_port._c0.read
 .Lfunc_begin2:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -945,7 +945,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	ldw r0, r9[7]
 	eq r0, r0, 1
 	ldc r1, 68
-	.loc	2 235 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 .Ltmp25:
 	add r5, r9, r1
 	bt r0, .LBB2_3
@@ -996,73 +996,73 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	stw r6, sp[5]                   # 4-byte Folded Spill
 	ldc r0, 0
 	stw r0, r9[0]
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	ldw r0, r5[0]
 	stw r5, sp[6]                   # 4-byte Folded Spill
 	mkmsk r1, 32
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 .Ltmp32:
 	add r0, r9, r0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[4]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp33:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[15]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r0, r9[8]
 .Ltmp34:
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r1, r9[9]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r2, r9[10]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r3, r9[11]
 	ldc r4, 48
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	add r10, r9, r4
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r4, r10[0]
 	ldaw r8, sp[15]
 .Ltmp35:
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	std r11, r8, sp[1]
 	stw r4, sp[1]
 .Lxta.call_labels1:
 	bl start_bit
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 .Ltmp36:
 	ldw r0, r9[8]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	shl r1, r7, 1
 	mkmsk r2, 1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	or r1, r1, r2
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r2, r9[9]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r3, r9[10]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r11, r9[11]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r4, r10[0]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	std r8, r4, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels2:
 	bl tx8
 .Ltmp37:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	eq r0, r0, 0
 .Ltmp38:
 	#DEBUG_VALUE: j <- 0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	stw r0, sp[7]                   # 4-byte Folded Spill
 	ldw r0, sp[13]                  # 4-byte Folded Reload
 	bf r0, .LBB2_13
@@ -1072,7 +1072,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:buf <- [SP+48]
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:m <- [SP+52]
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	ldw r0, sp[7]                   # 4-byte Folded Reload
 	eq r0, r0, 0
 	bt r0, .LBB2_13
@@ -1082,28 +1082,28 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:buf <- [SP+48]
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:m <- [SP+52]
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[13]                  # 4-byte Folded Reload
 	sub r0, r0, 1
 	stw r0, sp[11]                  # 4-byte Folded Spill
 	ldc r0, 60
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	add r0, r9, r0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	stw r0, sp[14]                  # 4-byte Folded Spill
 	get r11, id
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldaw r0, dp[__timers]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r0, r0[r11]
 	stw r0, sp[10]                  # 4-byte Folded Spill
 	ldc r0, 56
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Ltmp41:
 	add r0, r9, r0
 	stw r0, sp[9]                   # 4-byte Folded Spill
 	ldc r0, 52
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	add r0, r9, r0
 	stw r0, sp[8]                   # 4-byte Folded Spill
 	ldc r7, 510
@@ -1130,33 +1130,33 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:m <- [SP+52]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: i <- 8
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r0, r9[8]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r1, r9[9]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r2, r9[10]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r3, r9[11]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r11, r10[0]
 .Ltmp44:
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	stw r8, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels3:
 	bl high_pulse_sample
 .Ltmp45:
 	#DEBUG_VALUE: temp <- R0
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	shl r1, r5, 1
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	and r1, r1, r7
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	or r5, r0, r1
 .Ltmp46:
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	add r4, r4, 1
 .xtaloop 8
 	# LOOPMARKER 1
@@ -1172,12 +1172,12 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:m <- [SP+52]
 	#DEBUG_VALUE: fall_time <- [R8+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	ldw r0, sp[12]                  # 4-byte Folded Reload
 	st8 r5, r0[r6]
 .Ltmp48:
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[11]                  # 4-byte Folded Reload
 	eq r0, r6, r0
 	ldc r1, 0
@@ -1192,7 +1192,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: fall_time <- [R8+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	ldw r0, sp[14]                  # 4-byte Folded Reload
 	ldw r1, r0[0]
 .Ltmp50:
@@ -1206,24 +1206,24 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: fall_time <- [R8+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r0, r9[8]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r2, r10[0]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	or r3, r2, r1
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 .Lxta.endpoint_labels0:
 	out res[r0], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r3, sp[15]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r4, r9[9]
 .Ltmp51:
 	#DEBUG_VALUE: ticks <- 0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R4
 	ldc r11, 101
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 .Ltmp52:
 	lsu r5, r4, r11
 	ldc r11, 473
@@ -1241,11 +1241,11 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R4
 	#DEBUG_VALUE: ticks <- 0
 	ldc r11, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r4, r4, r11
 .Ltmp54:
 	ldc r11, 133
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r4
 .Ltmp55:
 .LBB2_12:                               # %compute_low_period_ticks.exit
@@ -1258,77 +1258,77 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	add r3, r11, r3
 	ldw r4, sp[10]                  # 4-byte Folded Reload
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setd res[r4], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setc res[r4], 9
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp56:
 .Lxta.endpoint_labels1:
 	in r3, res[r4]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	ldw r3, sp[9]                   # 4-byte Folded Reload
 	ldw r3, r3[0]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r3, r1
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r1, r2
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Lxta.endpoint_labels2:
 	out res[r0], r1
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r1, r9[10]
 	ldw r5, sp[8]                   # 4-byte Folded Reload
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r2, r5[0]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	lda16 r2, r2[r2]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	shr r3, r2, 2
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	mov r2, r8
 .Lxta.call_labels4:
 	bl wait_for_clock_high
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r0, sp[15]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r1, r5[0]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	add r0, r1, r0
 .Ltmp57:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	stw r0, sp[15]
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setd res[r4], r0
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setc res[r4], 9
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 .Ltmp58:
 .Lxta.endpoint_labels3:
 	in r0, res[r4]
 .Ltmp59:
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r0, r9[8]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r1, sp[14]                  # 4-byte Folded Reload
 	ldw r1, r1[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r2, r10[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	or r1, r2, r1
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 .Lxta.endpoint_labels4:
 	out res[r0], r1
 .Ltmp60:
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	add r6, r6, 1
 .Ltmp61:
 	#DEBUG_VALUE: j <- R6
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	ldw r0, sp[13]                  # 4-byte Folded Reload
 	lsu r0, r6, r0
 .Lxta.loop_labels1:
@@ -1346,19 +1346,19 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 # BB#14:                                # %iftrue199
 .Lxtalabel8:
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:device <- undef
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r0, r9[8]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r1, r9[9]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r2, r9[10]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r3, r9[11]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r11, r10[0]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r4, sp[15]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	stw r4, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels5:
@@ -1367,12 +1367,12 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 .LBB2_15:                               # %ifdone200
 .Lxtalabel9:
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.read:device <- undef
-	.loc	2 270 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
+	.loc	2 270 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
 	ldw r0, sp[6]                   # 4-byte Folded Reload
 	stw r1, r0[0]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r0, sp[15]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r1, sp[4]                   # 4-byte Folded Reload
 	stw r0, r1[0]
 	mkmsk r0, 1
@@ -1405,7 +1405,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.read: # @_i.i2c_master_if.i2c_master
 	.cc_top _i.i2c_master_if.i2c_master_single_port._c0.write.function,_i.i2c_master_if.i2c_master_single_port._c0.write
 _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_master_single_port._c0.write
 .Lfunc_begin3:
-	.loc	2 279 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:279:0
+	.loc	2 279 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:279:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -1461,7 +1461,7 @@ _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_maste
 	ldw r0, r8[7]
 	eq r0, r0, 1
 	ldc r1, 68
-	.loc	2 285 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 .Ltmp80:
 	add r7, r8, r1
 	bt r0, .LBB3_3
@@ -1513,60 +1513,60 @@ _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_maste
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:send_stop_bit <- undef
 	ldc r10, 0
 	stw r10, r8[0]
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	ldw r0, r7[0]
 	stw r7, sp[7]                   # 4-byte Folded Spill
 	mkmsk r1, 32
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 .Ltmp87:
 	add r0, r8, r0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[6]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp88:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r0, r8[8]
 .Ltmp89:
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r1, r8[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r2, r8[10]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r3, r8[11]
 	ldc r4, 48
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	add r9, r8, r4
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r7, r9[0]
 	ldaw r4, sp[9]
 .Ltmp90:
 	#DEBUG_VALUE: fall_time <- [R4+0]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	std r11, r4, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels6:
 	bl start_bit
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 .Ltmp91:
 	ldw r0, r8[8]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r1, sp[5]                   # 4-byte Folded Reload
 	shl r1, r1, 1
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r2, r8[9]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r3, r8[10]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r11, r8[11]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r7, r9[0]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	std r4, r7, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels7:
@@ -1593,21 +1593,21 @@ _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_maste
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:buf <- R6
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:n <- R5
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:send_stop_bit <- undef
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r0, r8[8]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ld8u r1, r6[r10]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r2, r8[9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r3, r8[10]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r11, r8[11]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r7, r9[0]
 .Ltmp95:
 	#DEBUG_VALUE: fall_time <- [R4+0]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	std r4, r7, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels8:
@@ -1615,11 +1615,11 @@ _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_maste
 	mov r7, r0
 .Ltmp96:
 	#DEBUG_VALUE: ack <- R7
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	add r10, r10, 1
 .Ltmp97:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	lsu r0, r10, r5
 .Lxta.loop_labels2:
 	# LOOPMARKER 0
@@ -1640,19 +1640,19 @@ _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_maste
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:device <- undef
 	#DEBUG_VALUE: j <- 0
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:num_bytes_sent <- R4
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r0, r8[8]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r1, r8[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r2, r8[10]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r3, r8[11]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r11, r9[0]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r5, sp[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels9:
@@ -1665,17 +1665,17 @@ _i.i2c_master_if.i2c_master_single_port._c0.write: # @_i.i2c_master_if.i2c_maste
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:device <- undef
 	#DEBUG_VALUE: j <- 0
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port._c0.write:num_bytes_sent <- R4
-	.loc	2 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
+	.loc	2 300 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
 	ldw r0, sp[7]                   # 4-byte Folded Reload
 	ldw r1, sp[8]                   # 4-byte Folded Reload
 	stw r1, r0[0]
-	.loc	2 302 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:302:0
+	.loc	2 302 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:302:0
 	stw r10, r4[0]
-	.loc	2 303 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
+	.loc	2 303 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
 	eq r0, r7, 0
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r1, sp[9]
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r2, sp[6]                   # 4-byte Folded Reload
 	stw r1, r2[0]
 	mkmsk r1, 1
@@ -1759,7 +1759,7 @@ _i.i2c_master_if.i2c_master_single_port.0.shutdown: # @_i.i2c_master_if.i2c_mast
 	.cc_top _i.i2c_master_if.i2c_master_single_port.0.send_stop_bit.function,_i.i2c_master_if.i2c_master_single_port.0.send_stop_bit
 _i.i2c_master_if.i2c_master_single_port.0.send_stop_bit: # @_i.i2c_master_if.i2c_master_single_port.0.send_stop_bit
 .Lfunc_begin5:
-	.loc	2 309 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:309:0
+	.loc	2 309 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:309:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -1787,35 +1787,35 @@ _i.i2c_master_if.i2c_master_single_port.0.send_stop_bit: # @_i.i2c_master_if.i2c
 	add r4, r5, 8
 	mov r0, r4
 	bl __lock_fair_acquire
-	.loc	2 312 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
+	.loc	2 312 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
 .Ltmp115:
 	gettime r11
 .Ltmp116:
 	#DEBUG_VALUE: fall_time <- R11
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r0, r5[8]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r1, r5[9]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r2, r5[10]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r3, r5[11]
 	ldc r6, 48
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	add r6, r5, r6
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r6, r6[0]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	stw r6, sp[1]
 	stw r11, sp[2]
 .Lxta.call_labels10:
 	bl stop_bit
 .Ltmp117:
 	ldc r0, 68
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	add r0, r5, r0
 	mkmsk r1, 32
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	stw r1, r0[0]
 	clre
 	mov r0, r4
@@ -1857,7 +1857,7 @@ _i.i2c_master_if.i2c_master_single_port.0.send_stop_bit: # @_i.i2c_master_if.i2c
 	.cc_top _i.i2c_master_if.i2c_master_single_port.0.read.function,_i.i2c_master_if.i2c_master_single_port.0.read
 _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_single_port.0.read
 .Lfunc_begin6:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -1916,7 +1916,7 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	ldw r0, r10[7]
 	eq r0, r0, 1
 	ldc r1, 68
-	.loc	2 235 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 .Ltmp134:
 	add r7, r10, r1
 	bt r0, .LBB6_3
@@ -1983,74 +1983,74 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:m <- [SP+60]
 	stw r6, sp[7]                   # 4-byte Folded Spill
 	stw r5, sp[8]                   # 4-byte Folded Spill
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	ldw r0, r7[0]
 	stw r7, sp[6]                   # 4-byte Folded Spill
 	mkmsk r1, 32
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 .Ltmp142:
 	add r0, r10, r0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[5]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp143:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[17]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r0, r10[8]
 .Ltmp144:
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r1, r10[9]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r2, r10[10]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r3, r10[11]
 	ldc r4, 48
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	add r9, r10, r4
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r4, r9[0]
 	ldaw r8, sp[17]
 .Ltmp145:
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	std r11, r8, sp[1]
 	stw r4, sp[1]
 .Lxta.call_labels11:
 	bl start_bit
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 .Ltmp146:
 	ldw r0, r10[8]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r1, sp[16]                  # 4-byte Folded Reload
 	shl r1, r1, 1
 	mkmsk r2, 1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	or r1, r1, r2
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r2, r10[9]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r3, r10[10]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r11, r10[11]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r4, r9[0]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	std r8, r4, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels12:
 	bl tx8
 .Ltmp147:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	eq r0, r0, 0
 .Ltmp148:
 	#DEBUG_VALUE: j <- 0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	stw r0, sp[9]                   # 4-byte Folded Spill
 	ldw r0, sp[15]                  # 4-byte Folded Reload
 	bf r0, .LBB6_13
@@ -2060,7 +2060,7 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:buf <- [SP+56]
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:m <- [SP+60]
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	ldw r0, sp[9]                   # 4-byte Folded Reload
 	eq r0, r0, 0
 	bt r0, .LBB6_13
@@ -2070,28 +2070,28 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:buf <- [SP+56]
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:m <- [SP+60]
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[15]                  # 4-byte Folded Reload
 	sub r0, r0, 1
 	stw r0, sp[13]                  # 4-byte Folded Spill
 	ldc r0, 60
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	add r0, r10, r0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	get r11, id
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldaw r0, dp[__timers]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r0, r0[r11]
 	stw r0, sp[12]                  # 4-byte Folded Spill
 	ldc r0, 56
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Ltmp151:
 	add r0, r10, r0
 	stw r0, sp[11]                  # 4-byte Folded Spill
 	ldc r0, 52
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	add r0, r10, r0
 	stw r0, sp[10]                  # 4-byte Folded Spill
 	ldc r4, 0
@@ -2118,33 +2118,33 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:m <- [SP+60]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: i <- 8
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r0, r10[8]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r1, r10[9]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r2, r10[10]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r3, r10[11]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r11, r9[0]
 .Ltmp154:
 	#DEBUG_VALUE: fall_time <- [R8+0]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	stw r8, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels13:
 	bl high_pulse_sample
 .Ltmp155:
 	#DEBUG_VALUE: temp <- R0
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	shl r1, r6, 1
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	and r1, r1, r5
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	or r6, r0, r1
 .Ltmp156:
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	add r7, r7, 1
 .xtaloop 8
 	# LOOPMARKER 1
@@ -2160,12 +2160,12 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:m <- [SP+60]
 	#DEBUG_VALUE: fall_time <- [R8+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	ldw r0, sp[14]                  # 4-byte Folded Reload
 	st8 r6, r0[r4]
 .Ltmp158:
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[13]                  # 4-byte Folded Reload
 	eq r0, r4, r0
 	ldc r1, 0
@@ -2180,7 +2180,7 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: fall_time <- [R8+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	ldw r1, r0[0]
 .Ltmp160:
@@ -2194,24 +2194,24 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: fall_time <- [R8+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r0, r10[8]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r2, r9[0]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	or r3, r2, r1
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 .Lxta.endpoint_labels5:
 	out res[r0], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r3, sp[17]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r6, r10[9]
 .Ltmp161:
 	#DEBUG_VALUE: ticks <- 0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R6
 	ldc r11, 101
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 .Ltmp162:
 	lsu r7, r6, r11
 	ldc r11, 473
@@ -2229,11 +2229,11 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R6
 	#DEBUG_VALUE: ticks <- 0
 	ldc r11, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r6, r6, r11
 .Ltmp164:
 	ldc r11, 133
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r6
 .Ltmp165:
 .LBB6_12:                               # %compute_low_period_ticks.exit
@@ -2246,77 +2246,77 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	add r3, r11, r3
 	ldw r6, sp[12]                  # 4-byte Folded Reload
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setd res[r6], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setc res[r6], 9
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp166:
 .Lxta.endpoint_labels6:
 	in r3, res[r6]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	ldw r3, sp[11]                  # 4-byte Folded Reload
 	ldw r3, r3[0]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r3, r1
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r1, r2
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Lxta.endpoint_labels7:
 	out res[r0], r1
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r1, r10[10]
 	ldw r7, sp[10]                  # 4-byte Folded Reload
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r2, r7[0]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	lda16 r2, r2[r2]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	shr r3, r2, 2
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	mov r2, r8
 .Lxta.call_labels14:
 	bl wait_for_clock_high
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r0, sp[17]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r1, r7[0]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	add r0, r1, r0
 .Ltmp167:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	stw r0, sp[17]
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setd res[r6], r0
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setc res[r6], 9
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 .Ltmp168:
 .Lxta.endpoint_labels8:
 	in r0, res[r6]
 .Ltmp169:
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r0, r10[8]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r1, sp[16]                  # 4-byte Folded Reload
 	ldw r1, r1[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r2, r9[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	or r1, r2, r1
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 .Lxta.endpoint_labels9:
 	out res[r0], r1
 .Ltmp170:
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	add r4, r4, 1
 .Ltmp171:
 	#DEBUG_VALUE: j <- R4
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	ldw r0, sp[15]                  # 4-byte Folded Reload
 	lsu r0, r4, r0
 .Lxta.loop_labels4:
@@ -2334,19 +2334,19 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 # BB#14:                                # %iftrue240
 .Lxtalabel23:
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:device <- undef
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r0, r10[8]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r1, r10[9]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r2, r10[10]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r3, r10[11]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r11, r9[0]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r4, sp[17]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	stw r4, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels15:
@@ -2355,12 +2355,12 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 .LBB6_15:                               # %ifdone241
 .Lxtalabel24:
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.read:device <- undef
-	.loc	2 270 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
+	.loc	2 270 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
 	ldw r0, sp[6]                   # 4-byte Folded Reload
 	stw r1, r0[0]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r0, sp[17]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r1, sp[5]                   # 4-byte Folded Reload
 	stw r0, r1[0]
 	clre
@@ -2397,7 +2397,7 @@ _i.i2c_master_if.i2c_master_single_port.0.read: # @_i.i2c_master_if.i2c_master_s
 	.cc_top _i.i2c_master_if.i2c_master_single_port.0.write.function,_i.i2c_master_if.i2c_master_single_port.0.write
 _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_single_port.0.write
 .Lfunc_begin7:
-	.loc	2 279 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:279:0
+	.loc	2 279 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:279:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -2458,7 +2458,7 @@ _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_
 	ldw r0, r10[7]
 	eq r0, r0, 1
 	ldc r1, 68
-	.loc	2 285 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 .Ltmp191:
 	add r1, r10, r1
 	stw r1, sp[7]                   # 4-byte Folded Spill
@@ -2529,59 +2529,59 @@ _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:buf <- [SP+32]
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:n <- R5
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:send_stop_bit <- undef
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	ldw r0, sp[7]                   # 4-byte Folded Reload
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 .Ltmp199:
 	add r0, r10, r0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[5]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp200:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r0, r10[8]
 .Ltmp201:
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r1, r10[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r2, r10[10]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r3, r10[11]
 	ldc r4, 48
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	add r9, r10, r4
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r8, r9[0]
 	ldaw r4, sp[9]
 .Ltmp202:
 	#DEBUG_VALUE: fall_time <- [R4+0]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	std r11, r4, sp[1]
 	stw r8, sp[1]
 .Lxta.call_labels16:
 	bl start_bit
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 .Ltmp203:
 	ldw r0, r10[8]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	shl r1, r7, 1
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r2, r10[9]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r3, r10[10]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r11, r10[11]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r7, r9[0]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	std r4, r7, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels17:
@@ -2609,22 +2609,22 @@ _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:buf <- [SP+32]
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:n <- R5
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:send_stop_bit <- undef
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r0, r10[8]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r1, sp[8]                   # 4-byte Folded Reload
 	ld8u r1, r1[r8]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r2, r10[9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r3, r10[10]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r11, r10[11]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r7, r9[0]
 .Ltmp207:
 	#DEBUG_VALUE: fall_time <- [R4+0]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	std r4, r7, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels18:
@@ -2632,11 +2632,11 @@ _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_
 	mov r7, r0
 .Ltmp208:
 	#DEBUG_VALUE: ack <- R7
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	add r8, r8, 1
 .Ltmp209:
 	#DEBUG_VALUE: j <- R8
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	lsu r0, r8, r5
 .Lxta.loop_labels5:
 	# LOOPMARKER 0
@@ -2657,19 +2657,19 @@ _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:device <- undef
 	#DEBUG_VALUE: j <- 0
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:num_bytes_sent <- R4
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r0, r10[8]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r1, r10[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r2, r10[10]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r3, r10[11]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r11, r9[0]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r5, sp[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels19:
@@ -2682,17 +2682,17 @@ _i.i2c_master_if.i2c_master_single_port.0.write: # @_i.i2c_master_if.i2c_master_
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:device <- undef
 	#DEBUG_VALUE: j <- 0
 	#DEBUG_VALUE: _i.i2c_master_if.i2c_master_single_port.0.write:num_bytes_sent <- R4
-	.loc	2 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
+	.loc	2 300 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
 	ldw r0, sp[6]                   # 4-byte Folded Reload
 	ldw r1, sp[7]                   # 4-byte Folded Reload
 	stw r0, r1[0]
-	.loc	2 302 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:302:0
+	.loc	2 302 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:302:0
 	stw r8, r4[0]
-	.loc	2 303 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
+	.loc	2 303 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
 	eq r5, r7, 0
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r0, sp[9]
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r1, sp[5]                   # 4-byte Folded Reload
 	stw r0, r1[0]
 	clre
@@ -4649,7 +4649,7 @@ _i.i2c_slave_callback_if._chan_yield.ack_read_request: # @_i.i2c_slave_callback_
 	.cc_top i2c_master_single_port.function,i2c_master_single_port
 i2c_master_single_port:                 # @i2c_master_single_port
 .Lfunc_begin38:
-	.loc	2 218 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:218:0
+	.loc	2 218 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:218:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -4705,58 +4705,58 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	ldw r1, sp[39]
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R1
 	ldw r0, cp[.LCPI38_0]
-	.loc	2 219 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
+	.loc	2 219 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
 .Ltmp407:
 	divu r2, r0, r3
 .Ltmp408:
 	#DEBUG_VALUE: bit_time <- R2
 	stw r2, sp[20]                  # 4-byte Folded Spill
 	mkmsk r11, 1
-	.loc	2 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
+	.loc	2 220 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
 .Ltmp409:
 	shl r0, r11, r1
 .Ltmp410:
 	#DEBUG_VALUE: SCL_HIGH <- R0
-	.loc	2 221 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
+	.loc	2 221 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
 	shl r7, r11, r7
 .Ltmp411:
 	#DEBUG_VALUE: locked_client <- -1
 	#DEBUG_VALUE: last_fall_time <- 0
 	#DEBUG_VALUE: SDA_HIGH <- R7
 	#DEBUG_VALUE: sda <- R7
-	.loc	2 225 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:225:0
+	.loc	2 225 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:225:0
 	stw r7, sp[22]                  # 4-byte Folded Spill
 .Ltmp412:
 	#DEBUG_VALUE: i2c_master_single_port:sda_bit_position <- [SP+100]
 	setc res[r5], 19
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 	or r1, r7, r0
 .Ltmp413:
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 	or r1, r1, r8
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 .Lxta.endpoint_labels10:
 	out res[r5], r1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp414:
 	get r11, id
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldaw r1, dp[__timers]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r1, r1[r11]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Ltmp415:
 	stw r1, sp[19]                  # 4-byte Folded Spill
 	or r0, r0, r8
 .Ltmp416:
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	stw r0, sp[18]                  # 4-byte Folded Spill
 	lda16 r0, r2[r2]
 .Ltmp417:
 	#DEBUG_VALUE: bit_time <- [SP+80]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	shr r0, r0, 2
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 .Ltmp418:
 	stw r0, sp[17]                  # 4-byte Folded Spill
 	or r0, r7, r8
@@ -4793,7 +4793,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- [SP+104]
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R1
 	#DEBUG_VALUE: fall_time <- [SP+20]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r0, sp[28]
 .Ltmp423:
 	#DEBUG_VALUE: last_fall_time <- [SP+108]
@@ -4829,7 +4829,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- [SP+104]
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R1
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- undef
-	.loc	2 229 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:229:5
+	.loc	2 229 5                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:229:5
 	clre
 .Ltmp427:
 	#DEBUG_VALUE: i <- 0
@@ -4847,23 +4847,23 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- [SP+104]
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- undef
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r2, r4[r0]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r2, r2[0]
 	ldap r11, .Ltmp429
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	setv res[r2], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r0
 	setev res[r2], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	eeu res[r2]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	add r0, r0, 1
 .Ltmp430:
 	#DEBUG_VALUE: i <- R0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	eq r2, r6, r0
 	bf r2, .LBB38_3
 .Ltmp431:
@@ -4911,9 +4911,9 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:sda_bit_position <- [SP+100]
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- [SP+104]
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- undef
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	get r11, ed
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	zext r11, 16
 	lsu r0, r11, r6
 .Ltrap_info0:
@@ -5063,7 +5063,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 .Ltmp446:
 	#DEBUG_VALUE: send_stop_bit <- [SP+96]
 	stw r1, sp[24]                  # 4-byte Folded Spill
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 .Ltmp447:
 	ldw r1, sp[27]                  # 4-byte Folded Reload
 	stw r1, sp[29]
@@ -5073,7 +5073,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	mov r10, r1
 .Ltmp449:
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	std r0, r10, sp[1]
 	ldw r0, sp[26]                  # 4-byte Folded Reload
 .Ltmp450:
@@ -5097,11 +5097,11 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	mov r3, r4
 .Lxta.call_labels20:
 	bl start_bit
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 .Ltmp456:
 	ldw r0, sp[10]                  # 4-byte Folded Reload
 	shl r1, r0, 1
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r0, sp[26]                  # 4-byte Folded Reload
 	std r10, r0, sp[1]
 .Ltmp457:
@@ -5163,24 +5163,24 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: fall_time <- [SP+108]
 	#DEBUG_VALUE: j <- 0
 	ldc r0, 5
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 .Ltmp464:
 	out res[r9], r0
 	ldc r0, 0
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r0
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r10
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	outct res[r9], 2
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	in r1, res[r9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	chkct res[r9], 1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	zext r1, 8
 	ldaw r0, sp[29]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r2, sp[26]                  # 4-byte Folded Reload
 	std r0, r2, sp[1]
 	stw r4, sp[1]
@@ -5192,11 +5192,11 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	mov r1, r0
 .Ltmp465:
 	#DEBUG_VALUE: ack <- R1
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	add r10, r10, 1
 .Ltmp466:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	lsu r0, r10, r8
 .Lxta.loop_labels6:
 	# LOOPMARKER 0
@@ -5224,7 +5224,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	ldw r2, sp[39]
 .Ltmp469:
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R1
-	.loc	2 296 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
+	.loc	2 296 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
 	ldw r0, sp[24]                  # 4-byte Folded Reload
 	bf r0, .LBB38_19
 .Ltmp470:
@@ -5241,9 +5241,9 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: fall_time <- [SP+24]
 	#DEBUG_VALUE: fall_time <- [SP+108]
 	#DEBUG_VALUE: j <- 0
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r0, sp[29]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	stw r0, sp[2]
 	ldw r0, sp[26]                  # 4-byte Folded Reload
 	stw r0, sp[1]
@@ -5271,11 +5271,11 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: fall_time <- [SP+24]
 	#DEBUG_VALUE: fall_time <- [SP+108]
 	#DEBUG_VALUE: j <- 0
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r0, sp[29]
 .Ltmp473:
 	#DEBUG_VALUE: last_fall_time <- [SP+108]
-	.loc	2 303 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
+	.loc	2 303 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
 	stw r0, sp[27]                  # 4-byte Folded Spill
 	eq r0, r1, 0
 	ldw r1, sp[12]                  # 4-byte Folded Reload
@@ -5312,11 +5312,11 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:sda_bit_position <- [SP+100]
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- [SP+104]
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- undef
-	.loc	2 312 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
+	.loc	2 312 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
 	gettime r0
 .Ltmp478:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	stw r0, sp[2]
 	ldw r0, sp[26]                  # 4-byte Folded Reload
 .Ltmp479:
@@ -5363,7 +5363,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	in r1, res[r9]
 .Ltmp485:
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r1, sp[8]                   # 4-byte Folded Spill
 	ldw r1, sp[27]                  # 4-byte Folded Reload
 	stw r1, sp[28]
@@ -5372,7 +5372,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	ldaw r10, sp[28]
 .Ltmp487:
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	std r0, r10, sp[1]
 	ldw r8, sp[26]                  # 4-byte Folded Reload
 .Ltmp488:
@@ -5394,13 +5394,13 @@ i2c_master_single_port:                 # @i2c_master_single_port
 .Lxta.call_labels25:
 	bl start_bit
 .Ltmp492:
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r0, sp[24]                  # 4-byte Folded Reload
 	shl r0, r0, 1
 	mkmsk r1, 1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	or r1, r0, r1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	std r10, r8, sp[1]
 .Ltmp493:
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- [SP+104]
@@ -5417,7 +5417,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	bl tx8
 .Ltmp496:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	eq r0, r0, 0
 .Ltmp497:
 	#DEBUG_VALUE: j <- 0
@@ -5455,7 +5455,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: m <- [SP+96]
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[24]                  # 4-byte Folded Reload
 	sub r0, r0, 1
 	stw r0, sp[14]                  # 4-byte Folded Spill
@@ -5514,7 +5514,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: i <- 8
 	ldaw r0, sp[28]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 .Ltmp507:
 	stw r0, sp[2]
 	stw r5, sp[1]
@@ -5526,20 +5526,20 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	bl high_pulse_sample
 .Ltmp508:
 	#DEBUG_VALUE: temp <- R0
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	shl r1, r4, 1
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	and r1, r1, r7
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	or r4, r1, r0
 .Ltmp509:
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	add r8, r8, 1
 .xtaloop 8
 	# LOOPMARKER 2
 .Lxta.loop_labels7:
 	# LOOPMARKER 1
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	bt r8, .LBB38_26
 .Ltmp510:
 # BB#27:                                # %ifdone440
@@ -5563,31 +5563,31 @@ i2c_master_single_port:                 # @i2c_master_single_port
 .Ltmp512:
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R7
 	#DEBUG_VALUE: i2c_master_single_port:sda_bit_position <- [SP+100]
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	zext r4, 8
 	ldc r0, 8
 	ldw r1, sp[23]                  # 4-byte Folded Reload
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r1], r0
 	ldc r0, 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r1], r0
 	ldw r8, sp[27]                  # 4-byte Folded Reload
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r1], r8
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r1], r4
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	outct res[r1], 2
 .Ltmp513:
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	chkct res[r1], 1
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 .Ltmp514:
 	ldw r0, sp[14]                  # 4-byte Folded Reload
 	eq r1, r8, r0
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[22]                  # 4-byte Folded Reload
 	bt r1, .LBB38_29
 .Ltmp515:
@@ -5623,7 +5623,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R2+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	or r1, r0, r5
 .Ltmp517:
 	#DEBUG_VALUE: ticks <- 0
@@ -5631,15 +5631,15 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	mov r5, r9
 .Ltmp518:
 	#DEBUG_VALUE: i2c_master_single_port:p_i2c <- R5
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 .Lxta.endpoint_labels11:
 	out res[r5], r1
 	mov r3, r2
 .Ltmp519:
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	ldw r1, sp[21]                  # 4-byte Folded Reload
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r1
 	#DEBUG_VALUE: i2c_master_single_port:c <- [SP+36]
 	#DEBUG_VALUE: i2c_master_single_port:n <- [SP+28]
@@ -5662,7 +5662,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	mov r9, r7
 .Ltmp522:
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R1
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	ldw r2, sp[15]                  # 4-byte Folded Reload
 	bt r2, .LBB38_31
 .Ltmp523:
@@ -5700,61 +5700,61 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R10+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r2, sp[28]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	add r1, r1, r2
 .Ltmp525:
 	ldw r4, sp[19]                  # 4-byte Folded Reload
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setd res[r4], r1
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setc res[r4], 9
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp526:
 .Lxta.endpoint_labels12:
 	in r1, res[r4]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	ldw r1, sp[18]                  # 4-byte Folded Reload
 	or r0, r1, r0
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Lxta.endpoint_labels13:
 	out res[r5], r0
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	mov r0, r5
 	mov r1, r9
 	mov r2, r3
 	ldw r3, sp[17]                  # 4-byte Folded Reload
 .Lxta.call_labels28:
 	bl wait_for_clock_high
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r0, sp[28]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r1, sp[20]                  # 4-byte Folded Reload
 	add r0, r0, r1
 .Ltmp527:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	stw r0, sp[28]
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setd res[r4], r0
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setc res[r4], 9
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 .Ltmp528:
 .Lxta.endpoint_labels14:
 	in r0, res[r4]
 .Ltmp529:
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 .Lxta.endpoint_labels15:
 	out res[r5], r0
 .Ltmp530:
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	add r8, r8, 1
 .Ltmp531:
 	#DEBUG_VALUE: j <- R8
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	ldw r0, sp[24]                  # 4-byte Folded Reload
 	lsu r0, r8, r0
 .Lxta.loop_labels8:
@@ -5784,7 +5784,7 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- R3
 	mkmsk r7, 32
 	ldw r2, sp[11]                  # 4-byte Folded Reload
-	.loc	2 266 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
+	.loc	2 266 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
 	ldw r0, sp[8]                   # 4-byte Folded Reload
 	bf r0, .LBB38_34
 .Ltmp536:
@@ -5799,9 +5799,9 @@ i2c_master_single_port:                 # @i2c_master_single_port
 	#DEBUG_VALUE: i2c_master_single_port:other_bits_mask <- R3
 	#DEBUG_VALUE: i2c_master_single_port:scl_bit_position <- R1
 	#DEBUG_VALUE: fall_time <- [SP+20]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r0, sp[28]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	stw r0, sp[2]
 	stw r3, sp[1]
 	mov r0, r5
@@ -5935,7 +5935,7 @@ i2c_master_single_port.select.0.enable: # @i2c_master_single_port.select.0.enabl
 	stw r0, r1[0]
 .Ltmp549:
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r3, r4[7]
 	mkmsk r0, 1
 	bf r3, .LBB39_6
@@ -5943,7 +5943,7 @@ i2c_master_single_port.select.0.enable: # @i2c_master_single_port.select.0.enabl
 # BB#3:                                 # %selectguardtrue.lr.ph
 	#DEBUG_VALUE: i2c_master_single_port.select.0.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r5, r4[6]
 	ldc r2, 0
 .Ltmp551:
@@ -5951,17 +5951,17 @@ i2c_master_single_port.select.0.enable: # @i2c_master_single_port.select.0.enabl
                                         # =>This Inner Loop Header: Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.0.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	lsu r11, r2, r5
 .Ltrap_info1:
 	ecallf r11
 	#DEBUG_VALUE: i2c_master_single_port.select.0.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r11, r4[5]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r11, r11[r2]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r6, r11[0]
 	bf r6, .LBB39_5
 .Ltmp552:
@@ -5969,24 +5969,24 @@ i2c_master_single_port.select.0.enable: # @i2c_master_single_port.select.0.enabl
                                         #   in Loop: Header=BB39_4 Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.0.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r1
 	setv res[r6], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r2
 	setev res[r6], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	eeu res[r6]
 .Ltmp553:
 .LBB39_5:                               # %selectguarddone
                                         #   in Loop: Header=BB39_4 Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.0.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	add r2, r2, 1
 .Ltmp554:
 	#DEBUG_VALUE: i <- R2
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	lsu r11, r2, r3
 	bt r11, .LBB39_4
 	bu .LBB39_6
@@ -6046,64 +6046,64 @@ i2c_master_single_port.init.1:          # @i2c_master_single_port.init.1
 	ldc r1, 0
 	stw r1, r0[1]
 	ldc r2, 52
-	.loc	2 219 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
+	.loc	2 219 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
 .Ltmp559:
 	add r2, r0, r2
-	.loc	2 219 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
+	.loc	2 219 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
 	ldw r3, r0[9]
 	ldw r11, cp[.LCPI40_0]
-	.loc	2 219 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
+	.loc	2 219 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
 	divu r3, r11, r3
-	.loc	2 219 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
+	.loc	2 219 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:219:0
 	stw r3, r2[0]
 	ldc r2, 56
-	.loc	2 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
+	.loc	2 220 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
 .Ltmp560:
 	add r2, r0, r2
-	.loc	2 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
+	.loc	2 220 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
 	ldw r3, r0[10]
 	mkmsk r11, 1
-	.loc	2 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
+	.loc	2 220 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
 	shl r3, r11, r3
-	.loc	2 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
+	.loc	2 220 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:220:0
 	stw r3, r2[0]
 	ldc r2, 60
-	.loc	2 221 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
+	.loc	2 221 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
 .Ltmp561:
 	add r2, r0, r2
-	.loc	2 221 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
+	.loc	2 221 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
 	ldw r4, r0[11]
-	.loc	2 221 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
+	.loc	2 221 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
 	shl r4, r11, r4
-	.loc	2 221 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
+	.loc	2 221 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:221:0
 	stw r4, r2[0]
 	ldc r2, 64
-	.loc	2 223 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:223:0
+	.loc	2 223 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:223:0
 .Ltmp562:
 	add r2, r0, r2
-	.loc	2 223 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:223:0
+	.loc	2 223 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:223:0
 	stw r1, r2[0]
 	ldc r1, 68
-	.loc	2 224 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:224:0
+	.loc	2 224 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:224:0
 .Ltmp563:
 	add r1, r0, r1
 	mkmsk r2, 32
-	.loc	2 224 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:224:0
+	.loc	2 224 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:224:0
 	stw r2, r1[0]
-	.loc	2 225 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:225:0
+	.loc	2 225 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:225:0
 	ldw r1, r0[8]
-	.loc	2 225 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:225:0
+	.loc	2 225 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:225:0
 	setc res[r1], 19
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 	or r2, r4, r3
 	ldc r3, 48
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 	add r3, r0, r3
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 	ldw r3, r3[0]
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 	or r2, r2, r3
-	.loc	2 226 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
+	.loc	2 226 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:226:49
 .Lxta.endpoint_labels16:
 	out res[r1], r2
 	stw r11, r0[0]
@@ -6298,7 +6298,7 @@ i2c_master_single_port.select.yield.enable: # @i2c_master_single_port.select.yie
 	stw r0, r1[0]
 .Ltmp580:
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r3, r4[7]
 	mkmsk r0, 1
 	bf r3, .LBB42_6
@@ -6306,7 +6306,7 @@ i2c_master_single_port.select.yield.enable: # @i2c_master_single_port.select.yie
 # BB#3:                                 # %selectguardtrue.lr.ph
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r5, r4[6]
 	ldc r2, 0
 .Ltmp582:
@@ -6314,17 +6314,17 @@ i2c_master_single_port.select.yield.enable: # @i2c_master_single_port.select.yie
                                         # =>This Inner Loop Header: Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	lsu r11, r2, r5
 .Ltrap_info2:
 	ecallf r11
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r11, r4[5]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r11, r11[r2]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r6, r11[0]
 	bf r6, .LBB42_5
 .Ltmp583:
@@ -6332,24 +6332,24 @@ i2c_master_single_port.select.yield.enable: # @i2c_master_single_port.select.yie
                                         #   in Loop: Header=BB42_4 Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r1
 	setv res[r6], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r2
 	setev res[r6], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	eeu res[r6]
 .Ltmp584:
 .LBB42_5:                               # %selectguarddone
                                         #   in Loop: Header=BB42_4 Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.enable:i2c_master_single_port.select.state_ptr <- R4
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	add r2, r2, 1
 .Ltmp585:
 	#DEBUG_VALUE: i <- R2
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	lsu r11, r2, r3
 	bt r11, .LBB42_4
 	bu .LBB42_6
@@ -6460,54 +6460,54 @@ i2c_master_single_port.select.enable:   # @i2c_master_single_port.select.enable
 	stw r2, r1[0]
 .Ltmp593:
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r4, r0[7]
 	mkmsk r2, 1
 	bf r4, .LBB43_6
 # BB#3:                                 # %selectguardtrue.lr.ph
 	#DEBUG_VALUE: i2c_master_single_port.select.enable:i2c_master_single_port.select.state_ptr <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r5, r0[6]
 	ldc r3, 0
 .LBB43_4:                               # %selectguardtrue
                                         # =>This Inner Loop Header: Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.enable:i2c_master_single_port.select.state_ptr <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	lsu r11, r3, r5
 .Ltrap_info3:
 	ecallf r11
 	#DEBUG_VALUE: i2c_master_single_port.select.enable:i2c_master_single_port.select.state_ptr <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r11, r0[5]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r11, r11[r3]
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	ldw r6, r11[0]
 	bf r6, .LBB43_5
 # BB#7:                                 # %afterboundcheck14
                                         #   in Loop: Header=BB43_4 Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.enable:i2c_master_single_port.select.state_ptr <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r1
 	setv res[r6], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	mov r11, r3
 	setev res[r6], r11
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	eeu res[r6]
 .LBB43_5:                               # %selectguarddone
                                         #   in Loop: Header=BB43_4 Depth=1
 	#DEBUG_VALUE: i2c_master_single_port.select.enable:i2c_master_single_port.select.state_ptr <- R0
 	#DEBUG_VALUE: i <- 0
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	add r3, r3, 1
 .Ltmp594:
 	#DEBUG_VALUE: i <- R3
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	lsu r11, r3, r4
 	bt r11, .LBB43_4
 	bu .LBB43_6
@@ -6580,7 +6580,7 @@ i2c_master_single_port.fini:            # @i2c_master_single_port.fini
 	.cc_top wait_for_clock_high.function,wait_for_clock_high
 wait_for_clock_high:                    # @wait_for_clock_high
 .Lfunc_begin45:
-	.loc	2 65 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:65:0
+	.loc	2 65 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:65:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -6591,16 +6591,16 @@ wait_for_clock_high:                    # @wait_for_clock_high
 	#DEBUG_VALUE: wait_for_clock_high:fall_time <- R2
 	#DEBUG_VALUE: wait_for_clock_high:delay <- R3
 	mkmsk r11, 1
-	.loc	2 66 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:66:0
+	.loc	2 66 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:66:0
 .Ltmp598:
 	shl r1, r11, r1
 .Ltmp599:
 	#DEBUG_VALUE: SCL_HIGH <- R1
-	.loc	2 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:68:0
+	.loc	2 68 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:68:0
 	peek r11, res[r0]
 .Ltmp600:
 	#DEBUG_VALUE: val <- R11
-	.loc	2 69 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:69:3
+	.loc	2 69 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:69:3
 	and r11, r11, r1
 .Ltmp601:
 	bt r11, .LBB45_1
@@ -6611,11 +6611,11 @@ wait_for_clock_high:                    # @wait_for_clock_high
 	#DEBUG_VALUE: wait_for_clock_high:p_i2c <- R0
 	#DEBUG_VALUE: wait_for_clock_high:fall_time <- R2
 	#DEBUG_VALUE: wait_for_clock_high:delay <- R3
-	.loc	2 70 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:70:0
+	.loc	2 70 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:70:0
 	peek r11, res[r0]
 .Ltmp603:
 	#DEBUG_VALUE: val <- R11
-	.loc	2 69 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:69:3
+	.loc	2 69 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:69:3
 	and r11, r11, r1
 .Ltmp604:
 .Lxta.loop_labels9:
@@ -6626,29 +6626,29 @@ wait_for_clock_high:                    # @wait_for_clock_high
 .Lxtalabel51:
 	#DEBUG_VALUE: wait_for_clock_high:fall_time <- R2
 	#DEBUG_VALUE: wait_for_clock_high:delay <- R3
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	get r11, id
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	ldaw r0, dp[__timers]
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	ldw r0, r0[r11]
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	ldw r1, r2[0]
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	add r1, r1, r3
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	setd res[r0], r1
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 	setc res[r0], 9
-	.loc	2 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
+	.loc	2 75 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:75:0
 .Lxta.endpoint_labels17:
 	in r0, res[r0]
 .Ltmp606:
 	#DEBUG_VALUE: wake_up_ticks <- 10
 	#DEBUG_VALUE: time <- R0
-	.loc	2 83 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:83:3
+	.loc	2 83 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:83:3
 	add r1, r1, 10
-	.loc	2 83 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:83:3
+	.loc	2 83 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:83:3
 	lsu r1, r1, r0
 	bf r1, .LBB45_3
 .Ltmp607:
@@ -6659,12 +6659,12 @@ wait_for_clock_high:                    # @wait_for_clock_high
 	#DEBUG_VALUE: time <- R0
 	#DEBUG_VALUE: wake_up_ticks <- 10
 	ldw r1, cp[.LCPI45_0]
-	.loc	2 84 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:84:0
+	.loc	2 84 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:84:0
 	sub r1, r1, r3
-	.loc	2 84 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:84:0
+	.loc	2 84 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:84:0
 	add r0, r1, r0
 .Ltmp608:
-	.loc	2 84 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:84:0
+	.loc	2 84 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:84:0
 	stw r0, r2[0]
 .Ltmp609:
 .LBB45_3:                               # %return
@@ -6695,7 +6695,7 @@ wait_for_clock_high:                    # @wait_for_clock_high
 	.cc_top high_pulse_sample.function,high_pulse_sample
 high_pulse_sample:                      # @high_pulse_sample
 .Lfunc_begin46:
-	.loc	2 119 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:119:0
+	.loc	2 119 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:119:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -6737,33 +6737,33 @@ high_pulse_sample:                      # @high_pulse_sample
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R1
 	#DEBUG_VALUE: high_pulse_sample:other_bits_mask <- R0
 	ldw r11, cp[.LCPI46_0]
-	.loc	2 120 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:120:0
+	.loc	2 120 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:120:0
 .Ltmp622:
 	divu r7, r11, r1
 .Ltmp623:
 	#DEBUG_VALUE: bit_time <- R7
 	mkmsk r9, 1
-	.loc	2 122 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:122:0
+	.loc	2 122 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:122:0
 .Ltmp624:
 	shl r8, r9, r3
 .Ltmp625:
 	#DEBUG_VALUE: SDA_HIGH <- R8
-	.loc	2 126 48                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:126:48
+	.loc	2 126 48                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:126:48
 	or r6, r8, r0
-	.loc	2 126 48                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:126:48
+	.loc	2 126 48                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:126:48
 .Lxta.endpoint_labels18:
 	out res[r4], r6
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	get r11, id
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	ldw r3, r5[0]
 .Ltmp626:
 	ldc r10, 101
 .Ltmp627:
 	#DEBUG_VALUE: ticks <- 0
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	lsu r10, r1, r10
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	bf r10, .LBB46_2
 .Ltmp628:
 # BB#1:
@@ -6786,10 +6786,10 @@ high_pulse_sample:                      # @high_pulse_sample
 	#DEBUG_VALUE: SDA_HIGH <- R8
 	#DEBUG_VALUE: ticks <- 0
 	ldc r10, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r1, r1, r10
 .Ltmp630:
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r1
 	#DEBUG_VALUE: high_pulse_sample:p_i2c <- R4
 	#DEBUG_VALUE: high_pulse_sample:scl_bit_position <- R2
@@ -6805,71 +6805,71 @@ high_pulse_sample:                      # @high_pulse_sample
 	#DEBUG_VALUE: high_pulse_sample:other_bits_mask <- R0
 	#DEBUG_VALUE: bit_time <- R7
 	#DEBUG_VALUE: SDA_HIGH <- R8
-	.loc	2 121 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:121:0
+	.loc	2 121 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:121:0
 	shl r10, r9, r2
 .Ltmp632:
 	#DEBUG_VALUE: SCL_HIGH <- R10
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	ldaw r9, dp[__timers]
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	ldw r9, r9[r11]
 .Ltmp633:
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	add r1, r1, r3
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	setd res[r9], r1
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 	setc res[r9], 9
-	.loc	2 127 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
+	.loc	2 127 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:127:0
 .Ltmp634:
 .Lxta.endpoint_labels19:
 	in r1, res[r9]
-	.loc	2 128 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:128:49
+	.loc	2 128 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:128:49
 	or r1, r8, r10
-	.loc	2 128 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:128:49
+	.loc	2 128 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:128:49
 	or r0, r1, r0
 .Ltmp635:
-	.loc	2 128 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:128:49
+	.loc	2 128 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:128:49
 .Lxta.endpoint_labels20:
 	out res[r4], r0
-	.loc	2 129 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:129:0
+	.loc	2 129 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:129:0
 	lda16 r0, r7[r7]
-	.loc	2 129 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:129:0
+	.loc	2 129 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:129:0
 	shr r3, r0, 2
-	.loc	2 129 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:129:0
+	.loc	2 129 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:129:0
 	mov r0, r4
 	mov r1, r2
 	mov r2, r5
 .Ltmp636:
 .Lxta.call_labels30:
 	bl wait_for_clock_high
-	.loc	2 131 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:131:0
+	.loc	2 131 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:131:0
 .Ltmp637:
 	peek r0, res[r4]
 .Ltmp638:
 	#DEBUG_VALUE: sample_value <- R0
-	.loc	2 132 3                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:132:3
+	.loc	2 132 3                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:132:3
 	and r0, r0, r8
 .Ltmp639:
-	.loc	2 135 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:135:0
+	.loc	2 135 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:135:0
 	eq r0, r0, 0
 	eq r0, r0, 0
-	.loc	2 137 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:137:0
+	.loc	2 137 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:137:0
 	ldw r1, r5[0]
-	.loc	2 137 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:137:0
+	.loc	2 137 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:137:0
 	add r1, r1, r7
-	.loc	2 137 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:137:0
+	.loc	2 137 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:137:0
 	stw r1, r5[0]
-	.loc	2 138 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:138:0
+	.loc	2 138 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:138:0
 	setd res[r9], r1
-	.loc	2 138 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:138:0
+	.loc	2 138 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:138:0
 	setc res[r9], 9
-	.loc	2 138 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:138:0
+	.loc	2 138 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:138:0
 .Ltmp640:
 .Lxta.endpoint_labels21:
 	in r1, res[r9]
-	.loc	2 139 48                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:139:48
+	.loc	2 139 48                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:139:48
 .Lxta.endpoint_labels22:
 	out res[r4], r6
 	ldw r10, sp[8]                  # 4-byte Folded Reload
@@ -6907,7 +6907,7 @@ high_pulse_sample:                      # @high_pulse_sample
 	.cc_top start_bit.function,start_bit
 start_bit:                              # @start_bit
 .Lfunc_begin47:
-	.loc	2 152 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:152:0
+	.loc	2 152 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:152:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -6947,19 +6947,19 @@ start_bit:                              # @start_bit
 	ldw r7, sp[11]
 	#DEBUG_VALUE: start_bit:other_bits_mask <- R7
 	ldw r0, cp[.LCPI47_0]
-	.loc	2 153 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:153:0
+	.loc	2 153 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:153:0
 .Ltmp657:
 	divu r0, r0, r1
 .Ltmp658:
 	#DEBUG_VALUE: bit_time <- R0
 	#DEBUG_VALUE: bit_time <- R0
 	mkmsk r6, 1
-	.loc	2 154 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:154:0
+	.loc	2 154 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:154:0
 .Ltmp659:
 	shl r8, r6, r2
 .Ltmp660:
 	#DEBUG_VALUE: SCL_HIGH <- R8
-	.loc	2 159 3                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:159:3
+	.loc	2 159 3                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:159:3
 	bf r11, .LBB47_2
 .Ltmp661:
 # BB#1:                                 # %allocas.ifdone_crit_edge
@@ -6968,7 +6968,7 @@ start_bit:                              # @start_bit
 	#DEBUG_VALUE: start_bit:other_bits_mask <- R7
 	#DEBUG_VALUE: bit_time <- R0
 	#DEBUG_VALUE: SCL_HIGH <- R8
-	.loc	2 166 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:166:0
+	.loc	2 166 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:166:0
 	shr r6, r0, 1
 	bu .LBB47_6
 .Ltmp662:
@@ -6982,18 +6982,18 @@ start_bit:                              # @start_bit
 	#DEBUG_VALUE: start_bit:other_bits_mask <- R7
 	#DEBUG_VALUE: bit_time <- R0
 	#DEBUG_VALUE: SCL_HIGH <- R8
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	get r11, id
 .Ltmp663:
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R1
 	#DEBUG_VALUE: ticks <- 0
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	ldw r9, r4[0]
 	ldc r10, 101
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 .Ltmp664:
 	lsu r10, r1, r10
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	bf r10, .LBB47_4
 .Ltmp665:
 # BB#3:
@@ -7018,10 +7018,10 @@ start_bit:                              # @start_bit
 	#DEBUG_VALUE: ticks <- 0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R1
 	ldc r10, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r1, r1, r10
 .Ltmp667:
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r1
 	#DEBUG_VALUE: start_bit:p_i2c <- R5
 	#DEBUG_VALUE: start_bit:scl_bit_position <- R2
@@ -7039,43 +7039,43 @@ start_bit:                              # @start_bit
 	#DEBUG_VALUE: start_bit:other_bits_mask <- R7
 	#DEBUG_VALUE: bit_time <- R0
 	#DEBUG_VALUE: SCL_HIGH <- R8
-	.loc	2 155 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:155:0
+	.loc	2 155 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:155:0
 	shl r3, r6, r3
 .Ltmp669:
 	#DEBUG_VALUE: SDA_HIGH <- R3
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	ldaw r6, dp[__timers]
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	ldw r11, r6[r11]
 .Ltmp670:
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	add r1, r1, r9
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	setd res[r11], r1
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 	setc res[r11], 9
-	.loc	2 160 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
+	.loc	2 160 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:160:0
 .Ltmp671:
 .Lxta.endpoint_labels23:
 	in r1, res[r11]
-	.loc	2 161 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:161:51
+	.loc	2 161 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:161:51
 	or r1, r3, r8
-	.loc	2 161 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:161:51
+	.loc	2 161 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:161:51
 	or r1, r1, r7
-	.loc	2 161 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:161:51
+	.loc	2 161 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:161:51
 .Lxta.endpoint_labels24:
 	out res[r5], r1
-	.loc	2 51 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
+	.loc	2 51 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
 .Ltmp672:
 	shr r6, r0, 1
-	.loc	2 51 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
+	.loc	2 51 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
 	shr r0, r0, 4
 .Ltmp673:
-	.loc	2 51 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
+	.loc	2 51 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
 	add r3, r6, r0
 .Ltmp674:
-	.loc	2 162 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:162:0
+	.loc	2 162 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:162:0
 	mov r0, r5
 	mov r1, r2
 	mov r2, r4
@@ -7089,21 +7089,21 @@ start_bit:                              # @start_bit
 	#DEBUG_VALUE: start_bit:fall_time <- R4
 	#DEBUG_VALUE: start_bit:other_bits_mask <- R7
 	#DEBUG_VALUE: SCL_HIGH <- R8
-	.loc	2 165 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:165:49
+	.loc	2 165 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:165:49
 	or r0, r8, r7
-	.loc	2 165 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:165:49
+	.loc	2 165 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:165:49
 .Lxta.endpoint_labels25:
 	out res[r5], r0
-	.loc	2 166 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:166:0
+	.loc	2 166 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:166:0
 	mov r0, r6
 .Lxta.call_labels32:
 	bl delay_ticks
-	.loc	2 167 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:167:49
+	.loc	2 167 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:167:49
 .Lxta.endpoint_labels26:
 	out res[r5], r7
-	.loc	2 168 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:168:0
+	.loc	2 168 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:168:0
 	gettime r0
-	.loc	2 168 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:168:0
+	.loc	2 168 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:168:0
 	stw r0, r4[0]
 	ldw r10, sp[8]                  # 4-byte Folded Reload
 	ldd r9, r8, sp[3]               # 4-byte Folded Reload
@@ -7139,7 +7139,7 @@ start_bit:                              # @start_bit
 	.cc_top stop_bit.function,stop_bit
 stop_bit:                               # @stop_bit
 .Lfunc_begin48:
-	.loc	2 178 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:178:0
+	.loc	2 178 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:178:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -7177,23 +7177,23 @@ stop_bit:                               # @stop_bit
 	#DEBUG_VALUE: stop_bit:other_bits_mask <- R6
 	stw r0, sp[1]
 	ldw r11, cp[.LCPI48_0]
-	.loc	2 179 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:179:0
+	.loc	2 179 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:179:0
 .Ltmp691:
 	divu r5, r11, r1
 .Ltmp692:
 	#DEBUG_VALUE: bit_time <- R5
 	#DEBUG_VALUE: bit_time <- R5
-	.loc	2 185 47                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:185:47
+	.loc	2 185 47                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:185:47
 .Lxta.endpoint_labels27:
 	out res[r4], r6
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 	get r11, id
 	ldc r7, 101
 .Ltmp693:
 	#DEBUG_VALUE: ticks <- 0
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	lsu r7, r1, r7
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	bf r7, .LBB48_2
 .Ltmp694:
 # BB#1:
@@ -7217,10 +7217,10 @@ stop_bit:                               # @stop_bit
 	#DEBUG_VALUE: bit_time <- R5
 	#DEBUG_VALUE: ticks <- 0
 	ldc r7, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r1, r1, r7
 .Ltmp696:
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r1
 	#DEBUG_VALUE: stop_bit:p_i2c <- R4
 	#DEBUG_VALUE: stop_bit:scl_bit_position <- R2
@@ -7239,41 +7239,41 @@ stop_bit:                               # @stop_bit
 	#DEBUG_VALUE: bit_time <- R5
 	#DEBUG_VALUE: bit_time <- R5
 	mkmsk r7, 1
-	.loc	2 180 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:180:0
+	.loc	2 180 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:180:0
 	shl r8, r7, r2
 .Ltmp698:
 	#DEBUG_VALUE: SCL_HIGH <- R8
-	.loc	2 181 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:181:0
+	.loc	2 181 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:181:0
 	shl r7, r7, r3
 .Ltmp699:
 	#DEBUG_VALUE: SDA_HIGH <- R7
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 	ldaw r3, dp[__timers]
 .Ltmp700:
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 	ldw r3, r3[r11]
 .Ltmp701:
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 	add r0, r1, r0
 .Ltmp702:
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 	setd res[r3], r0
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 	setc res[r3], 9
-	.loc	2 186 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
+	.loc	2 186 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:186:0
 .Ltmp703:
 .Lxta.endpoint_labels28:
 	in r0, res[r3]
-	.loc	2 187 48                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:187:48
+	.loc	2 187 48                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:187:48
 	or r0, r8, r6
-	.loc	2 187 48                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:187:48
+	.loc	2 187 48                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:187:48
 .Lxta.endpoint_labels29:
 	out res[r4], r0
 	ldaw r3, sp[1]
 .Ltmp704:
 	#DEBUG_VALUE: stop_bit:fall_time <- [R3+0]
-	.loc	2 188 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:188:0
+	.loc	2 188 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:188:0
 	mov r0, r4
 	mov r1, r2
 	mov r2, r3
@@ -7282,22 +7282,22 @@ stop_bit:                               # @stop_bit
 .Ltmp706:
 .Lxta.call_labels33:
 	bl wait_for_clock_high
-	.loc	2 189 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:189:49
+	.loc	2 189 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:189:49
 	or r0, r7, r8
-	.loc	2 189 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:189:49
+	.loc	2 189 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:189:49
 	or r0, r0, r6
-	.loc	2 189 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:189:49
+	.loc	2 189 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:189:49
 .Lxta.endpoint_labels30:
 	out res[r4], r0
-	.loc	2 51 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
+	.loc	2 51 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
 .Ltmp707:
 	shr r0, r5, 1
-	.loc	2 51 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
+	.loc	2 51 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
 	shr r1, r5, 4
-	.loc	2 51 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
+	.loc	2 51 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:51:3
 	add r0, r0, r1
 .Ltmp708:
-	.loc	2 190 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:190:0
+	.loc	2 190 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:190:0
 .Lxta.call_labels34:
 	bl delay_ticks
 	ldw r8, sp[6]                   # 4-byte Folded Reload
@@ -7340,7 +7340,7 @@ stop_bit:                               # @stop_bit
 	.cc_top tx8.function,tx8
 tx8:                                    # @tx8
 .Lfunc_begin49:
-	.loc	2 200 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:200:0
+	.loc	2 200 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:200:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -7383,55 +7383,55 @@ tx8:                                    # @tx8
 	stw r4, sp[11]                  # 4-byte Folded Spill
 	ldw r11, sp[21]
 	#DEBUG_VALUE: tx8:sda_bit_position <- R11
-	.loc	2 201 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:201:0
+	.loc	2 201 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:201:0
 .Ltmp724:
 	bitrev r0, r1
-	.loc	2 201 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:201:0
+	.loc	2 201 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:201:0
 	shr r6, r0, 24
 .Ltmp725:
 	#DEBUG_VALUE: bit_rev_data <- R6
 	ldw r0, cp[.LCPI49_0]
 .Ltmp726:
 	#DEBUG_VALUE: i <- 8
-	.loc	2 97 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:97:0
+	.loc	2 97 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:97:0
 	divu r5, r0, r2
 .Ltmp727:
 	#DEBUG_VALUE: bit_time <- R5
 	stw r5, sp[7]                   # 4-byte Folded Spill
 	mkmsk r0, 1
-	.loc	2 98 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:98:0
+	.loc	2 98 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:98:0
 .Ltmp728:
 	shl r1, r0, r3
 .Ltmp729:
 	#DEBUG_VALUE: SCL_HIGH <- R1
 	#DEBUG_VALUE: tx8:scl_bit_position <- [SP+40]
-	.loc	2 99 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:99:0
+	.loc	2 99 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:99:0
 	shl r0, r0, r11
 .Ltmp730:
 	#DEBUG_VALUE: SDA_HIGH <- [SP+36]
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	stw r0, sp[9]                   # 4-byte Folded Spill
 .Ltmp731:
 	#DEBUG_VALUE: tx8:sda_bit_position <- undef
 	get r11, id
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	ldaw r0, dp[__timers]
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	ldw r10, r0[r11]
-	.loc	2 105 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:105:49
+	.loc	2 105 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:105:49
 .Ltmp732:
 	or r0, r1, r4
-	.loc	2 106 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:106:0
+	.loc	2 106 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:106:0
 	stw r0, sp[6]                   # 4-byte Folded Spill
 .Ltmp733:
 	#DEBUG_VALUE: tx8:other_bits_mask <- [SP+44]
 	lda16 r0, r5[r5]
 .Ltmp734:
 	#DEBUG_VALUE: bit_time <- [SP+28]
-	.loc	2 106 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:106:0
+	.loc	2 106 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:106:0
 	shr r0, r0, 2
 .Ltmp735:
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	stw r0, sp[5]                   # 4-byte Folded Spill
 	ldw r0, r8[0]
 	ldw r4, cp[.LCPI49_1]
@@ -7455,13 +7455,13 @@ tx8:                                    # @tx8
 	#DEBUG_VALUE: i <- 8
 	#DEBUG_VALUE: bit_time <- [SP+28]
 	#DEBUG_VALUE: SDA_HIGH <- [SP+36]
-	.loc	2 203 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:203:0
+	.loc	2 203 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:203:0
 	mov r2, r6
 	zext r2, 1
 .Ltmp738:
 	#DEBUG_VALUE: high_pulse_drive:sdaValue <- R2
 	#DEBUG_VALUE: high_pulse_drive:kbits_per_second <- [SP+16]
-	.loc	2 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:102:0
+	.loc	2 102 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:102:0
 	ldw r1, sp[9]                   # 4-byte Folded Reload
 	bt r2, .LBB49_3
 .Ltmp739:
@@ -7494,10 +7494,10 @@ tx8:                                    # @tx8
 	#DEBUG_VALUE: SDA_HIGH <- [SP+36]
 	#DEBUG_VALUE: high_pulse_drive:kbits_per_second <- [SP+16]
 	#DEBUG_VALUE: high_pulse_drive:sdaValue <- R1
-	.loc	2 103 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:103:49
+	.loc	2 103 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:103:49
 	ldw r2, sp[11]                  # 4-byte Folded Reload
 	or r5, r1, r2
-	.loc	2 103 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:103:49
+	.loc	2 103 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:103:49
 .Lxta.endpoint_labels31:
 	out res[r7], r5
 .Ltmp741:
@@ -7505,9 +7505,9 @@ tx8:                                    # @tx8
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- [SP+16]
 	#DEBUG_VALUE: high_pulse_drive:p_i2c <- R7
 	#DEBUG_VALUE: high_pulse_drive:other_bits_mask <- [SP+44]
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 	ldw r2, sp[8]                   # 4-byte Folded Reload
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r2
 	#DEBUG_VALUE: tx8:p_i2c <- R7
 	#DEBUG_VALUE: tx8:kbits_per_second <- [SP+16]
@@ -7565,26 +7565,26 @@ tx8:                                    # @tx8
 	#DEBUG_VALUE: high_pulse_drive:sdaValue <- R1
 	#DEBUG_VALUE: high_pulse_drive:other_bits_mask <- [SP+44]
 	#DEBUG_VALUE: high_pulse_drive:p_i2c <- R7
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	add r0, r2, r0
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	setd res[r10], r0
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 	setc res[r10], 9
-	.loc	2 104 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
+	.loc	2 104 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:104:0
 .Ltmp745:
 .Lxta.endpoint_labels32:
 	in r0, res[r10]
-	.loc	2 105 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:105:49
+	.loc	2 105 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:105:49
 	ldw r0, sp[6]                   # 4-byte Folded Reload
 	or r0, r0, r1
-	.loc	2 105 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:105:49
+	.loc	2 105 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:105:49
 .Lxta.endpoint_labels33:
 	out res[r7], r0
 .Ltmp746:
 	#DEBUG_VALUE: high_pulse_drive:fall_time <- R8
 	#DEBUG_VALUE: high_pulse_drive:scl_bit_position <- [SP+40]
-	.loc	2 106 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:106:0
+	.loc	2 106 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:106:0
 	mov r0, r7
 	ldw r1, sp[10]                  # 4-byte Folded Reload
 .Ltmp747:
@@ -7592,30 +7592,30 @@ tx8:                                    # @tx8
 	ldw r3, sp[5]                   # 4-byte Folded Reload
 .Lxta.call_labels35:
 	bl wait_for_clock_high
-	.loc	2 107 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:107:0
+	.loc	2 107 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:107:0
 	ldw r0, r8[0]
-	.loc	2 107 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:107:0
+	.loc	2 107 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:107:0
 	ldw r1, sp[7]                   # 4-byte Folded Reload
 	add r0, r0, r1
-	.loc	2 107 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:107:0
+	.loc	2 107 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:107:0
 	stw r0, r8[0]
-	.loc	2 108 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:108:0
+	.loc	2 108 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:108:0
 	setd res[r10], r0
-	.loc	2 108 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:108:0
+	.loc	2 108 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:108:0
 	setc res[r10], 9
-	.loc	2 108 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:108:0
+	.loc	2 108 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:108:0
 .Ltmp748:
 .Lxta.endpoint_labels34:
 	in r1, res[r10]
-	.loc	2 109 49                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:109:49
+	.loc	2 109 49                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:109:49
 .Lxta.endpoint_labels35:
 	out res[r7], r5
 .Ltmp749:
-	.loc	2 204 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:204:0
+	.loc	2 204 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:204:0
 	shr r6, r6, 1
 .Ltmp750:
 	#DEBUG_VALUE: bit_rev_data <- R6
-	.loc	2 202 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:202:0
+	.loc	2 202 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:202:0
 	add r4, r4, 1
 .xtaloop 8
 	# LOOPMARKER 1
@@ -7631,7 +7631,7 @@ tx8:                                    # @tx8
 	#DEBUG_VALUE: tx8:other_bits_mask <- [SP+44]
 	#DEBUG_VALUE: tx8:fall_time <- R8
 	#DEBUG_VALUE: tx8:sda_bit_position <- undef
-	.loc	2 206 3                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:206:3
+	.loc	2 206 3                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:206:3
 	stw r8, sp[2]
 	ldw r0, sp[11]                  # 4-byte Folded Reload
 	stw r0, sp[1]
@@ -7677,7 +7677,7 @@ tx8:                                    # @tx8
 	.cc_top i2c_master_single_port.select.0.case.0.function,i2c_master_single_port.select.0.case.0
 i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.0
 .Lfunc_begin50:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -7716,7 +7716,7 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	mov r4, r11
 .Ltmp769:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
-	.loc	2 230 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	get r11, ed
 	mov r6, r11
 .Ltmp770:
@@ -7778,72 +7778,72 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	stw r0, sp[8]                   # 4-byte Folded Spill
 	ldc r0, 68
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 .Ltmp779:
 	add r0, r4, r0
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	stw r0, sp[10]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 .Ltmp780:
 	add r0, r4, r0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[9]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp781:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[20]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r0, r4[8]
 .Ltmp782:
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r1, r4[9]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r2, r4[10]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r3, r4[11]
 	ldc r6, 48
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	add r9, r4, r6
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r7, r9[0]
 	ldaw r6, sp[20]
 .Ltmp783:
 	#DEBUG_VALUE: fall_time <- [R6+0]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	std r11, r6, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels37:
 	bl start_bit
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 .Ltmp784:
 	ldw r0, r4[8]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	shl r1, r5, 1
 	mkmsk r2, 1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	or r1, r1, r2
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r2, r4[9]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r3, r4[10]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r11, r4[11]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r5, r9[0]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	std r6, r5, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels38:
 	bl tx8
 .Ltmp785:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	eq r0, r0, 0
 .Ltmp786:
 	#DEBUG_VALUE: j <- 0
@@ -7867,28 +7867,28 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: m <- [SP+72]
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R6+0]
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[18]                  # 4-byte Folded Reload
 	sub r0, r0, 1
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	ldc r0, 60
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	add r0, r4, r0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	stw r0, sp[19]                  # 4-byte Folded Spill
 	get r11, id
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldaw r0, dp[__timers]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r0, r0[r11]
 	stw r0, sp[15]                  # 4-byte Folded Spill
 	ldc r0, 56
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Ltmp790:
 	add r0, r4, r0
 	stw r0, sp[14]                  # 4-byte Folded Spill
 	ldc r0, 52
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	add r0, r4, r0
 	stw r0, sp[13]                  # 4-byte Folded Spill
 	ldc r10, 0
@@ -7917,31 +7917,31 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: i <- 8
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r0, r4[8]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r1, r4[9]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r2, r4[10]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r3, r4[11]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r11, r9[0]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	stw r6, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels39:
 	bl high_pulse_sample
 .Ltmp793:
 	#DEBUG_VALUE: temp <- R0
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	shl r1, r7, 1
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	and r1, r1, r5
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	or r7, r0, r1
 .Ltmp794:
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	add r8, r8, 1
 .xtaloop 8
 	# LOOPMARKER 2
@@ -7957,26 +7957,26 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	zext r7, 8
 	ldw r0, sp[17]                  # 4-byte Folded Reload
 	ldc r1, 8
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r1
 	ldc r1, 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r1
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r10
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r7
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	outct res[r0], 2
 .Ltmp796:
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	chkct res[r0], 1
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 .Ltmp797:
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	eq r0, r10, r0
@@ -7991,7 +7991,7 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	ldw r0, sp[19]                  # 4-byte Folded Reload
 	ldw r1, r0[0]
 .Ltmp799:
@@ -8005,24 +8005,24 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r0, r4[8]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r2, r9[0]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	or r3, r2, r1
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 .Lxta.endpoint_labels36:
 	out res[r0], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r3, sp[20]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r7, r4[9]
 .Ltmp800:
 	#DEBUG_VALUE: ticks <- 0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R7
 	ldc r11, 101
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 .Ltmp801:
 	lsu r8, r7, r11
 	ldc r11, 473
@@ -8040,11 +8040,11 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R7
 	#DEBUG_VALUE: ticks <- 0
 	ldc r11, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r7, r7, r11
 .Ltmp803:
 	ldc r11, 133
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r7
 .Ltmp804:
 .LBB50_28:                              # %compute_low_period_ticks.exit
@@ -8057,77 +8057,77 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	add r3, r11, r3
 	ldw r7, sp[15]                  # 4-byte Folded Reload
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setd res[r7], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setc res[r7], 9
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp805:
 .Lxta.endpoint_labels37:
 	in r3, res[r7]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	ldw r3, sp[14]                  # 4-byte Folded Reload
 	ldw r3, r3[0]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r3, r1
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r1, r2
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Lxta.endpoint_labels38:
 	out res[r0], r1
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r1, r4[10]
 	ldw r8, sp[13]                  # 4-byte Folded Reload
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r2, r8[0]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	lda16 r2, r2[r2]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	shr r3, r2, 2
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	mov r2, r6
 .Lxta.call_labels40:
 	bl wait_for_clock_high
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r0, sp[20]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r1, r8[0]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	add r0, r1, r0
 .Ltmp806:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	stw r0, sp[20]
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setd res[r7], r0
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setc res[r7], 9
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 .Ltmp807:
 .Lxta.endpoint_labels39:
 	in r0, res[r7]
 .Ltmp808:
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r0, r4[8]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r1, sp[19]                  # 4-byte Folded Reload
 	ldw r1, r1[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r2, r9[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	or r1, r2, r1
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 .Lxta.endpoint_labels40:
 	out res[r0], r1
 .Ltmp809:
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	add r10, r10, 1
 .Ltmp810:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	ldw r0, sp[18]                  # 4-byte Folded Reload
 	lsu r0, r10, r0
 .Lxta.loop_labels12:
@@ -8139,26 +8139,26 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	ldw r6, sp[12]                  # 4-byte Folded Reload
-	.loc	2 266 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
+	.loc	2 266 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
 	ldw r0, sp[8]                   # 4-byte Folded Reload
 	bf r0, .LBB50_30
 .Ltmp812:
 # BB#31:                                # %iftrue651
 .Lxtalabel81:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r0, r4[8]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r1, r4[9]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r2, r4[10]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r3, r4[11]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r11, r9[0]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r5, sp[20]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels41:
@@ -8203,62 +8203,62 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	mov r9, r3
 	ldc r0, 68
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 .Ltmp820:
 	add r0, r4, r0
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	stw r0, sp[19]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 .Ltmp821:
 	add r0, r4, r0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[18]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp822:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[21]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r0, r4[8]
 .Ltmp823:
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r1, r4[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r2, r4[10]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r3, r4[11]
 	ldc r7, 48
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	add r8, r4, r7
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r7, r8[0]
 	ldaw r10, sp[21]
 .Ltmp824:
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	std r11, r10, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels42:
 	bl start_bit
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 .Ltmp825:
 	ldw r0, r4[8]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	shl r1, r6, 1
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r2, r4[9]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r3, r4[10]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r11, r4[11]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r6, r8[0]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	std r10, r6, sp[1]
 	mov r7, r10
 .Ltmp826:
@@ -8283,35 +8283,35 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
                                         #   in Loop: Header=BB50_12 Depth=1
 .Lxtalabel83:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r0, r4[8]
 	ldc r1, 5
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r1
 	ldc r1, 0
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r10
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	outct res[r9], 2
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	in r1, res[r9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	chkct res[r9], 1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	zext r1, 8
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r2, r4[9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r3, r4[10]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r11, r4[11]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r6, r8[0]
 .Ltmp830:
 	#DEBUG_VALUE: fall_time <- [R7+0]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	std r7, r6, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels44:
@@ -8319,11 +8319,11 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	mov r6, r0
 .Ltmp831:
 	#DEBUG_VALUE: ack <- R6
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	add r10, r10, 1
 .Ltmp832:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	lsu r0, r10, r5
 .Lxta.loop_labels13:
 	# LOOPMARKER 0
@@ -8334,7 +8334,7 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
 	#DEBUG_VALUE: send_stop_bit <- [SP+64]
 	#DEBUG_VALUE: j <- 0
-	.loc	2 296 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
+	.loc	2 296 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	bf r0, .LBB50_11
 .Ltmp834:
@@ -8342,19 +8342,19 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 .Lxtalabel85:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r0, r4[8]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r1, r4[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r2, r4[10]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r3, r4[11]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r11, r8[0]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r5, sp[21]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels45:
@@ -8372,34 +8372,34 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 .Ltmp836:
 # BB#4:                                 # %switchcase20
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
-	.loc	2 312 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
+	.loc	2 312 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
 	gettime r11
 .Ltmp837:
 	#DEBUG_VALUE: fall_time <- R11
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r0, r4[8]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r1, r4[9]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r2, r4[10]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r3, r4[11]
 	ldc r5, 48
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	add r5, r4, r5
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r5, r5[0]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	stw r5, sp[1]
 	stw r11, sp[2]
 .Lxta.call_labels46:
 	bl stop_bit
 .Ltmp838:
 	ldc r0, 68
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	add r0, r4, r0
 	mkmsk r1, 32
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	stw r1, r0[0]
 	ldw r0, r4[5]
 	ldw r0, r0[r6]
@@ -8417,17 +8417,17 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 .Ltmp840:
 .LBB50_30:                              # %ifdone537.ifdone652_crit_edge
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r5, sp[20]
 	mov r1, r6
 .Ltmp841:
 .LBB50_32:                              # %ifdone652
 .Lxtalabel86:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
-	.loc	2 270 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
+	.loc	2 270 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
 	ldw r0, sp[10]                  # 4-byte Folded Reload
 	stw r1, r0[0]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r0, sp[9]                   # 4-byte Folded Reload
 	stw r5, r0[0]
 	ldw r0, r4[6]
@@ -8450,7 +8450,7 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 .Ltmp843:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r5, sp[21]
 	ldw r3, sp[12]                  # 4-byte Folded Reload
 	mov r2, r3
@@ -8461,9 +8461,9 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 .Lxtalabel87:
 	#DEBUG_VALUE: i2c_master_single_port.select.0.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
+	.loc	2 300 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
 	stw r2, r0[0]
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	stw r5, r1[0]
 	ldw r0, r4[6]
 	lsu r0, r3, r0
@@ -8473,7 +8473,7 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 .Ltmp845:
 	#DEBUG_VALUE: num_bytes_sent <- R10
 	#DEBUG_VALUE: j <- 0
-	.loc	2 303 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
+	.loc	2 303 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
 	eq r0, r6, 0
 	ldw r1, r4[5]
 	ldw r1, r1[r3]
@@ -8537,7 +8537,7 @@ i2c_master_single_port.select.0.case.0: # @i2c_master_single_port.select.0.case.
 	.cc_top i2c_master_single_port.select.yield.case.0.function,i2c_master_single_port.select.yield.case.0
 i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yield.case.0
 .Lfunc_begin51:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -8576,7 +8576,7 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	mov r4, r11
 .Ltmp859:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
-	.loc	2 230 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	get r11, ed
 	mov r6, r11
 .Ltmp860:
@@ -8638,72 +8638,72 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	stw r0, sp[8]                   # 4-byte Folded Spill
 	ldc r0, 68
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 .Ltmp869:
 	add r0, r4, r0
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	stw r0, sp[10]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 .Ltmp870:
 	add r0, r4, r0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[9]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp871:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[20]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r0, r4[8]
 .Ltmp872:
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r1, r4[9]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r2, r4[10]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r3, r4[11]
 	ldc r6, 48
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	add r9, r4, r6
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r7, r9[0]
 	ldaw r6, sp[20]
 .Ltmp873:
 	#DEBUG_VALUE: fall_time <- [R6+0]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	std r11, r6, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels47:
 	bl start_bit
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 .Ltmp874:
 	ldw r0, r4[8]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	shl r1, r5, 1
 	mkmsk r2, 1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	or r1, r1, r2
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r2, r4[9]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r3, r4[10]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r11, r4[11]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r5, r9[0]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	std r6, r5, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels48:
 	bl tx8
 .Ltmp875:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	eq r0, r0, 0
 .Ltmp876:
 	#DEBUG_VALUE: j <- 0
@@ -8727,28 +8727,28 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: m <- [SP+72]
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R6+0]
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[18]                  # 4-byte Folded Reload
 	sub r0, r0, 1
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	ldc r0, 60
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	add r0, r4, r0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	stw r0, sp[19]                  # 4-byte Folded Spill
 	get r11, id
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldaw r0, dp[__timers]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r0, r0[r11]
 	stw r0, sp[15]                  # 4-byte Folded Spill
 	ldc r0, 56
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Ltmp880:
 	add r0, r4, r0
 	stw r0, sp[14]                  # 4-byte Folded Spill
 	ldc r0, 52
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	add r0, r4, r0
 	stw r0, sp[13]                  # 4-byte Folded Spill
 	ldc r10, 0
@@ -8777,31 +8777,31 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: i <- 8
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r0, r4[8]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r1, r4[9]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r2, r4[10]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r3, r4[11]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r11, r9[0]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	stw r6, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels49:
 	bl high_pulse_sample
 .Ltmp883:
 	#DEBUG_VALUE: temp <- R0
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	shl r1, r7, 1
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	and r1, r1, r5
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	or r7, r0, r1
 .Ltmp884:
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	add r8, r8, 1
 .xtaloop 8
 	# LOOPMARKER 2
@@ -8817,26 +8817,26 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	zext r7, 8
 	ldw r0, sp[17]                  # 4-byte Folded Reload
 	ldc r1, 8
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r1
 	ldc r1, 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r1
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r10
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r7
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	outct res[r0], 2
 .Ltmp886:
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	chkct res[r0], 1
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 .Ltmp887:
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	eq r0, r10, r0
@@ -8851,7 +8851,7 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	ldw r0, sp[19]                  # 4-byte Folded Reload
 	ldw r1, r0[0]
 .Ltmp889:
@@ -8865,24 +8865,24 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r0, r4[8]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r2, r9[0]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	or r3, r2, r1
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 .Lxta.endpoint_labels41:
 	out res[r0], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r3, sp[20]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r7, r4[9]
 .Ltmp890:
 	#DEBUG_VALUE: ticks <- 0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R7
 	ldc r11, 101
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 .Ltmp891:
 	lsu r8, r7, r11
 	ldc r11, 473
@@ -8900,11 +8900,11 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R7
 	#DEBUG_VALUE: ticks <- 0
 	ldc r11, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r7, r7, r11
 .Ltmp893:
 	ldc r11, 133
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r7
 .Ltmp894:
 .LBB51_28:                              # %compute_low_period_ticks.exit
@@ -8917,77 +8917,77 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	add r3, r11, r3
 	ldw r7, sp[15]                  # 4-byte Folded Reload
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setd res[r7], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setc res[r7], 9
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp895:
 .Lxta.endpoint_labels42:
 	in r3, res[r7]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	ldw r3, sp[14]                  # 4-byte Folded Reload
 	ldw r3, r3[0]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r3, r1
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r1, r2
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Lxta.endpoint_labels43:
 	out res[r0], r1
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r1, r4[10]
 	ldw r8, sp[13]                  # 4-byte Folded Reload
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r2, r8[0]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	lda16 r2, r2[r2]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	shr r3, r2, 2
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	mov r2, r6
 .Lxta.call_labels50:
 	bl wait_for_clock_high
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r0, sp[20]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r1, r8[0]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	add r0, r1, r0
 .Ltmp896:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	stw r0, sp[20]
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setd res[r7], r0
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setc res[r7], 9
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 .Ltmp897:
 .Lxta.endpoint_labels44:
 	in r0, res[r7]
 .Ltmp898:
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r0, r4[8]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r1, sp[19]                  # 4-byte Folded Reload
 	ldw r1, r1[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r2, r9[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	or r1, r2, r1
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 .Lxta.endpoint_labels45:
 	out res[r0], r1
 .Ltmp899:
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	add r10, r10, 1
 .Ltmp900:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	ldw r0, sp[18]                  # 4-byte Folded Reload
 	lsu r0, r10, r0
 .Lxta.loop_labels15:
@@ -8999,26 +8999,26 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	ldw r6, sp[12]                  # 4-byte Folded Reload
-	.loc	2 266 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
+	.loc	2 266 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
 	ldw r0, sp[8]                   # 4-byte Folded Reload
 	bf r0, .LBB51_30
 .Ltmp902:
 # BB#31:                                # %iftrue651
 .Lxtalabel97:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r0, r4[8]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r1, r4[9]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r2, r4[10]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r3, r4[11]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r11, r9[0]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r5, sp[20]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels51:
@@ -9063,62 +9063,62 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	mov r9, r3
 	ldc r0, 68
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 .Ltmp910:
 	add r0, r4, r0
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	stw r0, sp[19]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 .Ltmp911:
 	add r0, r4, r0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[18]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp912:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[21]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r0, r4[8]
 .Ltmp913:
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r1, r4[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r2, r4[10]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r3, r4[11]
 	ldc r7, 48
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	add r8, r4, r7
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r7, r8[0]
 	ldaw r10, sp[21]
 .Ltmp914:
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	std r11, r10, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels52:
 	bl start_bit
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 .Ltmp915:
 	ldw r0, r4[8]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	shl r1, r6, 1
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r2, r4[9]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r3, r4[10]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r11, r4[11]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r6, r8[0]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	std r10, r6, sp[1]
 	mov r7, r10
 .Ltmp916:
@@ -9143,35 +9143,35 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
                                         #   in Loop: Header=BB51_12 Depth=1
 .Lxtalabel99:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r0, r4[8]
 	ldc r1, 5
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r1
 	ldc r1, 0
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r10
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	outct res[r9], 2
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	in r1, res[r9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	chkct res[r9], 1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	zext r1, 8
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r2, r4[9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r3, r4[10]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r11, r4[11]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r6, r8[0]
 .Ltmp920:
 	#DEBUG_VALUE: fall_time <- [R7+0]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	std r7, r6, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels54:
@@ -9179,11 +9179,11 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	mov r6, r0
 .Ltmp921:
 	#DEBUG_VALUE: ack <- R6
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	add r10, r10, 1
 .Ltmp922:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	lsu r0, r10, r5
 .Lxta.loop_labels16:
 	# LOOPMARKER 0
@@ -9194,7 +9194,7 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
 	#DEBUG_VALUE: send_stop_bit <- [SP+64]
 	#DEBUG_VALUE: j <- 0
-	.loc	2 296 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
+	.loc	2 296 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	bf r0, .LBB51_11
 .Ltmp924:
@@ -9202,19 +9202,19 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 .Lxtalabel101:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r0, r4[8]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r1, r4[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r2, r4[10]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r3, r4[11]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r11, r8[0]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r5, sp[21]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels55:
@@ -9232,34 +9232,34 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 .Ltmp926:
 # BB#4:                                 # %switchcase20
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
-	.loc	2 312 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
+	.loc	2 312 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
 	gettime r11
 .Ltmp927:
 	#DEBUG_VALUE: fall_time <- R11
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r0, r4[8]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r1, r4[9]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r2, r4[10]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r3, r4[11]
 	ldc r5, 48
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	add r5, r4, r5
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r5, r5[0]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	stw r5, sp[1]
 	stw r11, sp[2]
 .Lxta.call_labels56:
 	bl stop_bit
 .Ltmp928:
 	ldc r0, 68
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	add r0, r4, r0
 	mkmsk r1, 32
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	stw r1, r0[0]
 	ldw r0, r4[5]
 	ldw r0, r0[r6]
@@ -9277,17 +9277,17 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 .Ltmp930:
 .LBB51_30:                              # %ifdone537.ifdone652_crit_edge
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r5, sp[20]
 	mov r1, r6
 .Ltmp931:
 .LBB51_32:                              # %ifdone652
 .Lxtalabel102:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
-	.loc	2 270 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
+	.loc	2 270 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
 	ldw r0, sp[10]                  # 4-byte Folded Reload
 	stw r1, r0[0]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r0, sp[9]                   # 4-byte Folded Reload
 	stw r5, r0[0]
 	ldw r0, r4[6]
@@ -9310,7 +9310,7 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 .Ltmp933:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r5, sp[21]
 	ldw r3, sp[12]                  # 4-byte Folded Reload
 	mov r2, r3
@@ -9321,9 +9321,9 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 .Lxtalabel103:
 	#DEBUG_VALUE: i2c_master_single_port.select.yield.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
+	.loc	2 300 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
 	stw r2, r0[0]
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	stw r5, r1[0]
 	ldw r0, r4[6]
 	lsu r0, r3, r0
@@ -9333,7 +9333,7 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 .Ltmp935:
 	#DEBUG_VALUE: num_bytes_sent <- R10
 	#DEBUG_VALUE: j <- 0
-	.loc	2 303 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
+	.loc	2 303 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
 	eq r0, r6, 0
 	ldw r1, r4[5]
 	ldw r1, r1[r3]
@@ -9397,7 +9397,7 @@ i2c_master_single_port.select.yield.case.0: # @i2c_master_single_port.select.yie
 	.cc_top i2c_master_single_port.select.case.0.function,i2c_master_single_port.select.case.0
 i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Lfunc_begin52:
-	.loc	2 230 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	.cfi_startproc
 	.issue_mode single
 # BB#0:                                 # %allocas
@@ -9436,7 +9436,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	mov r4, r11
 .Ltmp949:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
-	.loc	2 230 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
+	.loc	2 230 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:230:0
 	get r11, ed
 	mov r6, r11
 .Ltmp950:
@@ -9498,72 +9498,72 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	stw r0, sp[8]                   # 4-byte Folded Spill
 	ldc r0, 68
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 .Ltmp959:
 	add r0, r4, r0
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	stw r0, sp[10]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 235 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
+	.loc	2 235 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:235:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 .Ltmp960:
 	add r0, r4, r0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[9]                   # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp961:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 236 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
+	.loc	2 236 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:236:0
 	stw r0, sp[20]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r0, r4[8]
 .Ltmp962:
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r1, r4[9]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r2, r4[10]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r3, r4[11]
 	ldc r6, 48
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	add r9, r4, r6
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	ldw r7, r9[0]
 	ldaw r6, sp[20]
 .Ltmp963:
 	#DEBUG_VALUE: fall_time <- [R6+0]
-	.loc	2 237 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
+	.loc	2 237 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:237:0
 	std r11, r6, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels57:
 	bl start_bit
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 .Ltmp964:
 	ldw r0, r4[8]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	shl r1, r5, 1
 	mkmsk r2, 1
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	or r1, r1, r2
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r2, r4[9]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r3, r4[10]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r11, r4[11]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	ldw r5, r9[0]
-	.loc	2 238 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
+	.loc	2 238 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:238:0
 	std r6, r5, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels58:
 	bl tx8
 .Ltmp965:
 	#DEBUG_VALUE: ack <- R0
-	.loc	2 239 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
+	.loc	2 239 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:239:7
 	eq r0, r0, 0
 .Ltmp966:
 	#DEBUG_VALUE: j <- 0
@@ -9587,28 +9587,28 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: m <- [SP+72]
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R6+0]
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 	ldw r0, sp[18]                  # 4-byte Folded Reload
 	sub r0, r0, 1
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	ldc r0, 60
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	add r0, r4, r0
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	stw r0, sp[19]                  # 4-byte Folded Spill
 	get r11, id
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldaw r0, dp[__timers]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r0, r0[r11]
 	stw r0, sp[15]                  # 4-byte Folded Spill
 	ldc r0, 56
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Ltmp970:
 	add r0, r4, r0
 	stw r0, sp[14]                  # 4-byte Folded Spill
 	ldc r0, 52
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	add r0, r4, r0
 	stw r0, sp[13]                  # 4-byte Folded Spill
 	ldc r10, 0
@@ -9637,31 +9637,31 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: i <- 8
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r0, r4[8]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r1, r4[9]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r2, r4[10]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r3, r4[11]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	ldw r11, r9[0]
-	.loc	2 244 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
+	.loc	2 244 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:244:0
 	stw r6, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels59:
 	bl high_pulse_sample
 .Ltmp973:
 	#DEBUG_VALUE: temp <- R0
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	shl r1, r7, 1
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	and r1, r1, r5
-	.loc	2 245 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
+	.loc	2 245 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:245:0
 	or r7, r0, r1
 .Ltmp974:
-	.loc	2 243 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
+	.loc	2 243 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:243:0
 	add r8, r8, 1
 .xtaloop 8
 	# LOOPMARKER 2
@@ -9677,26 +9677,26 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	zext r7, 8
 	ldw r0, sp[17]                  # 4-byte Folded Reload
 	ldc r1, 8
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r1
 	ldc r1, 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r1
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r10
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	out res[r0], r7
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	outct res[r0], 2
 .Ltmp976:
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 247 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
+	.loc	2 247 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:247:0
 	chkct res[r0], 1
-	.loc	2 251 11                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
+	.loc	2 251 11                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:251:11
 .Ltmp977:
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	eq r0, r10, r0
@@ -9711,7 +9711,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 252 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
+	.loc	2 252 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:252:0
 	ldw r0, sp[19]                  # 4-byte Folded Reload
 	ldw r1, r0[0]
 .Ltmp979:
@@ -9725,24 +9725,24 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: fall_time <- [R6+0]
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r0, r4[8]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	ldw r2, r9[0]
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 	or r3, r2, r1
-	.loc	2 255 51                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
+	.loc	2 255 51                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:255:51
 .Lxta.endpoint_labels46:
 	out res[r0], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r3, sp[20]
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	ldw r7, r4[9]
 .Ltmp980:
 	#DEBUG_VALUE: ticks <- 0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R7
 	ldc r11, 101
-	.loc	2 27 3                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
+	.loc	2 27 3                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:27:3
 .Ltmp981:
 	lsu r8, r7, r11
 	ldc r11, 473
@@ -9760,11 +9760,11 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: compute_low_period_ticks:kbits_per_second <- R7
 	#DEBUG_VALUE: ticks <- 0
 	ldc r11, 401
-	.loc	2 30 10                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
+	.loc	2 30 10                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:30:10
 	lsu r7, r7, r11
 .Ltmp983:
 	ldc r11, 133
-	.loc	2 34 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
+	.loc	2 34 0                  # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:34:0
 	ecallf r7
 .Ltmp984:
 .LBB52_28:                              # %compute_low_period_ticks.exit
@@ -9777,77 +9777,77 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: data <- 0
 	#DEBUG_VALUE: sda <- 0
 	#DEBUG_VALUE: jitter_ticks <- 3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	add r3, r11, r3
 	ldw r7, sp[15]                  # 4-byte Folded Reload
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setd res[r7], r3
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 	setc res[r7], 9
-	.loc	2 256 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
+	.loc	2 256 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:256:0
 .Ltmp985:
 .Lxta.endpoint_labels47:
 	in r3, res[r7]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	ldw r3, sp[14]                  # 4-byte Folded Reload
 	ldw r3, r3[0]
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r3, r1
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 	or r1, r1, r2
-	.loc	2 257 52                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
+	.loc	2 257 52                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:257:52
 .Lxta.endpoint_labels48:
 	out res[r0], r1
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r1, r4[10]
 	ldw r8, sp[13]                  # 4-byte Folded Reload
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	ldw r2, r8[0]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	lda16 r2, r2[r2]
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	shr r3, r2, 2
-	.loc	2 258 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
+	.loc	2 258 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:258:0
 	mov r2, r6
 .Lxta.call_labels60:
 	bl wait_for_clock_high
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r0, sp[20]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	ldw r1, r8[0]
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	add r0, r1, r0
 .Ltmp986:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 259 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
+	.loc	2 259 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:259:0
 	stw r0, sp[20]
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setd res[r7], r0
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 	setc res[r7], 9
-	.loc	2 260 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
+	.loc	2 260 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:260:0
 .Ltmp987:
 .Lxta.endpoint_labels49:
 	in r0, res[r7]
 .Ltmp988:
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r0, r4[8]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r1, sp[19]                  # 4-byte Folded Reload
 	ldw r1, r1[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	ldw r2, r9[0]
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 	or r1, r2, r1
-	.loc	2 263 56                # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
+	.loc	2 263 56                # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:263:56
 .Lxta.endpoint_labels50:
 	out res[r0], r1
 .Ltmp989:
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	add r10, r10, 1
 .Ltmp990:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
+	.loc	2 240 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:240:0
 	ldw r0, sp[18]                  # 4-byte Folded Reload
 	lsu r0, r10, r0
 .Lxta.loop_labels18:
@@ -9859,26 +9859,26 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
 	#DEBUG_VALUE: send_stop_bit <- [SP+32]
 	ldw r6, sp[12]                  # 4-byte Folded Reload
-	.loc	2 266 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
+	.loc	2 266 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:266:7
 	ldw r0, sp[8]                   # 4-byte Folded Reload
 	bf r0, .LBB52_30
 .Ltmp992:
 # BB#31:                                # %iftrue651
 .Lxtalabel113:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r0, r4[8]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r1, r4[9]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r2, r4[10]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r3, r4[11]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r11, r9[0]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	ldw r5, sp[20]
-	.loc	2 267 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
+	.loc	2 267 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:267:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels61:
@@ -9923,62 +9923,62 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	stw r0, sp[16]                  # 4-byte Folded Spill
 	mov r9, r3
 	ldc r0, 68
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 .Ltmp1000:
 	add r0, r4, r0
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	stw r0, sp[19]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 	mkmsk r1, 32
-	.loc	2 285 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
+	.loc	2 285 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:285:0
 	eq r11, r0, r1
 	ldc r0, 64
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 .Ltmp1001:
 	add r0, r4, r0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[18]                  # 4-byte Folded Spill
 	ldw r0, r0[0]
 .Ltmp1002:
 	#DEBUG_VALUE: fall_time <- R0
-	.loc	2 286 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
+	.loc	2 286 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:286:0
 	stw r0, sp[21]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r0, r4[8]
 .Ltmp1003:
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r1, r4[9]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r2, r4[10]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r3, r4[11]
 	ldc r7, 48
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	add r8, r4, r7
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	ldw r7, r8[0]
 	ldaw r10, sp[21]
 .Ltmp1004:
 	#DEBUG_VALUE: fall_time <- [R10+0]
-	.loc	2 287 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
+	.loc	2 287 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:287:0
 	std r11, r10, sp[1]
 	stw r7, sp[1]
 .Lxta.call_labels62:
 	bl start_bit
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 .Ltmp1005:
 	ldw r0, r4[8]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	shl r1, r6, 1
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r2, r4[9]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r3, r4[10]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r11, r4[11]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	ldw r6, r8[0]
-	.loc	2 288 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
+	.loc	2 288 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:288:0
 	std r10, r6, sp[1]
 	mov r7, r10
 .Ltmp1006:
@@ -10003,35 +10003,35 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
                                         #   in Loop: Header=BB52_12 Depth=1
 .Lxtalabel115:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r0, r4[8]
 	ldc r1, 5
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r1
 	ldc r1, 0
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	out res[r9], r10
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	outct res[r9], 2
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	in r1, res[r9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	chkct res[r9], 1
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	zext r1, 8
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r2, r4[9]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r3, r4[10]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r11, r4[11]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	ldw r6, r8[0]
 .Ltmp1010:
 	#DEBUG_VALUE: fall_time <- [R7+0]
-	.loc	2 294 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
+	.loc	2 294 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:294:0
 	std r7, r6, sp[1]
 	stw r11, sp[1]
 .Lxta.call_labels64:
@@ -10039,11 +10039,11 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	mov r6, r0
 .Ltmp1011:
 	#DEBUG_VALUE: ack <- R6
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	add r10, r10, 1
 .Ltmp1012:
 	#DEBUG_VALUE: j <- R10
-	.loc	2 290 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
+	.loc	2 290 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:290:0
 	lsu r0, r10, r5
 .Lxta.loop_labels19:
 	# LOOPMARKER 0
@@ -10054,7 +10054,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
 	#DEBUG_VALUE: send_stop_bit <- [SP+64]
 	#DEBUG_VALUE: j <- 0
-	.loc	2 296 7                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
+	.loc	2 296 7                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:296:7
 	ldw r0, sp[16]                  # 4-byte Folded Reload
 	bf r0, .LBB52_11
 .Ltmp1014:
@@ -10062,19 +10062,19 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Lxtalabel117:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r0, r4[8]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r1, r4[9]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r2, r4[10]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r3, r4[11]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r11, r8[0]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	ldw r5, sp[21]
-	.loc	2 297 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
+	.loc	2 297 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:297:0
 	stw r5, sp[2]
 	stw r11, sp[1]
 .Lxta.call_labels65:
@@ -10092,34 +10092,34 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Ltmp1016:
 # BB#4:                                 # %switchcase20
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
-	.loc	2 312 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
+	.loc	2 312 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:312:0
 	gettime r11
 .Ltmp1017:
 	#DEBUG_VALUE: fall_time <- R11
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r0, r4[8]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r1, r4[9]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r2, r4[10]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r3, r4[11]
 	ldc r5, 48
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	add r5, r4, r5
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	ldw r5, r5[0]
-	.loc	2 313 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
+	.loc	2 313 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:313:0
 	stw r5, sp[1]
 	stw r11, sp[2]
 .Lxta.call_labels66:
 	bl stop_bit
 .Ltmp1018:
 	ldc r0, 68
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	add r0, r4, r0
 	mkmsk r1, 32
-	.loc	2 314 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
+	.loc	2 314 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:314:0
 	stw r1, r0[0]
 	ldw r0, r4[5]
 	ldw r0, r0[r6]
@@ -10137,17 +10137,17 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Ltmp1020:
 .LBB52_30:                              # %ifdone537.ifdone652_crit_edge
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r5, sp[20]
 	mov r1, r6
 .Ltmp1021:
 .LBB52_32:                              # %ifdone652
 .Lxtalabel118:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
-	.loc	2 270 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
+	.loc	2 270 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:270:0
 	ldw r0, sp[10]                  # 4-byte Folded Reload
 	stw r1, r0[0]
-	.loc	2 276 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
+	.loc	2 276 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:276:0
 	ldw r0, sp[9]                   # 4-byte Folded Reload
 	stw r5, r0[0]
 	ldw r0, r4[6]
@@ -10170,7 +10170,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Ltmp1023:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	ldw r5, sp[21]
 	ldw r3, sp[12]                  # 4-byte Folded Reload
 	mov r2, r3
@@ -10181,9 +10181,9 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Lxtalabel119:
 	#DEBUG_VALUE: i2c_master_single_port.select.case.0:saved.state <- R4
 	#DEBUG_VALUE: j <- 0
-	.loc	2 300 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
+	.loc	2 300 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:300:0
 	stw r2, r0[0]
-	.loc	2 306 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
+	.loc	2 306 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:306:0
 	stw r5, r1[0]
 	ldw r0, r4[6]
 	lsu r0, r3, r0
@@ -10193,7 +10193,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Ltmp1025:
 	#DEBUG_VALUE: num_bytes_sent <- R10
 	#DEBUG_VALUE: j <- 0
-	.loc	2 303 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
+	.loc	2 303 0                 # C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:303:0
 	eq r0, r6, 0
 	ldw r1, r4[5]
 	ldw r1, r1[r3]
@@ -10244,15 +10244,15 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	.cfi_endproc
 
 .Ldebug_end0:
-	.file	4 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
-	.file	5 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_xassert/api/xassert.h"
+	.file	4 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\timer.h"
+	.file	5 "C:/Projects/UI-01_sw1_hw1/lib_xassert/api\\xassert.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"I2C_NACK"
 .Linfo_string4:
@@ -19679,719 +19679,719 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	106
 	.long	.Lxta.call_labels35
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	129
 	.long	.Lxta.call_labels30
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	162
 	.long	.Lxta.call_labels31
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	166
 	.long	.Lxta.call_labels32
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.call_labels33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	188
 	.long	.Lxta.call_labels33
 .cc_bottom cc_4
 .cc_top cc_5,.Lxta.call_labels34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	190
 	.long	.Lxta.call_labels34
 .cc_bottom cc_5
 .cc_top cc_6,.Lxta.call_labels36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	206
 	.long	.Lxta.call_labels36
 .cc_bottom cc_6
 .cc_top cc_7,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	237
 	.long	.Lxta.call_labels1
 .cc_bottom cc_7
-.cc_top cc_8,.Lxta.call_labels57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	237
-	.long	.Lxta.call_labels57
-.cc_bottom cc_8
-.cc_top cc_9,.Lxta.call_labels47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	237
-	.long	.Lxta.call_labels47
-.cc_bottom cc_9
-.cc_top cc_10,.Lxta.call_labels37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	237
-	.long	.Lxta.call_labels37
-.cc_bottom cc_10
-.cc_top cc_11,.Lxta.call_labels25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_8,.Lxta.call_labels25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	237
 	.long	.Lxta.call_labels25
-.cc_bottom cc_11
-.cc_top cc_12,.Lxta.call_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_8
+.cc_top cc_9,.Lxta.call_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	237
 	.long	.Lxta.call_labels11
+.cc_bottom cc_9
+.cc_top cc_10,.Lxta.call_labels57
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	237
+	.long	.Lxta.call_labels57
+.cc_bottom cc_10
+.cc_top cc_11,.Lxta.call_labels47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	237
+	.long	.Lxta.call_labels47
+.cc_bottom cc_11
+.cc_top cc_12,.Lxta.call_labels37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	237
+	.long	.Lxta.call_labels37
 .cc_bottom cc_12
-.cc_top cc_13,.Lxta.call_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	238
-	.long	.Lxta.call_labels12
-.cc_bottom cc_13
-.cc_top cc_14,.Lxta.call_labels58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	238
-	.long	.Lxta.call_labels58
-.cc_bottom cc_14
-.cc_top cc_15,.Lxta.call_labels48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	238
-	.long	.Lxta.call_labels48
-.cc_bottom cc_15
-.cc_top cc_16,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_13,.Lxta.call_labels2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	238
 	.long	.Lxta.call_labels2
-.cc_bottom cc_16
-.cc_top cc_17,.Lxta.call_labels38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	238
-	.long	.Lxta.call_labels38
-.cc_bottom cc_17
-.cc_top cc_18,.Lxta.call_labels26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_13
+.cc_top cc_14,.Lxta.call_labels26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	238
 	.long	.Lxta.call_labels26
+.cc_bottom cc_14
+.cc_top cc_15,.Lxta.call_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	238
+	.long	.Lxta.call_labels12
+.cc_bottom cc_15
+.cc_top cc_16,.Lxta.call_labels58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	238
+	.long	.Lxta.call_labels58
+.cc_bottom cc_16
+.cc_top cc_17,.Lxta.call_labels48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	238
+	.long	.Lxta.call_labels48
+.cc_bottom cc_17
+.cc_top cc_18,.Lxta.call_labels38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	238
+	.long	.Lxta.call_labels38
 .cc_bottom cc_18
-.cc_top cc_19,.Lxta.call_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	.Lxta.call_labels13
-.cc_bottom cc_19
-.cc_top cc_20,.Lxta.call_labels59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	.Lxta.call_labels59
-.cc_bottom cc_20
-.cc_top cc_21,.Lxta.call_labels49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	.Lxta.call_labels49
-.cc_bottom cc_21
-.cc_top cc_22,.Lxta.call_labels39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	.Lxta.call_labels39
-.cc_bottom cc_22
-.cc_top cc_23,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_19,.Lxta.call_labels3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	.Lxta.call_labels3
-.cc_bottom cc_23
-.cc_top cc_24,.Lxta.call_labels27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_19
+.cc_top cc_20,.Lxta.call_labels27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	.Lxta.call_labels27
+.cc_bottom cc_20
+.cc_top cc_21,.Lxta.call_labels59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	.Lxta.call_labels59
+.cc_bottom cc_21
+.cc_top cc_22,.Lxta.call_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	.Lxta.call_labels13
+.cc_bottom cc_22
+.cc_top cc_23,.Lxta.call_labels49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	.Lxta.call_labels49
+.cc_bottom cc_23
+.cc_top cc_24,.Lxta.call_labels39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	.Lxta.call_labels39
 .cc_bottom cc_24
-.cc_top cc_25,.Lxta.call_labels28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	258
-	.long	.Lxta.call_labels28
-.cc_bottom cc_25
-.cc_top cc_26,.Lxta.call_labels60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	258
-	.long	.Lxta.call_labels60
-.cc_bottom cc_26
-.cc_top cc_27,.Lxta.call_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_25,.Lxta.call_labels14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	258
 	.long	.Lxta.call_labels14
+.cc_bottom cc_25
+.cc_top cc_26,.Lxta.call_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	258
+	.long	.Lxta.call_labels4
+.cc_bottom cc_26
+.cc_top cc_27,.Lxta.call_labels28
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	258
+	.long	.Lxta.call_labels28
 .cc_bottom cc_27
 .cc_top cc_28,.Lxta.call_labels50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	258
 	.long	.Lxta.call_labels50
 .cc_bottom cc_28
-.cc_top cc_29,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	258
-	.long	.Lxta.call_labels4
-.cc_bottom cc_29
-.cc_top cc_30,.Lxta.call_labels40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_29,.Lxta.call_labels40
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	258
 	.long	.Lxta.call_labels40
+.cc_bottom cc_29
+.cc_top cc_30,.Lxta.call_labels60
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	258
+	.long	.Lxta.call_labels60
 .cc_bottom cc_30
-.cc_top cc_31,.Lxta.call_labels51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_31,.Lxta.call_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	267
+	.long	.Lxta.call_labels5
+.cc_bottom cc_31
+.cc_top cc_32,.Lxta.call_labels51
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	.Lxta.call_labels51
-.cc_bottom cc_31
-.cc_top cc_32,.Lxta.call_labels61
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_32
+.cc_top cc_33,.Lxta.call_labels61
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	.Lxta.call_labels61
-.cc_bottom cc_32
-.cc_top cc_33,.Lxta.call_labels29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	267
-	.long	.Lxta.call_labels29
 .cc_bottom cc_33
 .cc_top cc_34,.Lxta.call_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	.Lxta.call_labels15
 .cc_bottom cc_34
-.cc_top cc_35,.Lxta.call_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_35,.Lxta.call_labels29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
-	.long	.Lxta.call_labels5
+	.long	.Lxta.call_labels29
 .cc_bottom cc_35
 .cc_top cc_36,.Lxta.call_labels41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	.Lxta.call_labels41
 .cc_bottom cc_36
-.cc_top cc_37,.Lxta.call_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	287
-	.long	.Lxta.call_labels20
-.cc_bottom cc_37
-.cc_top cc_38,.Lxta.call_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_37,.Lxta.call_labels16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	287
 	.long	.Lxta.call_labels16
-.cc_bottom cc_38
-.cc_top cc_39,.Lxta.call_labels52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	287
-	.long	.Lxta.call_labels52
-.cc_bottom cc_39
-.cc_top cc_40,.Lxta.call_labels42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	287
-	.long	.Lxta.call_labels42
-.cc_bottom cc_40
-.cc_top cc_41,.Lxta.call_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_37
+.cc_top cc_38,.Lxta.call_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	287
 	.long	.Lxta.call_labels6
-.cc_bottom cc_41
-.cc_top cc_42,.Lxta.call_labels62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_38
+.cc_top cc_39,.Lxta.call_labels62
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	287
 	.long	.Lxta.call_labels62
+.cc_bottom cc_39
+.cc_top cc_40,.Lxta.call_labels52
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	287
+	.long	.Lxta.call_labels52
+.cc_bottom cc_40
+.cc_top cc_41,.Lxta.call_labels20
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	287
+	.long	.Lxta.call_labels20
+.cc_bottom cc_41
+.cc_top cc_42,.Lxta.call_labels42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	287
+	.long	.Lxta.call_labels42
 .cc_bottom cc_42
-.cc_top cc_43,.Lxta.call_labels63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_43,.Lxta.call_labels7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	288
-	.long	.Lxta.call_labels63
+	.long	.Lxta.call_labels7
 .cc_bottom cc_43
-.cc_top cc_44,.Lxta.call_labels43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_44,.Lxta.call_labels17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	288
-	.long	.Lxta.call_labels43
+	.long	.Lxta.call_labels17
 .cc_bottom cc_44
 .cc_top cc_45,.Lxta.call_labels53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	288
 	.long	.Lxta.call_labels53
 .cc_bottom cc_45
-.cc_top cc_46,.Lxta.call_labels21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_46,.Lxta.call_labels63
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	288
+	.long	.Lxta.call_labels63
+.cc_bottom cc_46
+.cc_top cc_47,.Lxta.call_labels21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	288
 	.long	.Lxta.call_labels21
-.cc_bottom cc_46
-.cc_top cc_47,.Lxta.call_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	288
-	.long	.Lxta.call_labels17
 .cc_bottom cc_47
-.cc_top cc_48,.Lxta.call_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_48,.Lxta.call_labels43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	288
-	.long	.Lxta.call_labels7
+	.long	.Lxta.call_labels43
 .cc_bottom cc_48
-.cc_top cc_49,.Lxta.call_labels44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	.Lxta.call_labels44
-.cc_bottom cc_49
-.cc_top cc_50,.Lxta.call_labels64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	.Lxta.call_labels64
-.cc_bottom cc_50
-.cc_top cc_51,.Lxta.call_labels54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	.Lxta.call_labels54
-.cc_bottom cc_51
-.cc_top cc_52,.Lxta.call_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	.Lxta.call_labels18
-.cc_bottom cc_52
-.cc_top cc_53,.Lxta.call_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	.Lxta.call_labels8
-.cc_bottom cc_53
-.cc_top cc_54,.Lxta.call_labels22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_49,.Lxta.call_labels22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	.Lxta.call_labels22
+.cc_bottom cc_49
+.cc_top cc_50,.Lxta.call_labels54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	.Lxta.call_labels54
+.cc_bottom cc_50
+.cc_top cc_51,.Lxta.call_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	.Lxta.call_labels8
+.cc_bottom cc_51
+.cc_top cc_52,.Lxta.call_labels44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	.Lxta.call_labels44
+.cc_bottom cc_52
+.cc_top cc_53,.Lxta.call_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	.Lxta.call_labels18
+.cc_bottom cc_53
+.cc_top cc_54,.Lxta.call_labels64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	.Lxta.call_labels64
 .cc_bottom cc_54
-.cc_top cc_55,.Lxta.call_labels65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	297
-	.long	.Lxta.call_labels65
-.cc_bottom cc_55
-.cc_top cc_56,.Lxta.call_labels45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	297
-	.long	.Lxta.call_labels45
-.cc_bottom cc_56
-.cc_top cc_57,.Lxta.call_labels55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	297
-	.long	.Lxta.call_labels55
-.cc_bottom cc_57
-.cc_top cc_58,.Lxta.call_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	297
-	.long	.Lxta.call_labels19
-.cc_bottom cc_58
-.cc_top cc_59,.Lxta.call_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_55,.Lxta.call_labels9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	297
 	.long	.Lxta.call_labels9
-.cc_bottom cc_59
-.cc_top cc_60,.Lxta.call_labels23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_55
+.cc_top cc_56,.Lxta.call_labels23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	297
 	.long	.Lxta.call_labels23
+.cc_bottom cc_56
+.cc_top cc_57,.Lxta.call_labels19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	297
+	.long	.Lxta.call_labels19
+.cc_bottom cc_57
+.cc_top cc_58,.Lxta.call_labels55
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	297
+	.long	.Lxta.call_labels55
+.cc_bottom cc_58
+.cc_top cc_59,.Lxta.call_labels45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	297
+	.long	.Lxta.call_labels45
+.cc_bottom cc_59
+.cc_top cc_60,.Lxta.call_labels65
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	297
+	.long	.Lxta.call_labels65
 .cc_bottom cc_60
-.cc_top cc_61,.Lxta.call_labels66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	313
-	.long	.Lxta.call_labels66
-.cc_bottom cc_61
-.cc_top cc_62,.Lxta.call_labels24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	313
-	.long	.Lxta.call_labels24
-.cc_bottom cc_62
-.cc_top cc_63,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_61,.Lxta.call_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	313
 	.long	.Lxta.call_labels0
-.cc_bottom cc_63
-.cc_top cc_64,.Lxta.call_labels56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_61
+.cc_top cc_62,.Lxta.call_labels56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	313
 	.long	.Lxta.call_labels56
-.cc_bottom cc_64
-.cc_top cc_65,.Lxta.call_labels46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_62
+.cc_top cc_63,.Lxta.call_labels46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	313
 	.long	.Lxta.call_labels46
-.cc_bottom cc_65
-.cc_top cc_66,.Lxta.call_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_63
+.cc_top cc_64,.Lxta.call_labels10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	313
 	.long	.Lxta.call_labels10
+.cc_bottom cc_64
+.cc_top cc_65,.Lxta.call_labels24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	313
+	.long	.Lxta.call_labels24
+.cc_bottom cc_65
+.cc_top cc_66,.Lxta.call_labels66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	313
+	.long	.Lxta.call_labels66
 .cc_bottom cc_66
 .Lentries_end1:
 	.section	.xtaendpointtable,"",@progbits
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_67,.Lxta.endpoint_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	75
 	.long	.Lxta.endpoint_labels17
 .cc_bottom cc_67
 .cc_top cc_68,.Lxta.endpoint_labels31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	103
 	.long	.Lxta.endpoint_labels31
 .cc_bottom cc_68
 .cc_top cc_69,.Lxta.endpoint_labels32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	104
 	.long	.Lxta.endpoint_labels32
 .cc_bottom cc_69
 .cc_top cc_70,.Lxta.endpoint_labels33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	105
 	.long	.Lxta.endpoint_labels33
 .cc_bottom cc_70
 .cc_top cc_71,.Lxta.endpoint_labels34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	108
 	.long	.Lxta.endpoint_labels34
 .cc_bottom cc_71
 .cc_top cc_72,.Lxta.endpoint_labels35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	109
 	.long	.Lxta.endpoint_labels35
 .cc_bottom cc_72
 .cc_top cc_73,.Lxta.endpoint_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	126
 	.long	.Lxta.endpoint_labels18
 .cc_bottom cc_73
 .cc_top cc_74,.Lxta.endpoint_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	127
 	.long	.Lxta.endpoint_labels19
 .cc_bottom cc_74
 .cc_top cc_75,.Lxta.endpoint_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	128
 	.long	.Lxta.endpoint_labels20
 .cc_bottom cc_75
 .cc_top cc_76,.Lxta.endpoint_labels21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	138
 	.long	.Lxta.endpoint_labels21
 .cc_bottom cc_76
 .cc_top cc_77,.Lxta.endpoint_labels22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	139
 	.long	.Lxta.endpoint_labels22
 .cc_bottom cc_77
 .cc_top cc_78,.Lxta.endpoint_labels23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	160
 	.long	.Lxta.endpoint_labels23
 .cc_bottom cc_78
 .cc_top cc_79,.Lxta.endpoint_labels24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	161
 	.long	.Lxta.endpoint_labels24
 .cc_bottom cc_79
 .cc_top cc_80,.Lxta.endpoint_labels25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	165
 	.long	.Lxta.endpoint_labels25
 .cc_bottom cc_80
 .cc_top cc_81,.Lxta.endpoint_labels26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	167
 	.long	.Lxta.endpoint_labels26
 .cc_bottom cc_81
 .cc_top cc_82,.Lxta.endpoint_labels27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	185
 	.long	.Lxta.endpoint_labels27
 .cc_bottom cc_82
 .cc_top cc_83,.Lxta.endpoint_labels28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	186
 	.long	.Lxta.endpoint_labels28
 .cc_bottom cc_83
 .cc_top cc_84,.Lxta.endpoint_labels29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	187
 	.long	.Lxta.endpoint_labels29
 .cc_bottom cc_84
 .cc_top cc_85,.Lxta.endpoint_labels30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	189
 	.long	.Lxta.endpoint_labels30
 .cc_bottom cc_85
-.cc_top cc_86,.Lxta.endpoint_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	226
-	.long	.Lxta.endpoint_labels16
-.cc_bottom cc_86
-.cc_top cc_87,.Lxta.endpoint_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_86,.Lxta.endpoint_labels10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	226
 	.long	.Lxta.endpoint_labels10
+.cc_bottom cc_86
+.cc_top cc_87,.Lxta.endpoint_labels16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	226
+	.long	.Lxta.endpoint_labels16
 .cc_bottom cc_87
-.cc_top cc_88,.Lxta.endpoint_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	.Lxta.endpoint_labels11
-.cc_bottom cc_88
-.cc_top cc_89,.Lxta.endpoint_labels36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	.Lxta.endpoint_labels36
-.cc_bottom cc_89
-.cc_top cc_90,.Lxta.endpoint_labels41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	.Lxta.endpoint_labels41
-.cc_bottom cc_90
-.cc_top cc_91,.Lxta.endpoint_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	.Lxta.endpoint_labels5
-.cc_bottom cc_91
-.cc_top cc_92,.Lxta.endpoint_labels46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	.Lxta.endpoint_labels46
-.cc_bottom cc_92
-.cc_top cc_93,.Lxta.endpoint_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_88,.Lxta.endpoint_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	.Lxta.endpoint_labels0
+.cc_bottom cc_88
+.cc_top cc_89,.Lxta.endpoint_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	.Lxta.endpoint_labels5
+.cc_bottom cc_89
+.cc_top cc_90,.Lxta.endpoint_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	.Lxta.endpoint_labels11
+.cc_bottom cc_90
+.cc_top cc_91,.Lxta.endpoint_labels36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	.Lxta.endpoint_labels36
+.cc_bottom cc_91
+.cc_top cc_92,.Lxta.endpoint_labels41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	.Lxta.endpoint_labels41
+.cc_bottom cc_92
+.cc_top cc_93,.Lxta.endpoint_labels46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	.Lxta.endpoint_labels46
 .cc_bottom cc_93
-.cc_top cc_94,.Lxta.endpoint_labels37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	256
-	.long	.Lxta.endpoint_labels37
-.cc_bottom cc_94
-.cc_top cc_95,.Lxta.endpoint_labels42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	256
-	.long	.Lxta.endpoint_labels42
-.cc_bottom cc_95
-.cc_top cc_96,.Lxta.endpoint_labels47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	256
-	.long	.Lxta.endpoint_labels47
-.cc_bottom cc_96
-.cc_top cc_97,.Lxta.endpoint_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	256
-	.long	.Lxta.endpoint_labels1
-.cc_bottom cc_97
-.cc_top cc_98,.Lxta.endpoint_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_94,.Lxta.endpoint_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	256
 	.long	.Lxta.endpoint_labels12
-.cc_bottom cc_98
-.cc_top cc_99,.Lxta.endpoint_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_94
+.cc_top cc_95,.Lxta.endpoint_labels37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	256
+	.long	.Lxta.endpoint_labels37
+.cc_bottom cc_95
+.cc_top cc_96,.Lxta.endpoint_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	256
 	.long	.Lxta.endpoint_labels6
+.cc_bottom cc_96
+.cc_top cc_97,.Lxta.endpoint_labels42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	256
+	.long	.Lxta.endpoint_labels42
+.cc_bottom cc_97
+.cc_top cc_98,.Lxta.endpoint_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	256
+	.long	.Lxta.endpoint_labels1
+.cc_bottom cc_98
+.cc_top cc_99,.Lxta.endpoint_labels47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	256
+	.long	.Lxta.endpoint_labels47
 .cc_bottom cc_99
-.cc_top cc_100,.Lxta.endpoint_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	257
-	.long	.Lxta.endpoint_labels13
-.cc_bottom cc_100
-.cc_top cc_101,.Lxta.endpoint_labels48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	257
-	.long	.Lxta.endpoint_labels48
-.cc_bottom cc_101
-.cc_top cc_102,.Lxta.endpoint_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_100,.Lxta.endpoint_labels2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	257
 	.long	.Lxta.endpoint_labels2
-.cc_bottom cc_102
-.cc_top cc_103,.Lxta.endpoint_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_100
+.cc_top cc_101,.Lxta.endpoint_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	257
-	.long	.Lxta.endpoint_labels7
-.cc_bottom cc_103
-.cc_top cc_104,.Lxta.endpoint_labels38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	.Lxta.endpoint_labels13
+.cc_bottom cc_101
+.cc_top cc_102,.Lxta.endpoint_labels38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	257
 	.long	.Lxta.endpoint_labels38
-.cc_bottom cc_104
-.cc_top cc_105,.Lxta.endpoint_labels43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_102
+.cc_top cc_103,.Lxta.endpoint_labels43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	257
 	.long	.Lxta.endpoint_labels43
+.cc_bottom cc_103
+.cc_top cc_104,.Lxta.endpoint_labels7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	257
+	.long	.Lxta.endpoint_labels7
+.cc_bottom cc_104
+.cc_top cc_105,.Lxta.endpoint_labels48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	257
+	.long	.Lxta.endpoint_labels48
 .cc_bottom cc_105
-.cc_top cc_106,.Lxta.endpoint_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	260
-	.long	.Lxta.endpoint_labels14
-.cc_bottom cc_106
-.cc_top cc_107,.Lxta.endpoint_labels49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	260
-	.long	.Lxta.endpoint_labels49
-.cc_bottom cc_107
-.cc_top cc_108,.Lxta.endpoint_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_106,.Lxta.endpoint_labels3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	260
 	.long	.Lxta.endpoint_labels3
-.cc_bottom cc_108
-.cc_top cc_109,.Lxta.endpoint_labels44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_106
+.cc_top cc_107,.Lxta.endpoint_labels14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	260
-	.long	.Lxta.endpoint_labels44
-.cc_bottom cc_109
-.cc_top cc_110,.Lxta.endpoint_labels39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	.Lxta.endpoint_labels14
+.cc_bottom cc_107
+.cc_top cc_108,.Lxta.endpoint_labels39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	260
 	.long	.Lxta.endpoint_labels39
-.cc_bottom cc_110
-.cc_top cc_111,.Lxta.endpoint_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_108
+.cc_top cc_109,.Lxta.endpoint_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	260
 	.long	.Lxta.endpoint_labels8
+.cc_bottom cc_109
+.cc_top cc_110,.Lxta.endpoint_labels44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	260
+	.long	.Lxta.endpoint_labels44
+.cc_bottom cc_110
+.cc_top cc_111,.Lxta.endpoint_labels49
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	260
+	.long	.Lxta.endpoint_labels49
 .cc_bottom cc_111
-.cc_top cc_112,.Lxta.endpoint_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_112,.Lxta.endpoint_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
-	.long	.Lxta.endpoint_labels4
+	.long	.Lxta.endpoint_labels15
 .cc_bottom cc_112
 .cc_top cc_113,.Lxta.endpoint_labels40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	.Lxta.endpoint_labels40
 .cc_bottom cc_113
-.cc_top cc_114,.Lxta.endpoint_labels45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	263
-	.long	.Lxta.endpoint_labels45
-.cc_bottom cc_114
-.cc_top cc_115,.Lxta.endpoint_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_114,.Lxta.endpoint_labels9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	.Lxta.endpoint_labels9
-.cc_bottom cc_115
-.cc_top cc_116,.Lxta.endpoint_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_114
+.cc_top cc_115,.Lxta.endpoint_labels45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
-	.long	.Lxta.endpoint_labels15
+	.long	.Lxta.endpoint_labels45
+.cc_bottom cc_115
+.cc_top cc_116,.Lxta.endpoint_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	263
+	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_116
 .cc_top cc_117,.Lxta.endpoint_labels50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	.Lxta.endpoint_labels50
@@ -20401,2051 +20401,2051 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
-.cc_top cc_118,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_118,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
-	.long	.Lxtalabel67
+	.long	.Lxtalabel4
 .cc_bottom cc_118
-.cc_top cc_119,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	25
-	.long	27
-	.long	.Lxtalabel77
-.cc_bottom cc_119
-.cc_top cc_120,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_119,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
 	.long	.Lxtalabel42
-.cc_bottom cc_120
-.cc_top cc_121,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	25
-	.long	27
-	.long	.Lxtalabel19
-.cc_bottom cc_121
-.cc_top cc_122,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_119
+.cc_top cc_120,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
 	.long	.Lxtalabel43
-.cc_bottom cc_122
-.cc_top cc_123,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_120
+.cc_top cc_121,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
 	.long	.Lxtalabel68
+.cc_bottom cc_121
+.cc_top cc_122,.Lxtalabel62
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	25
+	.long	27
+	.long	.Lxtalabel62
+.cc_bottom cc_122
+.cc_top cc_123,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	25
+	.long	27
+	.long	.Lxtalabel58
 .cc_bottom cc_123
-.cc_top cc_124,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_124,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	25
+	.long	27
+	.long	.Lxtalabel54
+.cc_bottom cc_124
+.cc_top cc_125,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	25
+	.long	27
+	.long	.Lxtalabel41
+.cc_bottom cc_125
+.cc_top cc_126,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	25
+	.long	27
+	.long	.Lxtalabel19
+.cc_bottom cc_126
+.cc_top cc_127,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	25
+	.long	27
+	.long	.Lxtalabel109
+.cc_bottom cc_127
+.cc_top cc_128,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
 	.long	.Lxtalabel93
-.cc_bottom cc_124
-.cc_top cc_125,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_128
+.cc_top cc_129,.Lxtalabel77
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
-	.long	.Lxtalabel58
-.cc_bottom cc_125
-.cc_top cc_126,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	25
-	.long	27
-	.long	.Lxtalabel41
-.cc_bottom cc_126
-.cc_top cc_127,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	.Lxtalabel77
+.cc_bottom cc_129
+.cc_top cc_130,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
 	.long	.Lxtalabel66
-.cc_bottom cc_127
-.cc_top cc_128,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	25
-	.long	27
-	.long	.Lxtalabel4
-.cc_bottom cc_128
-.cc_top cc_129,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	25
-	.long	27
-	.long	.Lxtalabel109
-.cc_bottom cc_129
-.cc_top cc_130,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	25
-	.long	27
-	.long	.Lxtalabel54
 .cc_bottom cc_130
-.cc_top cc_131,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_131,.Lxtalabel67
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	25
 	.long	27
-	.long	.Lxtalabel62
+	.long	.Lxtalabel67
 .cc_bottom cc_131
-.cc_top cc_132,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_132,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	28
+	.long	30
+	.long	.Lxtalabel43
+.cc_bottom cc_132
+.cc_top cc_133,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	28
+	.long	30
+	.long	.Lxtalabel4
+.cc_bottom cc_133
+.cc_top cc_134,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
 	.long	.Lxtalabel41
-.cc_bottom cc_132
-.cc_top cc_133,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_134
+.cc_top cc_135,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
-	.long	.Lxtalabel67
-.cc_bottom cc_133
-.cc_top cc_134,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	.Lxtalabel109
+.cc_bottom cc_135
+.cc_top cc_136,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
 	.long	.Lxtalabel19
-.cc_bottom cc_134
-.cc_top cc_135,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	28
-	.long	30
-	.long	.Lxtalabel66
-.cc_bottom cc_135
-.cc_top cc_136,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	28
-	.long	30
-	.long	.Lxtalabel68
 .cc_bottom cc_136
-.cc_top cc_137,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	28
-	.long	30
-	.long	.Lxtalabel54
-.cc_bottom cc_137
-.cc_top cc_138,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	28
-	.long	30
-	.long	.Lxtalabel58
-.cc_bottom cc_138
-.cc_top cc_139,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	28
-	.long	30
-	.long	.Lxtalabel42
-.cc_bottom cc_139
-.cc_top cc_140,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_137,.Lxtalabel62
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
 	.long	.Lxtalabel62
+.cc_bottom cc_137
+.cc_top cc_138,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	28
+	.long	30
+	.long	.Lxtalabel42
+.cc_bottom cc_138
+.cc_top cc_139,.Lxtalabel54
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	28
+	.long	30
+	.long	.Lxtalabel54
+.cc_bottom cc_139
+.cc_top cc_140,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	28
+	.long	30
+	.long	.Lxtalabel93
 .cc_bottom cc_140
-.cc_top cc_141,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_141,.Lxtalabel67
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
-	.long	.Lxtalabel4
+	.long	.Lxtalabel67
 .cc_bottom cc_141
-.cc_top cc_142,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_142,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
-	.long	.Lxtalabel109
+	.long	.Lxtalabel66
 .cc_bottom cc_142
 .cc_top cc_143,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
 	.long	.Lxtalabel77
 .cc_bottom cc_143
-.cc_top cc_144,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_144,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
-	.long	.Lxtalabel93
+	.long	.Lxtalabel68
 .cc_bottom cc_144
-.cc_top cc_145,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_145,.Lxtalabel58
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	28
 	.long	30
-	.long	.Lxtalabel43
+	.long	.Lxtalabel58
 .cc_bottom cc_145
-.cc_top cc_146,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	31
-	.long	33
-	.long	.Lxtalabel94
-.cc_bottom cc_146
-.cc_top cc_147,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	31
-	.long	33
-	.long	.Lxtalabel110
-.cc_bottom cc_147
-.cc_top cc_148,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_146,.Lxtalabel59
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	31
 	.long	33
 	.long	.Lxtalabel59
-.cc_bottom cc_148
-.cc_top cc_149,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_146
+.cc_top cc_147,.Lxtalabel94
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	31
+	.long	33
+	.long	.Lxtalabel94
+.cc_bottom cc_147
+.cc_top cc_148,.Lxtalabel5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	31
 	.long	33
 	.long	.Lxtalabel5
-.cc_bottom cc_149
-.cc_top cc_150,.Lxtalabel20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_148
+.cc_top cc_149,.Lxtalabel110
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	31
 	.long	33
-	.long	.Lxtalabel20
+	.long	.Lxtalabel110
+.cc_bottom cc_149
+.cc_top cc_150,.Lxtalabel78
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	31
+	.long	33
+	.long	.Lxtalabel78
 .cc_bottom cc_150
 .cc_top cc_151,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	31
 	.long	33
 	.long	.Lxtalabel55
 .cc_bottom cc_151
-.cc_top cc_152,.Lxtalabel63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_152,.Lxtalabel20
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	31
+	.long	33
+	.long	.Lxtalabel20
+.cc_bottom cc_152
+.cc_top cc_153,.Lxtalabel63
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	31
 	.long	33
 	.long	.Lxtalabel63
-.cc_bottom cc_152
-.cc_top cc_153,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	31
-	.long	33
-	.long	.Lxtalabel78
 .cc_bottom cc_153
-.cc_top cc_154,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	39
-	.long	41
-	.long	.Lxtalabel6
-.cc_bottom cc_154
-.cc_top cc_155,.Lxtalabel60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_154,.Lxtalabel60
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	39
 	.long	41
 	.long	.Lxtalabel60
+.cc_bottom cc_154
+.cc_top cc_155,.Lxtalabel21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	39
+	.long	41
+	.long	.Lxtalabel21
 .cc_bottom cc_155
-.cc_top cc_156,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_156,.Lxtalabel6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	39
+	.long	41
+	.long	.Lxtalabel6
+.cc_bottom cc_156
+.cc_top cc_157,.Lxtalabel64
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	39
 	.long	41
 	.long	.Lxtalabel64
-.cc_bottom cc_156
-.cc_top cc_157,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	39
-	.long	41
-	.long	.Lxtalabel56
 .cc_bottom cc_157
-.cc_top cc_158,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	39
-	.long	41
-	.long	.Lxtalabel45
-.cc_bottom cc_158
-.cc_top cc_159,.Lxtalabel111
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	39
-	.long	41
-	.long	.Lxtalabel111
-.cc_bottom cc_159
-.cc_top cc_160,.Lxtalabel44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	39
-	.long	41
-	.long	.Lxtalabel44
-.cc_bottom cc_160
-.cc_top cc_161,.Lxtalabel79
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	39
-	.long	41
-	.long	.Lxtalabel79
-.cc_bottom cc_161
-.cc_top cc_162,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_158,.Lxtalabel70
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	39
 	.long	41
 	.long	.Lxtalabel70
+.cc_bottom cc_158
+.cc_top cc_159,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	39
+	.long	41
+	.long	.Lxtalabel69
+.cc_bottom cc_159
+.cc_top cc_160,.Lxtalabel111
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	39
+	.long	41
+	.long	.Lxtalabel111
+.cc_bottom cc_160
+.cc_top cc_161,.Lxtalabel56
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	39
+	.long	41
+	.long	.Lxtalabel56
+.cc_bottom cc_161
+.cc_top cc_162,.Lxtalabel79
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	39
+	.long	41
+	.long	.Lxtalabel79
 .cc_bottom cc_162
 .cc_top cc_163,.Lxtalabel95
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	39
 	.long	41
 	.long	.Lxtalabel95
 .cc_bottom cc_163
-.cc_top cc_164,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_164,.Lxtalabel44
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	39
 	.long	41
-	.long	.Lxtalabel69
+	.long	.Lxtalabel44
 .cc_bottom cc_164
-.cc_top cc_165,.Lxtalabel21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_165,.Lxtalabel45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	39
 	.long	41
-	.long	.Lxtalabel21
+	.long	.Lxtalabel45
 .cc_bottom cc_165
 .cc_top cc_166,.Lxtalabel60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	45
 	.long	46
 	.long	.Lxtalabel60
 .cc_bottom cc_166
 .cc_top cc_167,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	45
 	.long	46
 	.long	.Lxtalabel64
 .cc_bottom cc_167
 .cc_top cc_168,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	51
 	.long	52
 	.long	.Lxtalabel64
 .cc_bottom cc_168
 .cc_top cc_169,.Lxtalabel60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	51
 	.long	52
 	.long	.Lxtalabel60
 .cc_bottom cc_169
 .cc_top cc_170,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	65
 	.long	66
 	.long	.Lxtalabel49
 .cc_bottom cc_170
 .cc_top cc_171,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	68
 	.long	69
 	.long	.Lxtalabel49
 .cc_bottom cc_171
 .cc_top cc_172,.Lxtalabel50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	70
 	.long	71
 	.long	.Lxtalabel50
 .cc_bottom cc_172
 .cc_top cc_173,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	73
 	.long	75
 	.long	.Lxtalabel51
 .cc_bottom cc_173
 .cc_top cc_174,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	82
 	.long	83
 	.long	.Lxtalabel51
 .cc_bottom cc_174
 .cc_top cc_175,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	84
 	.long	85
 	.long	.Lxtalabel52
 .cc_bottom cc_175
 .cc_top cc_176,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	86
 	.long	86
 	.long	.Lxtalabel53
 .cc_bottom cc_176
 .cc_top cc_177,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	96
 	.long	99
 	.long	.Lxtalabel66
 .cc_bottom cc_177
 .cc_top cc_178,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	96
 	.long	99
 	.long	.Lxtalabel67
 .cc_bottom cc_178
 .cc_top cc_179,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	96
 	.long	99
 	.long	.Lxtalabel68
 .cc_bottom cc_179
 .cc_top cc_180,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	101
 	.long	110
 	.long	.Lxtalabel66
 .cc_bottom cc_180
-.cc_top cc_181,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	101
-	.long	110
-	.long	.Lxtalabel68
-.cc_bottom cc_181
-.cc_top cc_182,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_181,.Lxtalabel67
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	101
 	.long	110
 	.long	.Lxtalabel67
+.cc_bottom cc_181
+.cc_top cc_182,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	101
+	.long	110
+	.long	.Lxtalabel68
 .cc_bottom cc_182
 .cc_top cc_183,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	119
 	.long	122
 	.long	.Lxtalabel54
 .cc_bottom cc_183
 .cc_top cc_184,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	124
 	.long	124
 	.long	.Lxtalabel54
 .cc_bottom cc_184
 .cc_top cc_185,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	126
 	.long	129
 	.long	.Lxtalabel54
 .cc_bottom cc_185
 .cc_top cc_186,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	131
 	.long	132
 	.long	.Lxtalabel54
 .cc_bottom cc_186
 .cc_top cc_187,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	137
 	.long	139
 	.long	.Lxtalabel54
 .cc_bottom cc_187
 .cc_top cc_188,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	141
 	.long	142
 	.long	.Lxtalabel54
 .cc_bottom cc_188
 .cc_top cc_189,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	152
 	.long	155
 	.long	.Lxtalabel57
 .cc_bottom cc_189
 .cc_top cc_190,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	157
 	.long	157
 	.long	.Lxtalabel57
 .cc_bottom cc_190
 .cc_top cc_191,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	159
 	.long	159
 	.long	.Lxtalabel57
 .cc_bottom cc_191
 .cc_top cc_192,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	160
 	.long	163
 	.long	.Lxtalabel58
 .cc_bottom cc_192
 .cc_top cc_193,.Lxtalabel61
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	165
 	.long	169
 	.long	.Lxtalabel61
 .cc_bottom cc_193
 .cc_top cc_194,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	178
 	.long	181
 	.long	.Lxtalabel62
 .cc_bottom cc_194
 .cc_top cc_195,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	183
 	.long	183
 	.long	.Lxtalabel62
 .cc_bottom cc_195
 .cc_top cc_196,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	185
 	.long	191
 	.long	.Lxtalabel62
 .cc_bottom cc_196
 .cc_top cc_197,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	200
 	.long	202
 	.long	.Lxtalabel65
 .cc_bottom cc_197
 .cc_top cc_198,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	203
 	.long	205
 	.long	.Lxtalabel67
 .cc_bottom cc_198
-.cc_top cc_199,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	203
-	.long	205
-	.long	.Lxtalabel68
-.cc_bottom cc_199
-.cc_top cc_200,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_199,.Lxtalabel66
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	203
 	.long	205
 	.long	.Lxtalabel66
+.cc_bottom cc_199
+.cc_top cc_200,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	203
+	.long	205
+	.long	.Lxtalabel68
 .cc_bottom cc_200
 .cc_top cc_201,.Lxtalabel71
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	206
 	.long	207
 	.long	.Lxtalabel71
 .cc_bottom cc_201
 .cc_top cc_202,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	218
 	.long	221
 	.long	.Lxtalabel48
 .cc_bottom cc_202
 .cc_top cc_203,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	218
 	.long	221
 	.long	.Lxtalabel30
 .cc_bottom cc_203
-.cc_top cc_204,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	223
-	.long	224
-	.long	.Lxtalabel48
-.cc_bottom cc_204
-.cc_top cc_205,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_204,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	223
 	.long	224
 	.long	.Lxtalabel30
+.cc_bottom cc_204
+.cc_top cc_205,.Lxtalabel48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	223
+	.long	224
+	.long	.Lxtalabel48
 .cc_bottom cc_205
 .cc_top cc_206,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	225
 	.long	225
 	.long	.Lxtalabel30
 .cc_bottom cc_206
 .cc_top cc_207,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	225
 	.long	225
 	.long	.Lxtalabel48
 .cc_bottom cc_207
-.cc_top cc_208,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	226
-	.long	226
-	.long	.Lxtalabel30
-.cc_bottom cc_208
-.cc_top cc_209,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_208,.Lxtalabel48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	226
 	.long	226
 	.long	.Lxtalabel48
+.cc_bottom cc_208
+.cc_top cc_209,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	226
+	.long	226
+	.long	.Lxtalabel30
 .cc_bottom cc_209
 .cc_top cc_210,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	228
 	.long	228
 	.long	.Lxtalabel30
 .cc_bottom cc_210
 .cc_top cc_211,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	228
 	.long	228
 	.long	.Lxtalabel48
 .cc_bottom cc_211
 .cc_top cc_212,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	229
 	.long	233
 	.long	.Lxtalabel32
 .cc_bottom cc_212
-.cc_top cc_213,.Lxtalabel33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_213,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	235
 	.long	239
-	.long	.Lxtalabel33
+	.long	.Lxtalabel104
 .cc_bottom cc_213
 .cc_top cc_214,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	235
 	.long	239
 	.long	.Lxtalabel72
 .cc_bottom cc_214
-.cc_top cc_215,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	235
-	.long	239
-	.long	.Lxtalabel104
-.cc_bottom cc_215
-.cc_top cc_216,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_215,.Lxtalabel88
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	235
 	.long	239
 	.long	.Lxtalabel88
+.cc_bottom cc_215
+.cc_top cc_216,.Lxtalabel33
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	235
+	.long	239
+	.long	.Lxtalabel33
 .cc_bottom cc_216
-.cc_top cc_217,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	241
-	.long	243
-	.long	.Lxtalabel0
-.cc_bottom cc_217
-.cc_top cc_218,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	241
-	.long	243
-	.long	.Lxtalabel39
-.cc_bottom cc_218
-.cc_top cc_219,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_217,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
 	.long	.Lxtalabel105
-.cc_bottom cc_219
-.cc_top cc_220,.Lxtalabel89
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_217
+.cc_top cc_218,.Lxtalabel15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
-	.long	.Lxtalabel89
+	.long	.Lxtalabel15
+.cc_bottom cc_218
+.cc_top cc_219,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	241
+	.long	243
+	.long	.Lxtalabel39
+.cc_bottom cc_219
+.cc_top cc_220,.Lxtalabel0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	241
+	.long	243
+	.long	.Lxtalabel0
 .cc_bottom cc_220
 .cc_top cc_221,.Lxtalabel73
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
 	.long	.Lxtalabel73
 .cc_bottom cc_221
-.cc_top cc_222,.Lxtalabel15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_222,.Lxtalabel89
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
-	.long	.Lxtalabel15
+	.long	.Lxtalabel89
 .cc_bottom cc_222
-.cc_top cc_223,.Lxtalabel74
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxtalabel74
-.cc_bottom cc_223
-.cc_top cc_224,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxtalabel90
-.cc_bottom cc_224
-.cc_top cc_225,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxtalabel106
-.cc_bottom cc_225
-.cc_top cc_226,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_223,.Lxtalabel1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	246
 	.long	.Lxtalabel1
-.cc_bottom cc_226
-.cc_top cc_227,.Lxtalabel40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxtalabel40
-.cc_bottom cc_227
-.cc_top cc_228,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_223
+.cc_top cc_224,.Lxtalabel16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	246
 	.long	.Lxtalabel16
-.cc_bottom cc_228
-.cc_top cc_229,.Lxtalabel91
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_224
+.cc_top cc_225,.Lxtalabel74
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxtalabel91
-.cc_bottom cc_229
-.cc_top cc_230,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	244
+	.long	246
+	.long	.Lxtalabel74
+.cc_bottom cc_225
+.cc_top cc_226,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	246
+	.long	.Lxtalabel106
+.cc_bottom cc_226
+.cc_top cc_227,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	246
+	.long	.Lxtalabel90
+.cc_bottom cc_227
+.cc_top cc_228,.Lxtalabel40
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	246
+	.long	.Lxtalabel40
+.cc_bottom cc_228
+.cc_top cc_229,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	247
 	.long	247
 	.long	.Lxtalabel2
-.cc_bottom cc_230
-.cc_top cc_231,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_229
+.cc_top cc_230,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	247
 	.long	247
 	.long	.Lxtalabel41
-.cc_bottom cc_231
-.cc_top cc_232,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxtalabel43
-.cc_bottom cc_232
-.cc_top cc_233,.Lxtalabel107
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxtalabel107
-.cc_bottom cc_233
-.cc_top cc_234,.Lxtalabel75
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxtalabel75
-.cc_bottom cc_234
-.cc_top cc_235,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxtalabel42
-.cc_bottom cc_235
-.cc_top cc_236,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_230
+.cc_top cc_231,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	247
 	.long	247
 	.long	.Lxtalabel17
+.cc_bottom cc_231
+.cc_top cc_232,.Lxtalabel107
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxtalabel107
+.cc_bottom cc_232
+.cc_top cc_233,.Lxtalabel75
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxtalabel75
+.cc_bottom cc_233
+.cc_top cc_234,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxtalabel43
+.cc_bottom cc_234
+.cc_top cc_235,.Lxtalabel91
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxtalabel91
+.cc_bottom cc_235
+.cc_top cc_236,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxtalabel42
 .cc_bottom cc_236
-.cc_top cc_237,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_237,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	250
+	.long	251
+	.long	.Lxtalabel2
+.cc_bottom cc_237
+.cc_top cc_238,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	251
 	.long	.Lxtalabel42
-.cc_bottom cc_237
-.cc_top cc_238,.Lxtalabel91
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	250
-	.long	251
-	.long	.Lxtalabel91
 .cc_bottom cc_238
-.cc_top cc_239,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_239,.Lxtalabel107
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	251
-	.long	.Lxtalabel41
+	.long	.Lxtalabel107
 .cc_bottom cc_239
 .cc_top cc_240,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	251
 	.long	.Lxtalabel17
 .cc_bottom cc_240
-.cc_top cc_241,.Lxtalabel107
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	250
-	.long	251
-	.long	.Lxtalabel107
-.cc_bottom cc_241
-.cc_top cc_242,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	250
-	.long	251
-	.long	.Lxtalabel43
-.cc_bottom cc_242
-.cc_top cc_243,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	250
-	.long	251
-	.long	.Lxtalabel2
-.cc_bottom cc_243
-.cc_top cc_244,.Lxtalabel75
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_241,.Lxtalabel75
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	251
 	.long	.Lxtalabel75
-.cc_bottom cc_244
-.cc_top cc_245,.Lxtalabel76
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_241
+.cc_top cc_242,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
-	.long	252
-	.long	253
-	.long	.Lxtalabel76
-.cc_bottom cc_245
-.cc_top cc_246,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	252
-	.long	253
-	.long	.Lxtalabel108
-.cc_bottom cc_246
-.cc_top cc_247,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	252
-	.long	253
+	.long	250
+	.long	251
 	.long	.Lxtalabel41
-.cc_bottom cc_247
-.cc_top cc_248,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_242
+.cc_top cc_243,.Lxtalabel91
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
-	.long	252
-	.long	253
-	.long	.Lxtalabel42
-.cc_bottom cc_248
-.cc_top cc_249,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	250
+	.long	251
+	.long	.Lxtalabel91
+.cc_bottom cc_243
+.cc_top cc_244,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
-	.long	252
-	.long	253
-	.long	.Lxtalabel18
-.cc_bottom cc_249
-.cc_top cc_250,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	252
-	.long	253
+	.long	250
+	.long	251
 	.long	.Lxtalabel43
-.cc_bottom cc_250
-.cc_top cc_251,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	252
-	.long	253
-	.long	.Lxtalabel92
-.cc_bottom cc_251
-.cc_top cc_252,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_244
+.cc_top cc_245,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	252
 	.long	253
 	.long	.Lxtalabel3
+.cc_bottom cc_245
+.cc_top cc_246,.Lxtalabel92
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel92
+.cc_bottom cc_246
+.cc_top cc_247,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel108
+.cc_bottom cc_247
+.cc_top cc_248,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel43
+.cc_bottom cc_248
+.cc_top cc_249,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel41
+.cc_bottom cc_249
+.cc_top cc_250,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel42
+.cc_bottom cc_250
+.cc_top cc_251,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel18
+.cc_bottom cc_251
+.cc_top cc_252,.Lxtalabel76
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	252
+	.long	253
+	.long	.Lxtalabel76
 .cc_bottom cc_252
 .cc_top cc_253,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
 	.long	.Lxtalabel4
 .cc_bottom cc_253
-.cc_top cc_254,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxtalabel109
-.cc_bottom cc_254
-.cc_top cc_255,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxtalabel77
-.cc_bottom cc_255
-.cc_top cc_256,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxtalabel41
-.cc_bottom cc_256
-.cc_top cc_257,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxtalabel42
-.cc_bottom cc_257
-.cc_top cc_258,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_254,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
 	.long	.Lxtalabel43
-.cc_bottom cc_258
-.cc_top cc_259,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxtalabel19
-.cc_bottom cc_259
-.cc_top cc_260,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_254
+.cc_top cc_255,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
 	.long	.Lxtalabel93
+.cc_bottom cc_255
+.cc_top cc_256,.Lxtalabel77
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxtalabel77
+.cc_bottom cc_256
+.cc_top cc_257,.Lxtalabel41
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxtalabel41
+.cc_bottom cc_257
+.cc_top cc_258,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxtalabel19
+.cc_bottom cc_258
+.cc_top cc_259,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxtalabel42
+.cc_bottom cc_259
+.cc_top cc_260,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxtalabel109
 .cc_bottom cc_260
-.cc_top cc_261,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_261,.Lxtalabel42
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	263
+	.long	264
+	.long	.Lxtalabel42
+.cc_bottom cc_261
+.cc_top cc_262,.Lxtalabel43
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	263
+	.long	264
+	.long	.Lxtalabel43
+.cc_bottom cc_262
+.cc_top cc_263,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxtalabel19
-.cc_bottom cc_261
-.cc_top cc_262,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	263
-	.long	264
-	.long	.Lxtalabel109
-.cc_bottom cc_262
-.cc_top cc_263,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	263
-	.long	264
-	.long	.Lxtalabel4
 .cc_bottom cc_263
-.cc_top cc_264,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_264,.Lxtalabel93
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	263
+	.long	264
+	.long	.Lxtalabel93
+.cc_bottom cc_264
+.cc_top cc_265,.Lxtalabel77
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxtalabel77
-.cc_bottom cc_264
-.cc_top cc_265,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	263
-	.long	264
-	.long	.Lxtalabel93
 .cc_bottom cc_265
 .cc_top cc_266,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxtalabel41
 .cc_bottom cc_266
-.cc_top cc_267,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_267,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
-	.long	.Lxtalabel42
+	.long	.Lxtalabel109
 .cc_bottom cc_267
-.cc_top cc_268,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_268,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
-	.long	.Lxtalabel43
+	.long	.Lxtalabel4
 .cc_bottom cc_268
-.cc_top cc_269,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	266
-	.long	266
-	.long	.Lxtalabel7
-.cc_bottom cc_269
-.cc_top cc_270,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	266
-	.long	266
-	.long	.Lxtalabel80
-.cc_bottom cc_270
-.cc_top cc_271,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	266
-	.long	266
-	.long	.Lxtalabel96
-.cc_bottom cc_271
-.cc_top cc_272,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_269,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	266
 	.long	266
 	.long	.Lxtalabel46
-.cc_bottom cc_272
-.cc_top cc_273,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_269
+.cc_top cc_270,.Lxtalabel22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	266
 	.long	266
 	.long	.Lxtalabel22
+.cc_bottom cc_270
+.cc_top cc_271,.Lxtalabel80
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	266
+	.long	266
+	.long	.Lxtalabel80
+.cc_bottom cc_271
+.cc_top cc_272,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	266
+	.long	266
+	.long	.Lxtalabel96
+.cc_bottom cc_272
+.cc_top cc_273,.Lxtalabel7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	266
+	.long	266
+	.long	.Lxtalabel7
 .cc_bottom cc_273
 .cc_top cc_274,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	266
 	.long	266
 	.long	.Lxtalabel112
 .cc_bottom cc_274
 .cc_top cc_275,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	269
 	.long	.Lxtalabel47
 .cc_bottom cc_275
 .cc_top cc_276,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	269
 	.long	.Lxtalabel8
 .cc_bottom cc_276
-.cc_top cc_277,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	267
-	.long	269
-	.long	.Lxtalabel97
-.cc_bottom cc_277
-.cc_top cc_278,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	267
-	.long	269
-	.long	.Lxtalabel81
-.cc_bottom cc_278
-.cc_top cc_279,.Lxtalabel113
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	267
-	.long	269
-	.long	.Lxtalabel113
-.cc_bottom cc_279
-.cc_top cc_280,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_277,.Lxtalabel23
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	267
 	.long	269
 	.long	.Lxtalabel23
+.cc_bottom cc_277
+.cc_top cc_278,.Lxtalabel97
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	267
+	.long	269
+	.long	.Lxtalabel97
+.cc_bottom cc_278
+.cc_top cc_279,.Lxtalabel81
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	267
+	.long	269
+	.long	.Lxtalabel81
+.cc_bottom cc_279
+.cc_top cc_280,.Lxtalabel113
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	267
+	.long	269
+	.long	.Lxtalabel113
 .cc_bottom cc_280
-.cc_top cc_281,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	270
-	.long	271
-	.long	.Lxtalabel46
-.cc_bottom cc_281
-.cc_top cc_282,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	270
-	.long	271
-	.long	.Lxtalabel112
-.cc_bottom cc_282
-.cc_top cc_283,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	270
-	.long	271
-	.long	.Lxtalabel7
-.cc_bottom cc_283
-.cc_top cc_284,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	270
-	.long	271
-	.long	.Lxtalabel96
-.cc_bottom cc_284
-.cc_top cc_285,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	270
-	.long	271
-	.long	.Lxtalabel80
-.cc_bottom cc_285
-.cc_top cc_286,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_281,.Lxtalabel22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	270
 	.long	271
 	.long	.Lxtalabel22
+.cc_bottom cc_281
+.cc_top cc_282,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	270
+	.long	271
+	.long	.Lxtalabel46
+.cc_bottom cc_282
+.cc_top cc_283,.Lxtalabel80
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	270
+	.long	271
+	.long	.Lxtalabel80
+.cc_bottom cc_283
+.cc_top cc_284,.Lxtalabel112
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	270
+	.long	271
+	.long	.Lxtalabel112
+.cc_bottom cc_284
+.cc_top cc_285,.Lxtalabel96
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	270
+	.long	271
+	.long	.Lxtalabel96
+.cc_bottom cc_285
+.cc_top cc_286,.Lxtalabel7
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	270
+	.long	271
+	.long	.Lxtalabel7
 .cc_bottom cc_286
-.cc_top cc_287,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_287,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	273
 	.long	273
-	.long	.Lxtalabel86
+	.long	.Lxtalabel31
 .cc_bottom cc_287
-.cc_top cc_288,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_288,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	273
 	.long	273
-	.long	.Lxtalabel24
+	.long	.Lxtalabel102
 .cc_bottom cc_288
-.cc_top cc_289,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_289,.Lxtalabel9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	273
 	.long	273
-	.long	.Lxtalabel118
+	.long	.Lxtalabel9
 .cc_bottom cc_289
-.cc_top cc_290,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_290,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	273
 	.long	273
-	.long	.Lxtalabel9
+	.long	.Lxtalabel24
 .cc_bottom cc_290
-.cc_top cc_291,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_291,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	273
 	.long	273
-	.long	.Lxtalabel31
+	.long	.Lxtalabel118
 .cc_bottom cc_291
-.cc_top cc_292,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_292,.Lxtalabel86
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	273
 	.long	273
-	.long	.Lxtalabel102
+	.long	.Lxtalabel86
 .cc_bottom cc_292
-.cc_top cc_293,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_293,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	276
 	.long	277
-	.long	.Lxtalabel86
+	.long	.Lxtalabel31
 .cc_bottom cc_293
-.cc_top cc_294,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_294,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	276
 	.long	277
-	.long	.Lxtalabel9
+	.long	.Lxtalabel118
 .cc_bottom cc_294
-.cc_top cc_295,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_295,.Lxtalabel86
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	276
+	.long	277
+	.long	.Lxtalabel86
+.cc_bottom cc_295
+.cc_top cc_296,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	276
 	.long	277
 	.long	.Lxtalabel24
-.cc_bottom cc_295
-.cc_top cc_296,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_296
+.cc_top cc_297,.Lxtalabel9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	276
+	.long	277
+	.long	.Lxtalabel9
+.cc_bottom cc_297
+.cc_top cc_298,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	276
 	.long	277
 	.long	.Lxtalabel102
-.cc_bottom cc_296
-.cc_top cc_297,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	276
-	.long	277
-	.long	.Lxtalabel118
-.cc_bottom cc_297
-.cc_top cc_298,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	276
-	.long	277
-	.long	.Lxtalabel31
 .cc_bottom cc_298
-.cc_top cc_299,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_299,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	279
 	.long	283
-	.long	.Lxtalabel118
+	.long	.Lxtalabel31
 .cc_bottom cc_299
-.cc_top cc_300,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_300,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	279
+	.long	283
+	.long	.Lxtalabel102
+.cc_bottom cc_300
+.cc_top cc_301,.Lxtalabel9
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	279
 	.long	283
 	.long	.Lxtalabel9
-.cc_bottom cc_300
-.cc_top cc_301,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_301
+.cc_top cc_302,.Lxtalabel24
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	279
+	.long	283
+	.long	.Lxtalabel24
+.cc_bottom cc_302
+.cc_top cc_303,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	279
+	.long	283
+	.long	.Lxtalabel118
+.cc_bottom cc_303
+.cc_top cc_304,.Lxtalabel86
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	279
 	.long	283
 	.long	.Lxtalabel86
-.cc_bottom cc_301
-.cc_top cc_302,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	279
-	.long	283
-	.long	.Lxtalabel102
-.cc_bottom cc_302
-.cc_top cc_303,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	279
-	.long	283
-	.long	.Lxtalabel24
-.cc_bottom cc_303
-.cc_top cc_304,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	279
-	.long	283
-	.long	.Lxtalabel31
 .cc_bottom cc_304
-.cc_top cc_305,.Lxtalabel114
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_305,.Lxtalabel34
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	291
-	.long	.Lxtalabel114
+	.long	.Lxtalabel34
 .cc_bottom cc_305
 .cc_top cc_306,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	291
 	.long	.Lxtalabel98
 .cc_bottom cc_306
-.cc_top cc_307,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel82
-.cc_bottom cc_307
-.cc_top cc_308,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_307,.Lxtalabel10
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	291
 	.long	.Lxtalabel10
+.cc_bottom cc_307
+.cc_top cc_308,.Lxtalabel82
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel82
 .cc_bottom cc_308
 .cc_top cc_309,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	291
 	.long	.Lxtalabel25
 .cc_bottom cc_309
-.cc_top cc_310,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_310,.Lxtalabel114
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	291
-	.long	.Lxtalabel34
+	.long	.Lxtalabel114
 .cc_bottom cc_310
-.cc_top cc_311,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_311,.Lxtalabel25
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel25
+.cc_bottom cc_311
+.cc_top cc_312,.Lxtalabel82
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel82
-.cc_bottom cc_311
-.cc_top cc_312,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_312
+.cc_top cc_313,.Lxtalabel98
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel98
-.cc_bottom cc_312
-.cc_top cc_313,.Lxtalabel114
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel114
 .cc_bottom cc_313
 .cc_top cc_314,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel10
 .cc_bottom cc_314
-.cc_top cc_315,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_315,.Lxtalabel114
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	292
+	.long	292
+	.long	.Lxtalabel114
+.cc_bottom cc_315
+.cc_top cc_316,.Lxtalabel34
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	292
 	.long	292
 	.long	.Lxtalabel34
-.cc_bottom cc_315
-.cc_top cc_316,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	292
-	.long	292
-	.long	.Lxtalabel25
 .cc_bottom cc_316
-.cc_top cc_317,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	295
-	.long	.Lxtalabel11
-.cc_bottom cc_317
-.cc_top cc_318,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	295
-	.long	.Lxtalabel115
-.cc_bottom cc_318
-.cc_top cc_319,.Lxtalabel35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_317,.Lxtalabel35
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
 	.long	.Lxtalabel35
-.cc_bottom cc_319
-.cc_top cc_320,.Lxtalabel26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_317
+.cc_top cc_318,.Lxtalabel11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
-	.long	.Lxtalabel26
-.cc_bottom cc_320
-.cc_top cc_321,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	.Lxtalabel11
+.cc_bottom cc_318
+.cc_top cc_319,.Lxtalabel83
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
 	.long	.Lxtalabel83
-.cc_bottom cc_321
-.cc_top cc_322,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_319
+.cc_top cc_320,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	295
+	.long	.Lxtalabel115
+.cc_bottom cc_320
+.cc_top cc_321,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
 	.long	.Lxtalabel99
+.cc_bottom cc_321
+.cc_top cc_322,.Lxtalabel26
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	295
+	.long	.Lxtalabel26
 .cc_bottom cc_322
-.cc_top cc_323,.Lxtalabel100
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	296
-	.long	296
-	.long	.Lxtalabel100
-.cc_bottom cc_323
-.cc_top cc_324,.Lxtalabel116
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	296
-	.long	296
-	.long	.Lxtalabel116
-.cc_bottom cc_324
-.cc_top cc_325,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_323,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel12
-.cc_bottom cc_325
-.cc_top cc_326,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_323
+.cc_top cc_324,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel36
-.cc_bottom cc_326
-.cc_top cc_327,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_324
+.cc_top cc_325,.Lxtalabel116
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	296
+	.long	296
+	.long	.Lxtalabel116
+.cc_bottom cc_325
+.cc_top cc_326,.Lxtalabel27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel27
+.cc_bottom cc_326
+.cc_top cc_327,.Lxtalabel100
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	296
+	.long	296
+	.long	.Lxtalabel100
 .cc_bottom cc_327
 .cc_top cc_328,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel84
 .cc_bottom cc_328
-.cc_top cc_329,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel101
-.cc_bottom cc_329
-.cc_top cc_330,.Lxtalabel117
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	297
-	.long	299
-	.long	.Lxtalabel117
-.cc_bottom cc_330
-.cc_top cc_331,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_329,.Lxtalabel37
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	297
 	.long	299
 	.long	.Lxtalabel37
-.cc_bottom cc_331
-.cc_top cc_332,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_329
+.cc_top cc_330,.Lxtalabel13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	297
 	.long	299
 	.long	.Lxtalabel13
+.cc_bottom cc_330
+.cc_top cc_331,.Lxtalabel101
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel101
+.cc_bottom cc_331
+.cc_top cc_332,.Lxtalabel117
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	297
+	.long	299
+	.long	.Lxtalabel117
 .cc_bottom cc_332
 .cc_top cc_333,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	297
 	.long	299
 	.long	.Lxtalabel28
 .cc_bottom cc_333
 .cc_top cc_334,.Lxtalabel85
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	297
 	.long	299
 	.long	.Lxtalabel85
 .cc_bottom cc_334
-.cc_top cc_335,.Lxtalabel100
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_335,.Lxtalabel84
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	300
 	.long	301
-	.long	.Lxtalabel100
+	.long	.Lxtalabel84
 .cc_bottom cc_335
-.cc_top cc_336,.Lxtalabel116
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_336,.Lxtalabel27
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	300
 	.long	301
-	.long	.Lxtalabel116
+	.long	.Lxtalabel27
 .cc_bottom cc_336
 .cc_top cc_337,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	300
 	.long	301
 	.long	.Lxtalabel36
 .cc_bottom cc_337
-.cc_top cc_338,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_338,.Lxtalabel100
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	300
 	.long	301
-	.long	.Lxtalabel27
+	.long	.Lxtalabel100
 .cc_bottom cc_338
-.cc_top cc_339,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	300
-	.long	301
-	.long	.Lxtalabel84
-.cc_bottom cc_339
-.cc_top cc_340,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_339,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	300
 	.long	301
 	.long	.Lxtalabel12
+.cc_bottom cc_339
+.cc_top cc_340,.Lxtalabel116
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	300
+	.long	301
+	.long	.Lxtalabel116
 .cc_bottom cc_340
-.cc_top cc_341,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_341,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	302
 	.long	303
-	.long	.Lxtalabel14
+	.long	.Lxtalabel103
 .cc_bottom cc_341
 .cc_top cc_342,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	302
 	.long	303
 	.long	.Lxtalabel38
 .cc_bottom cc_342
-.cc_top cc_343,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_343,.Lxtalabel87
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	302
 	.long	303
-	.long	.Lxtalabel103
+	.long	.Lxtalabel87
 .cc_bottom cc_343
-.cc_top cc_344,.Lxtalabel119
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_344,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	302
 	.long	303
-	.long	.Lxtalabel119
+	.long	.Lxtalabel14
 .cc_bottom cc_344
-.cc_top cc_345,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_345,.Lxtalabel29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	302
 	.long	303
-	.long	.Lxtalabel87
+	.long	.Lxtalabel29
 .cc_bottom cc_345
-.cc_top cc_346,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_346,.Lxtalabel119
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	302
 	.long	303
-	.long	.Lxtalabel29
+	.long	.Lxtalabel119
 .cc_bottom cc_346
-.cc_top cc_347,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_347,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel87
+	.long	.Lxtalabel103
 .cc_bottom cc_347
-.cc_top cc_348,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel103
-.cc_bottom cc_348
-.cc_top cc_349,.Lxtalabel119
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	306
-	.long	307
-	.long	.Lxtalabel119
-.cc_bottom cc_349
-.cc_top cc_350,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_348,.Lxtalabel29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel29
-.cc_bottom cc_350
-.cc_top cc_351,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_348
+.cc_top cc_349,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	306
+	.long	307
+	.long	.Lxtalabel38
+.cc_bottom cc_349
+.cc_top cc_350,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	306
 	.long	307
 	.long	.Lxtalabel14
-.cc_bottom cc_351
-.cc_top cc_352,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_350
+.cc_top cc_351,.Lxtalabel87
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	306
 	.long	307
-	.long	.Lxtalabel38
-.cc_bottom cc_352
-.cc_top cc_353,.Lxtalabel119
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	.Lxtalabel87
+.cc_bottom cc_351
+.cc_top cc_352,.Lxtalabel119
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
-	.long	309
-	.long	309
+	.long	306
+	.long	307
 	.long	.Lxtalabel119
-.cc_bottom cc_353
-.cc_top cc_354,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_352
+.cc_top cc_353,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	309
 	.long	309
-	.long	.Lxtalabel38
+	.long	.Lxtalabel103
+.cc_bottom cc_353
+.cc_top cc_354,.Lxtalabel29
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel29
 .cc_bottom cc_354
-.cc_top cc_355,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_355,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	309
+	.long	309
+	.long	.Lxtalabel14
+.cc_bottom cc_355
+.cc_top cc_356,.Lxtalabel87
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	309
 	.long	309
 	.long	.Lxtalabel87
-.cc_bottom cc_355
-.cc_top cc_356,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	309
-	.long	309
-	.long	.Lxtalabel103
 .cc_bottom cc_356
-.cc_top cc_357,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_357,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	309
 	.long	309
-	.long	.Lxtalabel29
+	.long	.Lxtalabel38
 .cc_bottom cc_357
-.cc_top cc_358,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_358,.Lxtalabel119
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	309
 	.long	309
-	.long	.Lxtalabel14
+	.long	.Lxtalabel119
 .cc_bottom cc_358
 .Lentries_end5:
 	.section	.xtalooplabeltable,"",@progbits
 .Lentries_start6:
 	.long	.Lentries_end7-.Lentries_start6
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_359,.Lxta.loop_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	70
 	.long	71
 	.long	.Lxta.loop_labels9
 .cc_bottom cc_359
 .cc_top cc_360,.Lxta.loop_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	203
 	.long	205
 	.long	.Lxta.loop_labels10
 .cc_bottom cc_360
 .cc_top cc_361,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_361
-.cc_top cc_362,.Lxta.loop_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	241
-	.long	243
-	.long	.Lxta.loop_labels18
-.cc_bottom cc_362
-.cc_top cc_363,.Lxta.loop_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	241
-	.long	243
-	.long	.Lxta.loop_labels15
-.cc_bottom cc_363
-.cc_top cc_364,.Lxta.loop_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_362,.Lxta.loop_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
 	.long	.Lxta.loop_labels12
-.cc_bottom cc_364
-.cc_top cc_365,.Lxta.loop_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_362
+.cc_top cc_363,.Lxta.loop_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
 	.long	.Lxta.loop_labels8
-.cc_bottom cc_365
-.cc_top cc_366,.Lxta.loop_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_363
+.cc_top cc_364,.Lxta.loop_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	241
 	.long	243
 	.long	.Lxta.loop_labels4
-.cc_bottom cc_366
-.cc_top cc_367,.Lxta.loop_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_364
+.cc_top cc_365,.Lxta.loop_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxta.loop_labels3
-.cc_bottom cc_367
-.cc_top cc_368,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.long	241
+	.long	243
+	.long	.Lxta.loop_labels18
+.cc_bottom cc_365
+.cc_top cc_366,.Lxta.loop_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	241
+	.long	243
+	.long	.Lxta.loop_labels15
+.cc_bottom cc_366
+.cc_top cc_367,.Lxta.loop_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	246
 	.long	.Lxta.loop_labels0
+.cc_bottom cc_367
+.cc_top cc_368,.Lxta.loop_labels3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	246
+	.long	.Lxta.loop_labels3
 .cc_bottom cc_368
-.cc_top cc_369,.Lxta.loop_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxta.loop_labels17
-.cc_bottom cc_369
-.cc_top cc_370,.Lxta.loop_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	244
-	.long	246
-	.long	.Lxta.loop_labels14
-.cc_bottom cc_370
-.cc_top cc_371,.Lxta.loop_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_369,.Lxta.loop_labels11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	246
 	.long	.Lxta.loop_labels11
+.cc_bottom cc_369
+.cc_top cc_370,.Lxta.loop_labels17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	246
+	.long	.Lxta.loop_labels17
+.cc_bottom cc_370
+.cc_top cc_371,.Lxta.loop_labels14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	244
+	.long	246
+	.long	.Lxta.loop_labels14
 .cc_bottom cc_371
 .cc_top cc_372,.Lxta.loop_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	244
 	.long	246
 	.long	.Lxta.loop_labels7
 .cc_bottom cc_372
-.cc_top cc_373,.Lxta.loop_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxta.loop_labels18
-.cc_bottom cc_373
-.cc_top cc_374,.Lxta.loop_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxta.loop_labels4
-.cc_bottom cc_374
-.cc_top cc_375,.Lxta.loop_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxta.loop_labels15
-.cc_bottom cc_375
-.cc_top cc_376,.Lxta.loop_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	247
-	.long	247
-	.long	.Lxta.loop_labels8
-.cc_bottom cc_376
-.cc_top cc_377,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_373,.Lxta.loop_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	247
 	.long	247
 	.long	.Lxta.loop_labels1
+.cc_bottom cc_373
+.cc_top cc_374,.Lxta.loop_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxta.loop_labels8
+.cc_bottom cc_374
+.cc_top cc_375,.Lxta.loop_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxta.loop_labels18
+.cc_bottom cc_375
+.cc_top cc_376,.Lxta.loop_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxta.loop_labels4
+.cc_bottom cc_376
+.cc_top cc_377,.Lxta.loop_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	247
+	.long	247
+	.long	.Lxta.loop_labels15
 .cc_bottom cc_377
 .cc_top cc_378,.Lxta.loop_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	247
 	.long	247
 	.long	.Lxta.loop_labels12
 .cc_bottom cc_378
-.cc_top cc_379,.Lxta.loop_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_379,.Lxta.loop_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	250
+	.long	253
+	.long	.Lxta.loop_labels1
+.cc_bottom cc_379
+.cc_top cc_380,.Lxta.loop_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	253
 	.long	.Lxta.loop_labels12
-.cc_bottom cc_379
-.cc_top cc_380,.Lxta.loop_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_380
+.cc_top cc_381,.Lxta.loop_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	253
 	.long	.Lxta.loop_labels18
-.cc_bottom cc_380
-.cc_top cc_381,.Lxta.loop_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	250
-	.long	253
-	.long	.Lxta.loop_labels15
 .cc_bottom cc_381
 .cc_top cc_382,.Lxta.loop_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	253
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_382
-.cc_top cc_383,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	250
-	.long	253
-	.long	.Lxta.loop_labels1
-.cc_bottom cc_383
-.cc_top cc_384,.Lxta.loop_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_383,.Lxta.loop_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	250
 	.long	253
 	.long	.Lxta.loop_labels8
+.cc_bottom cc_383
+.cc_top cc_384,.Lxta.loop_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	250
+	.long	253
+	.long	.Lxta.loop_labels15
 .cc_bottom cc_384
-.cc_top cc_385,.Lxta.loop_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_385,.Lxta.loop_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
-	.long	.Lxta.loop_labels4
+	.long	.Lxta.loop_labels1
 .cc_bottom cc_385
-.cc_top cc_386,.Lxta.loop_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_386,.Lxta.loop_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxta.loop_labels12
+.cc_bottom cc_386
+.cc_top cc_387,.Lxta.loop_labels15
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
 	.long	.Lxta.loop_labels15
-.cc_bottom cc_386
-.cc_top cc_387,.Lxta.loop_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_387
+.cc_top cc_388,.Lxta.loop_labels4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	255
+	.long	260
+	.long	.Lxta.loop_labels4
+.cc_bottom cc_388
+.cc_top cc_389,.Lxta.loop_labels8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
 	.long	.Lxta.loop_labels8
-.cc_bottom cc_387
-.cc_top cc_388,.Lxta.loop_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_389
+.cc_top cc_390,.Lxta.loop_labels18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	255
 	.long	260
 	.long	.Lxta.loop_labels18
-.cc_bottom cc_388
-.cc_top cc_389,.Lxta.loop_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxta.loop_labels12
-.cc_bottom cc_389
-.cc_top cc_390,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	255
-	.long	260
-	.long	.Lxta.loop_labels1
 .cc_bottom cc_390
-.cc_top cc_391,.Lxta.loop_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_391,.Lxta.loop_labels1
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
-	.long	.Lxta.loop_labels12
+	.long	.Lxta.loop_labels1
 .cc_bottom cc_391
 .cc_top cc_392,.Lxta.loop_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxta.loop_labels8
 .cc_bottom cc_392
-.cc_top cc_393,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_393,.Lxta.loop_labels12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
-	.long	.Lxta.loop_labels1
+	.long	.Lxta.loop_labels12
 .cc_bottom cc_393
 .cc_top cc_394,.Lxta.loop_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxta.loop_labels4
 .cc_bottom cc_394
 .cc_top cc_395,.Lxta.loop_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxta.loop_labels15
 .cc_bottom cc_395
 .cc_top cc_396,.Lxta.loop_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	263
 	.long	264
 	.long	.Lxta.loop_labels18
 .cc_bottom cc_396
 .cc_top cc_397,.Lxta.loop_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	292
 	.long	.Lxta.loop_labels13
 .cc_bottom cc_397
-.cc_top cc_398,.Lxta.loop_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_398,.Lxta.loop_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	291
+	.long	292
+	.long	.Lxta.loop_labels6
+.cc_bottom cc_398
+.cc_top cc_399,.Lxta.loop_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	292
 	.long	.Lxta.loop_labels5
-.cc_bottom cc_398
-.cc_top cc_399,.Lxta.loop_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	291
-	.long	292
-	.long	.Lxta.loop_labels2
 .cc_bottom cc_399
 .cc_top cc_400,.Lxta.loop_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	292
 	.long	.Lxta.loop_labels16
 .cc_bottom cc_400
-.cc_top cc_401,.Lxta.loop_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_401,.Lxta.loop_labels2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	292
-	.long	.Lxta.loop_labels6
+	.long	.Lxta.loop_labels2
 .cc_bottom cc_401
 .cc_top cc_402,.Lxta.loop_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	291
 	.long	292
 	.long	.Lxta.loop_labels19
 .cc_bottom cc_402
-.cc_top cc_403,.Lxta.loop_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	295
-	.long	.Lxta.loop_labels19
-.cc_bottom cc_403
-.cc_top cc_404,.Lxta.loop_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	295
-	.long	.Lxta.loop_labels16
-.cc_bottom cc_404
-.cc_top cc_405,.Lxta.loop_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
-	.byte	0
-	.long	294
-	.long	295
-	.long	.Lxta.loop_labels13
-.cc_bottom cc_405
-.cc_top cc_406,.Lxta.loop_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_top cc_403,.Lxta.loop_labels6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
 	.long	.Lxta.loop_labels6
-.cc_bottom cc_406
-.cc_top cc_407,.Lxta.loop_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_403
+.cc_top cc_404,.Lxta.loop_labels13
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	295
+	.long	.Lxta.loop_labels13
+.cc_bottom cc_404
+.cc_top cc_405,.Lxta.loop_labels5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
 	.long	.Lxta.loop_labels5
-.cc_bottom cc_407
-.cc_top cc_408,.Lxta.loop_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+.cc_bottom cc_405
+.cc_top cc_406,.Lxta.loop_labels16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	295
+	.long	.Lxta.loop_labels16
+.cc_bottom cc_406
+.cc_top cc_407,.Lxta.loop_labels2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
 	.byte	0
 	.long	294
 	.long	295
 	.long	.Lxta.loop_labels2
+.cc_bottom cc_407
+.cc_top cc_408,.Lxta.loop_labels19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc"
+	.byte	0
+	.long	294
+	.long	295
+	.long	.Lxta.loop_labels19
 .cc_bottom cc_408
 .Lentries_end7:
 	.section	.trap_info,"",@progbits
@@ -22454,7 +22454,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 	.long	1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str0:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_0,.Ltrap_info0
 	.long	.Ltrap_info0
@@ -22462,7 +22462,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_0
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_1,.Ltrap_info1
 	.long	.Ltrap_info1
@@ -22470,7 +22470,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_2,.Ltrap_info2
 	.long	.Ltrap_info2
@@ -22478,7 +22478,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_2
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str3:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_3,.Ltrap_info3
 	.long	.Ltrap_info3
@@ -22486,7 +22486,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_3
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str4:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_4,.Ltrap_info4
 	.long	.Ltrap_info4
@@ -22494,7 +22494,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_4
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str5:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_5,.Ltrap_info5
 	.long	.Ltrap_info5
@@ -22502,7 +22502,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_5
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str6:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:281:9: error: out of bounds array access\n        c[i].write(uint8_t device, uint8_t buf[n], size_t n,\n        ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:281:9: error: out of bounds array access\n        c[i].write(uint8_t device, uint8_t buf[n], size_t n,\n        ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_6,.Ltrap_info6
 	.long	.Ltrap_info6
@@ -22510,7 +22510,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_6
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str7:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_7,.Ltrap_info7
 	.long	.Ltrap_info7
@@ -22518,7 +22518,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_7
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str8:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_8,.Ltrap_info8
 	.long	.Ltrap_info8
@@ -22526,7 +22526,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_8
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str9:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:281:9: error: out of bounds array access\n        c[i].write(uint8_t device, uint8_t buf[n], size_t n,\n        ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:281:9: error: out of bounds array access\n        c[i].write(uint8_t device, uint8_t buf[n], size_t n,\n        ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_9,.Ltrap_info9
 	.long	.Ltrap_info9
@@ -22534,7 +22534,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_9
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str10:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_10,.Ltrap_info10
 	.long	.Ltrap_info10
@@ -22542,7 +22542,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_10
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str11:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:232:7: error: out of bounds array access\n      c[i].read(uint8_t device, uint8_t buf[m], size_t m,\n      ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_11,.Ltrap_info11
 	.long	.Ltrap_info11
@@ -22550,7 +22550,7 @@ i2c_master_single_port.select.case.0:   # @i2c_master_single_port.select.case.0
 .cc_bottom cc_trapinfo_11
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str12:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:281:9: error: out of bounds array access\n        c[i].write(uint8_t device, uint8_t buf[n], size_t n,\n        ^~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_i2c/src/i2c_master_single_port.xc:281:9: error: out of bounds array access\n        c[i].write(uint8_t device, uint8_t buf[n], size_t n,\n        ^~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_12,.Ltrap_info12
 	.long	.Ltrap_info12

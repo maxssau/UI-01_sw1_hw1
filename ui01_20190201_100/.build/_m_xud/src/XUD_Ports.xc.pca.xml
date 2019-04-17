@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc">
+<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc">
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_InPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_Out" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>

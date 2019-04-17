@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc">
+<preCompilationAnalysis file="C:/Projects/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc">
 <fDef name="ConfigAudioPorts" global="true" noreturn="false" doNotSpecialize="false" numParams="8"/>
 <fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
 <fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>

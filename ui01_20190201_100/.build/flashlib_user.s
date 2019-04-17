@@ -14,9 +14,9 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h"
-	.file	2 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h"
-	.file	3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/flashlib_user.c"
+	.file	1 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\flash.h"
+	.file	2 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\flashlib.h"
+	.file	3 "C:/Projects/UI-01_sw1_hw1/module_usb_audio\\flashlib_user.c"
 	.text
 	.globl	flash_cmd_enable_ports
 	.align	4
@@ -283,11 +283,11 @@ p_flash:
 .Ldebug_end1:
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+.asciiz"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/flashlib_user.c"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio\\flashlib_user.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"p_flash"
 .Linfo_string4:
@@ -627,7 +627,7 @@ p_flash:
 .LpubTypes_end0:
 	.cfi_sections .debug_frame
 
-	.ident	"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
+	.ident	"XMOS-25550-Sep-30-2017 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 	.typestring flash_cmd_enable_ports, "f{si}()"
 	.typestring fl_connect, "f{si}(p(s(){m(spiMISO){ui},m(spiSS){ui},m(spiCLK){ui},m(spiMOSI){ui},m(spiClkblk){ui}}))"
 	.typestring flash_cmd_disable_ports, "f{si}()"

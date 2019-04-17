@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -35,36 +35,36 @@
 	.set usage.anon.23,0
 	.set usage.anon.24,0
 	.set usage.anon.25,0
-	.globread usage.anon.25,volsIn,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~"
-	.globread usage.anon.25,volsIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:33: note: object used here\n                 unsigned vol = volsIn[channel] == 0x8000 ? 0 : db_to_mult(volsIn[channel], 8, 29);\n                                ^~~~~~~~~~~~~~~"
-	.globread usage.anon.25,volsOut,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~"
-	.globread usage.anon.25,volsOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:32: note: object used here\n                unsigned vol = volsOut[channel] == 0x8000 ? 0 : db_to_mult(volsOut[channel], 8, 29);\n                               ^~~~~~~~~~~~~~~~"
-	.globread usage.anon.25,multIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:211:39: note: object used here\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                                      ^~~~~~"
-	.globread usage.anon.25,multOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:208:40: note: object used here\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                                       ^~~~~~~"
-	.globread usage.anon.24,mutesIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:67: note: object used here\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                                  ^~~~~~~~~~~~~~~~"
-	.globread usage.anon.22,mutesIn,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:53: note: object used here (bytes 0..4)\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                    ^~~~~~~~~~"
-	.globread usage.anon.21,mutesOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:68: note: object used here\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                                   ^~~~~~~~~~~~~~~~~"
-	.globread usage.anon.19,mutesOut,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:53: note: object used here (bytes 0..4)\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                    ^~~~~~~~~~~"
-	.globread usage.anon.18,volsIn,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~"
-	.globread usage.anon.18,volsIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:36: note: object used here\n                    unsigned vol = volsIn[i] == 0x8000 ? 0 : db_to_mult(volsIn[i], 8, 29);\n                                   ^~~~~~~~~"
-	.globread usage.anon.18,volsOut,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~"
-	.globread usage.anon.18,volsOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:36: note: object used here\n                    unsigned vol = volsOut[i] == 0x8000 ? 0 : db_to_mult(volsOut[i], 8, 29);\n                                   ^~~~~~~~~~"
-	.globread usage.anon.18,multIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:142:39: note: object used here\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                                      ^~~~~~"
-	.globread usage.anon.18,multOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:139:40: note: object used here\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                                       ^~~~~~~"
-	.globread usage.anon.17,mutesIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:71: note: object used here\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                                      ^~~~~~~~~~"
-	.globread usage.anon.15,mutesIn,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:57: note: object used here (bytes 0..4)\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                        ^~~~~~~~~~"
-	.globread usage.anon.14,mutesOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:72: note: object used here\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                                       ^~~~~~~~~~~"
-	.globread usage.anon.12,mutesOut,0,4,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:57: note: object used here (bytes 0..4)\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                        ^~~~~~~~~~~"
-	.globwrite AudioClassRequests_1,mutesIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:33: note: object used here\n                                mutesIn[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioClassRequests_1,volsIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:33: note: object used here\n                                volsIn[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioClassRequests_1,mutesOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:33: note: object used here\n                                mutesOut[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioClassRequests_1,volsOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:33: note: object used here\n                                volsOut[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioEndpointRequests_1,g_curSamFreq,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1118:33: note: object used here\n                                g_curSamFreq = newSampleRate;\n                                ^~~~~~~~~~~~"
-	.globwrite AudioClassRequests_2,g_curSamFreq,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:325:41: note: object used here\n                                        g_curSamFreq = newSampleRate;\n                                        ^~~~~~~~~~~~"
-	.globwrite AudioClassRequests_2,mutesIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:41: note: object used here\n                                        mutesIn[ sp.wValue&0xff ] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioClassRequests_2,volsIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:41: note: object used here\n                                        volsIn[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioClassRequests_2,mutesOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:41: note: object used here\n                                        mutesOut[sp.wValue & 0xff] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.globwrite AudioClassRequests_2,volsOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:41: note: object used here\n                                        volsOut[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globread usage.anon.25,volsIn,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~"
+	.globread usage.anon.25,volsIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:33: note: object used here\n                 unsigned vol = volsIn[channel] == 0x8000 ? 0 : db_to_mult(volsIn[channel], 8, 29);\n                                ^~~~~~~~~~~~~~~"
+	.globread usage.anon.25,volsOut,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~"
+	.globread usage.anon.25,volsOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:32: note: object used here\n                unsigned vol = volsOut[channel] == 0x8000 ? 0 : db_to_mult(volsOut[channel], 8, 29);\n                               ^~~~~~~~~~~~~~~~"
+	.globread usage.anon.25,multIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:211:39: note: object used here\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                                      ^~~~~~"
+	.globread usage.anon.25,multOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:208:40: note: object used here\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                                       ^~~~~~~"
+	.globread usage.anon.24,mutesIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:67: note: object used here\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                                  ^~~~~~~~~~~~~~~~"
+	.globread usage.anon.22,mutesIn,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:53: note: object used here (bytes 0..4)\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                    ^~~~~~~~~~"
+	.globread usage.anon.21,mutesOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:68: note: object used here\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                                   ^~~~~~~~~~~~~~~~~"
+	.globread usage.anon.19,mutesOut,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:53: note: object used here (bytes 0..4)\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                    ^~~~~~~~~~~"
+	.globread usage.anon.18,volsIn,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~"
+	.globread usage.anon.18,volsIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:36: note: object used here\n                    unsigned vol = volsIn[i] == 0x8000 ? 0 : db_to_mult(volsIn[i], 8, 29);\n                                   ^~~~~~~~~"
+	.globread usage.anon.18,volsOut,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:39: note: object used here (bytes 0..4)\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~"
+	.globread usage.anon.18,volsOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:36: note: object used here\n                    unsigned vol = volsOut[i] == 0x8000 ? 0 : db_to_mult(volsOut[i], 8, 29);\n                                   ^~~~~~~~~~"
+	.globread usage.anon.18,multIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:142:39: note: object used here\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                                      ^~~~~~"
+	.globread usage.anon.18,multOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:139:40: note: object used here\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                                       ^~~~~~~"
+	.globread usage.anon.17,mutesIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:71: note: object used here\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                                      ^~~~~~~~~~"
+	.globread usage.anon.15,mutesIn,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:57: note: object used here (bytes 0..4)\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                        ^~~~~~~~~~"
+	.globread usage.anon.14,mutesOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:72: note: object used here\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                                       ^~~~~~~~~~~"
+	.globread usage.anon.12,mutesOut,0,4,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:57: note: object used here (bytes 0..4)\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                        ^~~~~~~~~~~"
+	.globwrite AudioClassRequests_1,mutesIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:33: note: object used here\n                                mutesIn[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioClassRequests_1,volsIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:33: note: object used here\n                                volsIn[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioClassRequests_1,mutesOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:33: note: object used here\n                                mutesOut[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioClassRequests_1,volsOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:33: note: object used here\n                                volsOut[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioEndpointRequests_1,g_curSamFreq,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1118:33: note: object used here\n                                g_curSamFreq = newSampleRate;\n                                ^~~~~~~~~~~~"
+	.globwrite AudioClassRequests_2,g_curSamFreq,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:325:41: note: object used here\n                                        g_curSamFreq = newSampleRate;\n                                        ^~~~~~~~~~~~"
+	.globwrite AudioClassRequests_2,mutesIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:41: note: object used here\n                                        mutesIn[ sp.wValue&0xff ] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioClassRequests_2,volsIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:41: note: object used here\n                                        volsIn[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioClassRequests_2,mutesOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:41: note: object used here\n                                        mutesOut[sp.wValue & 0xff] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.globwrite AudioClassRequests_2,volsOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:41: note: object used here\n                                        volsOut[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~"
 	.call AudioClassRequests_1,usage.anon.25
 	.call AudioClassRequests_1,XUD_GetBuffer
 	.call AudioClassRequests_1,XUD_DoSetRequestStatus
@@ -106,14 +106,14 @@
 	.call usage.anon.2,delay_ticks_longlong
 	.call usage.anon.1,delay_ticks_longlong
 	.call usage.anon.0,delay_ticks_longlong
-	.par usage.anon.23,usage.anon.24,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.11,usage.anon.22,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.20,usage.anon.21,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.11,usage.anon.19,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.16,usage.anon.17,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.11,usage.anon.15,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.13,usage.anon.14,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-	.par usage.anon.11,usage.anon.12,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.23,usage.anon.24,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.11,usage.anon.22,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.20,usage.anon.21,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.11,usage.anon.19,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:21: error: use of `%s\' causes an ambiguous evaluation\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.16,usage.anon.17,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.11,usage.anon.15,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.13,usage.anon.14,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	.par usage.anon.11,usage.anon.12,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:25: error: use of `%s\' causes an ambiguous evaluation\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	.set usage.anon.3.locnoside, 0
 	.set usage.anon.6.locnoside, 0
 	.set usage.anon.7.locnoside, 0
@@ -130,10 +130,10 @@
 	.set AudioClassRequests_2.locnoglobalaccess, 0
 	.set AudioEndpointRequests_1.locnoglobalaccess, 0
 	.set AudioClassRequests_1.locnoglobalaccess, 0
-	.globpassesref usage.anon.7, multIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:211:23: error: call to `array_to_xc_ptr\' in `updateVol\' makes alias of global \'multIn\'\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                      ^~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.7, multOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:208:24: error: call to `array_to_xc_ptr\' in `updateVol\' makes alias of global \'multOut\'\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                       ^~~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.7, multIn,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:142:23: error: call to `array_to_xc_ptr\' in `updateMasterVol\' makes alias of global \'multIn\'\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                      ^~~~~~~~~~~~~~~~~~~~~~~"
-	.globpassesref usage.anon.7, multOut,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:139:24: error: call to `array_to_xc_ptr\' in `updateMasterVol\' makes alias of global \'multOut\'\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                       ^~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.7, multIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:211:23: error: call to `array_to_xc_ptr\' in `updateVol\' makes alias of global \'multIn\'\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                      ^~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.7, multOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:208:24: error: call to `array_to_xc_ptr\' in `updateVol\' makes alias of global \'multOut\'\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                       ^~~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.7, multIn,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:142:23: error: call to `array_to_xc_ptr\' in `updateMasterVol\' makes alias of global \'multIn\'\n    xc_ptr p_multIn = array_to_xc_ptr(multIn);\n                      ^~~~~~~~~~~~~~~~~~~~~~~"
+	.globpassesref usage.anon.7, multOut,"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:139:24: error: call to `array_to_xc_ptr\' in `updateMasterVol\' makes alias of global \'multOut\'\n    xc_ptr p_multOut = array_to_xc_ptr(multOut);\n                       ^~~~~~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -150,15 +150,15 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0\\audiorequests.xc"
+	.file	2 "C:/Projects/UI-01_sw1_hw1/module_xud/include\\xud.h"
 	.text
 	.align	4
 	.type	storeInt,@function
 	.cc_top storeInt.function,storeInt
 storeInt:                               # @storeInt
 .Lfunc_begin0:
-	.loc	1 57 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:57:0
+	.loc	1 57 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:57:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -175,7 +175,7 @@ storeInt:                               # @storeInt
 	.cfi_def_cfa_offset 8
 .Ltmp1:
 	.cfi_offset 4, -8
-	.loc	1 58 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
+	.loc	1 58 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
 .Ltmp2:
 	{
 		add r11, r1, 3
@@ -185,7 +185,7 @@ storeInt:                               # @storeInt
 		ldc r3, 9
 		nop
 	}
-	.loc	1 58 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
+	.loc	1 58 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
 	{
 		shr r4, r11, r3
 		nop
@@ -195,19 +195,19 @@ storeInt:                               # @storeInt
 		ecallt r4
 		nop
 	}
-	.loc	1 58 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
+	.loc	1 58 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
 	{
 		shr r4, r2, 24
 		nop
 	}
-	.loc	1 58 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
+	.loc	1 58 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:0
 	st8 r4, r0[r11]
-	.loc	1 59 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
+	.loc	1 59 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
 	{
 		add r11, r1, 2
 		nop
 	}
-	.loc	1 59 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
+	.loc	1 59 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
 	{
 		shr r4, r11, r3
 		nop
@@ -217,19 +217,19 @@ storeInt:                               # @storeInt
 		ecallt r4
 		nop
 	}
-	.loc	1 59 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
+	.loc	1 59 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
 	{
 		shr r4, r2, 16
 		nop
 	}
-	.loc	1 59 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
+	.loc	1 59 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:0
 	st8 r4, r0[r11]
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
 	{
 		add r11, r1, 1
 		nop
 	}
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
 	{
 		shr r4, r11, r3
 		nop
@@ -239,14 +239,14 @@ storeInt:                               # @storeInt
 		ecallt r4
 		nop
 	}
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
 	{
 		shr r4, r2, 8
 		nop
 	}
-	.loc	1 60 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
+	.loc	1 60 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:0
 	st8 r4, r0[r11]
-	.loc	1 61 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:61:0
+	.loc	1 61 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:61:0
 	{
 		shr r3, r1, r3
 		nop
@@ -256,7 +256,7 @@ storeInt:                               # @storeInt
 		ecallt r3
 		nop
 	}
-	.loc	1 61 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:61:0
+	.loc	1 61 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:61:0
 	st8 r2, r0[r1]
 	{
 		ldaw sp, sp[2]
@@ -283,7 +283,7 @@ storeInt:                               # @storeInt
 	.cc_top storeFreq.function,storeFreq
 storeFreq:                              # @storeFreq
 .Lfunc_begin1:
-	.loc	1 72 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:72:0
+	.loc	1 72 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:72:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -314,7 +314,7 @@ storeFreq:                              # @storeFreq
 		mov r6, r0
 		ldw r7, r4[0]
 	}
-	.loc	1 73 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:73:0
+	.loc	1 73 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:73:0
 .Ltmp11:
 	{
 		mov r1, r7
@@ -322,31 +322,31 @@ storeFreq:                              # @storeFreq
 	}
 .Lxta.call_labels0:
 	bl storeInt
-	.loc	1 74 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:74:0
+	.loc	1 74 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:74:0
 	{
 		add r1, r7, 4
 		mov r0, r6
 	}
-	.loc	1 75 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:75:0
+	.loc	1 75 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:75:0
 	{
 		mov r2, r5
 		nop
 	}
 .Lxta.call_labels1:
 	bl storeInt
-	.loc	1 76 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:76:0
+	.loc	1 76 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:76:0
 	{
 		add r1, r7, 8
 		ldc r2, 0
 	}
-	.loc	1 77 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:77:0
+	.loc	1 77 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:77:0
 	{
 		mov r0, r6
 		nop
 	}
 .Lxta.call_labels2:
 	bl storeInt
-	.loc	1 78 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:78:0
+	.loc	1 78 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:78:0
 	ldaw r0, r7[3]
 	{
 		nop
@@ -392,7 +392,7 @@ storeFreq:                              # @storeFreq
 	.cc_top FeedbackStabilityDelay.function,FeedbackStabilityDelay
 FeedbackStabilityDelay:                 # @FeedbackStabilityDelay
 .Lfunc_begin2:
-	.loc	1 84 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:84:0
+	.loc	1 84 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:84:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -401,20 +401,20 @@ FeedbackStabilityDelay:                 # @FeedbackStabilityDelay
 		nop
 		dualentsp 0
 	}
-	.loc	1 90 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:90:0
+	.loc	1 90 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:90:0
 .Ltmp14:
 	#APP
 	ldw   r0, dp[g_curUsbSpeed]
 	#NO_APP
 .Ltmp15:
 	#DEBUG_VALUE: usbSpeed <- R0
-	.loc	1 92 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:92:5
+	.loc	1 92 5                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:92:5
 	{
 		eq r0, r0, 2
 		nop
 	}
 .Ltmp16:
-	.loc	1 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:94:0
+	.loc	1 94 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:94:0
 	bt r0, .LBB2_1
 # BB#2:                                 # %allocas
 .Lxtalabel3:
@@ -426,30 +426,30 @@ FeedbackStabilityDelay:                 # @FeedbackStabilityDelay
 .Lxtalabel4:
 .Ltmp17:
 	#DEBUG_VALUE: time <- R1
-	.loc	1 101 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:101:0
+	.loc	1 101 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:101:0
 	{
 		gettime r1
 		get r11, id
 	}
 .Ltmp18:
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	ldaw r2, dp[__timers]
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		add r0, r0, r1
 		ldw r2, r2[r11]
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		setd res[r2], r0
 		nop
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		setc res[r2], 9
 		nop
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 .Ltmp19:
 .Lxta.endpoint_labels0:
 	{
@@ -477,7 +477,7 @@ FeedbackStabilityDelay:                 # @FeedbackStabilityDelay
 	.cc_top updateVol.function,updateVol
 updateVol:                              # @updateVol
 .Lfunc_begin3:
-	.loc	1 205 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:205:0
+	.loc	1 205 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:205:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -511,14 +511,14 @@ updateVol:                              # @updateVol
 		mov r4, r1
 		stw r10, sp[8]
 	}
-	.file	3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
-	.loc	3 13 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.file	3 "C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.loc	3 13 0 prologue_end     # C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp31:
 	ldaw r6, dp[multOut]
 .Ltmp32:
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: x <- R0
-	.loc	3 13 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	3 13 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 	ldaw r7, dp[multIn]
 .Ltmp33:
 	#DEBUG_VALUE: array_to_xc_ptr:a <- R6
@@ -527,24 +527,24 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: x <- R0
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:220:0
+	.loc	1 220 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:220:0
 	{
 		eq r1, r0, 11
 		nop
 	}
-	.loc	1 214 5                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:214:5
+	.loc	1 214 5                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:214:5
 	bf r4, .LBB3_1
 .Ltmp34:
 # BB#19:                                # %iffalse
 .Lxtalabel6:
-	.loc	1 220 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:220:0
+	.loc	1 220 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:220:0
 	bf r1, .LBB3_20
 # BB#29:                                # %switchcase2
 .Lxtalabel7:
 .Ltmp35:
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 248 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
+	.loc	1 248 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
 	ldc r8, volsIn.globound
 .Ltrap_info4:
 	{
@@ -553,16 +553,16 @@ updateVol:                              # @updateVol
 	}
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 248 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
+	.loc	1 248 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
 	ldw r0, dp[volsIn]
 .Ltmp36:
 	ldc r6, 32768
-	.loc	1 248 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
+	.loc	1 248 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
 	{
 		eq r1, r0, r6
 		nop
 	}
-	.loc	1 248 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
+	.loc	1 248 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
 	bf r1, .LBB3_44
 .Ltmp37:
 # BB#30:
@@ -573,7 +573,7 @@ updateVol:                              # @updateVol
 	bu .LBB3_31
 .LBB3_1:                                # %iftrue
 .Lxtalabel8:
-	.loc	1 144 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:144:0
+	.loc	1 144 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:144:0
 .Ltmp38:
 	bf r1, .LBB3_2
 # BB#11:                                # %switchcase1.i
@@ -581,10 +581,10 @@ updateVol:                              # @updateVol
 .Ltmp39:
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 175 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
+	.loc	1 175 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
 	ldc r3, volsIn.globound
 .Ltmp40:
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info5:
 	{
 		ecallf r3
@@ -592,18 +592,18 @@ updateVol:                              # @updateVol
 	}
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	3 13 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	3 13 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp41:
 	#APP
 	mov r6, r7
 	#NO_APP
 .Ltmp42:
 	#DEBUG_VALUE: p_multIn <- R6
-	.loc	1 175 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
+	.loc	1 175 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
 	ldw r0, dp[volsIn]
 .Ltmp43:
 	ldc r10, 32768
-	.loc	1 175 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
+	.loc	1 175 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
 	{
 		eq r1, r0, r10
 		ldc r7, 0
@@ -622,7 +622,7 @@ updateVol:                              # @updateVol
 		mov r4, r3
 		nop
 	}
-	.loc	1 175 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
+	.loc	1 175 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:0
 .Lxta.call_labels3:
 	bl _Sdb_to_mult_0
 .Ltmp45:
@@ -642,10 +642,10 @@ updateVol:                              # @updateVol
 .Ltmp47:
 	#DEBUG_VALUE: i <- 1
 	ldaw r11, dp[volsIn]
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 .Ltmp48:
 	ldc r5, mutesIn.globound
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 	ldaw r4, dp[mutesIn]
 	{
 		mkmsk r8, 2
@@ -659,13 +659,13 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multIn <- R0
 	#DEBUG_VALUE: p_multIn <- R6
 	#DEBUG_VALUE: i <- 1
-	.loc	1 180 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:0
+	.loc	1 180 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:0
 	{
 		lsu r0, r9, r3
 		nop
 	}
 .Ltmp50:
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info6:
 	{
 		ecallf r0
@@ -680,7 +680,7 @@ updateVol:                              # @updateVol
 		nop
 		ldw r1, r11[r9]
 	}
-	.loc	1 180 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:0
+	.loc	1 180 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:0
 .Ltmp52:
 	{
 		eq r2, r1, r10
@@ -695,7 +695,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multIn <- R0
 	#DEBUG_VALUE: p_multIn <- R6
 	#DEBUG_VALUE: i <- 1
-	.loc	1 180 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:0
+	.loc	1 180 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:0
 	{
 		mov r0, r1
 		mov r7, r10
@@ -748,7 +748,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: longMul:b <- R0
 	#DEBUG_VALUE: prec <- 29
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info7:
 	{
 		ecallf r5
@@ -759,14 +759,14 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multIn <- R6
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 .Ltmp61:
 	{
 		lsu r1, r9, r5
 		nop
 	}
 .Ltmp62:
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info8:
 	{
 		ecallf r1
@@ -777,10 +777,10 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multIn <- R6
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 .Ltmp63:
 	ldw r2, dp[mutesIn]
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 	{
 		mov r1, r7
 		nop
@@ -798,23 +798,23 @@ updateVol:                              # @updateVol
 		nop
 		ldw r1, sp[1]
 	}
-	.loc	1 113 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
+	.loc	1 113 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
 .Ltmp65:
 	#APP
 	lmul r0, r1, r1, r0, r7, r7
 	#NO_APP
 .Ltmp66:
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shl r0, r0, 3
 		ldc r2, 29
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shr r1, r1, r2
 		nop
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		or r1, r0, r1
 		nop
@@ -828,7 +828,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multIn <- R6
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 	{
 		mov r0, r7
 		ldw r2, r4[r9]
@@ -843,7 +843,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multIn <- R6
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 182 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
+	.loc	1 182 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:0
 	{
 		mov r0, r1
 		nop
@@ -857,22 +857,22 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: x <- R0
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 193 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:193:0
+	.loc	1 193 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:193:0
 	{
 		sub r1, r9, 1
 		nop
 	}
-	.loc	1 193 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:193:0
+	.loc	1 193 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:193:0
 	#APP
 	stw r0, r6[r1]
 	#NO_APP
 .Ltmp71:
-	.loc	1 176 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:176:0
+	.loc	1 176 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:176:0
 	{
 		add r9, r9, 1
 		nop
 	}
-	.loc	1 176 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:176:0
+	.loc	1 176 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:176:0
 	{
 		lss r0, r9, r8
 		nop
@@ -892,7 +892,7 @@ updateVol:                              # @updateVol
 	bf r0, .LBB3_37
 # BB#21:                                # %switchcase
 .Lxtalabel13:
-	.loc	1 226 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
+	.loc	1 226 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
 .Ltmp74:
 	ldc r8, volsOut.globound
 .Ltrap_info9:
@@ -900,15 +900,15 @@ updateVol:                              # @updateVol
 		ecallf r8
 		nop
 	}
-	.loc	1 226 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
+	.loc	1 226 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
 	ldw r0, dp[volsOut]
 	ldc r7, 32768
-	.loc	1 226 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
+	.loc	1 226 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
 	{
 		eq r1, r0, r7
 		nop
 	}
-	.loc	1 226 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
+	.loc	1 226 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
 	bf r1, .LBB3_42
 .Ltmp75:
 # BB#22:
@@ -926,26 +926,26 @@ updateVol:                              # @updateVol
 	bf r0, .LBB3_37
 # BB#3:                                 # %switchcase.i
 .Lxtalabel15:
-	.loc	1 148 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
+	.loc	1 148 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
 .Ltmp76:
 	ldc r3, volsOut.globound
 .Ltmp77:
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info10:
 	{
 		ecallf r3
 		nop
 	}
-	.loc	3 13 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	3 13 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 .Ltmp78:
 	#APP
 	mov r6, r6
 	#NO_APP
 .Ltmp79:
-	.loc	1 148 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
+	.loc	1 148 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
 	ldw r0, dp[volsOut]
 	ldc r10, 32768
-	.loc	1 148 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
+	.loc	1 148 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
 	{
 		eq r1, r0, r10
 		ldc r7, 0
@@ -960,7 +960,7 @@ updateVol:                              # @updateVol
 		mov r4, r3
 		nop
 	}
-	.loc	1 148 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
+	.loc	1 148 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:0
 .Lxta.call_labels5:
 	bl _Sdb_to_mult_0
 	{
@@ -975,10 +975,10 @@ updateVol:                              # @updateVol
 .Ltmp80:
 	#DEBUG_VALUE: i <- 1
 	ldaw r11, dp[volsOut]
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 .Ltmp81:
 	ldc r5, mutesOut.globound
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 	ldaw r4, dp[mutesOut]
 	{
 		mkmsk r8, 2
@@ -988,13 +988,13 @@ updateVol:                              # @updateVol
                                         # =>This Inner Loop Header: Depth=1
 .Lxtalabel16:
 	#DEBUG_VALUE: i <- 1
-	.loc	1 154 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:0
+	.loc	1 154 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:0
 	{
 		lsu r0, r9, r3
 		nop
 	}
 .Ltmp82:
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info11:
 	{
 		ecallf r0
@@ -1005,7 +1005,7 @@ updateVol:                              # @updateVol
 		nop
 		ldw r1, r11[r9]
 	}
-	.loc	1 154 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:0
+	.loc	1 154 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:0
 .Ltmp83:
 	{
 		eq r2, r1, r10
@@ -1015,7 +1015,7 @@ updateVol:                              # @updateVol
 # BB#39:                                # %afterboundcheck20.i
                                         #   in Loop: Header=BB3_5 Depth=1
 	#DEBUG_VALUE: i <- 1
-	.loc	1 154 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:0
+	.loc	1 154 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:0
 	{
 		mov r0, r1
 		mov r7, r10
@@ -1058,7 +1058,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: longMul:b <- R0
 	#DEBUG_VALUE: prec <- 29
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info12:
 	{
 		ecallf r5
@@ -1066,14 +1066,14 @@ updateVol:                              # @updateVol
 	}
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 .Ltmp85:
 	{
 		lsu r1, r9, r5
 		nop
 	}
 .Ltmp86:
-	.loc	1 216 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
+	.loc	1 216 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:216:0
 .Ltrap_info13:
 	{
 		ecallf r1
@@ -1081,10 +1081,10 @@ updateVol:                              # @updateVol
 	}
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 .Ltmp87:
 	ldw r2, dp[mutesOut]
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 	{
 		mov r1, r7
 		nop
@@ -1099,22 +1099,22 @@ updateVol:                              # @updateVol
 		nop
 		ldw r1, sp[1]
 	}
-	.loc	1 113 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
+	.loc	1 113 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
 .Ltmp89:
 	#APP
 	lmul r0, r1, r1, r0, r7, r7
 	#NO_APP
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shl r0, r0, 3
 		ldc r2, 29
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shr r1, r1, r2
 		nop
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		or r1, r0, r1
 		nop
@@ -1125,7 +1125,7 @@ updateVol:                              # @updateVol
                                         #   in Loop: Header=BB3_5 Depth=1
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 	{
 		mov r0, r7
 		ldw r2, r4[r9]
@@ -1136,7 +1136,7 @@ updateVol:                              # @updateVol
                                         #   in Loop: Header=BB3_5 Depth=1
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
-	.loc	1 156 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
+	.loc	1 156 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:0
 	{
 		mov r0, r1
 		nop
@@ -1147,22 +1147,22 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: i <- 1
 	#DEBUG_VALUE: master_vol <- [SP+4]
 	#DEBUG_VALUE: x <- R0
-	.loc	1 167 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:167:0
+	.loc	1 167 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:167:0
 	{
 		sub r1, r9, 1
 		nop
 	}
-	.loc	1 167 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:167:0
+	.loc	1 167 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:167:0
 	#APP
 	stw r0, r6[r1]
 	#NO_APP
 .Ltmp93:
-	.loc	1 150 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:150:0
+	.loc	1 150 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:150:0
 	{
 		add r9, r9, 1
 		nop
 	}
-	.loc	1 150 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:150:0
+	.loc	1 150 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:150:0
 	{
 		lss r0, r9, r8
 		nop
@@ -1176,7 +1176,7 @@ updateVol:                              # @updateVol
 .LBB3_44:                               # %afterboundcheck53
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 248 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
+	.loc	1 248 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:0
 .Lxta.call_labels7:
 	bl _Sdb_to_mult_0
 .Ltmp96:
@@ -1188,7 +1188,7 @@ updateVol:                              # @updateVol
 .Ltmp97:
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 249 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
+	.loc	1 249 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
 	{
 		lsu r0, r4, r8
 		nop
@@ -1202,19 +1202,19 @@ updateVol:                              # @updateVol
 .Ltmp99:
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 249 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
+	.loc	1 249 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
 	ldaw r0, dp[volsIn]
 .Ltmp100:
 	{
 		nop
 		ldw r1, r0[r4]
 	}
-	.loc	1 249 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
+	.loc	1 249 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
 	{
 		eq r2, r1, r6
 		ldc r6, 0
 	}
-	.loc	1 249 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
+	.loc	1 249 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
 	{
 		mov r0, r6
 		nop
@@ -1224,7 +1224,7 @@ updateVol:                              # @updateVol
 .Ltmp101:
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 249 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
+	.loc	1 249 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:0
 	{
 		mov r0, r1
 		nop
@@ -1240,7 +1240,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: longMul:b <- R0
 	#DEBUG_VALUE: prec <- 29
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 251 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
+	.loc	1 251 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
 	ldc r1, mutesIn.globound
 .Ltrap_info15:
 	{
@@ -1250,7 +1250,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 251 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
+	.loc	1 251 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
 	{
 		lsu r1, r4, r1
 		nop
@@ -1263,14 +1263,14 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 251 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
+	.loc	1 251 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
 	ldaw r2, dp[mutesIn]
 	ldw r11, dp[mutesIn]
 	{
 		ldc r1, 0
 		nop
 	}
-	.loc	1 251 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
+	.loc	1 251 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
 	{
 		mov r3, r1
 		nop
@@ -1281,22 +1281,22 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 113 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
+	.loc	1 113 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
 	#APP
 	lmul r0, r3, r5, r0, r6, r6
 	#NO_APP
 .Ltmp105:
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shl r0, r0, 3
 		ldc r11, 29
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shr r3, r3, r11
 		nop
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		or r3, r0, r3
 		nop
@@ -1306,7 +1306,7 @@ updateVol:                              # @updateVol
 .LBB3_34:                               # %afterboundcheck84
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	3 13 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	3 13 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 	#APP
 	mov r0, r7
 	#NO_APP
@@ -1320,7 +1320,7 @@ updateVol:                              # @updateVol
 # BB#35:                                # %afterboundcheck84
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
-	.loc	1 251 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
+	.loc	1 251 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:0
 	{
 		mov r1, r3
 		nop
@@ -1330,19 +1330,19 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: p_multOut <- R0
 	#DEBUG_VALUE: p_multIn <- R0
 	#DEBUG_VALUE: x <- R1
-	.loc	1 262 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:262:0
+	.loc	1 262 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:262:0
 	{
 		sub r2, r4, 1
 		nop
 	}
-	.loc	1 262 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:262:0
+	.loc	1 262 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:262:0
 	#APP
 	stw r1, r0[r2]
 	#NO_APP
 	bu .LBB3_37
 .Ltmp110:
 .LBB3_42:                               # %afterboundcheck6
-	.loc	1 226 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
+	.loc	1 226 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:0
 .Lxta.call_labels9:
 	bl _Sdb_to_mult_0
 	{
@@ -1350,7 +1350,7 @@ updateVol:                              # @updateVol
 		nop
 	}
 .LBB3_23:                               # %expdone
-	.loc	1 227 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
+	.loc	1 227 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
 .Ltmp111:
 	{
 		lsu r0, r4, r8
@@ -1361,25 +1361,25 @@ updateVol:                              # @updateVol
 		ecallf r0
 		nop
 	}
-	.loc	1 227 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
+	.loc	1 227 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
 	ldaw r0, dp[volsOut]
 	{
 		nop
 		ldw r1, r0[r4]
 	}
-	.loc	1 227 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
+	.loc	1 227 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
 	{
 		eq r2, r1, r7
 		ldc r7, 0
 	}
-	.loc	1 227 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
+	.loc	1 227 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
 	{
 		mov r0, r7
 		nop
 	}
 	bt r2, .LBB3_24
 # BB#43:                                # %afterboundcheck21
-	.loc	1 227 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
+	.loc	1 227 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:0
 	{
 		mov r0, r1
 		nop
@@ -1392,7 +1392,7 @@ updateVol:                              # @updateVol
 	#DEBUG_VALUE: longMul:b <- R0
 	#DEBUG_VALUE: prec <- 29
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 229 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
+	.loc	1 229 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
 	ldc r1, mutesOut.globound
 .Ltrap_info18:
 	{
@@ -1400,7 +1400,7 @@ updateVol:                              # @updateVol
 		nop
 	}
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 229 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
+	.loc	1 229 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
 	{
 		lsu r1, r4, r1
 		nop
@@ -1411,14 +1411,14 @@ updateVol:                              # @updateVol
 		nop
 	}
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 229 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
+	.loc	1 229 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
 	ldaw r2, dp[mutesOut]
 	ldw r11, dp[mutesOut]
 	{
 		ldc r1, 0
 		nop
 	}
-	.loc	1 229 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
+	.loc	1 229 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
 	{
 		mov r3, r1
 		nop
@@ -1427,21 +1427,21 @@ updateVol:                              # @updateVol
 .Ltmp113:
 # BB#25:                                # %afterboundcheck33
 	#DEBUG_VALUE: master_vol <- R5
-	.loc	1 113 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
+	.loc	1 113 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:113:0
 	#APP
 	lmul r0, r3, r5, r0, r7, r7
 	#NO_APP
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shl r0, r0, 3
 		ldc r11, 29
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		shr r3, r3, r11
 		nop
 	}
-	.loc	1 116 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
+	.loc	1 116 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:116:0
 	{
 		or r3, r0, r3
 		nop
@@ -1449,7 +1449,7 @@ updateVol:                              # @updateVol
 .Ltmp114:
 	#DEBUG_VALUE: ret <- R3
 .LBB3_26:                               # %afterboundcheck33
-	.loc	3 13 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h:13:0
+	.loc	3 13 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\xc_ptr.h:13:0
 	#APP
 	mov r0, r6
 	#NO_APP
@@ -1460,7 +1460,7 @@ updateVol:                              # @updateVol
 	bt r2, .LBB3_28
 .Ltmp115:
 # BB#27:                                # %afterboundcheck33
-	.loc	1 229 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
+	.loc	1 229 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:0
 	{
 		mov r1, r3
 		nop
@@ -1468,12 +1468,12 @@ updateVol:                              # @updateVol
 .LBB3_28:                               # %afterboundcheck33
 .Ltmp116:
 	#DEBUG_VALUE: x <- R1
-	.loc	1 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:240:0
+	.loc	1 240 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:240:0
 	{
 		sub r2, r4, 1
 		nop
 	}
-	.loc	1 240 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:240:0
+	.loc	1 240 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:240:0
 	#APP
 	stw r1, r0[r2]
 	#NO_APP
@@ -1559,7 +1559,7 @@ updateVol:                              # @updateVol
 	.cc_top AudioClassRequests_2.function,AudioClassRequests_2
 AudioClassRequests_2:                   # @AudioClassRequests_2
 .Lfunc_begin4:
-	.loc	1 277 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:277:0
+	.loc	1 277 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:277:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -1618,13 +1618,13 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r0, r6[r9]
 	}
-	.loc	1 284 0 prologue_end    # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:284:0
+	.loc	1 284 0 prologue_end    # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:284:0
 .Ltmp131:
 	{
 		eq r1, r0, 2
 		mkmsk r10, 1
 	}
-	.loc	1 284 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:284:0
+	.loc	1 284 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:284:0
 	bf r1, .LBB4_1
 .Ltmp132:
 # BB#7:                                 # %switchcase1
@@ -1633,7 +1633,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R11
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 843 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:843:0
+	.loc	1 843 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:843:0
 	{
 		add r0, r6, 6
 		ldc r4, 0
@@ -1643,12 +1643,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		ld16s r0, r0[r4]
 	}
 	ldc r1, 65280
-	.loc	1 843 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:843:0
+	.loc	1 843 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:843:0
 	{
 		and r0, r0, r1
 		nop
 	}
-	.loc	1 843 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:843:0
+	.loc	1 843 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:843:0
 	{
 		shr r0, r0, 8
 		nop
@@ -1656,7 +1656,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp133:
 	#DEBUG_VALUE: unitID <- R0
 	ldw r1, cp[.LCPI4_0]
-	.loc	1 845 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:845:0
+	.loc	1 845 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:845:0
 	{
 		add r1, r0, r1
 		nop
@@ -1739,7 +1739,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: currentFreq48 <- 8000
 	#DEBUG_VALUE: maxFreq <- 384000
 	#DEBUG_VALUE: i <- [R10+0]
-	.loc	1 903 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:903:0
+	.loc	1 903 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:903:0
 	{
 		mov r0, r7
 		mov r1, r10
@@ -1753,7 +1753,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp139:
 	#DEBUG_VALUE: num_freqs <- R4
 	#DEBUG_VALUE: currentFreq48 <- R8
-	.loc	1 904 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:904:0
+	.loc	1 904 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:904:0
 	{
 		add r4, r4, 1
 		shl r8, r8, 1
@@ -1772,12 +1772,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: currentFreq48 <- 8000
 	#DEBUG_VALUE: maxFreq <- 384000
 	ldw r0, cp[.LCPI4_1]
-	.loc	1 893 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:893:37
+	.loc	1 893 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:893:37
 	{
 		add r0, r9, r0
 		nop
 	}
-	.loc	1 893 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:893:37
+	.loc	1 893 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:893:37
 	{
 		lsu r0, r6, r0
 		nop
@@ -1797,7 +1797,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: currentFreq48 <- 8000
 	#DEBUG_VALUE: maxFreq <- 384000
 	#DEBUG_VALUE: i <- [R10+0]
-	.loc	1 895 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:895:0
+	.loc	1 895 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:895:0
 	{
 		mov r0, r7
 		mov r1, r10
@@ -1811,7 +1811,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp142:
 	#DEBUG_VALUE: num_freqs <- R4
 	#DEBUG_VALUE: currentFreq44 <- R9
-	.loc	1 896 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:896:0
+	.loc	1 896 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:896:0
 	{
 		add r4, r4, 1
 		shl r9, r9, 1
@@ -1829,7 +1829,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: currentFreq44 <- 11025
 	#DEBUG_VALUE: currentFreq48 <- 8000
 	#DEBUG_VALUE: maxFreq <- 384000
-	.loc	1 900 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:900:37
+	.loc	1 900 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:900:37
 	{
 		lsu r0, r5, r8
 		nop
@@ -1851,22 +1851,22 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 .Ltmp145:
 	{
 		or r0, r7, r0
 		shr r1, r4, 8
 	}
 .Ltmp146:
-	.loc	1 923 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
+	.loc	1 923 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
 	{
 		ldc r2, 0
 		nop
 	}
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 .Ltmp147:
 	st8 r1, r0[r2]
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r4, r7[r2]
 	{
 		nop
@@ -1877,7 +1877,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		ldw r0, sp[4]
 	}
 .Ltmp148:
-	.loc	1 923 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
+	.loc	1 923 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
 	{
 		add r0, r0, 8
 		nop
@@ -1886,7 +1886,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r0, r0[r2]
 	}
-	.loc	1 923 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
+	.loc	1 923 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
 	{
 		zext r0, 16
 		nop
@@ -1904,7 +1904,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ldw r0, sp[3]
 	}
-	.loc	1 923 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
+	.loc	1 923 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:923:33
 	{
 		mov r2, r7
 		ldw r1, sp[5]
@@ -1939,7 +1939,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_out <- R5
 	ldw r4, sp[146]
 	#DEBUG_VALUE: AudioClassRequests_2:c_clk_ctl <- R4
-	.loc	1 291 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:291:0
+	.loc	1 291 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:291:0
 	{
 		add r0, r6, 6
 		ldc r3, 0
@@ -1949,12 +1949,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		ld16s r1, r0[r3]
 	}
 	ldc r0, 65280
-	.loc	1 291 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:291:0
+	.loc	1 291 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:291:0
 	{
 		and r1, r1, r0
 		nop
 	}
-	.loc	1 291 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:291:0
+	.loc	1 291 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:291:0
 	{
 		shr r7, r1, 8
 		nop
@@ -1962,7 +1962,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp152:
 	#DEBUG_VALUE: unitID <- R7
 	ldw r1, cp[.LCPI4_0]
-	.loc	1 293 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:293:0
+	.loc	1 293 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:293:0
 	{
 		add r1, r7, r1
 		nop
@@ -1982,7 +1982,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
 	#DEBUG_VALUE: AudioClassRequests_2:c_clk_ctl <- R4
 	#DEBUG_VALUE: unitID <- R7
-	.loc	1 301 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
+	.loc	1 301 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
 	{
 		add r2, r6, 4
 		nop
@@ -1991,17 +1991,17 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r2, r2[r3]
 	}
-	.loc	1 301 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
+	.loc	1 301 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
 	{
 		and r0, r2, r0
 		nop
 	}
-	.loc	1 301 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
+	.loc	1 301 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
 	{
 		shr r0, r0, 8
 		nop
 	}
-	.loc	1 301 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
+	.loc	1 301 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:301:0
 	{
 		eq r2, r0, 1
 		nop
@@ -2025,7 +2025,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r0, r6[r0]
 	}
-	.loc	1 307 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:307:29
+	.loc	1 307 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:307:29
 	bf r0, .LBB4_21
 .Ltmp156:
 # BB#30:                                # %iffalse
@@ -2048,9 +2048,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R4
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 404 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:404:0
+	.loc	1 404 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:404:0
 	ldw r0, dp[g_curSamFreq]
-	.loc	1 404 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:404:0
+	.loc	1 404 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:404:0
 	{
 		add r0, r6, 8
 		stw r0, sp[8]
@@ -2059,7 +2059,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r0, r0[r3]
 	}
-	.loc	1 405 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:405:41
+	.loc	1 405 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:405:41
 	{
 		zext r0, 16
 		nop
@@ -2069,7 +2069,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		stw r0, sp[1]
 	}
 	ldc r0, 512
-	.loc	1 405 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:405:41
+	.loc	1 405 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:405:41
 	{
 		ldaw r2, sp[8]
 		stw r0, sp[2]
@@ -2121,7 +2121,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r0, r8[r3]
 	}
-	.loc	1 939 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:939:0
+	.loc	1 939 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:939:0
 	{
 		eq r2, r0, 2
 		mov r0, r10
@@ -2138,31 +2138,31 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		mkmsk r0, 1
 		ldaw r2, sp[8]
 	}
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 .Ltmp163:
 	{
 		or r11, r2, r0
 		nop
 	}
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	st8 r4, r11[r4]
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r0, r2[r4]
 .Ltmp164:
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	{
 		or r11, r2, r9
 		nop
 	}
 	ldc r5, 129
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	st8 r5, r11[r4]
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	{
 		or r11, r2, r6
 		nop
 	}
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r4, r11[r4]
 	bu .LBB4_88
 .Ltmp165:
@@ -2197,12 +2197,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R11
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 522 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
+	.loc	1 522 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
 	{
 		add r1, r6, 4
 		nop
 	}
-	.loc	1 522 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
+	.loc	1 522 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
 	{
 		mov r8, r3
 		ld16s r4, r1[r3]
@@ -2211,12 +2211,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		zext r4, 16
 		nop
 	}
-	.loc	1 522 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
+	.loc	1 522 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
 	{
 		shr r2, r4, 8
 		nop
 	}
-	.loc	1 522 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
+	.loc	1 522 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:522:0
 	{
 		eq r3, r2, 1
 		nop
@@ -2233,7 +2233,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r0, r6[r0]
 	}
-	.loc	1 578 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:578:29
+	.loc	1 578 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:578:29
 	bf r0, .LBB4_62
 .Ltmp169:
 # BB#71:                                # %iffalse431
@@ -2248,7 +2248,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		eq r0, r7, 10
 	}
 .Ltmp170:
-	.loc	1 609 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:609:37
+	.loc	1 609 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:609:37
 	{
 		zext r4, 8
 		nop
@@ -2262,7 +2262,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		lsu r2, r4, r9
 		nop
 	}
-	.loc	1 607 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:607:33
+	.loc	1 607 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:607:33
 	bf r0, .LBB4_77
 .Ltmp172:
 # BB#72:                                # %iftrue501
@@ -2281,9 +2281,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 611 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
+	.loc	1 611 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
 	ldc r0, mutesOut.globound
-	.loc	1 611 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
+	.loc	1 611 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
 	{
 		lsu r0, r4, r0
 		nop
@@ -2297,7 +2297,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 611 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
+	.loc	1 611 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
 	ldaw r0, dp[mutesOut]
 	bu .LBB4_74
 .Ltmp175:
@@ -2327,31 +2327,31 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		mkmsk r0, 1
 		ldaw r2, sp[8]
 	}
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 .Ltmp177:
 	{
 		or r3, r2, r0
 		nop
 	}
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	st8 r4, r3[r4]
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r0, r2[r4]
 .Ltmp178:
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	{
 		or r3, r2, r9
 		nop
 	}
 	ldc r11, 129
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	st8 r11, r3[r4]
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	{
 		or r3, r2, r6
 		nop
 	}
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r4, r3[r4]
 	{
 		ldc r3, 5
@@ -2359,29 +2359,29 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 .Ltmp179:
 .LBB4_88:                               # %return
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	st8 r4, r2[r3]
 	{
 		ldc r3, 4
 		nop
 	}
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r4, r2[r3]
 	{
 		mkmsk r3, 3
 		nop
 	}
 .Ltmp180:
-	.loc	1 67 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
+	.loc	1 67 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:67:0
 	st8 r0, r2[r3]
 	{
 		ldc r0, 6
 		nop
 	}
-	.loc	1 68 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
+	.loc	1 68 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:68:0
 	st8 r4, r2[r0]
 .Ltmp181:
-	.loc	1 948 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:948:29
+	.loc	1 948 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:948:29
 	{
 		add r0, r8, 8
 		nop
@@ -2390,7 +2390,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r3, r0[r4]
 	}
-	.loc	1 948 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:948:29
+	.loc	1 948 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:948:29
 	{
 		zext r3, 16
 		nop
@@ -2400,7 +2400,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		stw r3, sp[1]
 	}
 	ldc r0, 512
-	.loc	1 948 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:948:29
+	.loc	1 948 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:948:29
 	{
 		mov r0, r7
 		stw r0, sp[2]
@@ -2446,7 +2446,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		mov r8, r3
 		ldc r0, 41
 	}
-	.loc	1 420 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:420:0
+	.loc	1 420 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:420:0
 	{
 		eq r0, r7, r0
 		nop
@@ -2515,33 +2515,33 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
 	#DEBUG_VALUE: AudioClassRequests_2:c_clk_ctl <- R4
-	.loc	1 448 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:448:0
+	.loc	1 448 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:448:0
 .Lxta.endpoint_labels1:
 	{
 		out res[r4], r9
 		mkmsk r3, 1
 	}
-	.loc	1 449 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:449:0
+	.loc	1 449 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:449:0
 .Lxta.endpoint_labels2:
 	{
 		out res[r4], r3
 		nop
 	}
-	.loc	1 450 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:450:0
+	.loc	1 450 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:450:0
 .Lxta.endpoint_labels3:
 	{
 		outct res[r4], 1
 		nop
 	}
-	.loc	1 451 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:451:0
+	.loc	1 451 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:451:0
 .Lxta.endpoint_labels4:
 	{
 		in r0, res[r4]
 		ldaw r2, sp[8]
 	}
-	.loc	1 451 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:451:0
+	.loc	1 451 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:451:0
 	st8 r0, r2[r8]
-	.loc	1 452 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:452:0
+	.loc	1 452 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:452:0
 	{
 		chkct res[r4], 1
 		add r0, r6, 8
@@ -2550,7 +2550,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r0, r0[r8]
 	}
-	.loc	1 453 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:453:41
+	.loc	1 453 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:453:41
 	{
 		zext r0, 16
 		nop
@@ -2593,12 +2593,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r1, r6[r1]
 	}
-	.loc	1 475 21                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:475:21
+	.loc	1 475 21                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:475:21
 	{
 		eq r1, r1, 1
 		nop
 	}
-	.loc	1 475 21                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:475:21
+	.loc	1 475 21                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:475:21
 	bf r1, .LBB4_15
 .Ltmp194:
 # BB#35:                                # %iftrue157
@@ -2612,7 +2612,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r0, r6[r0]
 	}
-	.loc	1 478 25                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:478:25
+	.loc	1 478 25                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:478:25
 	bf r0, .LBB4_36
 .Ltmp195:
 # BB#41:                                # %iffalse175
@@ -2626,7 +2626,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		ldaw r2, sp[8]
 		mkmsk r1, 1
 	}
-	.loc	1 502 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:502:0
+	.loc	1 502 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:502:0
 	st8 r1, r2[r3]
 	{
 		mov r0, r5
@@ -2643,27 +2643,27 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
 	#DEBUG_VALUE: AudioClassRequests_2:c_clk_ctl <- R4
-	.loc	1 505 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:505:0
+	.loc	1 505 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:505:0
 .Lxta.endpoint_labels5:
 	{
 		out res[r4], r3
 		nop
 	}
-	.loc	1 506 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:506:0
+	.loc	1 506 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:506:0
 .Lxta.endpoint_labels6:
 	{
 		outct res[r4], 1
 		nop
 	}
-	.loc	1 507 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:507:0
+	.loc	1 507 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:507:0
 .Lxta.endpoint_labels7:
 	{
 		in r1, res[r4]
 		nop
 	}
-	.loc	1 507 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:507:0
+	.loc	1 507 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:507:0
 	st8 r1, r2[r3]
-	.loc	1 508 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:508:0
+	.loc	1 508 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:508:0
 	{
 		chkct res[r4], 1
 		nop
@@ -2675,7 +2675,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R11
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 510 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
+	.loc	1 510 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
 	{
 		add r1, r6, 8
 		nop
@@ -2684,7 +2684,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r1, r1[r3]
 	}
-	.loc	1 510 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
+	.loc	1 510 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
 	{
 		zext r1, 16
 		nop
@@ -2694,7 +2694,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		stw r1, sp[1]
 	}
 	ldc r1, 512
-	.loc	1 510 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
+	.loc	1 510 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
 	{
 		ldaw r2, sp[8]
 		stw r1, sp[2]
@@ -2727,7 +2727,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld8u r0, r6[r0]
 	}
-	.loc	1 526 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:526:29
+	.loc	1 526 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:526:29
 	bf r0, .LBB4_49
 .Ltmp201:
 # BB#55:                                # %iffalse266
@@ -2742,7 +2742,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		eq r0, r7, 10
 	}
 .Ltmp202:
-	.loc	1 557 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:557:37
+	.loc	1 557 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:557:37
 	{
 		zext r4, 8
 		nop
@@ -2756,7 +2756,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		lsu r2, r4, r9
 		nop
 	}
-	.loc	1 555 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:555:33
+	.loc	1 555 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:555:33
 	bf r0, .LBB4_59
 .Ltmp204:
 # BB#56:                                # %iftrue342
@@ -2775,9 +2775,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 559 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
+	.loc	1 559 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
 	ldc r0, volsOut.globound
-	.loc	1 559 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
+	.loc	1 559 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
 	{
 		lsu r0, r4, r0
 		nop
@@ -2791,7 +2791,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 559 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
+	.loc	1 559 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
 	ldaw r0, dp[volsOut]
 	bu .LBB4_58
 .Ltmp207:
@@ -2816,7 +2816,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 .Ltmp209:
 	ldc r3, 512
-	.loc	1 310 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:310:33
+	.loc	1 310 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:310:33
 	{
 		mov r0, r5
 		nop
@@ -2836,7 +2836,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ldw r0, sp[7]
 	}
-	.loc	1 315 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:315:33
+	.loc	1 315 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:315:33
 	{
 		eq r0, r0, 4
 		nop
@@ -2854,9 +2854,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 .Ltmp213:
 	#DEBUG_VALUE: newSampleRate <- R0
-	.loc	1 321 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:321:37
+	.loc	1 321 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:321:37
 	ldw r1, dp[g_curSamFreq]
-	.loc	1 321 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:321:37
+	.loc	1 321 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:321:37
 	{
 		eq r1, r0, r1
 		nop
@@ -2869,25 +2869,25 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:c_audioControl <- R8
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
 	#DEBUG_VALUE: newSampleRate <- R0
-	.loc	1 325 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:325:0
+	.loc	1 325 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:325:0
 	stw r0, dp[g_curSamFreq]
 	{
 		ldc r1, 4
 		nop
 	}
-	.loc	1 361 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:361:0
+	.loc	1 361 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:361:0
 .Lxta.endpoint_labels8:
 	{
 		out res[r8], r1
 		nop
 	}
-	.loc	1 362 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:362:0
+	.loc	1 362 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:362:0
 .Lxta.endpoint_labels9:
 	{
 		out res[r8], r0
 		nop
 	}
-	.loc	1 365 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:365:0
+	.loc	1 365 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:365:0
 	{
 		chkct res[r8], 1
 		nop
@@ -2897,19 +2897,19 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Lxtalabel68:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R4
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 90 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:90:0
+	.loc	1 90 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:90:0
 	#APP
 	ldw   r0, dp[g_curUsbSpeed]
 	#NO_APP
 .Ltmp216:
 	#DEBUG_VALUE: usbSpeed <- R0
-	.loc	1 92 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:92:5
+	.loc	1 92 5                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:92:5
 	{
 		eq r0, r0, 2
 		nop
 	}
 .Ltmp217:
-	.loc	1 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:94:0
+	.loc	1 94 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:94:0
 	bt r0, .LBB4_26
 .Ltmp218:
 # BB#27:                                # %ifdone44
@@ -2953,7 +2953,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp222:
 	#DEBUG_VALUE: datalength <- [R2+0]
 	ldc r3, 512
-	.loc	1 581 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:581:33
+	.loc	1 581 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:581:33
 	{
 		mov r0, r5
 		mov r1, r4
@@ -2983,7 +2983,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		lsu r2, r1, r9
 		eq r0, r7, 10
 	}
-	.loc	1 586 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:586:33
+	.loc	1 586 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:586:33
 	bf r0, .LBB4_68
 .Ltmp225:
 # BB#64:                                # %iftrue440
@@ -2998,9 +2998,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp226:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 590 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
+	.loc	1 590 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
 	ldc r0, mutesOut.globound
-	.loc	1 590 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
+	.loc	1 590 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
 	{
 		lsu r0, r1, r0
 		nop
@@ -3012,7 +3012,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 590 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
+	.loc	1 590 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
 	ldaw r0, dp[mutesOut]
 	{
 		nop
@@ -3036,9 +3036,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 619 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:0
+	.loc	1 619 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:0
 	ldc r0, mutesIn.globound
-	.loc	1 619 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:0
+	.loc	1 619 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:0
 	{
 		lsu r0, r4, r0
 		nop
@@ -3052,18 +3052,18 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 619 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:0
+	.loc	1 619 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:0
 	ldaw r0, dp[mutesIn]
 .Ltmp230:
 .LBB4_74:                               # %return
-	.loc	1 611 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
+	.loc	1 611 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
 	{
 		ldaw r2, sp[8]
 		ldw r0, r0[r4]
 	}
-	.loc	1 611 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
+	.loc	1 611 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:0
 	st8 r0, r2[r8]
-	.loc	1 612 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
+	.loc	1 612 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
 	{
 		add r0, r6, 8
 		nop
@@ -3072,7 +3072,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r3, r0[r8]
 	}
-	.loc	1 612 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
+	.loc	1 612 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
 	{
 		zext r3, 16
 		nop
@@ -3083,7 +3083,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 .LBB4_75:                               # %return
 	ldc r0, 512
-	.loc	1 612 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
+	.loc	1 612 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
 	{
 		mov r0, r11
 		stw r0, sp[2]
@@ -3100,9 +3100,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		ldaw r2, sp[8]
 		mkmsk r3, 1
 	}
-	.loc	1 425 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:425:0
+	.loc	1 425 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:425:0
 	st8 r3, r2[r8]
-	.loc	1 426 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:426:37
+	.loc	1 426 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:426:37
 	{
 		add r0, r6, 8
 		nop
@@ -3111,7 +3111,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r0, r0[r8]
 	}
-	.loc	1 426 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:426:37
+	.loc	1 426 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:426:37
 	{
 		zext r0, 16
 		nop
@@ -3121,12 +3121,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		stw r0, sp[1]
 	}
 	ldc r0, 512
-	.loc	1 426 37                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:426:37
+	.loc	1 426 37                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:426:37
 	{
 		mov r0, r5
 		stw r0, sp[2]
 	}
-	.loc	1 510 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
+	.loc	1 510 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:510:29
 	{
 		mov r1, r11
 		nop
@@ -3159,7 +3159,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp234:
 	#DEBUG_VALUE: datalength <- [R2+0]
 	ldc r3, 512
-	.loc	1 529 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:529:33
+	.loc	1 529 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:529:33
 	{
 		mov r0, r5
 		mov r1, r4
@@ -3189,7 +3189,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		lsu r2, r1, r9
 		eq r0, r7, 10
 	}
-	.loc	1 534 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:534:33
+	.loc	1 534 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:534:33
 	bf r0, .LBB4_53
 .Ltmp237:
 # BB#51:                                # %iftrue275
@@ -3204,9 +3204,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp238:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 538 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
+	.loc	1 538 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
 	ldc r0, volsOut.globound
-	.loc	1 538 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
+	.loc	1 538 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
 	{
 		lsu r0, r1, r0
 		nop
@@ -3218,26 +3218,26 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 538 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
+	.loc	1 538 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
 	ldaw r0, dp[volsOut]
 	{
 		nop
 		ld16s r2, r4[r8]
 	}
 	ldw r3, cp[.LCPI4_4]
-	.loc	1 538 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
+	.loc	1 538 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
 	{
 		and r3, r2, r3
 		zext r2, 8
 	}
-	.loc	1 538 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
+	.loc	1 538 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:0
 	{
 		or r2, r3, r2
 		nop
 	}
 .Ltmp239:
 .LBB4_66:                               # %return
-	.loc	1 590 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
+	.loc	1 590 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:0
 	stw r2, r0[r1]
 	{
 		ldc r0, 10
@@ -3261,9 +3261,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 568 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:0
+	.loc	1 568 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:0
 	ldc r0, volsIn.globound
-	.loc	1 568 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:0
+	.loc	1 568 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:0
 	{
 		lsu r0, r4, r0
 		nop
@@ -3277,29 +3277,29 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R1
 	#DEBUG_VALUE: AudioClassRequests_2:sp <- R6
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 568 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:0
+	.loc	1 568 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:0
 	ldaw r0, dp[volsIn]
 .Ltmp243:
 .LBB4_58:                               # %return
-	.loc	1 559 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
+	.loc	1 559 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
 	{
 		ldaw r2, sp[8]
 		ldw r0, r0[r4]
 	}
-	.loc	1 559 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
+	.loc	1 559 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:0
 	st8 r0, r2[r8]
 	{
 		mkmsk r3, 1
 		nop
 	}
-	.loc	1 560 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:560:0
+	.loc	1 560 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:560:0
 	{
 		or r3, r2, r3
 		shr r0, r0, 8
 	}
-	.loc	1 560 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:560:0
+	.loc	1 560 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:560:0
 	st8 r0, r3[r8]
-	.loc	1 561 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:561:41
+	.loc	1 561 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:561:41
 	{
 		add r0, r6, 8
 		nop
@@ -3308,7 +3308,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ld16s r0, r0[r8]
 	}
-	.loc	1 561 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:561:41
+	.loc	1 561 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:561:41
 	{
 		zext r0, 16
 		nop
@@ -3318,12 +3318,12 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		stw r0, sp[1]
 	}
 	ldc r0, 512
-	.loc	1 561 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:561:41
+	.loc	1 561 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:561:41
 	{
 		ldc r3, 2
 		stw r0, sp[2]
 	}
-	.loc	1 612 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
+	.loc	1 612 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:612:41
 	{
 		mov r0, r11
 		nop
@@ -3357,7 +3357,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 .Ltmp247:
 	ldc r3, 512
-	.loc	1 480 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:480:29
+	.loc	1 480 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:480:29
 	{
 		mov r0, r5
 		mov r1, r6
@@ -3381,7 +3381,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		nop
 		ldw r0, sp[7]
 	}
-	.loc	1 486 29                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:486:29
+	.loc	1 486 29                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:486:29
 	{
 		eq r1, r0, 1
 		mov r0, r10
@@ -3404,19 +3404,19 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 		mkmsk r0, 1
 		nop
 	}
-	.loc	1 490 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:490:0
+	.loc	1 490 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:490:0
 .Lxta.endpoint_labels10:
 	{
 		out res[r4], r0
 		ld8u r0, r6[r2]
 	}
-	.loc	1 491 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:491:0
+	.loc	1 491 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:491:0
 .Lxta.endpoint_labels11:
 	{
 		out res[r4], r0
 		nop
 	}
-	.loc	1 492 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:492:0
+	.loc	1 492 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:492:0
 .Lxta.endpoint_labels12:
 	{
 		outct res[r4], 1
@@ -3427,7 +3427,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Lxtalabel87:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R7
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 495 33                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:495:33
+	.loc	1 495 33                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:495:33
 	{
 		mov r0, r7
 		nop
@@ -3448,9 +3448,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp254:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 599 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
+	.loc	1 599 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
 	ldc r0, mutesIn.globound
-	.loc	1 599 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
+	.loc	1 599 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
 	{
 		lsu r0, r1, r0
 		nop
@@ -3462,7 +3462,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 599 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
+	.loc	1 599 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
 	ldaw r0, dp[mutesIn]
 	{
 		nop
@@ -3480,30 +3480,30 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R4
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
 	#DEBUG_VALUE: time <- R1
-	.loc	1 101 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:101:0
+	.loc	1 101 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:101:0
 	{
 		gettime r1
 		get r11, id
 	}
 .Ltmp257:
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	ldaw r2, dp[__timers]
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		add r0, r0, r1
 		ldw r2, r2[r11]
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		setd res[r2], r0
 		nop
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		setc res[r2], 9
 		nop
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 .Ltmp258:
 .Lxta.endpoint_labels13:
 	{
@@ -3515,7 +3515,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Lxtalabel91:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- R4
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 374 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:374:0
+	.loc	1 374 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:374:0
 	{
 		mov r0, r4
 		nop
@@ -3540,9 +3540,9 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 .Ltmp261:
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 547 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
+	.loc	1 547 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
 	ldc r0, volsIn.globound
-	.loc	1 547 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
+	.loc	1 547 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
 	{
 		lsu r0, r1, r0
 		nop
@@ -3554,41 +3554,41 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	}
 	#DEBUG_VALUE: AudioClassRequests_2:ep0_in <- [SP+20]
 	#DEBUG_VALUE: AudioClassRequests_2:c_mix_ctl <- [SP+580]
-	.loc	1 547 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
+	.loc	1 547 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
 	ldaw r0, dp[volsIn]
 	{
 		nop
 		ld16s r2, r4[r8]
 	}
 	ldw r3, cp[.LCPI4_4]
-	.loc	1 547 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
+	.loc	1 547 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
 	{
 		and r3, r2, r3
 		zext r2, 8
 	}
-	.loc	1 547 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
+	.loc	1 547 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:0
 	{
 		or r2, r3, r2
 		nop
 	}
 .Ltmp262:
 .LBB4_70:                               # %return
-	.loc	1 599 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
+	.loc	1 599 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:0
 	stw r2, r0[r1]
-	.loc	1 600 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:600:0
+	.loc	1 600 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:600:0
 	{
 		mov r0, r7
 		nop
 	}
 .LBB4_67:                               # %return
-	.loc	1 591 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:591:0
+	.loc	1 591 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:591:0
 .Lxta.call_labels20:
 	bl updateVol
 	{
 		nop
 		ldw r0, sp[5]
 	}
-	.loc	1 592 41                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:592:41
+	.loc	1 592 41                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:592:41
 .Lxta.call_labels21:
 	bl XUD_DoSetRequestStatus
 	bu .LBB4_90
@@ -3643,7 +3643,7 @@ AudioClassRequests_2:                   # @AudioClassRequests_2
 	.cc_top AudioEndpointRequests_1.function,AudioEndpointRequests_1
 AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 .Lfunc_begin5:
-	.loc	1 1071 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1071:0
+	.loc	1 1071 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1071:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -3688,7 +3688,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		ldc r1, 2
 	}
 .Ltmp274:
-	.loc	1 1083 5 prologue_end   # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1083:5
+	.loc	1 1083 5 prologue_end   # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1083:5
 	{
 		mkmsk r1, 2
 		ld8u r2, r7[r1]
@@ -3697,7 +3697,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		nop
 		ld8u r1, r7[r1]
 	}
-	.loc	1 1083 5                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1083:5
+	.loc	1 1083 5                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1083:5
 	bf r2, .LBB5_1
 .Ltmp275:
 # BB#9:                                 # %iffalse
@@ -3708,12 +3708,12 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_mix_ctl <- [SP+1068]
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
 	ldc r2, 129
-	.loc	1 1156 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1156:0
+	.loc	1 1156 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1156:0
 	{
 		eq r1, r1, r2
 		nop
 	}
-	.loc	1 1156 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1156:0
+	.loc	1 1156 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1156:0
 	bf r1, .LBB5_10
 .Ltmp276:
 # BB#15:                                # %switchcase74
@@ -3723,14 +3723,14 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:sp <- R7
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_mix_ctl <- [SP+1068]
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
-	.loc	1 1159 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1159:0
+	.loc	1 1159 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1159:0
 	ldw r1, dp[g_curSamFreq]
-	.loc	1 1159 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1159:0
+	.loc	1 1159 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1159:0
 	{
 		add r1, r7, 8
 		stw r1, sp[4]
 	}
-	.loc	1 1160 17               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1160:17
+	.loc	1 1160 17               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1160:17
 	{
 		ldc r2, 0
 		nop
@@ -3748,7 +3748,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		stw r1, sp[1]
 	}
 	ldc r1, 1024
-	.loc	1 1160 17               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1160:17
+	.loc	1 1160 17               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1160:17
 	{
 		ldaw r2, sp[4]
 		stw r1, sp[2]
@@ -3775,7 +3775,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_audioControl <- R5
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_mix_ctl <- [SP+1068]
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
-	.loc	1 1086 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1086:0
+	.loc	1 1086 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1086:0
 	{
 		eq r1, r1, 1
 		mkmsk r6, 1
@@ -3794,7 +3794,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		ldc r1, 5
 		nop
 	}
-	.loc	1 1091 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1091:0
+	.loc	1 1091 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1091:0
 .Ltmp280:
 	{
 		ldaw r1, sp[4]
@@ -3807,11 +3807,11 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 .Ltmp281:
 	#DEBUG_VALUE: length <- [R2+0]
 	ldc r3, 1024
-	.loc	1 1093 17               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1093:17
+	.loc	1 1093 17               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1093:17
 .Lxta.call_labels23:
 	bl XUD_GetBuffer
 .Ltmp282:
-	.loc	1 1098 17               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1098:17
+	.loc	1 1098 17               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1098:17
 	{
 		eq r0, r8, 1
 		nop
@@ -3825,7 +3825,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_audioControl <- R5
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_mix_ctl <- [SP+1068]
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
-	.loc	1 1101 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1101:21
+	.loc	1 1101 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1101:21
 	{
 		add r0, r7, 8
 		ldc r1, 0
@@ -3834,12 +3834,12 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		nop
 		ld16s r0, r0[r1]
 	}
-	.loc	1 1101 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1101:21
+	.loc	1 1101 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1101:21
 	{
 		zext r0, 16
 		nop
 	}
-	.loc	1 1101 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1101:21
+	.loc	1 1101 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1101:21
 	{
 		eq r0, r0, 3
 		nop
@@ -3872,7 +3872,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		nop
 		ldw r0, sp[4]
 	}
-	.loc	1 1104 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1104:0
+	.loc	1 1104 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1104:0
 .Ltmp286:
 	{
 		zext r0, 24
@@ -3880,9 +3880,9 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	}
 .Ltmp287:
 	#DEBUG_VALUE: newSampleRate <- R0
-	.loc	1 1106 25               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1106:25
+	.loc	1 1106 25               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1106:25
 	ldw r1, dp[g_curSamFreq]
-	.loc	1 1106 25               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1106:25
+	.loc	1 1106 25               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1106:25
 	{
 		eq r1, r0, r1
 		nop
@@ -3897,11 +3897,11 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
 	#DEBUG_VALUE: newSampleRate <- R0
 	ldw r1, cp[.LCPI5_0]
-	.loc	1 1113 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1113:0
+	.loc	1 1113 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1113:0
 .Ltmp289:
 	remu r2, r1, r0
 	ldw r1, cp[.LCPI5_1]
-	.loc	1 1114 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1114:0
+	.loc	1 1114 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1114:0
 	remu r1, r1, r0
 	bf r2, .LBB5_11
 .Ltmp290:
@@ -3920,43 +3920,43 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_mix_ctl <- [SP+1068]
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
 	#DEBUG_VALUE: newSampleRate <- R0
-	.loc	1 1118 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1118:0
+	.loc	1 1118 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1118:0
 	stw r0, dp[g_curSamFreq]
 	{
 		ldc r1, 4
 		nop
 	}
-	.loc	1 1137 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1137:0
+	.loc	1 1137 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1137:0
 .Lxta.endpoint_labels14:
 	{
 		out res[r5], r1
 		nop
 	}
-	.loc	1 1138 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1138:0
+	.loc	1 1138 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1138:0
 .Lxta.endpoint_labels15:
 	{
 		out res[r5], r0
 		nop
 	}
-	.loc	1 1141 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1141:0
+	.loc	1 1141 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1141:0
 	{
 		chkct res[r5], 1
 		nop
 	}
-	.loc	1 90 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:90:0
+	.loc	1 90 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:90:0
 .Ltmp292:
 	#APP
 	ldw   r0, dp[g_curUsbSpeed]
 	#NO_APP
 .Ltmp293:
 	#DEBUG_VALUE: usbSpeed <- R0
-	.loc	1 92 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:92:5
+	.loc	1 92 5                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:92:5
 	{
 		eq r0, r0, 2
 		nop
 	}
 .Ltmp294:
-	.loc	1 94 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:94:0
+	.loc	1 94 0                  # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:94:0
 	bt r0, .LBB5_12
 .Ltmp295:
 # BB#13:                                # %iftrue54
@@ -4003,30 +4003,30 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_mix_ctl <- [SP+1068]
 	#DEBUG_VALUE: AudioEndpointRequests_1:c_clk_ctl <- [SP+1072]
 	#DEBUG_VALUE: time <- R1
-	.loc	1 101 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:101:0
+	.loc	1 101 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:101:0
 	{
 		gettime r1
 		get r11, id
 	}
 .Ltmp301:
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	ldaw r2, dp[__timers]
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		add r0, r0, r1
 		ldw r2, r2[r11]
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		setd res[r2], r0
 		nop
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 	{
 		setc res[r2], 9
 		nop
 	}
-	.loc	1 102 0                 # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
+	.loc	1 102 0                 # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:102:0
 .Ltmp302:
 .Lxta.endpoint_labels16:
 	{
@@ -4044,7 +4044,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 		nop
 	}
 	ldc r2, 1024
-	.loc	1 1147 25               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1147:25
+	.loc	1 1147 25               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1147:25
 	{
 		mov r0, r4
 		nop
@@ -4089,7 +4089,7 @@ AudioEndpointRequests_1:                # @AudioEndpointRequests_1
 	.cc_top AudioClassRequests_1.function,AudioClassRequests_1
 AudioClassRequests_1:                   # @AudioClassRequests_1
 .Lfunc_begin6:
-	.loc	1 1173 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1173:0
+	.loc	1 1173 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1173:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -4129,7 +4129,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		mkmsk r1, 2
 		nop
 	}
-	.loc	1 1180 0 prologue_end   # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1180:0
+	.loc	1 1180 0 prologue_end   # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1180:0
 .Ltmp314:
 	{
 		mkmsk r7, 1
@@ -4137,7 +4137,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	}
 	ldc r3, 128
 .Ltmp315:
-	.loc	1 1180 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1180:0
+	.loc	1 1180 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1180:0
 	{
 		lss r3, r3, r2
 		nop
@@ -4174,7 +4174,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 .Ltmp318:
 	ldc r3, 1024
 .Ltmp319:
-	.loc	1 1186 13               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1186:13
+	.loc	1 1186 13               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1186:13
 	{
 		mov r1, r6
 		nop
@@ -4197,7 +4197,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1191 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1191:0
+	.loc	1 1191 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1191:0
 	{
 		add r1, r5, 6
 		ldc r0, 0
@@ -4207,14 +4207,14 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ld16s r1, r1[r0]
 	}
 	ldc r2, 65280
-	.loc	1 1191 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1191:0
+	.loc	1 1191 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1191:0
 	{
 		and r1, r1, r2
 		nop
 	}
 .Ltmp323:
 	#DEBUG_VALUE: unitID <- R2
-	.loc	1 1191 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1191:0
+	.loc	1 1191 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1191:0
 	{
 		shr r2, r1, 8
 		add r1, r5, 4
@@ -4224,18 +4224,18 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		nop
 		ld16s r1, r1[r0]
 	}
-	.loc	1 1193 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1193:0
+	.loc	1 1193 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1193:0
 	{
 		zext r1, 16
 		nop
 	}
-	.loc	1 1193 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1193:0
+	.loc	1 1193 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1193:0
 	{
 		shr r3, r1, 8
 		nop
 	}
 .Ltmp325:
-	.loc	1 1193 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1193:0
+	.loc	1 1193 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1193:0
 	{
 		eq r11, r3, 1
 		nop
@@ -4254,12 +4254,12 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ldw r3, sp[3]
 	}
 .Ltmp327:
-	.loc	1 1216 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1216:21
+	.loc	1 1216 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1216:21
 	{
 		eq r3, r3, 1
 		nop
 	}
-	.loc	1 1216 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1216:21
+	.loc	1 1216 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1216:21
 	bf r3, .LBB6_16
 .Ltmp328:
 # BB#21:                                # %iftrue60
@@ -4269,7 +4269,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
 	#DEBUG_VALUE: unitID <- R2
-	.loc	1 1218 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1218:0
+	.loc	1 1218 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1218:0
 	{
 		eq r3, r2, 11
 		nop
@@ -4283,14 +4283,14 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1226 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
+	.loc	1 1226 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
 	ldc r2, mutesIn.globound
-	.loc	1 1226 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
+	.loc	1 1226 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
 	{
 		zext r1, 8
 		nop
 	}
-	.loc	1 1226 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
+	.loc	1 1226 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
 	{
 		lsu r2, r1, r2
 		nop
@@ -4304,7 +4304,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1226 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
+	.loc	1 1226 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
 	ldaw r2, dp[mutesIn]
 	{
 		nop
@@ -4378,7 +4378,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1237 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1237:0
+	.loc	1 1237 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1237:0
 	{
 		add r2, r5, 6
 		ldc r1, 0
@@ -4389,19 +4389,19 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	}
 	ldc r3, 65280
 .Ltmp337:
-	.loc	1 1237 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1237:0
+	.loc	1 1237 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1237:0
 	{
 		and r2, r2, r3
 		nop
 	}
-	.loc	1 1237 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1237:0
+	.loc	1 1237 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1237:0
 	{
 		shr r2, r2, 8
 		nop
 	}
 .Ltmp338:
 	#DEBUG_VALUE: unitID <- R2
-	.loc	1 1238 13               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1238:13
+	.loc	1 1238 13               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1238:13
 	{
 		eq r3, r2, 10
 		nop
@@ -4416,7 +4416,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1240 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
+	.loc	1 1240 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
 	{
 		add r2, r5, 4
 		nop
@@ -4426,17 +4426,17 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ld16s r3, r2[r1]
 	}
 .Ltmp340:
-	.loc	1 1240 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
+	.loc	1 1240 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
 	{
 		zext r3, 16
 		nop
 	}
-	.loc	1 1240 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
+	.loc	1 1240 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
 	{
 		shr r2, r3, 8
 		nop
 	}
-	.loc	1 1240 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
+	.loc	1 1240 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1240:0
 	{
 		eq r11, r2, 1
 		nop
@@ -4451,15 +4451,15 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1251 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
+	.loc	1 1251 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
 	ldc r2, mutesOut.globound
-	.loc	1 1251 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
+	.loc	1 1251 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
 	{
 		zext r3, 8
 		nop
 	}
 .Ltmp342:
-	.loc	1 1251 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
+	.loc	1 1251 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
 	{
 		lsu r2, r3, r2
 		nop
@@ -4476,7 +4476,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1251 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
+	.loc	1 1251 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
 	ldaw r2, dp[mutesOut]
 	bu .LBB6_34
 .Ltmp344:
@@ -4492,20 +4492,20 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ldaw r2, sp[4]
 		ldc r1, 0
 	}
-	.loc	1 1277 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1277:0
+	.loc	1 1277 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1277:0
 	st8 r1, r2[r1]
 	{
 		mkmsk r3, 1
 		nop
 	}
 .Ltmp345:
-	.loc	1 1278 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1278:0
+	.loc	1 1278 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1278:0
 	{
 		or r3, r2, r3
 		nop
 	}
 	ldc r11, 129
-	.loc	1 1278 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1278:0
+	.loc	1 1278 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1278:0
 	st8 r11, r3[r1]
 	bu .LBB6_42
 .Ltmp346:
@@ -4521,19 +4521,19 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ldaw r2, sp[4]
 		ldc r1, 0
 	}
-	.loc	1 1282 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1282:0
+	.loc	1 1282 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1282:0
 	st8 r1, r2[r1]
 	{
 		mkmsk r3, 1
 		nop
 	}
 .Ltmp347:
-	.loc	1 1283 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1283:0
+	.loc	1 1283 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1283:0
 	{
 		or r3, r2, r3
 		nop
 	}
-	.loc	1 1283 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1283:0
+	.loc	1 1283 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1283:0
 	st8 r1, r3[r1]
 	bu .LBB6_42
 .Ltmp348:
@@ -4549,24 +4549,24 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ldaw r2, sp[4]
 		ldc r1, 0
 	}
-	.loc	1 1287 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1287:0
+	.loc	1 1287 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1287:0
 	st8 r1, r2[r1]
 	{
 		mkmsk r3, 1
 		nop
 	}
 .Ltmp349:
-	.loc	1 1288 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1288:0
+	.loc	1 1288 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1288:0
 	{
 		or r11, r2, r3
 		nop
 	}
 .Ltmp350:
 .LBB6_41:                               # %return
-	.loc	1 1288 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1288:0
+	.loc	1 1288 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1288:0
 	st8 r3, r11[r1]
 .LBB6_42:                               # %return
-	.loc	1 1289 13               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1289:13
+	.loc	1 1289 13               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1289:13
 	{
 		add r3, r5, 8
 		nop
@@ -4575,7 +4575,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		nop
 		ld16s r1, r3[r1]
 	}
-	.loc	1 1289 13               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1289:13
+	.loc	1 1289 13               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1289:13
 	{
 		zext r1, 16
 		nop
@@ -4585,7 +4585,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		stw r1, sp[1]
 	}
 	ldc r1, 1024
-	.loc	1 1289 13               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1289:13
+	.loc	1 1289 13               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1289:13
 	{
 		ldc r3, 2
 		stw r1, sp[2]
@@ -4643,12 +4643,12 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ldw r3, sp[3]
 	}
 .Ltmp356:
-	.loc	1 1197 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1197:21
+	.loc	1 1197 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1197:21
 	{
 		eq r3, r3, 2
 		nop
 	}
-	.loc	1 1197 21               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1197:21
+	.loc	1 1197 21               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1197:21
 	bf r3, .LBB6_14
 .Ltmp357:
 # BB#17:                                # %iftrue13
@@ -4657,7 +4657,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1199 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1199:0
+	.loc	1 1199 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1199:0
 	{
 		eq r3, r2, 11
 		nop
@@ -4671,14 +4671,14 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1207 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
+	.loc	1 1207 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
 	ldc r2, volsIn.globound
-	.loc	1 1207 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
+	.loc	1 1207 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
 	{
 		zext r1, 8
 		nop
 	}
-	.loc	1 1207 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
+	.loc	1 1207 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
 	{
 		lsu r2, r1, r2
 		nop
@@ -4692,7 +4692,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1207 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
+	.loc	1 1207 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
 	ldaw r2, dp[volsIn]
 	{
 		nop
@@ -4700,19 +4700,19 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	}
 	ldw r3, cp[.LCPI6_1]
 .Ltmp360:
-	.loc	1 1207 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
+	.loc	1 1207 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
 	{
 		and r3, r0, r3
 		zext r0, 8
 	}
-	.loc	1 1207 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
+	.loc	1 1207 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:0
 	{
 		or r0, r3, r0
 		nop
 	}
 .Ltmp361:
 .LBB6_27:                               # %return
-	.loc	1 1226 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
+	.loc	1 1226 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:0
 	stw r0, r2[r1]
 	{
 		ldc r0, 11
@@ -4742,7 +4742,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1259 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
+	.loc	1 1259 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
 	{
 		add r2, r5, 4
 		nop
@@ -4752,17 +4752,17 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		ld16s r3, r2[r1]
 	}
 .Ltmp364:
-	.loc	1 1259 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
+	.loc	1 1259 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
 	{
 		zext r3, 16
 		nop
 	}
-	.loc	1 1259 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
+	.loc	1 1259 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
 	{
 		shr r2, r3, 8
 		nop
 	}
-	.loc	1 1259 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
+	.loc	1 1259 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1259:0
 	{
 		eq r11, r2, 1
 		nop
@@ -4777,15 +4777,15 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1269 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
+	.loc	1 1269 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
 	ldc r2, mutesIn.globound
-	.loc	1 1269 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
+	.loc	1 1269 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
 	{
 		zext r3, 8
 		nop
 	}
 .Ltmp366:
-	.loc	1 1269 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
+	.loc	1 1269 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
 	{
 		lsu r2, r3, r2
 		nop
@@ -4802,18 +4802,18 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1269 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
+	.loc	1 1269 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:0
 	ldaw r2, dp[mutesIn]
 .Ltmp368:
 .LBB6_34:                               # %return
-	.loc	1 1251 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
+	.loc	1 1251 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
 	{
 		ldaw r2, sp[4]
 		ldw r3, r2[r3]
 	}
-	.loc	1 1251 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
+	.loc	1 1251 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:0
 	st8 r3, r2[r1]
-	.loc	1 1252 25               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1252:25
+	.loc	1 1252 25               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1252:25
 	{
 		add r3, r5, 8
 		nop
@@ -4822,7 +4822,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		nop
 		ld16s r1, r3[r1]
 	}
-	.loc	1 1252 25               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1252:25
+	.loc	1 1252 25               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1252:25
 	{
 		zext r1, 16
 		nop
@@ -4832,7 +4832,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 		stw r1, sp[1]
 	}
 	ldc r1, 1024
-	.loc	1 1252 25               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1252:25
+	.loc	1 1252 25               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1252:25
 	{
 		mkmsk r3, 1
 		stw r1, sp[2]
@@ -4881,15 +4881,15 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1244 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
+	.loc	1 1244 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
 	ldc r2, volsOut.globound
-	.loc	1 1244 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
+	.loc	1 1244 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
 	{
 		zext r3, 8
 		nop
 	}
 .Ltmp373:
-	.loc	1 1244 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
+	.loc	1 1244 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
 	{
 		lsu r2, r3, r2
 		nop
@@ -4906,7 +4906,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1244 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
+	.loc	1 1244 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
 	ldaw r2, dp[volsOut]
 	bu .LBB6_32
 .Ltmp375:
@@ -4939,14 +4939,14 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1221 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
+	.loc	1 1221 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
 	ldc r2, mutesOut.globound
-	.loc	1 1221 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
+	.loc	1 1221 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
 	{
 		zext r1, 8
 		nop
 	}
-	.loc	1 1221 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
+	.loc	1 1221 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
 	{
 		lsu r2, r1, r2
 		nop
@@ -4960,7 +4960,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1221 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
+	.loc	1 1221 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
 	ldaw r2, dp[mutesOut]
 	{
 		nop
@@ -5000,15 +5000,15 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1263 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
+	.loc	1 1263 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
 	ldc r2, volsIn.globound
-	.loc	1 1263 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
+	.loc	1 1263 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
 	{
 		zext r3, 8
 		nop
 	}
 .Ltmp382:
-	.loc	1 1263 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
+	.loc	1 1263 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
 	{
 		lsu r2, r3, r2
 		nop
@@ -5025,22 +5025,22 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1263 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
+	.loc	1 1263 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:0
 	ldaw r2, dp[volsIn]
 .Ltmp384:
 .LBB6_32:                               # %return
-	.loc	1 1244 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
+	.loc	1 1244 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
 	{
 		ldaw r2, sp[4]
 		ldw r3, r2[r3]
 	}
-	.loc	1 1244 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
+	.loc	1 1244 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:0
 	st8 r3, r2[r1]
 	{
 		mkmsk r11, 1
 		nop
 	}
-	.loc	1 1245 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1245:0
+	.loc	1 1245 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1245:0
 	{
 		or r11, r2, r11
 		shr r3, r3, 8
@@ -5066,14 +5066,14 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1202 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
+	.loc	1 1202 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
 	ldc r2, volsOut.globound
-	.loc	1 1202 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
+	.loc	1 1202 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
 	{
 		zext r1, 8
 		nop
 	}
-	.loc	1 1202 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
+	.loc	1 1202 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
 	{
 		lsu r2, r1, r2
 		nop
@@ -5087,7 +5087,7 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	#DEBUG_VALUE: AudioClassRequests_1:c_audioControl <- R3
 	#DEBUG_VALUE: AudioClassRequests_1:c_mix_ctl <- [SP+1060]
 	#DEBUG_VALUE: AudioClassRequests_1:c_clk_ctl <- [SP+1064]
-	.loc	1 1202 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
+	.loc	1 1202 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
 	ldaw r2, dp[volsOut]
 	{
 		nop
@@ -5095,29 +5095,29 @@ AudioClassRequests_1:                   # @AudioClassRequests_1
 	}
 	ldw r3, cp[.LCPI6_1]
 .Ltmp388:
-	.loc	1 1202 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
+	.loc	1 1202 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
 	{
 		and r3, r0, r3
 		zext r0, 8
 	}
-	.loc	1 1202 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
+	.loc	1 1202 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:0
 	{
 		or r0, r3, r0
 		nop
 	}
 .Ltmp389:
 .LBB6_24:                               # %return
-	.loc	1 1221 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
+	.loc	1 1221 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:0
 	stw r0, r2[r1]
 	{
 		ldc r0, 10
 		nop
 	}
 .LBB6_25:                               # %return
-	.loc	1 1222 0                # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1222:0
+	.loc	1 1222 0                # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1222:0
 .Lxta.call_labels27:
 	bl updateVol
-	.loc	1 1223 33               # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1223:33
+	.loc	1 1223 33               # C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1223:33
 	{
 		mov r0, r4
 		nop
@@ -5152,14 +5152,14 @@ g_curSamFreq:
 .Ldebug_end0:
 	.text
 .Ldebug_end1:
-	.file	4 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
+	.file	4 "C:\\Program Files (x86)\\XMOS\\xTIMEcomposer\\Community_14.3.2\\target/include\\timer.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"g_curSamFreq"
 .Linfo_string4:
@@ -10127,178 +10127,178 @@ g_curSamFreq:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	73
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	75
 	.long	.Lxta.call_labels1
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	77
 	.long	.Lxta.call_labels2
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	148
 	.long	.Lxta.call_labels5
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.call_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	154
 	.long	.Lxta.call_labels6
 .cc_bottom cc_4
 .cc_top cc_5,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	175
 	.long	.Lxta.call_labels3
 .cc_bottom cc_5
 .cc_top cc_6,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	180
 	.long	.Lxta.call_labels4
 .cc_bottom cc_6
 .cc_top cc_7,.Lxta.call_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	226
 	.long	.Lxta.call_labels9
 .cc_bottom cc_7
 .cc_top cc_8,.Lxta.call_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	227
 	.long	.Lxta.call_labels10
 .cc_bottom cc_8
 .cc_top cc_9,.Lxta.call_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	248
 	.long	.Lxta.call_labels7
 .cc_bottom cc_9
 .cc_top cc_10,.Lxta.call_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	249
 	.long	.Lxta.call_labels8
 .cc_bottom cc_10
 .cc_top cc_11,.Lxta.call_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	310
 	.long	.Lxta.call_labels14
 .cc_bottom cc_11
 .cc_top cc_12,.Lxta.call_labels19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	374
 	.long	.Lxta.call_labels19
 .cc_bottom cc_12
 .cc_top cc_13,.Lxta.call_labels17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	480
 	.long	.Lxta.call_labels17
 .cc_bottom cc_13
 .cc_top cc_14,.Lxta.call_labels18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	495
 	.long	.Lxta.call_labels18
 .cc_bottom cc_14
 .cc_top cc_15,.Lxta.call_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	529
 	.long	.Lxta.call_labels16
 .cc_bottom cc_15
 .cc_top cc_16,.Lxta.call_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	581
 	.long	.Lxta.call_labels15
 .cc_bottom cc_16
 .cc_top cc_17,.Lxta.call_labels20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	591
 	.long	.Lxta.call_labels20
 .cc_bottom cc_17
 .cc_top cc_18,.Lxta.call_labels21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	592
 	.long	.Lxta.call_labels21
 .cc_bottom cc_18
 .cc_top cc_19,.Lxta.call_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	895
 	.long	.Lxta.call_labels12
 .cc_bottom cc_19
 .cc_top cc_20,.Lxta.call_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	903
 	.long	.Lxta.call_labels11
 .cc_bottom cc_20
 .cc_top cc_21,.Lxta.call_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	948
 	.long	.Lxta.call_labels13
 .cc_bottom cc_21
 .cc_top cc_22,.Lxta.call_labels23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1093
 	.long	.Lxta.call_labels23
 .cc_bottom cc_22
 .cc_top cc_23,.Lxta.call_labels24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1147
 	.long	.Lxta.call_labels24
 .cc_bottom cc_23
 .cc_top cc_24,.Lxta.call_labels22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1160
 	.long	.Lxta.call_labels22
 .cc_bottom cc_24
 .cc_top cc_25,.Lxta.call_labels25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1186
 	.long	.Lxta.call_labels25
 .cc_bottom cc_25
 .cc_top cc_26,.Lxta.call_labels27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1222
 	.long	.Lxta.call_labels27
 .cc_bottom cc_26
 .cc_top cc_27,.Lxta.call_labels28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1223
 	.long	.Lxta.call_labels28
 .cc_bottom cc_27
 .cc_top cc_28,.Lxta.call_labels26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1289
 	.long	.Lxta.call_labels26
@@ -10308,106 +10308,106 @@ g_curSamFreq:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
-.cc_top cc_29,.Lxta.endpoint_labels16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_29,.Lxta.endpoint_labels0
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	102
-	.long	.Lxta.endpoint_labels16
+	.long	.Lxta.endpoint_labels0
 .cc_bottom cc_29
 .cc_top cc_30,.Lxta.endpoint_labels13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	102
 	.long	.Lxta.endpoint_labels13
 .cc_bottom cc_30
-.cc_top cc_31,.Lxta.endpoint_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_31,.Lxta.endpoint_labels16
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	102
-	.long	.Lxta.endpoint_labels0
+	.long	.Lxta.endpoint_labels16
 .cc_bottom cc_31
 .cc_top cc_32,.Lxta.endpoint_labels8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	361
 	.long	.Lxta.endpoint_labels8
 .cc_bottom cc_32
 .cc_top cc_33,.Lxta.endpoint_labels9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	362
 	.long	.Lxta.endpoint_labels9
 .cc_bottom cc_33
 .cc_top cc_34,.Lxta.endpoint_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	448
 	.long	.Lxta.endpoint_labels1
 .cc_bottom cc_34
 .cc_top cc_35,.Lxta.endpoint_labels2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	449
 	.long	.Lxta.endpoint_labels2
 .cc_bottom cc_35
 .cc_top cc_36,.Lxta.endpoint_labels3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	450
 	.long	.Lxta.endpoint_labels3
 .cc_bottom cc_36
 .cc_top cc_37,.Lxta.endpoint_labels4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	451
 	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_37
 .cc_top cc_38,.Lxta.endpoint_labels10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	490
 	.long	.Lxta.endpoint_labels10
 .cc_bottom cc_38
 .cc_top cc_39,.Lxta.endpoint_labels11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	491
 	.long	.Lxta.endpoint_labels11
 .cc_bottom cc_39
 .cc_top cc_40,.Lxta.endpoint_labels12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	492
 	.long	.Lxta.endpoint_labels12
 .cc_bottom cc_40
 .cc_top cc_41,.Lxta.endpoint_labels5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	505
 	.long	.Lxta.endpoint_labels5
 .cc_bottom cc_41
 .cc_top cc_42,.Lxta.endpoint_labels6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	506
 	.long	.Lxta.endpoint_labels6
 .cc_bottom cc_42
 .cc_top cc_43,.Lxta.endpoint_labels7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	507
 	.long	.Lxta.endpoint_labels7
 .cc_bottom cc_43
 .cc_top cc_44,.Lxta.endpoint_labels14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1137
 	.long	.Lxta.endpoint_labels14
 .cc_bottom cc_44
 .cc_top cc_45,.Lxta.endpoint_labels15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1138
 	.long	.Lxta.endpoint_labels15
@@ -10417,2957 +10417,2957 @@ g_curSamFreq:
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_46,.Lxtalabel0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	57
 	.long	62
 	.long	.Lxtalabel0
 .cc_bottom cc_46
-.cc_top cc_47,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_47,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel38
+	.long	.Lxtalabel46
 .cc_bottom cc_47
-.cc_top cc_48,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_48,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel38
+	.long	.Lxtalabel46
 .cc_bottom cc_48
-.cc_top cc_49,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_49,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel38
+	.long	.Lxtalabel46
 .cc_bottom cc_49
-.cc_top cc_50,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_50,.Lxtalabel46
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel38
+	.long	.Lxtalabel46
 .cc_bottom cc_50
 .cc_top cc_51,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
 	.long	.Lxtalabel29
 .cc_bottom cc_51
-.cc_top cc_52,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_52,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel46
+	.long	.Lxtalabel38
 .cc_bottom cc_52
-.cc_top cc_53,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_53,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel46
+	.long	.Lxtalabel38
 .cc_bottom cc_53
-.cc_top cc_54,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_54,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel46
+	.long	.Lxtalabel38
 .cc_bottom cc_54
-.cc_top cc_55,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_55,.Lxtalabel38
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	66
 	.long	69
-	.long	.Lxtalabel46
+	.long	.Lxtalabel38
 .cc_bottom cc_55
 .cc_top cc_56,.Lxtalabel1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	72
 	.long	80
 	.long	.Lxtalabel1
 .cc_bottom cc_56
-.cc_top cc_57,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	84
-	.long	88
-	.long	.Lxtalabel4
-.cc_bottom cc_57
-.cc_top cc_58,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	84
-	.long	88
-	.long	.Lxtalabel90
-.cc_bottom cc_58
-.cc_top cc_59,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	84
-	.long	88
-	.long	.Lxtalabel69
-.cc_bottom cc_59
-.cc_top cc_60,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	84
-	.long	88
-	.long	.Lxtalabel104
-.cc_bottom cc_60
-.cc_top cc_61,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	84
-	.long	88
-	.long	.Lxtalabel3
-.cc_bottom cc_61
-.cc_top cc_62,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	84
-	.long	88
-	.long	.Lxtalabel105
-.cc_bottom cc_62
-.cc_top cc_63,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_57,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	84
 	.long	88
 	.long	.Lxtalabel2
+.cc_bottom cc_57
+.cc_top cc_58,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	84
+	.long	88
+	.long	.Lxtalabel104
+.cc_bottom cc_58
+.cc_top cc_59,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	84
+	.long	88
+	.long	.Lxtalabel90
+.cc_bottom cc_59
+.cc_top cc_60,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	84
+	.long	88
+	.long	.Lxtalabel3
+.cc_bottom cc_60
+.cc_top cc_61,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	84
+	.long	88
+	.long	.Lxtalabel105
+.cc_bottom cc_61
+.cc_top cc_62,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	84
+	.long	88
+	.long	.Lxtalabel4
+.cc_bottom cc_62
+.cc_top cc_63,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	84
+	.long	88
+	.long	.Lxtalabel106
 .cc_bottom cc_63
 .cc_top cc_64,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	84
 	.long	88
 	.long	.Lxtalabel68
 .cc_bottom cc_64
-.cc_top cc_65,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_65,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	84
 	.long	88
-	.long	.Lxtalabel106
+	.long	.Lxtalabel69
 .cc_bottom cc_65
-.cc_top cc_66,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_66,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	90
 	.long	90
-	.long	.Lxtalabel90
+	.long	.Lxtalabel2
 .cc_bottom cc_66
-.cc_top cc_67,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_67,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	90
 	.long	90
-	.long	.Lxtalabel104
+	.long	.Lxtalabel68
 .cc_bottom cc_67
-.cc_top cc_68,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_68,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	90
 	.long	90
-	.long	.Lxtalabel105
+	.long	.Lxtalabel106
 .cc_bottom cc_68
-.cc_top cc_69,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_69,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	90
 	.long	90
-	.long	.Lxtalabel69
+	.long	.Lxtalabel3
 .cc_bottom cc_69
-.cc_top cc_70,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_70,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	90
 	.long	90
-	.long	.Lxtalabel106
-.cc_bottom cc_70
-.cc_top cc_71,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	90
-	.long	90
-	.long	.Lxtalabel2
-.cc_bottom cc_71
-.cc_top cc_72,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	90
-	.long	90
-	.long	.Lxtalabel68
-.cc_bottom cc_72
-.cc_top cc_73,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	90
-	.long	90
-	.long	.Lxtalabel3
-.cc_bottom cc_73
-.cc_top cc_74,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	90
-	.long	90
-	.long	.Lxtalabel4
-.cc_bottom cc_74
-.cc_top cc_75,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	92
-	.long	92
-	.long	.Lxtalabel68
-.cc_bottom cc_75
-.cc_top cc_76,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	92
-	.long	92
-	.long	.Lxtalabel2
-.cc_bottom cc_76
-.cc_top cc_77,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	92
-	.long	92
-	.long	.Lxtalabel104
-.cc_bottom cc_77
-.cc_top cc_78,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	92
-	.long	92
-	.long	.Lxtalabel105
-.cc_bottom cc_78
-.cc_top cc_79,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	92
-	.long	92
 	.long	.Lxtalabel90
-.cc_bottom cc_79
-.cc_top cc_80,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_70
+.cc_top cc_71,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	92
-	.long	92
-	.long	.Lxtalabel3
-.cc_bottom cc_80
-.cc_top cc_81,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.long	90
+	.long	90
+	.long	.Lxtalabel105
+.cc_bottom cc_71
+.cc_top cc_72,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	92
-	.long	92
+	.long	90
+	.long	90
 	.long	.Lxtalabel4
-.cc_bottom cc_81
-.cc_top cc_82,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_72
+.cc_top cc_73,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	90
+	.long	90
+	.long	.Lxtalabel104
+.cc_bottom cc_73
+.cc_top cc_74,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	90
+	.long	90
+	.long	.Lxtalabel69
+.cc_bottom cc_74
+.cc_top cc_75,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	92
+	.long	92
+	.long	.Lxtalabel2
+.cc_bottom cc_75
+.cc_top cc_76,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	92
 	.long	92
 	.long	.Lxtalabel69
-.cc_bottom cc_82
-.cc_top cc_83,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_76
+.cc_top cc_77,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	92
+	.long	92
+	.long	.Lxtalabel3
+.cc_bottom cc_77
+.cc_top cc_78,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	92
+	.long	92
+	.long	.Lxtalabel68
+.cc_bottom cc_78
+.cc_top cc_79,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	92
+	.long	92
+	.long	.Lxtalabel4
+.cc_bottom cc_79
+.cc_top cc_80,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	92
+	.long	92
+	.long	.Lxtalabel105
+.cc_bottom cc_80
+.cc_top cc_81,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	92
 	.long	92
 	.long	.Lxtalabel106
-.cc_bottom cc_83
-.cc_top cc_84,.Lxtalabel4
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_81
+.cc_top cc_82,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	101
-	.long	103
-	.long	.Lxtalabel4
-.cc_bottom cc_84
-.cc_top cc_85,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	101
-	.long	103
+	.long	92
+	.long	92
 	.long	.Lxtalabel104
-.cc_bottom cc_85
-.cc_top cc_86,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_82
+.cc_top cc_83,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	101
-	.long	103
-	.long	.Lxtalabel68
-.cc_bottom cc_86
-.cc_top cc_87,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	101
-	.long	103
-	.long	.Lxtalabel105
-.cc_bottom cc_87
-.cc_top cc_88,.Lxtalabel2
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.long	92
+	.long	92
+	.long	.Lxtalabel90
+.cc_bottom cc_83
+.cc_top cc_84,.Lxtalabel2
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	101
 	.long	103
 	.long	.Lxtalabel2
-.cc_bottom cc_88
-.cc_top cc_89,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_84
+.cc_top cc_85,.Lxtalabel3
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	101
+	.long	103
+	.long	.Lxtalabel3
+.cc_bottom cc_85
+.cc_top cc_86,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	101
+	.long	103
+	.long	.Lxtalabel105
+.cc_bottom cc_86
+.cc_top cc_87,.Lxtalabel69
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	101
+	.long	103
+	.long	.Lxtalabel69
+.cc_bottom cc_87
+.cc_top cc_88,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	101
 	.long	103
 	.long	.Lxtalabel90
+.cc_bottom cc_88
+.cc_top cc_89,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	101
+	.long	103
+	.long	.Lxtalabel104
 .cc_bottom cc_89
 .cc_top cc_90,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	101
 	.long	103
 	.long	.Lxtalabel106
 .cc_bottom cc_90
-.cc_top cc_91,.Lxtalabel3
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_91,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	101
 	.long	103
-	.long	.Lxtalabel3
+	.long	.Lxtalabel68
 .cc_bottom cc_91
-.cc_top cc_92,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_92,.Lxtalabel4
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	101
 	.long	103
-	.long	.Lxtalabel69
+	.long	.Lxtalabel4
 .cc_bottom cc_92
 .cc_top cc_93,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	108
 	.long	110
 	.long	.Lxtalabel17
 .cc_bottom cc_93
-.cc_top cc_94,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	108
-	.long	110
-	.long	.Lxtalabel19
-.cc_bottom cc_94
-.cc_top cc_95,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_94,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	108
 	.long	110
 	.long	.Lxtalabel18
-.cc_bottom cc_95
-.cc_top cc_96,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_94
+.cc_top cc_95,.Lxtalabel11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	108
 	.long	110
 	.long	.Lxtalabel11
-.cc_bottom cc_96
-.cc_top cc_97,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_95
+.cc_top cc_96,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	113
-	.long	113
-	.long	.Lxtalabel17
-.cc_bottom cc_97
-.cc_top cc_98,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.long	108
+	.long	110
+	.long	.Lxtalabel19
+.cc_bottom cc_96
+.cc_top cc_97,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	113
 	.long	113
 	.long	.Lxtalabel19
+.cc_bottom cc_97
+.cc_top cc_98,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	113
+	.long	113
+	.long	.Lxtalabel17
 .cc_bottom cc_98
 .cc_top cc_99,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	113
 	.long	113
 	.long	.Lxtalabel18
 .cc_bottom cc_99
 .cc_top cc_100,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	113
 	.long	113
 	.long	.Lxtalabel11
 .cc_bottom cc_100
-.cc_top cc_101,.Lxtalabel19
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	116
-	.long	118
-	.long	.Lxtalabel19
-.cc_bottom cc_101
-.cc_top cc_102,.Lxtalabel18
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	116
-	.long	118
-	.long	.Lxtalabel18
-.cc_bottom cc_102
-.cc_top cc_103,.Lxtalabel11
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_101,.Lxtalabel11
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	116
 	.long	118
 	.long	.Lxtalabel11
-.cc_bottom cc_103
-.cc_top cc_104,.Lxtalabel17
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_101
+.cc_top cc_102,.Lxtalabel17
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	116
 	.long	118
 	.long	.Lxtalabel17
+.cc_bottom cc_102
+.cc_top cc_103,.Lxtalabel18
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	116
+	.long	118
+	.long	.Lxtalabel18
+.cc_bottom cc_103
+.cc_top cc_104,.Lxtalabel19
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	116
+	.long	118
+	.long	.Lxtalabel19
 .cc_bottom cc_104
-.cc_top cc_105,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_105,.Lxtalabel8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	136
 	.long	137
-	.long	.Lxtalabel14
+	.long	.Lxtalabel8
 .cc_bottom cc_105
-.cc_top cc_106,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_106,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	136
 	.long	137
-	.long	.Lxtalabel8
+	.long	.Lxtalabel14
 .cc_bottom cc_106
-.cc_top cc_107,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_107,.Lxtalabel8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	139
+	.long	139
+	.long	.Lxtalabel8
+.cc_bottom cc_107
+.cc_top cc_108,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	139
 	.long	139
 	.long	.Lxtalabel14
-.cc_bottom cc_107
-.cc_top cc_108,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	139
-	.long	139
-	.long	.Lxtalabel8
 .cc_bottom cc_108
 .cc_top cc_109,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	142
 	.long	142
 	.long	.Lxtalabel14
 .cc_bottom cc_109
 .cc_top cc_110,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	142
 	.long	142
 	.long	.Lxtalabel8
 .cc_bottom cc_110
 .cc_top cc_111,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	144
 	.long	146
 	.long	.Lxtalabel14
 .cc_bottom cc_111
 .cc_top cc_112,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	144
 	.long	146
 	.long	.Lxtalabel8
 .cc_bottom cc_112
 .cc_top cc_113,.Lxtalabel15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	147
 	.long	148
 	.long	.Lxtalabel15
 .cc_bottom cc_113
 .cc_top cc_114,.Lxtalabel15
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	150
 	.long	150
 	.long	.Lxtalabel15
 .cc_bottom cc_114
 .cc_top cc_115,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	151
 	.long	151
 	.long	.Lxtalabel16
 .cc_bottom cc_115
 .cc_top cc_116,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	154
 	.long	154
 	.long	.Lxtalabel16
 .cc_bottom cc_116
 .cc_top cc_117,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	156
 	.long	156
 	.long	.Lxtalabel16
 .cc_bottom cc_117
 .cc_top cc_118,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	167
 	.long	167
 	.long	.Lxtalabel16
 .cc_bottom cc_118
 .cc_top cc_119,.Lxtalabel16
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	169
 	.long	169
 	.long	.Lxtalabel16
 .cc_bottom cc_119
 .cc_top cc_120,.Lxtalabel9
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	174
 	.long	176
 	.long	.Lxtalabel9
 .cc_bottom cc_120
 .cc_top cc_121,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	177
 	.long	177
 	.long	.Lxtalabel10
 .cc_bottom cc_121
 .cc_top cc_122,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	180
 	.long	180
 	.long	.Lxtalabel10
 .cc_bottom cc_122
 .cc_top cc_123,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	182
 	.long	182
 	.long	.Lxtalabel10
 .cc_bottom cc_123
 .cc_top cc_124,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	193
 	.long	193
 	.long	.Lxtalabel10
 .cc_bottom cc_124
 .cc_top cc_125,.Lxtalabel10
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	195
 	.long	195
 	.long	.Lxtalabel10
 .cc_bottom cc_125
 .cc_top cc_126,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	200
 	.long	201
 	.long	.Lxtalabel14
 .cc_bottom cc_126
 .cc_top cc_127,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	200
 	.long	201
 	.long	.Lxtalabel8
 .cc_bottom cc_127
 .cc_top cc_128,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	205
 	.long	206
 	.long	.Lxtalabel5
 .cc_bottom cc_128
 .cc_top cc_129,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	208
 	.long	208
 	.long	.Lxtalabel5
 .cc_bottom cc_129
 .cc_top cc_130,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	211
 	.long	211
 	.long	.Lxtalabel5
 .cc_bottom cc_130
 .cc_top cc_131,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	214
 	.long	214
 	.long	.Lxtalabel5
 .cc_bottom cc_131
-.cc_top cc_132,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	215
-	.long	217
-	.long	.Lxtalabel8
-.cc_bottom cc_132
-.cc_top cc_133,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_132,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	215
 	.long	217
 	.long	.Lxtalabel14
-.cc_bottom cc_133
-.cc_top cc_134,.Lxtalabel12
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_132
+.cc_top cc_133,.Lxtalabel8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	218
-	.long	222
-	.long	.Lxtalabel12
-.cc_bottom cc_134
-.cc_top cc_135,.Lxtalabel6
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.long	215
+	.long	217
+	.long	.Lxtalabel8
+.cc_bottom cc_133
+.cc_top cc_134,.Lxtalabel6
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	218
 	.long	222
 	.long	.Lxtalabel6
+.cc_bottom cc_134
+.cc_top cc_135,.Lxtalabel12
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	218
+	.long	222
+	.long	.Lxtalabel12
 .cc_bottom cc_135
 .cc_top cc_136,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	223
 	.long	223
 	.long	.Lxtalabel13
 .cc_bottom cc_136
 .cc_top cc_137,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	226
 	.long	227
 	.long	.Lxtalabel13
 .cc_bottom cc_137
 .cc_top cc_138,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	229
 	.long	229
 	.long	.Lxtalabel13
 .cc_bottom cc_138
 .cc_top cc_139,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	240
 	.long	240
 	.long	.Lxtalabel13
 .cc_bottom cc_139
 .cc_top cc_140,.Lxtalabel13
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	242
 	.long	244
 	.long	.Lxtalabel13
 .cc_bottom cc_140
 .cc_top cc_141,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	245
 	.long	245
 	.long	.Lxtalabel7
 .cc_bottom cc_141
 .cc_top cc_142,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	248
 	.long	249
 	.long	.Lxtalabel7
 .cc_bottom cc_142
 .cc_top cc_143,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	251
 	.long	251
 	.long	.Lxtalabel7
 .cc_bottom cc_143
 .cc_top cc_144,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	262
 	.long	262
 	.long	.Lxtalabel7
 .cc_bottom cc_144
 .cc_top cc_145,.Lxtalabel7
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	264
 	.long	266
 	.long	.Lxtalabel7
 .cc_bottom cc_145
 .cc_top cc_146,.Lxtalabel20
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	268
 	.long	268
 	.long	.Lxtalabel20
 .cc_bottom cc_146
 .cc_top cc_147,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	277
 	.long	281
 	.long	.Lxtalabel30
 .cc_bottom cc_147
 .cc_top cc_148,.Lxtalabel21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	277
 	.long	281
 	.long	.Lxtalabel21
 .cc_bottom cc_148
-.cc_top cc_149,.Lxtalabel21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_149,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	284
 	.long	285
-	.long	.Lxtalabel21
+	.long	.Lxtalabel30
 .cc_bottom cc_149
-.cc_top cc_150,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_150,.Lxtalabel21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	284
 	.long	285
-	.long	.Lxtalabel30
+	.long	.Lxtalabel21
 .cc_bottom cc_150
-.cc_top cc_151,.Lxtalabel21
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_151,.Lxtalabel30
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	288
+	.long	288
+	.long	.Lxtalabel30
+.cc_bottom cc_151
+.cc_top cc_152,.Lxtalabel21
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	288
 	.long	288
 	.long	.Lxtalabel21
-.cc_bottom cc_151
-.cc_top cc_152,.Lxtalabel30
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	288
-	.long	288
-	.long	.Lxtalabel30
 .cc_bottom cc_152
 .cc_top cc_153,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	289
 	.long	289
 	.long	.Lxtalabel31
 .cc_bottom cc_153
 .cc_top cc_154,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	289
 	.long	289
 	.long	.Lxtalabel53
 .cc_bottom cc_154
 .cc_top cc_155,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	289
 	.long	289
 	.long	.Lxtalabel39
 .cc_bottom cc_155
-.cc_top cc_156,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	291
-	.long	291
-	.long	.Lxtalabel31
-.cc_bottom cc_156
-.cc_top cc_157,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_156,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	291
 	.long	291
 	.long	.Lxtalabel53
+.cc_bottom cc_156
+.cc_top cc_157,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	291
+	.long	291
+	.long	.Lxtalabel31
 .cc_bottom cc_157
 .cc_top cc_158,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	291
 	.long	291
 	.long	.Lxtalabel39
 .cc_bottom cc_158
-.cc_top cc_159,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	293
-	.long	294
-	.long	.Lxtalabel53
-.cc_bottom cc_159
-.cc_top cc_160,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	293
-	.long	294
-	.long	.Lxtalabel31
-.cc_bottom cc_160
-.cc_top cc_161,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_159,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	293
 	.long	294
 	.long	.Lxtalabel39
+.cc_bottom cc_159
+.cc_top cc_160,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	293
+	.long	294
+	.long	.Lxtalabel53
+.cc_bottom cc_160
+.cc_top cc_161,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	293
+	.long	294
+	.long	.Lxtalabel31
 .cc_bottom cc_161
 .cc_top cc_162,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel39
 .cc_bottom cc_162
-.cc_top cc_163,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	296
-	.long	296
-	.long	.Lxtalabel31
-.cc_bottom cc_163
-.cc_top cc_164,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_163,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	296
 	.long	296
 	.long	.Lxtalabel53
+.cc_bottom cc_163
+.cc_top cc_164,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	296
+	.long	296
+	.long	.Lxtalabel31
 .cc_bottom cc_164
-.cc_top cc_165,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_165,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	297
 	.long	297
-	.long	.Lxtalabel39
+	.long	.Lxtalabel53
 .cc_bottom cc_165
 .cc_top cc_166,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	297
 	.long	297
 	.long	.Lxtalabel31
 .cc_bottom cc_166
-.cc_top cc_167,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_167,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	297
 	.long	297
-	.long	.Lxtalabel53
+	.long	.Lxtalabel39
 .cc_bottom cc_167
-.cc_top cc_168,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_168,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	299
 	.long	299
-	.long	.Lxtalabel32
+	.long	.Lxtalabel47
 .cc_bottom cc_168
-.cc_top cc_169,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_169,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	299
 	.long	299
-	.long	.Lxtalabel47
+	.long	.Lxtalabel32
 .cc_bottom cc_169
-.cc_top cc_170,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_170,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	301
 	.long	302
-	.long	.Lxtalabel32
+	.long	.Lxtalabel47
 .cc_bottom cc_170
-.cc_top cc_171,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_171,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	301
 	.long	302
-	.long	.Lxtalabel47
+	.long	.Lxtalabel32
 .cc_bottom cc_171
-.cc_top cc_172,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	304
-	.long	304
-	.long	.Lxtalabel47
-.cc_bottom cc_172
-.cc_top cc_173,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_172,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	304
 	.long	304
 	.long	.Lxtalabel32
+.cc_bottom cc_172
+.cc_top cc_173,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	304
+	.long	304
+	.long	.Lxtalabel47
 .cc_bottom cc_173
 .cc_top cc_174,.Lxtalabel33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	305
 	.long	305
 	.long	.Lxtalabel33
 .cc_bottom cc_174
 .cc_top cc_175,.Lxtalabel33
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	307
 	.long	307
 	.long	.Lxtalabel33
 .cc_bottom cc_175
 .cc_top cc_176,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	308
 	.long	308
 	.long	.Lxtalabel64
 .cc_bottom cc_176
 .cc_top cc_177,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	310
 	.long	310
 	.long	.Lxtalabel64
 .cc_bottom cc_177
 .cc_top cc_178,.Lxtalabel64
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	311
 	.long	313
 	.long	.Lxtalabel64
 .cc_bottom cc_178
 .cc_top cc_179,.Lxtalabel65
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	315
 	.long	315
 	.long	.Lxtalabel65
 .cc_bottom cc_179
 .cc_top cc_180,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	316
 	.long	316
 	.long	.Lxtalabel66
 .cc_bottom cc_180
 .cc_top cc_181,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	318
 	.long	318
 	.long	.Lxtalabel66
 .cc_bottom cc_181
 .cc_top cc_182,.Lxtalabel66
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	321
 	.long	321
 	.long	.Lxtalabel66
 .cc_bottom cc_182
 .cc_top cc_183,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	322
 	.long	323
 	.long	.Lxtalabel67
 .cc_bottom cc_183
 .cc_top cc_184,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	325
 	.long	325
 	.long	.Lxtalabel67
 .cc_bottom cc_184
 .cc_top cc_185,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	361
 	.long	361
 	.long	.Lxtalabel67
 .cc_bottom cc_185
 .cc_top cc_186,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	362
 	.long	362
 	.long	.Lxtalabel67
 .cc_bottom cc_186
 .cc_top cc_187,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	365
 	.long	365
 	.long	.Lxtalabel67
 .cc_bottom cc_187
 .cc_top cc_188,.Lxtalabel67
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	367
 	.long	367
 	.long	.Lxtalabel67
 .cc_bottom cc_188
-.cc_top cc_189,.Lxtalabel68
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	370
-	.long	371
-	.long	.Lxtalabel68
-.cc_bottom cc_189
-.cc_top cc_190,.Lxtalabel90
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_189,.Lxtalabel90
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	370
 	.long	371
 	.long	.Lxtalabel90
+.cc_bottom cc_189
+.cc_top cc_190,.Lxtalabel68
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	370
+	.long	371
+	.long	.Lxtalabel68
 .cc_bottom cc_190
 .cc_top cc_191,.Lxtalabel69
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	370
 	.long	371
 	.long	.Lxtalabel69
 .cc_bottom cc_191
 .cc_top cc_192,.Lxtalabel91
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	374
 	.long	375
 	.long	.Lxtalabel91
 .cc_bottom cc_192
 .cc_top cc_193,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	377
 	.long	381
 	.long	.Lxtalabel34
 .cc_bottom cc_193
 .cc_top cc_194,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	382
 	.long	382
 	.long	.Lxtalabel34
 .cc_bottom cc_194
 .cc_top cc_195,.Lxtalabel35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	404
 	.long	406
 	.long	.Lxtalabel35
 .cc_bottom cc_195
 .cc_top cc_196,.Lxtalabel35
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	408
 	.long	408
 	.long	.Lxtalabel35
 .cc_bottom cc_196
 .cc_top cc_197,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	410
 	.long	411
 	.long	.Lxtalabel34
 .cc_bottom cc_197
 .cc_top cc_198,.Lxtalabel34
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	413
 	.long	413
 	.long	.Lxtalabel34
 .cc_bottom cc_198
-.cc_top cc_199,.Lxtalabel50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_199,.Lxtalabel48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	419
 	.long	422
-	.long	.Lxtalabel50
+	.long	.Lxtalabel48
 .cc_bottom cc_199
 .cc_top cc_200,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	419
 	.long	422
 	.long	.Lxtalabel49
 .cc_bottom cc_200
-.cc_top cc_201,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_201,.Lxtalabel50
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	419
 	.long	422
-	.long	.Lxtalabel48
+	.long	.Lxtalabel50
 .cc_bottom cc_201
 .cc_top cc_202,.Lxtalabel76
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	425
 	.long	427
 	.long	.Lxtalabel76
 .cc_bottom cc_202
 .cc_top cc_203,.Lxtalabel76
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	429
 	.long	429
 	.long	.Lxtalabel76
 .cc_bottom cc_203
 .cc_top cc_204,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	432
 	.long	432
 	.long	.Lxtalabel51
 .cc_bottom cc_204
 .cc_top cc_205,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	442
 	.long	442
 	.long	.Lxtalabel51
 .cc_bottom cc_205
 .cc_top cc_206,.Lxtalabel51
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	444
 	.long	444
 	.long	.Lxtalabel51
 .cc_bottom cc_206
 .cc_top cc_207,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	447
 	.long	447
 	.long	.Lxtalabel52
 .cc_bottom cc_207
 .cc_top cc_208,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	448
 	.long	448
 	.long	.Lxtalabel52
 .cc_bottom cc_208
 .cc_top cc_209,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	449
 	.long	449
 	.long	.Lxtalabel52
 .cc_bottom cc_209
 .cc_top cc_210,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	450
 	.long	450
 	.long	.Lxtalabel52
 .cc_bottom cc_210
 .cc_top cc_211,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	451
 	.long	451
 	.long	.Lxtalabel52
 .cc_bottom cc_211
 .cc_top cc_212,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	452
 	.long	452
 	.long	.Lxtalabel52
 .cc_bottom cc_212
 .cc_top cc_213,.Lxtalabel52
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	453
 	.long	454
 	.long	.Lxtalabel52
 .cc_bottom cc_213
-.cc_top cc_214,.Lxtalabel50
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_214,.Lxtalabel48
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	459
 	.long	460
-	.long	.Lxtalabel50
+	.long	.Lxtalabel48
 .cc_bottom cc_214
 .cc_top cc_215,.Lxtalabel49
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	459
 	.long	460
 	.long	.Lxtalabel49
 .cc_bottom cc_215
-.cc_top cc_216,.Lxtalabel48
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_216,.Lxtalabel50
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	459
 	.long	460
-	.long	.Lxtalabel48
+	.long	.Lxtalabel50
 .cc_bottom cc_216
-.cc_top cc_217,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_217,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	466
 	.long	466
-	.long	.Lxtalabel47
+	.long	.Lxtalabel32
 .cc_bottom cc_217
-.cc_top cc_218,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_218,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	466
 	.long	466
-	.long	.Lxtalabel32
+	.long	.Lxtalabel47
 .cc_bottom cc_218
-.cc_top cc_219,.Lxtalabel47
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_219,.Lxtalabel32
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	468
+	.long	468
+	.long	.Lxtalabel32
+.cc_bottom cc_219
+.cc_top cc_220,.Lxtalabel47
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	468
 	.long	468
 	.long	.Lxtalabel47
-.cc_bottom cc_219
-.cc_top cc_220,.Lxtalabel32
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	468
-	.long	468
-	.long	.Lxtalabel32
 .cc_bottom cc_220
 .cc_top cc_221,.Lxtalabel54
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	474
 	.long	475
 	.long	.Lxtalabel54
 .cc_bottom cc_221
 .cc_top cc_222,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	476
 	.long	476
 	.long	.Lxtalabel55
 .cc_bottom cc_222
 .cc_top cc_223,.Lxtalabel55
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	478
 	.long	478
 	.long	.Lxtalabel55
 .cc_bottom cc_223
 .cc_top cc_224,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	479
 	.long	480
 	.long	.Lxtalabel83
 .cc_bottom cc_224
 .cc_top cc_225,.Lxtalabel83
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	481
 	.long	483
 	.long	.Lxtalabel83
 .cc_bottom cc_225
 .cc_top cc_226,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	486
 	.long	486
 	.long	.Lxtalabel84
 .cc_bottom cc_226
 .cc_top cc_227,.Lxtalabel85
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	487
 	.long	488
 	.long	.Lxtalabel85
 .cc_bottom cc_227
 .cc_top cc_228,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	489
 	.long	489
 	.long	.Lxtalabel86
 .cc_bottom cc_228
 .cc_top cc_229,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	490
 	.long	490
 	.long	.Lxtalabel86
 .cc_bottom cc_229
 .cc_top cc_230,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	491
 	.long	491
 	.long	.Lxtalabel86
 .cc_bottom cc_230
 .cc_top cc_231,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	492
 	.long	492
 	.long	.Lxtalabel86
 .cc_bottom cc_231
 .cc_top cc_232,.Lxtalabel86
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	493
 	.long	493
 	.long	.Lxtalabel86
 .cc_bottom cc_232
 .cc_top cc_233,.Lxtalabel87
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	495
 	.long	496
 	.long	.Lxtalabel87
 .cc_bottom cc_233
 .cc_top cc_234,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	498
 	.long	498
 	.long	.Lxtalabel84
 .cc_bottom cc_234
 .cc_top cc_235,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	499
 	.long	500
 	.long	.Lxtalabel56
 .cc_bottom cc_235
 .cc_top cc_236,.Lxtalabel56
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	502
 	.long	503
 	.long	.Lxtalabel56
 .cc_bottom cc_236
 .cc_top cc_237,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	504
 	.long	504
 	.long	.Lxtalabel57
 .cc_bottom cc_237
 .cc_top cc_238,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	505
 	.long	505
 	.long	.Lxtalabel57
 .cc_bottom cc_238
 .cc_top cc_239,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	506
 	.long	506
 	.long	.Lxtalabel57
 .cc_bottom cc_239
 .cc_top cc_240,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	507
 	.long	507
 	.long	.Lxtalabel57
 .cc_bottom cc_240
 .cc_top cc_241,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	508
 	.long	508
 	.long	.Lxtalabel57
 .cc_bottom cc_241
 .cc_top cc_242,.Lxtalabel57
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	509
 	.long	509
 	.long	.Lxtalabel57
 .cc_bottom cc_242
 .cc_top cc_243,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	510
 	.long	510
 	.long	.Lxtalabel58
 .cc_bottom cc_243
 .cc_top cc_244,.Lxtalabel58
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	512
 	.long	512
 	.long	.Lxtalabel58
 .cc_bottom cc_244
 .cc_top cc_245,.Lxtalabel84
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	513
 	.long	513
 	.long	.Lxtalabel84
 .cc_bottom cc_245
-.cc_top cc_246,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	519
-	.long	519
-	.long	.Lxtalabel53
-.cc_bottom cc_246
-.cc_top cc_247,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_246,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	519
 	.long	519
 	.long	.Lxtalabel31
-.cc_bottom cc_247
-.cc_top cc_248,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_246
+.cc_top cc_247,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	519
 	.long	519
 	.long	.Lxtalabel39
+.cc_bottom cc_247
+.cc_top cc_248,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	519
+	.long	519
+	.long	.Lxtalabel53
 .cc_bottom cc_248
 .cc_top cc_249,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	522
 	.long	524
 	.long	.Lxtalabel59
 .cc_bottom cc_249
 .cc_top cc_250,.Lxtalabel40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	522
 	.long	524
 	.long	.Lxtalabel40
 .cc_bottom cc_250
 .cc_top cc_251,.Lxtalabel60
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	526
 	.long	526
 	.long	.Lxtalabel60
 .cc_bottom cc_251
 .cc_top cc_252,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	527
 	.long	527
 	.long	.Lxtalabel77
 .cc_bottom cc_252
 .cc_top cc_253,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	529
 	.long	529
 	.long	.Lxtalabel77
 .cc_bottom cc_253
 .cc_top cc_254,.Lxtalabel77
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	530
 	.long	532
 	.long	.Lxtalabel77
 .cc_bottom cc_254
 .cc_top cc_255,.Lxtalabel78
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	534
 	.long	534
 	.long	.Lxtalabel78
 .cc_bottom cc_255
 .cc_top cc_256,.Lxtalabel79
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	535
 	.long	536
 	.long	.Lxtalabel79
 .cc_bottom cc_256
 .cc_top cc_257,.Lxtalabel80
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	537
 	.long	541
 	.long	.Lxtalabel80
 .cc_bottom cc_257
 .cc_top cc_258,.Lxtalabel79
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	542
 	.long	542
 	.long	.Lxtalabel79
 .cc_bottom cc_258
 .cc_top cc_259,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	543
 	.long	545
 	.long	.Lxtalabel92
 .cc_bottom cc_259
 .cc_top cc_260,.Lxtalabel93
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	546
 	.long	550
 	.long	.Lxtalabel93
 .cc_bottom cc_260
 .cc_top cc_261,.Lxtalabel92
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	551
 	.long	551
 	.long	.Lxtalabel92
 .cc_bottom cc_261
 .cc_top cc_262,.Lxtalabel61
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	553
 	.long	555
 	.long	.Lxtalabel61
 .cc_bottom cc_262
 .cc_top cc_263,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	556
 	.long	557
 	.long	.Lxtalabel62
 .cc_bottom cc_263
 .cc_top cc_264,.Lxtalabel63
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	558
 	.long	562
 	.long	.Lxtalabel63
 .cc_bottom cc_264
 .cc_top cc_265,.Lxtalabel62
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	563
 	.long	563
 	.long	.Lxtalabel62
 .cc_bottom cc_265
 .cc_top cc_266,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	564
 	.long	566
 	.long	.Lxtalabel81
 .cc_bottom cc_266
 .cc_top cc_267,.Lxtalabel82
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	567
 	.long	571
 	.long	.Lxtalabel82
 .cc_bottom cc_267
 .cc_top cc_268,.Lxtalabel81
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	572
 	.long	572
 	.long	.Lxtalabel81
 .cc_bottom cc_268
 .cc_top cc_269,.Lxtalabel41
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	578
 	.long	578
 	.long	.Lxtalabel41
 .cc_bottom cc_269
 .cc_top cc_270,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	579
 	.long	579
 	.long	.Lxtalabel70
 .cc_bottom cc_270
 .cc_top cc_271,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	581
 	.long	581
 	.long	.Lxtalabel70
 .cc_bottom cc_271
 .cc_top cc_272,.Lxtalabel70
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	582
 	.long	584
 	.long	.Lxtalabel70
 .cc_bottom cc_272
 .cc_top cc_273,.Lxtalabel71
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	586
 	.long	586
 	.long	.Lxtalabel71
 .cc_bottom cc_273
 .cc_top cc_274,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	587
 	.long	588
 	.long	.Lxtalabel72
 .cc_bottom cc_274
 .cc_top cc_275,.Lxtalabel73
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	589
 	.long	593
 	.long	.Lxtalabel73
 .cc_bottom cc_275
 .cc_top cc_276,.Lxtalabel72
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	594
 	.long	594
 	.long	.Lxtalabel72
 .cc_bottom cc_276
 .cc_top cc_277,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	595
 	.long	597
 	.long	.Lxtalabel88
 .cc_bottom cc_277
 .cc_top cc_278,.Lxtalabel89
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	598
 	.long	602
 	.long	.Lxtalabel89
 .cc_bottom cc_278
 .cc_top cc_279,.Lxtalabel88
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	603
 	.long	603
 	.long	.Lxtalabel88
 .cc_bottom cc_279
 .cc_top cc_280,.Lxtalabel42
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	605
 	.long	607
 	.long	.Lxtalabel42
 .cc_bottom cc_280
 .cc_top cc_281,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	608
 	.long	609
 	.long	.Lxtalabel43
 .cc_bottom cc_281
 .cc_top cc_282,.Lxtalabel44
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	610
 	.long	613
 	.long	.Lxtalabel44
 .cc_bottom cc_282
 .cc_top cc_283,.Lxtalabel43
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	614
 	.long	614
 	.long	.Lxtalabel43
 .cc_bottom cc_283
 .cc_top cc_284,.Lxtalabel74
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	615
 	.long	617
 	.long	.Lxtalabel74
 .cc_bottom cc_284
 .cc_top cc_285,.Lxtalabel75
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	618
 	.long	621
 	.long	.Lxtalabel75
 .cc_bottom cc_285
 .cc_top cc_286,.Lxtalabel74
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	622
 	.long	622
 	.long	.Lxtalabel74
 .cc_bottom cc_286
 .cc_top cc_287,.Lxtalabel40
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	628
 	.long	629
 	.long	.Lxtalabel40
 .cc_bottom cc_287
 .cc_top cc_288,.Lxtalabel59
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	628
 	.long	629
 	.long	.Lxtalabel59
 .cc_bottom cc_288
-.cc_top cc_289,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_289,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	835
 	.long	835
-	.long	.Lxtalabel39
+	.long	.Lxtalabel53
 .cc_bottom cc_289
-.cc_top cc_290,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_290,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	835
 	.long	835
-	.long	.Lxtalabel31
+	.long	.Lxtalabel39
 .cc_bottom cc_290
-.cc_top cc_291,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_291,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	835
 	.long	835
-	.long	.Lxtalabel53
-.cc_bottom cc_291
-.cc_top cc_292,.Lxtalabel31
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	837
-	.long	837
 	.long	.Lxtalabel31
-.cc_bottom cc_292
-.cc_top cc_293,.Lxtalabel53
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_291
+.cc_top cc_292,.Lxtalabel53
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	837
 	.long	837
 	.long	.Lxtalabel53
-.cc_bottom cc_293
-.cc_top cc_294,.Lxtalabel39
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_292
+.cc_top cc_293,.Lxtalabel39
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	837
 	.long	837
 	.long	.Lxtalabel39
+.cc_bottom cc_293
+.cc_top cc_294,.Lxtalabel31
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	837
+	.long	837
+	.long	.Lxtalabel31
 .cc_bottom cc_294
-.cc_top cc_295,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	842
-	.long	843
-	.long	.Lxtalabel22
-.cc_bottom cc_295
-.cc_top cc_296,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	842
-	.long	843
-	.long	.Lxtalabel45
-.cc_bottom cc_296
-.cc_top cc_297,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_295,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	842
 	.long	843
 	.long	.Lxtalabel36
+.cc_bottom cc_295
+.cc_top cc_296,.Lxtalabel22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	842
+	.long	843
+	.long	.Lxtalabel22
+.cc_bottom cc_296
+.cc_top cc_297,.Lxtalabel45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	842
+	.long	843
+	.long	.Lxtalabel45
 .cc_bottom cc_297
 .cc_top cc_298,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	845
 	.long	846
 	.long	.Lxtalabel22
 .cc_bottom cc_298
-.cc_top cc_299,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	845
-	.long	846
-	.long	.Lxtalabel45
-.cc_bottom cc_299
-.cc_top cc_300,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_299,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	845
 	.long	846
 	.long	.Lxtalabel36
+.cc_bottom cc_299
+.cc_top cc_300,.Lxtalabel45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	845
+	.long	846
+	.long	.Lxtalabel45
 .cc_bottom cc_300
 .cc_top cc_301,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	848
 	.long	848
 	.long	.Lxtalabel45
 .cc_bottom cc_301
 .cc_top cc_302,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	848
 	.long	848
 	.long	.Lxtalabel36
 .cc_bottom cc_302
 .cc_top cc_303,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	848
 	.long	848
 	.long	.Lxtalabel22
 .cc_bottom cc_303
-.cc_top cc_304,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	849
-	.long	849
-	.long	.Lxtalabel36
-.cc_bottom cc_304
-.cc_top cc_305,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	849
-	.long	849
-	.long	.Lxtalabel22
-.cc_bottom cc_305
-.cc_top cc_306,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_304,.Lxtalabel45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	849
 	.long	849
 	.long	.Lxtalabel45
+.cc_bottom cc_304
+.cc_top cc_305,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	849
+	.long	849
+	.long	.Lxtalabel36
+.cc_bottom cc_305
+.cc_top cc_306,.Lxtalabel22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	849
+	.long	849
+	.long	.Lxtalabel22
 .cc_bottom cc_306
 .cc_top cc_307,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	853
 	.long	855
 	.long	.Lxtalabel23
 .cc_bottom cc_307
 .cc_top cc_308,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	858
 	.long	860
 	.long	.Lxtalabel24
 .cc_bottom cc_308
 .cc_top cc_309,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	863
 	.long	865
 	.long	.Lxtalabel24
 .cc_bottom cc_309
 .cc_top cc_310,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	877
 	.long	877
 	.long	.Lxtalabel24
 .cc_bottom cc_310
 .cc_top cc_311,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	879
 	.long	879
 	.long	.Lxtalabel24
 .cc_bottom cc_311
 .cc_top cc_312,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	880
 	.long	881
 	.long	.Lxtalabel24
 .cc_bottom cc_312
 .cc_top cc_313,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	880
 	.long	881
 	.long	.Lxtalabel24
 .cc_bottom cc_313
 .cc_top cc_314,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	880
 	.long	881
 	.long	.Lxtalabel24
 .cc_bottom cc_314
 .cc_top cc_315,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	880
 	.long	881
 	.long	.Lxtalabel24
 .cc_bottom cc_315
 .cc_top cc_316,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	880
 	.long	881
 	.long	.Lxtalabel24
 .cc_bottom cc_316
 .cc_top cc_317,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	886
 	.long	886
 	.long	.Lxtalabel24
 .cc_bottom cc_317
 .cc_top cc_318,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	886
 	.long	886
 	.long	.Lxtalabel24
 .cc_bottom cc_318
 .cc_top cc_319,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	886
 	.long	886
 	.long	.Lxtalabel24
 .cc_bottom cc_319
 .cc_top cc_320,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	886
 	.long	886
 	.long	.Lxtalabel24
 .cc_bottom cc_320
 .cc_top cc_321,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	886
 	.long	886
 	.long	.Lxtalabel24
 .cc_bottom cc_321
 .cc_top cc_322,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	889
 	.long	891
 	.long	.Lxtalabel24
 .cc_bottom cc_322
 .cc_top cc_323,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	889
 	.long	891
 	.long	.Lxtalabel24
 .cc_bottom cc_323
 .cc_top cc_324,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	889
 	.long	891
 	.long	.Lxtalabel24
 .cc_bottom cc_324
 .cc_top cc_325,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	889
 	.long	891
 	.long	.Lxtalabel24
 .cc_bottom cc_325
 .cc_top cc_326,.Lxtalabel24
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	889
 	.long	891
 	.long	.Lxtalabel24
 .cc_bottom cc_326
 .cc_top cc_327,.Lxtalabel26
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	892
 	.long	893
 	.long	.Lxtalabel26
 .cc_bottom cc_327
 .cc_top cc_328,.Lxtalabel27
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	894
 	.long	898
 	.long	.Lxtalabel27
 .cc_bottom cc_328
 .cc_top cc_329,.Lxtalabel28
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	900
 	.long	900
 	.long	.Lxtalabel28
 .cc_bottom cc_329
 .cc_top cc_330,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	901
 	.long	901
 	.long	.Lxtalabel25
 .cc_bottom cc_330
 .cc_top cc_331,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	903
 	.long	906
 	.long	.Lxtalabel25
 .cc_bottom cc_331
 .cc_top cc_332,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	907
 	.long	910
 	.long	.Lxtalabel29
 .cc_bottom cc_332
 .cc_top cc_333,.Lxtalabel25
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	911
 	.long	911
 	.long	.Lxtalabel25
 .cc_bottom cc_333
 .cc_top cc_334,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	921
 	.long	921
 	.long	.Lxtalabel29
 .cc_bottom cc_334
 .cc_top cc_335,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	923
 	.long	925
 	.long	.Lxtalabel29
 .cc_bottom cc_335
 .cc_top cc_336,.Lxtalabel29
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	927
 	.long	927
 	.long	.Lxtalabel29
 .cc_bottom cc_336
 .cc_top cc_337,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	929
 	.long	930
 	.long	.Lxtalabel23
 .cc_bottom cc_337
 .cc_top cc_338,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	932
 	.long	932
 	.long	.Lxtalabel23
 .cc_bottom cc_338
 .cc_top cc_339,.Lxtalabel23
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	935
 	.long	935
 	.long	.Lxtalabel23
 .cc_bottom cc_339
 .cc_top cc_340,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	936
 	.long	936
 	.long	.Lxtalabel22
 .cc_bottom cc_340
 .cc_top cc_341,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	936
 	.long	936
 	.long	.Lxtalabel45
 .cc_bottom cc_341
 .cc_top cc_342,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	936
 	.long	936
 	.long	.Lxtalabel36
 .cc_bottom cc_342
 .cc_top cc_343,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	939
 	.long	940
 	.long	.Lxtalabel37
 .cc_bottom cc_343
 .cc_top cc_344,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	942
 	.long	942
 	.long	.Lxtalabel37
 .cc_bottom cc_344
 .cc_top cc_345,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	944
 	.long	949
 	.long	.Lxtalabel38
 .cc_bottom cc_345
 .cc_top cc_346,.Lxtalabel38
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	951
 	.long	951
 	.long	.Lxtalabel38
 .cc_bottom cc_346
 .cc_top cc_347,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	953
 	.long	953
 	.long	.Lxtalabel37
 .cc_bottom cc_347
 .cc_top cc_348,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	955
 	.long	955
 	.long	.Lxtalabel37
 .cc_bottom cc_348
 .cc_top cc_349,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	956
 	.long	956
 	.long	.Lxtalabel37
 .cc_bottom cc_349
 .cc_top cc_350,.Lxtalabel37
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	960
 	.long	960
 	.long	.Lxtalabel37
 .cc_bottom cc_350
 .cc_top cc_351,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	961
 	.long	966
 	.long	.Lxtalabel46
 .cc_bottom cc_351
 .cc_top cc_352,.Lxtalabel46
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	969
 	.long	969
 	.long	.Lxtalabel46
 .cc_bottom cc_352
 .cc_top cc_353,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	971
 	.long	971
 	.long	.Lxtalabel36
 .cc_bottom cc_353
 .cc_top cc_354,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	971
 	.long	971
 	.long	.Lxtalabel45
 .cc_bottom cc_354
 .cc_top cc_355,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	971
 	.long	971
 	.long	.Lxtalabel22
 .cc_bottom cc_355
-.cc_top cc_356,.Lxtalabel36
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	973
-	.long	973
-	.long	.Lxtalabel36
-.cc_bottom cc_356
-.cc_top cc_357,.Lxtalabel45
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	973
-	.long	973
-	.long	.Lxtalabel45
-.cc_bottom cc_357
-.cc_top cc_358,.Lxtalabel22
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_356,.Lxtalabel22
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	973
 	.long	973
 	.long	.Lxtalabel22
+.cc_bottom cc_356
+.cc_top cc_357,.Lxtalabel36
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	973
+	.long	973
+	.long	.Lxtalabel36
+.cc_bottom cc_357
+.cc_top cc_358,.Lxtalabel45
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	973
+	.long	973
+	.long	.Lxtalabel45
 .cc_bottom cc_358
 .cc_top cc_359,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1071
 	.long	1071
 	.long	.Lxtalabel94
 .cc_bottom cc_359
 .cc_top cc_360,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1078
 	.long	1080
 	.long	.Lxtalabel94
 .cc_bottom cc_360
 .cc_top cc_361,.Lxtalabel94
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1083
 	.long	1083
 	.long	.Lxtalabel94
 .cc_bottom cc_361
 .cc_top cc_362,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1084
 	.long	1084
 	.long	.Lxtalabel97
 .cc_bottom cc_362
 .cc_top cc_363,.Lxtalabel97
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1086
 	.long	1088
 	.long	.Lxtalabel97
 .cc_bottom cc_363
 .cc_top cc_364,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1089
 	.long	1089
 	.long	.Lxtalabel98
 .cc_bottom cc_364
 .cc_top cc_365,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1091
 	.long	1091
 	.long	.Lxtalabel98
 .cc_bottom cc_365
 .cc_top cc_366,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1093
 	.long	1093
 	.long	.Lxtalabel98
 .cc_bottom cc_366
 .cc_top cc_367,.Lxtalabel98
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1098
 	.long	1098
 	.long	.Lxtalabel98
 .cc_bottom cc_367
-.cc_top cc_368,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1099
-	.long	1099
-	.long	.Lxtalabel99
-.cc_bottom cc_368
-.cc_top cc_369,.Lxtalabel100
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_368,.Lxtalabel100
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1099
 	.long	1099
 	.long	.Lxtalabel100
+.cc_bottom cc_368
+.cc_top cc_369,.Lxtalabel99
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1099
+	.long	1099
+	.long	.Lxtalabel99
 .cc_bottom cc_369
 .cc_top cc_370,.Lxtalabel99
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1101
 	.long	1101
 	.long	.Lxtalabel99
 .cc_bottom cc_370
 .cc_top cc_371,.Lxtalabel100
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1101
 	.long	1101
 	.long	.Lxtalabel100
 .cc_bottom cc_371
 .cc_top cc_372,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1102
 	.long	1102
 	.long	.Lxtalabel101
 .cc_bottom cc_372
 .cc_top cc_373,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1104
 	.long	1104
 	.long	.Lxtalabel101
 .cc_bottom cc_373
 .cc_top cc_374,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1106
 	.long	1106
 	.long	.Lxtalabel101
 .cc_bottom cc_374
-.cc_top cc_375,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_375,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1107
 	.long	1109
-	.long	.Lxtalabel103
+	.long	.Lxtalabel102
 .cc_bottom cc_375
-.cc_top cc_376,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_376,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1107
 	.long	1109
-	.long	.Lxtalabel102
+	.long	.Lxtalabel103
 .cc_bottom cc_376
-.cc_top cc_377,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_377,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1113
 	.long	1114
-	.long	.Lxtalabel103
+	.long	.Lxtalabel102
 .cc_bottom cc_377
-.cc_top cc_378,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_378,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1113
 	.long	1114
-	.long	.Lxtalabel102
+	.long	.Lxtalabel103
 .cc_bottom cc_378
-.cc_top cc_379,.Lxtalabel102
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1116
-	.long	1116
-	.long	.Lxtalabel102
-.cc_bottom cc_379
-.cc_top cc_380,.Lxtalabel103
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_379,.Lxtalabel103
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1116
 	.long	1116
 	.long	.Lxtalabel103
+.cc_bottom cc_379
+.cc_top cc_380,.Lxtalabel102
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1116
+	.long	1116
+	.long	.Lxtalabel102
 .cc_bottom cc_380
-.cc_top cc_381,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_381,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1117
 	.long	1118
-	.long	.Lxtalabel104
+	.long	.Lxtalabel105
 .cc_bottom cc_381
 .cc_top cc_382,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1117
 	.long	1118
 	.long	.Lxtalabel106
 .cc_bottom cc_382
-.cc_top cc_383,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_383,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1117
 	.long	1118
-	.long	.Lxtalabel105
+	.long	.Lxtalabel104
 .cc_bottom cc_383
-.cc_top cc_384,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1137
-	.long	1137
-	.long	.Lxtalabel106
-.cc_bottom cc_384
-.cc_top cc_385,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_384,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1137
 	.long	1137
 	.long	.Lxtalabel104
+.cc_bottom cc_384
+.cc_top cc_385,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1137
+	.long	1137
+	.long	.Lxtalabel106
 .cc_bottom cc_385
 .cc_top cc_386,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1137
 	.long	1137
 	.long	.Lxtalabel105
 .cc_bottom cc_386
-.cc_top cc_387,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_387,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1138
 	.long	1138
-	.long	.Lxtalabel106
+	.long	.Lxtalabel104
 .cc_bottom cc_387
 .cc_top cc_388,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1138
 	.long	1138
 	.long	.Lxtalabel105
 .cc_bottom cc_388
-.cc_top cc_389,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_389,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1138
 	.long	1138
-	.long	.Lxtalabel104
+	.long	.Lxtalabel106
 .cc_bottom cc_389
 .cc_top cc_390,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1141
 	.long	1141
 	.long	.Lxtalabel104
 .cc_bottom cc_390
 .cc_top cc_391,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1141
 	.long	1141
 	.long	.Lxtalabel105
 .cc_bottom cc_391
 .cc_top cc_392,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1141
 	.long	1141
 	.long	.Lxtalabel106
 .cc_bottom cc_392
-.cc_top cc_393,.Lxtalabel105
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1144
-	.long	1145
-	.long	.Lxtalabel105
-.cc_bottom cc_393
-.cc_top cc_394,.Lxtalabel104
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_393,.Lxtalabel104
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1144
 	.long	1145
 	.long	.Lxtalabel104
-.cc_bottom cc_394
-.cc_top cc_395,.Lxtalabel106
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_393
+.cc_top cc_394,.Lxtalabel106
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1144
 	.long	1145
 	.long	.Lxtalabel106
+.cc_bottom cc_394
+.cc_top cc_395,.Lxtalabel105
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1144
+	.long	1145
+	.long	.Lxtalabel105
 .cc_bottom cc_395
 .cc_top cc_396,.Lxtalabel107
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1147
 	.long	1148
 	.long	.Lxtalabel107
 .cc_bottom cc_396
 .cc_top cc_397,.Lxtalabel101
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1149
 	.long	1149
 	.long	.Lxtalabel101
 .cc_bottom cc_397
 .cc_top cc_398,.Lxtalabel95
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1154
 	.long	1158
 	.long	.Lxtalabel95
 .cc_bottom cc_398
 .cc_top cc_399,.Lxtalabel96
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1159
 	.long	1162
 	.long	.Lxtalabel96
 .cc_bottom cc_399
 .cc_top cc_400,.Lxtalabel95
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1163
 	.long	1163
 	.long	.Lxtalabel95
 .cc_bottom cc_400
-.cc_top cc_401,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_401,.Lxtalabel116
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1173
 	.long	1176
-	.long	.Lxtalabel115
+	.long	.Lxtalabel116
 .cc_bottom cc_401
-.cc_top cc_402,.Lxtalabel116
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_402,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1173
 	.long	1176
-	.long	.Lxtalabel116
+	.long	.Lxtalabel115
 .cc_bottom cc_402
-.cc_top cc_403,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_403,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1173
 	.long	1176
-	.long	.Lxtalabel109
+	.long	.Lxtalabel108
 .cc_bottom cc_403
-.cc_top cc_404,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_404,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1173
 	.long	1176
-	.long	.Lxtalabel108
-.cc_bottom cc_404
-.cc_top cc_405,.Lxtalabel108
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1180
-	.long	1182
-	.long	.Lxtalabel108
-.cc_bottom cc_405
-.cc_top cc_406,.Lxtalabel109
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1180
-	.long	1182
 	.long	.Lxtalabel109
-.cc_bottom cc_406
-.cc_top cc_407,.Lxtalabel116
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1180
-	.long	1182
-	.long	.Lxtalabel116
-.cc_bottom cc_407
-.cc_top cc_408,.Lxtalabel115
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_404
+.cc_top cc_405,.Lxtalabel115
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1180
 	.long	1182
 	.long	.Lxtalabel115
+.cc_bottom cc_405
+.cc_top cc_406,.Lxtalabel116
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1180
+	.long	1182
+	.long	.Lxtalabel116
+.cc_bottom cc_406
+.cc_top cc_407,.Lxtalabel108
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1180
+	.long	1182
+	.long	.Lxtalabel108
+.cc_bottom cc_407
+.cc_top cc_408,.Lxtalabel109
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1180
+	.long	1182
+	.long	.Lxtalabel109
 .cc_bottom cc_408
 .cc_top cc_409,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1183
 	.long	1184
 	.long	.Lxtalabel110
 .cc_bottom cc_409
 .cc_top cc_410,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1186
 	.long	1186
 	.long	.Lxtalabel110
 .cc_bottom cc_410
 .cc_top cc_411,.Lxtalabel110
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1187
 	.long	1189
 	.long	.Lxtalabel110
 .cc_bottom cc_411
 .cc_top cc_412,.Lxtalabel111
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1191
 	.long	1191
 	.long	.Lxtalabel111
 .cc_bottom cc_412
 .cc_top cc_413,.Lxtalabel123
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1191
 	.long	1191
 	.long	.Lxtalabel123
 .cc_bottom cc_413
-.cc_top cc_414,.Lxtalabel123
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1193
-	.long	1195
-	.long	.Lxtalabel123
-.cc_bottom cc_414
-.cc_top cc_415,.Lxtalabel111
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_414,.Lxtalabel111
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1193
 	.long	1195
 	.long	.Lxtalabel111
+.cc_bottom cc_414
+.cc_top cc_415,.Lxtalabel123
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1193
+	.long	1195
+	.long	.Lxtalabel123
 .cc_bottom cc_415
 .cc_top cc_416,.Lxtalabel124
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1197
 	.long	1197
 	.long	.Lxtalabel124
 .cc_bottom cc_416
 .cc_top cc_417,.Lxtalabel125
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1198
 	.long	1201
 	.long	.Lxtalabel125
 .cc_bottom cc_417
 .cc_top cc_418,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1198
 	.long	1201
 	.long	.Lxtalabel136
 .cc_bottom cc_418
 .cc_top cc_419,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1202
 	.long	1204
 	.long	.Lxtalabel137
 .cc_bottom cc_419
 .cc_top cc_420,.Lxtalabel137
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1206
 	.long	1206
 	.long	.Lxtalabel137
 .cc_bottom cc_420
 .cc_top cc_421,.Lxtalabel126
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1207
 	.long	1210
 	.long	.Lxtalabel126
 .cc_bottom cc_421
-.cc_top cc_422,.Lxtalabel136
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1211
-	.long	1211
-	.long	.Lxtalabel136
-.cc_bottom cc_422
-.cc_top cc_423,.Lxtalabel125
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_422,.Lxtalabel125
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1211
 	.long	1211
 	.long	.Lxtalabel125
+.cc_bottom cc_422
+.cc_top cc_423,.Lxtalabel136
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1211
+	.long	1211
+	.long	.Lxtalabel136
 .cc_bottom cc_423
 .cc_top cc_424,.Lxtalabel112
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1216
 	.long	1216
 	.long	.Lxtalabel112
 .cc_bottom cc_424
 .cc_top cc_425,.Lxtalabel113
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1217
 	.long	1220
 	.long	.Lxtalabel113
 .cc_bottom cc_425
 .cc_top cc_426,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1217
 	.long	1220
 	.long	.Lxtalabel132
 .cc_bottom cc_426
 .cc_top cc_427,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1221
 	.long	1223
 	.long	.Lxtalabel133
 .cc_bottom cc_427
 .cc_top cc_428,.Lxtalabel133
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1225
 	.long	1225
 	.long	.Lxtalabel133
 .cc_bottom cc_428
 .cc_top cc_429,.Lxtalabel114
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1226
 	.long	1229
 	.long	.Lxtalabel114
 .cc_bottom cc_429
-.cc_top cc_430,.Lxtalabel113
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
-	.byte	0
-	.long	1230
-	.long	1230
-	.long	.Lxtalabel113
-.cc_bottom cc_430
-.cc_top cc_431,.Lxtalabel132
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_top cc_430,.Lxtalabel132
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1230
 	.long	1230
 	.long	.Lxtalabel132
-.cc_bottom cc_431
-.cc_top cc_432,.Lxtalabel127
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_430
+.cc_top cc_431,.Lxtalabel113
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	1236
-	.long	1238
-	.long	.Lxtalabel127
-.cc_bottom cc_432
-.cc_top cc_433,.Lxtalabel117
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.long	1230
+	.long	1230
+	.long	.Lxtalabel113
+.cc_bottom cc_431
+.cc_top cc_432,.Lxtalabel117
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1236
 	.long	1238
 	.long	.Lxtalabel117
-.cc_bottom cc_433
-.cc_top cc_434,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+.cc_bottom cc_432
+.cc_top cc_433,.Lxtalabel127
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
-	.long	1239
-	.long	1242
-	.long	.Lxtalabel118
-.cc_bottom cc_434
-.cc_top cc_435,.Lxtalabel130
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.long	1236
+	.long	1238
+	.long	.Lxtalabel127
+.cc_bottom cc_433
+.cc_top cc_434,.Lxtalabel130
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1239
 	.long	1242
 	.long	.Lxtalabel130
+.cc_bottom cc_434
+.cc_top cc_435,.Lxtalabel118
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.byte	0
+	.long	1239
+	.long	1242
+	.long	.Lxtalabel118
 .cc_bottom cc_435
 .cc_top cc_436,.Lxtalabel131
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1243
 	.long	1249
 	.long	.Lxtalabel131
 .cc_bottom cc_436
 .cc_top cc_437,.Lxtalabel119
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1250
 	.long	1255
 	.long	.Lxtalabel119
 .cc_bottom cc_437
 .cc_top cc_438,.Lxtalabel130
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1256
 	.long	1256
 	.long	.Lxtalabel130
 .cc_bottom cc_438
 .cc_top cc_439,.Lxtalabel118
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1256
 	.long	1256
 	.long	.Lxtalabel118
 .cc_bottom cc_439
 .cc_top cc_440,.Lxtalabel128
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1258
 	.long	1261
 	.long	.Lxtalabel128
 .cc_bottom cc_440
 .cc_top cc_441,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1258
 	.long	1261
 	.long	.Lxtalabel134
 .cc_bottom cc_441
 .cc_top cc_442,.Lxtalabel135
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1262
 	.long	1267
 	.long	.Lxtalabel135
 .cc_bottom cc_442
 .cc_top cc_443,.Lxtalabel129
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1268
 	.long	1272
 	.long	.Lxtalabel129
 .cc_bottom cc_443
 .cc_top cc_444,.Lxtalabel128
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1273
 	.long	1273
 	.long	.Lxtalabel128
 .cc_bottom cc_444
 .cc_top cc_445,.Lxtalabel134
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1273
 	.long	1273
 	.long	.Lxtalabel134
 .cc_bottom cc_445
 .cc_top cc_446,.Lxtalabel120
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1277
 	.long	1279
 	.long	.Lxtalabel120
 .cc_bottom cc_446
 .cc_top cc_447,.Lxtalabel120
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1281
 	.long	1281
 	.long	.Lxtalabel120
 .cc_bottom cc_447
 .cc_top cc_448,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1282
 	.long	1284
 	.long	.Lxtalabel121
 .cc_bottom cc_448
 .cc_top cc_449,.Lxtalabel121
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1286
 	.long	1286
 	.long	.Lxtalabel121
 .cc_bottom cc_449
 .cc_top cc_450,.Lxtalabel122
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	1287
 	.long	1290
 	.long	.Lxtalabel122
 .cc_bottom cc_450
 .cc_top cc_451,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel14
 .cc_bottom cc_451
-.cc_top cc_452,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
-	.byte	0
-	.long	11
-	.long	15
-	.long	.Lxtalabel8
-.cc_bottom cc_452
-.cc_top cc_453,.Lxtalabel14
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+.cc_top cc_452,.Lxtalabel14
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel14
+.cc_bottom cc_452
+.cc_top cc_453,.Lxtalabel5
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
+	.byte	0
+	.long	11
+	.long	15
+	.long	.Lxtalabel5
 .cc_bottom cc_453
 .cc_top cc_454,.Lxtalabel8
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel8
 .cc_bottom cc_454
 .cc_top cc_455,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
 	.long	.Lxtalabel5
 .cc_bottom cc_455
-.cc_top cc_456,.Lxtalabel5
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h"
+.cc_top cc_456,.Lxtalabel8
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/usb_buffer\\xc_ptr.h"
 	.byte	0
 	.long	11
 	.long	15
-	.long	.Lxtalabel5
+	.long	.Lxtalabel8
 .cc_bottom cc_456
 .Lentries_end5:
 	.section	.xtalooplabeltable,"",@progbits
 .Lentries_start6:
 	.long	.Lentries_end7-.Lentries_start6
 	.long	0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 	.byte	0
 .cc_top cc_457,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	151
 	.long	151
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_457
 .cc_top cc_458,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	154
 	.long	154
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_458
 .cc_top cc_459,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	156
 	.long	156
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_459
 .cc_top cc_460,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	167
 	.long	167
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_460
 .cc_top cc_461,.Lxta.loop_labels1
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	169
 	.long	169
 	.long	.Lxta.loop_labels1
 .cc_bottom cc_461
 .cc_top cc_462,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	177
 	.long	177
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_462
 .cc_top cc_463,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	180
 	.long	180
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_463
 .cc_top cc_464,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	182
 	.long	182
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_464
 .cc_top cc_465,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	193
 	.long	193
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_465
 .cc_top cc_466,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+	.ascii	"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 	.byte	0
 	.long	195
 	.long	195
@@ -13380,7 +13380,7 @@ g_curSamFreq:
 	.long	1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str0:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:5: error: out of bounds array access\n    buffer[index+3] = val>>24;\n    ^~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:58:5: error: out of bounds array access\n    buffer[index+3] = val>>24;\n    ^~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_0,.Ltrap_info0
 	.long	.Ltrap_info0
@@ -13388,7 +13388,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_0
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:5: error: out of bounds array access\n    buffer[index+2] = val>>16;\n    ^~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:59:5: error: out of bounds array access\n    buffer[index+2] = val>>16;\n    ^~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_1,.Ltrap_info1
 	.long	.Ltrap_info1
@@ -13396,7 +13396,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:5: error: out of bounds array access\n    buffer[index+1] = val>>8;\n    ^~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:60:5: error: out of bounds array access\n    buffer[index+1] = val>>8;\n    ^~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_2,.Ltrap_info2
 	.long	.Ltrap_info2
@@ -13404,7 +13404,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_2
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str3:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:61:5: error: out of bounds array access\n    buffer[index]  =  val;\n    ^~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:61:5: error: out of bounds array access\n    buffer[index]  =  val;\n    ^~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_3,.Ltrap_info3
 	.long	.Ltrap_info3
@@ -13412,7 +13412,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_3
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str4:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:39: error: out of bounds array access\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:248:39: error: out of bounds array access\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_4,.Ltrap_info4
 	.long	.Ltrap_info4
@@ -13420,7 +13420,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_4
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str5:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:39: error: out of bounds array access\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:175:39: error: out of bounds array access\n                unsigned master_vol = volsIn[0] == 0x8000 ? 0 : db_to_mult(volsIn[0], 8, 29);\n                                      ^~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_5,.Ltrap_info5
 	.long	.Ltrap_info5
@@ -13428,7 +13428,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_5
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str6:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:36: error: out of bounds array access\n                    unsigned vol = volsIn[i] == 0x8000 ? 0 : db_to_mult(volsIn[i], 8, 29);\n                                   ^~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:180:36: error: out of bounds array access\n                    unsigned vol = volsIn[i] == 0x8000 ? 0 : db_to_mult(volsIn[i], 8, 29);\n                                   ^~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_6,.Ltrap_info6
 	.long	.Ltrap_info6
@@ -13436,7 +13436,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_6
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str7:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:57: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                        ^~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:57: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                        ^~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_7,.Ltrap_info7
 	.long	.Ltrap_info7
@@ -13444,7 +13444,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_7
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str8:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:71: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                                      ^~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:182:71: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];\n                                                                      ^~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_8,.Ltrap_info8
 	.long	.Ltrap_info8
@@ -13452,7 +13452,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_8
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str9:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:39: error: out of bounds array access\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:226:39: error: out of bounds array access\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_9,.Ltrap_info9
 	.long	.Ltrap_info9
@@ -13460,7 +13460,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_9
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str10:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:39: error: out of bounds array access\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:148:39: error: out of bounds array access\n                unsigned master_vol = volsOut[0] == 0x8000 ? 0 : db_to_mult(volsOut[0], 8, 29);\n                                      ^~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_10,.Ltrap_info10
 	.long	.Ltrap_info10
@@ -13468,7 +13468,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_10
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str11:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:36: error: out of bounds array access\n                    unsigned vol = volsOut[i] == 0x8000 ? 0 : db_to_mult(volsOut[i], 8, 29);\n                                   ^~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:154:36: error: out of bounds array access\n                    unsigned vol = volsOut[i] == 0x8000 ? 0 : db_to_mult(volsOut[i], 8, 29);\n                                   ^~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_11,.Ltrap_info11
 	.long	.Ltrap_info11
@@ -13476,7 +13476,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_11
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str12:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:57: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                        ^~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:57: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                        ^~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_12,.Ltrap_info12
 	.long	.Ltrap_info12
@@ -13484,7 +13484,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_12
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str13:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:72: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                                       ^~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:156:72: error: out of bounds array access\n                    x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];\n                                                                       ^~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_13,.Ltrap_info13
 	.long	.Ltrap_info13
@@ -13492,7 +13492,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_13
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str14:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:33: error: out of bounds array access\n                 unsigned vol = volsIn[channel] == 0x8000 ? 0 : db_to_mult(volsIn[channel], 8, 29);\n                                ^~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:249:33: error: out of bounds array access\n                 unsigned vol = volsIn[channel] == 0x8000 ? 0 : db_to_mult(volsIn[channel], 8, 29);\n                                ^~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_14,.Ltrap_info14
 	.long	.Ltrap_info14
@@ -13500,7 +13500,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_14
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str15:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:53: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                    ^~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:53: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                    ^~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_15,.Ltrap_info15
 	.long	.Ltrap_info15
@@ -13508,7 +13508,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_15
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str16:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:67: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                                  ^~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:251:67: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];\n                                                                  ^~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_16,.Ltrap_info16
 	.long	.Ltrap_info16
@@ -13516,7 +13516,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_16
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str17:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:32: error: out of bounds array access\n                unsigned vol = volsOut[channel] == 0x8000 ? 0 : db_to_mult(volsOut[channel], 8, 29);\n                               ^~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:227:32: error: out of bounds array access\n                unsigned vol = volsOut[channel] == 0x8000 ? 0 : db_to_mult(volsOut[channel], 8, 29);\n                               ^~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_17,.Ltrap_info17
 	.long	.Ltrap_info17
@@ -13524,7 +13524,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_17
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str18:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:53: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                    ^~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:53: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                    ^~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_18,.Ltrap_info18
 	.long	.Ltrap_info18
@@ -13532,7 +13532,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_18
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str19:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:68: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                                   ^~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:229:68: error: out of bounds array access\n                x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];\n                                                                   ^~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_19,.Ltrap_info19
 	.long	.Ltrap_info19
@@ -13540,7 +13540,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_19
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str20:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:53: error: out of bounds array access\n                                        buffer[0] = mutesOut[sp.wValue&0xff];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:611:53: error: out of bounds array access\n                                        buffer[0] = mutesOut[sp.wValue&0xff];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_20,.Ltrap_info20
 	.long	.Ltrap_info20
@@ -13548,7 +13548,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_20
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str21:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:53: error: out of bounds array access\n                                        buffer[0] = volsOut[ sp.wValue&0xff ];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:559:53: error: out of bounds array access\n                                        buffer[0] = volsOut[ sp.wValue&0xff ];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_21,.Ltrap_info21
 	.long	.Ltrap_info21
@@ -13556,7 +13556,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_21
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str22:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:41: error: out of bounds array access\n                                        mutesOut[sp.wValue & 0xff] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:590:41: error: out of bounds array access\n                                        mutesOut[sp.wValue & 0xff] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_22,.Ltrap_info22
 	.long	.Ltrap_info22
@@ -13564,7 +13564,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_22
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str23:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:53: error: out of bounds array access\n                                        buffer[0] = mutesIn[ sp.wValue&0xff ];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:619:53: error: out of bounds array access\n                                        buffer[0] = mutesIn[ sp.wValue&0xff ];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_23,.Ltrap_info23
 	.long	.Ltrap_info23
@@ -13572,7 +13572,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_23
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str24:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:41: error: out of bounds array access\n                                        volsOut[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:538:41: error: out of bounds array access\n                                        volsOut[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_24,.Ltrap_info24
 	.long	.Ltrap_info24
@@ -13580,7 +13580,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_24
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str25:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:53: error: out of bounds array access\n                                        buffer[0] = volsIn[ sp.wValue&0xff ];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:568:53: error: out of bounds array access\n                                        buffer[0] = volsIn[ sp.wValue&0xff ];\n                                                    ^~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_25,.Ltrap_info25
 	.long	.Ltrap_info25
@@ -13588,7 +13588,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_25
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str26:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:41: error: out of bounds array access\n                                        mutesIn[ sp.wValue&0xff ] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:599:41: error: out of bounds array access\n                                        mutesIn[ sp.wValue&0xff ] = buffer[0];\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_26,.Ltrap_info26
 	.long	.Ltrap_info26
@@ -13596,7 +13596,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_26
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str27:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:41: error: out of bounds array access\n                                        volsIn[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:547:41: error: out of bounds array access\n                                        volsIn[ sp.wValue&0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                        ^~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_27,.Ltrap_info27
 	.long	.Ltrap_info27
@@ -13604,7 +13604,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_27
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str28:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:33: error: out of bounds array access\n                                mutesIn[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1226:33: error: out of bounds array access\n                                mutesIn[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_28,.Ltrap_info28
 	.long	.Ltrap_info28
@@ -13612,7 +13612,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_28
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str29:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:37: error: out of bounds array access\n                        buffer[0] = mutesOut[ sp.wValue & 0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1251:37: error: out of bounds array access\n                        buffer[0] = mutesOut[ sp.wValue & 0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_29,.Ltrap_info29
 	.long	.Ltrap_info29
@@ -13620,7 +13620,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_29
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str30:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:33: error: out of bounds array access\n                                volsIn[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1207:33: error: out of bounds array access\n                                volsIn[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_30,.Ltrap_info30
 	.long	.Ltrap_info30
@@ -13628,7 +13628,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_30
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str31:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:37: error: out of bounds array access\n                        buffer[0] = mutesIn[ sp.wValue & 0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1269:37: error: out of bounds array access\n                        buffer[0] = mutesIn[ sp.wValue & 0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_31,.Ltrap_info31
 	.long	.Ltrap_info31
@@ -13636,7 +13636,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_31
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str32:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:37: error: out of bounds array access\n                        buffer[0] = volsOut[ sp.wValue&0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1244:37: error: out of bounds array access\n                        buffer[0] = volsOut[ sp.wValue&0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_32,.Ltrap_info32
 	.long	.Ltrap_info32
@@ -13644,7 +13644,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_32
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str33:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:33: error: out of bounds array access\n                                mutesOut[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1221:33: error: out of bounds array access\n                                mutesOut[ sp.wValue & 0xff ] = buffer[0];\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_33,.Ltrap_info33
 	.long	.Ltrap_info33
@@ -13652,7 +13652,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_33
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str34:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:37: error: out of bounds array access\n                        buffer[0] = volsIn[ sp.wValue&0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1263:37: error: out of bounds array access\n                        buffer[0] = volsIn[ sp.wValue&0xff ];\n                                    ^~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_34,.Ltrap_info34
 	.long	.Ltrap_info34
@@ -13660,7 +13660,7 @@ g_curSamFreq:
 .cc_bottom cc_trapinfo_34
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str35:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:33: error: out of bounds array access\n                                volsOut[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+.asciiz"C:/Projects/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc:1202:33: error: out of bounds array access\n                                volsOut[ sp.wValue & 0xff ] = buffer[0] | (((int) (signed char) buffer[1]) << 8);\n                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_35,.Ltrap_info35
 	.long	.Ltrap_info35

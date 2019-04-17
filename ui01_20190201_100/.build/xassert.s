@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/lib_xassert/src/xassert.xc"
+	.file	"C:/Projects/UI-01_sw1_hw1/lib_xassert/src/xassert.xc"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -47,14 +47,14 @@ xassert_msg:                            # @xassert_msg
 	.cfi_endproc
 
 .Ldebug_end0:
-	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_xassert/api/xassert.h"
+	.file	1 "C:/Projects/UI-01_sw1_hw1/lib_xassert/api\\xassert.h"
 	.section	.debug_str,"MS",@progbits,1
 .Linfo_string0:
-.asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
+.asciiz"XMOS 32-bit XC Compiler Community_14.3.2 (build 25550, Sep-30-2017)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/lib_xassert/src/xassert.xc"
+.asciiz"C:/Projects/UI-01_sw1_hw1/lib_xassert/src/xassert.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"C:\\Projects\\UI-01_sw1_hw1\\ui01_20190201_100\\.build"
 .Linfo_string3:
 .asciiz"xassert_msg"
 .Linfo_string4:
