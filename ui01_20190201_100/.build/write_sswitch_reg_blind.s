@@ -1,14 +1,14 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/write_sswitch_reg_blind.S"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/write_sswitch_reg_blind.S"
 # 1 "xs1_kernel.h" 1 3
 # 20 "xs1_kernel.h" 3
 # 1 "xs2a_kernel.h" 1 3
 # 21 "xs1_kernel.h" 2 3
-# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/write_sswitch_reg_blind.S" 2
+# 2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/write_sswitch_reg_blind.S" 2
 # 1 "xs1_user.h" 1 3
 # 20 "xs1_user.h" 3
 # 1 "xs2a_user.h" 1 3
 # 21 "xs1_user.h" 2 3
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/write_sswitch_reg_blind.S" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/write_sswitch_reg_blind.S" 2
 
 .global write_sswitch_reg_blind, "f{si}(ui,ui,ui)"
 .type write_sswitch_reg_blind, @function

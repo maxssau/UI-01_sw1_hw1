@@ -418,7 +418,7 @@ void __assert_func (const char *__file, int, const char *__function, const char 
 
 }
 # 4 "../src/audiohw.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
 
 
 
@@ -428,8 +428,8 @@ void __assert_func (const char *__file, int, const char *__function, const char 
 
 
 # 1 "../src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
+# 1108 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -437,7 +437,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -445,14 +445,14 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
 # 5 "../src/audiohw.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
 # 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
 extern tileref tile[1];
 extern tileref usb_tile;
 
@@ -569,18 +569,65 @@ int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
 # 7 "../src/audiohw.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
 # 8 "../src/audiohw.xc" 2
 
 # 1 "../src/audio_hw.h" 1
-# 43 "../src/audio_hw.h"
+# 16 "../src/audio_hw.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h" 1
+
+
+
+
+
+
+
+# 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
+# 201 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
+typedef streaming chanend streaming_chanend_t;
+
+typedef in buffered port:1 in_buffered_port_1_t;
+typedef in buffered port:4 in_buffered_port_4_t;
+typedef in buffered port:8 in_buffered_port_8_t;
+typedef in buffered port:16 in_buffered_port_16_t;
+typedef in buffered port:32 in_buffered_port_32_t;
+
+typedef out buffered port:1 out_buffered_port_1_t;
+typedef out buffered port:4 out_buffered_port_4_t;
+typedef out buffered port:8 out_buffered_port_8_t;
+typedef out buffered port:16 out_buffered_port_16_t;
+typedef out buffered port:32 out_buffered_port_32_t;
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h" 2
+
+
+typedef unsigned swlock_t;
+# 23 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h"
+enum {
+  SWLOCK_NOT_ACQUIRED = 0
+};
+
+
+
+
+
+
+
+void swlock_init(swlock_t &lock);
+# 46 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h"
+int swlock_try_acquire(swlock_t &lock);
+# 57 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h"
+void swlock_acquire(swlock_t &lock);
+# 67 "/home/evgeny/git/104/UI-01_sw1_hw1/module_locks/src/swlock.h"
+void swlock_release(swlock_t &lock);
+# 16 "../src/audio_hw.h" 2
+# 50 "../src/audio_hw.h"
 out port dac_control1=0x40200;
 out port dac_control2=0x40300;
 out port dac_mclk44_48=0x10b00;
 
 unsigned dac_ctrl1;
 unsigned dac_ctrl2;
-# 59 "../src/audio_hw.h"
+# 66 "../src/audio_hw.h"
 void setbit(unsigned int &src,int index, int val){
     if (val==1)
         src|=(1<<index);
@@ -596,12 +643,14 @@ unsigned char CTRL_Current_Mode=0;
 
 void Mute()
 {
+    unsigned __port_ctrl;
+    {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40200));};
     switch(CTRL_Current_Mode)
     {
         case 0:
         {
-            setbit(dac_ctrl1,0,1);
-            dac_control1<:dac_ctrl1;
+            setbit(__port_ctrl,0,1);
+            {asm("out res[%0], %1"::"r"(0x40200),"r"(__port_ctrl));};
 
 
 
@@ -619,17 +668,24 @@ void Mute()
 
         }
         break;
-    }
+        default:
+        {
+
+        }
+        break;
+    };
 };
 
 void UnMute()
 {
+    unsigned __port_ctrl;
+    {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40200));};
     switch(CTRL_Current_Mode)
         {
             case 0:
             {
-                setbit(dac_ctrl1,0,0);
-                dac_control1<:dac_ctrl1;
+                setbit(__port_ctrl,0,0);
+                {asm("out res[%0], %1"::"r"(0x40200),"r"(__port_ctrl));};
 
 
 
@@ -647,6 +703,11 @@ void UnMute()
 
             }
             break;
+            default:
+            {
+
+            }
+            break;
         }
 };
 
@@ -654,6 +715,8 @@ void SetPCM(unsigned samFreq)
 {
 
 
+    unsigned __port_ctrl;
+    {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40200));};
     switch(CTRL_Current_Mode)
     {
             case 0:
@@ -664,8 +727,8 @@ void SetPCM(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,0);
                 };
                 if(samFreq>50000 && samFreq <100000)
                 {
@@ -673,8 +736,8 @@ void SetPCM(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,0);
                 };
                 if(samFreq>100000 && samFreq <200000)
                 {
@@ -683,8 +746,8 @@ void SetPCM(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,1);
                 };
                 if(samFreq>300000 && samFreq <400000)
                 {
@@ -693,12 +756,13 @@ void SetPCM(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,1);
                 };
 
                 setbit(dac_ctrl1,1,0);
-                dac_control1<:dac_ctrl1;
+                {asm("out res[%0], %1"::"r"(0x40200),"r"(__port_ctrl));};
+
 
 
             }
@@ -721,7 +785,9 @@ void SetDSD(unsigned samFreq)
 
 
 
-    setbit(dac_ctrl1,1,1);
+    unsigned __port_ctrl;
+    {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40200));};
+    setbit(__port_ctrl,1,1);
 
     switch(CTRL_Current_Mode)
         {
@@ -733,8 +799,8 @@ void SetDSD(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,0);
                 };
 
                 if(samFreq>3100000 && samFreq<6200000)
@@ -743,8 +809,8 @@ void SetDSD(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,0);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,0);
                 };
 
                 if(samFreq>6200000 && samFreq<12300000)
@@ -753,8 +819,8 @@ void SetDSD(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,0);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,0);
+                    setbit(__port_ctrl,3,1);
                 };
 
                 if(samFreq>12300000)
@@ -763,8 +829,8 @@ void SetDSD(unsigned samFreq)
 
 
 
-                    setbit(dac_ctrl1,2,1);
-                    setbit(dac_ctrl1,3,1);
+                    setbit(__port_ctrl,2,1);
+                    setbit(__port_ctrl,3,1);
                 };
 
             }
@@ -781,7 +847,7 @@ void SetDSD(unsigned samFreq)
             break;
         }
 
-    dac_control1<:dac_ctrl1;
+    {asm("out res[%0], %1"::"r"(0x40200),"r"(__port_ctrl));};
 };
 
 void MCLK_Config(unsigned mClk)
@@ -816,12 +882,14 @@ void Reset(unsigned char reset_mode)
 {
 
 
+    unsigned __port_ctrl;
+    {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40300));};
     switch(CTRL_Current_Mode)
         {
             case 0:
             {
-                setbit(dac_ctrl2,0,reset_mode);
-                dac_control1<:dac_ctrl2;
+                setbit(__port_ctrl,0,reset_mode);
+                {asm("out res[%0], %1"::"r"(0x40300),"r"(__port_ctrl));};
 
             }
             break;
@@ -867,15 +935,51 @@ void UserAudioStreamStart()
 
 void UserHostActive(int active)
 {
+
     if(active==1)
     {
         UnMute();
+        unsigned __port_ctrl;
+        {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40300));};
+        setbit(__port_ctrl,0,1);
+        {asm("out res[%0], %1"::"r"(0x40300),"r"(__port_ctrl));};
     }
     else
     {
         Mute();
+        unsigned __port_ctrl;
+        {asm("peek %0, res[%1]":"=r"(__port_ctrl):"r"(0x40300));};
+        setbit(__port_ctrl,0,0);
+        {asm("out res[%0], %1"::"r"(0x40300),"r"(__port_ctrl));};
     }
     return;
+}
+
+void XUD_UserSuspend(void)
+{
+
+    UserHostActive(0);
+}
+
+void XUD_UserResume(void)
+{
+    unsigned config;
+
+
+
+
+
+    asm("ldw %0, dp[g_currentConfig]" : "=r" (config):);
+
+    if(config == 1)
+    {
+        UserHostActive(1);
+    }
+    else
+    {
+        UserHostActive(0);
+
+    }
 }
 # 10 "../src/audiohw.xc" 2
 

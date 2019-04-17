@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -15,7 +15,7 @@
 	.set usage.anon.4,0
 	.set usage.anon.5,0
 	.set usage.anon.6,0
-	.globread device_reboot_aux,tile,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:30: note: object used here\n        tileId = get_tile_id(tile[i]);\n                             ^~~~~~~"
+	.globread device_reboot_aux,tile,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:30: note: object used here\n        tileId = get_tile_id(tile[i]);\n                             ^~~~~~~"
 	.call device_reboot,device_reboot_aux
 	.call device_reboot_aux,write_sswitch_reg_no_ack
 	.call device_reboot_aux,read_sswitch_reg
@@ -29,7 +29,7 @@
 	.set usage.anon.6.locnoside, 0
 	.set device_reboot.locnoside, 0
 	.set device_reboot_aux.locnoglobalaccess, 0
-	.globpassesref get_tile_id, tile,"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:18: error: call to `get_tile_id\' in `device_reboot_aux\' makes alias of global \'tile\'\n        tileId = get_tile_id(tile[i]);\n                 ^~~~~~~~~~~~~~~~~~~~"
+	.globpassesref get_tile_id, tile,"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:18: error: call to `get_tile_id\' in `device_reboot_aux\' makes alias of global \'tile\'\n        tileId = get_tile_id(tile[i]);\n                 ^~~~~~~~~~~~~~~~~~~~"
 
                                         # End of file scope inline assembly
 	.section	.debug_info,"",@progbits
@@ -46,7 +46,7 @@
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.section	.cp.rodata.cst4,"aMc",@progbits,4
 	.cc_top .LCPI0_0.data,.LCPI0_0
 	.align	4
@@ -62,8 +62,8 @@
 	.cc_top device_reboot_aux.function,device_reboot_aux
 device_reboot_aux:                      # @device_reboot_aux
 .Lfunc_begin0:
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
-	.loc	2 21 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:21:0
+	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.loc	2 21 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:21:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -76,7 +76,7 @@ device_reboot_aux:                      # @device_reboot_aux
 	.cfi_def_cfa_offset 24
 .Ltmp1:
 	.cfi_offset 15, 0
-	.loc	2 32 0 prologue_end     # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:32:0
+	.loc	2 32 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:32:0
 .Ltmp2:
 	std r5, r4, sp[1]               # 4-byte Folded Spill
 .Ltmp3:
@@ -96,7 +96,7 @@ device_reboot_aux:                      # @device_reboot_aux
 	}
 .Ltmp7:
 	#DEBUG_VALUE: localTileId <- R4
-	.loc	2 37 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:37:0
+	.loc	2 37 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:37:0
 	#APP
 	ldc r7, tile.globound
 	#NO_APP
@@ -110,9 +110,9 @@ device_reboot_aux:                      # @device_reboot_aux
 	#DEBUG_VALUE: localTileId <- R4
 	#DEBUG_VALUE: tileArrayLength <- R7
 	#DEBUG_VALUE: i <- 0
-	.loc	2 43 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:0
+	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:0
 	ldaw r11, cp[tile]
-	.loc	2 43 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:0
+	.loc	2 43 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:0
 	{
 		ldc r0, 0
 		nop
@@ -133,7 +133,7 @@ device_reboot_aux:                      # @device_reboot_aux
 	}
 .Ltmp10:
 	#DEBUG_VALUE: tileId <- R5
-	.loc	2 46 9                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:46:9
+	.loc	2 46 9                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:46:9
 	{
 		eq r0, r4, r5
 		nop
@@ -152,7 +152,7 @@ device_reboot_aux:                      # @device_reboot_aux
 		ldaw r2, sp[1]
 	}
 .Ltmp12:
-	.loc	2 48 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:48:0
+	.loc	2 48 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:48:0
 	{
 		mov r0, r5
 		mov r1, r6
@@ -164,19 +164,19 @@ device_reboot_aux:                      # @device_reboot_aux
 		ldw r0, sp[1]
 	}
 	ldw r1, cp[.LCPI0_0]
-	.loc	2 49 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:49:0
+	.loc	2 49 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:49:0
 	{
 		and r2, r0, r1
 		nop
 	}
 .Ltmp13:
 	#DEBUG_VALUE: pllVal <- R2
-	.loc	2 49 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:49:0
+	.loc	2 49 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:49:0
 	{
 		mov r0, r5
 		stw r2, sp[1]
 	}
-	.loc	2 50 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:50:0
+	.loc	2 50 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:50:0
 	{
 		mov r1, r6
 		nop
@@ -193,7 +193,7 @@ device_reboot_aux:                      # @device_reboot_aux
 		mkmsk r0, 1
 		nop
 	}
-	.loc	2 40 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:40:0
+	.loc	2 40 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:40:0
 	{
 		lsu r0, r0, r7
 		nop
@@ -215,7 +215,7 @@ device_reboot_aux:                      # @device_reboot_aux
 		ldaw r2, sp[1]
 	}
 .Ltmp16:
-	.loc	2 55 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:55:0
+	.loc	2 55 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:55:0
 	{
 		mov r0, r4
 		mov r1, r5
@@ -229,13 +229,13 @@ device_reboot_aux:                      # @device_reboot_aux
 	ldw r1, cp[.LCPI0_0]
 .Ltmp17:
 	#DEBUG_VALUE: pllVal <- R2
-	.loc	2 56 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:56:0
+	.loc	2 56 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:56:0
 	{
 		and r2, r0, r1
 		mov r0, r4
 	}
 .Ltmp18:
-	.loc	2 57 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:57:0
+	.loc	2 57 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:57:0
 	{
 		mov r1, r5
 		nop
@@ -271,7 +271,7 @@ device_reboot_aux:                      # @device_reboot_aux
 	.cc_top device_reboot.function,device_reboot
 device_reboot:                          # @device_reboot
 .Lfunc_begin1:
-	.loc	2 63 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:63:0
+	.loc	2 63 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:63:0
 	.cfi_startproc
 	.issue_mode dual
 # BB#0:                                 # %allocas
@@ -286,24 +286,24 @@ device_reboot:                          # @device_reboot
 		outct res[r0], 1
 		dualentsp 2
 	}
-	.loc	2 66 0 prologue_end     # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:66:0
+	.loc	2 66 0 prologue_end     # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:66:0
 .Ltmp24:
 .Lxta.endpoint_labels1:
 	{
 		inct r1, res[r0]
 		nop
 	}
-	.loc	2 69 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:69:0
+	.loc	2 69 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:69:0
 	#APP
 	freer res[r0]
 	#NO_APP
-	.loc	2 71 0                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:71:0
+	.loc	2 71 0                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:71:0
 .Lxta.call_labels6:
 	bl device_reboot_aux
 .Ltmp25:
 .LBB1_1:                                # %LoopTest
                                         # =>This Inner Loop Header: Depth=1
-	.loc	2 73 5                  # /home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:73:5
+	.loc	2 73 5                  # /home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:73:5
 	bu .LBB1_1
 .Ltmp26:
 	.cc_bottom device_reboot.function
@@ -326,9 +326,9 @@ device_reboot:                          # @device_reboot
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"XUD_RES_RST"
 .Linfo_string4:
@@ -1110,46 +1110,46 @@ device_reboot:                          # @device_reboot
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	32
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	43
 	.long	.Lxta.call_labels1
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	48
 	.long	.Lxta.call_labels2
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	50
 	.long	.Lxta.call_labels3
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.call_labels4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	55
 	.long	.Lxta.call_labels4
 .cc_bottom cc_4
 .cc_top cc_5,.Lxta.call_labels5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	57
 	.long	.Lxta.call_labels5
 .cc_bottom cc_5
 .cc_top cc_6,.Lxta.call_labels6
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	71
 	.long	.Lxta.call_labels6
@@ -1159,16 +1159,16 @@ device_reboot:                          # @device_reboot
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_7,.Lxta.endpoint_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	65
 	.long	.Lxta.endpoint_labels0
 .cc_bottom cc_7
 .cc_top cc_8,.Lxta.endpoint_labels1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	66
 	.long	.Lxta.endpoint_labels1
@@ -1178,122 +1178,122 @@ device_reboot:                          # @device_reboot
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_9,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	21
 	.long	21
 	.long	.Lxtalabel0
 .cc_bottom cc_9
 .cc_top cc_10,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	31
 	.long	34
 	.long	.Lxtalabel0
 .cc_bottom cc_10
 .cc_top cc_11,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	37
 	.long	37
 	.long	.Lxtalabel0
 .cc_bottom cc_11
 .cc_top cc_12,.Lxtalabel0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	40
 	.long	40
 	.long	.Lxtalabel0
 .cc_bottom cc_12
 .cc_top cc_13,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	41
 	.long	41
 	.long	.Lxtalabel1
 .cc_bottom cc_13
 .cc_top cc_14,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	43
 	.long	43
 	.long	.Lxtalabel1
 .cc_bottom cc_14
 .cc_top cc_15,.Lxtalabel1
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	46
 	.long	46
 	.long	.Lxtalabel1
 .cc_bottom cc_15
 .cc_top cc_16,.Lxtalabel2
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	47
 	.long	51
 	.long	.Lxtalabel2
 .cc_bottom cc_16
 .cc_top cc_17,.Lxtalabel3
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	52
 	.long	52
 	.long	.Lxtalabel3
 .cc_bottom cc_17
 .cc_top cc_18,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	55
 	.long	57
 	.long	.Lxtalabel4
 .cc_bottom cc_18
 .cc_top cc_19,.Lxtalabel4
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	59
 	.long	59
 	.long	.Lxtalabel4
 .cc_bottom cc_19
 .cc_top cc_20,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	63
 	.long	63
 	.long	.Lxtalabel5
 .cc_bottom cc_20
 .cc_top cc_21,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	65
 	.long	65
 	.long	.Lxtalabel5
 .cc_bottom cc_21
 .cc_top cc_22,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	66
 	.long	66
 	.long	.Lxtalabel5
 .cc_bottom cc_22
 .cc_top cc_23,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	69
 	.long	69
 	.long	.Lxtalabel5
 .cc_bottom cc_23
 .cc_top cc_24,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	71
 	.long	71
 	.long	.Lxtalabel5
 .cc_bottom cc_24
 .cc_top cc_25,.Lxtalabel5
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	73
 	.long	73
@@ -1304,24 +1304,24 @@ device_reboot:                          # @device_reboot
 .Lentries_start6:
 	.long	.Lentries_end7-.Lentries_start6
 	.long	0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.byte	0
 .cc_top cc_26,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	41
 	.long	41
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_26
 .cc_top cc_27,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	43
 	.long	43
 	.long	.Lxta.loop_labels0
 .cc_bottom cc_27
 .cc_top cc_28,.Lxta.loop_labels0
-	.ascii	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+	.ascii	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 	.byte	0
 	.long	46
 	.long	52
@@ -1334,7 +1334,7 @@ device_reboot:                          # @device_reboot
 	.long	1
 	.section	.trap_info_str,"MS",@progbits
 .Ltrap_info_str0:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:30: error: out of bounds array access\n        tileId = get_tile_id(tile[i]);\n                             ^~~~~~~\n"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc:43:30: error: out of bounds array access\n        tileId = get_tile_id(tile[i]);\n                             ^~~~~~~\n"
 	.section	.trap_info,"",@progbits
 .cc_top cc_trapinfo_0,.Ltrap_info0
 	.long	.Ltrap_info0

@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
@@ -386,7 +386,7 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/assert.h" 1 3
 
 
@@ -417,7 +417,7 @@ void __assert_func (const char *__file, int, const char *__function, const char 
 
 
 }
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -524,9 +524,9 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
 
 
 
@@ -536,8 +536,8 @@ int printstrln(const char (& alias s)[]);
 
 
 # 1 ".././src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
+# 1108 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -545,7 +545,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -553,19 +553,19 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 1
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 1
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
-# 29 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h"
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
-# 30 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
-# 24 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
+# 29 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
+# 30 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc" 2
+# 24 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
 unsigned g_digData[10];
 
 typedef struct
@@ -582,7 +582,7 @@ static int clockFreq[(1)];
 static int clockValid[(1)];
 static int clockInt[(1)];
 static int clockId[(1)];
-# 200 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 200 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
 int VendorAudCoreReqs(unsigned cmd, chanend c);
 
 #pragma unsafe arrays
@@ -597,22 +597,22 @@ void clockGen (streaming chanend ?c_spdif_rx, chanend ?c_adat_rx, out port p, ch
 
 
     int smux = 0;
-# 254 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 254 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
     for(int i = 0; i < 10; i++)
     {
        g_digData[i] = 0;
     }
-# 266 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 266 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
     clockFreq[(1 - 1)] = 0;
     clockId[(1 - 1)] = 41;
     clockValid[(1 - 1)] = 0;
     clockInt[(1 - 1)] = 0;
-# 295 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 295 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
     t_local :> timeNextEdge;
     timeLastEdge = timeNextEdge;
     timeNextClockDetection = timeNextEdge + (166667 / 2);
     timeNextEdge += 166667;
-# 311 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 311 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
     p <: pinVal @ pinTime;
     pinTime += (unsigned short)(166667 - (166667/2));
     p @ pinTime <: pinVal;
@@ -621,7 +621,7 @@ void clockGen (streaming chanend ?c_spdif_rx, chanend ?c_adat_rx, out port p, ch
     {
         select
         {
-# 357 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 357 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
    case __builtin_in_uint_byref(c_clk_ctl, tmp):
                 switch(tmp)
                 {
@@ -643,7 +643,7 @@ void clockGen (streaming chanend ?c_spdif_rx, chanend ?c_adat_rx, out port p, ch
                         {
                             clkMode = tmp;
                         }
-# 396 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 396 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
                         break;
 
                     case 3:
@@ -696,9 +696,9 @@ void clockGen (streaming chanend ?c_spdif_rx, chanend ?c_adat_rx, out port p, ch
 
                 timeNextClockDetection = timeNextEdge + (166667/2);
                 timeNextEdge += 166667;
-# 472 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 472 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
                 break;
-# 824 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
+# 824 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/clocking/clockgen.xc"
         }
 
     }

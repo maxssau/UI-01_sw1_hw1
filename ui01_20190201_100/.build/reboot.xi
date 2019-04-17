@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
@@ -385,11 +385,11 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
+# 2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
 # 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
 extern tileref tile[1];
 extern tileref usb_tile;
 
@@ -398,7 +398,7 @@ extern tileref usb_tile;
 
 service xscope_host_data(chanend c);;
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1_su.h" 1 3
 
 
@@ -429,10 +429,10 @@ void disable_xs1_su_adc_input(unsigned number, chanend c);
 
 
 void disable_xs1_su_adc_input_streaming(unsigned number, streaming chanend c);
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 1
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -539,7 +539,7 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 11 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 11 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
 # 201 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
 typedef streaming chanend streaming_chanend_t;
@@ -555,7 +555,7 @@ typedef out buffered port:4 out_buffered_port_4_t;
 typedef out buffered port:8 out_buffered_port_8_t;
 typedef out buffered port:16 out_buffered_port_16_t;
 typedef out buffered port:32 out_buffered_port_32_t;
-# 12 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 12 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 
 
 
@@ -564,15 +564,15 @@ typedef out buffered port:32 out_buffered_port_32_t;
 
 
 # 1 ".././src/xud_conf.h" 1
-# 20 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 20 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud_defines.h" 1
-# 26 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
-# 93 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud_defines.h" 1
+# 26 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 93 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 typedef enum XUD_EpTransferType
 {
     XUD_EPTYPE_ISO = 0,
@@ -615,7 +615,7 @@ typedef enum XUD_Result
     XUD_RES_OKAY = 0,
     XUD_RES_ERR,
 } XUD_Result_t;
-# 183 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 183 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 int XUD_Manager(chanend c_epOut[], int noEpOut,
                 chanend c_epIn[], int noEpIn,
                 chanend ?c_sof,
@@ -625,21 +625,21 @@ int XUD_Manager(chanend c_epOut[], int noEpOut,
                 unsigned rstMask,
                 XUD_BusSpeed_t desiredSpeed,
                 XUD_PwrConfig pwrConfig);
-# 204 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 204 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetBuffer(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 214 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 214 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetSetupBuffer(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 226 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 226 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetBuffer(XUD_ep ep_in, unsigned char buffer[], unsigned datalength);
-# 240 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 240 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetBuffer_EpMax(XUD_ep ep_in, unsigned char buffer[], unsigned datalength, unsigned epMax);
-# 257 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 257 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_DoGetRequest(XUD_ep ep_out, XUD_ep ep_in, unsigned char buffer[], unsigned length, unsigned requested);
-# 266 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 266 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_DoSetRequestStatus(XUD_ep ep_in);
-# 275 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 275 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetDevAddr(unsigned addr);
-# 289 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 289 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_BusSpeed_t XUD_ResetEndpoint(XUD_ep one, XUD_ep &?two);
 
 
@@ -649,9 +649,9 @@ XUD_BusSpeed_t XUD_ResetEndpoint(XUD_ep one, XUD_ep &?two);
 
 
 XUD_ep XUD_InitEp(chanend c_ep);
-# 306 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 306 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_SetStallByAddr(int epNum);
-# 315 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 315 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_ClearStallByAddr(int epNum);
 
 
@@ -668,7 +668,7 @@ void XUD_SetStall(XUD_ep ep);
 
 
 void XUD_ClearStall(XUD_ep ep);
-# 342 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 342 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_ResetEpStateByAddr(unsigned epNum);
 
 
@@ -678,13 +678,13 @@ void XUD_ResetEpStateByAddr(unsigned epNum);
 
 
 void XUD_SetTestMode(XUD_ep ep, unsigned testMode);
-# 366 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 366 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetData(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 376 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 376 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetSetupData(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 387 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 387 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetData(XUD_ep ep_in, unsigned char buffer[], unsigned datalength, unsigned startIndex, unsigned pidToggle);
-# 402 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 402 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline int XUD_SetReady_Out(XUD_ep ep, unsigned char buffer[])
 {
     int chan_array_ptr;
@@ -703,7 +703,7 @@ inline int XUD_SetReady_Out(XUD_ep ep, unsigned char buffer[])
 
     return 0;
 }
-# 428 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 428 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline int XUD_SetReady_OutPtr(XUD_ep ep, unsigned addr)
 {
     int chan_array_ptr;
@@ -721,7 +721,7 @@ inline int XUD_SetReady_OutPtr(XUD_ep ep, unsigned addr)
 
     return XUD_RES_OKAY;
 }
-# 455 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 455 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline XUD_Result_t XUD_SetReady_InPtr(XUD_ep ep, unsigned addr, int len)
 {
     int chan_array_ptr;
@@ -764,7 +764,7 @@ inline XUD_Result_t XUD_SetReady_InPtr(XUD_ep ep, unsigned addr, int len)
 
     return XUD_RES_OKAY;
 }
-# 506 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 506 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline XUD_Result_t XUD_SetReady_In(XUD_ep ep, unsigned char buffer[], int len)
 {
     unsigned addr;
@@ -773,7 +773,7 @@ inline XUD_Result_t XUD_SetReady_In(XUD_ep ep, unsigned char buffer[], int len)
 
     return XUD_SetReady_InPtr(ep, addr, len);
 }
-# 523 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 523 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 #pragma select handler
 void XUD_GetData_Select(chanend c, XUD_ep ep, unsigned &length, XUD_Result_t &result);
 
@@ -785,15 +785,15 @@ void XUD_GetData_Select(chanend c, XUD_ep ep, unsigned &length, XUD_Result_t &re
 
 #pragma select handler
 void XUD_SetData_Select(chanend c, XUD_ep ep, XUD_Result_t &result);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
-# 16 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc" 2
+# 16 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
 unsigned get_tile_id(tileref);
 
 extern tileref tile[];
 
 void device_reboot_aux(void)
 {
-# 31 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
+# 31 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/reboot.xc"
     unsigned int pllVal;
     unsigned int localTileId = get_local_tile_id();
     unsigned int tileId;

@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -20,9 +20,9 @@
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.section	.debug_info,"",@progbits
 .L.debug_info_begin0:
 	.long	27                      # Length of Unit

@@ -92,7 +92,7 @@ xc_ptr g_aud_to_host_dptr;
 xc_ptr g_aud_to_host_rdptr;
 xc_ptr g_aud_to_host_zeros;
 int sampsToWrite = DEFAULT_FREQ/8000;  /* HS assumed here. Expect to be junked during a overflow before stream start */
-int totalSampsToWrite = DEFAULT_FREQ/8000;
+unsigned int totalSampsToWrite = DEFAULT_FREQ/8000;
 int aud_data_remaining_to_device = 0;
 
 /* Audio over/under flow flags */
@@ -166,7 +166,7 @@ void handle_audio_request(chanend c_mix_out)
 __builtin_unreachable();
 #endif
                 /* Buffering not underflow condition send out some samples...*/
-                for(int i = 0; i < g_numUsbChan_Out; i++)
+                for(unsigned int i = 0; i < g_numUsbChan_Out; i++)
                 {
 #pragma xta endpoint "mixer_request"
                     int sample;
@@ -195,7 +195,7 @@ __builtin_unreachable();
 __builtin_unreachable();
 #endif
                 /* Buffering not underflow condition send out some samples...*/
-                for(int i = 0; i < g_numUsbChan_Out; i++)
+                for(unsigned int i = 0; i < g_numUsbChan_Out; i++)
                 {
 #pragma xta endpoint "mixer_request"
                     int sample;
@@ -227,7 +227,7 @@ __builtin_unreachable();
 __builtin_unreachable();
 #endif
                 /* Buffering not underflow condition send out some samples...*/
-                for(int i = 0; i < g_numUsbChan_Out; i++)
+                for(unsigned int i = 0; i < g_numUsbChan_Out; i++)
                 {
 #pragma xta endpoint "mixer_request"
                     int sample;
@@ -280,7 +280,7 @@ __builtin_unreachable();
 
         } /* switch(g_curSubSlot_Out) */
 
-        for(int i = 0; i < NUM_USB_CHAN_OUT - g_numUsbChan_Out; i++)
+        for(unsigned int i = 0; i < NUM_USB_CHAN_OUT - g_numUsbChan_Out; i++)
         {
             outuint(c_mix_out, 0);
         }
@@ -299,7 +299,7 @@ __builtin_unreachable();
 #if (STREAM_FORMAT_INPUT_SUBSLOT_2_USED == 0)
 __builtin_unreachable();
 #endif
-                for(int i = 0; i < g_numUsbChan_In; i++)
+                for(unsigned int i = 0; i < g_numUsbChan_In; i++)
                 {
                     /* Receive sample */
                     int sample = inuint(c_mix_out);
@@ -330,7 +330,7 @@ __builtin_unreachable();
 #endif
                 unsigned ptr = g_aud_to_host_dptr;
 
-                for(int i = 0; i < g_numUsbChan_In; i++)
+                for(unsigned int i = 0; i < g_numUsbChan_In; i++)
                 {
                     /* Receive sample */
                     int sample = inuint(c_mix_out);
@@ -365,7 +365,7 @@ __builtin_unreachable();
 #if (STREAM_FORMAT_INPUT_SUBSLOT_3_USED == 0)
 __builtin_unreachable();
 #endif
-                for(int i = 0; i < g_numUsbChan_In; i++)
+                for(unsigned int i = 0; i < g_numUsbChan_In; i++)
                 {
                     /* Receive sample */
                     int sample = inuint(c_mix_out);
@@ -413,7 +413,7 @@ __builtin_unreachable();
         }
 
         /* Input any remaining channels - past this thread we always operate on max channel count */
-        for(int i = 0; i < NUM_USB_CHAN_IN - g_numUsbChan_In; i++)
+        for(unsigned int i = 0; i < NUM_USB_CHAN_IN - g_numUsbChan_In; i++)
         {
             inuint(c_mix_out);
         }

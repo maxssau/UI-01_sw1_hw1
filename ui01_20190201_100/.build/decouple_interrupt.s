@@ -61,9 +61,9 @@ kret
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple_interrupt.c"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/decouple_interrupt.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 	.section	.debug_info,"",@progbits
 .L.debug_info_begin0:
 	.long	27

@@ -860,8 +860,8 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
                                 int i = 2;
 
 #ifndef SAMPLE_RATE_LIST
-                                int currentFreq44 = 11025;  //MIN_FREQ_44;
-                                int currentFreq48 = 8000;   //MIN_FREQ_48;
+                                unsigned int currentFreq44 = 11025;  //MIN_FREQ_44;
+                                unsigned int currentFreq48 = 8000;   //MIN_FREQ_48;
                                 unsigned maxFreq = MAX_FREQ;
 
 #if defined (FULL_SPEED_AUDIO_2)

@@ -1,9 +1,9 @@
-<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc">
-<fDef name="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="true" numParams="3"/>
-<fDef name="InitPorts" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
-<fDef name="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="false" numParams="5"/>
-<fDef name="doI2SClocks" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
-<fDef name="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<preCompilationAnalysis file="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc">
+<fDef name="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="InitPorts" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="false" numParams="5"/>
+<fDef name="doI2SClocks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="array_to_xc_ptr" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
 <fDef name="audio" global="true" noreturn="true" doNotSpecialize="false" numParams="3"/>
 <fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
@@ -33,40 +33,40 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="2" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="2" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_testct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_inct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -78,7 +78,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -90,7 +90,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -121,23 +121,23 @@
     </values>
   </arg>
 </fCall>
-<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
+<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="InitPorts" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="InitPorts" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
+<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="InitPorts" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="InitPorts" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="3">
+<fCall name="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="3">
   <arg num="0">
-    <passThroughArg param="0" caller="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -152,9 +152,9 @@
     </values>
   </arg>
 </fCall>
-<fCall name="InitPorts" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
+<fCall name="InitPorts" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="2" caller="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="2" caller="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -222,9 +222,9 @@
     </values>
   </arg>
 </fCall>
-<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
+<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="2" caller="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="2" caller="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -250,16 +250,16 @@
     </values>
   </arg>
 </fCall>
-<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
+<fCall name="doI2SClocks" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="2" caller="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="2" caller="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="3">
+<fCall name="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="3">
   <arg num="0">
-    <passThroughArg param="0" caller="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -274,9 +274,9 @@
     </values>
   </arg>
 </fCall>
-<fCall name="DoSampleTransfer" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="3">
+<fCall name="DoSampleTransfer" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="3">
   <arg num="0">
-    <passThroughArg param="0" caller="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -300,7 +300,7 @@
 </fCall>
 <fCall name="testct_byref" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -312,21 +312,21 @@
 </fCall>
 <fCall name="__builtin_inct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -338,7 +338,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
+    <passThroughArg param="0" caller="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc"/>
     <values>
     </values>
   </arg>
@@ -536,7 +536,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="5">
+<fCall name="deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="5">
   <arg num="0">
     <passThroughArg param="0" caller="audio" global="true"/>
     <values>
@@ -608,7 +608,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="dummy_deliver" global="false" unit="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="2">
+<fCall name="dummy_deliver" global="false" unit="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/audio.xc" numArgs="2">
   <arg num="0">
     <passThroughArg param="0" caller="audio" global="true"/>
     <values>

@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
@@ -385,11 +385,11 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
+# 2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
 # 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
 extern tileref tile[1];
 extern tileref usb_tile;
 
@@ -398,7 +398,7 @@ extern tileref usb_tile;
 
 service xscope_host_data(chanend c);;
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -505,8 +505,8 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
 
 
 
@@ -516,8 +516,8 @@ int printstrln(const char (& alias s)[]);
 
 
 # 1 ".././src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
+# 1108 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -525,7 +525,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -533,11 +533,11 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 1
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 1
 
 
 
@@ -556,9 +556,9 @@ typedef out buffered port:4 out_buffered_port_4_t;
 typedef out buffered port:8 out_buffered_port_8_t;
 typedef out buffered port:16 out_buffered_port_16_t;
 typedef out buffered port:32 out_buffered_port_32_t;
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
 
 
 void ConfigAudioPorts(
@@ -583,7 +583,7 @@ void ConfigAudioPorts(
 
 
                 unsigned int divide, unsigned int curSamFreq);
-# 59 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
+# 59 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
 void ConfigAudioPortsWrapper(
 
                 buffered out port:32 p_i2s_dac[], int numPortsDAC,
@@ -603,9 +603,9 @@ void ConfigAudioPortsWrapper(
 
 
                 unsigned int divide, unsigned curSamFreq, unsigned int dsdMode);
-# 99 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
+# 99 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
 void EnableBufferedPort(buffered out port:32 p, unsigned transferWidth);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc" 2
 
 extern port p_mclk_in;
 extern __clock_t clk_audio_mclk;
@@ -662,7 +662,7 @@ unsigned int divide, unsigned curSamFreq)
 
     configure_clock_src_divide(clk_audio_bclk, p_mclk_in, (divide/2));
     configure_port_clock_output(p_bclk, clk_audio_bclk);
-# 86 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+# 86 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
     if(!isnull(p_lrclk))
     {
 
@@ -687,5 +687,5 @@ unsigned int divide, unsigned curSamFreq)
 
 
     __builtin_start_clock(clk_audio_bclk);
-# 151 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
+# 151 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.xc"
 }

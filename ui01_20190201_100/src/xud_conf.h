@@ -1,8 +1,8 @@
 /*
  * xud_conf.h
  *
- *  Created on: 02 февр. 2019 г.
- *      Author: Евгений
+ *  Created on: 02 пїЅпїЅпїЅпїЅ. 2019 пїЅ.
+ *      Author: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
  */
 
 #ifndef XUD_CONF_H_
@@ -10,7 +10,7 @@
 
 #define XUD_SERIES_SUPPORT  XUD_X200_SERIES
 
-#define XUD_EP_COUNT_OUT 4
-#define XUD_EP_COUNT_IN  4
+#define XUD_EP_COUNT_OUT 2
+#define XUD_EP_COUNT_IN  2
 
 #endif /* XUD_CONF_H_ */

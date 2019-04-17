@@ -1,5 +1,5 @@
 	.text
-	.file	"/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc"
+	.file	"/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc"
                                         # Start of file scope inline assembly
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -95,8 +95,8 @@ rx_usb_clk.info:
 .Lsection_debug_loc:
 	.section	.debug_ranges,"",@progbits
 .Ldebug_range:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc"
-	.file	2 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc"
+	.file	2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 	.text
 .Ldebug_end0:
 	.file	3 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h"
@@ -104,9 +104,9 @@ rx_usb_clk.info:
 .Linfo_string0:
 .asciiz"XMOS 32-bit XC Compiler Community_14.3.3 (build 22296, Apr-19-2018)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_Ports.xc"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"flag0_port"
 .Linfo_string4:

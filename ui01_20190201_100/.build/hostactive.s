@@ -21,7 +21,7 @@
 	.cc_top UserHostActive.function,UserHostActive
 UserHostActive:
 .Lfunc_begin0:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c"
+	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c"
 	.loc	1 4 0
 	.cfi_startproc
 	.issue_mode dual
@@ -60,9 +60,9 @@ UserHostActive:
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/hostactive/hostactive.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"UserHostActive"
 .Linfo_string4:

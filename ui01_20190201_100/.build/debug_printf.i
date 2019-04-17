@@ -1,15 +1,15 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 290 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/api/debug_print.h" 1
-# 73 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/api/debug_print.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/api/debug_print.h" 1
+# 73 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/api/debug_print.h"
 void debug_printf(char fmt[], ...);
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -111,13 +111,13 @@ int printbinln(unsigned value);
 int printstr(const char *s);
 # 147 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char *s);
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stdarg.h" 1 3
 # 31 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stdarg.h" 3
 typedef __builtin_va_list va_list;
 # 51 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stdarg.h" 3
 typedef __builtin_va_list __gnuc_va_list;
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/syscall.h" 1 3
 # 48 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/syscall.h" 3
 typedef unsigned ___size_t;
@@ -162,7 +162,7 @@ int _load_image(void *dst, unsigned int src, ___size_t count);
 int _get_cmdline(void *buf, unsigned size);
 # 98 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/syscall.h" 3
 void _plugins(int type, unsigned arg1, unsigned arg2);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/limits.h" 1 3
 
 
@@ -172,7 +172,7 @@ void _plugins(int type, unsigned arg1, unsigned arg2);
 # 131 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/limits.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/limits.h" 1 3
 # 132 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/limits.h" 2 3
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 1 3
 # 10 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 3
@@ -476,7 +476,7 @@ char *strupr (char *);
 # 102 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/string.h" 1 3
 # 103 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 2 3
-# 9 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/ctype.h" 1 3
 
 
@@ -511,7 +511,7 @@ int _toupper (int __c);
 extern const char *__ctype_ptr__;
 # 74 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/ctype.h" 3
 extern const char _ctype_[];
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c" 2
 
 
 
@@ -550,7 +550,7 @@ static int itoa(unsigned n, char *buf, unsigned base, int fill)
   reverse_array(buf, i);
   return i;
 }
-# 56 "/home/evgeny/git/UI-01_sw1_hw1/lib_logging/src/debug_printf.c"
+# 56 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_logging/src/debug_printf.c"
 void debug_printf(char * fmt, ...)
 {
   char * marker;

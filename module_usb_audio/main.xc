@@ -255,7 +255,7 @@ XUD_EpType epTypeTableIn[ENDPOINT_COUNT_IN] = { XUD_EPTYPE_CTL | XUD_STATUS_ENAB
 void thread_speed()
 {
 #ifdef FAST_MODE
-#warning Building with fast mode enabled
+//#warning Building with fast mode enabled
     set_thread_fast_mode_on();
 #else
     set_thread_fast_mode_off();

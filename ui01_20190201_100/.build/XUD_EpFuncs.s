@@ -1,9 +1,9 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
 # 1 "usb_defs.h" 1
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S" 2
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S" 2
 # 1 "xud_defines.h" 1
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S" 2
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S" 2
 
 
 
@@ -20,7 +20,7 @@ XUD_GetSetupData:
 
 .issue_mode single
   ENTSP_lu6 4
-# 27 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
+# 27 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
     stw r4, sp[1]
     stw r10, sp[2]
 
@@ -138,7 +138,7 @@ XUD_GetSetupData_Select:
 
 .issue_mode single
   ENTSP_lu6 4
-# 147 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
+# 147 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
     stw r4, sp[1]
     stw r10, sp[2]
 
@@ -265,7 +265,7 @@ XUD_GetData:
 
 .issue_mode single
   ENTSP_lu6 4
-# 276 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
+# 276 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
     stw r10, sp[1]
     mov r11, r1
 
@@ -363,7 +363,7 @@ XUD_SetData:
 
 .issue_mode single
   ENTSP_lu6 8
-# 376 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
+# 376 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/src/XUD_EpFuncs.S"
     stw r5, sp[5]
     stw r10, sp[6]
 

@@ -21,7 +21,7 @@
 	.cc_top XUD_UserSuspend.function,XUD_UserSuspend
 XUD_UserSuspend:
 .Lfunc_begin0:
-	.file	1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c"
+	.file	1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c"
 	.loc	1 8 0
 	.cfi_startproc
 	.issue_mode dual
@@ -136,9 +136,9 @@ XUD_UserResume:
 .Linfo_string0:
 .asciiz"XMOS-22296-Apr-19-2018 clang version 3.6.0  (based on LLVM 3.6.0svn)"
 .Linfo_string1:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/xuduser/xuduser.c"
 .Linfo_string2:
-.asciiz"/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build"
+.asciiz"/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build"
 .Linfo_string3:
 .asciiz"XUD_UserSuspend"
 .Linfo_string4:

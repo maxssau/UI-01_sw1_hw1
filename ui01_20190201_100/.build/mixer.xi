@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
 
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
@@ -387,7 +387,7 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -494,8 +494,8 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h" 1
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h" 1
 
 
 
@@ -510,10 +510,10 @@ enum mix_ctl_cmd {
   GET_STREAM_LEVELS,
   GET_OUTPUT_LEVELS
 };
-# 30 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h"
+# 30 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h"
 void mixer(chanend c_to_host, chanend c_to_audio, chanend c_mix_ctl);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
 
 
 
@@ -523,8 +523,8 @@ void mixer(chanend c_to_host, chanend c_to_audio, chanend c_mix_ctl);
 
 
 # 1 ".././src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
+# 1108 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -532,7 +532,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -540,11 +540,11 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h" 1
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h" 1
 
 
 
@@ -560,19 +560,19 @@ inline xc_ptr array_to_xc_ptr(const unsigned a[])
     asm("mov %0, %1":"=r"(x):"r"(a));
     return x;
 }
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 1
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 1
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
-# 29 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h"
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
-# 30 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
-# 9 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h" 1
-# 18 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
+# 29 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
+# 30 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h" 1
+# 18 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h"
 unsigned db_to_mult(int db, int db_frac_bits, int result_frac_bits);
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc" 2
 
 
 
@@ -586,7 +586,7 @@ static xc_ptr multOut;
 
 static unsigned int multIn_array[(2) + 1];
 static xc_ptr multIn;
-# 39 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 39 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 static int samples_array[(2) + (2) + 0 + 1];
 xc_ptr samples;
 
@@ -602,7 +602,7 @@ xc_ptr samples_to_host_map;
 
 int samples_to_device_map_array[(2)];
 xc_ptr samples_to_device_map;
-# 69 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 69 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 int samples_to_host_inputs[(2)];
 xc_ptr samples_to_host_inputs_ptr;
 
@@ -614,7 +614,7 @@ static int samples_from_host_streams[(2)];
 
 static int samples_mixer_outputs[0];
 xc_ptr samples_mixer_outputs_ptr;
-# 113 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 113 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 void setPtr(int src, int dst, int mix);
 int doMix0(xc_ptr samples, xc_ptr mult);
 int doMix1(xc_ptr samples, xc_ptr mult);
@@ -625,7 +625,7 @@ int doMix5(xc_ptr samples, xc_ptr mult);
 int doMix6(xc_ptr samples, xc_ptr mult);
 int doMix7(xc_ptr samples, xc_ptr mult);
 int doMix8(xc_ptr samples, xc_ptr mult);
-# 162 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 162 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 #pragma unsafe arrays
 static inline void GiveSamplesToHost(chanend c, xc_ptr ptr, xc_ptr multIn)
 {
@@ -651,7 +651,7 @@ static inline void GiveSamplesToHost(chanend c, xc_ptr ptr, xc_ptr multIn)
 
             sample = ptr_samples[index];
         }
-# 198 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 198 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
         __builtin_out_uint(c, sample);
 
     }
@@ -675,7 +675,7 @@ static inline void GetSamplesFromHost(chanend c)
 
 
             sample = __builtin_in_uint(c);
-# 243 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 243 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
             ptr_samples[i] = sample;
 
 
@@ -697,13 +697,13 @@ static inline void GiveSamplesToDevice(chanend c, xc_ptr ptr, xc_ptr multOut)
 
 
             int index;
-# 274 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 274 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
             unsafe
             {
 
                 sample = ptr_samples[i];
             }
-# 294 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 294 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
             __builtin_out_uint(c, sample);
 
         }
@@ -726,7 +726,7 @@ static inline void GetSamplesFromDevice(chanend c)
         int x;
         int old_x;
         sample = __builtin_in_uint(c);
-# 340 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 340 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
         unsafe
         {
             ptr_samples[(2) + i] = sample;
@@ -764,7 +764,7 @@ static void mixer1(chanend c_host, chanend c_mix_ctl, chanend c_mixer2)
                 int mix, index, val;
                 switch (cmd)
                 {
-# 438 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 438 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
                     case GET_STREAM_LEVELS:
                         index = __builtin_in_uint(c_mix_ctl);
                         __builtin_chkct(c_mix_ctl, 0x1);
@@ -776,14 +776,14 @@ static void mixer1(chanend c_host, chanend c_mix_ctl, chanend c_mixer2)
                     case GET_INPUT_LEVELS:
                         index = __builtin_in_uint(c_mix_ctl);
                         __builtin_chkct(c_mix_ctl, 0x1);
-# 462 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 462 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
                         asm("ldw %0, %1[%2]":"=r"(val):"r"(samples_to_host_inputs_ptr),"r"(index));;
                         asm volatile("stw %0, %1[%2]"::"r"(0),"r"(samples_to_host_inputs_ptr),"r"(index));
 
                         __builtin_out_uint(c_mix_ctl, val);
                         __builtin_outct(c_mix_ctl, 0x1);
                         break;
-# 482 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 482 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
                 }
                 break;
             }
@@ -841,7 +841,7 @@ static void mixer1(chanend c_host, chanend c_mix_ctl, chanend c_mixer2)
         }
         else
         {
-# 609 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 609 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
             GiveSamplesToDevice(c_mixer2, samples_to_device_map, multOut);
             GetSamplesFromDevice(c_mixer2);
             GetSamplesFromHost(c_host);
@@ -850,7 +850,7 @@ static void mixer1(chanend c_host, chanend c_mix_ctl, chanend c_mixer2)
         }
     }
 }
-# 752 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 752 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
 void mixer(chanend c_mix_in, chanend c_mix_out, chanend c_mix_ctl)
 {
 
@@ -868,7 +868,7 @@ void mixer(chanend c_mix_in, chanend c_mix_out, chanend c_mix_ctl)
 
 
     samples_mixer_outputs_ptr = array_to_xc_ptr((samples_mixer_outputs, unsigned[]));
-# 777 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 777 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
     for (int i=0;i<(2) + (2) + 0;i++)
     unsafe {
 
@@ -883,12 +883,12 @@ void mixer(chanend c_mix_in, chanend c_mix_out, chanend c_mix_ctl)
             asm("stw %0, %1[%2]":: "r"(i), "r"(samples_to_device_map), "r"(i));
         }
     }
-# 806 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 806 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
     for (int i=0;i<(2);i++)
     {
       asm volatile("stw %0, %1[%2]"::"r"((2) + i),"r"(samples_to_host_map),"r"(i));
     }
-# 823 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
+# 823 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.xc"
     par
     {
 

@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
 
 
 
@@ -390,8 +390,8 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 1
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 1
 
 
 
@@ -402,8 +402,8 @@ unsigned get_logical_core_id(void);
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
 # 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
 extern tileref tile[1];
 extern tileref usb_tile;
 
@@ -412,7 +412,7 @@ extern tileref usb_tile;
 
 service xscope_host_data(chanend c);;
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -519,7 +519,7 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 11 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 11 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
 # 201 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
 typedef streaming chanend streaming_chanend_t;
@@ -535,7 +535,7 @@ typedef out buffered port:4 out_buffered_port_4_t;
 typedef out buffered port:8 out_buffered_port_8_t;
 typedef out buffered port:16 out_buffered_port_16_t;
 typedef out buffered port:32 out_buffered_port_32_t;
-# 12 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 12 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 
 
 
@@ -544,15 +544,15 @@ typedef out buffered port:32 out_buffered_port_32_t;
 
 
 # 1 ".././src/xud_conf.h" 1
-# 20 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 20 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud_defines.h" 1
-# 26 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
-# 93 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud_defines.h" 1
+# 26 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 93 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 typedef enum XUD_EpTransferType
 {
     XUD_EPTYPE_ISO = 0,
@@ -595,7 +595,7 @@ typedef enum XUD_Result
     XUD_RES_OKAY = 0,
     XUD_RES_ERR,
 } XUD_Result_t;
-# 183 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 183 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 int XUD_Manager(chanend c_epOut[], int noEpOut,
                 chanend c_epIn[], int noEpIn,
                 chanend ?c_sof,
@@ -605,21 +605,21 @@ int XUD_Manager(chanend c_epOut[], int noEpOut,
                 unsigned rstMask,
                 XUD_BusSpeed_t desiredSpeed,
                 XUD_PwrConfig pwrConfig);
-# 204 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 204 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetBuffer(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 214 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 214 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetSetupBuffer(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 226 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 226 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetBuffer(XUD_ep ep_in, unsigned char buffer[], unsigned datalength);
-# 240 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 240 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetBuffer_EpMax(XUD_ep ep_in, unsigned char buffer[], unsigned datalength, unsigned epMax);
-# 257 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 257 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_DoGetRequest(XUD_ep ep_out, XUD_ep ep_in, unsigned char buffer[], unsigned length, unsigned requested);
-# 266 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 266 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_DoSetRequestStatus(XUD_ep ep_in);
-# 275 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 275 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetDevAddr(unsigned addr);
-# 289 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 289 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_BusSpeed_t XUD_ResetEndpoint(XUD_ep one, XUD_ep &?two);
 
 
@@ -629,9 +629,9 @@ XUD_BusSpeed_t XUD_ResetEndpoint(XUD_ep one, XUD_ep &?two);
 
 
 XUD_ep XUD_InitEp(chanend c_ep);
-# 306 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 306 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_SetStallByAddr(int epNum);
-# 315 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 315 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_ClearStallByAddr(int epNum);
 
 
@@ -648,7 +648,7 @@ void XUD_SetStall(XUD_ep ep);
 
 
 void XUD_ClearStall(XUD_ep ep);
-# 342 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 342 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_ResetEpStateByAddr(unsigned epNum);
 
 
@@ -658,13 +658,13 @@ void XUD_ResetEpStateByAddr(unsigned epNum);
 
 
 void XUD_SetTestMode(XUD_ep ep, unsigned testMode);
-# 366 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 366 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetData(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 376 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 376 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetSetupData(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 387 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 387 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetData(XUD_ep ep_in, unsigned char buffer[], unsigned datalength, unsigned startIndex, unsigned pidToggle);
-# 402 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 402 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline int XUD_SetReady_Out(XUD_ep ep, unsigned char buffer[])
 {
     int chan_array_ptr;
@@ -683,7 +683,7 @@ inline int XUD_SetReady_Out(XUD_ep ep, unsigned char buffer[])
 
     return 0;
 }
-# 428 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 428 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline int XUD_SetReady_OutPtr(XUD_ep ep, unsigned addr)
 {
     int chan_array_ptr;
@@ -701,7 +701,7 @@ inline int XUD_SetReady_OutPtr(XUD_ep ep, unsigned addr)
 
     return XUD_RES_OKAY;
 }
-# 455 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 455 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline XUD_Result_t XUD_SetReady_InPtr(XUD_ep ep, unsigned addr, int len)
 {
     int chan_array_ptr;
@@ -744,7 +744,7 @@ inline XUD_Result_t XUD_SetReady_InPtr(XUD_ep ep, unsigned addr, int len)
 
     return XUD_RES_OKAY;
 }
-# 506 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 506 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline XUD_Result_t XUD_SetReady_In(XUD_ep ep, unsigned char buffer[], int len)
 {
     unsigned addr;
@@ -753,7 +753,7 @@ inline XUD_Result_t XUD_SetReady_In(XUD_ep ep, unsigned char buffer[], int len)
 
     return XUD_SetReady_InPtr(ep, addr, len);
 }
-# 523 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 523 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 #pragma select handler
 void XUD_GetData_Select(chanend c, XUD_ep ep, unsigned &length, XUD_Result_t &result);
 
@@ -765,14 +765,14 @@ void XUD_GetData_Select(chanend c, XUD_ep ep, unsigned &length, XUD_Result_t &re
 
 #pragma select handler
 void XUD_SetData_Select(chanend c, XUD_ep ep, XUD_Result_t &result);
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 1
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 1
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h" 1
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h"
 typedef enum
 {
     USB_CLASS_USE_CLASS = 0x00,
@@ -795,7 +795,7 @@ typedef enum
     USB_CLASS_MAPPED_INDEX_END = 17,
     USB_CLASS_VENDOR_SPECIFIC = 0xFF
 } USB_ClassCode_t;
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 2
 
 
 
@@ -840,8 +840,8 @@ void USB_PrintSetupPacket(USB_SetupPacket_t sp);
 void USB_ComposeSetupBuffer(USB_SetupPacket_t sp, unsigned char buffer[]);
 
 void USB_ParseSetupPacket(unsigned char b[], USB_SetupPacket_t &p);
-# 9 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h" 1
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h" 1
 
 
 
@@ -849,12 +849,12 @@ void USB_ParseSetupPacket(unsigned char b[], USB_SetupPacket_t &p);
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudiocommon.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudiocommon.h" 1
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
 
 
 
@@ -864,8 +864,8 @@ void USB_ParseSetupPacket(unsigned char b[], USB_SetupPacket_t &p);
 
 
 # 1 ".././src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
+# 1108 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -873,7 +873,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -881,12 +881,12 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudiocommon.h" 2
-# 9 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h" 2
-# 20 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudiocommon.h" 2
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h" 2
+# 20 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
 enum USB_Audio_FuncProtocolCodes_t
 {
     UAC_FUNC_PROTOCOL_UNDEFINED = 0x00,
@@ -970,13 +970,13 @@ enum UAC_CS_AS_InterfaceDescriptorSubtype_t
     UAC_CS_AS_INTERFACE_SUBTYPE_ENCODER = 0x03,
     UAC_CS_AS_INTERFACE_SUBTYPE_DECODER = 0x04
 };
-# 118 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
+# 118 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
 enum UAC_CS_EndpointDescriptorSubtype_t
 {
     UAC_CS_ENDPOINT_SUBTYPE_UNDEFINED = 0x00,
     UAC_CS_ENDPOINT_SUBTYPE_EP_GENERAL = 0x01
 };
-# 284 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
+# 284 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
 enum USB_audio_Fmt_FormatType_t
 {
     UAC_FORMAT_TYPE_UNDEFINED = 0x00,
@@ -1008,7 +1008,7 @@ enum USB_Audio_Fmt_DataFormat_TypeII_t
     UAC_FORMAT_TYPEII_DTS = 0x00000008,
     UAC_FORMAT_TYPEII_RAW_DATA = 0x80000000
 };
-# 331 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
+# 331 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usbaudio20.h"
 enum USB_Audio_TT_InputTermType_t
 {
     UAC_TT_INPUT_TERMTYPE_INPUT_UNDEFINED = 0x0200,
@@ -1033,24 +1033,24 @@ enum USB_Audio_TT_OutputTermType_t
     UAC_TT_OUTPUT_TERMTYPE_COMMUNICATION_SPEAKER = 0x0306,
     UAC_TT_OUTPUT_TERMTYPE_LOW_FREQ_EFFECTS_SPEAKER = 0x0307
 };
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/class/usbaudio10.h" 1
-# 11 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h" 1
-# 18 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/class/usbaudio10.h" 1
+# 11 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h" 1
+# 18 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.h"
 unsigned db_to_mult(int db, int db_frac_bits, int result_frac_bits);
-# 12 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 1
+# 12 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 1
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
-# 29 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h"
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
-# 30 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
-# 14 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
+# 29 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/dsd_support.h" 1
+# 30 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/commands.h" 2
+# 14 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/usb_buffer/xc_ptr.h" 1
 
 
 
@@ -1066,9 +1066,9 @@ inline xc_ptr array_to_xc_ptr(const unsigned a[])
     asm("mov %0, %1":"=r"(x):"r"(a));
     return x;
 }
-# 15 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 15 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h" 1
 
 
 
@@ -1083,9 +1083,9 @@ enum mix_ctl_cmd {
   GET_STREAM_LEVELS,
   GET_OUTPUT_LEVELS
 };
-# 30 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h"
+# 30 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/mixer.h"
 void mixer(chanend c_to_host, chanend c_to_audio, chanend c_mix_ctl);
-# 17 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
+# 17 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc" 2
 
 
 
@@ -1117,7 +1117,7 @@ extern unsigned char mixSel[0][(18)];
 
 
 unsigned int g_curSamFreq = (44100);
-# 56 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 56 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 static void storeInt(unsigned char buffer[], int index, int val)
 {
     buffer[index+3] = val>>24;
@@ -1181,7 +1181,7 @@ static unsigned longMul(unsigned a, unsigned b, int prec)
     ret = (x << (32-prec) | (y >> prec));
     return ret;
 }
-# 135 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 135 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
 static void updateMasterVol( int unitID, chanend ?c_mix_ctl)
 {
     int x;
@@ -1204,7 +1204,7 @@ static void updateMasterVol( int unitID, chanend ?c_mix_ctl)
                     unsigned vol = volsOut[i] == 0x8000 ? 0 : db_to_mult(volsOut[i], 8, 29);
 
                     x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[i];
-# 167 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 167 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                     asm("stw %0, %1[%2]"::"r"(x),"r"(p_multOut),"r"(i-1));
 
                 }
@@ -1221,7 +1221,7 @@ static void updateMasterVol( int unitID, chanend ?c_mix_ctl)
                     unsigned vol = volsIn[i] == 0x8000 ? 0 : db_to_mult(volsIn[i], 8, 29);
 
                     x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[i];
-# 193 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 193 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                     asm("stw %0, %1[%2]"::"r"(x),"r"(p_multIn),"r"(i-1));
 
                 }
@@ -1259,7 +1259,7 @@ static void updateVol(int unitID, int channel, chanend ?c_mix_ctl)
                 unsigned vol = volsOut[channel] == 0x8000 ? 0 : db_to_mult(volsOut[channel], 8, 29);
 
                 x = longMul(master_vol, vol, 29) * !mutesOut[0] * !mutesOut[channel];
-# 240 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 240 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                 asm("stw %0, %1[%2]"::"r"(x),"r"(p_multOut),"r"(channel-1));
 
                 break;
@@ -1272,7 +1272,7 @@ static void updateVol(int unitID, int channel, chanend ?c_mix_ctl)
                  unsigned vol = volsIn[channel] == 0x8000 ? 0 : db_to_mult(volsIn[channel], 8, 29);
 
                 x = longMul(master_vol, vol, 29) * !mutesIn[0] * !mutesIn[channel];
-# 262 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 262 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                 asm("stw %0, %1[%2]"::"r"(x),"r"(p_multIn),"r"(channel-1));
 
                 break;
@@ -1337,7 +1337,7 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
                                         int newMasterClock;
 
                                         g_curSamFreq = newSampleRate;
-# 361 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 361 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                                         __builtin_out_uint(c_audioControl, 4);
                                         __builtin_out_uint(c_audioControl, g_curSamFreq);
 
@@ -1360,7 +1360,7 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
                                 {
                                     case 42:
                                     case 43:
-# 402 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 402 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                                     case 41:
 
                                         (buffer, unsigned[])[0] = g_curSamFreq;
@@ -1591,7 +1591,7 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
                     }
 
                     break;
-# 833 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 833 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                 default:
 
                     break;
@@ -1622,10 +1622,10 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
                                 int i = 2;
 
 
-                                int currentFreq44 = 11025;
-                                int currentFreq48 = 8000;
+                                unsigned int currentFreq44 = 11025;
+                                unsigned int currentFreq48 = 8000;
                                 unsigned maxFreq = (384000);
-# 877 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 877 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                                 unsigned lowSampleRateList[] = {8000, 11025, 12000, 16000, 32000};
 
                                 for (int k = 0; k < sizeof(lowSampleRateList)/sizeof(unsigned); k++)
@@ -1661,7 +1661,7 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
                                         break;
                                     }
                                 }
-# 921 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 921 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                                 storeShort(buffer, 0, num_freqs);
 
                                 return XUD_DoGetRequest(ep0_out, ep0_in, buffer, i, sp.wLength);
@@ -1718,7 +1718,7 @@ int AudioClassRequests_2(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp, c
 
             break;
         }
-# 1061 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 1061 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
     }
 
 
@@ -1777,7 +1777,7 @@ int AudioEndpointRequests_1(XUD_ep ep0_out, XUD_ep ep0_in, USB_SetupPacket_t &sp
                             if(curSamFreq48000Family || curSamFreq44100Family)
                             {
                                 g_curSamFreq = newSampleRate;
-# 1137 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
+# 1137 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/audiorequests.xc"
                                 __builtin_out_uint(c_audioControl, 4);
                                 __builtin_out_uint(c_audioControl, g_curSamFreq);
 

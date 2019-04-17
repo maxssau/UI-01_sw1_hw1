@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
@@ -385,7 +385,7 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc" 2
+# 2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -492,10 +492,10 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc" 2
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc"
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc" 2
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc"
 static unsigned coef[14] = {2407, 13778, 64588, 308051, 1346110, 5261991, 18277531, 55564576, 144789513, 314406484, 546179875, 711608713, 618095479, 268435456};
-# 31 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc"
+# 31 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/endpoint0/dbcalc.xc"
 unsigned db_to_mult(int db, int db_frac_bits, int result_frac_bits)
 {
   int intpart;

@@ -1,12 +1,12 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h" 1
 
 
 
@@ -18,7 +18,7 @@ typedef int ptrdiff_t;
 typedef unsigned int size_t;
 # 94 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/clang/stddef.h" 3
 typedef unsigned char wchar_t;
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/stdint.h" 1 3
 # 17 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/stdint.h" 3
 extern "C" {
@@ -101,7 +101,7 @@ typedef signed int intptr_t;
 typedef unsigned int uintptr_t;
 # 471 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/stdint.h" 3
 }
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h" 2
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h" 2
 
 
 
@@ -111,13 +111,13 @@ typedef enum {
   I2C_NACK,
   I2C_ACK,
 } i2c_res_t;
-# 26 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 26 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 typedef interface i2c_master_if {
-# 48 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 48 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   i2c_res_t write(uint8_t device_addr, uint8_t buf[n], size_t n,
                size_t &num_bytes_sent, int send_stop_bit);
-# 67 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 67 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   i2c_res_t read(uint8_t device_addr, uint8_t buf[n], size_t n,
                int send_stop_bit);
@@ -148,7 +148,7 @@ typedef enum {
 
 
 extends client interface i2c_master_if : {
-# 118 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 118 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline uint8_t read_reg(client interface i2c_master_if i,
                           uint8_t device_addr, uint8_t reg,
                           i2c_regop_res_t &result) {
@@ -170,7 +170,7 @@ extends client interface i2c_master_if : {
     }
     return data[0];
   }
-# 152 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 152 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline i2c_regop_res_t write_reg(client interface i2c_master_if i,
                              uint8_t device_addr, uint8_t reg, uint8_t data)
   {
@@ -185,7 +185,7 @@ extends client interface i2c_master_if : {
     }
     return I2C_REGOP_SUCCESS;
   }
-# 188 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 188 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline uint8_t read_reg8_addr16(client interface i2c_master_if i,
                                   uint8_t device_addr, uint16_t reg,
                                   i2c_regop_res_t &result)
@@ -208,7 +208,7 @@ extends client interface i2c_master_if : {
     }
     return data[0];
   }
-# 224 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 224 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline i2c_regop_res_t write_reg8_addr16(client interface i2c_master_if i,
                                            uint8_t device_addr, uint16_t reg,
                                            uint8_t data) {
@@ -223,7 +223,7 @@ extends client interface i2c_master_if : {
     }
     return I2C_REGOP_SUCCESS;
   }
-# 260 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 260 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline uint16_t read_reg16(client interface i2c_master_if i,
                              uint8_t device_addr, uint16_t reg,
                              i2c_regop_res_t &result)
@@ -246,7 +246,7 @@ extends client interface i2c_master_if : {
     }
     return ((uint16_t) data[0] << 8) | data[1];
   }
-# 301 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 301 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline i2c_regop_res_t write_reg16(client interface i2c_master_if i,
                                uint8_t device_addr, uint16_t reg,
                                uint16_t data) {
@@ -261,7 +261,7 @@ extends client interface i2c_master_if : {
     }
     return I2C_REGOP_SUCCESS;
   }
-# 336 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 336 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline uint16_t read_reg16_addr8(client interface i2c_master_if i,
                                    uint8_t device_addr, uint8_t reg,
                                    i2c_regop_res_t &result)
@@ -284,7 +284,7 @@ extends client interface i2c_master_if : {
     }
     return ((uint16_t) data[0] << 8) | data[1];
   }
-# 375 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 375 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   inline i2c_regop_res_t write_reg16_addr8(client interface i2c_master_if i,
                                            uint8_t device_addr, uint8_t reg,
                                            uint16_t data) {
@@ -300,25 +300,25 @@ extends client interface i2c_master_if : {
     return I2C_REGOP_SUCCESS;
   }
 }
-# 401 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 401 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 [[distributable]] void i2c_master(server interface i2c_master_if i[n],
                                   size_t n,
                                   port p_scl, port p_sda,
                                   static const unsigned kbits_per_second);
-# 428 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 428 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 [[distributable]]
 void i2c_master_single_port(server interface i2c_master_if c[n], static const size_t n,
                             port p_i2c, static const unsigned kbits_per_second,
                             static const unsigned scl_bit_position,
                             static const unsigned sda_bit_position,
                             static const unsigned other_bits_mask);
-# 442 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 442 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 typedef interface i2c_master_async_if {
-# 456 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 456 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   void write(uint8_t device_addr, uint8_t buf[n], size_t n,
              int send_stop_bit);
-# 471 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 471 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   void read(uint8_t device_addr, size_t n, int send_stop_bit);
 
@@ -328,10 +328,10 @@ typedef interface i2c_master_async_if {
 
   [[notification]]
   slave void operation_complete(void);
-# 494 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 494 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[clears_notification]]
   i2c_res_t get_write_result(size_t &num_bytes_sent);
-# 510 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 510 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[clears_notification]]
   i2c_res_t get_read_data(uint8_t buf[n], size_t n);
 
@@ -350,13 +350,13 @@ typedef interface i2c_master_async_if {
 
   void shutdown();
 } i2c_master_async_if;
-# 544 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 544 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 void i2c_master_async(server interface i2c_master_async_if i[n],
                       size_t n,
                       port p_scl, port p_sda,
                       static const unsigned kbits_per_second,
                       static const size_t max_transaction_size);
-# 568 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 568 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 [[combinable]]
 void i2c_master_async_comb(server interface i2c_master_async_if i[n],
                            size_t n,
@@ -370,15 +370,15 @@ typedef enum i2c_slave_ack_t {
   I2C_SLAVE_ACK,
   I2C_SLAVE_NACK,
 } i2c_slave_ack_t;
-# 589 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 589 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 typedef interface i2c_slave_callback_if {
-# 603 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 603 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   i2c_slave_ack_t ack_read_request(void);
-# 619 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 619 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   i2c_slave_ack_t ack_write_request(void);
-# 629 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 629 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
   [[guarded]]
   uint8_t master_requires_data();
 
@@ -404,12 +404,12 @@ typedef interface i2c_slave_callback_if {
 
   [[notification]] slave void shutdown();
 } i2c_slave_callback_if;
-# 668 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
+# 668 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/api/i2c.h"
 [[combinable]]
 void i2c_slave(client i2c_slave_callback_if i,
                port p_scl, port p_sda,
                uint8_t device_addr);
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
@@ -790,7 +790,7 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xc/string.h" 1 3
 
 
@@ -1118,7 +1118,7 @@ char * alias _safe_strstr(const char * alias s1, const char s2[]);
 
 size_t _safe_strnlen(const char s[], size_t n);
 # 6 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xc/string.h" 2 3
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -1225,7 +1225,7 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/syscall.h" 1 3
 # 48 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/syscall.h" 3
 typedef unsigned ___size_t;
@@ -1272,11 +1272,11 @@ int _get_cmdline(void *buf, unsigned size);
 }
 # 98 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/syscall.h" 3
 void _plugins(int type, unsigned arg1, unsigned arg2);
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/lib_xassert/api/xassert.h" 1
-# 99 "/home/evgeny/git/UI-01_sw1_hw1/lib_xassert/api/xassert.h"
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_xassert/api/xassert.h" 1
+# 99 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_xassert/api/xassert.h"
 inline int xassert_msg(const char msg[]) { return 1; }
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc" 2
 
 enum i2c_async_master_state_t {
   IDLE,
@@ -1407,7 +1407,7 @@ void i2c_master_async(
 #pragma warning enable
  }
 }
-# 149 "/home/evgeny/git/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc"
+# 149 "/home/evgeny/git/104/UI-01_sw1_hw1/lib_i2c/src/i2c_master_async.xc"
 static void inline adjust_for_slip(
   int now,
   int &event_time,

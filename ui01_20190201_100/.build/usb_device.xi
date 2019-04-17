@@ -1,16 +1,16 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 141 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
 
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 1
 
 
 
@@ -398,11 +398,11 @@ unsigned get_local_tile_id(void);
 unsigned get_tile_id(tileref t);
 # 2136 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 unsigned get_logical_core_id(void);
-# 9 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
 # 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
-# 13 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
+# 13 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 3
 extern tileref tile[1];
 extern tileref usb_tile;
 
@@ -411,7 +411,7 @@ extern tileref usb_tile;
 
 service xscope_host_data(chanend c);;
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printchar(char value);
@@ -518,7 +518,7 @@ int printbinln(unsigned value);
 int printstr(const char (& alias s)[]);
 # 145 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/print.h" 3
 int printstrln(const char (& alias s)[]);
-# 11 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 11 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 1 3
 # 201 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xccompat.h" 3
 typedef streaming chanend streaming_chanend_t;
@@ -534,7 +534,7 @@ typedef out buffered port:4 out_buffered_port_4_t;
 typedef out buffered port:8 out_buffered_port_8_t;
 typedef out buffered port:16 out_buffered_port_16_t;
 typedef out buffered port:32 out_buffered_port_32_t;
-# 12 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 12 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 
 
 
@@ -543,15 +543,15 @@ typedef out buffered port:32 out_buffered_port_32_t;
 
 
 # 1 ".././src/xud_conf.h" 1
-# 20 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 20 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
 
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud_defines.h" 1
-# 26 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h" 2
-# 93 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud_defines.h" 1
+# 26 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h" 2
+# 93 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 typedef enum XUD_EpTransferType
 {
     XUD_EPTYPE_ISO = 0,
@@ -594,7 +594,7 @@ typedef enum XUD_Result
     XUD_RES_OKAY = 0,
     XUD_RES_ERR,
 } XUD_Result_t;
-# 183 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 183 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 int XUD_Manager(chanend c_epOut[], int noEpOut,
                 chanend c_epIn[], int noEpIn,
                 chanend ?c_sof,
@@ -604,21 +604,21 @@ int XUD_Manager(chanend c_epOut[], int noEpOut,
                 unsigned rstMask,
                 XUD_BusSpeed_t desiredSpeed,
                 XUD_PwrConfig pwrConfig);
-# 204 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 204 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetBuffer(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 214 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 214 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetSetupBuffer(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 226 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 226 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetBuffer(XUD_ep ep_in, unsigned char buffer[], unsigned datalength);
-# 240 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 240 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetBuffer_EpMax(XUD_ep ep_in, unsigned char buffer[], unsigned datalength, unsigned epMax);
-# 257 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 257 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_DoGetRequest(XUD_ep ep_out, XUD_ep ep_in, unsigned char buffer[], unsigned length, unsigned requested);
-# 266 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 266 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_DoSetRequestStatus(XUD_ep ep_in);
-# 275 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 275 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetDevAddr(unsigned addr);
-# 289 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 289 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_BusSpeed_t XUD_ResetEndpoint(XUD_ep one, XUD_ep &?two);
 
 
@@ -628,9 +628,9 @@ XUD_BusSpeed_t XUD_ResetEndpoint(XUD_ep one, XUD_ep &?two);
 
 
 XUD_ep XUD_InitEp(chanend c_ep);
-# 306 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 306 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_SetStallByAddr(int epNum);
-# 315 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 315 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_ClearStallByAddr(int epNum);
 
 
@@ -647,7 +647,7 @@ void XUD_SetStall(XUD_ep ep);
 
 
 void XUD_ClearStall(XUD_ep ep);
-# 342 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 342 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 void XUD_ResetEpStateByAddr(unsigned epNum);
 
 
@@ -657,13 +657,13 @@ void XUD_ResetEpStateByAddr(unsigned epNum);
 
 
 void XUD_SetTestMode(XUD_ep ep, unsigned testMode);
-# 366 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 366 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetData(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 376 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 376 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_GetSetupData(XUD_ep ep_out, unsigned char buffer[], unsigned &length);
-# 387 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 387 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 XUD_Result_t XUD_SetData(XUD_ep ep_in, unsigned char buffer[], unsigned datalength, unsigned startIndex, unsigned pidToggle);
-# 402 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 402 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline int XUD_SetReady_Out(XUD_ep ep, unsigned char buffer[])
 {
     int chan_array_ptr;
@@ -682,7 +682,7 @@ inline int XUD_SetReady_Out(XUD_ep ep, unsigned char buffer[])
 
     return 0;
 }
-# 428 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 428 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline int XUD_SetReady_OutPtr(XUD_ep ep, unsigned addr)
 {
     int chan_array_ptr;
@@ -700,7 +700,7 @@ inline int XUD_SetReady_OutPtr(XUD_ep ep, unsigned addr)
 
     return XUD_RES_OKAY;
 }
-# 455 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 455 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline XUD_Result_t XUD_SetReady_InPtr(XUD_ep ep, unsigned addr, int len)
 {
     int chan_array_ptr;
@@ -743,7 +743,7 @@ inline XUD_Result_t XUD_SetReady_InPtr(XUD_ep ep, unsigned addr, int len)
 
     return XUD_RES_OKAY;
 }
-# 506 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 506 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 inline XUD_Result_t XUD_SetReady_In(XUD_ep ep, unsigned char buffer[], int len)
 {
     unsigned addr;
@@ -752,7 +752,7 @@ inline XUD_Result_t XUD_SetReady_In(XUD_ep ep, unsigned char buffer[], int len)
 
     return XUD_SetReady_InPtr(ep, addr, len);
 }
-# 523 "/home/evgeny/git/UI-01_sw1_hw1/module_xud/include/xud.h"
+# 523 "/home/evgeny/git/104/UI-01_sw1_hw1/module_xud/include/xud.h"
 #pragma select handler
 void XUD_GetData_Select(chanend c, XUD_ep ep, unsigned &length, XUD_Result_t &result);
 
@@ -764,8 +764,8 @@ void XUD_GetData_Select(chanend c, XUD_ep ep, unsigned &length, XUD_Result_t &re
 
 #pragma select handler
 void XUD_SetData_Select(chanend c, XUD_ep ep, XUD_Result_t &result);
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.h" 1
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.h" 1
 
 
 
@@ -774,13 +774,13 @@ void XUD_SetData_Select(chanend c, XUD_ep ep, XUD_Result_t &result);
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 1
 
 
 
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h" 1
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_defs.h"
 typedef enum
 {
     USB_CLASS_USE_CLASS = 0x00,
@@ -803,7 +803,7 @@ typedef enum
     USB_CLASS_MAPPED_INDEX_END = 17,
     USB_CLASS_VENDOR_SPECIFIC = 0xFF
 } USB_ClassCode_t;
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_requests.h" 2
 
 
 
@@ -848,8 +848,8 @@ void USB_PrintSetupPacket(USB_SetupPacket_t sp);
 void USB_ComposeSetupBuffer(USB_SetupPacket_t sp, unsigned char buffer[]);
 
 void USB_ParseSetupPacket(unsigned char b[], USB_SetupPacket_t &p);
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.h" 2
-# 55 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.h" 2
+# 55 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.h"
 XUD_Result_t USB_StandardRequests(XUD_ep ep_out, XUD_ep ep_in,
     unsigned char (&?devDesc_hs)[], int devDescLength_hs,
     unsigned char (&?cfgDesc_hs)[], int cfgDescLength_hs,
@@ -869,8 +869,8 @@ XUD_Result_t USB_StandardRequests(XUD_ep ep_out, XUD_ep ep_in,
 
 
 XUD_Result_t USB_GetSetupPacket(XUD_ep ep_out, XUD_ep ep_in, USB_SetupPacket_t &sp);
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_shared/src/usb_std_descriptors.h" 1
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_shared/src/usb_std_descriptors.h" 1
 
 
 
@@ -890,7 +890,7 @@ enum USB_DescriptorTypes_t
     USB_DESCTYPE_DEBUG = 0x0A,
     USB_DESCTYPE_INTERFACE_ASSOCIATION = 0x0B,
 };
-# 9 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
+# 9 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xc/string.h" 1 3
 
@@ -1231,13 +1231,13 @@ char * alias _safe_strstr(const char * alias s1, const char s2[]);
 
 size_t _safe_strnlen(const char s[], size_t n);
 # 6 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xc/string.h" 2 3
-# 11 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
-# 24 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
+# 11 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc" 2
+# 24 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
 unsigned char g_currentConfig = 0;
 unsigned char g_interfaceAlt[16];
 
-unsigned short g_epStatusOut[(16 + 16)];
-unsigned short g_epStatusIn[(16 + 16)];
+unsigned short g_epStatusOut[(2 + 2)];
+unsigned short g_epStatusIn[(2 + 2)];
 
 #pragma unsafe arrays
 XUD_Result_t USB_GetSetupPacket(XUD_ep ep_out, XUD_ep ep_in, USB_SetupPacket_t &sp)
@@ -1266,7 +1266,7 @@ int SetEndpointHalt(unsigned epNum, unsigned halt)
     if(epNum & 0x80)
     {
 
-        if((epNum&0x7F) < (16 + 16))
+        if((epNum&0x7F) < (2 + 2))
         {
             g_epStatusIn[epNum & 0x7F] = halt;
             if(halt)
@@ -1278,7 +1278,7 @@ int SetEndpointHalt(unsigned epNum, unsigned halt)
     }
     else
     {
-        if(epNum < (16 + 16))
+        if(epNum < (2 + 2))
         {
             g_epStatusOut[epNum] = halt;
             if(halt)
@@ -1364,13 +1364,13 @@ XUD_Result_t USB_StandardRequests(XUD_ep ep_out, XUD_ep ep_in,
 
                     if((sp.wLength == 0) && (sp.wIndex == 0))
                     {
-# 163 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
-                        for(unsigned i = 1; i < 16; i++)
+# 163 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
+                        for(unsigned i = 1; i < 2; i++)
                         {
                             XUD_ResetEpStateByAddr(i | 0x80 );
                         }
 
-                        for(unsigned i = 1; i < 16; i++)
+                        for(unsigned i = 1; i < 2; i++)
                         {
                             XUD_ResetEpStateByAddr(i);
                         }
@@ -1776,7 +1776,7 @@ XUD_Result_t USB_StandardRequests(XUD_ep ep_out, XUD_ep ep_in,
                         if( sp.wIndex & 0x80 )
                         {
 
-                            if((sp.wIndex&0x7f) < (16 + 16))
+                            if((sp.wIndex&0x7f) < (2 + 2))
                             {
                                 buffer[0] = ( g_epStatusIn[ sp.wIndex & 0x7F ] & 0xff );
                                 buffer[1] = ( g_epStatusIn[ sp.wIndex & 0x7F ] >> 8 );
@@ -1786,7 +1786,7 @@ XUD_Result_t USB_StandardRequests(XUD_ep ep_out, XUD_ep ep_in,
                         else
                         {
 
-                            if(sp.wIndex < (16 + 16))
+                            if(sp.wIndex < (2 + 2))
                             {
                                 buffer[0] = ( g_epStatusOut[ sp.wIndex ] & 0xff );
                                 buffer[1] = ( g_epStatusOut[ sp.wIndex ] >> 8 );
@@ -1800,7 +1800,7 @@ XUD_Result_t USB_StandardRequests(XUD_ep ep_out, XUD_ep ep_in,
             break;
 
     }
-# 607 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
+# 607 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_device/src/usb_device.xc"
     XUD_SetStall(ep_out);
     XUD_SetStall(ep_in);
     return XUD_RES_ERR;

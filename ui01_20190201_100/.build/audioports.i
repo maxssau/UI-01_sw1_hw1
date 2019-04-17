@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 289 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
@@ -93,15 +93,15 @@ __attribute__((deprecated)) static inline unsigned get_core_id(void) {
 __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
   return __builtin_getid();
 }
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 1 3
 # 21 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 3
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/ui01_20190201_100/.build/XUF208-256-TQ64-C10.h" 1 3
 # 22 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/platform.h" 2 3
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
 
 
 
@@ -111,8 +111,8 @@ __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
 
 
 # 1 ".././src/customdefines.h" 1
-# 10 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
-# 1108 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 10 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 2
+# 1108 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
 enum USBEndpointNumber_In
 {
     ENDPOINT_NUMBER_IN_CONTROL,
@@ -120,7 +120,7 @@ enum USBEndpointNumber_In
 
 
     ENDPOINT_NUMBER_IN_AUDIO,
-# 1133 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1133 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_IN
 };
 
@@ -128,11 +128,11 @@ enum USBEndpointNumber_Out
 {
     ENDPOINT_NUMBER_OUT_CONTROL,
     ENDPOINT_NUMBER_OUT_AUDIO,
-# 1149 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
+# 1149 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h"
     ENDPOINT_COUNT_OUT
 };
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 1
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 1
 
 
 
@@ -209,10 +209,10 @@ typedef unsigned out_buffered_port_16_t;
 
 
 typedef unsigned out_buffered_port_32_t;
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
-# 32 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/devicedefines.h" 1
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h" 2
+# 32 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
 void ConfigAudioPorts(
 
                 port p_i2s_dac[],
@@ -234,7 +234,7 @@ void ConfigAudioPorts(
 
 
                 unsigned int divide, unsigned int curSamFreq);
-# 80 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
+# 80 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.h"
 void ConfigAudioPortsWrapper(
 
                 port p_i2s_dac[], int numPortsDAC,
@@ -257,7 +257,7 @@ void ConfigAudioPortsWrapper(
 
 
 void EnableBufferedPort(port p, unsigned transferWidth);
-# 8 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
+# 8 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/ports/audioports.c" 2
 
 
 

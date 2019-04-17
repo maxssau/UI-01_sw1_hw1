@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/mixer/fastmix.S">
+<preCompilationAnalysis file="/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/mixer/fastmix.S">
   <fCall global="true" name="doMix0"/>
   <fCall global="true" name="doMix0.nstackwords"/>
   <fCall global="true" name="doMix0.maxcores"/>

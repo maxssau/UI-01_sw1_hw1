@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/locks/lock.S"
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/locks/lock.S"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/locks/lock.S"
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/locks/lock.S"
 # 1 "xs1_user.h" 1 3
 # 20 "xs1_user.h" 3
 # 1 "xs2a_user.h" 1 3
 # 21 "xs1_user.h" 2 3
-# 7 "/home/evgeny/git/UI-01_sw1_hw1/module_usb_audio/locks/lock.S" 2
+# 7 "/home/evgeny/git/104/UI-01_sw1_hw1/module_usb_audio/locks/lock.S" 2
 
 .text
 

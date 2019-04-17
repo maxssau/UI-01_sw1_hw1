@@ -1,10 +1,10 @@
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c"
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 289 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 1 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 1 3
 # 23 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xs1.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/timer.h" 1 3
@@ -92,7 +92,7 @@ __attribute__((deprecated)) static inline unsigned get_core_id(void) {
 __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
   return __builtin_getid();
 }
-# 2 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 2 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 1 3
 # 34 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 3
 typedef enum {
@@ -410,7 +410,7 @@ typedef enum
 
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/SpecMacros.h" 1 3
 # 522 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flash.h" 2 3
-# 3 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 3 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h" 1 3
 # 26 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/flashlib.h" 3
 typedef fl_SPIPorts fl_PortHolderStruct;
@@ -486,7 +486,7 @@ int fl_eraseNextBootImage( fl_BootImageInfo* bootImageInfo );
 
 
 int fl_addBootImage( fl_BootImageInfo* bootImageInfo, unsigned int imageSize, unsigned int (*getData)(void*,unsigned int,unsigned char*), void* userPtr );
-# 4 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 4 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 1 3
 # 10 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/_ansi.h" 1 3
@@ -791,7 +791,7 @@ char *strupr (char *);
 # 102 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 3
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/sys/string.h" 1 3
 # 103 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/string.h" 2 3
-# 5 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 5 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 # 1 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 1 3
 # 35 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -799,7 +799,7 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "/home/evgeny/soft/XMOS/xTIMEcomposer/Community_14.3.3/target/include/xclib.h" 3
 int clz(unsigned x);
-# 6 "/home/evgeny/git/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
+# 6 "/home/evgeny/git/104/UI-01_sw1_hw1/module_dfu/src/flash_interface.c" 2
 
 
 
