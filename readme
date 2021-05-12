@@ -1,1 +1,9 @@
+Firmware for USB-I2S bridge.
 
+MCU - XMOS XUF208
+
+IO formats: PCM 44.1-384 kHz 2/2 channels in/out
+DSD 64-256 output only
+GPIO: scale, freq, mute, DAC/ADC reset
+
+Photo gallery: http://forum.vegalab.ru/album.php?albumid=1202
